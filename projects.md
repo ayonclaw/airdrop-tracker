@@ -39,7 +39,7 @@
 
 | # | Project | Date | Schedule | Reward | Status |
 |---|---------|------|----------|--------|--------|
-| 4 | **XREIGN** | Jul 03 | `0 9 * * *` (16:00 WIB) | 3,404 $REIGN + $12 USDT | ✅ Cron fixed (agent-based), 4/5 tasks done |
+| 4 | **XREIGN Crown Season** | Jul 11 | `0 9 * * *` (16:00 WIB) | 5,109 $REIGN + Crown #1 | ✅ Crown Season I — House Crown AUTHORITY. Daily: tasks (×2 decree), wheel, signal, check-in. 27 days left |
 
 ## 🎯 Quest — Multi-step Platform
 
