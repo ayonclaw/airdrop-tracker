@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-10 | Total: 28 projects (+3 cron)
+> Last updated: 2026-07-11 | Total: 32 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -30,6 +30,12 @@
 || 23 | **Goldfish X Post Challenge** | Jul 10 | — | — | ✅ Form submitted — DC `watkinsxoxo`/`764807327752650753`, [tweet](https://x.com/osbornrdx/status/2075619146294059212) |
 | 24 | **CoinBooking** | Jul 10 | — | — | ✅ Email submitted — airdropkarbiters@gmail.com "Subscribed" |
 | 25 | **Seedbound** | Jul 10 | — | — | ⏳ Offline server — cron watcher ready |
+
+| 26 | **Nutsy (Robinhood)** | Jul 10 | `airdrop_00` | `@NutsyNFTs` ✅ | ✅ All tasks + EVM submitted — Follow+RT+Reply [proof](https://x.com/osbornrdx/status/2075805981775483334) |
+
+| 27 | **Wisp** | Jul 10 | — | — | ✅ Email submitted — "You're on the list!" — usewisp.io |
+|| 28 | **TachyonFi** | Jul 11 | `airdrop_00` | `@_tachyonfi` ✅ | ⏳ Testnet perps on LitVM — ✅ Follow+Like+RT+LitecoinVM ✅ Wallet 0x8CCE…282D ⛔ Butuh zkLTC gas (faucet Vercel-blocked) |
+||| 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base. ✅ Follow+Like+Repost+Reply [reply](https://x.com/osbornrdx/status/2075871990175719499) |
 
 ## 🔄 Daily — Auto Cron
 
