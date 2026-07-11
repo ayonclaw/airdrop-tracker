@@ -34,8 +34,8 @@
 | 26 | **Nutsy (Robinhood)** | Jul 10 | `airdrop_00` | `@NutsyNFTs` ✅ | ✅ All tasks + EVM submitted — Follow+RT+Reply [proof](https://x.com/osbornrdx/status/2075805981775483334) |
 
 | 27 | **Wisp** | Jul 10 | — | — | ✅ Email submitted — "You're on the list!" — usewisp.io |
-|| 28 | **TachyonFi** | Jul 11 | `airdrop_00` | `@_tachyonfi` ✅ | ⏳ Testnet perps on LitVM — ✅ Follow+Like+RT+LitecoinVM ✅ Wallet 0x8CCE…282D ⛔ Butuh zkLTC gas (faucet Vercel-blocked) |
-||| 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base. ✅ Follow+Like+Repost+Reply [reply](https://x.com/osbornrdx/status/2075871990175719499) |
+| 28 | **TachyonFi** | Jul 11 | `airdrop_00` | `@_tachyonfi` ✅ | ⏳ Testnet perps on LitVM — ✅ Follow+Like+RT+LitecoinVM ✅ Wallet 0x8CCE…282D ⛔ Butuh zkLTC gas (faucet Vercel-blocked) |
+| 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base. ✅ Follow+Like+Repost+Reply [reply](https://x.com/osbornrdx/status/2075871990175719499) |
 
 ## 🔄 Daily — Auto Cron
 
