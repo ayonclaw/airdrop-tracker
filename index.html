@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AYON drop tracker</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0f;color:#e2e2e8;min-height:100vh;display:flex;flex-direction:column}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -20%,rgba(147,51,234,0.08),transparent);pointer-events:none;z-index:0}
+  *{position:relative;z-index:1}
+  .container{max-width:1280px;margin:0 auto;padding:24px 20px;width:100%;flex:1}
+  header{border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  h1{font-size:26px;font-weight:700;background:linear-gradient(135deg,#fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.5px}
+  .stats{display:flex;gap:16px;font-size:13px;color:#9ca3af;flex-wrap:wrap}
+  .stats span{background:rgba(255,255,255,0.04);padding:6px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.06)}
+  .stats .num{color:#e2e2e8;font-weight:600}
+  .controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+  .search-box{flex:1;min-width:200px;padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e2e8;font-size:14px;outline:none;transition:border .2s}
+  .search-box:focus{border-color:#a78bfa}
+  .search-box::placeholder{color:#6b7280}
+  .filters{display:flex;gap:8px;flex-wrap:wrap}
+  .filter-btn{padding:6px 16px;border-radius:20px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:#9ca3af;cursor:pointer;font-size:13px;transition:all .2s}
+  .filter-btn:hover{border-color:#a78bfa;color:#e2e2e8}
+  .filter-btn.active{background:rgba(167,139,250,0.15);border-color:#a78bfa;color:#a78bfa}
+  .categories{margin-bottom:32px}
+  .cat-header{display:flex;align-items:center;gap:10px;margin-bottom:14px;margin-top:28px;cursor:pointer;user-select:none}
+  .cat-header:first-child{margin-top:0}
+  .cat-title{font-size:16px;font-weight:600;color:#e2e2e8}
+  .cat-badge{font-size:11px;padding:2px 10px;border-radius:12px;color:#fff;font-weight:500}
+  .cat-badge.wl{background:rgba(52,211,153,0.2);color:#34d399}
+  .cat-badge.daily{background:rgba(96,165,250,0.2);color:#60a5fa}
+  .cat-badge.quest{background:rgba(251,146,60,0.2);color:#fb923c}
+  .cat-badge.pending{background:rgba(250,204,21,0.2);color:#facc15}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.08);color:#9ca3af;font-weight:500;white-space:nowrap;cursor:pointer;user-select:none}
+  thead th:hover{color:#e2e2e8}
+  tbody tr{border-bottom:1px solid rgba(255,255,255,0.04);transition:background .15s}
+  tbody tr:hover{background:rgba(255,255,255,0.03)}
+  td{padding:10px 12px;vertical-align:middle;line-height:1.4}
+  .project-name{font-weight:600;color:#e2e2e8}
+  .status{font-size:12px;padding:2px 10px;border-radius:12px;display:inline-block;font-weight:500}
+  .status-ok{background:rgba(52,211,153,0.15);color:#34d399}
+  .status-warn{background:rgba(251,146,60,0.15);color:#fb923c}
+  .status-pending{background:rgba(250,204,21,0.15);color:#facc15}
+  .status-skip{background:rgba(239,68,68,0.15);color:#ef4444}
+  .wallet{font-family:'SF Mono',Monaco,monospace;font-size:11px;color:#9ca3af}
+  .toggle{cursor:pointer;font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:#9ca3af;transition:all .2s}
+  .toggle:hover{background:rgba(255,255,255,0.06)}
+  footer{text-align:center;padding:20px;color:#4b5563;font-size:12px;border-top:1px solid rgba(255,255,255,0.04);margin-top:auto}
+  @media(max-width:768px){
+    td,th{padding:8px 6px;font-size:12px}
+    .controls{flex-direction:column}
+    .stats{font-size:12px;gap:8px}
+    .wallet{font-size:10px}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>🌊 AYON drop tracker</h1>
+  <div class="stats" id="stats"></div>
+</header>
+<div class="controls">
+  <input class="search-box" id="search" placeholder="Search projects..." oninput="render()">
+  <div class="filters" id="filters"></div>
+</div>
+<div id="content"></div>
+</div>
+<footer>auto-updated · built by AYON</footer>
+<script>
+const CAT_ORDER=['🕐 Waitlist','🔄 Daily','🎯 Quest','⏳ Pending'];
+const CAT_BADGE={wl:'waitlist',daily:'daily',quest:'quest',pending:'pending'};
+const STATUS_MAP={'✅':'ok','⚠️':'warn','❌':'skip','⏳':'pending','🟢':'ok','🔴':'skip','🟡':'warn'};
+let raw='';
+let data=[];
+
+function parseMD(md){
+  const lines=md.split('\n');
+  let cats=[],curCat=null,projects=[],pending=[];
+  let inTable=false,inPending=false;
+  for(let l of lines){
+    if(l.startsWith('## ⏳ Pending')){inPending=true;continue}
+    if(l.startsWith('## 🚫 Skipped')){inPending=false;continue}
+    if(l.startsWith('## ')){
+      const m=l.match(/## (\S+)\s+(.+)/);
+      if(m){curCat=m[1]+' '+m[2];cats.push({emoji:m[1],name:curCat,idx:projects.length})}
+      continue;
+    }
+    if(inPending && l.startsWith('*')){pending.push(l.replace(/^\*\s*/,''));continue}
+    if(l.trim().startsWith('|---')){inTable=true;continue}
+    if(inTable && !l.trim()||l.startsWith('---')||l.startsWith('## ')){inTable=false;continue}
+    if(inTable){
+      const cells=l.split('|').map(c=>c.trim()).filter(c=>c);
+      if(cells.length>=6){
+        const nm=cells[1].replace(/\*\*/g,'');
+        const stCell=cells[cells.length-2];
+        const statusEmoji=(stCell.match(/[✅⚠️❌⏳🟢🔴🟡]/)||[''])[0];
+        const status=STATUS_MAP[statusEmoji]||'pending';
+        const walletCell=cells[3]||'';
+        projects.push({cat:curCat,name:nm,date:cells[2],wallet:walletCell,xFollow:cells[4],result:cells.slice(5).join(' '),status,statusEmoji});
+      }
+    }
+  }
+  return {cats,projects,pending};
+}
+
+function dedupCat(name){
+  if(name.includes('🕐'))return '🕐 Waitlist';
+  if(name.includes('🔄'))return '🔄 Daily';
+  if(name.includes('🎯'))return '🎯 Quest';
+  if(name.includes('⏳'))return '⏳ Pending';
+  return name;
+}
+
+function catBadge(category){
+  if(category.includes('🕐'))return 'wl';
+  if(category.includes('🔄'))return 'daily';
+  if(category.includes('🎯'))return 'quest';
+  if(category.includes('⏳'))return 'pending';
+  return 'wl';
+}
+
+let filter='all',search='';
+
+function render(){
+  search=(document.getElementById('search').value||'').toLowerCase();
+  let filtered=data.projects.filter(p=>{
+    if(filter!=='all' && catBadge(p.cat)!==filter)return false;
+    if(search && !p.name.toLowerCase().includes(search))return false;
+    return true;
+  });
+
+  // group by category
+  let groups={};
+  for(let p of filtered){
+    const c=dedupCat(p.cat);
+    if(!groups[c])groups[c]=[];
+    groups[c].push(p);
+  }
+
+  let html='';
+  for(let catName of CAT_ORDER){
+    const items=groups[catName]||[];
+    if(!items.length)continue;
+    const badge=catBadge(catName);
+    html+=`<div class="cat-header"><span class="cat-title">${catName}</span><span class="cat-badge ${badge}">${items.length}</span></div>`;
+    html+=`<table><thead><tr><th>Project</th><th>Date</th><th>Wallet</th><th>Status</th></tr></thead><tbody>`;
+    for(let p of items){
+      const stClass='status-'+p.status;
+      html+=`<tr><td class="project-name">${p.name}</td><td>${p.date}</td><td class="wallet">${p.wallet||'—'}</td><td><span class="status ${stClass}">${p.statusEmoji||'?'} ${shortResult(p.result)}</span></td></tr>`;
+    }
+    html+=`</tbody></table>`;
+  }
+
+  if(!filtered.length)html+=`<div style="text-align:center;padding:60px;color:#6b7280">✨ nothing here yet</div>`;
+  document.getElementById('content').innerHTML=html;
+  updateStats();
+}
+
+function shortResult(r){
+  if(!r)return '';
+  return r.length>45?r.slice(0,45)+'…':r;
+}
+
+function updateStats(){
+  const total=data.projects.length;
+  const ok=data.projects.filter(p=>p.status==='ok').length;
+  const warn=data.projects.filter(p=>p.status==='warn').length;
+  const pendingN=data.projects.filter(p=>p.status==='pending').length;
+  document.getElementById('stats').innerHTML=
+    `<span>total <span class="num">${total}</span></span><span>✅ ${ok}</span><span>⚠️ ${warn}</span><span>⏳ ${pendingN}</span>`;
+}
+
+function initFilter(){
+  const btns=[
+    {key:'all',label:'All'},
+    {key:'wl',label:'🕐 Waitlist'},
+    {key:'daily',label:'🔄 Daily'},
+    {key:'quest',label:'🎯 Quest'},
+    {key:'pending',label:'⏳ Pending'}
+  ];
+  let h='';
+  for(let b of btns){
+    h+=`<button class="filter-btn${b.key===filter?' active':''}" onclick="setFilter('${b.key}')">${b.label}</button>`;
+  }
+  document.getElementById('filters').innerHTML=h;
+}
+
+function setFilter(f){
+  filter=f;
+  initFilter();
+  render();
+}
+
+fetch('projects.md?t='+Date.now())
+  .then(r=>r.text())
+  .then(md=>{
+    raw=md;
+    data=parseMD(md);
+    initFilter();
+    render();
+  })
+  .catch(e=>{
+    document.getElementById('content').innerHTML=`<div style="text-align:center;padding:60px;color:#ef4444">⚠️ failed to load data</div>`;
+    console.error(e);
+  });
+</script>
+</body>
+</html>
