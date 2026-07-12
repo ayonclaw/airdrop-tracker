@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-11 | Total: 33 projects (+3 cron)
+> Last updated: 2026-07-12 | Total: 33 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -11,7 +11,7 @@
 | 4 | **GoBull World Cup** | Jul 03 | - | `@GoBull_AI` ✅ | Email verified, Bull Card claimed, 0 KP |
 | 5 | **Trench** | Jul 03 | - | `@trenches` ✅ | X OAuth + Follow quest, ref: `tren.ch/@osbornrdx` |
 | 6 | **Black Bullz** | Jul 03 | `5yw3KKc...76mG` (SOL) | `@BlackBullzNFT` ✅ | Follow + Like + RT + Reply w/ SOL done |
-| 7 | **Pear** | Jul 04 | - | `@tradeonpear` ✅ | 2,187 pts, #20,166 — daily cron @16:00 WIB |
+| 7 | **Pear** | Jul 04 | - | `@tradeonpear` ✅ | 2,574 pts, #42 — daily cron @16:00 WIB |
 | 8 | **Chesto.AI** | Jul 04 | - | `@osbornrdx` ✅ | 40 Karma, 3 tasks submitted, TG/X linked |
 | 9 | **OrvexHub** (REIGN) | Jul 04 | - | `@orvexhub` ✅ | 12 tasks done, 2,650 ORVX pending verify |
 | 10 | **Osero** | Jul 05 | - | `@osbornrdx` ✅ | Private beta — Typeform done, "You're on the list!" |
@@ -53,7 +53,6 @@
 
 ## ⏳ Pending
 *Radioactive Rascals — X tasks (Follow + LikeRT + Comment)*
-*Pear — daily streak + tasks verifying*
 *Chesto.AI — 3 tasks under review (24-48h)*
 *OrvexHub — 12 tasks pending API verification*
 *HEISTED — X post with card for approval*
