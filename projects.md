@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-12 | Total: 33 projects (+3 cron)
+> Last updated: 2026-07-12 | Total: 34 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -35,7 +35,7 @@
 | 28 | **TachyonFi** | Jul 11 | `airdrop_00` | `@_tachyonfi` ✅ | ⏳ Testnet perps on LitVM — ✅ Follow+Like+RT+LitecoinVM ✅ Wallet 0x8CCE…282D ⛔ Butuh zkLTC gas (faucet Vercel-blocked) |
 || 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base. ✅ Follow+Like+Repost+Reply [reply](https://x.com/osbornrdx/status/2075871990175719499) |
 || 30 | **BuilderFi** | Jul 11 | Privy embedded | — | ✅ Waitlist registered — email verified, referral `rogue-comet`. Ref: `0x6996…56A4` |
-
+|| 31 | **ASCII CATS** | Jul 12 | `airdrop_00` | `@ASCIIcats_` ✅ | ✅ All quests done + app submitted! Follow+Like+RT+Comment+Post. Prize draw for active cats =^.^= |
 ## 🔄 Daily — Auto Cron
 
 | # | Project | Date | Schedule | Reward | Status |
