@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-12 | Total: 34 projects (+3 cron)
+> Last updated: 2026-07-12 | Total: 35 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -36,6 +36,8 @@
 || 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base. ✅ Follow+Like+Repost+Reply [reply](https://x.com/osbornrdx/status/2075871990175719499) |
 || 30 | **BuilderFi** | Jul 11 | Privy embedded | — | ✅ Waitlist registered — email verified, referral `rogue-comet`. Ref: `0x6996…56A4` |
 || 31 | **ASCII CATS** | Jul 12 | `airdrop_00` | `@ASCIIcats_` ✅ | ✅ All quests done + app submitted! Follow+Like+RT+Comment+Post. Prize draw for active cats =^.^= |
+|| 32 | **Hoodilios** | Jul 12 | `airdrop_00` | `@Hoodilios` ✅ | ✅ Form submitted — "Spot claimed ✓". Follow+Like+RT+Comment+Quote done. 6,666 supply Robinhood PFP. [quote](https://x.com/osbornrdx/status/2076352769376801063) [reply](https://x.com/osbornrdx/status/2076352499045499236) |
+
 ## 🔄 Daily — Auto Cron
 
 | # | Project | Date | Schedule | Reward | Status |
