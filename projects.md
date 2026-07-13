@@ -40,6 +40,7 @@
 || 33 | **Robin Ape** | Jul 13 | `airdrop_00` | `@RobiinApe` ✅ | ✅ Spot Secured — client-side form, real follow + wallet `0x8CCE…282D` submitted via Apps Script. ⚠️ Robinhood-themed, akun promoter baru (Jul 2026) |
 || 34 | **RobinTown** | Jul 13 | — | `@osbornrdx` (X login) ✅ | ✅ All done — SocialFi friend.tech-style on Robinhood Chain. X connected + explore + engaged posts. Invite code `x21tR_Q`. My ref: `robintown.xyz/join?=hCt3_IY` (10 left) |
 || 35 | **RobinScribe** | Jul 13 | `airdrop_00` | `@osbornrdx` ✅ | ✅ Inscription spot #19211 reserved — invite `RSC-NFTUUB`, 4 signals cleared (client-side), EVM `0x8CCE…282D`. Mint 13.07 15:00 UTC. My ref: `RSC-D6T4KR` |
+|| 36 | **HoodLings** | Jul 13 | `airdrop_00` | `@hoodlingsHQ` ✅ | ✅ Application Cast — 5-step WL form (Follow→Like&Repost→EVM→Review→Submit). 8000 pixel NFT on Robinhood Chain. EVM `0x8CCE…282D` |
 
 ## 🔄 Daily — Auto Cron
 
