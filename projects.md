@@ -43,6 +43,9 @@
 || 36 | **HoodLings** | Jul 13 | `airdrop_00` | `@hoodlingsHQ` ✅ | ✅ Application Cast — 5-step WL form (Follow→Like&Repost→EVM→Review→Submit). 8000 pixel NFT on Robinhood Chain. EVM `0x8CCE…282D` |
 || 37 | **Rumor Waitlist** | Jul 13 | `airdrop_00` | `@tryrumor` ✅ | ✅ Wallet connected (SIWE) + X verified (@osbornrdx). ⚠️ Discord belum. Tier #Adopter (3348/7500). Referral: `sjdmvoq9`. 3,348 claimed, 7,500 slot. |
 || 38 | **ofHOOD** | Jul 13 | `airdrop_00` | `@ofH00D` ✅ | ✅ All done — Entry #55754. Flipper game bypassed via global JS func injection (levelComplete/completeTask). WL: Follow+Like+Repost+Comment all COMPLETED. Reply proof: x.com/osbornrdx/status/2076606734727270731. 5000 NFT on ROBINHOOD Chain, GTD+FCFS draw. |
+| 39 | **RocX** | Jul 13 | — | — | ✅ Email submitted — `{"ok":true}` via browserless Formspree POST (`formspree.io/f/xlgkpojg`). WordPress/Elementor site, no JS render needed. |
+| 40 | **The Hub (thehubcc.io)** | Jul 13 | — | — | ✅ "You're in." — invite code `HUBCNDXANPAU7` used, my referral code `HUBHJAWD447RD`. Email + X username (@osbornrdx) submitted. SocialFi on Canton. |
+| 41 | **KOR Protocol (id.korprotocol.io)** | Jul 13 | `0xA9fA...e02b` (Para) | — ✅ | ✅ Already on waitlist — wallet auto-connected (Para session dari KOR ID/Korus Music sebelumnya), "You're already on the waitlist! We'll email you when KOR ID is ready." |
 
 ## 🔄 Daily — Auto Cron
 
