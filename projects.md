@@ -42,6 +42,7 @@
 || 35 | **RobinScribe** | Jul 13 | `airdrop_00` | `@osbornrdx` ✅ | ✅ Inscription spot #19211 reserved — invite `RSC-NFTUUB`, 4 signals cleared (client-side), EVM `0x8CCE…282D`. Mint 13.07 15:00 UTC. My ref: `RSC-D6T4KR` |
 || 36 | **HoodLings** | Jul 13 | `airdrop_00` | `@hoodlingsHQ` ✅ | ✅ Application Cast — 5-step WL form (Follow→Like&Repost→EVM→Review→Submit). 8000 pixel NFT on Robinhood Chain. EVM `0x8CCE…282D` |
 || 37 | **Rumor Waitlist** | Jul 13 | `airdrop_00` | `@tryrumor` ✅ | ✅ Wallet connected (SIWE) + X verified (@osbornrdx). ⚠️ Discord belum. Tier #Adopter (3348/7500). Referral: `sjdmvoq9`. 3,348 claimed, 7,500 slot. |
+|| 38 | **ofHOOD** | Jul 13 | `airdrop_00` | `@ofH00D` ✅ | ✅ All done — Entry #55754. Flipper game bypassed via global JS func injection (levelComplete/completeTask). WL: Follow+Like+Repost+Comment all COMPLETED. Reply proof: x.com/osbornrdx/status/2076606734727270731. 5000 NFT on ROBINHOOD Chain, GTD+FCFS draw. |
 
 ## 🔄 Daily — Auto Cron
 
