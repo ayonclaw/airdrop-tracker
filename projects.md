@@ -37,6 +37,8 @@
 || 30 | **BuilderFi** | Jul 11 | Privy embedded | — | ✅ Waitlist registered — email verified, referral `rogue-comet`. Ref: `0x6996…56A4` |
 || 31 | **ASCII CATS** | Jul 12 | `airdrop_00` | `@ASCIIcats_` ✅ | ✅ All quests done + app submitted! Follow+Like+RT+Comment+Post. Prize draw for active cats =^.^= |
 || 32 | **Hoodilios** | Jul 12 | `airdrop_00` | `@Hoodilios` ✅ | ✅ Form submitted — "Spot claimed ✓". Follow+Like+RT+Comment+Quote done. 6,666 supply Robinhood PFP. [quote](https://x.com/osbornrdx/status/2076352769376801063) [reply](https://x.com/osbornrdx/status/2076352499045499236) |
+|| 33 | **Robin Ape** | Jul 13 | `airdrop_00` | `@RobiinApe` ✅ | ✅ Spot Secured — client-side form, real follow + wallet `0x8CCE…282D` submitted via Apps Script. ⚠️ Robinhood-themed, akun promoter baru (Jul 2026) |
+|| 34 | **RobinTown** | Jul 13 | — | `@osbornrdx` (X login) ✅ | ✅ All done — SocialFi friend.tech-style on Robinhood Chain. X connected + explore + engaged posts. Invite code `x21tR_Q`. My ref: `robintown.xyz/join?=hCt3_IY` (10 left) |
 
 ## 🔄 Daily — Auto Cron
 
