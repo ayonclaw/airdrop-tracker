@@ -46,6 +46,8 @@
 | 39 | **RocX** | Jul 13 | — | — | ✅ Email submitted — `{"ok":true}` via browserless Formspree POST (`formspree.io/f/xlgkpojg`). WordPress/Elementor site, no JS render needed. |
 | 40 | **The Hub (thehubcc.io)** | Jul 13 | — | — | ✅ "You're in." — invite code `HUBCNDXANPAU7` used, my referral code `HUBHJAWD447RD`. Email + X username (@osbornrdx) submitted. SocialFi on Canton. |
 | 41 | **KOR Protocol (id.korprotocol.io)** | Jul 13 | `0xA9fA...e02b` (Para) | — ✅ | ✅ Already on waitlist — wallet auto-connected (Para session dari KOR ID/Korus Music sebelumnya), "You're already on the waitlist! We'll email you when KOR ID is ready." |
+| 42 | **CatHood (cathood.app)** | Jul 13 | `airdrop_00` | `@CatHoodxyz` ✅ | ✅ All 3/3 tasks done — Follow (self-attest) + Like&Repost (real X action + attest) + Comment (real reply + attest). Wallet `0x8CCE…282D` submitted — "already registered" confirms success. 2,222 supply on OpenSea, mint Jul 15 17:00 UTC. Reply proof: [x.com/osbornrdx/status/2076639778666434649](https://x.com/osbornrdx/status/2076639778666434649) |
+| 43 | **Hoodilios (hoodilios.xyz)** | Jul 13 (re-confirmed, orig Jul 12) | `airdrop_00` | `@osbornrdx` | ✅ Re-claimed — vanilla JS global hijack (`claimPass()` direct call), POST ke Google Apps Script endpoint dengan wallet+handle. "Spot claimed ✓" confirmed. 6,666 PFP collection. |
 
 ## 🔄 Daily — Auto Cron
 
