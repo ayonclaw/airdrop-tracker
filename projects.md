@@ -55,6 +55,7 @@
 | # | Project | Date | Schedule | Reward | Status |
 |---|---------|------|----------|--------|--------|
 | 4 | **XREIGN Crown Season** | Jul 11 | `0 9 * * *` (16:00 WIB) | 5,109 $REIGN + Crown #1 | ✅ Crown Season I — House Crown AUTHORITY. Daily: tasks (×2 decree), wheel, signal, check-in. 27 days left |
+| 5 | **Awarizon Testnet** | Jul 14 | `0 9 * * *` (16:00 WIB) | $RIZ Airdrop | ✅ Node ELA-708788 active (Sepolia SIWE, wallet `airdrop_00`), 1,120 pts. X/Discord/Telegram VERIFIED (self-attest, username-based). Faucet needs Awarizon-native address (SS58 `5...`, not EVM `0x...`) — skipped, different chain identity. Missions empty (not live yet). Cron: `awarizon_daily.py` no_agent. |
 
 ## 🎯 Quest — Multi-step Platform
 
