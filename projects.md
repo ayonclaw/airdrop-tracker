@@ -50,6 +50,7 @@
 | 43 | **Hoodilios (hoodilios.xyz)** | Jul 13 (re-confirmed, orig Jul 12) | `airdrop_00` | `@osbornrdx` | ✅ Re-claimed — vanilla JS global hijack (`claimPass()` direct call), POST ke Google Apps Script endpoint dengan wallet+handle. "Spot claimed ✓" confirmed. 6,666 PFP collection. |
 || 44 | **Quip ($PHYS)** | Jul 14 | Solana (withdraw pending) | `@osbornrdx` ✅ | ⚠️ Social done, gameplay pending — Email OTP register (`airdropkarbiters@gmail.com`, Privy), CF Turnstile solved (sidecar $0). X `done:true` (Follow+Repost+Like server-verified). ⛔ Gauntlet (win 1 round vs bot ×3 games) + Play 3 games = manual skill-duel, Rey main sendiri. Withdraw butuh phone verify. Trade-to-earn physics duel on Solana. |
 || 45 | **RAETH** | Jul 15 | — | `@tradeRAETH` ✅ Follow+RT ✅ | ✅ All done — API `/api/waitlist` POST `{x_handle:"osbornrdx"}` → `{"success":true}`, boost tweet [2076691528328593878](https://x.com/tradeRAETH/status/2076691528328593878). Next.js no-captcha, bypass via direct API + CDP. Bet-on-what-happens-next prediction market, backed by EF. |
+| 46 | **Epicentral** | Jul 15 | — | — | ✅ Email submitted — `POST /api/waitlist` `{"email":"airdropkarbiters@gmail.com"}` → `{"ok":true}`. Solana options protocol devnet (v0.38.1-beta), backed by Solana + Siriusblack Capital. No captcha/wallet/X needed. |
 
 ## 🔄 Daily — Auto Cron
 
