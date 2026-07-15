@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-12 | Total: 35 projects (+3 cron)
+> Last updated: 2026-07-15 | Total: 49 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -52,7 +52,8 @@
 || 45 | **RAETH** | Jul 15 | — | `@tradeRAETH` ✅ Follow+RT ✅ | ✅ All done — API `/api/waitlist` POST `{x_handle:"osbornrdx"}` → `{"success":true}`, boost tweet [2076691528328593878](https://x.com/tradeRAETH/status/2076691528328593878). Next.js no-captcha, bypass via direct API + CDP. Bet-on-what-happens-next prediction market, backed by EF. |
 | 46 | **Epicentral** | Jul 15 | — | — | ✅ Email submitted — `POST /api/waitlist` `{"email":"airdropkarbiters@gmail.com"}` → `{"ok":true}`. Solana options protocol devnet (v0.38.1-beta), backed by Solana + Siriusblack Capital. No captcha/wallet/X needed. |
 | 47 | **Vlad Fun** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Wallet injected (ethers+EIP-6963) + X OAuth complete via cookie injection. Spot **#10395**, 10395 total waitlist. Ref: `VLAD-GDW58F`. 1 pt/sec forever. Backed by vlad.fun — "Take from the whales". |
-| 48 | **Cedomis** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `airdropkarbiters@gmail.com` ✅ | ✅ All done — Google OAuth (MCP chrome), wallet injected (MetaMask via EIP-6963), daily PCedo claimed (5 PCedo), 5 quests started (Closed modal direct). Google cookies saved ke `google_cookies.json`. Quests: Fixed Quest Mechanics, Split Quest Mechanics, Arena Test Drop, Discover Scription, Rewards & Participation. |
+|| 48 | **Cedomis** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `airdropkarbiters@gmail.com` ✅ | ✅ All done — Google OAuth (MCP chrome), wallet injected (MetaMask via EIP-6963), daily PCedo claimed (5 PCedo), 5 quests started (Closed modal direct). Google cookies saved ke `google_cookies.json`. Quests: Fixed Quest Mechanics, Split Quest Mechanics, Arena Test Drop, Discover Scription, Rewards & Participation. |
+|| 49 | **NESO** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Google Script POST `{"ok":true}`, React state bypass. 4 tasks: Follow+Like+Repost+Reply via CDP cookie injection. [Reply proof](https://x.com/osbornrdx/status/2077322080736231892). Graffiti NFT on Robinhood Chain. |
 
 ## 🔄 Daily — Auto Cron
 
