@@ -52,6 +52,7 @@
 || 45 | **RAETH** | Jul 15 | — | `@tradeRAETH` ✅ Follow+RT ✅ | ✅ All done — API `/api/waitlist` POST `{x_handle:"osbornrdx"}` → `{"success":true}`, boost tweet [2076691528328593878](https://x.com/tradeRAETH/status/2076691528328593878). Next.js no-captcha, bypass via direct API + CDP. Bet-on-what-happens-next prediction market, backed by EF. |
 | 46 | **Epicentral** | Jul 15 | — | — | ✅ Email submitted — `POST /api/waitlist` `{"email":"airdropkarbiters@gmail.com"}` → `{"ok":true}`. Solana options protocol devnet (v0.38.1-beta), backed by Solana + Siriusblack Capital. No captcha/wallet/X needed. |
 | 47 | **Vlad Fun** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Wallet injected (ethers+EIP-6963) + X OAuth complete via cookie injection. Spot **#10395**, 10395 total waitlist. Ref: `VLAD-GDW58F`. 1 pt/sec forever. Backed by vlad.fun — "Take from the whales". |
+| 48 | **Cedomis** | Jul 15 | ⚠️ belum | `airdropkarbiters@gmail.com` ✅ | ✅ Google OAuth signup done (MCP chrome, password baru). Dashboard: 5 PCedo claimed, 5 Available quests. Connect wallet + kerjain quests pending. Firebase auth via cedomis-v2.firebaseapp.com. Google cookies saved ke `google_cookies.json`. |
 
 ## 🔄 Daily — Auto Cron
 
