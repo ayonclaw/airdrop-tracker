@@ -54,6 +54,7 @@
 | 47 | **Vlad Fun** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Wallet injected (ethers+EIP-6963) + X OAuth complete via cookie injection. Spot **#10395**, 10395 total waitlist. Ref: `VLAD-GDW58F`. 1 pt/sec forever. Backed by vlad.fun — "Take from the whales". |
 || 48 | **Cedomis** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `airdropkarbiters@gmail.com` ✅ | ✅ All done — Google OAuth (MCP chrome), wallet injected (MetaMask via EIP-6963), daily PCedo claimed (5 PCedo), 5 quests started (Closed modal direct). Google cookies saved ke `google_cookies.json`. Quests: Fixed Quest Mechanics, Split Quest Mechanics, Arena Test Drop, Discover Scription, Rewards & Participation. |
 || 49 | **NESO** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Google Script POST `{"ok":true}`, React state bypass. 4 tasks: Follow+Like+Repost+Reply via CDP cookie injection. [Reply proof](https://x.com/osbornrdx/status/2077322080736231892). Graffiti NFT on Robinhood Chain. |
+| 50 | **Outlaws** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@playoutlaws` ✅ | ✅ Bounty **#0408** — OTL-0408-8CCE. Follow+Like+Repost+Reply all verified. [Reply](https://x.com/osbornrdx/status/2077418696033858018). MMO on Robinhood Chain. |
 
 ## 🔄 Daily — Auto Cron
 
