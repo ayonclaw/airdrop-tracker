@@ -20,7 +20,7 @@
 | 13 | **Conso.xyz** | Jul 06 | `airdrop_00` | `@osbornrdx` ✅ | Tally form submitted — Rewards+Whitelist updates |
 | 14 | **PumpCade** | Jul 06 | auto-wallet | `@pumpcade` ✅ | Faucet 20K claimed, POR vs ESP YES predicted |
 | 15 | **Quants AI** | Jul 06 | - | `@nftquants` ✅ | Tweet posted + ENTRY SUBMITTED — Discord pending |
-| 16 | **HEISTED** | Jul 08 | `5yw3KKc...76mG` (SOL/Phantom) | `@Heistedxyz` ⏳ | Crew #34103 Reydenim — Bank Heist, 5 invites, X post pending |
+|| 16 | **HEISTED** | Jul 08 | `5yw3KKc...76mG` (SOL/Phantom) | `@Heistedxyz` ✅ | Crew #34103 Reydenim — Bank Heist, 5 invites, SOL dropped ✅ [reply](https://x.com/osbornrdx/status/2077413573484302587) |
 | 17 | **KOR ID** | Jul 09 | `0xA9fA...e02b` (Para) | — ✅ | Waitlist confirmed — Crossmint email OTP |
 | 18 | **Korus Music** | Jul 09 | `0xA9fA...e02b` (Para) | — ✅ | Waitlist confirmed — 7,799 pax |
 | 19 | **SatsTerminal** | Jul 09 | Privy Wallet | — | ✅ Waitlist + Login — 9 social tasks (45 pts) pending |
