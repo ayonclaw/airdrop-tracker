@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-16 | Total: 52 projects (+3 cron)
+> Last updated: 2026-07-16 | Total: 53 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -60,6 +60,7 @@
 | 53 | **BITFLXA** | Jul 15 | TON `EQCpETu4...98bv` | — | ✅ WL #1952 — Decentralized payments beta. TON wallet created. |
 | 54 | **Friggles** | Jul 16 | `airdrop_00` | `@frigglesxyz` ✅ | ✅ All done — Follow (already), Like, Quote (`x.com/osbornrdx/status/2077646872458801413`), Tag 3 frens (x.com/osbornrdx/status/2077647694622044480). Form submitted via API → `{"ok":true}`. Total entries: 10,166. NFTs on Raydium. |
 | 55 | **Koto Trade** | Jul 16 | Google OAuth | @kototrade ✅ | ✅ Updated — 4/4 tasks complete. All lootboxes already claimed from earlier session. Google OAuth via cookie injection. Referral: `oxrxxndt`. 0 referrals. |
+| 57 | **TrendBtc** | Jul 16 | X OAuth | @trend_btc_app ✅ | ✅ Register X + SOL `5yw3KKc...76mG` saved + Free Box opened. Tasks: 0/3 (Follow done, Like+RT need fresh X auth). Tasks reward: +250 $TREND total. |
 | 56 | **Deep Sea** | Jul 16 | Google OAuth | @Deepseaio_ ✅ | ✅ S2 live. Register + ref `foQ39qfc7D` + daily check-in Day 1 done. 1,000 pts. Rank #10000+. Quests "No data" — no tasks yet. Referral active. |
 
 ## 🔄 Daily — Auto Cron
