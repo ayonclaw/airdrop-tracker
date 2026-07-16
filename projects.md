@@ -57,6 +57,7 @@
 | 50 | **Outlaws** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@playoutlaws` ✅ | ✅ Bounty **#0408** — OTL-0408-8CCE. Follow+Like+Repost+Reply all verified. [Reply](https://x.com/osbornrdx/status/2077418696033858018). MMO on Robinhood Chain. |
 | 51 | **ERN Protocol** | Jul 15 | Google OAuth | `@live2ern` | ✅ Dashboard active — `airdropkarbiters@gmail.com`, cookie inject bypass. Live-to-Earn, $790B TAM. |
 | 52 | **Pixel Operators** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@pixel_operators` ✅ | ✅ WL submitted — Follow+Like+Repost+Comment done. [Reply](https://x.com/osbornrdx/status/2077620042590806119). 5,555 NFT on Robinhood Chain. |
+| 53 | **BITFLXA** | Jul 15 | TON `EQCpETu4...98bv` | — | ✅ WL #1952 — Decentralized payments beta. TON wallet created. |
 
 ## 🔄 Daily — Auto Cron
 
