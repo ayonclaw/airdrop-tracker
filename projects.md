@@ -9,7 +9,7 @@
 | 2 | **The Inventory NFT** | Jul 02 | `airdrop_00` | `@theinventorynft` ✅ | Follow + LikeRT + Comment done |
 | 3 | **Radioactive Rascals** | Jul 03 | `airdrop_00` | `@radrascalsART` ⚠️ | App #18,532 — X tasks pending |
 | 4 | **GoBull World Cup** | Jul 03 | - | `@GoBull_AI` ✅ | Email verified, Bull Card claimed, 0 KP |
-| 5 | **Trench** | Jul 03 | - | `@trenches` ✅ | X OAuth + Follow quest, ref: `tren.ch/@osbornrdx` |
+| 5 | **Trench** | Jul 03 | - | `@trenches` ✅ | X OAuth + Follow quest, 1⭐, comment tweet for 10⭐, ref: `tren.ch/@osbornrdx` |
 | 6 | **Black Bullz** | Jul 03 | `5yw3KKc...76mG` (SOL) | `@BlackBullzNFT` ✅ | Follow + Like + RT + Reply w/ SOL done |
 | 7 | **Pear** | Jul 04 | - | `@tradeonpear` ✅ | 2,574 pts, #42 — daily cron @16:00 WIB |
 | 8 | **Chesto.AI** | Jul 04 | - | `@osbornrdx` ✅ | 40 Karma, 3 tasks submitted, TG/X linked |
