@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-16 | Total: 55 projects (+3 cron)
+> Last updated: 2026-07-16 | Total: 56 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -60,6 +60,7 @@
 | 53 | **BITFLXA** | Jul 15 | TON `EQCpETu4...98bv` | — | ✅ WL #1952 — Decentralized payments beta. TON wallet created. |
 | 54 | **Friggles** | Jul 16 | `airdrop_00` | `@frigglesxyz` ✅ | ✅ All done — Follow (already), Like, Quote (`x.com/osbornrdx/status/2077646872458801413`), Tag 3 frens (x.com/osbornrdx/status/2077647694622044480). Form submitted via API → `{"ok":true}`. Total entries: 10,166. NFTs on Raydium. |
 | 55 | **Koto Trade** | Jul 16 | Google OAuth | @kototrade ✅ | ✅ Updated — 4/4 tasks complete. All lootboxes already claimed from earlier session. Google OAuth via cookie injection. Referral: `oxrxxndt`. 0 referrals. |
+| 60 | **Pvewin** | Jul 17 | SOL `5yw3KKc...` | @pvewin ✅ | ✅ SSR analyzed. 5 tasks: Follow @pvewin (+200), Quote+Reply (+500), Submit X handle (+500), Join waitlist (+100), Referral connect. Countdown: 10d. Privy/Solana app. Client-side SPA. |
 | 59 | **StripChain** | Jul 16 | EVM `airdrop_00` + SOL main | @StripChain ✅ | ⚠️ Multi-chain testnet — needs wallet extension (MetaMask/Phantom). EVM/SOL/APT/ALGO/XLM. Flow: connect → get testnet addresses → claim tokens → mint synthetic → bridge → convert → repeat. PK available. Recommended: CloakBrowser. |
 | 58 | **Slobos** | Jul 16 | SOL `5yw3KKc...76mG` (main) | @Slobos_ ✅ | ✅ Wallet main. X tasks done (Follow+Like+RT). Need browser wallet connect. React SPA roulette. /api/tasks found. |
 | 57 | **TrendBtc** | Jul 16 | X OAuth | @trend_btc_app ✅ | ✅ Register X + SOL saved + Free Box opened. Follow ✅ + Like ✅ + RT ✅ (both tweets). Tasks 0/3 — platform doesn't auto-verify. +250 $TREND reward. |
