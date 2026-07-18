@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-16 | Total: 56 projects (+3 cron)
+> Last updated: 2026-07-18 | Total: 58 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -64,7 +64,9 @@
 | 59 | **StripChain** | Jul 16 | EVM `airdrop_00` + SOL main | @StripChain ✅ | ⚠️ Multi-chain testnet — needs wallet extension (MetaMask/Phantom). EVM/SOL/APT/ALGO/XLM. Flow: connect → get testnet addresses → claim tokens → mint synthetic → bridge → convert → repeat. PK available. Recommended: CloakBrowser. |
 | 58 | **Slobos** | Jul 16 | SOL `5yw3KKc...76mG` (main) | @Slobos_ ✅ | ✅ Wallet main. X tasks done (Follow+Like+RT). Need browser wallet connect. React SPA roulette. /api/tasks found. |
 | 57 | **TrendBtc** | Jul 16 | X OAuth | @trend_btc_app ✅ | ✅ Register X + SOL saved + Free Box opened. Follow ✅ + Like ✅ + RT ✅ (both tweets). Tasks 0/3 — platform doesn't auto-verify. +250 $TREND reward. |
-| 56 | **Deep Sea** | Jul 16 | Google OAuth | @Deepseaio_ ✅ | ✅ S2 live. Register + ref `foQ39qfc7D` + daily check-in Day 1 done. 1,000 pts. Rank #10000+. Quests "No data" — no tasks yet. Referral active. |
+|| 56 | **Deep Sea** | Jul 16 | Google OAuth | @Deepseaio_ ✅ | ✅ S2 live. Register + ref `foQ39qfc7D` + daily check-in Day 1 done. 1,000 pts. Rank #10000+. Quests "No data" — no tasks yet. Referral active. |
+|| 61 | **CasterAgent** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@creatoragent_` ✅ + `@ThoLynceus` ✅ | ✅ $1,000 USDT airdrop — wallet submitted via AI chatbot. All tasks: follow @creatoragent_ + @ThoLynceus, "I followed both" verified. Say "airdrop" at creatoragent.fun to start. 20 random winners. |
+|| 62 | **Index Bag (Robinhood)** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@IndexBagfun` ✅ | ✅ Registered — Tweet posted [x.com/osbornrdx/status/2078352638887035043](https://x.com/osbornrdx/status/2078352638887035043), Turnstile solved via solver sidecar. Form: email + wallet + X link + Turnstile ("JOIN THE RESISTANCE"). Earning +10 pts join + 1 pt/recruit. Robinhood Chain memes index. |
 
 ## 🔄 Daily — Auto Cron
 
@@ -96,9 +98,9 @@
 ---
 
 ### 🏦 Wallet Usage
-| Wallet ID | Address | Projects |
-|-----------|---------|----------|
-| `airdrop_00` | `0x8CCE...282D` | Senpi, Inventory NFT, Rascals, Forecast, BAKEMONO, Robidy |
+|| Wallet ID | Address | Projects |
+||-----------|---------|----------|
+|| `airdrop_00` | `0x8CCE...282D` | Senpi, Inventory NFT, Rascals, Forecast, BAKEMONO, Robidy, CasterAgent, IndexBag |
 | `airdrop_01` | `0x50d1...D19b` | - |
 | `airdrop_02`–`09` | *8 wallets* | *available* |
 | `0xA9fA...e02b` (Para/Smart) | Crossmint auto | KOR ID, Korus Music |
