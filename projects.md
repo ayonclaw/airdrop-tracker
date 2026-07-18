@@ -67,6 +67,9 @@
 || 56 | **Deep Sea** | Jul 16 | Google OAuth | @Deepseaio_ ✅ | ✅ S2 live. Register + ref `foQ39qfc7D` + daily check-in Day 1 done. 1,000 pts. Rank #10000+. Quests "No data" — no tasks yet. Referral active. |
 || 61 | **CasterAgent** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@creatoragent_` ✅ + `@ThoLynceus` ✅ | ✅ $1,000 USDT airdrop — wallet submitted via AI chatbot. All tasks: follow @creatoragent_ + @ThoLynceus, "I followed both" verified. Say "airdrop" at creatoragent.fun to start. 20 random winners. |
 || 62 | **Index Bag (Robinhood)** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@IndexBagfun` ✅ | ✅ Registered — Tweet posted [x.com/osbornrdx/status/2078352638887035043](https://x.com/osbornrdx/status/2078352638887035043), Turnstile solved via solver sidecar. Form: email + wallet + X link + Turnstile ("JOIN THE RESISTANCE"). Earning +10 pts join + 1 pt/recruit. Robinhood Chain memes index. |
+| 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done (Follow+Repost+Like+Comment+NT). Supply: 6,666 on ARC chain. Via `architectsarc.xyz`. |
+| 64 | **KieDex Daily Quiz** | Jul 18 | `0x8CCE...282D` (Base) | — | ✅ Quiz answered — ROT13: `BULLMARKET`, 15 KDX reward. Streak 1/7. KDX: 210.18. Via `kiedex.app/daily-quiz`. |
+| 65 | **TrendBTC** | Jul 18 | X OAuth | `@trend_btc_app` ✅ | ✅ Registered — `osborn_3902` (email: trendbtc_1784383902@gmail.com). X connected. Dashboard pending (API unstable). Predictions platform, $TREND pre-TGE. |
 
 ## 🔄 Daily — Auto Cron
 
