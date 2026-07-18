@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-19 | Total: 71 projects (+3 cron)
+> Last updated: 2026-07-18 | Total: 65 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -70,15 +70,6 @@
 | 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done. Supply: 6,666 on ARC. Via `architectsarc.xyz`. |
 | 64 | **HUDI (Robinhood)** | Jul 18 | `0x8CCE...282D` | `@HudiNFT` ✅ | ✅ HUD-4889 — Follow+Repost+Tag 2 frens done. Card forged. Supply: 10,000. Via `hudinft.xyz/apply`. |
 | 65 | **GARC on ARC** | Jul 18 | `0x8CCE...282D` | `@GarcOnArc` ✅ | ✅ Waitlist submitted — X @osbornrdx, tasks self-attested. DEX on ARC Mainnet, fair launch. Via `garconarc.fun`. |
-| 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ✅ | ✅ X CONNECTED @osbornrdx — Role: Cat, Rank #733. Follow task pending server verify. Ref code: `205e5e7d`. Via `catbathatfatrat.com`. |
-| 67 | **Unemploye Arc** | Jul 18 | `0x8CCE...282D` | — | ✅ Waitlist submitted — Knock door + Like/Repost/Comment on [tweet](https://x.com/unemployeeonarc/status/2078426396435603875). Comment: "Being unemployee is beautiful". Via `unemployeearc.xyz`. |
-| 68 | **NICEHOOD** | Jul 18 | `0x8CCE...282D` | `@NicehoodFun` ✅ | ✅ PT Alumni Pass claimed — X @osbornrdx, Like+Repost+Comment on [tweet](https://x.com/post_fi/status/2078150013881037034). Ref: `43624aa3d9`. Via `nicehood.com`. |
-| 69 | **WoodTown** | Jul 18 | SOL `5yw3K...76mG` | `@WoodTowns` ✅ | ✅ Early Access — Quote+Like+Reply on [tweet](https://x.com/WoodTowns/status/2078486492255580440). Permit #9296. Via `woodtown.fun`. |
-| 70 | **TartSwap** | Jul 19 | BSC Testnet | — | ✅ pUSDT CLAIMED: 10,000 pUSDT via web3.py direct contract call. Tx: [`0x7c840efb...093`](https://testnet.bscscan.com/tx/0x7c840efb069a9a02c6980db1fccf2c4bfb5f04f3e0e7844c43beb211b8d40193). EVM: `0x8CCE...282D`. ⚠️ Arena stake pending — needs MM or ABI decode. Via `tartswap.com/games`. |
-| 71 | **REIGN** | Jul 19 | — | `@xreign_app` ✅ | ✅ X OAuth @osbornrdx → 7,762 $REIGN + 19.25 USDT (won 5 USDT wheel). 9/13 tasks. ⏳ TrendBTC verifying 15min. XREIGN post ✅. X cookies fixed. Via `xreign.app`. |
-| 72 | **Cite Chain** | Jul 19 | — | DeSci, Polygon | ✅ Waitlist: `airdropkarbiters@gmail.com`. "You are on the list." Via `citechain.org`. |
-| 73 | **Arclings** | Jul 19 | `0x8CCE...282D` | `@ArclingsNFT` ✅ | ✅ WL confirmed — Dither style. X: @osbornrdx, Like+Repost [pinned](https://x.com/ArclingsNFT/status/2078833541501080063), Discord joined. Shared on [X](https://x.com/intent/post?text=I%20just%20confirmed%20my%20whitelisted%20checkpoint). Via `arclings.art`. |
-| 74 | **Subject Zero** | Jul 19 | `0x8CCE...282D` | `@subjct_0` ✅ | ✅ WL submitted — X: @osbornrdx, Follow+Like+RT ✅, Quote [zero @petsreid_ @JackTtexas](https://x.com/osbornrdx/status/2079099172914172034) ✅. API: `{"ok":true}`. Robinhood Chain. Via `subjct0.xyz`. |
 
 ## 🔄 Daily — Auto Cron
 
