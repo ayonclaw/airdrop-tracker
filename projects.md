@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-18 | Total: 58 projects (+3 cron)
+> Last updated: 2026-07-18 | Total: 63 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -9,7 +9,7 @@
 | 2 | **The Inventory NFT** | Jul 02 | `airdrop_00` | `@theinventorynft` ✅ | Follow + LikeRT + Comment done |
 | 3 | **Radioactive Rascals** | Jul 03 | `airdrop_00` | `@radrascalsART` ⚠️ | App #18,532 — X tasks pending |
 | 4 | **GoBull World Cup** | Jul 03 | - | `@GoBull_AI` ✅ | Email verified, Bull Card claimed, 0 KP |
-| 5 | **Trench** | Jul 03 | - | `@trenches` ✅ | X OAuth + Follow quest, 1⭐, comment tweet for 10⭐, ref: `tren.ch/@osbornrdx` |
+| 5 | **Trench** | Jul 03 | - | `@trenches` ✅ | X OAuth + Follow quest, 1⭐, ref: `tren.ch/@osbornrdx` |
 | 6 | **Black Bullz** | Jul 03 | `5yw3KKc...76mG` (SOL) | `@BlackBullzNFT` ✅ | Follow + Like + RT + Reply w/ SOL done |
 | 7 | **Pear** | Jul 04 | - | `@tradeonpear` ✅ | 2,574 pts, #42 — daily cron @16:00 WIB |
 | 8 | **Chesto.AI** | Jul 04 | - | `@osbornrdx` ✅ | 40 Karma, 3 tasks submitted, TG/X linked |
@@ -20,90 +20,95 @@
 | 13 | **Conso.xyz** | Jul 06 | `airdrop_00` | `@osbornrdx` ✅ | Tally form submitted — Rewards+Whitelist updates |
 | 14 | **PumpCade** | Jul 06 | auto-wallet | `@pumpcade` ✅ | Faucet 20K claimed, POR vs ESP YES predicted |
 | 15 | **Quants AI** | Jul 06 | - | `@nftquants` ✅ | Tweet posted + ENTRY SUBMITTED — Discord pending |
-|| 16 | **HEISTED** | Jul 08 | `5yw3KKc...76mG` (SOL/Phantom) | `@Heistedxyz` ✅ | Crew #34103 Reydenim — Bank Heist, 5 invites, SOL dropped ✅ [reply](https://x.com/osbornrdx/status/2077413573484302587) |
+| 16 | **HEISTED** | Jul 08 | `5yw3KKc...76mG` (SOL/Phantom) | `@Heistedxyz` ✅ | Crew #34103 Reydenim — Bank Heist, 5 invites, SOL dropped ✅ [reply](https://x.com/osbornrdx/status/2077413573484302587) |
 | 17 | **KOR ID** | Jul 09 | `0xA9fA...e02b` (Para) | — ✅ | Waitlist confirmed — Crossmint email OTP |
 | 18 | **Korus Music** | Jul 09 | `0xA9fA...e02b` (Para) | — ✅ | Waitlist confirmed — 7,799 pax |
 | 19 | **SatsTerminal** | Jul 09 | Privy Wallet | — | ✅ Waitlist + Login — 9 social tasks (45 pts) pending |
 | 20 | **Robidy** | Jul 09 | `airdrop_00` | `@robidyapp` ✅ | Pass #25838 RBDY-25838 — Robinhood Chain EAP ✅ browserless |
 | 21 | **Gravelin** | Jul 09 | `airdrop_00` | `@gravelin_club` ✅ | Puzzle solved, EVM submitted ✅ MCP bypass |
 | 22 | **Robidy (mint reply)** | Jul 10 | `airdrop_00` | `@robidyapp` ✅ | Last-chance EVM reply — `0x8CCE...282D` → [tweet](https://x.com/osbornrdx/status/2075521893046919465) |
-| 23 | **Goldfish X Post Challenge** | Jul 10 | — | — | ✅ Form submitted — DC `watkinsxoxo`/`764807327752650753`, [tweet](https://x.com/osbornrdx/status/2075619146294059212) |
+| 23 | **Goldfish X Post Challenge** | Jul 10 | — | — | ✅ Form submitted — DC `watkinsxoxo`, [tweet](https://x.com/osbornrdx/status/2075619146294059212) |
 | 24 | **CoinBooking** | Jul 10 | — | — | ✅ Email submitted — airdropkarbiters@gmail.com "Subscribed" |
 | 25 | **Seedbound** | Jul 10 | — | — | ⏳ Offline server — cron watcher ready |
-| 26 | **Nutsy (Robinhood)** | Jul 10 | `airdrop_00` | `@NutsyNFTs` ✅ | ✅ All tasks + EVM submitted — Follow+RT+Reply [proof](https://x.com/osbornrdx/status/2075805981775483334) |
+| 26 | **Nutsy (Robinhood)** | Jul 10 | `airdrop_00` | `@NutsyNFTs` ✅ | ✅ All tasks + EVM submitted — [proof](https://x.com/osbornrdx/status/2075805981775483334) |
 | 27 | **Wisp** | Jul 10 | — | — | ✅ Email submitted — "You're on the list!" — usewisp.io |
-| 28 | **TachyonFi** | Jul 11 | `airdrop_00` | `@_tachyonfi` ✅ | ⏳ Testnet perps on LitVM — ✅ Follow+Like+RT+LitecoinVM ✅ Wallet 0x8CCE…282D ⛔ Butuh zkLTC gas (faucet Vercel-blocked) |
-|| 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base. ✅ Follow+Like+Repost+Reply [reply](https://x.com/osbornrdx/status/2075871990175719499) |
-|| 30 | **BuilderFi** | Jul 11 | Privy embedded | — | ✅ Waitlist registered — email verified, referral `rogue-comet`. Ref: `0x6996…56A4` |
-|| 31 | **ASCII CATS** | Jul 12 | `airdrop_00` | `@ASCIIcats_` ✅ | ✅ All quests done + app submitted! Follow+Like+RT+Comment+Post. Prize draw for active cats =^.^= |
-|| 32 | **Hoodilios** | Jul 12 | `airdrop_00` | `@Hoodilios` ✅ | ✅ Form submitted — "Spot claimed ✓". Follow+Like+RT+Comment+Quote done. 6,666 supply Robinhood PFP. [quote](https://x.com/osbornrdx/status/2076352769376801063) [reply](https://x.com/osbornrdx/status/2076352499045499236) |
-|| 33 | **Robin Ape** | Jul 13 | `airdrop_00` | `@RobiinApe` ✅ | ✅ WL secured; registration closed. Mint: Jul 14, 13:00 UTC (20:00 WIB), supply 3,333, price 0.00055 ETH. ⏳ Waiting official checker/mint link; reminder set 12:50 UTC. Wallet `0x8CCE…282D`. |
-|| 34 | **RobinTown** | Jul 13 | — | `@osbornrdx` (X login) ✅ | ✅ All done — SocialFi friend.tech-style on Robinhood Chain. X connected + explore + engaged posts. Invite code `x21tR_Q`. My ref: `robintown.xyz/join?=hCt3_IY` (10 left) |
-|| 35 | **RobinScribe** | Jul 13 | `airdrop_00` | `@osbornrdx` ✅ | ✅ Inscription spot #19211 reserved — invite `RSC-NFTUUB`, 4 signals cleared (client-side), EVM `0x8CCE…282D`. Mint 13.07 15:00 UTC. My ref: `RSC-D6T4KR` |
-|| 36 | **HoodLings** | Jul 13 | `airdrop_00` | `@hoodlingsHQ` ✅ | ✅ Application Cast — 5-step WL form (Follow→Like&Repost→EVM→Review→Submit). 8000 pixel NFT on Robinhood Chain. EVM `0x8CCE…282D` |
-|| 37 | **Rumor Waitlist** | Jul 13 | `airdrop_00` | `@tryrumor` ✅ | ✅ Wallet connected (SIWE) + X verified (@osbornrdx). ⚠️ Discord belum. Tier #Adopter (3348/7500). Referral: `sjdmvoq9`. 3,348 claimed, 7,500 slot. |
-|| 38 | **ofHOOD** | Jul 13 | `airdrop_00` | `@ofH00D` ✅ | ✅ All done — Entry #55754. Flipper game bypassed via global JS func injection (levelComplete/completeTask). WL: Follow+Like+Repost+Comment all COMPLETED. Reply proof: x.com/osbornrdx/status/2076606734727270731. 5000 NFT on ROBINHOOD Chain, GTD+FCFS draw. |
-| 39 | **RocX** | Jul 13 | — | — | ✅ Email submitted — `{"ok":true}` via browserless Formspree POST (`formspree.io/f/xlgkpojg`). WordPress/Elementor site, no JS render needed. |
-| 40 | **The Hub (thehubcc.io)** | Jul 13 | — | — | ✅ "You're in." — invite code `HUBCNDXANPAU7` used, my referral code `HUBHJAWD447RD`. Email + X username (@osbornrdx) submitted. SocialFi on Canton. |
-| 41 | **KOR Protocol (id.korprotocol.io)** | Jul 13 | `0xA9fA...e02b` (Para) | — ✅ | ✅ Already on waitlist — wallet auto-connected (Para session dari KOR ID/Korus Music sebelumnya), "You're already on the waitlist! We'll email you when KOR ID is ready." |
-| 42 | **CatHood (cathood.app)** | Jul 13 | `airdrop_00` | `@CatHoodxyz` ✅ | ✅ All 3/3 tasks done — Follow (self-attest) + Like&Repost (real X action + attest) + Comment (real reply + attest). Wallet `0x8CCE…282D` submitted — "already registered" confirms success. 2,222 supply on OpenSea, mint Jul 15 17:00 UTC. Reply proof: [x.com/osbornrdx/status/2076639778666434649](https://x.com/osbornrdx/status/2076639778666434649) |
-| 43 | **Hoodilios (hoodilios.xyz)** | Jul 13 (re-confirmed, orig Jul 12) | `airdrop_00` | `@osbornrdx` | ✅ Re-claimed — vanilla JS global hijack (`claimPass()` direct call), POST ke Google Apps Script endpoint dengan wallet+handle. "Spot claimed ✓" confirmed. 6,666 PFP collection. |
-|| 44 | **Quip ($PHYS)** | Jul 14 | Solana (withdraw pending) | `@osbornrdx` ✅ | ⚠️ Social done, gameplay pending — Email OTP register (`airdropkarbiters@gmail.com`, Privy), CF Turnstile solved (sidecar $0). X `done:true` (Follow+Repost+Like server-verified). ⛔ Gauntlet (win 1 round vs bot ×3 games) + Play 3 games = manual skill-duel, Rey main sendiri. Withdraw butuh phone verify. Trade-to-earn physics duel on Solana. |
-|| 45 | **RAETH** | Jul 15 | — | `@tradeRAETH` ✅ Follow+RT ✅ | ✅ All done — API `/api/waitlist` POST `{x_handle:"osbornrdx"}` → `{"success":true}`, boost tweet [2076691528328593878](https://x.com/tradeRAETH/status/2076691528328593878). Next.js no-captcha, bypass via direct API + CDP. Bet-on-what-happens-next prediction market, backed by EF. |
-| 46 | **Epicentral** | Jul 15 | — | — | ✅ Email submitted — `POST /api/waitlist` `{"email":"airdropkarbiters@gmail.com"}` → `{"ok":true}`. Solana options protocol devnet (v0.38.1-beta), backed by Solana + Siriusblack Capital. No captcha/wallet/X needed. |
-| 47 | **Vlad Fun** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Wallet injected (ethers+EIP-6963) + X OAuth complete via cookie injection. Spot **#10395**, 10395 total waitlist. Ref: `VLAD-GDW58F`. 1 pt/sec forever. Backed by vlad.fun — "Take from the whales". |
-|| 48 | **Cedomis** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `airdropkarbiters@gmail.com` ✅ | ✅ All done — Google OAuth (MCP chrome), wallet injected (MetaMask via EIP-6963), daily PCedo claimed (5 PCedo), 5 quests started (Closed modal direct). Google cookies saved ke `google_cookies.json`. Quests: Fixed Quest Mechanics, Split Quest Mechanics, Arena Test Drop, Discover Scription, Rewards & Participation. |
-|| 49 | **NESO** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ All done — Google Script POST `{"ok":true}`, React state bypass. 4 tasks: Follow+Like+Repost+Reply via CDP cookie injection. [Reply proof](https://x.com/osbornrdx/status/2077322080736231892). Graffiti NFT on Robinhood Chain. |
-| 50 | **Outlaws** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@playoutlaws` ✅ | ✅ Bounty **#0408** — OTL-0408-8CCE. Follow+Like+Repost+Reply all verified. [Reply](https://x.com/osbornrdx/status/2077418696033858018). MMO on Robinhood Chain. |
-| 51 | **ERN Protocol** | Jul 15 | Google OAuth | `@live2ern` | ✅ Dashboard active — `airdropkarbiters@gmail.com`, cookie inject bypass. Live-to-Earn, $790B TAM. |
-| 52 | **Pixel Operators** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@pixel_operators` ✅ | ✅ WL submitted — Follow+Like+Repost+Comment done. [Reply](https://x.com/osbornrdx/status/2077620042590806119). 5,555 NFT on Robinhood Chain. |
+| 28 | **TachyonFi** | Jul 11 | `airdrop_00` | `@_tachyonfi` ✅ | ⏳ Testnet perps on LitVM — ✅ Follow+Like+RT+LitecoinVM ✅ Wallet ⛔ Butuh zkLTC gas |
+| 29 | **Claudinals** | Jul 11 | `airdrop_00` | `@claudinals` ✅ | Spot #57,354 — B20 inscription protocol on Base ✅ All done [reply](https://x.com/osbornrdx/status/2075871990175719499) |
+| 30 | **BuilderFi** | Jul 11 | Privy embedded | — | ✅ Waitlist registered — email verified, referral `rogue-comet`. Ref: `0x6996…56A4` |
+| 31 | **ASCII CATS** | Jul 12 | `airdrop_00` | `@ASCIIcats_` ✅ | ✅ All quests done + app submitted! Prize draw for active cats =^.^= |
+| 32 | **Hoodilios** | Jul 12 | `airdrop_00` | `@Hoodilios` ✅ | ✅ Form submitted — "Spot claimed ✓". 6,666 supply Robinhood PFP. [quote](https://x.com/osbornrdx/status/2076352769376801063) |
+| 33 | **Robin Ape** | Jul 13 | `airdrop_00` | `@RobiinApe` ✅ | ✅ WL secured; registration closed. Mint Jul 14. Supply 3,333. Wallet `0x8CCE…282D`. |
+| 34 | **RobinTown** | Jul 13 | — | `@osbornrdx` (X login) ✅ | ✅ All done — SocialFi friend.tech-style on Robinhood Chain. Invite `x21tR_Q`. Ref: `robintown.xyz/join?=hCt3_IY` |
+| 35 | **RobinScribe** | Jul 13 | `airdrop_00` | `@osbornrdx` ✅ | ✅ Inscription spot #19211 — invite `RSC-NFTUUB`. EVM `0x8CCE…282D`. Ref: `RSC-D6T4KR` |
+| 36 | **HoodLings** | Jul 13 | `airdrop_00` | `@hoodlingsHQ` ✅ | ✅ Application Cast — 5-step WL form. 8000 pixel NFT on Robinhood Chain. |
+| 37 | **Rumor Waitlist** | Jul 13 | `airdrop_00` | `@tryrumor` ✅ | ✅ Wallet connected (SIWE) + X verified. ⚠️ Discord. Tier #Adopter (3348/7500). Ref: `sjdmvoq9`. |
+| 38 | **ofHOOD** | Jul 13 | `airdrop_00` | `@ofH00D` ✅ | ✅ Entry #55754. All tasks done via JS injection. 5000 NFT on ROBINHOOD Chain. [reply](https://x.com/osbornrdx/status/2076606734727270731) |
+| 39 | **RocX** | Jul 13 | — | — | ✅ Email submitted — `{"ok":true}` via Formspree. WordPress/Elementor, no JS render needed. |
+| 40 | **The Hub (thehubcc.io)** | Jul 13 | — | — | ✅ "You're in." — invite `HUBCNDXANPAU7`, ref `HUBHJAWD447RD`. SocialFi on Canton. |
+| 41 | **KOR Protocol (id.korprotocol.io)** | Jul 13 | `0xA9fA...e02b` (Para) | — ✅ | ✅ Already on waitlist — Para session carry-over from KOR ID/Korus Music. |
+| 42 | **CatHood (cathood.app)** | Jul 13 | `airdrop_00` | `@CatHoodxyz` ✅ | ✅ 3/3 tasks done. Wallet submitted. 2,222 supply on OpenSea. [reply](https://x.com/osbornrdx/status/2076639778666434649) |
+| 43 | **Hoodilios (hoodilios.xyz)** | Jul 13 | `airdrop_00` | `@osbornrdx` | ✅ Re-claimed — `claimPass()` direct call. "Spot claimed ✓". 6,666 PFP collection. |
+| 44 | **Quip ($PHYS)** | Jul 14 | Solana (withdraw pending) | `@osbornrdx` ✅ | ⚠️ Social done, gameplay pending. ⛔ Butuh manual skill-duel. Trade-to-earn physics duel on Solana. |
+| 45 | **RAETH** | Jul 15 | — | `@tradeRAETH` ✅ | ✅ All done — API `/api/waitlist` POST → `{"success":true}`. Prediction market backed by EF. |
+| 46 | **Epicentral** | Jul 15 | — | — | ✅ Email submitted — Solana options protocol devnet. Backed by Solana + Siriusblack Capital. |
+| 47 | **Vlad Fun** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ Spot **#10395**. Ref: `VLAD-GDW58F`. 1 pt/sec forever. Backed by vlad.fun. |
+| 48 | **Cedomis** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `airdropkarbiters@gmail.com` ✅ | ✅ Google OAuth + wallet injected. Daily PCedo claimed. 5 quests started. |
+| 49 | **NESO** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@osbornrdx` ✅ | ✅ Google Script POST `{"ok":true}`. 4 tasks done. Graffiti NFT on Robinhood Chain. [reply](https://x.com/osbornrdx/status/2077322080736231892) |
+| 50 | **Outlaws** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@playoutlaws` ✅ | ✅ Bounty **#0408** — OTL-0408-8CCE. All tasks verified. [reply](https://x.com/osbornrdx/status/2077418696033858018) |
+| 51 | **ERN Protocol** | Jul 15 | Google OAuth | `@live2ern` | ✅ Dashboard active — cookie inject bypass. Live-to-Earn, $790B TAM. |
+| 52 | **Pixel Operators** | Jul 15 | `airdrop_00` `0x8CCE...282D` | `@pixel_operators` ✅ | ✅ WL submitted — 5,555 NFT on Robinhood Chain. [reply](https://x.com/osbornrdx/status/2077620042590806119) |
 | 53 | **BITFLXA** | Jul 15 | TON `EQCpETu4...98bv` | — | ✅ WL #1952 — Decentralized payments beta. TON wallet created. |
-| 54 | **Friggles** | Jul 16 | `airdrop_00` | `@frigglesxyz` ✅ | ✅ All done — Follow (already), Like, Quote (`x.com/osbornrdx/status/2077646872458801413`), Tag 3 frens (x.com/osbornrdx/status/2077647694622044480). Form submitted via API → `{"ok":true}`. Total entries: 10,166. NFTs on Raydium. |
-| 55 | **Koto Trade** | Jul 16 | Google OAuth | @kototrade ✅ | ✅ Updated — 4/4 tasks complete. All lootboxes already claimed from earlier session. Google OAuth via cookie injection. Referral: `oxrxxndt`. 0 referrals. |
-| 60 | **Pvewin** | Jul 17 | SOL `5yw3KKc...` @osbornrdx | @pvewin ✅ | ✅ Follow (+200), Quote+Reply (+500), X handle submitted (+500). Privy+Phantom pending. 4/5 done. 1,200 pts. 10d left. |
-| 59 | **StripChain** | Jul 16 | EVM `airdrop_00` + SOL main | @StripChain ✅ | ⚠️ Multi-chain testnet — needs wallet extension (MetaMask/Phantom). EVM/SOL/APT/ALGO/XLM. Flow: connect → get testnet addresses → claim tokens → mint synthetic → bridge → convert → repeat. PK available. Recommended: CloakBrowser. |
-| 58 | **Slobos** | Jul 16 | SOL `5yw3KKc...76mG` (main) | @Slobos_ ✅ | ✅ Wallet main. X tasks done (Follow+Like+RT). Need browser wallet connect. React SPA roulette. /api/tasks found. |
-| 57 | **TrendBtc** | Jul 16 | X OAuth | @trend_btc_app ✅ | ✅ Register X + SOL saved + Free Box opened. Follow ✅ + Like ✅ + RT ✅ (both tweets). Tasks 0/3 — platform doesn't auto-verify. +250 $TREND reward. |
-|| 56 | **Deep Sea** | Jul 16 | Google OAuth | @Deepseaio_ ✅ | ✅ S2 live. Register + ref `foQ39qfc7D` + daily check-in Day 1 done. 1,000 pts. Rank #10000+. Quests "No data" — no tasks yet. Referral active. |
-|| 61 | **CasterAgent** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@creatoragent_` ✅ + `@ThoLynceus` ✅ | ✅ $1,000 USDT airdrop — wallet submitted via AI chatbot. All tasks: follow @creatoragent_ + @ThoLynceus, "I followed both" verified. Say "airdrop" at creatoragent.fun to start. 20 random winners. |
-|| 62 | **Index Bag (Robinhood)** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@IndexBagfun` ✅ | ✅ Registered — Tweet posted [x.com/osbornrdx/status/2078352638887035043](https://x.com/osbornrdx/status/2078352638887035043), Turnstile solved via solver sidecar. Form: email + wallet + X link + Turnstile ("JOIN THE RESISTANCE"). Earning +10 pts join + 1 pt/recruit. Robinhood Chain memes index. |
-| 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done (Follow+Repost+Like+Comment+NT). Supply: 6,666 on ARC chain. Via `architectsarc.xyz`. |
-| 64 | **KieDex Daily Quiz** | Jul 18 | `0x8CCE...282D` (Base) | — | ✅ Quiz answered — ROT13: `BULLMARKET`, 15 KDX reward. Streak 1/7. KDX: 210.18. Via `kiedex.app/daily-quiz`. |
-| 65 | **TrendBTC** | Jul 18 | X OAuth | `@trend_btc_app` ✅ | ✅ Registered — `osborn_3902` (email: trendbtc_1784383902@gmail.com). X connected. Dashboard pending (API unstable). Predictions platform, $TREND pre-TGE. |
+| 54 | **Friggles** | Jul 16 | `airdrop_00` | `@frigglesxyz` ✅ | ✅ All done — Total entries: 10,166. NFTs on Raydium. |
+| 55 | **Koto Trade** | Jul 16 | Google OAuth | @kototrade ✅ | ✅ Updated — 4/4 tasks complete. All lootboxes claimed. Ref: `oxrxxndt`. |
+| 56 | **Deep Sea** | Jul 16 | Google OAuth | `@Deepseaio_` ✅ | ✅ S2 live. Register + ref `foQ39qfc7D` + daily check-in. 1,000 pts. |
+| 57 | **TrendBtc** | Jul 16 | X OAuth | `@trend_btc_app` ✅ | ✅ Register X + SOL saved + Free Box opened. Follow+Like+RT done. +250 $TREND. |
+| 58 | **Slobos** | Jul 16 | SOL `5yw3KKc...76mG` (main) | `@Slobos_` ✅ | ✅ Wallet main. X tasks done (Follow+Like+RT). Need browser wallet connect. |
+| 59 | **StripChain** | Jul 16 | EVM `airdrop_00` + SOL main | `@StripChain` ✅ | ⚠️ Multi-chain testnet — needs wallet extension. PK available. Recommended: CloakBrowser. |
+| 60 | **Pvewin** | Jul 17 | SOL `5yw3KKc...` @osbornrdx | `@pvewin` ✅ | ✅ Follow (+200), Quote+Reply (+500), X handle (+500). 4/5 done. 1,200 pts. |
+| 61 | **CasterAgent** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@creatoragent_` ✅ + `@ThoLynceus` ✅ | ✅ $1,000 USDT airdrop — wallet submitted via AI chatbot. 20 random winners. |
+| 62 | **Index Bag (Robinhood)** | Jul 18 | `airdrop_00` `0x8CCE...282D` | `@IndexBagfun` ✅ | ✅ Registered — [tweet](https://x.com/osbornrdx/status/2078352638887035043), Turnstile solved. +10 pts. Robinhood Chain memes index. |
+| 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done. Supply: 6,666 on ARC. Via `architectsarc.xyz`. |
 
 ## 🔄 Daily — Auto Cron
 
 | # | Project | Date | Schedule | Reward | Status |
 |---|---------|------|----------|--------|--------|
-| 4 | **XREIGN Crown Season** | Jul 11 | `0 9 * * *` (16:00 WIB) | 5,109 $REIGN + Crown #1 | ✅ Crown Season I — House Crown AUTHORITY. Daily: tasks (×2 decree), wheel, signal, check-in. 27 days left |
-| 5 | **Awarizon Testnet** | Jul 14 | `0 9 * * *` (16:00 WIB) | $RIZ Airdrop | ✅ Node ELA-708788 active (Sepolia SIWE, wallet `airdrop_00`), 1,120 pts. X/Discord/Telegram VERIFIED (self-attest, username-based). Faucet needs Awarizon-native address (SS58 `5...`, not EVM `0x...`) — skipped, different chain identity. Missions empty (not live yet). Cron: `awarizon_daily.py` no_agent. |
+| 1 | **XREIGN Crown Season** | Jul 11 | `0 9 * * *` (16:00 WIB) | 5,109 $REIGN + Crown #1 | ✅ Crown Season I — House Crown AUTHORITY. Daily: tasks, wheel, signal, check-in. 27 days left |
+| 2 | **Awarizon Testnet** | Jul 14 | `0 9 * * *` (16:00 WIB) | $RIZ Airdrop | ✅ Node ELA-708788 active, 1,120 pts. Cron: `awarizon_daily.py` no_agent. |
+| 3 | **KieDex Daily Quiz** | Jul 18 | Daily @ UTC midnight | 15 KDX/quiz | ✅ Quiz answered (ROT13: BULLMARKET). Streak 1/7. KDX: 210.18. Via `kiedex.app/daily-quiz`. |
 
 ## 🎯 Quest — Multi-step Platform
 
 | # | Project | Date | Status | Note |
 |---|---------|------|--------|------|
-| 5 | **Superboard Arcus** | Jul 03 | ❌ CF blocked | Butuh manual / residential proxy |
-| 6 | **T-Rex (Rexy's Cup)** | Jul 08 | ⚠️ Partial | Persona Reydenim, wallet pending, MEXC Predict 840 pax |
-| 7 | **Beep AI** | Jul 08 | ⚠️ Partial | Google signup, Squad AZ1Z1M (Tier 1), $0 balance |
-| 8 | **Quant** | Jul 08 | ✅ All tasks | X login @osbornrdx, ~395 pts, semua tasks clicked |
+| 1 | **Superboard Arcus** | Jul 03 | ❌ CF blocked | Butuh manual / residential proxy |
+| 2 | **T-Rex (Rexy's Cup)** | Jul 08 | ⚠️ Partial | Persona Reydenim, wallet pending, MEXC Predict 840 pax |
+| 3 | **Beep AI** | Jul 08 | ⚠️ Partial | Google signup, Squad AZ1Z1M (Tier 1), $0 balance |
+| 4 | **Quant** | Jul 08 | ✅ All tasks | X login @osbornrdx, ~395 pts, semua tasks clicked |
 
 ## ⏳ Pending
-*Radioactive Rascals — X tasks (Follow + LikeRT + Comment)*
-*Chesto.AI — 3 tasks under review (24-48h)*
-*OrvexHub — 12 tasks pending API verification*
-*HEISTED — X post with card for approval*
-*T-Rex — Wallet connect + CRISP campaign pending*
-*Beep AI — Deposit + trade needed*
+
+- *Radioactive Rascals — X tasks (Follow + LikeRT + Comment)*
+- *Chesto.AI — 3 tasks under review (24-48h)*
+- *OrvexHub — Follow task + Voice.Fun Proof (Under review)*
+- *TachyonFi — Butuh zkLTC gas (faucet Vercel-blocked)*
+- *Quip ($PHYS) — Butuh main games manual (Rey)*
+- *HEISTED — X post with card for approval*
+- *T-Rex — Wallet connect + CRISP campaign pending*
+- *Beep AI — Deposit + trade needed*
+- **TrendBTC** — Dashboard pending login (API unstable). Username: `osborn_3902`. X connected ✅.
 
 ## 🚫 Skipped / Expired
+
 *Belum ada*
 
 ---
 
 ### 🏦 Wallet Usage
-|| Wallet ID | Address | Projects |
-||-----------|---------|----------|
-|| `airdrop_00` | `0x8CCE...282D` | Senpi, Inventory NFT, Rascals, Forecast, BAKEMONO, Robidy, CasterAgent, IndexBag |
+
+| Wallet ID | Address | Projects |
+|-----------|---------|----------|
+| `airdrop_00` | `0x8CCE...282D` | Senpi, Inventory NFT, Rascals, Forecast, BAKEMONO, Robidy, CasterAgent, IndexBag, ARChitects |
 | `airdrop_01` | `0x50d1...D19b` | - |
 | `airdrop_02`–`09` | *8 wallets* | *available* |
 | `0xA9fA...e02b` (Para/Smart) | Crossmint auto | KOR ID, Korus Music |
