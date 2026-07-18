@@ -5,76 +5,213 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AYON drop tracker</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0f;color:#e2e2e8;min-height:100vh;display:flex;flex-direction:column}
-  body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -20%,rgba(147,51,234,0.08),transparent);pointer-events:none;z-index:0}
-  *{position:relative;z-index:1}
-  .container{max-width:1280px;margin:0 auto;padding:24px 20px;width:100%;flex:1}
-  header{border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:20px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-  h1{font-size:26px;font-weight:700;background:linear-gradient(135deg,#fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-0.5px}
-  .stats{display:flex;gap:16px;font-size:13px;color:#9ca3af;flex-wrap:wrap}
-  .stats span{background:rgba(255,255,255,0.04);padding:6px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.06)}
-  .stats .num{color:#e2e2e8;font-weight:600}
-  .controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
-  .search-box{flex:1;min-width:200px;padding:10px 16px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#e2e2e8;font-size:14px;outline:none;transition:border .2s}
-  .search-box:focus{border-color:#a78bfa}
-  .search-box::placeholder{color:#6b7280}
-  .filters{display:flex;gap:8px;flex-wrap:wrap}
-  .filter-btn{padding:6px 16px;border-radius:20px;border:1px solid rgba(255,255,255,0.1);background:transparent;color:#9ca3af;cursor:pointer;font-size:13px;transition:all .2s}
-  .filter-btn:hover{border-color:#a78bfa;color:#e2e2e8}
-  .filter-btn.active{background:rgba(167,139,250,0.15);border-color:#a78bfa;color:#a78bfa}
-  .categories{margin-bottom:32px}
-  .cat-header{display:flex;align-items:center;gap:10px;margin-bottom:14px;margin-top:28px;cursor:pointer;user-select:none}
-  .cat-header:first-child{margin-top:0}
-  .cat-title{font-size:16px;font-weight:600;color:#e2e2e8}
-  .cat-badge{font-size:11px;padding:2px 10px;border-radius:12px;color:#fff;font-weight:500}
-  .cat-badge.wl{background:rgba(52,211,153,0.2);color:#34d399}
-  .cat-badge.daily{background:rgba(96,165,250,0.2);color:#60a5fa}
-  .cat-badge.quest{background:rgba(251,146,60,0.2);color:#fb923c}
-  .cat-badge.pending{background:rgba(250,204,21,0.2);color:#facc15}
-  table{width:100%;border-collapse:collapse;font-size:13px}
-  thead th{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.08);color:#9ca3af;font-weight:500;white-space:nowrap;cursor:pointer;user-select:none}
-  thead th:hover{color:#e2e2e8}
-  tbody tr{border-bottom:1px solid rgba(255,255,255,0.04);transition:background .15s}
-  tbody tr:hover{background:rgba(255,255,255,0.03)}
-  td{padding:10px 12px;vertical-align:middle;line-height:1.4}
-  .project-name{font-weight:600;color:#e2e2e8}
-  .status{font-size:12px;padding:2px 10px;border-radius:12px;display:inline-block;font-weight:500}
-  .status-ok{background:rgba(52,211,153,0.15);color:#34d399}
-  .status-warn{background:rgba(251,146,60,0.15);color:#fb923c}
-  .status-pending{background:rgba(250,204,21,0.15);color:#facc15}
-  .status-skip{background:rgba(239,68,68,0.15);color:#ef4444}
-  .wallet{font-family:'SF Mono',Monaco,monospace;font-size:11px;color:#9ca3af}
-  .toggle{cursor:pointer;font-size:11px;padding:2px 8px;border-radius:6px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:#9ca3af;transition:all .2s}
-  .toggle:hover{background:rgba(255,255,255,0.06)}
-  footer{text-align:center;padding:20px;color:#4b5563;font-size:12px;border-top:1px solid rgba(255,255,255,0.04);margin-top:auto}
-  @media(max-width:768px){
-    td,th{padding:8px 6px;font-size:12px}
-    .controls{flex-direction:column}
-    .stats{font-size:12px;gap:8px}
-    .wallet{font-size:10px}
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+  :root {
+    --bg: #08080c;
+    --surface: #0f0f17;
+    --border: #1e1e2e;
+    --text: #c4c4d0;
+    --text-dim: #5c5c70;
+    --accent: #00e599;
+    --accent-glow: rgba(0,229,153,0.12);
+    --warn: #f0a040;
+    --pending: #6b6b80;
+    --red: #e05050;
+    --radius: 6px;
   }
+
+  body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* subtle grid texture */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px; width: 100%; flex: 1; position: relative; z-index: 1 }
+
+  /* HEADER */
+  header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .brand { display: flex; align-items: center; gap: 12px }
+  .brand-icon { 
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--accent), #00b87a);
+    border-radius: var(--radius);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 0 20px var(--accent-glow);
+  }
+  .brand h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px }
+  .brand h1 span { color: var(--accent) }
+  .brand .sub { font-size: 11px; color: var(--text-dim); font-family: 'JetBrains Mono', monospace; margin-top: 2px }
+
+  .stats-row { display: flex; gap: 4px; flex-wrap: wrap }
+  .stat-pill {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 12px; font-family: 'JetBrains Mono', monospace;
+    padding: 5px 12px; border-radius: 4px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--text-dim);
+  }
+  .stat-pill .val { color: var(--text); font-weight: 600 }
+  .stat-pill .dot { width: 6px; height: 6px; border-radius: 50% }
+  .stat-pill .dot.green { background: var(--accent); box-shadow: 0 0 6px var(--accent) }
+  .stat-pill .dot.yellow { background: var(--warn) }
+  .stat-pill .dot.dim { background: var(--text-dim) }
+
+  /* CONTROLS */
+  .controls { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap }
+  .search-wrap { flex: 1; min-width: 180px; position: relative }
+  .search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: var(--text-dim) }
+  .search-box {
+    width: 100%; padding: 9px 14px 9px 34px; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text); font-size: 13px; font-family: inherit; outline: none; transition: border .2s;
+  }
+  .search-box:focus { border-color: var(--accent) }
+  .search-box::placeholder { color: var(--text-dim) }
+
+  .filter-pills { display: flex; gap: 6px; flex-wrap: wrap }
+  .filter-btn {
+    padding: 6px 14px; border-radius: var(--radius); font-size: 12px; font-family: inherit;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text-dim);
+    cursor: pointer; transition: all .15s; font-weight: 500;
+  }
+  .filter-btn:hover { border-color: var(--accent); color: var(--text) }
+  .filter-btn.active { background: var(--accent-glow); border-color: var(--accent); color: var(--accent) }
+  .filter-btn .count { color: var(--text-dim); font-family: 'JetBrains Mono', monospace; margin-left: 3px }
+
+  /* SECTIONS */
+  .section { margin-bottom: 40px }
+  .section-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 14px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-emoji { font-size: 16px }
+  .section-title { font-size: 15px; font-weight: 600; color: var(--text); letter-spacing: -0.2px }
+  .section-count { font-size: 11px; color: var(--text-dim); font-family: 'JetBrains Mono', monospace }
+
+  /* TABLE */
+  table { width: 100%; border-collapse: collapse; font-size: 13px }
+  thead th { 
+    padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border);
+    color: var(--text-dim); font-weight: 500; font-size: 11px; text-transform: uppercase;
+    letter-spacing: 0.8px; font-family: 'JetBrains Mono', monospace;
+  }
+  tbody td { padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.03); vertical-align: middle }
+  tbody tr { transition: background .12s }
+  tbody tr:hover { background: rgba(255,255,255,0.02) }
+
+  .proj-name { font-weight: 600; color: #e0e0e8 }
+  .proj-date { color: var(--text-dim); font-family: 'JetBrains Mono', monospace; font-size: 11px }
+  .proj-wallet { 
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-dim);
+    max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .proj-result { font-size: 12px; color: var(--text-dim); max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+
+  /* STATUS BADGES */
+  .badge {
+    display: inline-block; padding: 2px 10px; border-radius: 3px;
+    font-size: 11px; font-weight: 600; font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.3px;
+  }
+  .badge-ok { background: rgba(0,229,153,0.1); color: var(--accent) }
+  .badge-warn { background: rgba(240,160,64,0.1); color: var(--warn) }
+  .badge-pending { background: rgba(107,107,128,0.1); color: var(--text-dim) }
+  .badge-skip { background: rgba(224,80,80,0.1); color: var(--red) }
+
+  /* FOOTER */
+  footer {
+    text-align: center; padding: 16px; color: var(--text-dim); font-size: 11px;
+    border-top: 1px solid var(--border); margin-top: auto;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  footer span { color: var(--accent) }
+
+  /* PENDING LIST */
+  .pending-list { list-style: none }
+  .pending-list li {
+    padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.02);
+    font-size: 13px; color: var(--text-dim);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .pending-list li::before { content: '▹'; color: var(--warn); font-size: 10px }
+
+  /* RESPONSIVE */
+  @media(max-width: 768px) {
+    header { flex-direction: column; align-items: flex-start }
+    td, th { padding: 6px 8px; font-size: 12px }
+    .proj-wallet, .proj-result { max-width: 120px }
+    .controls { flex-direction: column }
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 6px }
+  ::-webkit-scrollbar-track { background: var(--bg) }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px }
 </style>
 </head>
 <body>
 <div class="container">
+
 <header>
-  <h1>🌊 AYON drop tracker</h1>
-  <div class="stats" id="stats"></div>
+  <div class="brand">
+    <div class="brand-icon">👑</div>
+    <div>
+      <h1>AYON <span>drop</span> tracker</h1>
+      <div class="sub">live · auto-updated · powered by hermes</div>
+    </div>
+  </div>
+  <div class="stats-row" id="stats"></div>
 </header>
+
 <div class="controls">
-  <input class="search-box" id="search" placeholder="Search projects..." oninput="render()">
-  <div class="filters" id="filters"></div>
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input class="search-box" id="search" placeholder="Search projects..." oninput="render()">
+  </div>
+  <div class="filter-pills" id="filters"></div>
 </div>
+
 <div id="content"></div>
+
 </div>
-<footer>auto-updated · built by AYON</footer>
+
+<footer>built by <span>AYON</span> 👑⚡ · synced from projects.md</footer>
+
 <script>
 const CAT_ORDER=['🕐 Waitlist','🔄 Daily','🎯 Quest','⏳ Pending'];
-const CAT_BADGE={wl:'waitlist',daily:'daily',quest:'quest',pending:'pending'};
 const STATUS_MAP={'✅':'ok','⚠️':'warn','❌':'skip','⏳':'pending','🟢':'ok','🔴':'skip','🟡':'warn'};
-let raw='';
 let data=[];
+let filter='all',search='';
 
 function parseMD(md){
   const lines=md.split('\n');
@@ -98,8 +235,7 @@ function parseMD(md){
         const stCell=cells[cells.length-2];
         const statusEmoji=(stCell.match(/[✅⚠️❌⏳🟢🔴🟡]/)||[''])[0];
         const status=STATUS_MAP[statusEmoji]||'pending';
-        const walletCell=cells[3]||'';
-        projects.push({cat:curCat,name:nm,date:cells[2],wallet:walletCell,xFollow:cells[4],result:cells.slice(5).join(' '),status,statusEmoji});
+        projects.push({cat:curCat,name:nm,date:cells[2],wallet:cells[3]||'',xFollow:cells[4]||'',result:cells.slice(5).join(' '),status,statusEmoji});
       }
     }
   }
@@ -114,15 +250,13 @@ function dedupCat(name){
   return name;
 }
 
-function catBadge(category){
-  if(category.includes('🕐'))return 'wl';
-  if(category.includes('🔄'))return 'daily';
-  if(category.includes('🎯'))return 'quest';
-  if(category.includes('⏳'))return 'pending';
+function catBadge(c){
+  if(c.includes('🕐'))return 'wl';
+  if(c.includes('🔄'))return 'daily';
+  if(c.includes('🎯'))return 'quest';
+  if(c.includes('⏳'))return 'pending';
   return 'wl';
 }
-
-let filter='all',search='';
 
 function render(){
   search=(document.getElementById('search').value||'').toLowerCase();
@@ -132,7 +266,6 @@ function render(){
     return true;
   });
 
-  // group by category
   let groups={};
   for(let p of filtered){
     const c=dedupCat(p.cat);
@@ -144,68 +277,77 @@ function render(){
   for(let catName of CAT_ORDER){
     const items=groups[catName]||[];
     if(!items.length)continue;
-    const badge=catBadge(catName);
-    html+=`<div class="cat-header"><span class="cat-title">${catName}</span><span class="cat-badge ${badge}">${items.length}</span></div>`;
+    html+=`<div class="section">`;
+    html+=`<div class="section-header"><span class="section-emoji">${catName.slice(0,2)}</span><span class="section-title">${catName.slice(2).trim()}</span><span class="section-count">${items.length} projects</span></div>`;
     html+=`<table><thead><tr><th>Project</th><th>Date</th><th>Wallet</th><th>Status</th></tr></thead><tbody>`;
     for(let p of items){
-      const stClass='status-'+p.status;
-      html+=`<tr><td class="project-name">${p.name}</td><td>${p.date}</td><td class="wallet">${p.wallet||'—'}</td><td><span class="status ${stClass}">${p.statusEmoji||'?'} ${shortResult(p.result)}</span></td></tr>`;
+      const stClass='badge badge-'+p.status;
+      const stLabel={ok:'DONE',warn:'WIP',pending:'···',skip:'SKIP'}[p.status]||'···';
+      html+=`<tr>`;
+      html+=`<td class="proj-name">${p.name}</td>`;
+      html+=`<td class="proj-date">${p.date}</td>`;
+      html+=`<td class="proj-wallet" title="${escapeAttr(p.wallet)}">${p.wallet||'—'}</td>`;
+      html+=`<td><span class="${stClass}">${p.statusEmoji} ${stLabel}</span>&nbsp;<span class="proj-result">${shortResult(p.result)}</span></td>`;
+      html+=`</tr>`;
     }
-    html+=`</tbody></table>`;
+    html+=`</tbody></table></div>`;
   }
 
-  if(!filtered.length)html+=`<div style="text-align:center;padding:60px;color:#6b7280">✨ nothing here yet</div>`;
+  // Pending items
+  if(data.pending.length && (filter==='all'||filter==='pending')){
+    html+=`<div class="section">`;
+    html+=`<div class="section-header"><span class="section-emoji">⏳</span><span class="section-title">Pending</span><span class="section-count">${data.pending.length} items</span></div>`;
+    html+=`<ul class="pending-list">`;
+    for(let p of data.pending){
+      html+=`<li>${p}</li>`;
+    }
+    html+=`</ul></div>`;
+  }
+
+  if(!filtered.length && (!data.pending.length || filter!=='pending'))
+    html+=`<div style="text-align:center;padding:60px;color:var(--text-dim);font-family:'JetBrains Mono',monospace">nothing here</div>`;
+  
   document.getElementById('content').innerHTML=html;
   updateStats();
 }
 
-function shortResult(r){
-  if(!r)return '';
-  return r.length>45?r.slice(0,45)+'…':r;
-}
+function shortResult(r){ if(!r)return ''; return r.length>50?r.slice(0,50)+'…':r }
+function escapeAttr(s){ return (s||'').replace(/"/g,'&quot;').replace(/</g,'&lt;') }
 
 function updateStats(){
   const total=data.projects.length;
   const ok=data.projects.filter(p=>p.status==='ok').length;
   const warn=data.projects.filter(p=>p.status==='warn').length;
   const pendingN=data.projects.filter(p=>p.status==='pending').length;
-  document.getElementById('stats').innerHTML=
-    `<span>total <span class="num">${total}</span></span><span>✅ ${ok}</span><span>⚠️ ${warn}</span><span>⏳ ${pendingN}</span>`;
+  document.getElementById('stats').innerHTML=`
+    <div class="stat-pill"><span class="dot green"></span>done <span class="val">${ok}</span></div>
+    <div class="stat-pill"><span class="dot yellow"></span>wip <span class="val">${warn}</span></div>
+    <div class="stat-pill"><span class="dot dim"></span>pending <span class="val">${pendingN}</span></div>
+    <div class="stat-pill">total <span class="val">${total}</span></div>`;
 }
 
 function initFilter(){
+  const counts={all:data.projects.length,wl:0,daily:0,quest:0,pending:0};
+  for(let p of data.projects){
+    const c=catBadge(p.cat); if(counts[c]!==undefined)counts[c]++;
+  }
   const btns=[
-    {key:'all',label:'All'},
-    {key:'wl',label:'🕐 Waitlist'},
-    {key:'daily',label:'🔄 Daily'},
-    {key:'quest',label:'🎯 Quest'},
-    {key:'pending',label:'⏳ Pending'}
+    {key:'all',label:'All'},{key:'wl',label:'Waitlist'},
+    {key:'daily',label:'Daily'},{key:'quest',label:'Quest'},{key:'pending',label:'Pending'}
   ];
   let h='';
   for(let b of btns){
-    h+=`<button class="filter-btn${b.key===filter?' active':''}" onclick="setFilter('${b.key}')">${b.label}</button>`;
+    const active=b.key===filter?' active':'';
+    h+=`<button class="filter-btn${active}" onclick="setFilter('${b.key}')">${b.label}<span class="count">${counts[b.key]}</span></button>`;
   }
   document.getElementById('filters').innerHTML=h;
 }
 
-function setFilter(f){
-  filter=f;
-  initFilter();
-  render();
-}
+function setFilter(f){filter=f;initFilter();render()}
 
 fetch('projects.md?t='+Date.now())
-  .then(r=>r.text())
-  .then(md=>{
-    raw=md;
-    data=parseMD(md);
-    initFilter();
-    render();
-  })
-  .catch(e=>{
-    document.getElementById('content').innerHTML=`<div style="text-align:center;padding:60px;color:#ef4444">⚠️ failed to load data</div>`;
-    console.error(e);
-  });
+  .then(r=>r.text()).then(md=>{data=parseMD(md);initFilter();render()})
+  .catch(e=>{document.getElementById('content').innerHTML=`<div style="text-align:center;padding:60px;color:var(--red)">failed to load</div>`});
 </script>
 </body>
 </html>
