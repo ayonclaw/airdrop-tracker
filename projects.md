@@ -77,6 +77,7 @@
 | 70 | **TartSwap** | Jul 19 | BSC Testnet | — | ✅ pUSDT CLAIMED: 10,000 pUSDT via web3.py direct contract call. Tx: [`0x7c840efb...093`](https://testnet.bscscan.com/tx/0x7c840efb069a9a02c6980db1fccf2c4bfb5f04f3e0e7844c43beb211b8d40193). EVM: `0x8CCE...282D`. ⚠️ Arena stake pending — needs MM or ABI decode. Via `tartswap.com/games`. |
 | 71 | **REIGN** | Jul 19 | — | `@xreign_app` ✅ | ✅ X OAuth @osbornrdx → 7,762 $REIGN + 19.25 USDT (won 5 USDT wheel). 9/13 tasks. ⏳ TrendBTC verifying 15min. XREIGN post ✅. X cookies fixed. Via `xreign.app`. |
 | 72 | **Cite Chain** | Jul 19 | — | DeSci, Polygon | ✅ Waitlist: `airdropkarbiters@gmail.com`. "You are on the list." Via `citechain.org`. |
+| 73 | **Arclings** | Jul 19 | `0x8CCE...282D` | `@ArclingsNFT` ✅ | ✅ WL confirmed — Dither style. X: @osbornrdx, Like+Repost [pinned](https://x.com/ArclingsNFT/status/2078833541501080063), Discord joined. Shared on [X](https://x.com/intent/post?text=I%20just%20confirmed%20my%20whitelisted%20checkpoint). Via `arclings.art`. |
 
 ## 🔄 Daily — Auto Cron
 
