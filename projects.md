@@ -74,7 +74,7 @@
 | 67 | **Unemploye Arc** | Jul 18 | `0x8CCE...282D` | — | ✅ Waitlist submitted — Knock door + Like/Repost/Comment on [tweet](https://x.com/unemployeeonarc/status/2078426396435603875). Comment: "Being unemployee is beautiful". Via `unemployeearc.xyz`. |
 | 68 | **NICEHOOD** | Jul 18 | `0x8CCE...282D` | `@NicehoodFun` ✅ | ✅ PT Alumni Pass claimed — X @osbornrdx, Like+Repost+Comment on [tweet](https://x.com/post_fi/status/2078150013881037034). Ref: `43624aa3d9`. Via `nicehood.com`. |
 | 69 | **WoodTown** | Jul 18 | SOL `5yw3K...76mG` | `@WoodTowns` ✅ | ✅ Early Access — Quote+Like+Reply on [tweet](https://x.com/WoodTowns/status/2078486492255580440). Permit #9296. Via `woodtown.fun`. |
-| 70 | **TartSwap** | Jul 19 | BSC Testnet | — | ⚠️ MANUAL — Web3 dapp, butuh MetaMask/Rabby di browser. Claim 10K pUSDT faucet → play prediction game → submit feedback. Via `tartswap.com/games`. |
+| 70 | **TartSwap** | Jul 19 | BSC Testnet | — | ✅ pUSDT CLAIMED: 10,000 pUSDT via web3.py direct contract call. Tx: [`0x7c840efb...093`](https://testnet.bscscan.com/tx/0x7c840efb069a9a02c6980db1fccf2c4bfb5f04f3e0e7844c43beb211b8d40193). EVM: `0x8CCE...282D`. ⚠️ Arena stake pending — needs MM or ABI decode. Via `tartswap.com/games`. |
 | 71 | **REIGN** | Jul 19 | — | `@xreign_app` ✅ | ✅ X OAuth @osbornrdx → 7,911 $REIGN + 14.25 USDT. 10/13 tasks done. Daily streak Day 4. ✅ XREIGN post: [reply](https://x.com/xreign_app/status/2077791725221814783) ✅ TrendBTC post: [reply](https://x.com/trend_btc_app/status/2078523089131040970). Via `xreign.app`. |
 
 ## 🔄 Daily — Auto Cron
