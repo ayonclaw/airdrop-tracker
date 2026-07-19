@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-18 | Total: 65 projects (+3 cron)
+> Last updated: 2026-07-18 | Total: 66 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -70,6 +70,7 @@
 | 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done. Supply: 6,666 on ARC. Via `architectsarc.xyz`. |
 | 64 | **HUDI (Robinhood)** | Jul 18 | `0x8CCE...282D` | `@HudiNFT` ✅ | ✅ HUD-4889 — Follow+Repost+Tag 2 frens done. Card forged. Supply: 10,000. Via `hudinft.xyz/apply`. |
 | 65 | **GARC on ARC** | Jul 18 | `0x8CCE...282D` | `@GarcOnArc` ✅ | ✅ Waitlist submitted — X @osbornrdx, tasks self-attested. DEX on ARC Mainnet, fair launch. Via `garconarc.fun`. |
+| 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ⚠️ | ⚠️ Turnstile blocking — X OAuth endpoint found (`/api/waitlist/xlogin`). Token solved but expires <60s. Need real-time browser solve. Ref: `earlyaccess`. Via `catbathatfatrat.com`. |
 
 ## 🔄 Daily — Auto Cron
 
