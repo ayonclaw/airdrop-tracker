@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-18 | Total: 65 projects (+3 cron)
+> Last updated: 2026-07-19 | Total: 70 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -74,6 +74,7 @@
 | 67 | **Unemploye Arc** | Jul 18 | `0x8CCE...282D` | — | ✅ Waitlist submitted — Knock door + Like/Repost/Comment on [tweet](https://x.com/unemployeeonarc/status/2078426396435603875). Comment: "Being unemployee is beautiful". Via `unemployeearc.xyz`. |
 | 68 | **NICEHOOD** | Jul 18 | `0x8CCE...282D` | `@NicehoodFun` ✅ | ✅ PT Alumni Pass claimed — X @osbornrdx, Like+Repost+Comment on [tweet](https://x.com/post_fi/status/2078150013881037034). Ref: `43624aa3d9`. Via `nicehood.com`. |
 | 69 | **WoodTown** | Jul 18 | SOL `5yw3K...76mG` | `@WoodTowns` ✅ | ✅ Early Access — Quote+Like+Reply on [tweet](https://x.com/WoodTowns/status/2078486492255580440). Permit #9296. Via `woodtown.fun`. |
+| 70 | **TartSwap** | Jul 19 | BSC Testnet | — | ⚠️ MANUAL — Web3 dapp, butuh MetaMask/Rabby di browser. Claim 10K pUSDT faucet → play prediction game → submit feedback. Via `tartswap.com/games`. |
 
 ## 🔄 Daily — Auto Cron
 
