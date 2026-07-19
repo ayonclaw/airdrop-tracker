@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-18 | Total: 66 projects (+3 cron)
+> Last updated: 2026-07-18 | Total: 67 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -71,6 +71,7 @@
 | 64 | **HUDI (Robinhood)** | Jul 18 | `0x8CCE...282D` | `@HudiNFT` ✅ | ✅ HUD-4889 — Follow+Repost+Tag 2 frens done. Card forged. Supply: 10,000. Via `hudinft.xyz/apply`. |
 | 65 | **GARC on ARC** | Jul 18 | `0x8CCE...282D` | `@GarcOnArc` ✅ | ✅ Waitlist submitted — X @osbornrdx, tasks self-attested. DEX on ARC Mainnet, fair launch. Via `garconarc.fun`. |
 | 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ✅ | ✅ X CONNECTED @osbornrdx — Role: Cat, Rank #733. Follow task pending server verify. Ref code: `205e5e7d`. Via `catbathatfatrat.com`. |
+| 67 | **Unemploye Arc** | Jul 18 | — | — | ✅ Waitlist submitted — Knock door game + Like + Repost + Comment + EVM `0x8CCE...282D`. Via `unemployeearc.xyz`. |
 
 ## 🔄 Daily — Auto Cron
 
