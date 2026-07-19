@@ -75,7 +75,8 @@
 | 68 | **NICEHOOD** | Jul 18 | `0x8CCE...282D` | `@NicehoodFun` ✅ | ✅ PT Alumni Pass claimed — X @osbornrdx, Like+Repost+Comment on [tweet](https://x.com/post_fi/status/2078150013881037034). Ref: `43624aa3d9`. Via `nicehood.com`. |
 | 69 | **WoodTown** | Jul 18 | SOL `5yw3K...76mG` | `@WoodTowns` ✅ | ✅ Early Access — Quote+Like+Reply on [tweet](https://x.com/WoodTowns/status/2078486492255580440). Permit #9296. Via `woodtown.fun`. |
 | 70 | **TartSwap** | Jul 19 | BSC Testnet | — | ✅ pUSDT CLAIMED: 10,000 pUSDT via web3.py direct contract call. Tx: [`0x7c840efb...093`](https://testnet.bscscan.com/tx/0x7c840efb069a9a02c6980db1fccf2c4bfb5f04f3e0e7844c43beb211b8d40193). EVM: `0x8CCE...282D`. ⚠️ Arena stake pending — needs MM or ABI decode. Via `tartswap.com/games`. |
-| 71 | **REIGN** | Jul 19 | — | `@xreign_app` ✅ | ✅ X OAuth @osbornrdx → 7,762 $REIGN + 19.25 USDT (won 5 USDT wheel). 9/13 tasks done. ⏳ TrendBTC post verifying in 15min — [reply](https://x.com/trend_btc_app/status/2078523089131040970) posted. XREIGN post ✅ [reply](https://x.com/xreign_app/status/2077791725221814783). X cookies fixed + re-injected. Via `xreign.app`. |
+| 71 | **REIGN** | Jul 19 | — | `@xreign_app` ✅ | ✅ X OAuth @osbornrdx → 7,762 $REIGN + 19.25 USDT (won 5 USDT wheel). 9/13 tasks. ⏳ TrendBTC verifying 15min. XREIGN post ✅. X cookies fixed. Via `xreign.app`. |
+| 72 | **Cite Chain** | Jul 19 | — | DeSci, Polygon | ✅ Waitlist: `osbornrdx@gmail.com` on list. "You are on the list." Via `citechain.org`. |
 
 ## 🔄 Daily — Auto Cron
 
