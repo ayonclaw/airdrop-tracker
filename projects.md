@@ -70,6 +70,10 @@
 | 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done. Supply: 6,666 on ARC. Via `architectsarc.xyz`. |
 | 64 | **HUDI (Robinhood)** | Jul 18 | `0x8CCE...282D` | `@HudiNFT` ✅ | ✅ HUD-4889 — Follow+Repost+Tag 2 frens done. Card forged. Supply: 10,000. Via `hudinft.xyz/apply`. |
 | 65 | **GARC on ARC** | Jul 18 | `0x8CCE...282D` | `@GarcOnArc` ✅ | ✅ Waitlist submitted — X @osbornrdx, tasks self-attested. DEX on ARC Mainnet, fair launch. Via `garconarc.fun`. |
+| 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ✅ | ✅ X CONNECTED @osbornrdx — Role: Cat, Rank #733. Follow task pending server verify. Ref code: `205e5e7d`. Via `catbathatfatrat.com`. |
+| 67 | **Unemploye Arc** | Jul 18 | `0x8CCE...282D` | — | ✅ Waitlist submitted — Knock door + Like/Repost/Comment on [tweet](https://x.com/unemployeeonarc/status/2078426396435603875). Comment: "Being unemployee is beautiful". Via `unemployeearc.xyz`. |
+| 68 | **NICEHOOD** | Jul 18 | `0x8CCE...282D` | `@NicehoodFun` ✅ | ✅ PT Alumni Pass claimed — X @osbornrdx, Like+Repost+Comment on [tweet](https://x.com/post_fi/status/2078150013881037034). Ref: `43624aa3d9`. Via `nicehood.com`. |
+| 69 | **WoodTown** | Jul 18 | SOL `5yw3K...76mG` | `@WoodTowns` ✅ | ✅ Early Access — Quote+Like+Reply on [tweet](https://x.com/WoodTowns/status/2078486492255580440). Permit #9296. Via `woodtown.fun`. |
 
 ## 🔄 Daily — Auto Cron
 
