@@ -1,5 +1,5 @@
 # 🪂 AirDrop Project Tracker
-> Last updated: 2026-07-18 | Total: 68 projects (+3 cron)
+> Last updated: 2026-07-18 | Total: 69 projects (+3 cron)
 
 ## 🕐 Waitlist — One-time Register
 
@@ -73,6 +73,7 @@
 | 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ✅ | ✅ X CONNECTED @osbornrdx — Role: Cat, Rank #733. Follow task pending server verify. Ref code: `205e5e7d`. Via `catbathatfatrat.com`. |
 | 67 | **Unemploye Arc** | Jul 18 | `0x8CCE...282D` | — | ✅ Waitlist submitted — Knock door + Like/Repost/Comment on [tweet](https://x.com/unemployeeonarc/status/2078426396435603875). Comment: "Being unemployee is beautiful". Via `unemployeearc.xyz`. |
 | 68 | **NICEHOOD** | Jul 18 | `0x8CCE...282D` | `@NicehoodFun` ✅ | ✅ PT Alumni Pass claimed — X @osbornrdx, Like+Repost+Comment on [tweet](https://x.com/post_fi/status/2078150013881037034). Ref: `43624aa3d9`. Via `nicehood.com`. |
+| 69 | **WoodTown** | Jul 18 | SOL `7vPyd...K6s` | `@WoodTowns` ✅ | ✅ Early Access — Quote+Like+Reply on [tweet](https://x.com/WoodTowns/status/2078486492255580440). Permit #9296. Via `woodtown.fun`. |
 
 ## 🔄 Daily — Auto Cron
 
