@@ -70,7 +70,7 @@
 | 63 | **ARChitects (ARC)** | Jul 18 | — | `@ARChitects_xyz` ✅ | ✅ Allowlist spot reserved @osbornrdx. 5 steps done. Supply: 6,666 on ARC. Via `architectsarc.xyz`. |
 | 64 | **HUDI (Robinhood)** | Jul 18 | `0x8CCE...282D` | `@HudiNFT` ✅ | ✅ HUD-4889 — Follow+Repost+Tag 2 frens done. Card forged. Supply: 10,000. Via `hudinft.xyz/apply`. |
 | 65 | **GARC on ARC** | Jul 18 | `0x8CCE...282D` | `@GarcOnArc` ✅ | ✅ Waitlist submitted — X @osbornrdx, tasks self-attested. DEX on ARC Mainnet, fair launch. Via `garconarc.fun`. |
-| 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ⚠️ | ⚠️ WALL — Turnstile solved by CloakBrowser sidecar ($0, 6s) tapi xlogin endpoint reject semua token (CapSolver + sidecar). Server-side strict. **Need browser real.** X cookies ready di Chrome. Ref: `earlyaccess`. Via `catbathatfatrat.com`. |
+| 66 | **CatBatHatFatRat** | Jul 18 | — | `@CatBatHatFatRat` ✅ | ✅ X CONNECTED @osbornrdx — Role: Cat, Rank #733. Follow task pending server verify. Ref code: `205e5e7d`. Via `catbathatfatrat.com`. |
 
 ## 🔄 Daily — Auto Cron
 
