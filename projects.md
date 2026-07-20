@@ -78,7 +78,7 @@
 | 71 | **REIGN** | Jul 19 | — | `@xreign_app` ✅ | ✅ X OAuth @osbornrdx → 7,762 $REIGN + 19.25 USDT (won 5 USDT wheel). 9/13 tasks. ⏳ TrendBTC verifying 15min. XREIGN post ✅. X cookies fixed. Via `xreign.app`. |
 | 72 | **Cite Chain** | Jul 19 | — | DeSci, Polygon | ✅ Waitlist: `airdropkarbiters@gmail.com`. "You are on the list." Via `citechain.org`. |
 | 73 | **Arclings** | Jul 19 | `0x8CCE...282D` | `@ArclingsNFT` ✅ | ✅ WL confirmed — Dither style. X: @osbornrdx, Like+Repost [pinned](https://x.com/ArclingsNFT/status/2078833541501080063), Discord joined. Shared on [X](https://x.com/intent/post?text=I%20just%20confirmed%20my%20whitelisted%20checkpoint). Via `arclings.art`. |
-| 74 | **Subject Zero** | Jul 19 | `0x8CCE...282D` | `@subjct_0` ⚠️ | ⚠️ Form filled — Follow + Like + RT + Quote [posted](https://x.com/osbornrdx/status/2079099172914172034) tapi contamination 0%. Server-side X verify needed. Via `subjct0.xyz`. |
+| 74 | **Subject Zero** | Jul 19 | `0x8CCE...282D` | `@subjct_0` ✅ | ✅ WL submitted — X: @osbornrdx, Follow+Like+RT ✅, Quote [zero @petsreid_ @JackTtexas](https://x.com/osbornrdx/status/2079099172914172034) ✅. API: `{"ok":true}`. Robinhood Chain. Via `subjct0.xyz`. |
 
 ## 🔄 Daily — Auto Cron
 
