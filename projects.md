@@ -82,6 +82,7 @@
 || 75 | **Skew Trade** | Jul 20 | — | — | ✅ Registered — Email, X, TG via `skew.trade`. "You are on the waitlist." |
 || 76 | **Droupz** | Jul 21 | `airdrop_00` | `@DROUPZNFT` ✅ | ✅ WL submitted — Follow+Repost+Comment PORTAL4269, X: @osbornrdx, Wallet: 0x8CCE...282D. [reply](https://x.com/osbornrdx/status/2079790548152701040) |
 || 77 | **Kappyies** | Jul 22 | `airdrop_00` | `@kappyies_` ✅ | ✅ WL submitted — Follow+Like+RT on [tweet](https://x.com/kappyies_/status/2079614257868472742), Wallet: 0x8CCE...282D. "Wallet already registered" |
+|| 78 | **HoodLust** | Jul 22 | `airdrop_00` | `@KHFRHN` ✅ | ✅ WL submitted — Follow+Like+RT on [tweet](https://x.com/KHFRHN/status/2078934401191493644), Comment [link](https://x.com/osbornrdx/status/2079790548152701040), Wallet: 0x8CCE...282D. "Registration Complete!" |
 
 ## 🔄 Daily — Auto Cron
 
