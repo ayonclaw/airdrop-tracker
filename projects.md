@@ -81,6 +81,7 @@
 | 74 | **Subject Zero** | Jul 19 | `0x8CCE...282D` | `@subjct_0` ✅ | ✅ WL submitted — X: @osbornrdx, Follow+Like+RT ✅, Quote [zero @petsreid_ @JackTtexas](https://x.com/osbornrdx/status/2079099172914172034) ✅. API: `{"ok":true}`. Robinhood Chain. Via `subjct0.xyz`. |
 || 75 | **Skew Trade** | Jul 20 | — | — | ✅ Registered — Email, X, TG via `skew.trade`. "You are on the waitlist." |
 || 76 | **Droupz** | Jul 21 | `airdrop_00` | `@DROUPZNFT` ✅ | ✅ WL submitted — Follow+Repost+Comment PORTAL4269, X: @osbornrdx, Wallet: 0x8CCE...282D. [reply](https://x.com/osbornrdx/status/2079790548152701040) |
+|| 77 | **Kappyies** | Jul 22 | `airdrop_00` | `@kappyies_` ✅ | ✅ WL submitted — Follow+Like+RT on [tweet](https://x.com/kappyies_/status/2079614257868472742), Wallet: 0x8CCE...282D. "Wallet already registered" |
 
 ## 🔄 Daily — Auto Cron
 
