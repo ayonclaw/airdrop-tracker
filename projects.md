@@ -132,3 +132,17 @@
 ### 🐦 X Handle: `@osbornrdx`
 ### 📧 Email: `airdropkarbiters@gmail.com`
 ### 🤖 Active Crons: 2 (XREIGN daily @ 16:00 WIB, Pear daily streak @ 16:00 WIB)
+
+## #52 CashDrip
+- **URL:** https://cashdrip.finance/waitlist
+- **Status:** ✅ DONE  
+- **Date:** 2026-07-22
+- **Email:** airdropkarbiters@gmail.com
+- **Wallet:** N/A (optional, skipped)
+- **Tasks:**
+  - ✅ Follow @CashDrip_ on X (already following)
+  - ✅ Join Telegram @cashdrip_1
+  - ✅ Email submitted
+- **Confirmation:** "You're on the list. Batches roll out weekly." (Supabase 201)
+- **Reward:** Early $DRIP claim, fee-share preview, founding member badge
+- **Source:** https://x.com/CashDrip_/status/2079673016498176389
