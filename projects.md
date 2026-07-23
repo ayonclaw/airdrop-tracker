@@ -58,3 +58,18 @@
 - ⏳ = In progress / partial
 - ⛔ = Blocked (butuh manual / resource external)
 - ⚠️ = Technical limitation (wallet extension, gas, etc.)
+
+## XREIGN Crown Season Daily — July 23, 2026
+| Detail | Value |
+|--------|-------|
+| **House** | Crown #1 (18.26M) |
+| **XP** | 9,052 |
+| **$REIGN** | 20.25 |
+| **Tier** | 23/30 |
+| **XP Today** | +68 |
+| **Royal Decree** | ×2 XP from daily check-in |
+| **Check-in** | ✅ Claimed 13 $REIGN |
+| **Wheel** | ✅ Spun (free daily) |
+| **Signal** | ✅ Voted Veil (FEWEST 14%) +5 $REIGN minority |
+| **X Tasks** | ⚠️ 3 available (need manual X like/repost/reply) |
+| **Quests** | 3/5 (tasks 5/5, spins 5/5, votes 5/5) |
