@@ -29,6 +29,13 @@
 - **Tasks:** Follow @UsdCurve ✓ | Join Telegram ✓ | Tweet posted ✓
 - ⚠️ **Verify tweet** — need server to scan tweet content
 
+### 4. The Unstables (Stable) ✅
+- **Status:** Registered — "@osbornrdx has been chalked in"
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Tasks:** Follow ✓ | Like/Repost ✓ | Tag 2 friends ✓
+- **Captcha:** 7+3=10 ✓
+
 ---
 
 ## ⏳ PENDING
