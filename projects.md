@@ -81,6 +81,15 @@
 - **Tasks:** Follow X ✅ | Reply ✅ | Retweet ✅ | Quote ✅
 - **Waitlist:** #3,219
 
+### 12. BR0KE BOOKIES
+- **Status:** ✅ COMPLETE (24 Jul 2026)
+- **URL:** https://brokebookies.com/
+- **Receipt:** `RECEIPT_01ZLC78`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** @osbornrdx
+- **Player:** CASINO HEIRESS
+- **Supply:** 4,444 | Gate closes 72h
+
 ---
 
 ## 📊 SUMMARY
@@ -90,6 +99,7 @@
 | Goobz | 5/5 | ✅ Done |
 | The List | 10 | ✅ Done |
 | CurveFun | 60 XP | ✅ Done |
+| BR0KE | RECEIPT_01ZLC78 | ✅ Done |
 | USDCurve | - | 🚧 90% |
 | Aura | 2,000 | ⏳ Need Telegram |
 | Arclings | - | ❌ Blocked |
