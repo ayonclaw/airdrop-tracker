@@ -91,6 +91,12 @@
 - **Supply:** 4,444 | Gate closes 72h
 
 | ERN DATA | - | ⚠️ Need Galxe login |
+### 13. Arcatz
+- **Status:** ✅ COMPLETE (25 Jul 2026)
+- **URL:** https://arcatz.xyz/
+- **X:** @osbornrdx
+- **Tasks:** Follow ✅ | Like ✅ | RT ✅ | Reply ✅
+- **Supply:** 4,444 | Mint/Price: TBA
 
 ---
 
