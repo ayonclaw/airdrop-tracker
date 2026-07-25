@@ -72,13 +72,25 @@
 
 ---
 
+### 11. CurveFun
+- **Status:** ✅ COMPLETE (24 Jul 2026)
+- **URL:** https://curvefun.fun/waitlist
+- **Ref Code:** `D1F4BD`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **XP:** 60
+- **Tasks:** Follow X ✅ | Reply ✅ | Retweet ✅ | Quote ✅
+- **Waitlist:** #3,219
+
+---
+
 ## 📊 SUMMARY
 
 | Project | Points | Status |
 |---------|--------|--------|
 | Goobz | 5/5 | ✅ Done |
 | The List | 10 | ✅ Done |
+| CurveFun | 60 XP | ✅ Done |
 | USDCurve | - | 🚧 90% |
 | Aura | 2,000 | ⏳ Need Telegram |
 | Arclings | - | ❌ Blocked |
-| **TOTAL** | **3 completions** | 🔥 |
+| **TOTAL** | **4 completions** | 🔥 |
