@@ -90,6 +90,8 @@
 - **Player:** CASINO HEIRESS
 - **Supply:** 4,444 | Gate closes 72h
 
+| ERN DATA | - | ⚠️ Need Galxe login |
+
 ---
 
 ## 📊 SUMMARY
