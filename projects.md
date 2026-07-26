@@ -104,6 +104,7 @@
 | AirDrop Finder | 350 USDC pool | ✅ |
 | XREIGN | 9,671 $REIGN | ⏳ Daily |
 | Myne Alpha | 185 pts Quest | ✅ |
+| Noxable | Spot #3610 | ✅ |
 | Pixuin | Colony #3907 | ✅ |
 | Subject Zero | WL submitted | ✅ |
 | Cite Chain | Email registered | ✅ |
