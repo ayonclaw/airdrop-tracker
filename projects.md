@@ -111,10 +111,11 @@
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
 | ERN DATA | X OAuth needed | ⚠️ |
+| Meoofia | WL registered | ✅ |
 | Arclings | Cloudflare | ❌ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 12 |
+| Completed | 13 |
 | In Progress | 2 |
 | Blocked | 2 |
