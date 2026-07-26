@@ -103,16 +103,17 @@
 | Arcatz | 4,444 supply | ✅ |
 | AirDrop Finder | 350 USDC pool | ✅ |
 | XREIGN | 9,671 $REIGN | ⏳ Daily |
+| Myne Alpha | 185 pts Quest | ✅ |
+| Pixuin | Colony #3907 | ✅ |
+| Subject Zero | WL submitted | ✅ |
+| Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
 | ERN DATA | X OAuth needed | ⚠️ |
-|| Arclings | Cloudflare | ❌ |
-|| Pixuin | Colony #3907 | ✅ |
-|| Subject Zero | WL submitted | ✅ |
-|| Cite Chain | Email registered | ✅ |
+| Arclings | Cloudflare | ❌ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 7 |
-| In Progress | 3 |
+| Completed | 12 |
+| In Progress | 2 |
 | Blocked | 2 |
