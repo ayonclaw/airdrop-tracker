@@ -112,10 +112,11 @@
 | Aura | 2,000 pts | ⚠️ Gas |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
+| TartSwap | Arena stake done | ✅ |
 | Arclings | Cloudflare | ❌ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 13 |
+| Completed | 14 |
 | In Progress | 2 |
 | Blocked | 2 |
