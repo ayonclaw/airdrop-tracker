@@ -106,7 +106,10 @@
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
 | ERN DATA | X OAuth needed | ⚠️ |
-| Arclings | Cloudflare | ❌ |
+|| Arclings | Cloudflare | ❌ |
+|| Pixuin | Colony #3907 | ✅ |
+|| Subject Zero | WL submitted | ✅ |
+|| Cite Chain | Email registered | ✅ |
 
 | Total | Count |
 |-------|-------|
