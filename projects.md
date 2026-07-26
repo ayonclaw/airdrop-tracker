@@ -113,10 +113,11 @@
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | TartSwap | Arena stake done | ✅ |
+| The Pit | SEAT RESERVED | ✅ |
 | Arclings | Cloudflare | ❌ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 14 |
+| Completed | 15 |
 | In Progress | 2 |
 | Blocked | 2 |
