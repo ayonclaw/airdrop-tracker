@@ -124,9 +124,10 @@
 | The Pit | SEAT RESERVED | ✅ |
 | Arclings | Cloudflare | ❌ |
 | The Lucky Line | #15583 CALL | ✅ |
+| EVM Chat | CLAIMED Wave 0 | ✅ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 16 |
+| Completed | 17 |
 | In Progress | 2 |
 | Blocked | 2 |
