@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Jul 25, 2026**
+> Last updated: **Jul 27, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -24,7 +24,15 @@
 - **X Handle:** `@osbornrdx`
 - **Tasks:** Follow ✓ | Like/Repost ✓ | Tag 2 friends ✓
 
-### 4. CurveFun
+### 5. The Lucky Line
+- **Status:** ✅ CALL PLACED — Application #15583
+- **URL:** https://luckycall.lol/whitelist
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Tasks:** Follow @luckycallarts ✓ | Repost ✓ | Reply+Tag2 ✓
+- **Card:** https://luckycall.lol/api/card/15583
+
+### 6. CurveFun
 - **Status:** ✅ COMPLETE (24 Jul 2026)
 - **URL:** https://curvefun.fun/waitlist
 - **Ref Code:** `D1F4BD`
@@ -115,9 +123,10 @@
 | TartSwap | Arena stake done | ✅ |
 | The Pit | SEAT RESERVED | ✅ |
 | Arclings | Cloudflare | ❌ |
+| The Lucky Line | #15583 CALL | ✅ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 15 |
+| Completed | 16 |
 | In Progress | 2 |
 | Blocked | 2 |
