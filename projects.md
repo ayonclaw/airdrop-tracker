@@ -118,6 +118,7 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+| KieDex | Quiz 1/7 streak, 225 KDX | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | TartSwap | Arena stake done | ✅ |
@@ -129,5 +130,5 @@
 | Total | Count |
 |-------|-------|
 | Completed | 17 |
-| In Progress | 2 |
+| In Progress | 3 |
 | Blocked | 2 |
