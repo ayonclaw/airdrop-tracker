@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Jul 27, 2026**
+> Last updated: **Aug 1, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -64,6 +64,16 @@
 - **Tasks:** Follow @enurlela019 ✅ | Follow @setyamickala ✅
 - **Reward:** 10 USDC (35 winners dari 350 USDC pool)
 
+### 8. 10k Ways To Die
+- **Status:** ✅ WL REGISTERED — `eligible: true`
+- **URL:** https://www.10kwtd.com
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** `@osbornrdx`
+- **Entry ID:** `68130919-5618-4e2e-858b-32ed3797d900`
+- **Tasks:** Follow @10kWaysToDie ✅ | Repost req tweet ✅
+- **Supply:** 10,000 | Mint: OpenSea | Priority: 0.002 ETH
+- **ETH Balance:** 0.00007 ETH (valid, requirement dropped to 0)
+
 ---
 
 ## ⏳ PENDING
@@ -126,9 +136,10 @@
 | Arclings | Cloudflare | ❌ |
 | The Lucky Line | #15583 CALL | ✅ |
 | EVM Chat | CLAIMED Wave 0 | ✅ |
+| 10kWaysToDie | eligible:true | ✅ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 17 |
+| Completed | 18 |
 | In Progress | 3 |
 | Blocked | 2 |
