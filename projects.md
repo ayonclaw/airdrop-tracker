@@ -64,7 +64,7 @@
 - **Tasks:** Follow @enurlela019 ✅ | Follow @setyamickala ✅
 - **Reward:** 10 USDC (35 winners dari 350 USDC pool)
 
-### 8. 10k Ways To Die
+### 9. 10k Ways To Die
 - **Status:** ✅ WL REGISTERED — `eligible: true`
 - **URL:** https://www.10kwtd.com
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
@@ -73,6 +73,16 @@
 - **Tasks:** Follow @10kWaysToDie ✅ | Repost req tweet ✅
 - **Supply:** 10,000 | Mint: OpenSea | Priority: 0.002 ETH
 - **ETH Balance:** 0.00007 ETH (valid, requirement dropped to 0)
+
+### 10. KelpWeavers
+- **Status:** ✅ WL REGISTERED — `Success: User on the list`
+- **URL:** https://www.kelpweavers.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Email:** `airdropkarbiters@gmail.com`
+- **X:** `@osbornrdx`
+- **Ref Code:** `mjRZSc` (auto-assigned)
+- **Tasks:** Follow @kelpWeaversNft ✅ | Like ✅ | Quote ✅ | Tag fren ✅
+- **Supply:** 8,888 | Chain: Robinhood | Mint: TBA
 
 ---
 
@@ -137,9 +147,10 @@
 | The Lucky Line | #15583 CALL | ✅ |
 | EVM Chat | CLAIMED Wave 0 | ✅ |
 | 10kWaysToDie | eligible:true | ✅ |
+| KelpWeavers | User on the list | ✅ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 18 |
+| Completed | 19 |
 | In Progress | 3 |
 | Blocked | 2 |
