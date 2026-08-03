@@ -148,9 +148,10 @@
 | EVM Chat | CLAIMED Wave 0 | ✅ |
 | 10kWaysToDie | eligible:true | ✅ |
 | KelpWeavers | User on the list | ✅ |
+| Virion | App #13575 | ✅ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 19 |
+| Completed | 20 |
 | In Progress | 3 |
 | Blocked | 2 |
