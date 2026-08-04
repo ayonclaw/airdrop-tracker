@@ -88,6 +88,15 @@
 
 ## ⏳ PENDING
 
+### Catapult Trade ($PULT Airdrop)
+- **Status:** ✅ Registered — Account active
+- **URL:** https://catapult.trade/invite/5IJEGVR6
+- **Email:** `airdropkarbiters@gmail.com`
+- **Referral:** `5IJEGVR6`
+- **Points:** 0 (needs trading activity for points)
+- **Notes:** Full trading platform (memecoin launchpad). Points from: Trading (100/$1 fees), Creator (10/$1), Referral (7.5-22.5%), Mindshare (X posts). No free daily check-in.
+- ⚠️ Need deposit + trading for meaningful points
+
 ### Aura Protocol
 - **Points:** 2,000 pts
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
@@ -141,6 +150,7 @@
 | KieDex | Quiz 3/7 streak, ~240 KDX | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
+| Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
 | TartSwap | Arena stake done | ✅ |
 | The Pit | SEAT RESERVED | ✅ |
 | Arclings | Cloudflare | ❌ |
@@ -153,5 +163,5 @@
 | Total | Count |
 |-------|-------|
 | Completed | 20 |
-| In Progress | 3 |
+| In Progress | 4 |
 | Blocked | 2 |
