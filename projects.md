@@ -13,7 +13,18 @@
 - **Tweet:** `x.com/osbornrdx/status/2080193908844503481`
 - **Points:** 5/5 tasks done
 
-### 2. The List
+### 2. Superboard — The Alphalist: Cloudflare Wallets 🚧
+- **Status:** PARTIAL — X tasks done, handle reserve ⚠️ manual
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **URL:** `superboard.xyz/quests/the-alphalist-cloudflare-wallets`
+- **Tasks:**
+  - ⚠️ Task 1: Hold the Alpha Pass (prerequisite quest: Mint Your Meow Samma's Alpha Pass)
+  - 🚧 Task 2: Reserve Handle — `osbornrdx` available on cloudflare.pay, needs Cloudflare account login
+  - ✅ Task 3: Engage on X — Like + RT + Comment on `x.com/Superboard_/status/2084876762669101383`
+- **Proof:** https://x.com/Superboard_/status/2084876762669101383 (Like ✅, Repost ✅, Comment ✅)
+- **Reward:** TBD (Alpha Pass + Handle)
+
+### 3. The List
 - **Status:** Registered @osbornrdx
 - **Position:** #527
 - **Points:** 10 (wheel spin)
