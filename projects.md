@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 1, 2026**
+> Last updated: **Aug 5, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -76,6 +76,16 @@
 
 ### 10. KelpWeavers
 - **Status:** ✅ WL REGISTERED — `Success: User on the list`
+
+### 11. Ronks GTD
+- **Status:** ✅ SUBMITTED — `{"ok":true}`
+- **URL:** https://ronks.xyz/#gtd
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** `@osbornrdx`
+- **Tasks:** Follow @Ronksart ✅ | Like GTD tweet ✅ | Repost ✅ | Comment ✅
+- **Reply:** `x.com/osbornrdx/status/2084833559953719695`
+- **GTD Tweet:** `x.com/Ronksart/status/2084556336449347869`
+- **Supply:** 4,444 NFTs | Chain: Robinhood | Fully Onchain
 - **URL:** https://www.kelpweavers.xyz
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 - **Email:** `airdropkarbiters@gmail.com`
@@ -158,10 +168,11 @@
 | EVM Chat | CLAIMED Wave 0 | ✅ |
 | 10kWaysToDie | eligible:true | ✅ |
 | KelpWeavers | User on the list | ✅ |
+| Ronks | GTD Submitted | ✅ |
 | Virion | App #13575 | ✅ |
 
 | Total | Count |
 |-------|-------|
-| Completed | 20 |
+| Completed | 21 |
 | In Progress | 4 |
 | Blocked | 2 |
