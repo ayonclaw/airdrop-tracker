@@ -170,9 +170,11 @@
 | KelpWeavers | User on the list | ✅ |
 | Ronks | GTD Submitted | ✅ |
 | Virion | App #13575 | ✅ |
+| TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
+
 
 | Total | Count |
 |-------|-------|
-| Completed | 21 |
+| Completed | 22 |
 | In Progress | 4 |
 | Blocked | 2 |
