@@ -184,3 +184,17 @@
 | Completed | 22 |
 | In Progress | 4 |
 || Blocked | 3 |
+
+1. **AGNT Weekly Socials | S3 Week 3 - Day 3** ⚠️
+   - Platform: Galxe (app.galxe.com/quest/AGNTHub/GCBUetZUe2)
+   - Status: Partial — X likes done, login/verify blocked
+   - Wallet: 0x8CCE...282D | Galxe ID: LUZFnfaqSPcJJ9to9HXzoG (reydenim)
+   - Reward: 40 Points (gg +15)
+   - Tasks: 
+     - ✅ Like @agnt_hub tweet: https://x.com/agnt_hub/status/2084953798053621941
+     - ✅ Like @TruthAgentAI tweet: https://x.com/TruthAgentAI/status/2084950768444957091
+     - ⚠️ Visit tasks (GALXE_ID) — need X account linked to Galxe
+     - ⚠️ Twitter verify — Geetest captcha hard block
+   - SIWE login OK, followSpace OK, mock mode ON (mockLike=true)
+   - Blocked by: MetaMask SDK (Galxe login) + Geetest captcha (Twitter creds)
+   - Date: 2026-08-05
