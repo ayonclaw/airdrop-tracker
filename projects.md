@@ -136,6 +136,11 @@
 - **Status:** BLOCKED — Cloudflare Managed Challenge
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 
+### Fintoq
+- **Status:** BLOCKED — Registration closed + Airdrop ended
+- **Link:** `fintoq.ai/profile`
+- **Note:** "The airdrop has ended." in JS bundle. No new signups. Google OAuth blocked on headless.
+
 ---
 
 ## 📊 SUMMARY
@@ -170,11 +175,12 @@
 | KelpWeavers | User on the list | ✅ |
 | Ronks | GTD Submitted | ✅ |
 | Virion | App #13575 | ✅ |
-| TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
+|| TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
+|| Fintoq | Airdrop ended, signup closed | ❌ |
 
 
 | Total | Count |
 |-------|-------|
 | Completed | 22 |
 | In Progress | 4 |
-| Blocked | 2 |
+|| Blocked | 3 |
