@@ -200,15 +200,16 @@
 || KelpWeavers | User on the list | ✅ |
 || Ronks | GTD Submitted | ✅ |
 || CASHY | WL Submitted, 759 spots left | ✅ |
-|| Virion | App #13575 | ✅ |
-|| TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
-| Fintoq | Airdrop ended, signup closed | ❌ |
-| Samoyed Hood | FREE mint, 10K supply | ⏳ Aug 6 14:00 UTC |
+||| Virion | App #13575 | ✅ |
+||| TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
+|| Fintoq | Airdrop ended, signup closed | ❌ |
+|| Samoyed Hood | FREE mint, 10K supply | ⏳ Aug 6 14:00 UTC |
+|| PuffPals | WL Registered, 2,222 supply | ✅ |
 
 
 | Total | Count |
 |-------|-------|
-| Completed | 23 |
+| Completed | 24 |
 | In Progress | 4 |
 || Blocked | 3 |
 
@@ -225,6 +226,17 @@
    - SIWE login OK, followSpace OK, mock mode ON (mockLike=true)
    - Blocked by: MetaMask SDK (Galxe login) + Geetest captcha (Twitter creds)
    - Date: 2026-08-05
+
+### 13. PuffPals Whitelist
+- **Status:** ✅ WL REGISTERED — All 3 steps ✓
+- **URL:** https://www.puffpals.fun
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** `@osbornrdx`
+- **Tasks:** Follow @Puffpals_NFT ✅ | Quote Tweet ✅ | Comment Tag 2 ✅
+- **Quote Tweet:** `x.com/osbornrdx/status/2085238077803618624`
+- **Pinned Post:** `x.com/Puffpals_NFT/status/2084964969739219046`
+- **Chain:** Ethereum | Supply: 2,222 Pals | Reward: $PUFF
+- **Date:** 2026-08-06
 
 ### Samoyed Hood
 - **Status:** ⏳ Mint pending — starts Aug 6, 14:00 UTC
