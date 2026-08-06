@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 5, 2026**
+> Last updated: **Aug 6, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -105,6 +105,20 @@
 - **Tasks:** Follow @kelpWeaversNft ✅ | Like ✅ | Quote ✅ | Tag fren ✅
 - **Supply:** 8,888 | Chain: Robinhood | Mint: TBA
 
+### 12. CASHY WL
+- **Status:** ✅ WL SUBMITTED — "You are in — @osbornrdx is on the list"
+- **URL:** https://cashynft.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** `@osbornrdx`
+- **Chain:** Robinhood
+- **Supply:** 5,555 NFTs | Mint: Aug 8, 7:00 PM UTC
+- **Tiers:** GTD 0.0009 ETH | FCFS 0.002 ETH | Public 0.003 ETH
+- **Tasks:** Follow @Cashy_NFT ✅ | Like pinned ✅ | Repost ✅ | Comment ✅
+- **X Profile:** https://x.com/cashy_nft
+- **Pinned Tweet:** https://x.com/Cashy_NFT/status/2084945693026701362
+- **Spots Left:** 759/2000
+- **Date:** 2026-08-06
+
 ---
 
 ## ⏳ PENDING
@@ -181,11 +195,12 @@
 | The Pit | SEAT RESERVED | ✅ |
 | Arclings | Cloudflare | ❌ |
 | The Lucky Line | #15583 CALL | ✅ |
-| EVM Chat | CLAIMED Wave 0 | ✅ |
-| 10kWaysToDie | eligible:true | ✅ |
-| KelpWeavers | User on the list | ✅ |
-| Ronks | GTD Submitted | ✅ |
-| Virion | App #13575 | ✅ |
+|| EvM Chat | CLAIMED Wave 0 | ✅ |
+|| 10kWaysToDie | eligible:true | ✅ |
+|| KelpWeavers | User on the list | ✅ |
+|| Ronks | GTD Submitted | ✅ |
+|| CASHY | WL Submitted, 759 spots left | ✅ |
+|| Virion | App #13575 | ✅ |
 || TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
 | Fintoq | Airdrop ended, signup closed | ❌ |
 | Samoyed Hood | FREE mint, 10K supply | ⏳ Aug 6 14:00 UTC |
@@ -193,7 +208,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 22 |
+| Completed | 23 |
 | In Progress | 4 |
 || Blocked | 3 |
 
