@@ -26,6 +26,18 @@
 - **Date:** Aug 6, 2026
 - **Note:** Monitor for application reopening. @airdropfind announced "Epoch 7 is Live"
 
+### N+3. Hoodlife — Wallet Waitlist 🆕
+- **Status:** ✅ Registered — 10 Wallets Submitted
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (already registered) + airdrop_01–09 registered
+- **Platform:** `hoodlife.io/wallet` (Next.js, wallet-only form)
+- **Reward:** Pre-mint list spot
+- **Tasks:**
+  - ✅ airdrop_00: `already_registered` (Rey did manually)
+  - ✅ airdrop_01–09: `{"ok":true}` via curl API bypass
+- **API:** `POST /api/wallet` — `{"address":"0x..."}` → `{"ok":true}` or `{"error":"already_registered"}`
+- **Date:** Aug 6, 2026
+- **Note:** Simple wallet-drop form. No X/tasks required. Next.js chunk under `dpl_9ywKb5M9YUBiew528ybavWLCJ1iD`.
+
 ### N+1. EtherBubu — $BUBU Chest Airdrop 🆕
 - **Status:** ✅ Registered — Common Chest Claimed
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
