@@ -6,6 +6,26 @@
 
 ## ✅ COMPLETED
 
+### N+2. Stabilizer — Testnet Epoch 7 🆕
+- **Status:** ⚠️ Applications Closed — Wallet Not Whitelisted
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Platform:** `app.stabilizer.finance` (Ethereum Sepolia Testnet)
+- **Reward:** SP (Stabilizer Points) + NFTs (Proof of Swap, Multi-Pool Challenge)
+- **Tasks:**
+  - ✅ Followed @StabilizerFi on X
+  - ✅ X cookies injected (logged in as @osbornrdx)
+  - ❌ Whitelist application — CLOSED ("Applications Are Closed")
+  - 🚧 Phase 1 whitelist required for SP rewards
+  - 📊 ~50K wallets applied, 10,755 active users
+- **API Recon:**
+  - `/api/whitelist/apply` — POST (exists but applications closed)
+  - `/api/whitelist/check/{address}` — GET (returns `{whitelisted: false}`)
+  - `/api/zpoints/user/{address}` — GET (0 points, 0 tasks)
+  - `/api/profile/{address}` — GET (Legionnaire, $0 TVL)
+- **Date:** Aug 6, 2026
+- **Note:** Monitor for application reopening. @airdropfind announced "Epoch 7 is Live"
+
 ### N+1. EtherBubu — $BUBU Chest Airdrop 🆕
 - **Status:** ✅ Registered — Common Chest Claimed
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
