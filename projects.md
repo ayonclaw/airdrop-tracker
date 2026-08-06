@@ -187,7 +187,8 @@
 | Ronks | GTD Submitted | ✅ |
 | Virion | App #13575 | ✅ |
 || TastyCo | X+TG Done, ⚠️ Wallet | ⚠️ |
-|| Fintoq | Airdrop ended, signup closed | ❌ |
+| Fintoq | Airdrop ended, signup closed | ❌ |
+| Samoyed Hood | FREE mint, 10K supply | ⏳ Aug 6 14:00 UTC |
 
 
 | Total | Count |
@@ -209,3 +210,13 @@
    - SIWE login OK, followSpace OK, mock mode ON (mockLike=true)
    - Blocked by: MetaMask SDK (Galxe login) + Geetest captcha (Twitter creds)
    - Date: 2026-08-05
+
+### Samoyed Hood
+- **Status:** ⏳ Mint pending — starts Aug 6, 14:00 UTC
+- **Platform:** OpenSea (opensea.io/collection/samoyed-hood)
+- **Chain:** Robinhood Chain (0x1237)
+- **Type:** Free mint NFT, 10,000 supply, limit 30/wallet
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **No tasks** — direct public mint, no WL/form/X tasks needed
+- **Mint window:** Aug 6 14:00–19:00 UTC
+- **Cron:** samoyed-hood-mint (14:00 UTC Aug 6)
