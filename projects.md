@@ -238,6 +238,18 @@
 - **Chain:** Ethereum | Supply: 2,222 Pals | Reward: $PUFF
 - **Date:** 2026-08-06
 
+### 14. Echos NFT
+- **Status:** ⏳ Monitoring — Phase 02 (WL quests) CLOSED, WL checker + mint today
+- **Account:** @EchosOnchain | Chain: Robinhood Chain (0x1237)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Supply:** 2,000 Echos (1,600 GTD + 400 Public)
+- **Mint Price:** GTD 0.0005 ETH | Public 0.0011 ETH
+- **Tasks:** Follow @EchosOnchain ✅ | Like ✅ | Repost ✅
+- **Tweet:** https://x.com/EchosOnchain/status/2085229055469920564
+- **Note:** WL Checker on OpenSea — link not yet available. Phase 02 closed so GTD unlikely. Public mint FCFS 400 spots.
+- **Reward:** Token airdrop for holders + Top Trader/Holder rewards
+- **Date:** 2026-08-06
+
 ### Samoyed Hood
 - **Status:** ⏳ Mint pending — starts Aug 6, 14:00 UTC
 - **Platform:** OpenSea (opensea.io/collection/samoyed-hood)
