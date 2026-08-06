@@ -6,6 +6,23 @@
 
 ## ✅ COMPLETED
 
+### N+1. EtherBubu — $BUBU Chest Airdrop 🆕
+- **Status:** ✅ Registered — Common Chest Claimed
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Platform:** Guild.xyz (`guild.xyz/etherbubu/chests`)
+- **Tasks:**
+  - ✅ X OAuth sign-in via Guild.xyz
+  - ✅ Follow @EtherBubu on X
+  - ✅ Google Form submitted (all tasks: Like + Repost + Bookmark + Comment + Notifications)
+  - ✅ Comment link: `x.com/osbornrdx/status/2085266569408717266`
+  - ✅ Chest revealed (Secret text)
+  - ✅ Premium Pass claimed (NFT collected)
+  - 🚧 Telegram join pending verification
+- **Reward:** Common Chest ($BUBU tokens at TGE)
+- **Date:** Aug 6, 2026
+
+
 ### 1. Goobz Whitelist
 - **Status:** Application Pending
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
