@@ -355,4 +355,22 @@
   - ✅ Referral code `YAKKA-6EBJHM` applied — API: `{"success":true}`
 - **API:** POST `/auth/login` → `{"success":true}` with `{email, accessCode}`
 - **Date:** Aug 7, 2026
+
+### 16. AGNT Weekly Socials — Galxe Quest (S3 W3 D4+D5) 🆕
+- **Status:** ⚠️ Partial — followSpace Done, Visit/Like Need X OAuth
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Galxe ID:** `LUZFnfaqSPcJJ9to9HXzoG` (reydenim)
+- **Platform:** `app.galxe.com/quest/AGNTHub`
+- **Campaigns:**
+  - `GC6eetZHy9` — AGNT Weekly Socials | S3 Week 3 - Day 4 (ends Aug 9, 40 pts)
+  - `GCWWetZYzv` — AGNT Weekly Socials | S3 Week 3 - Day 5 (ends Aug 9, 40 pts)
+- **Tasks:**
+  - ✅ followSpace — both campaigns synced (space ID: 77675)
+  - ⚠️ Visit AGNT Hub (GALXE_ID) — `allow:false` (needs X OAuth linked)
+  - ⚠️ Like @agnt_hub Tweets (TWITTER) — "missing twitter args" (Geetest + X OAuth)
+  - ⚠️ Visit Truth post (GALXE_ID) — `allow:false` (needs X OAuth)
+  - ⚠️ Like @TruthAgentAI Tweets (TWITTER) — "missing twitter args" (Geetest + X OAuth)
+- **Tweet IDs:** 2085381229579309164, 2085382247599743350, 2085656466250137976, 2085656916257042435
+- **Date:** Aug 7, 2026
+- **Note:** API SIWE login works. X OAuth linking to Galxe account needed to unlock TWITTER + GALXE_ID creds. Geetest v4 captcha blocking browser path.
 |
