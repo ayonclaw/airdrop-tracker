@@ -341,19 +341,18 @@
   - ✅ Confirmed: "✅ WL ENTRY CONFIRMED"
 - **Date:** Aug 7, 2026
 
-### 15. Yakkamon — Pre-Registration 🆕
-- **Status:** ⚠️ Referral Code Required — Email + T&C Done
+### 15. Yakkamon — Pre-Registration ✅
+- **Status:** ✅ COMPLETED — Season 0 Registered
 - **URL:** https://yakkamon.com
 - **Email:** `airdropkarbiters@gmail.com`
+- **Code:** `YAKKA-6EBJHM` (from Rey)
 - **Platform:** Ronin Network | Team: Thought Farm (Sunflower Land)
 - **Type:** Season 0 Pre-Registration | Free | Q4 2026 Early Access
 - **Reward:** Monster Egg (in-game item) + Leaderboard rewards (top 5K = Monster NFT, top 1K = Legendary NFT)
-- **Stats:** 46,409/50,000 Silver tier (3,591 remaining)
 - **Tasks:**
   - ✅ Email submitted: `airdropkarbiters@gmail.com`
   - ✅ T&C accepted
-  - ❌ Trainer/Referral code needed — must get from existing player
-- **API:** POST `/auth/login` → `{"accessCodeRequired":true}` — valid trainer code from existing player needed
-- **Note:** @airdropfind message says "Input code: (ask in the comment)". Needs manual code retrieval from Telegram comments.
+  - ✅ Referral code `YAKKA-6EBJHM` applied — API: `{"success":true}`
+- **API:** POST `/auth/login` → `{"success":true}` with `{email, accessCode}`
 - **Date:** Aug 7, 2026
 |
