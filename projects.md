@@ -325,3 +325,19 @@
 - **No tasks** — direct public mint, no WL/form/X tasks needed
 - **Mint window:** Aug 6 14:00–19:00 UTC
 - **Cron:** samoyed-hood-mint (14:00 UTC Aug 6)
+|
+### HoodTangs 🆕
+- **Status:** ✅ Registered — WL Entry Confirmed
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Platform:** `hoodtangs.space` (Robinhood Chain)
+- **Type:** NFT WL — 1,000 Tangs, mint TBA
+- **Tasks:**
+  - ✅ X OAuth — connected @osbornrdx
+  - ✅ Follow @HoodTangs
+  - ✅ Like pinned tweet
+  - ✅ Reply + tag friend (@issmailzy) — https://x.com/osbornrdx/status/2085552769650622824
+  - ✅ Form submitted — reply link + EVM wallet
+  - ✅ Confirmed: "✅ WL ENTRY CONFIRMED"
+- **Date:** Aug 7, 2026
+|
