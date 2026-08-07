@@ -386,4 +386,19 @@
 - **Tweet IDs:** 2085381229579309164, 2085382247599743350, 2085656466250137976, 2085656916257042435
 - **Date:** Aug 7, 2026
 - **Note:** API SIWE login works. X OAuth linking to Galxe account needed to unlock TWITTER + GALXE_ID creds. Geetest v4 captcha blocking browser path.
+
+### 17. The Galleria — 500 Wallet Mass Submit ✅
+- **Status:** ✅ COMPLETED — 340/500 Wallets Submitted
+- **URL:** `https://galleria.theflorentines.xyz/`
+- **Artist:** Cartyisme (@cartyisme)
+- **Platform:** Ethereum Mainnet | Contract: `0x0964fe43b3be705219a1513b3f0450ad65692ebc`
+- **Type:** NFT Mint — 2,618 fully onchain dynamic NFTs | Mint Aug 13, 2026
+- **Exploit:** React fiber injection → fake `grabbed=33` + random `completionMs` 35-45 min → POST `/api/winners`
+- **API Payload:** `{address, mission: "collected all 33 florins", durationSeconds}`
+- **Results:**
+  - ✅ Submitted: **340 wallets**
+  - ❌ Rate-limited: 160 wallets (CF 429)
+  - 📁 Credentials: `galleria_500_wallets.json`, `galleria_500_private_keys.txt`
+- **Note:** Server gak validasi gameplay — cuma client-side. Rate limit ~1 req/30s per IP.
+- **Date:** Aug 7, 2026
 |
