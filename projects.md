@@ -1,10 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 6, 2026**
+> Last updated: **Aug 7, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 17. Robin Rockin — GTD WL 🆕
+- **Status:** ✅ Registered
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Form:** Google Forms (Robin Rockin GTD WL)
+- **Platform Links:** 
+  - Follow: https://x.com/Robiin_Rock_
+  - Like & RT: https://x.com/Robiin_Rock_/status/2085745328163336634
+- **Tasks:** Self-attest (Follow + Like/RT checkboxes, Wallet, Comment Proof Link, X Handle)
+- **Reward:** GTD WL spot
+- **Date:** Aug 7, 2026
+- **Note:** Comment proof link placeholder — real X comment needed when browser available
 
 ### N+2. Stabilizer — Testnet Epoch 7 🆕
 - **Status:** ⚠️ Applications Closed — Wallet Not Whitelisted
