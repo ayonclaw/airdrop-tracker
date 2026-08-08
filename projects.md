@@ -446,3 +446,21 @@
 - **Note:** Server gak validasi gameplay — cuma client-side. Rate limit ~1 req/30s per IP.
 - **Date:** Aug 7, 2026
 |
+## 19. NOWA Finance (Galxe Quest)
+- **Date:** Aug 08, 2026
+- **URL:** https://app.galxe.com/quest/2Kdt8qAPUhYUwRsHDoMSQB/GC6vStZu8g
+- **Platform:** app.nowa.finance (BNPL DEX - Devnet)
+- **Galxe Campaign:** Start NOWA Farming, Rank Up & Get Paid USDT & NOWA Coins
+- **Reward:** USDT & NOWA Coins
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ⚠️ Partial
+- **Completed:**
+  - ✅ SIWE login to Galxe
+  - ✅ followSpace (Nowa Finance)
+  - ✅ Follow Nowa Finance on Galxe (cred sync: allow:true)
+- **Pending (manual):**
+  - ⚠️ Visit app.nowa.finance (Galxe visit cred - allow:false)
+  - ❌ Survey: Submit NOWA farming dashboard screenshot + wallet (needs wallet connect + farming + screenshot)
+  - ❌ Wallet connect on NOWA (ConnectKit/RainbowKit - needs real MetaMask)
+  - ❌ Social follows on NOWA (locked behind wallet connect)
+- **Notes:** Devnet platform. Farming API (apipointfarming.nowa.finance) unreachable from server. Core Galxe follow task completed. Visit & survey creds need manual browser interaction (wallet connect + screenshot).
