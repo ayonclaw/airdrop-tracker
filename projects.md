@@ -220,6 +220,22 @@
 - ⚠️ Need Rey manual: join Telegram group
 - ⏳ Cron: `aura-daily-checkin` daily 09:00 UTC
 
+### MTX Finance — Discover MTX (Galxe Quest) 🆕
+- **Status:** ⚠️ Partial — followSpace ✅, social tasks pending
+- **URL:** https://app.galxe.com/quest/WaCDT4rzyHroTJ7HmrP8M6/GCcsWtZR1t
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Galxe ID:** `LUZFnfaqSPcJJ9to9HXzoG` (reydenim)
+- **Reward:** 10 USDT raffle | 1,240 participants | Ends Aug 24, 2026
+- **API Executed:**
+  - ✅ SIWE SignIn — JWT obtained
+  - ✅ followSpace (MTX Space ID 85335) — returned 1
+  - ❌ Follow @MTXtrade on X — "missing twitter args" (needs X OAuth linking)
+  - ❌ Join @markets_TerminalX on Telegram — "empty address" (needs Telegram verify)
+  - ❌ Discord Member role — allow:false (needs real Discord join)
+- **Browser:** X Follow @MTXtrade done via intent URL ✅
+- **Date:** Aug 8, 2026
+- ⚠️ Need Rey manual: Link X OAuth to Galxe account LUZFnfaqSPcJJ9to9HXzoG, join Telegram/Discord
+
 ### USDCurve Whitelist 🚧 90%
 - **Status:** Form filled, tweet posted, verify pending
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Robinhood Chain)
