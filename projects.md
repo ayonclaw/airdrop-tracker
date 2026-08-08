@@ -243,6 +243,22 @@
 - **Referral:** `RV3WYNVU`
 - **Tweet:** `x.com/osbornrdx/status/2080240573815095458`
 
+### ATF Miner — TON Mining Mini App 🆕
+- **Status:** ⚠️ Needs manual Telegram interaction
+- **URL:** `t.me/ATF_AIRDROP_bot?start=515933843`
+- **Mini App:** `atfminers.asloni.online/miner/`
+- **Reward:** Token ATF (mining-based)
+- **Wallet needed:** TON wallet (Tonkeeper/Tonhub)
+- **Flow:** Open bot in Telegram → Click "🚀 Start ATF Mining" → Complete Turnstile CAPTCHA → Connect TON wallet → Start Mining
+- **Blockers:**
+  - ⛔ Telegram Mini App — must be opened inside Telegram webview (no browser/API access)
+  - ⛔ Cloudflare Turnstile gate (sitekey fetched from backend API)
+  - ⛔ TON wallet required (we don't have one configured)
+  - ⛔ Backend requires Telegram `initData` for all API calls — cannot bypass
+- **API Base:** `atfminers.asloni.online/miner/index.php`
+- **Bot started:** ✅ Via Telethon (@mxsyxfxx) with ref `515933843`
+- **Date:** Aug 8, 2026
+
 ### ERN DATA (Galxe) ⚠️
 - **Status:** Need Galxe X OAuth link
 - **URL:** https://app.galxe.com/quest/A2kKeVCquXVeEoeHMzcpn6/GCbbQtZqcK
