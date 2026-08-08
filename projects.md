@@ -1,10 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 7, 2026**
+> Last updated: **Aug 8, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 18. HoodBirds — Free Mint WL 🆕
+- **Status:** ✅ Registered — "YOU'RE IN THE FLOCK"
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://www.hoodbirds.xyz/tasks
+- **Tasks:** 4/4 Verified (Follow / Like / Repost / Comment — client-side bypass)
+- **Turnstile:** Solved via Hermes browser tools (iframe click)
+- **Reward:** FREE mint · 4,500 birds · Robinhood Chain (Chain ID 4663)
+- **Mint Opens:** ~4 days from Aug 8, 2026
+- **Claimed:** 4,649/4,500 (oversubscribed)
+- **Date:** Aug 8, 2026
 
 ### 17. Robin Rockin — GTD WL 🆕
 - **Status:** ✅ Registered
