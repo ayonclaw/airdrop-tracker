@@ -265,6 +265,20 @@
 - **Referral:** `RV3WYNVU`
 - **Tweet:** `x.com/osbornrdx/status/2080240573815095458`
 
+### Overtake World — $TAKE Airdrop 🆕
+- **Status:** ⚠️ PENDING — needs Sui wallet (Slush.app)
+- **URL:** `https://airdrop.overtake.world/event/airdrop/claim`
+- **Reward:** $TAKE token (Sui chain)
+- **Chain:** Sui
+- **Wallet needed:** Sui-native wallet (Slush: my.slush.app)
+- **Auth:** Immutable Passport (email OTP to airdropkarbiters@gmail.com)
+- **Socials:** X (@overtake_world), Discord (discord.gg/overtake-world), Telegram (t.me/overtake_world), Medium
+- **API:** `https://api.overtake.world/airdrop/v1` (check, claim-signature, slot/register)
+- **Flow:** Immutable Passport Auth → Sui Wallet Connect → Check Eligibility → Claim
+- **Blocked by:** No Sui wallet on this server. Immutable OTP received (code flow works). Sui wallet connect not automatable without real Sui wallet extension.
+- **Date:** Aug 9, 2026
+- ⚠️ Need: Sui wallet setup (Slush or Sui Wallet extension) + Sui gas for claim TX
+
 ### ATF Miner — TON Mining Mini App 🆕
 - **Status:** ⚠️ Needs manual Telegram interaction
 - **URL:** `t.me/ATF_AIRDROP_bot?start=515933843`
