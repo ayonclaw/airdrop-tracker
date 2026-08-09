@@ -6,6 +6,16 @@
 
 ## ✅ COMPLETED
 
+### 19. WEIRDOZ — Whitelist 🆕
+- **Status:** ✅ Registered — REF-9283
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://www.weirdoz.fun/whitelist
+- **Tasks:** 3/3 checklist (Follow @Weirdohoods / Like & Repost / Comment tag 3) — API bypass
+- **API Submit:** `POST /api/submit` → `{"success":true,"ref":"REF-9283"}`
+- **Reward:** WL spot on Robinhood Chain
+- **Date:** Aug 9, 2026
+
 ### 18. HoodBirds — Free Mint WL 🆕
 - **Status:** ✅ Registered — "YOU'RE IN THE FLOCK"
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
