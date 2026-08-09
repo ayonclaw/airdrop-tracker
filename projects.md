@@ -464,3 +464,18 @@
   - ❌ Wallet connect on NOWA (ConnectKit/RainbowKit - needs real MetaMask)
   - ❌ Social follows on NOWA (locked behind wallet connect)
 - **Notes:** Devnet platform. Farming API (apipointfarming.nowa.finance) unreachable from server. Core Galxe follow task completed. Visit & survey creds need manual browser interaction (wallet connect + screenshot).
+
+---
+
+## ⛔ SKIPPED / EXPIRED
+
+### 1. Midnight Network (Galxe Quest) — EXPIRED
+- **Date:** Aug 09, 2026
+- **URL:** https://app.galxe.com/quest/QxTCYB6zFnNRaMwvNFGpLA/GC68NtZj2k
+- **Campaign:** Become Part of the Midnight Community and Win!
+- **Status:** ❌ EXPIRED (Galxe shows "Expired")
+- **Space:** Midnight Network (ID: 85338)
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Done:** SIWE login ✅, followSpace ✅
+- **Skipped:** 5 creds (1 GALXE_ID visit, 3 TWITTER, 1 DISCORD) — all blocked by expired status + missing social auth
+- **Reward:** N/A (Expired)
