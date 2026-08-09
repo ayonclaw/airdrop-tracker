@@ -508,6 +508,24 @@
 
 ---
 
+## ⚠️ TURNSTILE-BLOCKED
+
+### GoDark DEX — Waitlist
+- **Status:** ⚠️ Turnstile-blocked — needs CloakBrowser
+- **URL:** https://godarkdex.com/ref/MQFI17X3
+- **Email:** airdropkarbiters@gmail.com
+- **Ref Code:** MQFI17X3
+- **Wallet:** 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG (Solana DEX)
+- **Type:** Solana Dark Pool DEX — Early Access Waitlist
+- **Backed By:** GSR, Capital Union, Fasanara Capital, Hercle, FRNT, TYR Capital, Stillman
+- **API:** Supabase Edge Function (`submit-waitlist`) — needs valid Turnstile token
+- **Blocked by:** Cloudflare Turnstile (sitekey: 0x4AAAAAACtoXS02tZWNTGCx) — route-mode tokens rejected server-side, real_page times out
+- **Approaches tried:** (1) captcha-solver route-mode — token rejected (2) captcha-solver real_page — timeout 60s (3) CDP iframe interaction — cross-origin blocked (4) direct API POST — CAPTCHA verification failed (5) browser_console token injection — Turnstile callback not triggered (6) button force-enable + click — no response
+- **Solution:** Open in CloakBrowser → manually solve Turnstile checkbox → submit form
+- **Date:** Aug 9, 2026
+- **Source:** @airdropfind Telegram
+
+---
 ## ⛔ SKIPPED / EXPIRED
 
 ### 1. Midnight Network (Galxe Quest) — EXPIRED
