@@ -506,6 +506,27 @@
   - ❌ Social follows on NOWA (locked behind wallet connect)
 - **Notes:** Devnet platform. Farming API (apipointfarming.nowa.finance) unreachable from server. Core Galxe follow task completed. Visit & survey creds need manual browser interaction (wallet connect + screenshot).
 
+### 21. Soneium X WheelX — Score Legacy Badge (Galxe) 🆕
+- **Status:** ⚠️ Partial
+- **URL:** https://app.galxe.com/quest/WheelX.fi/GCBpWtZnqD
+- **Campaign:** Soneium Score Legacy Badge
+- **Galxe ID:** `LUZFnfaqSPcJJ9to9HXzoG` (reydenim) | Space: WheelX.fi (81400)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Reward:** Soneium Score Legacy Badge (NFT)
+- **Completed:**
+  - ✅ SIWE login to Galxe
+  - ✅ followSpace (WheelX.fi)
+  - ✅ Retweeted WheelX-fi tweet — https://x.com/WheelX_fi/status/2084987566831579572
+  - ✅ Liked WheelX-fi tweet
+- **Credential Results:**
+  - ❌ Made 1+ trade on WheelX (EVM_ADDRESS) — `allow:false` (no WheelX trade history)
+  - ❌ Hold Soneium Score badge (EVM_ADDRESS) — `allow:false` (no Soneium badges)
+  - ❌ Complete 1 trade (EVM_ADDRESS) — `allow:false` (needs on-chain action)
+  - ❌ Tweet Retweeters (TWITTER) — "missing twitter args" (needs X OAuth linked to Galxe)
+- **Date:** Aug 9, 2026
+- **Source:** @airdropfind Telegram
+- **Note:** Core Galxe actions done (followSpace + X tasks). EVM creds need WheelX trading history. TWITTER cred needs X OAuth linked to Galxe account LUZFnfaqSPcJJ9to9HXzoG.
+
 ---
 
 ## ⚠️ TURNSTILE-BLOCKED
