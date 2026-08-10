@@ -790,3 +790,17 @@
 - **Type:** NOT-AIRDROP
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (msg 126843)
+
+### 39. KujiNFT — ✅ Already Registered
+
+- **URL:** https://kujinft.xyz
+- **Status:** ✅ Wallet already registered (WALLET_ALREADY_REGISTERED response from Google Apps Script)
+- **Type:** BROWSERLESS-FIRST (Google Apps Script backend, vanilla JS frontend)
+- **Backend:** Google Apps Script (POST text/plain JSON body → 302 redirect → JSON response)
+- **Payload:** `{ethAddress, username, quoteLink}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X handle:** `@osbornrdx`
+- **Tasks:** Follow @kuji_nft, quote tweet, submit EVM wallet
+- **Note:** Submitted in prior session but not tracked. Now recorded.
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126819)
