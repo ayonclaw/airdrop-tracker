@@ -439,20 +439,27 @@
   - ✅ Confirmed: "✅ WL ENTRY CONFIRMED"
 - **Date:** Aug 7, 2026
 
-### 15. Yakkamon — Pre-Registration ✅
-- **Status:** ✅ COMPLETED — Season 0 Registered
+### 15. Yakkamon — Season 0 Registry ✅
+- **Status:** ✅ COMPLETED — Logged in + Quests Done
 - **URL:** https://yakkamon.com
 - **Email:** `airdropkarbiters@gmail.com`
-- **Code:** `YAKKA-6EBJHM` (from Rey)
+- **Code:** `YAKKA-V7WG47` (new code from Rey, Aug 10)
 - **Platform:** Ronin Network | Team: Thought Farm (Sunflower Land)
 - **Type:** Season 0 Pre-Registration | Free | Q4 2026 Early Access
-- **Reward:** Monster Egg (in-game item) + Leaderboard rewards (top 5K = Monster NFT, top 1K = Legendary NFT)
+- **Player ID:** `6a759be4af8ad61aa21cae57`
+- **Tier:** BRONZE | **Points:** 30 | **Streak:** 0
+- **Reward:** Monster Egg (in-game) + Weekly rewards + Leaderboard NFTs
 - **Tasks:**
-  - ✅ Email submitted: `airdropkarbiters@gmail.com`
-  - ✅ T&C accepted
-  - ✅ Referral code `YAKKA-6EBJHM` applied — API: `{"success":true}`
-- **API:** POST `/auth/login` → `{"success":true}` with `{email, accessCode}`
-- **Date:** Aug 7, 2026
+  - ✅ Email submitted + T&C accepted
+  - ✅ Referral code `YAKKA-V7WG47` applied
+  - ✅ X connected (@osbornrdx, linked, following @YakkamonGame)
+  - ✅ Weekly post done (+20 pts, post ID: 2086591568560132287)
+  - ✅ Weekly rewards claimed (Bronze Loot Box + Raffle Ticket)
+  - ⚠️ Discord connect blocked (hCaptcha)
+  - ⚠️ Wallet connect needs Ronin Stash extension
+  - ⚠️ Refer friends pending (need referral code)
+- **Proof:** x.com/osbornrdx/status/2086591568560132287 (weekly post)
+- **Date:** Aug 7, 2026 (initial) → Aug 10, 2026 (full login + quests)
 
 ### 16. AGNT Weekly Socials — Galxe Quest (S3 W3 D4+D5) 🆕
 - **Status:** ⚠️ Partial — followSpace Done, Visit/Like Need X OAuth
