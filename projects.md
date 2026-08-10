@@ -547,6 +547,39 @@
 - **Source:** @airdropfind Telegram
 
 ---
+### 21. KittiHood — Free Mint on Robinhood 🆕
+- **Status:** ✅ WL Application SUBMITTED (KH-A5047A74)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://www.kittihood.xyz/apply
+- **Referral:** https://www.kittihood.xyz/apply?ref=KITTI-0632B6
+- **Submission ID:** KH-A5047A74
+- **Contribution:** Simple Tweet
+- **Proof Tweet:** https://x.com/osbornrdx/status/2086725209743368270
+- **X Tasks:** Follow @KittiHoodpix ✅, Like+Repost official post ✅
+- **Chain:** Robinhood (EVM)
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram
+
+### 22. DOHM Finance Testnet 🆕
+- **Status:** ⚠️ Pending — requires testnet wallet creation + mainnet wallet verification
+- **URL:** https://testnet.dohm.finance/app
+- **Docs:** https://docs.dohm.finance/testnet
+- **Notes:** Site requires "Create testnet wallet" (in-app wallet) + "Link mainnet wallet" for verification. Swap/Bond/Stake features locked until wallet created.
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram
+
+### 23. P.K.O — Punk Operators (Art Contest) 🆕
+- **Status:** ⚠️ Pending — Art contest with puzzle, 2 days remaining
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://pko.world/#whitelist
+- **Chain:** Ethereum
+- **Notes:** Not a standard WL form — it's an art contest. Requires X post with artwork + puzzle answer + wallet address. Button shows "preparing..." (puzzle not solved).
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram
+
+---
 ## ⛔ SKIPPED / EXPIRED
 
 ### 1. Midnight Network (Galxe Quest) — EXPIRED
