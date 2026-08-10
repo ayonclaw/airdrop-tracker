@@ -668,10 +668,10 @@
 - **Source:** @airdropfind Telegram
 - **Note:** Not automatable — needs real Bybit account with KYC + real money trades
 
-### 28. DOHM Finance Testnet — Wallet Created (Setup In Progress)
+### 28. DOHM Finance Testnet — Onboarding Complete
 - **URL:** https://testnet.dohm.finance/app
 - **Docs:** https://docs.dohm.finance/testnet
-- **Status:** Testnet wallet created — BTC faucet pending (~10 min broadcast). frBTC faucet disabled until BTC arrives.
+- **Status:** Onboarding complete. BTC faucet claimed (0.0004 BTC), frBTC faucet claimed (1 frBTC), swapped frBTC to DOHM (broadcasting on regtest). Balances: BTC=0.0004, all others pending swap confirmation.
 - **Chain:** Bitcoin regtest
 - **Wallet Address:** bcrt1qwh...5z0h44
 - **Password:** Cloudin123! (local testnet wallet)
