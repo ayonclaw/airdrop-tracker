@@ -603,3 +603,14 @@
 - **Done:** SIWE login ✅, followSpace ✅
 - **Skipped:** 5 creds (1 GALXE_ID visit, 3 TWITTER, 1 DISCORD) — all blocked by expired status + missing social auth
 - **Reward:** N/A (Expired)
+
+### 0. Trady — Galxe Quest (EXPIRED)
+- **Date:** Aug 10, 2026
+- **URL:** https://app.galxe.com/quest/cxPdNrMXVRTicriv25YiMM/GCZsStZe3o
+- **Campaign:** Get in Early. Split 1,000 USDT.
+- **Status:** ❌ EXPIRED (Galxe shows "Expired")
+- **Space:** Trady (ID: 83630)
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Done:** SIWE login ✅, followSpace ✅ (allow:true), X follow @tradyxyz ✅ (https://x.com/tradyxyz)
+- **Skipped:** 2 TWITTER creds (X Account Requirement, Twitter Followers) — need X OAuth linking to Galxe account; campaign expired regardless
+- **Reward:** 1,000 USDT split (expired, not claimable)
