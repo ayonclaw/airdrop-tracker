@@ -701,3 +701,42 @@
 - **API:** POST `https://formspree.io/f/xlgkpojg` → `{"ok":true}`
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (msg 126829)
+
+### 31. KittiHood — ⚠️ Rate-Limited (Pending Retry)
+
+- **URL:** https://www.kittihood.xyz/apply
+- **Status:** ⚠️ API rate-limited (429) — needs browser or retry after cooldown
+- **Type:** Next.js SPA, `/api/applications` endpoint
+- **Payload:** xUsername, walletAddress, contributionType ("Simple Tweet"), kittiTweetUrl, confirmed, followKitti, supportPost, followManager, submissionToken
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** `@osbornrdx`
+- **Method:** Browserless — API reverse-engineered from JS chunk, but 429 rate limit after 3 attempts
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126811)
+
+### 32. P.K.O (Punk Operators) — ⚠️ Browser Required (PoW Bot Check)
+
+- **URL:** https://pko.world/#whitelist
+- **Status:** ⚠️ Needs browser — custom PoW + Q&A bot check, not solvable via curl
+- **Type:** Lovable/TanStack Start SPA, server functions
+- **Fields:** xUsername, walletAddress, submissionUrl, challengeAnswer, website
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126813)
+
+### 33. DOHM Finance Testnet — ⚠️ Skipped (Unisat Wallet Required)
+
+- **URL:** https://testnet.dohm.finance/app
+- **Status:** ⚠️ Skipped — requires Unisat wallet (Bitcoin L2), faucet + bond flow
+- **Type:** On-chain testnet (frBTC bonding)
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126820)
+
+### 34. MBX Trade & Earn — ❌ Not Automatable (Exchange KYC)
+
+- **URL:** https://forms.gle/4DSHoPrih7Hf2Pgy6
+- **Status:** ❌ Not automatable — requires Bybit KYC + $20 real trade ($10 BUY + $10 SELL $MBX)
+- **Reward:** 5 USDT for 700 FCFS
+- **Type:** EXCHANGE-TRADE-REQUIREMENT (Type 7)
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126837)
