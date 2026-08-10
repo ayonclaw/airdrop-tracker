@@ -758,3 +758,35 @@
 - **Form:** Google Forms (1FAIpQLScl9FBIh8kNqKbo9knT99i7esrWOtAxaSvY3L4gjWZfiVhXWQ)
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
+
+
+### 36. Solstice Finance S2 Claim — ⚠️ Pending (Phantom Wallet Required)
+
+- **URL:** https://claim.solstice.finance/flow?season=s2
+- **Status:** ⚠️ Pending — requires real Phantom wallet extension for wallet-standard discovery + on-chain transaction signing
+- **Type:** WEB3-WALLET (Solana on-chain Merkle distributor claim)
+- **Platform:** Clique.tech
+- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG`
+- **Token:** SLX (3.25% of total supply allocated to S2 airdrop)
+- **Deadline:** Aug 18, 2026 (vesting preference confirmation)
+- **Approaches tried:** 6+ (mock injection, wallet-standard event, React fiber manipulation, direct API, TOS signing, deployment endpoint)
+- **Root cause:** Clique wallet adapter uses wallet-standard discovery; snap Chrome can't load Phantom extension (AppArmor); API requires Merkle root from deployment config (undiscoverable)
+- **Action needed:** Manual claim via CloakBrowser/noVNC with Phantom wallet
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126839)
+
+### 37. Voice.fun Vote — ⚠️ Pending (Cloudflare Challenge)
+
+- **URL:** https://voice.fun/socialcamp/cryptoaddict66?ref=ZLRERP
+- **Status:** ⚠️ Pending — Cloudflare managed challenge (403 "Just a moment..."), no sitekey
+- **Type:** CF-MANAGED-CHALLENGE
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126842)
+
+### 38. Canza Finance CMC Post — ❌ Skipped (Not Airdrop)
+
+- **URL:** https://coinmarketcap.com/community/post/378278508/
+- **Status:** ❌ Skipped — CoinMarketCap community post, not an airdrop/waitlist
+- **Type:** NOT-AIRDROP
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126843)
