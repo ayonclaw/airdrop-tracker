@@ -752,8 +752,8 @@
   - [x] Follow @0xInheritance — https://x.com/0xinheritance
   - [x] Like pinned post — https://x.com/0xinheritance/status/2086800931056648412
   - [x] Repost pinned post — https://x.com/0xinheritance/status/2086800931056648412
-  - [x] Quote tweet pinned post — https://x.com/osbornrdx/status/2086849389017067829
-  - [x] Comment + tag 2 friends — https://x.com/osbornrdx/status/2086849389017067829 (reply on pinned post)
+  - [x] Quote tweet pinned post — https://x.com/osbornrdx/status/2086865472373616969
+  - [x] Comment + tag 2 friends — https://x.com/osbornrdx/status/2086867092499050894 (reply on pinned post, tagged @arcadiansonarc @galaxy_eco)
 - **House:** Ochre
 - **Form:** Google Forms (1FAIpQLScl9FBIh8kNqKbo9knT99i7esrWOtAxaSvY3L4gjWZfiVhXWQ)
 - **Date:** Aug 10, 2026
