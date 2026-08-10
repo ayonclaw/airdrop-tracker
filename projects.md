@@ -614,3 +614,44 @@
 - **Done:** SIWE login ✅, followSpace ✅ (allow:true), X follow @tradyxyz ✅ (https://x.com/tradyxyz)
 - **Skipped:** 2 TWITTER creds (X Account Requirement, Twitter Followers) — need X OAuth linking to Galxe account; campaign expired regardless
 - **Reward:** 1,000 USDT split (expired, not claimable)
+
+---
+
+## 🆕 Aug 10, 2026 — Auto Pipeline Scan
+
+### 21. Rocx Waitlist ✅
+- **URL:** https://rocx.io
+- **Status:** ✅ Joined waitlist
+- **Email:** airdropkarbiters@gmail.com
+- **Method:** Browserless — Formspree POST (formspree.io/f/xlgkpojg)
+- **Response:** `{"ok":true,"next":"/thanks"}`
+- **Project:** RocX (BIGDOR Inc) — Korean crypto project, X: @RocX_official, TG: @rocx_official
+
+### 22. BitRobot Early Access ✅
+- **URL:** https://app.bitrobot.ai/countdown
+- **Status:** ✅ Access secured — Day 1 badge reserved
+- **Email:** airdropkarbiters@gmail.com
+- **Confirmation:** "YOU'RE ON THE LIST AND THE DAY 1 BADGE IS RESERVED. RETURN WHEN THE COUNTDOWN HITS ZERO AND SIGN UP WITHIN 30 DAYS TO KEEP IT."
+- **Countdown:** ~2 days remaining to lab opening
+- **Social:** X: @BitRobotNetwork | Discord: discord.gg/bitrobot
+- **Method:** Browser tools (browser_navigate + browser_type + browser_click)
+- **Note:** Follow @BitRobotNetwork + Join Discord are community links (not verified tasks)
+
+### 23. HoodPix Allocation Checker — NOT ELIGIBLE
+- **URL:** https://hoodpix.xyz/checker
+- **Status:** ⚠️ Not on the list (wallet not in GTD or FCFS tranches)
+- **Wallet checked:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Result:** "NOT ON THE LIST" — wallet was not in the whitelist
+- **Project:** 999 pixel Hoodz on Robinhood Chain, FREE mint, OpenSea
+
+### 24. The Galleria — OpenSea Collection
+- **URL:** https://opensea.io/collection/the-galleria/overview
+- **Status:** ⚠️ Eligibility check only (needs wallet connect on OpenSea)
+
+### 25. Base3rd NFT — OpenSea Collection
+- **URL:** https://opensea.io/collection/base3rd/overview
+- **Status:** ⚠️ Mint check only (needs wallet connect on OpenSea)
+
+### 26. Pear Rewards — New Tasks Check
+- **URL:** https://rewards.pear.trade
+- **Status:** ℹ️ Recurring tasks only (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Existing cron handles daily claims.
