@@ -680,3 +680,14 @@
 - **Features:** Bond frBTC, Swap, Stake Dohm, 3-Day Check-In Streak (+5 percent), Mainnet Wallet Link (+10 percent)
 - **Source:** @airdropfind Telegram
 - **Date:** Aug 10, 2026
+### 29. Cupang Venture — Wallet Verified ✅
+
+- **URL:** https://cupangventure.com
+- **Status:** ✅ Wallet verified (already active)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Method:** Browserless — SIWE-like flow via eth_account (nonce → sign → verify)
+- **API:** POST /api/nonce → POST /api/check-wallet
+- **Result:** `{"ok":false,"error":"This wallet has already been verified.","status":"active"}`
+- **Telegram:** @mxsyxfxx (ID: 983121959) — linked to wallet
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126833)
