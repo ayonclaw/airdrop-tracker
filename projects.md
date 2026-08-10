@@ -579,6 +579,17 @@
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram
 
+
+### 24. RocX — Waitlist 🆕
+- **Status:** ✅ Waitlist submitted
+- **Email:** `airdropkarbiters@gmail.com`
+- **URL:** https://rocx.io
+- **Form:** Formspree (xlgkpojg) — email-only waitlist
+- **Organization:** BIGDOR Inc. (Korean, ko-KR locale)
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram
+- **Notes:** WordPress/Astra site, email-only form. No wallet/X/OAuth required. Confirmation: Formspree 302 redirect to /thanks.
+
 ---
 ## ⛔ SKIPPED / EXPIRED
 
