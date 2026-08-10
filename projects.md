@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 9, 2026**
+> Last updated: **Aug 10, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -740,3 +740,21 @@
 - **Type:** EXCHANGE-TRADE-REQUIREMENT (Type 7)
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (msg 126837)
+
+### 35. Inheritance Whitelist — ✅ Completed
+
+- **URL:** https://www.0xinheritance.art/wl
+- **Status:** ✅ Completed — all 5 tasks done + Google Form submitted
+- **Type:** WEB-WAITLIST (X tasks + Google Form)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X:** @osbornrdx
+- **Tasks:**
+  - [x] Follow @0xInheritance — https://x.com/0xinheritance
+  - [x] Like pinned post — https://x.com/0xinheritance/status/2086800931056648412
+  - [x] Repost pinned post — https://x.com/0xinheritance/status/2086800931056648412
+  - [x] Quote tweet pinned post — https://x.com/osbornrdx/status/2086849389017067829
+  - [x] Comment + tag 2 friends — https://x.com/osbornrdx/status/2086849389017067829 (reply on pinned post)
+- **House:** Ochre
+- **Form:** Google Forms (1FAIpQLScl9FBIh8kNqKbo9knT99i7esrWOtAxaSvY3L4gjWZfiVhXWQ)
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
