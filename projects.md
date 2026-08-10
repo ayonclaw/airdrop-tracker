@@ -691,3 +691,13 @@
 - **Telegram:** @mxsyxfxx (ID: 983121959) — linked to wallet
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (msg 126833)
+
+### 30. Rocx — Waitlist Registered ✅
+
+- **URL:** https://rocx.io
+- **Status:** ✅ Waitlist registered
+- **Email:** `airdropkarbiters@gmail.com`
+- **Method:** Browserless — Formspree POST (WordPress/SureForms)
+- **API:** POST `https://formspree.io/f/xlgkpojg` → `{"ok":true}`
+- **Date:** Aug 10, 2026
+- **Source:** @airdropfind Telegram (msg 126829)
