@@ -655,3 +655,28 @@
 ### 26. Pear Rewards — New Tasks Check
 - **URL:** https://rewards.pear.trade
 - **Status:** ℹ️ Recurring tasks only (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Existing cron handles daily claims.
+
+
+### 27. MBX Trade & Earn — FCFS 5 USDT
+- **URL:** https://forms.gle/4DSHoPrih7Hf2Pgy6
+- **Reward:** 5 USDT for 700 FCFS
+- **Status:** Manual — requires Bybit Global KYC + $20 real trade ($10 BUY + $10 SELL of MBX) + screenshot
+- **Requirements:** Bybit account, KYC verified, trade MBX/USDT pair, screenshot trade history, submit Email + Bybit UID + EVM/BSC wallet
+- **EVM Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Email:** airdropkarbiters@gmail.com
+- **Start:** August 10, 2026 12:00 UTC
+- **Source:** @airdropfind Telegram
+- **Note:** Not automatable — needs real Bybit account with KYC + real money trades
+
+### 28. DOHM Finance Testnet — Wallet Created (Setup In Progress)
+- **URL:** https://testnet.dohm.finance/app
+- **Docs:** https://docs.dohm.finance/testnet
+- **Status:** Testnet wallet created — BTC faucet pending (~10 min broadcast). frBTC faucet disabled until BTC arrives.
+- **Chain:** Bitcoin regtest
+- **Wallet Address:** bcrt1qwh...5z0h44
+- **Password:** Cloudin123! (local testnet wallet)
+- **Recovery Phrase:** Saved to ~/airdrop/credentials/wallets/dohm_testnet_wallet.txt
+- **Setup Steps:** Get BTC (pending) -> Get frBTC -> Bond and earn 1 point -> Start exploring
+- **Features:** Bond frBTC, Swap, Stake Dohm, 3-Day Check-In Streak (+5 percent), Mainnet Wallet Link (+10 percent)
+- **Source:** @airdropfind Telegram
+- **Date:** Aug 10, 2026
