@@ -24,6 +24,23 @@
 - **Date:** Aug 11, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
 
+### 22. FleurHood — Garden Passport WL 🆕
+- **Status:** ✅ Submitted — Application ID `FLR-MSOCPAQV-B1124BDD`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Email:** `airdropkarbiters@gmail.com`
+- **URL:** https://www.fleurhood.fun
+- **Chain:** Robinhood
+- **Tasks:**
+  - ✅ Follow @FleurHood — [Profile](https://x.com/FleurHood)
+  - ✅ Like official post — [Tweet](https://x.com/fleurhood/status/2086976721681621432)
+  - ✅ Repost official post — [Tweet](https://x.com/fleurhood/status/2086976721681621432)
+  - ✅ Proof tweet — [Tweet](https://x.com/osbornrdx/status/2087080766094377106)
+- **API Submit:** `POST /api/applications` → `{"applicationId":"FLR-MSOCPAQV-B1124BDD","status":"submitted"}`
+- **Referral Code:** `FLEUR-L9USWF` (generated)
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
 ### 20. Cade Meme Madness — Pre-Launch Boost 🆕
 - **Status:** ✅ 50/70 PTS (3/4 boost actions complete)
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
