@@ -936,3 +936,20 @@
 - **Source:** @airdropfind Telegram (msg 126685, auto-detected)
 - **Note:** Requires existing Ronks NFT to stake. No WL/form — it's a dApp for holders.
 
+### 28. Inheritance — Generative Art WL ✅
+- **Status:** ✅ Whitelist submitted (pending review)
+- **URL:** https://www.0xinheritance.art/wl
+- **Chain:** Ethereum (generative art NFT, 2,096 supply)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Tasks:**
+  - ✅ Follow @0xinheritance — already following
+  - ✅ Like pinned post — https://x.com/0xinheritance/status/2086800931056648412
+  - ✅ Repost pinned post — confirmed via intent retweet
+  - ✅ Quote retweet — https://x.com/osbornrdx/status/2087027992266744070
+  - ✅ Comment + tag friends — https://x.com/osbornrdx/status/2087028254968594440
+- **House:** Ochre (first house)
+- **Submission:** Google Form POST (HTTP 200) — X user, wallet, house, quote link, comment link
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
