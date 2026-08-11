@@ -798,6 +798,22 @@
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (msg 126843)
 
+### 40. Anomalies NFT — ✅ Whitelisted 🆕
+- **Status:** ✅ Whitelisted — wallet confirmed on WL checker
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://anomaliesnft.xyz/
+- **Tasks:**
+  - ✅ Follow @anomaliesoneth on X — https://x.com/anomaliesoneth
+  - ✅ Like pinned tweet — https://x.com/anomaliesoneth/status/2086873705666298266
+  - ✅ Retweet pinned tweet — https://x.com/anomaliesoneth/status/2086873705666298266
+  - ✅ Quote tweet posted — https://x.com/osbornrdx/status/2086979352340861319
+  - ✅ Comment (tag 3 friends) — https://x.com/osbornrdx/status/2086980174915199284
+  - ✅ Submit ETH wallet via API (POST api.php)
+- **Checker:** `{"success":true,"status":"WL"}` ✅
+- **Reward:** 2222 NFT collection on ETH, mint date Aug 15
+- **Date:** Aug 11, 2026
+
 ### 39. KujiNFT — ✅ Already Registered
 
 - **URL:** https://kujinft.xyz
