@@ -885,3 +885,54 @@
 - **Source:** @airdropfind Telegram (auto-detected by monitor)
 - **Note:** Galxe quest — TWITTER creds fail with "missing twitter args" (X OAuth not linked to Galxe account level). Instagram + Discord + Telegram need manual. X follow/like/retweet done via CDP cookie injection. App opens mainnet Aug 24.
 
+
+### 22. Hoodlife — Wallet List ✅
+- **Status:** ✅ Already registered — `already_registered` response from API
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **URL:** https://hoodlife.io/wallet
+- **API:** POST /api/wallet `{address}` → `{"error":"already_registered"}`
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (msg 126729, auto-detected)
+- **Note:** Next.js SPA on Vercel. Browserless API submission — wallet already on the list from prior session.
+
+### 23. CASHY NFT — WL EXPIRED ⚠️
+- **Status:** ⚠️ Mint expired (Aug 8, 2026 19:00 UTC) — 1240/2000 spots taken
+- **URL:** https://cashynft.xyz/
+- **X Handle:** @cashy_nft
+- **Pinned Post:** x.com/i/status/2085758280773574992
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (msg 126715, auto-detected)
+- **Note:** Vanilla JS site with WL_CONFIG. submitEndpoint="" (empty — no backend API). Client-side only wizard with localStorage. Mint date already passed.
+
+### 24. Robin Rockin — Google Form WL ⚠️ PENDING
+- **Status:** ⚠️ Pending — Google Form requires 2FA login (can't auto-solve)
+- **URL:** Google Form (docs.google.com/forms/d/e/1FAIpQLSdqUHT_HynE4EeRoTjp4zKf2PGGCO_i95OQVjcg2EMJxMSJZw)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (msg 126755, auto-detected)
+- **Note:** Google Form restricted — requires Google account login. 2FA (Google Authenticator) blocks automated access. Needs manual login from browser with 2FA code.
+
+### 25. Etherbubu — guild.xyz Chests ⚠️ PENDING
+- **Status:** ⚠️ Pending — guild.xyz needs wallet connect + Discord/GitHub
+- **URL:** https://guild.xyz/etherbubu/chests
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (msg 126720, auto-detected)
+- **Note:** guild.xyz platform — requires wallet connect + likely Discord/GitHub OAuth. First 5,000 users claim Common Chest. Needs browser automation with wallet extension.
+
+### 26. DarkHoods NFT — DEAD ⛔
+- **Status:** ⛔ Site returns 404 — project dead or migrated
+- **URL:** https://darkhoodsnft.xyz
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (msg 126731, auto-detected)
+
+### 27. Ronks — Staking Platform (Not WL) ℹ️
+- **Status:** ℹ️ Not a waitlist — staking platform for existing NFT holders
+- **URL:** https://ronks.xyz
+- **Chain:** Robinhood Chain (4,444 supply, $RONKS token)
+- **Staking:** Season 1 (Aug 11 - Sep 10, 2026), 444,400 $RONKS reward pool
+- **Contracts:** NFT 0x9b368Ea7..., Token 0x531465a3..., Staking 0xE8B7d46E...
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (msg 126685, auto-detected)
+- **Note:** Requires existing Ronks NFT to stake. No WL/form — it's a dApp for holders.
+
