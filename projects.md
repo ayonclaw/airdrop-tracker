@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 10, 2026**
+> Last updated: **Aug 11, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -861,5 +861,27 @@
 - **Proof:** "GTD APPLICATION COMPLETE — Your application has been stored and is waiting for manual task verification."
 - **Date:** Aug 11, 2026
 - **Source:** @airdropfind Telegram (auto-detected by monitor)
-- **Note:** Next.js SPA on Vercel. React fiber dispatch used to set tasks:{follow:true, engage:true, comment:true}. All X actions performed via CDP with fresh X cookies. Proof link step (post card on X) not yet completed — needs card image download + X post.
+| **Note:** Next.js SPA on Vercel. React fiber dispatch used to set tasks:{follow:true, engage:true, comment:true}. All X actions performed via CDP with fresh X cookies. Proof link step (post card on X) not yet completed — needs card image download + X post.
+
+### 21. Zamica Genesis — Galxe Quest 🆕
+- **Status:** ⚠️ Partial — API tasks done, social creds need X OAuth linking
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://app.galxe.com/quest/FatGWYx6neHTWdDeoHcUEq/GCdn5tZdDz
+- **Galxe Space:** Zamica (ID: 86557)
+- **Campaign:** GCdn5tZdDz (Active, #364426)
+- **Reward:** $300 USDT, 62 winners + permanent on-chain badge
+- **Tasks (7 credentials):**
+  - ✅ Follow Zamica on Galxe (GALXE_ID) — `allow:true`
+  - ✅ followSpace — success
+  - ✅ Follow @zamicaofficial on X — confirmed "Mengikuti"
+  - ✅ Like pinned tweet (x.com/zamicaofficial/status/2085931130780594198) — confirmed
+  - ✅ Repost pinned tweet — confirmed
+  - ❌ Discord @everyone — `allow:false` (needs real Discord join)
+  - ❌ Telegram join — `empty address` (needs TG bot verification)
+  - ❌ Instagram follow (GALXE_ID) — `allow:false` (needs IG OAuth)
+- **SIWE:** ✅ JWT obtained via eth_account
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected by monitor)
+- **Note:** Galxe quest — TWITTER creds fail with "missing twitter args" (X OAuth not linked to Galxe account level). Instagram + Discord + Telegram need manual. X follow/like/retweet done via CDP cookie injection. App opens mainnet Aug 24.
 
