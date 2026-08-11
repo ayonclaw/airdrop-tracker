@@ -6,6 +6,24 @@
 
 ## ✅ COMPLETED
 
+### 21. Mortis — WL Application 🆕
+- **Status:** ✅ Registered — Application #1344
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Email:** `airdropkarbiters@gmail.com`
+- **URL:** https://mortishq.com/apply
+- **Chain:** Robinhood
+- **Task Tweet:** https://x.com/MortisHQ/status/2086836776815972630
+- **Tasks:**
+  - ✅ Follow @MortisHQ — [Profile](https://x.com/MortisHQ)
+  - ✅ Like tweet — [Tweet](https://x.com/MortisHQ/status/2086836776815972630)
+  - ✅ Repost — [Tweet](https://x.com/MortisHQ/status/2086836776815972630)
+  - ✅ Comment & tag 2 — [Reply](https://x.com/osbornrdx/status/2087076488831258680)
+- **API Submit:** `POST /api/apply` → `{"ok":true,"applicationNumber":1344}`
+- **Reward:** WL spot for Mortis NFT collection
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
 ### 20. Cade Meme Madness — Pre-Launch Boost 🆕
 - **Status:** ✅ 50/70 PTS (3/4 boost actions complete)
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
