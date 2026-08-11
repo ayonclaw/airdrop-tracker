@@ -827,3 +827,20 @@
 - **Note:** Submitted in prior session but not tracked. Now recorded.
 - **Date:** Aug 10, 2026
 - **Source:** @airdropfind Telegram (msg 126819)
+
+### 21. Robin Heroes — Whitelist (WL) 🆕
+- **Status:** ✅ Registered — WL application submitted (ok:true)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://www.robinheroesnft.xyz/apply
+- **API:** POST /api/apply `{xUsername, wallet, followed, liked, retweeted, tagged}`
+- **Chain:** Robinhood Chain (mint price: 0.00023 E, mint date: 12 AUG 2PM UTC)
+- **Tasks:**
+  - ✅ Follow @RobinHeroesNFT on X
+  - ✅ Like tweet (x.com/RobinHeroesNFT/status/2084302571364090314)
+  - ✅ Retweet tweet
+- **Deeds (client-side state):** followed, liked, retweeted, tagged = all true
+- **Reward:** 7777 pixelated onchain agentic heroes — WL spot for mint
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected by monitor)
+- **Note:** Next.js SPA with client-side deed tracking. API accepts flat booleans — no server-side X verification. All X actions verified via CDP (unlike + unretweet testids present on main tweet article).
