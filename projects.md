@@ -953,3 +953,19 @@
 - **Date:** Aug 11, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
 
+
+### 75. SHIFT RWA — Airdrop Points Check ℹ️
+- **Status:** ℹ️ INFO — Season 1 CLOSED, token claim coming soon
+- **URL:** https://app.shiftrwa.xyz/airdrop
+- **Chain:** Not specified (RWA DAO project)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Details:**
+  - Season 1 has ended. 9.4K wallets tracked, 36M total points.
+  - Timeline: Snapshot ✅ → Points Tracking ✅ → Check Points (active) → Token Claim (coming soon)
+  - Page requires Clerk auth + wallet connect to view points balance.
+  - No registration, waitlist, or tasks available — it's a points-checking page only.
+  - Token claim window TBD — will be announced via official SHIFT channels.
+- **Action:** Track for claim window opening. No tasks to execute now.
+- **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
