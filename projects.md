@@ -1,10 +1,39 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 11, 2026**
+> Last updated: **Aug 12, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 29. ASHBORNs — WL Registration 🆕
+- **Status:** ✅ Registered — "Your Wallet have been registered for ASHBORNs WL"
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx` (form submission), `@HanniClaw` (X actions)
+- **Email:** `airdropkarbiters@gmail.com`
+- **Proof:**
+  - Follow: @Ashborn_nfts ✅
+  - Like + RT + Quote: https://x.com/HanniClaw/status/2087440488647569751
+  - Target tweet: https://x.com/ashborn_nfts/status/2087214279560921451
+- **URL:** https://docs.google.com/forms/d/e/1FAIpQLScRxKY3zlvS_YjXJqNQF8Kp9NjsnniR3FCue9DvLf_dnXDEsg/viewform
+- **Chain:** Ethereum (NFT project)
+- **Note:** Google Form submission via MCP Chrome. Form required follow proof screenshot + quote tweet link. Checker goes live soon.
+
+### 22. BWILS — Echo Pass 🆕
+- **Status:** ✅ Echo Pass #27437 — Post logged, manual review queued
+- **Wallet:** N/A (no wallet needed)
+- **X Handle:** `@osbornrdx`
+- **Proof:** https://x.com/osbornrdx/status/2087346195605962857
+- **URL:** https://biwls.xyz/whitelist
+- **Chain:** N/A (Echo Pass is X post-based signal)
+- **Confirmed:** "Post logged. Your pre-GTD review is queued."
+
+### 23. KiiChain Galxe Quest (126876) — EXPIRED ⛔
+- **Status:** ⛔ Quest ended Aug 11 2026 05:00 UTC
+- **URL:** https://app.galxe.com/quest/KiiChain/GCNRStZZqa
+- **Reward:** 5 USDT (raffle)
+- **Participants:** 6.72K
+- **Note:** Deadline passed — cannot claim
 
 ### 21. Mortis — WL Application 🆕
 - **Status:** ✅ Registered — Application #1344
@@ -49,6 +78,23 @@
 - **Tabs:** TIPPING (share card + referral), SOCIAL (analytics)
 - **Note:** Fully passive — just keep posting on X. No daily tasks or claims.
 - **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
+### 28. BIWLS — Whitelist ✅ 🆕
+- **Status:** ✅ Submitted — 4/4 checkpoints + wallet
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **URL:** https://biwls.xyz/whitelist
+- **Chain:** Ethereum (NFT whitelist)
+- **Tasks:**
+  - ✅ Follow @biwlsxyz — [Proof](https://x.com/biwlsxyz)
+  - ✅ Like launch post — [Tweet ID: 2087159818859487433](https://x.com/biwlsxyz/status/2087159818859487433)
+  - ✅ Repost — [Tweet ID: 2087159818859487433](https://x.com/biwlsxyz/status/2087159818859487433)
+  - ✅ Reply — [Tweet ID: 2087159818859487433](https://x.com/biwlsxyz/status/2087159818859487433)
+- **Runner #:** 27437
+- **Echo Pass:** Optional extra — needs manual X post (lore retell + visual + tag @biwlsxyz)
+- **Proof:** "Submission complete — Your application is in." ✅
+- **Date:** Aug 12, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
 
 ### 25. PuffPals — Whitelist ✅ 🆕
@@ -440,7 +486,7 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-| KieDex | Quiz 3/7 streak, ~240 KDX | ⏳ Daily |
+|| KieDex | S2: Faucets 2/2, Missions 1/9, Oil 120, KDX 445, 1 pos BTC Long 20x | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
@@ -1158,3 +1204,22 @@
 - **X Proof:** [Follow](https://x.com/kototrade) | [Tweet 1 Like/RT](https://x.com/kototrade/status/2076727845553156264) | [Tweet 2 Like/RT](https://x.com/kototrade/status/2082375582890029457)
 - **Date:** Aug 11, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
+
+### #90 🔵 KiiChain — Galxe Quest (Signs-Up Open)
+- **Type:** Galxe Quest — https://app.galxe.com/quest/KiiChain/GCNRStZZqa
+- **Status:** ⚠️ Partial (followSpace + X actions done, EVM sync failed, TWITTER creds blocked)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Campaign:** SIGNS-UP OPEN (The big moment has arrived) — Status: Expired
+- **Done:**
+  - ✅ SIWE SignIn (0x8CCE...282D)  
+  - ✅ followSpace (KiiChain, ID: 42655)  
+  - ✅ X Follow [@KiiChainio](https://x.com/KiiChainio) (via CDP intent URL)
+  - ✅ X Like tweet [2084288606064066690](https://x.com/KiiChainio/status/2084288606064066690)
+  - ✅ X Retweet [2084288606064066690](https://x.com/KiiChainio/status/2084288606064066690)
+- **Blocked:**
+  - ⚠️ EVM_ADDRESS sync — allow:false (pre-registration record)
+  - ⚠️ ALL TWITTER creds — "missing twitter args" (X OAuth not linked to Galxe account)
+- **X Proof:** [Tweet](https://x.com/KiiChainio/status/2084288606064066690) — Like + RT 
+- **Date:** Aug 12, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
