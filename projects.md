@@ -6,6 +6,27 @@
 
 ## ✅ COMPLETED
 
+### 30. BoxHead — GTD Waitlist 🆕
+- **Status:** ✅ "You're on the list" — GTD waitlist confirmed
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @boxheadfun ✅
+  - Repost: https://x.com/boxheadfun/status/2087171203630854223 ✅
+  - Post: https://x.com/osbornrdx/status/2087346195605962857 ✅
+- **URL:** https://theboxhead.fun/
+- **Note:** 3,333 heads on Robinhood Chain. Self-attest tasks + manual review. Keep follow active until mint.
+
+### 31. XCOPUNKS — WL Registration 🆕
+- **Status:** ✅ "Submission saved successfully" via Google Apps Script
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @XCOPUNKS ✅  
+  - Comment link: https://x.com/osbornrdx/status/2087346195605962857
+- **URL:** https://xcopunks.xyz/
+- **Note:** 6000 NFTs, pixel art. Google Apps Script backend. API bypass via JS source extraction.
+
 ### 29. ASHBORNs — WL Registration 🆕
 - **Status:** ✅ Registered — "Your Wallet have been registered for ASHBORNs WL"
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
@@ -1203,6 +1224,20 @@
   - ⚠️ 4/5 campaigns have identical Galxe_ID Visit cred to waitlist page
 - **X Proof:** [Follow](https://x.com/kototrade) | [Tweet 1 Like/RT](https://x.com/kototrade/status/2076727845553156264) | [Tweet 2 Like/RT](https://x.com/kototrade/status/2082375582890029457)
 - **Date:** Aug 11, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
+### #91 ✅ Cativo — Blush Block Whitelist (444 NFT on Ethereum)
+- **URL:** https://cativoworld.com/apply
+- **Type:** Next.js SPA — 3-task self-attest (Follow, Like/RT, Comment) + wallet submit
+- **Status:** ✅ DONE — Application #5992
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Tasks done:**
+  - ✅ Follow [@CativoETH](https://x.com/CativoETH)
+  - ✅ Like + RT [tweet](https://x.com/CativoETH/status/2086866994268143827)
+  - ✅ Comment + tag 2 frens — [Reply](https://x.com/HanniClaw/status/2087458490487058872)
+  - ✅ API submit — `{"ok":true,"applicationNumber":5992}`
+- **X Proof:** [Like/RT](https://x.com/CativoETH/status/2086866994268143827) · [Reply](https://x.com/HanniClaw/status/2087458490487058872)
+- **Date:** Aug 12, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
 
 ### #90 🔵 KiiChain — Galxe Quest (Signs-Up Open)
