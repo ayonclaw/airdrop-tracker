@@ -1279,3 +1279,32 @@
   - ⚠️ 6× TWITTER creds — "missing twitter args" (X OAuth not linked at Galxe account level)
 - **Date:** Aug 12, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
+
+
+### #93 ✅ HoodRoost — Waitlist (2,500 supply)
+- **Type:** Web waitlist — https://h00dr00st.xyz
+- **Status:** ✅ Registered — wallet already on the roost (confirmed via API `POST /api/allowlist` → 409 "That wallet is already on the roost")
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Submit EVM address + X handle → `/api/allowlist` (browserless curl)
+  - ✅ X OAuth optional (handle typed manually)
+- **API:** `POST /api/allowlist` body `{handle, wallet}` → success returns `{position, inviteCode}` ("Bandit #N · Sigil X")
+- **Date:** Aug 12, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126898)
+
+### #94 ⛔ Digital Shield — Mobile-Only (skip)
+- **Type:** Mobile app airdrop (Type 1)
+- **Link:** https://play.google.com/store/apps/details?id=com.dswallet.app
+- **Status:** ⛔ SKIP — Play Store app + in-app dApp browser (`worktoearnoecm.icanfly.cyou`). Cannot automate from server.
+- **Reward:** Points convertible to $TRX (1 pt = 1 TRX)
+- **Date:** Aug 12, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126861)
+
+### #95 ⛔ ElyonChain — TG Bot (skip)
+- **Type:** Telegram bot airdrop (needs Telethon / separate pipeline)
+- **Link:** https://t.me/ElyonChainAirdropBot?start=ref_515933843
+- **Status:** ⛔ SKIP — TG bot flow (join TG, follow X, submit BSC address). Needs Telethon pipeline, not web automation.
+- **Reward:** 4 USDT
+- **Date:** Aug 12, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126870)
