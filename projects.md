@@ -1428,3 +1428,35 @@
 - **Cron:** `beldex-daily-checkin` (job `24cb0c1cb658`, `30 0 * * *`, no_agent) — re-establishes magic-link session + claims daily Check In (+5). Script: `~/.hermes/profiles/ayon/scripts/beldex_checkin.sh` → `/home/ubuntu/scripts/beldex-daily/beldex_checkin.py`.
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126921)
+
+### #104 ⚠️ BUNKERHOOD — Free Mint WL (10K Genesis Artifacts)
+- **Type:** Web waitlist — https://thebunkerhood.com/enter (Next.js SPA, code "bunker")
+- **Status:** ⚠️ Partial — all 4 X tasks done; submit blocked by backend lock timeout (auto-retry scheduled)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Class:** CLS-04 (IT / Automation + Systems)
+- **Done:**
+  - ✅ Follow [@thebunkerhood](https://x.com/thebunkerhood)
+  - ✅ Like official post [2087928623902699544](https://x.com/thebunkerhood/status/2087928623902699544)
+  - ✅ Reply (bunker comment) [2087949578549256648](https://x.com/osbornrdx/status/2087949578549256648)
+  - ✅ Read + bookmark article [2087839999882310080](https://x.com/thebunkerhood/status/2087839999882310080)
+- **Blocked:** `/api/submit` → 502 "Lock timeout" (Google Apps Script LockService contention, transient). Auto-retry cron `bunkerhood-wl-retry` (job `192b8a3880f4`, +30 min, no_agent).
+- **Notes:** 10,000 Genesis Artifacts, 1 FREE MINT per wallet, 72h window (code "bunker"). Client-side self-attest verification (fake 2-click verify).
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126925)
+
+### #105 ⚠️ Konnex — Points Program (Robotics DePIN, $KNX)
+- **Type:** Web quest — https://hub.konnex.world/points (Snag loyalty platform, NextAuth + Dynamic.xyz)
+- **Status:** ⚠️ Partial — email signed up; 19 tasks locked behind "Connect X" (X OAuth blocked)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (intended, NOT connected)
+- **Email:** `airdropkarbiters@gmail.com` (NextAuth magic link — account created)
+- **Done:**
+  - ✅ Email sign-in (magic link via imaplib) — account `d2187e35-...` created
+- **Blocked (architectural):**
+  - ⚠️ "Connect X" (required action, `req=True`) — X OAuth `x.com/i/oauth2/authorize` 400 "Ada kesalahan teknis" (app config / offline.access scope). Same block as Beldex Snag.
+  - ⚠️ All tasks gated — `/complete` returns "complete other required rules to unlock"
+  - ⚠️ Wallet connect (Dynamic → eth.merkle.io), Discord, YouTube — need OAuth/wallet
+- **Available tasks (locked):** Follow Amadeus 100, Like Post 100, TG Collab ×2 400, Follow Beldex 200, Follow Nucleus 250, Testnet Onchain 500, Community 60, Check In 10, Connect X 10, Refer 50.
+- **Notes:** "Claim 400 Points" = collab bundle (Follow Amadeus 100 + Like 100 + TG×2 200). To fully claim: manual CloakBrowser (wallet + X OAuth).
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126924)
