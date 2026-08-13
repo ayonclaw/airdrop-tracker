@@ -1395,3 +1395,13 @@
 - **Notes:** 808 JPEG Maxxis. Access code "Robinhood" (from drop text). Google Form via MCP Chrome (account airdropkarbiters@gmail.com).
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126907)
+
+### #102 ⚠️ BLNK — Whitelist (Vercel-blocked)
+- **Type:** Web waitlist — https://blnkinc.xyz/dashboard (wallet connect + tasks + code BLNK-5BE273)
+- **Status:** ⚠️ BLOCKED — Vercel Security Checkpoint (IP-level edge firewall)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (intended)
+- **X Handle:** `@osbornrdx`
+- **Blocked:** `<title>Vercel Security Checkpoint</title>` on all routes from Oracle VPS IP (curl + MCP Chrome both). No captcha-solver/cookie bypass possible — IP is flagged.
+- **Needs:** Manual browser from Rey's device, or residential proxy.
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126917)
