@@ -1308,3 +1308,19 @@
 - **Reward:** 4 USDT
 - **Date:** Aug 12, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126870)
+
+### #96 ✅ Loom of Legends — Whitelist Phase I (777 supply)
+- **Type:** Web waitlist — https://www.loomoflegends.lol/#weave
+- **Status:** ✅ Submitted — API returned `{"ok":true}` (wallet + handle accepted)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Done (5/5 weave tasks):**
+  - ✅ Follow [@Loomoflegends](https://x.com/Loomoflegends)
+  - ✅ Repost pinned drop [2087601717806501913](https://x.com/Loomoflegends/status/2087601717806501913)
+  - ✅ Comment under pinned post: [2087700021152293344](https://x.com/osbornrdx/status/2087700021152293344) ("AETHER — The Scribe")
+  - ✅ Post the drop on timeline: [2087700577283400097](https://x.com/osbornrdx/status/2087700577283400097)
+  - ✅ Discord join (self-attest — invite https://discord.gg/TmGSUyRu6, not verifiable via API)
+- **API:** `POST /api/whitelist` body `{address, handle}` → `{"ok":true}`
+- **Notes:** Mint TBA. Server only checks address+handle on submit; X tasks done for real as proof.
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
