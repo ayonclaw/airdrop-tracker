@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 12, 2026**
+> Last updated: **Aug 13, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -1338,3 +1338,60 @@
 - **Notes:** Google Form required Google account login for submission (restricted form). Bypassed via dedicated Chrome :9333 + Google password auth (no 2FA triggered). "Tested indie adventure" = self-attest (no game link found in form/post).
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
+
+### #98 ✅ DINOVA — GTD WL Application
+- **Type:** Web waitlist — https://dinovagame.com/apply (Next.js SPA, Robinhood Chain)
+- **Status:** ✅ Submitted — `{"ok":true,"applicationNumber":3873}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow [@DinovaWorld](https://x.com/DinovaWorld) (already following)
+  - ✅ Like + Repost announcement [2087270145584431273](https://x.com/DinovaWorld/status/2087270145584431273)
+  - ✅ Comment: [2087786360442875963](https://x.com/osbornrdx/status/2087786360442875963)
+- **API:** `POST /api/apply` `{handle, wallet, tasks:{follow,engage,comment}, proofUrl}` → `applicationNumber 3873`
+- **Notes:** Supply 666. Gate OPEN. Client-side task attestation + API submit.
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126905)
+
+### #99 ✅ The Saudis — Rig Registry Waitlist
+- **Type:** Web waitlist — https://thesaudis.cash/verify (Next.js SPA, SIWE, Robinhood Chain)
+- **Status:** ✅ Waitlisted — `{"ok":true,"waitlisted":true,"xHandle":"osbornrdx","remainingToday":9}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Ethereum + Robinhood)
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Like announcement [2087527536158744796](https://x.com/TheSaudisNFT/status/2087527536158744796)
+  - ✅ Repost announcement
+  - ✅ Drop wallet reply: [2087788962526245143](https://x.com/osbornrdx/status/2087788962526245143)
+- **API:** SIWE flow — `POST /api/message` → personal_sign (offline eth_account) → `POST /api/waitlist` with `0x`-prefixed 65-byte signature
+- **Notes:** Supply 5,555. Signatures REQUIRE `0x` prefix (rejected without it).
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126904)
+
+### #100 ✅ Hood Citizens — GTD WL Application
+- **Type:** Web waitlist — https://www.hoodcitizens.xyz/gtd-wl (Next.js SPA + Supabase RPC)
+- **Status:** ✅ Submitted — `{"code":"submitted","status":"pending","application_id":"9739f98d-..."}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow [@HoodCitizens](https://x.com/HoodCitizens)
+  - ✅ Like + Repost announcement [2086859583595716623](https://x.com/HoodCitizens/status/2086859583595716623)
+  - ✅ Comment: [2087780446776234435](https://x.com/osbornrdx/status/2087780446776234435)
+  - ✅ Post about Hood: [2087781810361229627](https://x.com/osbornrdx/status/2087781810361229627)
+- **API:** Supabase `rpc("submit_gtd_application")` — p_x_username, p_evm_wallet, p_tweet_url, p_comment_url, p_task_claims (6 bools), p_task_version "v1"
+- **Notes:** 3,333 FREE mint Aug 14, OpenSea launchpad. Manual review (pending status).
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126906)
+
+### #101 ✅ MAXXIS — Google Form WL (808 supply)
+- **Type:** Web waitlist — Google Form (docs.google.com/forms)
+- **Status:** ✅ Submitted — "Your response has been recorded."
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow [@JPEG_Maxxis](https://x.com/JPEG_Maxxis)
+  - ✅ Like + Repost announcement [2086759578629476507](https://x.com/JPEG_Maxxis/status/2086759578629476507)
+  - ✅ Comment ETH address: [2087796094998876636](https://x.com/osbornrdx/status/2087796094998876636)
+  - ✅ Form submitted (X username + comment link + ETH address + access code "Robinhood")
+- **Notes:** 808 JPEG Maxxis. Access code "Robinhood" (from drop text). Google Form via MCP Chrome (account airdropkarbiters@gmail.com).
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126907)
