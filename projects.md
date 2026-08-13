@@ -1272,8 +1272,8 @@
   - ✅ X Like [2084560458111971379](https://x.com/agnt_hub/status/2084560458111971379) (Day 2)
   - ✅ X Like [2085381229579309164](https://x.com/agnt_hub/status/2085381229579309164) (Day 2)
   - ✅ X Retweet [2084953798053621941](https://x.com/agnt_hub/status/2084953798053621941) (Day 3)
-  - ✅ X Like [2087536895299366993](https://x.com/agnt_hub/status/2087536895299366993) (Day 4)
-  - ✅ X Like [2087536375390236966](https://x.com/TruthAgentAI/status/2087536375390236966) (Day 4)
+  - ✅ X Like [2087536895299366993](https://x.com/agnt_hub/status/2087536895299366993) (Day 4) — re-liked Aug 13 (Day 4 transitioned NotStarted→Active)
+  - ✅ X Like [2087536375390236966](https://x.com/TruthAgentAI/status/2087536375390236966) (Day 4) — re-liked Aug 13
 - **Blocked (architectural):**
   - ⚠️ 9× GALXE_ID "Visit" creds (Instagram/Truth post/YouTube) — allow:false (needs browser visit + X OAuth link)
   - ⚠️ 6× TWITTER creds — "missing twitter args" (X OAuth not linked at Galxe account level)
