@@ -507,7 +507,7 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|| KieDex | S2: Faucets 2/2, Missions 1/9, Oil 120, KDX 445, 1 pos BTC Long 20x | ⏳ Daily |
+|| KieDex | S2: Faucets 2/2, Missions 7/10, Oil 90, KDX 495.17, 1 pos BTC Long 20x | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
