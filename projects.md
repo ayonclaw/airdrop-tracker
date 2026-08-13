@@ -499,7 +499,7 @@
 | BR0KE | RECEIPT_01ZLC78 | ✅ |
 | Arcatz | 4,444 supply | ✅ |
 | AirDrop Finder | 350 USDC pool | ✅ |
-| XREIGN | 9,671 $REIGN | ⏳ Daily |
+| XREIGN | 17,435 $REIGN · T6 · 120/120 XP | ⏳ Daily |
 | Myne Alpha | 185 pts Quest | ✅ |
 | Noxable | Spot #3610 | ✅ |
 | Pixuin | Colony #3907 | ✅ |
@@ -1274,6 +1274,7 @@
   - ✅ X Retweet [2084953798053621941](https://x.com/agnt_hub/status/2084953798053621941) (Day 3)
   - ✅ X Like [2087536895299366993](https://x.com/agnt_hub/status/2087536895299366993) (Day 4) — re-liked Aug 13 (Day 4 transitioned NotStarted→Active)
   - ✅ X Like [2087536375390236966](https://x.com/TruthAgentAI/status/2087536375390236966) (Day 4) — re-liked Aug 13
+- **Note:** Day 4 child campaign `GCqq5tZiRh` re-announced Aug 13 (msg 126918) — already covered by this entry (X likes re-done).
 - **Blocked (architectural):**
   - ⚠️ 9× GALXE_ID "Visit" creds (Instagram/Truth post/YouTube) — allow:false (needs browser visit + X OAuth link)
   - ⚠️ 6× TWITTER creds — "missing twitter args" (X OAuth not linked at Galxe account level)
@@ -1405,3 +1406,24 @@
 - **Needs:** Manual browser from Rey's device, or residential proxy.
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126917)
+
+### #103 ⚠️ Beldex Loyalty Program — Snag Quest (partial)
+- **Type:** Web quest — https://quest.beldex.io/loyalty?referral_code=O2CTDRXM (Snag loyalty platform, NextAuth + Dynamic.xyz)
+- **Status:** ⚠️ Partial — email signed in + 4 tasks done (~155 pts); wallet + X + Discord + YouTube blocked
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (intended, NOT connected)
+- **Email:** `airdropkarbiters@gmail.com` (NextAuth magic link — account created)
+- **Done:**
+  - ✅ Email sign-in (magic link via himalaya/imaplib)
+  - ✅ Check In (+5 pts)
+  - ✅ Join Telegram Community (+50 pts) — link_click
+  - ✅ Join Telegram Announcement (+50 pts) — link_click
+  - ✅ Join X Community (+50 pts) — link_click
+- **Blocked (architectural):**
+  - ⚠️ Wallet connect — Dynamic.xyz → `eth.merkle.io` returns 429 (Cloudflare IP rate-limit from Oracle VPS). CORS blocks SIWE.
+  - ⚠️ X OAuth — `x.com/i/oauth2/authorize` 400 "Ada kesalahan teknis" (scope `offline.access`/app config)
+  - ⚠️ Discord + YouTube — OAuth, no account connected
+  - ⚠️ Referral 100 pts — requires "Connect X at minimum" (failed until X linked)
+- **Referral:** Rey's own link `https://quest.beldex.io/loyalty?referral_code=KFNZWQE2`
+- **Notes:** Points batch-update ~21h. Repeatable daily: Check In (+5) + Post about Beldex (+20, needs X). To fully claim: manual browser (CloakBrowser) for wallet + X OAuth.
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126921)
