@@ -1425,5 +1425,6 @@
   - ⚠️ Referral 100 pts — requires "Connect X at minimum" (failed until X linked)
 - **Referral:** Rey's own link `https://quest.beldex.io/loyalty?referral_code=KFNZWQE2`
 - **Notes:** Points batch-update ~21h. Repeatable daily: Check In (+5) + Post about Beldex (+20, needs X). To fully claim: manual browser (CloakBrowser) for wallet + X OAuth.
+- **Cron:** `beldex-daily-checkin` (job `24cb0c1cb658`, `30 0 * * *`, no_agent) — re-establishes magic-link session + claims daily Check In (+5). Script: `~/.hermes/profiles/ayon/scripts/beldex_checkin.sh` → `/home/ubuntu/scripts/beldex-daily/beldex_checkin.py`.
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126921)
