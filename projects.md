@@ -6,6 +6,19 @@
 
 ## ✅ COMPLETED
 
+### 34. EngetsuNFT — WL Form (X tasks + Google Form) 🆕
+- **Status:** ✅ Complete — all X tasks done + Google Form submitted ("Your response has been recorded.")
+- **URL:** https://x.com/EngetsuNFT (form: `docs.google.com/forms/d/e/1FAIpQLSc41uLAWX0O6m01ARpYPyxRmQ84DTf0hVnRoo-PKA5S_6kRrw`)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @EngetsuNFT ✅ — https://x.com/EngetsuNFT
+  - Like: https://x.com/EngetsuNFT/status/2086450728269234620 ✅
+  - Repost: https://x.com/EngetsuNFT/status/2086450728269234620 ✅
+  - Reply (tag 3 friends): https://x.com/osbornrdx/status/2088299683445879060 ✅
+- **Network:** N/A (WL form only — EVM wallet submission)
+- **Note:** X actions via direct GraphQL (FavoriteTweet/CreateRetweet/CreateTweet + v1.1 friendships/create). Follow verified server-side (`following: true`). Form submitted via browser (Google Forms XSRF blocks direct curl POST).
+
 ### 33. Maksae (Giwa Eco) — Whitelist Register 🆕
 - **Status:** ✅ Registered — Supabase whitelist entry accepted (HTTP 201)
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
