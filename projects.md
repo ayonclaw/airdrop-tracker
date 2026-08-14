@@ -784,6 +784,20 @@
 ---
 ## ⛔ SKIPPED / EXPIRED
 
+### Alphea Connect — Mobile-Only App Airdrop 📱
+- **Date:** Aug 14, 2026
+- **URL:** https://alphea.ai/invitation?code=JAI90UUQGX
+- **Status:** ⛔ MOBILE-ONLY — not automatable from VPS
+- **Reward:** Points convertible to Token (DePIN-style contribution points)
+- **Classification:** Type 1 (MOBILE-ONLY) — CTA opens Play Store app `com.alphea.alpheaconnect`
+- **Manual steps (Rey):**
+  1. Download "ALPHEA Connect" from Play Store
+  2. Register with Google
+  3. Go to Referral → input code `JAI90UUQGX` (+500 Points)
+  4. Daily check-in & quests (inside app)
+- **Source:** https://x.com/i/status/2087123072709005787
+- **Note:** `/invitation?code=` page is a deep-link page — builds an Android `intent://` URL to open the app; no web form, no wallet, no API. Verified via JS bundle (`main-DJpfayw4.js`): zero `/api/` endpoints.
+
 ### 1. Midnight Network (Galxe Quest) — EXPIRED
 - **Date:** Aug 09, 2026
 - **URL:** https://app.galxe.com/quest/QxTCYB6zFnNRaMwvNFGpLA/GC68NtZj2k
