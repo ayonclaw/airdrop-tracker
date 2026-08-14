@@ -6,6 +6,18 @@
 
 ## ✅ COMPLETED
 
+### 35. RobinApes (Robin Ape Pixels Club) — Whitelist 🆕
+- **Status:** ✅ Complete — X follow/like/repost done + Apps Script submit (`{"ok":true}`)
+- **URL:** https://robinapes.netlify.app/
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx` (submitted as `osbornrdx`)
+- **Proof:**
+  - Follow: @RobinApePixels ✅ — https://x.com/RobinApePixels
+  - Like: https://x.com/RobinApePixels/status/2087871434102133242 ✅
+  - Repost: https://x.com/RobinApePixels/status/2087871434102133242 ✅
+- **Network:** EVM wallet submission (Robinhood ecosystem, gas-only free mint)
+- **Note:** 4-step wizard (handle → follow → like/RT → wallet). Google Apps Script backend — payload `{handle, wallet, ts}` POST as `text/plain`. X tasks done via CDP (follow via `-follow` button, like + repost on tweet). Submit returns 302 → `script.googleusercontent.com` → `{"ok":true}`.
+
 ### 34. EngetsuNFT — WL Form (X tasks + Google Form) 🆕
 - **Status:** ✅ Complete — all X tasks done + Google Form submitted ("Your response has been recorded.")
 - **URL:** https://x.com/EngetsuNFT (form: `docs.google.com/forms/d/e/1FAIpQLSc41uLAWX0O6m01ARpYPyxRmQ84DTf0hVnRoo-PKA5S_6kRrw`)
