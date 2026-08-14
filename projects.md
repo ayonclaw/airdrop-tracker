@@ -1263,7 +1263,7 @@
 - **Type:** Galxe Quest — https://app.galxe.com/quest/AGNTHub/GCEgetZ5Xd
 - **Status:** ⚠️ Partial (SIWE + followSpace + X actions done; Visit/TWITTER creds blocked)
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
-- **Campaign:** AGNT Weekly Socials | S3 Week 4 (Parent) — 4 child campaigns (Day 1-4)
+- **Campaign:** AGNT Weekly Socials | S3 Week 4 (Parent) — 5 child campaigns (Day 1-5)
 - **Done:**
   - ✅ SIWE SignIn (0x8CCE...282D)
   - ✅ followSpace (AGNT Hub, ID: 77675)
@@ -1274,7 +1274,9 @@
   - ✅ X Retweet [2084953798053621941](https://x.com/agnt_hub/status/2084953798053621941) (Day 3)
   - ✅ X Like [2087536895299366993](https://x.com/agnt_hub/status/2087536895299366993) (Day 4) — re-liked Aug 13 (Day 4 transitioned NotStarted→Active)
   - ✅ X Like [2087536375390236966](https://x.com/TruthAgentAI/status/2087536375390236966) (Day 4) — re-liked Aug 13
-- **Note:** Day 4 child campaign `GCqq5tZiRh` re-announced Aug 13 (msg 126918) — already covered by this entry (X likes re-done).
+  - ✅ X Retweet [2087871305852793055](https://x.com/TruthAgentAI/status/2087871305852793055) (Day 5) — Aug 14
+  - ✅ X Retweet [2087870738233438397](https://x.com/agnt_hub/status/2087870738233438397) (Day 5) — Aug 14
+- **Note:** Day 4 child campaign `GCqq5tZiRh` re-announced Aug 13 (msg 126918) — already covered by this entry (X likes re-done). Day 5 child campaign `GCcL5tZBkL` (numberID 364511, type Points) announced Aug 14 — 2× TWITTER retweet creds (retweeted on X, Galxe verify pending) + 1× GALXE_ID "Visit the Truth YouTube and follow" (allow:false).
 - **Blocked (architectural):**
   - ⚠️ 9× GALXE_ID "Visit" creds (Instagram/Truth post/YouTube) — allow:false (needs browser visit + X OAuth link)
   - ⚠️ 6× TWITTER creds — "missing twitter args" (X OAuth not linked at Galxe account level)
