@@ -6,6 +6,14 @@
 
 ## ✅ COMPLETED
 
+### 36. FRANKIEZ — Whitelist (Robinhood Chain) 🆕
+- **Status:** ✅ Complete — Google Apps Script submit (`{"ok":true,"count":4982}`)
+- **URL:** https://frankiez.vercel.app/
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx` (submitted as `osbornrdx`)
+- **Payload:** `{formType:"whitelist", eth:"0x8CCE...", handle:"osbornrdx", note:""}` → POST `text/plain` to `script.google.com/macros/s/AKfycbwEZI_VRNKCUmPEhoLTNRnbu9b-eyVYbJaNKFmox__R8tMP-ldb61JpggdtqkZna-UBxw/exec` → 302 → GET redirect → `{"ok":true,"count":4982}`
+- **Network:** EVM wallet submission (Robinhood Chain, 4444 NFTs)
+
 ### 35. RobinApes (Robin Ape Pixels Club) — Whitelist 🆕
 - **Status:** ✅ Complete — X follow/like/repost done + Apps Script submit (`{"ok":true}`)
 - **URL:** https://robinapes.netlify.app/
