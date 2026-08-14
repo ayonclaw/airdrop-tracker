@@ -1499,3 +1499,17 @@
 - **Notes:** 8lends = blockchain crowdlending platform. Skipped per pipeline rule: TG-bot drops routed to telegram-airdrop-automation, not web execution.
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126922)
+
+### #107 ✅ Kupo — Whitelist (Fluffy Degenerate Cult)
+- **Type:** Web waitlist — https://www.kupo.world (Next.js SPA, server-side X verification)
+- **Status:** ✅ DONE — server confirmed "You already submitted the form." (409)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - ✅ Follow [@KupoNFTs](https://x.com/KupoNFTs)
+  - ✅ Repost [tweet 2087894490719940769](https://x.com/KupoNFTs/status/2087894490719940769)
+  - ✅ Like [tweet 2087894490719940769](https://x.com/KupoNFTs/status/2087894490719940769)
+- **Flow:** `POST /api/submit {stage:xUser}` → verify follow/rt/like via `POST /api/verify-task` (server-side X check) → `POST /api/submit {stage:wallet}` → done.
+- **Note:** "A cozy cult of fluffy degenerates keeping a forgotten fantasy alive." Submit X username → do 3 X tasks → submit EVM. All server-verified (not self-attest).
+- **Date:** Aug 14, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126942)
