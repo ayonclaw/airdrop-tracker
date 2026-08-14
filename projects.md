@@ -416,6 +416,15 @@
 
 ## ⏳ PENDING
 
+### DGrid AI ($DGAI) — TGE Claim Portal (opens Aug 17)
+- **Status:** ℹ️ INFO — future claim portal, NOT executable yet (no form/link/wallet today)
+- **Source:** https://x.com/dgrid_ai/status/2088098211022131318
+- **What:** tDGAI (Premium mining) converts 1:1 → $DGAI airdrop allocation. Early contributors also rewarded.
+- **Claim opens:** 2026-08-17 (official DGrid portal — URL TBA, "full claim details coming soon")
+- **Eligibility:** Premium miners (tDGAI) + early contributors. All users can check on Aug 17.
+- **Rey position:** None documented (no DGrid entry, no tDGAI mining in records).
+- **Action:** Monitor Aug 17 for claim portal URL → check eligibility → claim if eligible.
+
 ### Catapult Trade ($PULT Airdrop)
 - **Status:** ✅ Registered — Account active
 - **URL:** https://catapult.trade/invite/5IJEGVR6
