@@ -1481,3 +1481,12 @@
 - **Notes:** "Claim 400 Points" = collab bundle (Follow Amadeus 100 + Like 100 + TG×2 200). To fully claim: manual CloakBrowser (wallet + X OAuth).
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126924)
+
+### #106 ⛔ Eightlends — TG Bot (skip)
+- **Type:** Telegram bot — `t.me/EightlendsAirdropBot?start=ref_515933843`
+- **Status:** ⛔ SKIP — TG bot drop (needs Telethon userbot pipeline, separate from web execution)
+- **Reward:** $7 USDT
+- **Tasks:** Join Telegram · Follow Twitter · Complete another task · Submit BSC address
+- **Notes:** 8lends = blockchain crowdlending platform. Skipped per pipeline rule: TG-bot drops routed to telegram-airdrop-automation, not web execution.
+- **Date:** Aug 13, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126922)
