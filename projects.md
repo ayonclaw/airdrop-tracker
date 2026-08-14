@@ -6,6 +6,18 @@
 
 ## ✅ COMPLETED
 
+### 33. Maksae (Giwa Eco) — Whitelist Register 🆕
+- **Status:** ✅ Registered — Supabase whitelist entry accepted (HTTP 201)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @Maksae_GIWA ✅ — https://x.com/Maksae_GIWA
+  - Like: https://x.com/Maksae_GIWA/status/2088017924091195800 ✅
+  - Repost: https://x.com/Maksae_GIWA/status/2088017924091195800 ✅
+- **URL:** https://www.maksae.xyz/whitelist#claim
+- **Network:** Robinhood Chain · 1,111 scrolls (free mint, gas only)
+- **Note:** Supabase-backed whitelist. API: `POST tspatvvwkhcnzsmvmrpt.supabase.co/rest/v1/whitelist {wallet, handle}`. Three X tasks are self-attest (client-side only); register stores wallet+handle only.
+
 ### 32. Osero Origin — Free NFT Claim (Base) 🆕
 - **Status:** ⚠️ PARTIAL — X + Telegram verified server-side; wallet connect + on-chain claim **PENDING manual**
 - **URL:** https://origin.osero.org/claim
@@ -557,7 +569,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 24 |
+| Completed | 25 |
 | In Progress | 4 |
 || Blocked | 3 |
 
