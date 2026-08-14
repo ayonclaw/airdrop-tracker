@@ -1,10 +1,29 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 13, 2026**
+> Last updated: **Aug 14, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 32. Osero Origin — Free NFT Claim (Base) 🆕
+- **Status:** ⚠️ PARTIAL — X + Telegram verified server-side; wallet connect + on-chain claim **PENDING manual**
+- **URL:** https://origin.osero.org/claim
+- **Network:** Base (chain 8453) · Campaign: `0x6CbB6B7B0b16EBf5191962ea5788981751D68A78`
+- **Window:** 2026-08-13 15:00 UTC → 2026-08-16 15:00 UTC (72h open edition)
+- **Claim steps:** `x` → `telegram` → `wallet` → `review`
+- **X Step (✅ verified):**
+  - Followed `@OseroHQ` as `@osbornrdx` — https://x.com/OseroHQ
+  - Server confirmed: "X follow verified for @osbornrdx."
+- **Telegram Step (✅ verified):**
+  - Joined `t.me/OseroHQ` (Osero Announcements, channel id 3943480672) via Telethon as `@mxsyxfxx`
+  - Server confirmed: "Telegram membership verified for @mxsyxfxx."
+- **Wallet Step (⛔ blocked):**
+  - Connect via Reown AppKit (projectId `46d42f5c9a86cafbf0c51d7c060fcb41`)
+  - `window.ethereum` undefined in MCP Chrome — no MetaMask loaded; MetaMask vault in `/tmp/chrome-profile-permanent` is LOCKED (LavaMoat blocks automation)
+  - airdrop_00 Base balance: `0x3a5d114d0217` (~0.000064 ETH ≈ $0.16) — gas is sufficient
+- **To finish (manual):** Unlock MetaMask (0x8CCE…282D) in CloakBrowser/Chrome → switch to Base → connect → sign claim tx.
+- **Note:** Osero = stablecoin savings (sUSDS/Sky), raised $12M. Free mint, one NFT per wallet/X/Telegram account.
 
 ### 30. BoxHead — GTD Waitlist 🆕
 - **Status:** ✅ "You're on the list" — GTD waitlist confirmed
