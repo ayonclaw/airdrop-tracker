@@ -1725,3 +1725,11 @@
 - **Status:** ⛔ SKIP — Status update (Boosts & Additional Points: OG NFT +2.5%, Special NFT +5-15%, Team Members +2.5%, Team Leaders earn 5% of members' base staking points). No registration link, no tasks — informational only.
 - **Date:** Aug 15, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126968)
+
+### #112 ⛔ Novrinex — TG Bot (skip)
+- **Status:** ⛔ SKIP — TG bot drop (`t.me/NovrinexAirdropBot?start=ref_515933843`). Needs Telethon userbot pipeline (join TG, follow Twitter, complete task, submit BSC address), separate from web execution.
+- **Reward:** 800 NVRX (1,000 random winners)
+- **Tasks:** Join Telegram · Follow Twitter · Complete another task · Submit BSC address
+- **Notes:** Novrinex = perpetual futures trading platform. Skipped per pipeline rule: TG-bot drops routed to telegram-airdrop-automation, not web execution.
+- **Date:** Aug 15, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126978)
