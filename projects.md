@@ -1597,3 +1597,18 @@
 - **Note:** "A cozy cult of fluffy degenerates keeping a forgotten fantasy alive." Submit X username → do 3 X tasks → submit EVM. All server-verified (not self-attest).
 - **Date:** Aug 14, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126942)
+
+### #108 ⚠️ Flour — Waitlist (NFT Prediction Markets, Robinhood)
+- **Type:** Web waitlist — https://flourwaitlist.xyz (static HTML + Supabase Edge Function + Turnstile)
+- **Status:** ⚠️ Partial — X tasks done; form submission BLOCKED by Turnstile session-binding
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Robinhood Chain EVM)
+- **Email:** `airdropkarbiters@gmail.com`
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow [@flourmarkets](https://x.com/flourmarkets)
+  - ✅ Post required tweet [2088471789659902340](https://x.com/osbornrdx/status/2088471789659902340) — "I just joined the @flourmarkets waitlist. First NFT prediction market building on @RobinhoodApp"
+- **Blocked (architectural):** Supabase Edge Function `submit-waitlist` validates Turnstile token server-side (siteverify). Route-mode sidecar tokens rejected (403 "Security check failed"). `real_page:true` sidecar times out (60s). MCP Chrome Turnstile stuck in challenge loop (`brunhild.challenges.cloudflare.com` ERR_NAME_NOT_RESOLVED from VPS).
+- **Backend:** `POST https://mjvynrjujgqbzulvbfmo.supabase.co/functions/v1/submit-waitlist` with `{email, wallet_address, x_handle, post_url, turnstile_token}`. Turnstile sitekey `0x4AAAAAAEOuLfKd76dqTn39`.
+- **Remaining:** Solve Turnstile in real browser (Rey's device / CloakBrowser) → submit form. Form already pre-filled.
+- **Date:** Aug 15, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126959)
