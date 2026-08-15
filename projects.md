@@ -484,6 +484,19 @@
 
 ---
 
+### 40. Flour — Waitlist (Robinhood Chain) 🆕
+- **Status:** ✅ "WAITLIST CONFIRMED — YOU'RE IN"
+- **URL:** https://flourwaitlist.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Email:** `airdropkarbiters@gmail.com`
+- **Proof:**
+  - Tweet: https://x.com/osbornrdx/status/2088503347863327142 ✅ ("I just joined the @flourmarkets waitlist")
+- **Network:** Robinhood Chain (EVM)
+- **Note:** First NFT prediction market on Robinhood. Supabase Edge Function backend (`mjvynrjujgqbzulvbfmo.supabase.co/functions/v1/submit-waitlist`). Turnstile captcha (sitekey `0x4AAAAAAEOuLfKd76dqTn39`) solved via MCP Chrome browser click. Form filled and submitted in-browser. Success alert: "WAITLIST CONFIRMED — YOU'RE IN — Access will be sent to your email during the beta phase."
+- **Date:** Aug 15, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
 ### 39. OMR EVO — WL Application (Robinhood Chain) 🆕
 - **Status:** ✅ Complete — Google Form submitted ("You're in the hunt 🐀")
 - **URL:** https://omrevo.com/
