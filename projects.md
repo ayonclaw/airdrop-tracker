@@ -484,6 +484,22 @@
 
 ---
 
+### 39. OMR EVO — WL Application (Robinhood Chain) 🆕
+- **Status:** ✅ Complete — Google Form submitted ("You're in the hunt 🐀")
+- **URL:** https://omrevo.com/
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @OMR_EVO ✅ — https://x.com/OMR_EVO
+  - Quote Tweet: https://x.com/osbornrdx/status/2088481665551421547 ✅ ("RAT SEASON coming soon! The hunt for $Mutagen is about to begin")
+  - Comment (wallet + tag 2): https://x.com/osbornrdx/status/2088482085850030180 ✅ ("0x8CCE...282D @aixbt_agent @BanklessHQ")
+- **Network:** Robinhood Chain (EVM)
+- **Note:** DCLogic-style multi-step WL form → Google Apps Script backend. Task completion tracked via `wlDone` flags (follow/quote/comment). All 3 tasks marked done via `markDone()` JS calls. Submit POSTs to Google Form (`entry.989639949` xhandle, `entry.1337018009` follow, `entry.740995001` comment, `entry.2132567686` quoted, `entry.1088931015` qtlink, `entry.326090022` wallet). Success: "You're in the hunt 🐀 — Your application is recorded."
+- **Mint:** Aug 17 (Mon) — 0.0015 ETH on OpenSea + Robinhood Chain
+- **Date:** Aug 15, 2026
+
+---
+
 ## ⏳ PENDING
 
 ### DGrid AI ($DGAI) — TGE Claim Portal (opens Aug 17)
