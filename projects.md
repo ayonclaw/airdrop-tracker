@@ -1626,9 +1626,9 @@
 - **Date:** Aug 13, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126921)
 
-### #104 ⚠️ BUNKERHOOD — Free Mint WL (10K Genesis Artifacts)
+### #104 ✅ BUNKERHOOD — Free Mint WL (10K Genesis Artifacts)
 - **Type:** Web waitlist — https://thebunkerhood.com/enter (Next.js SPA, code "bunker")
-- **Status:** ⚠️ Partial — all 4 X tasks done; submit blocked by backend lock timeout (auto-retry scheduled)
+- **Status:** ✅ WL submitted — `{"ok":true,"submission_id":"93a6681b-a830-442a-a10a-2b58af32d5ac"}` (auto-retry cron succeeded on attempt 3, Aug 13 17:58 UTC)
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 - **X Handle:** `@osbornrdx`
 - **Class:** CLS-04 (IT / Automation + Systems)
@@ -1637,10 +1637,14 @@
   - ✅ Like official post [2087928623902699544](https://x.com/thebunkerhood/status/2087928623902699544)
   - ✅ Reply (bunker comment) [2087949578549256648](https://x.com/osbornrdx/status/2087949578549256648)
   - ✅ Read + bookmark article [2087839999882310080](https://x.com/thebunkerhood/status/2087839999882310080)
-- **Blocked:** `/api/submit` → 502 "Lock timeout" (Google Apps Script LockService contention, transient). Auto-retry cron `bunkerhood-wl-retry` (job `192b8a3880f4`, +30 min, no_agent).
-- **Notes:** 10,000 Genesis Artifacts, 1 FREE MINT per wallet, 72h window (code "bunker"). Client-side self-attest verification (fake 2-click verify).
-- **Date:** Aug 13, 2026
-- **Source:** @airdropfind Telegram (auto-detected, msg 126925)
+  - ✅ WL submit `/api/submit` → `ok:true` (Lock timeout resolved on retry)
+- **Mint (Aug 18, 2026):** 🆕
+  - **GTD** — 3:00 PM UTC · max 5/wallet · 1 FREE + 4×0.0012 ETH
+  - **WL** — 4:00 PM UTC · max 10/wallet · 1 FREE + 9×0.0014 ETH
+  - **1 FREE mint per wallet** (needs real MetaMask unlock + gas)
+- **Notes:** 10,000 Genesis Artifacts, 72h window (code "bunker"). Client-side self-attest verification. Mint page `/mint` now shows "FORM CLOSED" — intake suspended, mint is for GTD/WL participants only. Follow [@thebunkerhood](https://x.com/thebunkerhood) for updates.
+- **Date:** Aug 13, 2026 (WL) · Aug 15, 2026 (mint schedule)
+- **Source:** @airdropfind Telegram (auto-detected, msg 126925 + 126981)
 
 ### #105 ⚠️ Konnex — Points Program (Robotics DePIN, $KNX)
 - **Type:** Web quest — https://hub.konnex.world/points (Snag loyalty platform, NextAuth + Dynamic.xyz)
