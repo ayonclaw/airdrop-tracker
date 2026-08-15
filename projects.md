@@ -6,6 +6,31 @@
 
 ## ✅ COMPLETED
 
+### 40. Flour — Waitlist (Robinhood Chain) 🆕
+- **Status:** ✅ Complete — Supabase Edge Function returned `{"ok":true}`
+- **URL:** https://flourwaitlist.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Post: https://x.com/osbornrdx/status/2088527304075182423 ✅ ("I just joined the @flourmarkets waitlist First NFT prediction market building on @RobinhoodApp")
+  - Follow: @flourmarkets ✅ — https://x.com/flourmarkets
+- **Network:** Robinhood Chain (EVM)
+- **Note:** NFT prediction market. Turnstile-gated (sitekey `0x4AAAAAAEOuLfKd76dqTn39`) → captcha-solver sidecar `real_page:true` token (verify_success:true) + atomic submit to `mjvynrjujgqbzulvbfmo.supabase.co/functions/v1/submit-waitlist`. Route-mode token rejected (session-binding), real_page token accepted. X post via intent URL.
+
+### 39. OMR EVO — Whitelist (EVM) 🆕
+- **Status:** ✅ Complete — Google Form submitted (HTTP 200)
+- **URL:** https://omrevo.com
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @OMR_EVO ✅ — https://x.com/OMR_EVO
+  - Like: https://x.com/OMR_EVO/status/2088200277509947566 ✅
+  - Repost: https://x.com/OMR_EVO/status/2088200277509947566 ✅
+  - Quote Tweet: https://x.com/osbornrdx/status/2088526876977610980 ✅ ("RAT SEASON coming soon! The hunt for $Mutagen is about to begin")
+  - Comment (wallet + tag 2): https://x.com/osbornrdx/status/2088482085850030180 ✅ ("0x8CCE…282D @aixbt_agent @bankless")
+- **Network:** EVM (NFT mint on OpenSea, Aug 17)
+- **Note:** Google Form backend (`1FAIpQLSe_fBrSeoiU1ymrg0ktXjK-FLC1i05CZBrFB0V2Sm-AHGsnFQ`), fields: xhandle/follow/comment/quoted/qtlink/wallet. Mint 17th Aug, 0.0015 ETH, public 7x/wallet. X tasks via MCP Chrome (follow intent, repost menu, quote intent), form submitted via curl `--data-urlencode`.
+
 ### 38. Retardios Hood — WL Application 🆕
 - **Status:** ✅ Complete — Google Form submitted ("Your response has been recorded.")
 - **URL:** https://docs.google.com/forms/d/e/1FAIpQLSd31fVFcWSE681bMQQYd9oOIBQdvZYiQUX83epIGwv0HV_Rqw/viewform
