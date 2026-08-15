@@ -6,6 +6,18 @@
 
 ## ✅ COMPLETED
 
+### 42. The Initiates — Whitelist (X tasks + application) 🆕
+- **Status:** ✅ Complete — application submitted, `{"ok":true}`
+- **URL:** https://theinitiates.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx` | **Discord:** `akumosy`
+- **Proof:**
+  - X Follow: @Initiatenft_ ✅ — https://x.com/Initiatenft_
+  - X Like: https://x.com/Initiatenft_/status/2087925797445099572 ✅
+  - X Repost: https://x.com/Initiatenft_/status/2087925797445099572 ✅
+  - X Quote (tag 2 friends): https://x.com/osbornrdx/status/2088574987779330195 ✅
+- **Note:** Next.js app — `GET /api/pre-application-tasks` (4 tasks) + `POST /api/applications`. All 4 tasks done via CDP browser (real X session), submit via curl. Quote tweet tags @saylor + @VitalikButerin.
+
 ### 41. Sweep — Airdrop (Web3 Gaming, 27% supply) 🆕
 - **Status:** ✅ Complete — Google OAuth signup + 17 tasks claimed (1,980 XP)
 - **URL:** https://sweep.finance/airdrop
@@ -1683,3 +1695,18 @@
 - **Remaining:** Solve Turnstile in real browser (Rey's device / CloakBrowser) → submit form. Form already pre-filled.
 - **Date:** Aug 15, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126959)
+
+### #109 ✅ The Initiates — Whitelist (X tasks + application)
+- **Type:** Web waitlist — https://theinitiates.xyz (Next.js SPA, `GET /api/pre-application-tasks` + `POST /api/applications`)
+- **Status:** ✅ DONE — application submitted, `{"ok":true}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx` | **Discord:** `akumosy`
+- **Proof:**
+  - ✅ Follow [@Initiatenft_](https://x.com/Initiatenft_)
+  - ✅ Like [pinned post 2087925797445099572](https://x.com/Initiatenft_/status/2087925797445099572)
+  - ✅ Repost [pinned post 2087925797445099572](https://x.com/Initiatenft_/status/2087925797445099572)
+  - ✅ Quote + tag 2 friends: [2088574987779330195](https://x.com/osbornrdx/status/2088574987779330195)
+- **Flow:** `GET /api/pre-application-tasks` → 4 tasks (follow/like/repost/quote). X actions via CDP browser (real session). Submit `POST /api/applications` `{xUsername, discordUsername, walletAddress, quoteTweetLink, taskAnswers:{1,2,3,4:true}}` → `{"ok":true}`.
+- **Note:** Next.js RSC app. Discord username self-attest (no OAuth). Quote tweet tags @saylor + @VitalikButerin. Submit button disabled until all 4 tasks checked (client-side).
+- **Date:** Aug 15, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126972)
