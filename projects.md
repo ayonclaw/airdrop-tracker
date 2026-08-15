@@ -1710,3 +1710,14 @@
 - **Note:** Next.js RSC app. Discord username self-attest (no OAuth). Quote tweet tags @saylor + @VitalikButerin. Submit button disabled until all 4 tasks checked (client-side).
 - **Date:** Aug 15, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126972)
+
+### #110 ⛔ LFWallet — TG Bot (skip)
+- **Status:** ⛔ SKIP — TG bot drop (`t.me/LFWallet_AirdropBot?start=ref515933843`). Needs Telethon userbot pipeline (join TG, follow X, submit LFWallet SS address), separate from web execution.
+- **Reward:** $500 LW
+- **Date:** Aug 15, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126958)
+
+### #111 ⛔ Overlayer — Update Notice (not an airdrop)
+- **Status:** ⛔ SKIP — Status update (Boosts & Additional Points: OG NFT +2.5%, Special NFT +5-15%, Team Members +2.5%, Team Leaders earn 5% of members' base staking points). No registration link, no tasks — informational only.
+- **Date:** Aug 15, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126968)
