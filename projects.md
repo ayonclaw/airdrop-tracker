@@ -6,6 +6,19 @@
 
 ## ✅ COMPLETED
 
+### 37. Fulelore — Whitelist (Robinhood Chain) 🆕
+- **Status:** ✅ Complete — API whitelist + all X tasks verified
+- **URL:** https://fulelore.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - Follow: @Fulelore ✅ — https://x.com/Fulelore
+  - Like: https://x.com/Fulelore/status/2088299928493682912 ✅
+  - Quote Tweet: https://x.com/osbornrdx/status/2088439915621298376 ✅ ("I'm getting waxed by @fulelore")
+  - Comment (tag 3 friends): https://x.com/osbornrdx/status/2088440469508563201 ✅ ("@reydenim @jameske @alota_t 🔥 FULE gang")
+- **Network:** Robinhood Chain (EVM)
+- **Note:** Browserless API whitelist — `POST api.php` with `{username, wallet, ref}` only (QT/tag links client-side validated). X tasks via MCP Chrome DevTools (intent URLs + CDP clicks). API response: `{"success":true,"message":"Wallet successfully whitelisted!","username":"osbornrdx","points":0,"referralLink":"https://fulelore.xyz/index.html?ref=osbornrdx"}`
+
 ### 36. FRANKIEZ — Whitelist (Robinhood Chain) 🆕
 - **Status:** ✅ Complete — Google Apps Script submit (`{"ok":true,"count":4982}`)
 - **URL:** https://frankiez.vercel.app/
@@ -580,7 +593,7 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|| KieDex | S2: Faucets 2/2, Missions 7/10, Oil 180, KDX 495.17, 1 pos BTC Long 20x (PnL -17.5%) | ⏳ Daily |
+|| KieDex | S2: Faucets 2/2, Missions 7/10, Oil +90, 1 pos BTC Long 20x (PnL -34.4%), streak 2d | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
