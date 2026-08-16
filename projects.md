@@ -6,6 +6,15 @@
 
 ## ✅ COMPLETED
 
+### 44. REKT TRADOOOR — Waitlist (email-only) 🆕
+- **Status:** ✅ Complete — waitlist joined, `{"ok":true,"desk":1941,"lists":1}`
+- **URL:** https://tradooor.rekt.com
+- **Email:** `airdropkarbiters@gmail.com`
+- **Proof:** `desk: 1941` (seat number), confirmation "YOU'RE ON THE LIST"
+- **Note:** REKT Brands Inc. perps/trading platform teaser ("TRADOOOR"). **Email-only waitlist — NO wallet field** (drop text claimed "Submit EVM Address" but form only collects email + optional Rekt Brands/Mkts opt-ins). Gated by Cloudflare Turnstile (sitekey `0x4AAAAAAEQjQQO6GcPSJaLh`) + SHA-256 proof-of-work (`zeroBits >= 17`). Flow: Turnstile via captcha-solver sidecar `real_page:true` (route-mode rejected with "failed the human check") → `GET /api/challenge` (requires `Referer` header) → PoW nonce → `POST /api/subscribe` `{email, brands, mkts, website:"", token, nonce, turnstile}`. Chain (easter egg): Robinhood Chain, 10,000 desks.
+- **Date:** Aug 16, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126985)
+
 ### 43. Mutant Rat Club (Raticals) — Whitelist 🆕
 - **Status:** ✅ Complete — Google Form submitted ("Your response has been recorded")
 - **URL:** https://raticals.xyz
@@ -726,7 +735,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 25 |
+| Completed | 26 |
 | In Progress | 4 |
 || Blocked | 3 |
 
