@@ -6,6 +6,17 @@
 
 ## ✅ COMPLETED
 
+### 45. GLORP — Waitlist (X + EVM wallet) 🆕
+- **Status:** ✅ Complete — transmission submitted, `{"ok":true,"transmissionId":"dcda2f9f-96c5-47b5-944a-fcaba3839cc0"}`
+- **URL:** https://glorprbh.com
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Proof:** HTTP 201 from Supabase Edge Function `submit-transmission`, transmissionId `dcda2f9f-96c5-47b5-944a-fcaba3839cc0`
+- **Network:** Robinhood Chain (RBH) — 4,444-piece NFT collection
+- **Note:** Vite React SPA. Flow = X handle + EVM wallet → POST `https://zdqpxpqjpqhnnnhclwsf.supabase.co/functions/v1/submit-transmission` `{wallet, twitterHandle}`. No server-side X-task verification (no follow/RT/like checks) — the "post to X" ticket step is optional marketing (share URL via `create-share` edge fn). Client-side validation: wallet `/^0x[a-fA-F0-9]{40}$/`, handle `/^[a-zA-Z0-9_]{1,15}$/`. 409 codes: `TWITTER_EXISTS` (X already sent), wallet already sent. Source tweet: https://x.com/glorprbh/status/2088680613129666808
+- **Date:** Aug 16, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126986)
+
 ### 44. REKT TRADOOOR — Waitlist (email-only) 🆕
 - **Status:** ✅ Complete — waitlist joined, `{"ok":true,"desk":1941,"lists":1}`
 - **URL:** https://tradooor.rekt.com
