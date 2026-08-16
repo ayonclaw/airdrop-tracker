@@ -953,6 +953,18 @@
 ---
 ## ⛔ SKIPPED / EXPIRED
 
+### The Baddie — Whitelist FULL (FCFS 300/300) 🆕
+- **Date:** Aug 16, 2026
+- **URL:** https://baddienft.com
+- **Status:** ⛔ FULL — whitelist 300/300 spots claimed, 0 remaining
+- **Reward:** None (FCFS whitelist spot for 1,555-supply NFT mint on Robinhood Chain)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **Classification:** Type 4 (BROWSERLESS-FIRST) — vanilla HTML + inline JS, `/api/claim` POST
+- **Tasks (not executed — no spot to claim):** Follow @TheBaddieRH + like + quote tweet `https://x.com/thebaddierh/status/2088630746877694161`
+- **Mint:** 0.001 ETH (WL) / 0.00125 ETH (public), Robinhood Chain
+- **Note:** `GET /api/stats` → `{"claimed":300,"cap":300,"remaining":0,"open":true}`; probe `POST /api/claim {address,retweet}` → `{"ok":false,"error":"full"}`. WL already full at detection time — X tasks (follow/like/quote) skipped since submitting returns `full`. `config.js` exposes `WLCFG` (handle @TheBaddieRH, tweet URL, discord.gg/p5nPXrdSwN).
+- **Source:** @airdropfind Telegram (auto-detected, drop_126984)
+
 ### Alphea Connect — Mobile-Only App Airdrop 📱
 - **Date:** Aug 14, 2026
 - **URL:** https://alphea.ai/invitation?code=JAI90UUQGX
