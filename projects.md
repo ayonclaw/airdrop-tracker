@@ -1,10 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 15, 2026**
+> Last updated: **Aug 16, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 43. Mutant Rat Club (Raticals) — Whitelist 🆕
+- **Status:** ✅ Complete — Google Form submitted ("Your response has been recorded")
+- **URL:** https://raticals.xyz
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - X Follow: @RaticalsETH ✅ — https://x.com/RaticalsETH
+  - X Like: https://x.com/RaticalsETH/status/2088715857069268993 ✅
+  - X Repost: https://x.com/RaticalsETH/status/2088715857069268993 ✅
+  - X Comment (ETH address): https://x.com/osbornrdx/status/2088827529260150830 ✅
+- **Network:** Robinhood Chain (EVM) — NFT drop on OpenSea, each NFT embedded with 888,500 $RATIC tokens
+- **Note:** Vanilla JS whitelist with X tasks (follow/like/repost/comment) + Google Form backend. Fields: `entry.1057722724` (X username), `entry.1475920640` (ETH address). curl POST returned form page (not recorded) → browser fill + submit succeeded. `@raticalseth` handle redirects to `@RaticalsETH`. Tweet: "First Time EVER @opensea used as Token Launchpad for MUTANT RAT CLUB".
+- **Date:** Aug 16, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
 
 ### 42. The Initiates — Whitelist (X tasks + application) 🆕
 - **Status:** ✅ Complete — application submitted, `{"ok":true}`
@@ -673,6 +688,7 @@
 
 | Project | Detail | Status |
 |---------|--------|--------|
+| Ratical (Mutant Rat Club) | WL + X tasks + Google Form | ✅ |
 | Goobz | 5/5 tasks | ✅ |
 | The List | Pos #527 | ✅ |
 | The Unstables | Chalked in | ✅ |
