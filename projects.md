@@ -1815,3 +1815,23 @@
 - **Notes:** AWS WAF + Cloudflare Turnstile on signup. Turnstile host `brunhild.challenges.cloudflare.com` unreachable from VPS — bypassed the gated UI by calling the API directly.
 - **Date:** Aug 16, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126989)
+
+### #115 ✅ Cubicle — Whitelist (AlgoTrada, Robinhood Chain)
+- **Status:** ✅ Complete — waitlist submitted, `{"ok":true,"stored":true}`
+- **URL:** http://cubicle.algotrada.com/whitelist
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Email:** airdropkarbiters@gmail.com
+- **Done:**
+  - ✅ Follow @cubicle_hood → https://x.com/cubicle_hood
+  - ✅ Like launch post → https://x.com/cubicle_hood/status/2088739155463311422
+  - ✅ Repost launch post → https://x.com/cubicle_hood/status/2088739155463311422
+  - ✅ Reply (comment bonus) → https://x.com/osbornrdx/status/2089028868497957353
+  - ✅ Follow @taifoon_io (bonus) → https://x.com/taifoon_io
+  - ✅ Join t.me/cubiclehood (bonus, via Telethon @mxsyxfxx)
+  - ✅ Join t.me/taifoon_network (bonus, via Telethon @mxsyxfxx)
+- **API:** Next.js SPA → `POST /api/waitlist` `{email, product:"cubicle", xHandle, wallet, note}` where note = `comment=<url>\nsteps=3/3\nbonus=comment,taifoon,tg,tgTaifoon`. Client-side-only task verification (no server-side X OAuth check) — steps/bonus are self-declared in the note field.
+- **Network:** Robinhood Chain (`chainId: 0x1237`, RPC `https://rpc.mainnet.chain.robinhood.com`). 2,626 NFTs, free mint, 100 founding. Launch post mentions "wallets never go in replies — only the whitelist form counts".
+- **Note:** Required tasks = follow/like/repost (all done via MCP Chrome CDP with @osbornrdx cookies). Bonus = comment/taifoon/tg/tgTaifoon (all done). `contractAddress` empty in CAMPAIGN config → mint not live yet, no on-chain call needed. Full X actions executed on the real tweet page (like "Disukai", repost "Diposting ulang" confirmed in DOM).
+- **Date:** Aug 16, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126998)
