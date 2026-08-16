@@ -153,17 +153,18 @@
 - **Network:** N/A (WL form only — EVM wallet submission)
 - **Note:** X actions via direct GraphQL (FavoriteTweet/CreateRetweet/CreateTweet + v1.1 friendships/create). Follow verified server-side (`following: true`). Form submitted via browser (Google Forms XSRF blocks direct curl POST).
 
-### 33. Maksae (Giwa Eco) — Whitelist Register 🆕
-- **Status:** ✅ Registered — Supabase whitelist entry accepted (HTTP 201)
+### 33. Maksae (Giwa Eco) — Whitelist → Allowlist-gated Mint 🆕
+- **Status:** ⚠️ NOT ELIGIBLE — whitelist registered (HTTP 201) but final roll CLOSED; wallet `0x8CCE…282D` returns **404 (not-listed)** on `/al/<wallet>.json`. Mint today is allowlist-gated.
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 - **X Handle:** `@osbornrdx`
-- **Proof:**
+- **Proof (whitelist reg):**
   - Follow: @Maksae_GIWA ✅ — https://x.com/Maksae_GIWA
   - Like: https://x.com/Maksae_GIWA/status/2088017924091195800 ✅
   - Repost: https://x.com/Maksae_GIWA/status/2088017924091195800 ✅
-- **URL:** https://www.maksae.xyz/whitelist#claim
-- **Network:** Robinhood Chain · 1,111 scrolls (free mint, gas only)
-- **Note:** Supabase-backed whitelist. API: `POST tspatvvwkhcnzsmvmrpt.supabase.co/rest/v1/whitelist {wallet, handle}`. Three X tasks are self-attest (client-side only); register stores wallet+handle only.
+- **URL:** https://www.maksae.xyz/whitelist (closed) · mint at https://www.maksae.xyz/
+- **Network:** Robinhood Chain (chainId 4663 / 0x1237) · 1,111 scrolls · free, gas only · 1/wallet
+- **Mint:** 2026-08-16 16:00 UTC — **allowlist-gated** (only on-roll wallets). Contract address `pending` (empty in JS bundle). Public sale opens AFTER scrolls are honoured (unannounced).
+- **Note:** Supabase-backed whitelist (`POST tspatvvwkhcnzsmvmrpt.supabase.co/rest/v1/whitelist {wallet, handle}`) self-attest 3 X tasks. Final allowlist is a static Vercel `/al/<wallet>.json` (hand-curated). Our wallet 404s there → not on the published roll. No cron possible (not eligible + contract pending). Monitor @Maksae_GIWA for public sale.
 
 ### 32. Osero Origin — Free NFT Claim (Base) 🆕
 - **Status:** ⚠️ PARTIAL — X + Telegram verified server-side; wallet connect + on-chain claim **PENDING manual**
