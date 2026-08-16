@@ -996,7 +996,8 @@
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
 - **Classification:** Type 4 (BROWSERLESS-FIRST) — vanilla HTML + inline JS, `/api/claim` POST
 - **Tasks (not executed — no spot to claim):** Follow @TheBaddieRH + like + quote tweet `https://x.com/thebaddierh/status/2088630746877694161`
-- **Mint:** 0.001 ETH (WL) / 0.00125 ETH (public), Robinhood Chain
+- **Mint (paid, no free spot for us):** WL Aug 17 14:00 UTC @ 0.001 ETH / Public Aug 17 15:00 UTC @ 0.00125 ETH — Robinhood Chain, via OpenSea (opensea.io/collection/thebaddienft). Public mint is the only path since WL is 300/300 full.
+- **Follow-up (drop_126999, Aug 16 16:40 UTC):** Whitelist closed announcement with exact mint schedule confirmed from `config.js` (`wlTs`=2026-08-17T14:00:00Z, `pubTs`=2026-08-17T15:00:00Z). Paid mint only — needs real MetaMask unlock + 0.00125 ETH + gas on Robinhood Chain. No spot for airdrop_00.
 - **Note:** `GET /api/stats` → `{"claimed":300,"cap":300,"remaining":0,"open":true}`; probe `POST /api/claim {address,retweet}` → `{"ok":false,"error":"full"}`. WL already full at detection time — X tasks (follow/like/quote) skipped since submitting returns `full`. `config.js` exposes `WLCFG` (handle @TheBaddieRH, tweet URL, discord.gg/p5nPXrdSwN).
 - **Source:** @airdropfind Telegram (auto-detected, drop_126984)
 
