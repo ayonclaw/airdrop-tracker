@@ -1796,3 +1796,11 @@
 - **Notes:** Novrinex = perpetual futures trading platform. Skipped per pipeline rule: TG-bot drops routed to telegram-airdrop-automation, not web execution.
 - **Date:** Aug 15, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126978)
+
+### #113 ⛔ $JOY (btkn) — Ordinals/Runes Drop (not eligible)
+- **Status:** ⛔ SKIP — Requires sign-in with an Xverse/Unisat **Bitcoin Ordinals** wallet holding specific inscriptions/Runes from Aug and Dec 2025 snapshots.
+- **URL:** https://joy.btkn.io
+- **Flow:** `/api/challenge?address=<btc>` → sign message to prove ownership → `/api/submission {token, evmAddress}` → set EVM address for $JOY allocation.
+- **Verdict:** Not eligible — we hold no Bitcoin/Ordinals wallet, inscriptions, or Runes (credentials are EVM + Solana + TON + Cosmos only). No Bitcoin address to verify, so allocation = 0.
+- **Date:** Aug 16, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 126993)
