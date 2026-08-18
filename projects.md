@@ -1,10 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 16, 2026**
+> Last updated: **Aug 18, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 47. Hedge Lord (Hedge Lords) — Whitelist (X tasks + EVM wallet) 🆕
+- **Status:** ✅ Complete — wallet already on the roll. Supabase `POST /rest/v1/whitelist` returned **HTTP 409** ("This wallet is already on the roll") = prior registration; unique constraint on `wallet` confirms presence. Treated as success per airdrop-worker 409 pitfall.
+- **URL:** https://hedgelords.cash/whitelist
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Proof:**
+  - X Follow @hedge_lords: https://x.com/hedge_lords ✅
+  - X Like pinned tweet: https://x.com/hedge_lords/status/2089601145035542856 ✅
+  - X Quote pinned tweet (quote_url submitted): https://x.com/osbornrdx/status/2089843767482478764 ✅
+- **Network:** Robinhood Chain (RBH, chainId 4663 / 0x1237) — 5,555 $HEDGE supply, "The Crown List"
+- **Note:** Supabase PostgREST direct insert. Endpoint `POST https://gbpizagleqfctzdluyug.supabase.co/rest/v1/whitelist` with headers `apikey` + `Authorization: Bearer <anonKey>`, `Content-Type: application/json`, `Prefer: return=minimal`. Body `{x_username, quote_url, wallet}`. Form validation: handle `^\w{1,15}$`, quote `^https?://(x|twitter).com/[^/]+/status/\d+$`, wallet `^0x[a-fA-F0-9]{40}$`, honeypot `website` must be empty. X tasks (follow @hedge_lords, like + quote pinned tweet 2089601145035542856) done via MCP Chrome (injected @osbornrdx cookies from `~/.hermes/profiles/ayon/secrets/x_cookies_netscape.txt`). 201 = enrolled, 409 = already on roll (success).
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127048)
 
 ### 46. OFEP (OrdinalFEP) — Whitelist (Google Form) 🆕
 - **Status:** ✅ Complete — Google Form submitted ("Your response has been recorded")
