@@ -1881,3 +1881,14 @@
 - **Note:** Google Form required the email-include checkbox + real browser submit (curl impossible — needs fbzx/session binding). 145K-member server, GTD/WL checker live after review.
 - **Date:** Aug 18, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
+### #119 ✅ GRIFTERS — WL (Robinhood Chain, 2,222 celebrity NFTs)
+- **Status:** ✅ Complete — `{"ok":true,"status":"WHITELISTED"}`, verified `{"whitelisted":true,"via":"list"}`
+- **URL:** https://www.grifters.market
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Posted pre-written GRIFTERS tweet → https://x.com/osbornrdx/status/2089604294156914794
+  - ✅ POST `/api/whitelist` `{wallet, twitter:"osbornrdx", tweetUrl, website:""}` → WHITELISTED
+- **Note:** Free to join, no signature. Mint premieres Aug 21 18:00 UTC, $20 per grifter. Tweet must stay live until mint (deleted tweets lose their spot).
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
