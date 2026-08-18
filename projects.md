@@ -1892,3 +1892,19 @@
 - **Note:** Free to join, no signature. Mint premieres Aug 21 18:00 UTC, $20 per grifter. Tweet must stay live until mint (deleted tweets lose their spot).
 - **Date:** Aug 18, 2026
 - **Source:** @airdropfind Telegram (auto-detected)
+### #120 ⚠️ AGNT Socials S3 Week 5 (Galxe) — Partial
+- **Status:** ⚠️ Partial — SIWE ✅, followSpace ✅, X retweets ✅; creds blocked (X OAuth + YouTube)
+- **URL:** https://app.galxe.com/quest/AGNTHub/GCBh7tZTZX (W5 Day 1) + https://app.galxe.com/quest/AGNTHub/GCuf7tZzmM (Sprint 4 Finisher)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Galxe account reydenim)
+- **Done (API):**
+  - ✅ SIWE SignIn (JWT)
+  - ✅ followSpace AGNT Hub (space 77675) → `{"followSpace":1}`
+- **Done (X):**
+  - ✅ RT TruthAgentAI tweet → https://x.com/i/status/2089224149298205070 (verified unretweet)
+  - ✅ RT agnt_hub tweet → https://x.com/i/status/2089224477183819914 (verified unretweet)
+- **Blocked:**
+  - ⛔ TWITTER retweet creds: `missing twitter args` — needs X OAuth linked to Galxe account (one-time manual on CloakBrowser)
+  - ⛔ GALXE_ID "Watch YouTube" cred: `allow:false` — needs real YouTube watch
+  - ⛔ GALXE_ID "S2 Week 4 Finale Qualification": `allow:false` — qualification-based
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127041)
