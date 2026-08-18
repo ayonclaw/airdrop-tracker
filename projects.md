@@ -762,7 +762,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 26 |
+| Completed | 27 |
 | In Progress | 4 |
 || Blocked | 3 |
 
@@ -1908,3 +1908,27 @@
   - ⛔ GALXE_ID "S2 Week 4 Finale Qualification": `allow:false` — qualification-based
 - **Date:** Aug 18, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 127041)
+### #121 ✅ Kryvora Network — Testnet Quest Portal (12/14 quests, 3,195 pts)
+- **Status:** ✅ Complete (12/14) — 3,195 pts, level 10, badges: Web3 Pioneer, L2 Pioneer, Transaction Master, Kryvora BUIDLer, Ambassador
+- **URL:** https://tasks.kryvora.network
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Kryvora L2 chain 73829164 / 0x4668b2c, RPC rpc-testnet.kryvora.network)
+- **X Handle:** `@osbornrdx` (linked via OAuth)
+- **Referral:** `784916EF6A` (main wallet), source drop ref `651A7DCB2E`
+- **Done:**
+  - ✅ quest-wallet (100 pts) — SIWE auth
+  - ✅ quest-add-network (150 pts) — chain switch verified (faucet-funded balance)
+  - ✅ quest-faucet (250 pts) — faucet claim 0.001 ETH → tx `0x7771995ad45845c1b75bfcbdfa09792a5f5414c2e97f0242335bb15be5cd23fc`
+  - ✅ quest-l2-tx (300 pts) — sent 0.0001 ETH → tx `0x2085377a262994afd0231e0db3383394b33632941b2191fa3c62b2004108dd10`
+  - ✅ quest-deploy (500 pts) — deployed minimal contract → tx `0x2dbc6c18af8fd34947b88b4abe16379eb7a0f895466d4d1986c5c024963a0427`
+  - ✅ quest-connect-x (100 pts) — X OAuth linked @osbornrdx
+  - ✅ quest-follow-x (200 pts) — follow @KryvoraNetwork verified via OAuth
+  - ✅ quest-repost-x (150 pts) — reposted launch tweet + screenshot → https://x.com/KryvoraNetwork/status/2089432738919076067
+  - ✅ quest-quote-x (150 pts) — quote post → https://x.com/osbornrdx/status/2089660260575576520
+  - ✅ quest-referral (200 pts) — 3 qualified invites (airdrop_01/02/03 registered with ref 784916EF6A, each claimed wallet+daily)
+  - ✅ quest-bridge (400 pts) — deposited 0.001 Sepolia ETH via depositETH(uint32,bytes) to bridge contract `0x85d24F210aE9f465a8A58Fe98ddF322C944E634A` → tx `0x1fa26d040fe23f73504bb3e35a03d877a309289d88f5af5581c3cfbaaed9b242` (1M gas needed — 200K reverted; first attempt `0xad7eeee...` failed)
+  - ✅ quest-daily-gm (50 pts) — daily check-in Aug 18
+- **Blocked:**
+  - ⛔ quest-connect-discord / quest-join-discord — Discord OAuth login hits hCaptcha (sitekey a9b5fb07-92ff-493f-86fe-352a2803b3df), sidecar solve timed out (known hard block)
+- **Note:** Full browserless SIWE + on-chain execution. Faucet endpoint: POST https://faucet-testnet.kryvora.network/api/faucet `{address}` → `{"ok":true,"amount":"0.001 ETH","tx":...}`. Bridge calldata: `0xb1a1a882` + uint32(200000) + bytes(0x) + value 0.001 ETH, gas ≥ 1M.
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127044)
