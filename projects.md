@@ -1708,7 +1708,7 @@
   - **WL** — 4:00 PM UTC · max 10/wallet · 1 FREE + 9×0.0014 ETH
   - **1 FREE mint per wallet** (needs real MetaMask unlock + gas)
 - **GTD Wallet Checker (Aug 18):** 🆕 checker live at `/mint` (wallet eligibility UI). Contract `0xFFc147384A49bBbf74fbaf54E1eD6C2ac1B3B0b4` on Robinhood chain, MAX_SUPPLY 10000, totalSupply 1, our wallet minted=0. Stage config verified via RPC: stage1 (GTD) start 15:00 UTC, merkle root `0xab606925...`, price 0.0012 ETH; stage2 (WL) 16:00 UTC, root `0xb55dcd33...`. Allowlist shards `/allowlists/shards/{root}/{wallet}/{prefix}.json` all 404 at 10:40 UTC — lists not published yet (publish at stage start 15:00 UTC). Re-check after 15:00 UTC for GTD proof; `mintCost` reverts = not active yet. Free mint needs MetaMask + gas at mint time.
-- **Notes:** 10,000 Genesis Artifacts, 72h window (code "bunker"). Client-side self-attest verification. Mint page `/mint` now shows "FORM CLOSED" — intake suspended, mint is for GTD/WL participants only. Follow [@thebunkerhood](https://x.com/thebunkerhood) for updates.
+- **Notes:** 10,000 Genesis Artifacts, 72h window (code "bunker"). Client-side self-attest verification. GTD Wallet Checker live Aug 18 (`thebunkerhood.com/mint`): our wallet returns **404 on BOTH allowlist shards** (`/allowlists/shards/<wallet>/gtd/8c.json` + `/wl/8c.json`) at 10:47 UTC — either not on the GTD/WL roll OR lists unpublished until stage start (GTD 15:00 UTC, WL 16:00 UTC). Re-check after 15:00 UTC before mint. Mint is allowlist-gated only. Follow [@thebunkerhood](https://x.com/thebunkerhood) for updates.
 - **Date:** Aug 13, 2026 (WL) · Aug 15, 2026 (mint schedule)
 - **Source:** @airdropfind Telegram (auto-detected, msg 126925 + 126981)
 
