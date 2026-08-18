@@ -1837,3 +1837,47 @@
 - **Note:** Required tasks = follow/like/repost (all done via MCP Chrome CDP with @osbornrdx cookies). Bonus = comment/taifoon/tg/tgTaifoon (all done). `contractAddress` empty in CAMPAIGN config → mint not live yet, no on-chain call needed. Full X actions executed on the real tweet page (like "Disukai", repost "Diposting ulang" confirmed in DOM).
 - **Date:** Aug 16, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126998)
+### #116 ✅ Hoodilio Babies — WL Raffle (Robinhood Chain)
+- **Status:** ✅ Complete — Google Sheet submission `{"ok":true}`
+- **URL:** https://hoodilio.live
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow @hoodiliobabies → https://x.com/hoodiliobabies
+  - ✅ Like launch post → https://x.com/hoodiliobabies/status/2089415215838269810
+  - ✅ Quote post → https://x.com/osbornrdx/status/2089600089182630206
+- **API:** Vanilla JS → Google Apps Script endpoint `script.google.com/macros/s/AKfycbzn8GrQ_C2ZK2f7o508yBIS97_8TyZMTlj3gRbKFuC477rEwPQOTE26QDDiSn4XILKr7w/exec` → POST `{handle, wallet}` text/plain → 302 → `{"ok":true}`. Client-side task gating only (no server verification).
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
+### #117 ✅ Bunny Hood — Get WL (Robinhood Chain)
+- **Status:** ✅ Complete — submission ID `BH-A58017`
+- **URL:** https://www.bunnyhood.xyz/getWL
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow @BunnysHood → https://x.com/BunnysHood
+  - ✅ Like campaign post → https://x.com/BunnysHood/status/2089383112656441498
+  - ✅ Repost campaign post → https://x.com/BunnysHood/status/2089383112656441498
+  - ✅ Reply → https://x.com/osbornrdx/status/2089599781761098227
+  - ✅ Notifications mission (profile bell, client-side 5s timer)
+- **API:** Next.js SPA → `POST /api/submit` `{xUsername, wallet, completedTasks:["follow","engage","notifications"]}` with Origin check (curl rejected: "Cross-site submissions are not accepted"; browser fetch passes). 3 missions gated by 5s client-side timers (click OPEN → timer → done).
+- **Note:** 3,999 Bunnys, manual review before final whitelist approval. Share card shown: "I'M IN THE HOOD. @osbornrdx 0x8CCE…282D".
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
+
+### #118 ✅ Goat Street Cashmere NFT — GTD/WL Form (Robinhood Chain)
+- **Status:** ✅ Complete — Google Form recorded ("Your response has been recorded")
+- **URL:** https://docs.google.com/forms/d/e/1FAIpQLSfBTFLJCgT2JGO2xOlGNfSVC0HQN9_WrLz0b0NZ7IH4HKnYow/viewform
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Done:**
+  - ✅ Follow @CashmereLabs → https://x.com/CashmereLabs
+  - ✅ Like post → https://x.com/CashmereLabs/status/2089336529139224939
+  - ✅ RT post → https://x.com/CashmereLabs/status/2089336529139224939
+  - ✅ Comment → https://x.com/osbornrdx/status/2089600404871082261
+  - ✅ Join t.me/cashmerelabs (via Telethon @mxsyxfxx, channel id 1154400766)
+  - ⚠️ Discord = "No" (no Discord session on server; honest self-attest)
+- **Note:** Google Form required the email-include checkbox + real browser submit (curl impossible — needs fbzx/session binding). 145K-member server, GTD/WL checker live after review.
+- **Date:** Aug 18, 2026
+- **Source:** @airdropfind Telegram (auto-detected)
