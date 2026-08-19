@@ -6,6 +6,20 @@
 
 ## ✅ COMPLETED
 
+### 49. Chatlee — In-App Social Airdrop Dashboard (Like/Follow done, external pending) 🆕
+- **Status:** 🟡 Partial — In-browser tasks complete; external-account tasks pending
+- **URL:** https://chatlee.io/?inv=292846181590294528 (invite code `MjkyODQ2MTgxNTkwMjk0NTI4` → decodes to `292846181590294528`)
+- **Type:** Type 20 (IN-APP SOCIAL AIRDROP DASHBOARD) — web3 social network with in-app Airdrop tab task list
+- **Account:** Logged in as @osbornrdx (persistent MCP Chrome session), 24 CHATLEE token balance
+- **Tasks (2/5 completed, 40%):**
+  - ✅ **Like 5 posts** — Claimed (server-tracked, disabled button)
+  - ✅ **Follow 3 users** — Claimed (server-tracked, disabled button)
+  - ⚠️ **Invite a friend** — pending (needs a real new user to join with referral)
+  - ⚠️ **Add to Wishlist on Steam** (×2, +50 each) — pending (needs Steam account login)
+- **Method:** Persistent Chatlee session already authenticated in MCP Chrome (`chrome-profile-permanent` retained auth across cron runs). No wallet / X tasks required for this class. Per Type 20, external-account tasks marked pending — not automatable without real Steam / new-user accounts.
+- **Date:** Aug 19, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127057)
+
 ### 48. Brave Reward Card — Waitlist (Email + Country) 🆕
 - **Status:** ✅ Complete — BlockSurvey submission returned `{"status":"success","message":"Published successfully","responseId":"557a9d8d-2e54-45fe-ac32-07aa88d00bd6"}`
 - **URL:** https://brave.com/card-waitlist/
