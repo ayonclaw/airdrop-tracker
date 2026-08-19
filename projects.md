@@ -660,6 +660,17 @@
 
 ## ⏳ PENDING
 
+### 50. MPC Mining RWA — Waitlist + SBT Mint (BNB Chain) 🆕
+- **Status:** ⚠️ PENDING MANUAL — hard wallet-connect wall (Reown AppKit / Dynamic.xyz). Needs real MetaMask + BNB gas for on-chain SBT mint.
+- **URL:** https://app.globalmpc.tech/ (title: "MPC Waitlist")
+- **Chain:** BNB Chain (footer "BNB Chain")
+- **Flow:** Join waitlist → Connect Wallet (Reown/WalletConnect modal) → Mint SBT → Complete Task
+- **Tech:** Next.js (Vercel) + wagmi + Dynamic.xyz (eth.merkle.io SIWE backend) + Reown AppKit. API: `/api/home` (public, `{"address":null,"member":false}`), `/api/register/status` (POST, requires authenticated Dynamic session cookie via `cid()`), `/api/energy`, `/api/energy/history`, `/api/auth/logout`.
+- **Blocker:** No browserless raw-address endpoint. "Join the waitlist" → WalletConnect modal → "All Wallets" lists MetaMask but MCP Chrome profile has NO MetaMask (only Phantom/Solana). VPS IP 429s on eth.merkle.io SIWE. On-chain SBT mint needs real EVM wallet + BNB gas.
+- **What Rey must do:** Open in CloakBrowser with MetaMask (airdrop_00 EVM, 0x8CCE…282D) → connect → mint SBT → complete tasks.
+- **Date:** Aug 19, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127058)
+
 ### DGrid AI ($DGAI) — TGE Claim Portal (opens Aug 17)
 - **Status:** ℹ️ INFO — future claim portal, NOT executable yet (no form/link/wallet today)
 - **Source:** https://x.com/dgrid_ai/status/2088098211022131318
