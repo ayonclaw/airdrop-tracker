@@ -85,6 +85,11 @@
 - **Re-announcement:** Aug 16 18:10 (msg 127001) — same URL/flow, re-submit probe returned fresh `201 {"ok":true,"transmissionId":"c49c6fb0-..."}` (endpoint does NOT dedupe by wallet; each POST = new transmission). No action needed.
 - **Date:** Aug 16, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 126986)
+- **🪙 MINT (announced Aug 20, msg 127066):** Timed mint on OpenSea — `https://opensea.io/collection/glorprbh/overview`
+  - **Mint time:** 2026-08-20 **16:00 UTC** (23:00 WIB) — live countdown confirmed on OpenSea page
+  - **Price:** 0.0022 ETH · **Supply:** 4,444 NFTs · **Chain:** Robinhood Chain (chainId 0x1237 = 4663)
+  - **Contract:** `0xd5ff2e40f74bc7805cc6016bb536f6471d065b00` (owner `0x3abf69303d26b18aa8345dccde20c9c71df7aaec`, Twitter @glorpRBH)
+  - **Status:** ⚠️ WL-gated mint — our wallet is on the waitlist (#45 transmissionId `dcda2f9f`), so likely allowlisted. **Server automation blocked:** official RPC `rpc.robinhood.com` rejects VPS TLS handshake (CloudFront); public RPCs are Cloudflare-gated; OpenSea UI mint needs MetaMask (LavaMoat wall on server). → **Manual/CloakBrowser mint at 16:00 UTC** with `airdrop_00` + Robinhood-Chain ETH gas.
 
 ### 44. REKT TRADOOOR — Waitlist (email-only) 🆕
 - **Status:** ✅ Complete — waitlist joined, `{"ok":true,"desk":1941,"lists":1}`
