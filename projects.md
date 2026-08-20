@@ -791,7 +791,7 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-| KieDex | S2: Faucets 2/2, Missions 7/10, Oil +90 (40 faucet +50 lev), 1 pos BTC Long 20x 180 USDT (PnL -33.2%), streak 2d | ⏳ Daily |
+| KieDex | S2 daily 2026-08-20: Faucets 2/2 (+50 USDT +40 Oil), Missions 8/11, Oil today +100 (50x10x-lev +50xclose-win), Social all Done (Like&Repost+10KDX claim pending server-verify), Trading: Open5=1/5, $1kVol=$180/$1000, CloseWin DONE, Use10x DONE, pos BTC Long 20x closed +14.66 USDT (+162%), Bal Spot 474.95/Fut 114.66/Tot 589.62 USDT, streak 2d | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
