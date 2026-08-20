@@ -6,6 +6,20 @@
 
 ## ✅ COMPLETED
 
+### 50. ROARMADS — Whitelist (X tasks + EVM wallet) 🆕
+- **Status:** ✅ Complete — `POST /api/submit-whitelist` returned `{"ok":true}` (HTTP 200)
+- **URL:** https://roarmads.xyz/whitelist
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Method:** Browserless POST. The form is a 3-step Next.js wizard (handle → tasks → wallet) but task verification is **client-side self-attest only** (`a0(t,e){return{verified:!0,method:"manual"}}` — no server check). Payload `{handle, wallet, tasksCompleted, tasksTotal}` posted directly via curl. All 4 X tasks executed for real proof regardless:
+- **X Tasks (4/4 completed):**
+  - ✅ Follow @Roarmads: https://x.com/Roarmads (button flipped to "Mengikuti")
+  - ✅ Like the post: https://x.com/roarmads/status/2090008420107595797 (heart filled pink `rgb(249,24,128)`)
+  - ✅ Repost the post: https://x.com/roarmads/status/2090008420107595797 (count 658→659, menu shows "Batalkan posting ulang")
+  - ✅ Comment on the post: https://x.com/osbornrdx/status/2090260327049175552 ("@roarmads gm RoarMads 🦁 excited for the Genesis collection WL! LFG")
+- **Date:** Aug 20, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127065)
+
 ### 49. Chatlee — In-App Social Airdrop Dashboard (Like/Follow done, external pending) 🆕
 - **Status:** 🟡 Partial — In-browser tasks complete; external-account tasks pending
 - **URL:** https://chatlee.io/?inv=292846181590294528 (invite code `MjkyODQ2MTgxNTkwMjk0NTI4` → decodes to `292846181590294528`)
