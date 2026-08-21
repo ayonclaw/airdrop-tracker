@@ -2066,3 +2066,23 @@
 - **Note:** Full browserless SIWE + on-chain execution. Faucet endpoint: POST https://faucet-testnet.kryvora.network/api/faucet `{address}` → `{"ok":true,"amount":"0.001 ETH","tx":...}`. Bridge calldata: `0xb1a1a882` + uint32(200000) + bytes(0x) + value 0.001 ETH, gas ≥ 1M.
 - **Date:** Aug 18, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 127044)
+
+### #122 ⚠️ Meridian Testnet (app.meridian.xyz) — PENDING manual (real wallet + testnet funds + on-chain trades)
+- **Status:** ⚠️ PENDING — hard wall for autonomous server execution. Requires real MetaMask with **Robinhood Chain Testnet** (chainId `4663` / `0x1237`) added + testnet mUSD from faucet + actual on-chain activity.
+- **URL:** https://app.meridian.xyz/predict
+- **Faucet:** https://faucet.meridiantest.net/#/faucet (claims test USD → mUSD wrapper, "Test USD faucet and utilities for Robinhood Chain Testnet")
+- **Network:** Robinhood Chain Testnet (chainId 4663 / 0x1237) — confirmed from faucet bundle (`chains:["robinhood"]`, appName "Test USD faucet... for Robinhood Chain Testnet")
+- **Token:** `mUSD` (Meridian USD Wrapper, ERC20, 18 decimals) — wrap USD 1:1
+- **EVM Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00)
+- **X Handle:** `@osbornrdx`
+- **Tasks required (per drop):**
+  1. Connect Wallet (testnet)
+  2. Claim & Deposit 100 testnet USDC/mUSD (from faucet)
+  3. Try a few mPerps trades
+  4. Open Portfolio / Go to Margin
+  5. Switch to Predict → make predictions
+  6. Climb the Leaderboard (Meridian Points)
+- **Why blocked:** Full on-chain perps + prediction-market platform (intent: `MeridianPredictTradeAttribution` EIP-712). Needs real MetaMask unlock + Robinhood testnet chain + faucet-funded mUSD + signed trades/predictions. VPS MetaMask vault is locked and lacks the Robinhood testnet network; can't run a UI trade flow headlessly. Robinhood Chain RPC also TLS-blocked from VPS (per prior GLORP/Maksae findings).
+- **Action for Rey:** Open in **CloakBrowser** (real MetaMask, airdrop_00) → add Robinhood Chain Testnet (4663) → faucet.meridiantest.net claim mUSD → app.meridian.xyz/predict connect + deposit 100 mUSD + do trades/predictions.
+- **Date:** Aug 21, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127077)
