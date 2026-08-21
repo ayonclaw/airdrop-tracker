@@ -21,6 +21,20 @@
 - **Date:** Aug 21, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 127073)
 
+### 53. Street Drifters — Whitelist Raffle (Robinhood Chain) ✅ 🆕
+- **Status:** ✅ Complete — Google Form submitted, confirmation: "You're in the running. Winners announced soon — keep an eye on @StreetDriftNFT."
+- **URL:** https://docs.google.com/forms/d/e/1FAIpQLSf26fqOPayH9Zpl3bDIEDh6y0T2xViDBLNpS99Fhu6TReLnGA/viewform
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, Robinhood Chain)
+- **X Handle:** `@osbornrdx`
+- **Type:** Google Form whitelist raffle (wallet + X handle + quote-link). Source tweet: https://x.com/streetdriftnft/status/2090117112043864095
+- **X Tasks (executed for real proof):**
+  - ✅ Follow @StreetDriftNFT: https://x.com/StreetDriftNFT (already following — button state "Mengikuti")
+  - ✅ Like source tweet: https://x.com/streetdriftnft/status/2090117112043864095 (count 1061→1062, pink fill confirmed)
+  - ✅ Retweet source tweet (repost active)
+  - ✅ Quote tweet: https://x.com/osbornrdx/status/2090645121113199081 ("Street Drifters whitelist raffle entered 🏁 10k wanderers roaming Robinhood Chain. GM to the drifters @StreetDriftNFT")
+- **Date:** Aug 21, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127079)
+
 ### 51. Aligned Layer ($ALIGN) — Genesis Drop Eligibility Check (NOT ELIGIBLE) 🆕
 - **Status:** ⛔ Not Eligible — `GET /api/wallets/{addr}/claimed` → `404 {"error":"Address not found"}` for ALL 11 Rey EVM wallets
 - **URL:** https://airdrop.alignedlayer.com
