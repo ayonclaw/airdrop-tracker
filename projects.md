@@ -1,10 +1,30 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 20, 2026**
+> Last updated: **Aug 21, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 51. Aligned Layer ($ALIGN) — Genesis Drop Eligibility Check (NOT ELIGIBLE) 🆕
+- **Status:** ⛔ Not Eligible — `GET /api/wallets/{addr}/claimed` → `404 {"error":"Address not found"}` for ALL 11 Rey EVM wallets
+- **URL:** https://airdrop.alignedlayer.com
+- **Type:** Web3 on-chain claim portal (custom `<x-app-wallet-home>` web component; networks: Ethereum mainnet + Base; claim contract `0xBfc06549532E6119C4Bc0EFf167290EfdCA33fa6`, token `0x50614CC8e44F7814549c223aA31db9296e58057c)
+- **Method:** Full offline SIWE flow. Reverse-engineered the EIP-4361 challenge: `POST /api/signatures/challenge {address, tos_hash}` → sign the returned message with `eth_account.sign_message` (personal_sign, **must be `0x`-prefixed** — server rejects bare hex with 422), `POST /api/signatures {address, signature}` → TOS accepted (201). Then `GET /api/wallets/{addr}/claimed` reveals allocation.
+- **Wallets checked (all 404 "Address not found"):**
+  - `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00 / master)
+  - `0x50d1Ce2Be5E3Fb8a229e9826E1685549c171D19b` (airdrop_01)
+  - `0x8f20c36FF287c1f5a9d3d4824e7453560f2C2eeC` (airdrop_02)
+  - `0x7B6380acDdd18ad210D0Efd3e67A8521C2C7E1B7` (airdrop_03)
+  - `0xFE0476C8C18D532F69c723b47e53AA8f5A5DFc7d` (airdrop_04)
+  - `0x05977C8D6B3E7524322a18c0bDaEc455Ce8455A7` (airdrop_05)
+  - `0x19b8fdaD37d0ee54617A71Bd9EB153e7fd6d901B` (airdrop_06)
+  - `0x7FF8fFB9cE432ADeBEd1bF9eAa401CFD28ac8269` (airdrop_07)
+  - `0x2D8EDa631252307A02ce119d352c8AF48F6a5C63` (airdrop_08)
+  - `0x01aCAd0BF45D3205b6816141ac05A22c8F0BA519` (airdrop_09)
+- **Verdict:** $ALIGN Genesis Drop is a fixed historical snapshot (EigenLayer restakers, ETH stakers/validators pre-block ~20.8M, qualifying token holders, Aligned testnet provers). None of Rey's hot farming wallets qualify — zero allocation to claim. No on-chain claim possible.
+- **Date:** Aug 21, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127071)
 
 ### 50. ROARMADS — Whitelist (X tasks + EVM wallet) 🆕
 - **Status:** ✅ Complete — `POST /api/submit-whitelist` returned `{"ok":true}` (HTTP 200)
