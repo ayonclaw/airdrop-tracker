@@ -1122,6 +1122,16 @@
 ---
 ## ⛔ SKIPPED / EXPIRED
 
+### NOIR BROKERS LDT. (noirbrokers.fun) — Waitlist CLOSED 🆕
+- **Date:** Aug 21, 2026
+- **URL:** https://noirbrokers.fun
+- **Status:** ⛔ CLOSED — site static HTML renders "SORRY, THE WHITELIST IS CLOSED! PLEASE WAIT FOR FURTHER INSTRUCTIONS." The connect button (`#init-connect`) that opens the task modal is NOT in the DOM (JS `getElementById('init-connect')` returns null → script throws, no registration flow renders). No form/API to submit to.
+- **Reward:** 3,000 NFTs, $NOIR, Free mint (per meta description)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, not submitted — site closed)
+- **Classification:** Firebase TwitterAuthProvider X-OAuth waitlist (intended flow: X connect via Firebase popup → follow @noirbrokers_rh → repost announcement `x.com/noirbrokers_rh/status/2090178238022643731` → submit EVM address → POST to Google Apps Script `SCRIPT_URL`). Intended verification is client-side only (link-click booleans), backend just records.
+- **Action:** Nothing to execute — waitlist is closed. Monitor for re-open. Rey can manually watch @noirbrokers_rh for the reopen announcement.
+- **Source:** @airdropfind Telegram (auto-detected, drop_127078)
+
 ### The Baddie — Whitelist FULL (FCFS 300/300) 🆕
 - **Date:** Aug 16, 2026
 - **URL:** https://baddienft.com
