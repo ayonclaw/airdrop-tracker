@@ -732,6 +732,16 @@
 
 ## ⏳ PENDING
 
+### Retium NFT Launchpad — Testnet Mint (Base, proprietary wallet) 🆕
+- **Status:** ⚠️ PENDING MANUAL — hard wall. Proprietary Retium popup wallet (`https://wallet.retium.org/connect/` via `window.retium` SDK) + on-chain NFT mint on **Base**. No browserless registration path; not a waitlist/form.
+- **URL:** https://nft.retium.org (title: "Retium NFT Launchpad")
+- **Flow (per drop):** Connect Wallet ▶ Create and Mint NFT ▶ Copy CA to add NFT
+- **Wallet mechanism:** Custom `retium-sdk.js` opens a popup to `wallet.retium.org/connect/` and talks via `postMessage`. NOT standard `window.ethereum` injection — mock injection cannot fake the popup wallet or sign the on-chain mint. Chain confirmed Base (network string "BASE" dominates the bundle).
+- **Why wall:** Requires a Retium Connect account + real Base gas for the mint tx. Autonomous mock-injection cannot pass the proprietary popup wallet or sign the transaction.
+- **Action for Rey:** Open nft.retium.org in CloakBrowser (real wallet), connect via Retium popup, mint the testnet NFT, copy CA.
+- **Date:** Aug 21, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127074)
+
 ### 50. MPC Mining RWA — Waitlist + SBT Mint (BNB Chain) 🆕
 - **Status:** ⚠️ PENDING MANUAL — hard wallet-connect wall (Reown AppKit / Dynamic.xyz). Needs real MetaMask + BNB gas for on-chain SBT mint.
 - **URL:** https://app.globalmpc.tech/ (title: "MPC Waitlist")
