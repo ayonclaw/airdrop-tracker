@@ -6,6 +6,16 @@
 
 ## ✅ COMPLETED
 
+### 53. Tales of Blobs (talesofblobs.com) — Whitelist ✅ 🆕
+- **Status:** ✅ Complete — `POST /api/whitelist` returned `{"ok":true}` (HTTP 201)
+- **URL:** https://talesofblobs.com/whitelist
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Type:** Next.js SPA whitelist. Submit endpoint `POST /api/whitelist {wallet}` — NO server-side task verification (pure storage; task "verification" is a 10s client-side self-attest timer). Social tasks (Follow + Like) executed for real proof regardless:
+  - ✅ Follow @talesofblob: https://x.com/talesofblob (button → "Mengikuti")
+  - ✅ Like pinned post: https://x.com/talesofblob/status/2090721778339320313 (state "unlike", pink fill rgb(249,24,128), count 1058→1061)
+- **Source:** https://x.com/talesofblob/status/2090721778339320313
+
 ### 52. Puffins (puffins.fun) — Waitlist / Voyage Protocol ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/submissions` returned `{"ok":true,"submissionId":"sub__7STBAtGJs4NWXDj6WTRU_3oZ7L"}` (HTTP 202)
 - **URL:** https://puffins.fun/
