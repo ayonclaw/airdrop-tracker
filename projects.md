@@ -1136,6 +1136,16 @@
 ---
 ## ⛔ SKIPPED / EXPIRED
 
+### PLUMBERS (plumbers.farm) — Claim Airdrop — NOT ELIGIBLE 🆕
+- **Date:** Aug 21, 2026
+- **URL:** https://plumbers.farm
+- **Status:** ⛔ NOT ELIGIBLE — public shard-based eligibility roster (`build/eligible_claims.json`, status:`final`, 254,464 addresses, snapshot 2026-08-01). Checked all 10 EVM wallets (airdrop_00–09) against `build/proofs/{prefix}.json` shards → **none present**.
+- **Reward:** PLUMBERS tokens (allocation per eligible address)
+- **Eligibility targets:** UNI claimers, 1INCH initial claimers, CRV genesis LPs, BADGER Hunt claimers, Sushi bonus farmers (early 2020-2021 DeFi activity). Rey's airdrop-farming wallets have no such history.
+- **CA ETH L1:** `0x4485dc2Bb0eB690B91Ad9AE5B7285789B168764d`
+- **Action:** Nothing to claim — no eligible wallet. Claim itself requires real MetaMask unlock + on-chain signature + gas on the eligible wallet (hard wall regardless). Monitor not needed.
+- **Source:** @airdropfind Telegram (auto-detected, drop_127081)
+
 ### NOIR BROKERS LDT. (noirbrokers.fun) — Waitlist CLOSED 🆕
 - **Date:** Aug 21, 2026
 - **URL:** https://noirbrokers.fun
