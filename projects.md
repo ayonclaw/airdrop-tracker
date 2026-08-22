@@ -897,7 +897,8 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-| KieDex | S2 daily 2026-08-21: Faucets 2/2 (+50 USDT +40 Oil), Missions 7/11, Oil today +50 (Use10x-lev), Social all Done (s7 claimed; 1 ghost Ready card = UI dup), Trading: Open5=0/5, $1kVol=$0/$1000, CloseWin Pending, Use10x DONE, pos BTC Long 20x 3 USDT margin OPEN, Fut margin 114.66 USDT, Oil ~470, streak 2d | ⏳ Daily |
+|| KieDex | S2 daily 2026-08-21: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|| | **MISSIONS**: 9/11 completed (Up from 7/11 → 8/11 after trade closed, now 9/11 after claims)\n|| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil)\n|| | - **"Close a winning trade"** → Completed & Claimed ✅ (+50 Oil, position closed at +3.35 USDT profit)\n|| | - "Open 5 trades" → 1/5 progress ($60 vol from single trade; need ~480 Oil for 4 more trades)\n|| | - "$1000 volume" → $60/$1000 progress\n|| | **SOCIAL TASKS**: All done server-side, claims pending verification\n|| | - Follow @KieDexApp → Done (UI shows Done)\n|| | - Share KieDex on X → Done\n|| | - Join Telegram Group → Done\n|| | - Join Telegram Channel → Done\n|| | - Like & Repost → Pending→Ready after verification (Turnstile captcha present, claim button disabled—server processing ~10-30min per skill notes)\n|| | **TRADING**: Single trade executed & closed (profitable). No new position opened.\n|| | - Futures balance: **118.02 USDT**\n|| | - Spot balance: **574.95 USDT**\n|| | - Total USDT: **688.02**\n|| | - Oil balance: **610 Oil**\n|| | - Streak: 1 day\n|| | **Oil earned today**: 100 Oil (50 from Use10x + 50 from CloseWin mission) | ⏳ Daily |\n
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
