@@ -2131,3 +2131,24 @@
 - **Action for Rey:** Open in **CloakBrowser** (real MetaMask, airdrop_00) → add Robinhood Chain Testnet (4663) → faucet.meridiantest.net claim mUSD → app.meridian.xyz/predict connect + deposit 100 mUSD + do trades/predictions.
 - **Date:** Aug 21, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 127077)
+### #121 ⚠️ AGNT Socials S3 Week 5 — Days 2/3/4 (Galxe Quest) 🆕
+- **Status:** ⚠️ PENDING — needs real MetaMask + Galxe X OAuth linkage
+- **URLs:** 
+  - https://app.galxe.com/quest/AGNTHub/GCya7tZj42 (W5 Day 2, 35 pts)
+  - https://app.galxe.com/quest/AGNTHub/GC6C7tZHzc (W5 Day 3, 35 pts)  
+  - https://app.galxe.com/quest/AGNTHub/GC6k7tZHQH (W5 Day 4, 35 pts)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Galxe account reydenim)
+- **Blocked:**
+  - ⛔ **EVM Wallet Connect** — No MetaMask extension loaded in MCP Chrome; cannot sign SIWE message
+  - ⚠️ **X OAuth** — X account (@osbornrdx) NOT linked to Galxe one-time setup (per entry #120: "missing twitter args" on retweet creds)
+- **Manual steps for Rey:**
+  1. Open CloakBrowser with real MetaMask (airdrop_00) unlocked
+  2. Link X account to Galxe: app.galxe.com/passport → Settings → Social Accounts → Connect X
+  3. Complete each quest: login via MetaMask → followSpace → retweet agnt_hub & TruthAgentAI tweets
+  4. Verify points awarded (35 pts per quest × 3 = 105 total)
+- **Note:** Parent space ID: 77675 (AGNT Hub); followSpace already done in #120 ✅
+- **Date:** Aug 22, 2026
+- **Source:** @airdropfind Telegram (auto-detected, msg 127093)
+
+---
+
