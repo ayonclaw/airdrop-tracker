@@ -2152,3 +2152,62 @@
 
 ---
 
+
+### #156 Zorpians (127211) — ✅ DONE
+- **Date:** 2026-08-28
+- **URL:** zorpians.xyz
+- **Chain:** Robinhood | Supply: 4000
+- **Actions:** Follow @zorpians + Like + Reply (`NVIDIA for the computational...`) + Quote (`Getting abducted...`)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Proof:** [Reply](https://x.com/osbornrdx/status/2093282190587248658) | [Quote](https://x.com/osbornrdx/status/2093282282962596126) | Form: "You are on the list."
+
+### #157 Inksideout (127184) — ✅ DONE
+- **Date:** 2026-08-28
+- **URL:** inksideout.site
+- **Chain:** Ink Chain ⬡
+- **Actions:** Like pinned post + Quote (`What's inside my head?...`) + Form submit (handle + quote link + EVM)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Proof:** [Quote](https://x.com/osbornrdx/status/2093282906353656159) | Form: "APPLICATION SEALED!"
+
+### #158 Chomp.fyi (127217) — ✅ DONE
+- **Date:** 2026-08-28
+- **URL:** chomp.fyi
+- **Type:** Email waitlist via getwaitlist API
+- **Email:** airdropkarbiters@gmail.com
+
+### #159 Bafoontown (127229) — ⚠️ PARTIAL
+- **Date:** 2026-08-28
+- **URL:** bafoontown.wtf
+- **Chain:** Robinhood | Supply: 3333
+- **Actions:** ✅ Follow @bafoontown + Like + RT pinned post + Comment tagging @osbornrdx @xreign_app
+- **Blocker:** Form step 2 MARK DONE buttons not progressing — task verification requires GO link clicks tracking state
+- **Manual:** Re-enter @osbornrdx → click each GO link → MARK DONE → wallet `0x8CCE...`
+
+### #160 Dualmint (127179) — ⚠️ PENDING
+- **Date:** 2026-08-28
+- **URL:** uptime.dualmint.com/TFZPVA
+- **Type:** Email waitlist with Solana integration
+- **Blocker:** Sign-in wall required before waitlist join
+
+### #161 Onchain Sketches (127185) — ⚠️ PENDING
+- **Date:** 2026-08-28
+- **URL:** onchainsketches.xyz
+- **Chain:** Robinhood | Supply: 3333
+- **Not processed this batch**
+
+### #162 Cashpunk (127188) — ⚠️ PENDING
+- **Date:** 2026-08-28
+- **URL:** cashpunk.xyz
+- **Not processed this batch**
+
+### #163 GotchaFI (127201) — ⚠️ PENDING
+- **Date:** 2026-08-28
+- **URL:** gotchafi.com → gotchafi-production.up.railway.app
+- **Chain:** Robinhood
+- **Not processed this batch**
+
+### #164 QMS Finance (127209) — ⚠️ PENDING
+- **Date:** 2026-08-28
+- **URL:** qms.finance
+- **Type:** Post-quantum L1 blockchain waitlist
+- **Not processed this batch**
