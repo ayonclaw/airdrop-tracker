@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 21, 2026**
+> Last updated: **Aug 30, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -897,8 +897,20 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|| KieDex | S2 daily 2026-08-21: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
-|| | **MISSIONS**: 9/11 completed (Up from 7/11 → 8/11 after trade closed, now 9/11 after claims)\n|| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil)\n|| | - **"Close a winning trade"** → Completed & Claimed ✅ (+50 Oil, position closed at +3.35 USDT profit)\n|| | - "Open 5 trades" → 1/5 progress ($60 vol from single trade; need ~480 Oil for 4 more trades)\n|| | - "$1000 volume" → $60/$1000 progress\n|| | **SOCIAL TASKS**: All done server-side, claims pending verification\n|| | - Follow @KieDexApp → Done (UI shows Done)\n|| | - Share KieDex on X → Done\n|| | - Join Telegram Group → Done\n|| | - Join Telegram Channel → Done\n|| | - Like & Repost → Pending→Ready after verification (Turnstile captcha present, claim button disabled—server processing ~10-30min per skill notes)\n|| | **TRADING**: Single trade executed & closed (profitable). No new position opened.\n|| | - Futures balance: **118.02 USDT**\n|| | - Spot balance: **574.95 USDT**\n|| | - Total USDT: **688.02**\n|| | - Oil balance: **610 Oil**\n|| | - Streak: 1 day\n|| | **Oil earned today**: 100 Oil (50 from Use10x + 50 from CloseWin mission) | ⏳ Daily |\n
+|| KieDex | S2 daily 2026-08-30: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|| | **MISSIONS**: 8/11 completed (7/11 → 8/11 after claims) |
+|| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
+|| | - **"Close a winning trade"** → Completed & Claimed ✅ (+50 Oil, position closed at +0.11 USDT profit) |
+|| | - **"Like & Repost" (+10 KDX)** → Claimed ✅ (social 7/7 server-side) |
+|| | - "Open 5 trades" → 1/5 (300 USDT merged into ONE position — merged adds count as 1 trade, not 5; need 4 SEPARATE pair/leverage combos) |
+|| | - "$1000 volume" → $300/$1000 progress |
+|| | **TRADING**: Opened 5× 3-USDT Long adds @ 20x (650→50 Oil spent, 600 fee), all merged into 1 position (15 USDT margin, 300 USDT size), closed profitable +0.11 USDT |
+|| | - Total USDT: **743.08** (up from 692.97 pre-claims) |
+|| | - Oil balance: **50 Oil** (650 start - 600 fees) |
+|| | - Oil earned today: **100 Oil** (50 Use10x + 50 CloseWin) |
+|| | - KDX earned Season 2: **50 KDX**, Vol **$540** |
+|| | - Streak: 1 day |
+|| | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
 | Catapult Trade | Registered $PULT Airdrop | ⏳ Active |
