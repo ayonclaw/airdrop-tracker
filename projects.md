@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 31, 2026 (16:40 UTC)**
+> Last updated: **Aug 31, 2026 (17:10 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -94,6 +94,35 @@
   6. `/usr/bin/google-chrome` on this VPS is a **broken snap stub** (`requires the chromium snap`) and `/opt/google/chrome/chrome` is missing `libglib-2.0.so.0`. Working CDP binary: `/home/ubuntu/.cache/ms-playwright/chromium-1228/chrome-linux/chrome`. Also: `pkill -9 -f "chrome"` **self-kills** the launching shell (its own cmdline matches) — never prefix the Chrome start with it.
   7. `ctx.add_cookies()` rejects cookies carrying both `domain` and `url` → inject via raw CDP `Storage.setCookies` with `domain` only.
 - **Script:** `scripts/airdrop-pipeline/pawerpfps/pw.py` (reusable Playwright-over-CDP + X cookie session helper)
+
+### #180 Royal Mechanica Whitelist (127307) — ✅ DONE (JOIN #20646)
+- **Date:** 2026-08-31 | **URL:** https://royalmechanica.xyz/
+- **Reward:** WL spot, 6,666 NFTs (mechanical ticker NFTs) on **Robinhood Chain**
+- **Type:** Type 15 — DCLogic multi-step wizard (`<script type="text/x-dc">`, `class Component extends DCLogic`) + **Google Apps Script JSONP** backend. Hosted on GitHub Pages.
+- **Backend:** `https://script.google.com/macros/s/AKfycbx-V_OCcupzAHZ73XRHmjgMtghD9pyT_o_mxAA_e0dmt0qfIUGPJ5vYTxN9WFIZbCSsHg/exec` (from `royal-config.js` → `RM_CONFIG.endpoints.whitelist`; `endpoints.verification` is **empty** ⇒ all social tasks are **PENDING REVIEW / self-attest**, no server X check)
+- **Result:** Apps Script returned `{"success":false,"duplicate":true,"joinNumber":"#20646","message":"This wallet has already joined the whitelist."}` → wallet **already registered**, join number **#20646** ✅ (duplicate = success per skill rule)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) | **Handle:** `osbornrdx`
+- **X tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @RoyalMechanica → https://x.com/RoyalMechanica (profile shows **Mengikuti**)
+  - ✅ Like campaign post → https://x.com/RoyalMechanica/status/2094094750840504535 (`unlike` state, pink rgb(249,24,128), "Disukai")
+  - ✅ Repost same post → same URL (`unretweet` state, green rgb(0,186,124), "Diposting ulang")
+  - ✅ Reply/comment → **https://x.com/osbornrdx/status/2094468852843418061**
+- **Payload sent:** `{username, commentLink, walletAddress, followStatus:"Pending", likeStatus:"Pending", repostStatus:"Pending", commentStatus:"Pending"}` (statuses "Pending" because verification endpoint is empty → app itself records Pending)
+- **Pitfalls solved:**
+  1. First POST hit Apps Script **502-class `Lock timeout`** ("Batas waktu penguncian habis") — live-drop contention, payload was fine. Retry loop with 25s backoff → resolved on attempt 1 of the retry script.
+  2. Submit path is **JSONP**, not POST: `submitToWhitelist()` appends `?k=v&callback=fn` to the Apps Script URL. Reproduced via curl GET → capture 302 `redirect_url` → GET `script.googleusercontent.com` echo (never `curl -L` on the 302).
+  3. `support.js` is a decoy — the real logic lives in the inline `<script type="text/x-dc">` block (18KB). Grep the HTML for `text/x-dc`, not the script srcs.
+  4. X reply composer: mention typeahead must be dismissed by clicking the `[role="option"]` before submit, and `tweetButtonInline` only enables after a real keystroke (`type_text`), not `fill()`.
+
+### #181 Quantum Grid (127308) — ⛔ CLOSED (form no longer accepting)
+- **Date:** 2026-08-31 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSe3KolSyRfVHQ5nykonguJCJsFTOC0gYWM3LFYAFBgUQsCLpQ/viewform
+- **Reward:** Early access to 7,777 "Quantum Grids" on Robinhood — **first 500 wallets only**
+- **Status:** ⛔ CLOSED — `/viewform` returns HTTP 200 but renders **"Formulir QUANTUM GRID sudah tidak menerima jawaban lagi"** ("no longer accepting responses"). No submit endpoint exists. Per skill pitfall "CLOSED WAITLIST — detect fast, don't fight": no form fill, no wallet injection, no API POST attempted.
+- **Source tweet:** https://x.com/rhquantumgrid/status/2094163357083349242 (`forms.gle/sLt7YNFQthTnARZL6` → resolves to the same closed form)
+- **Domain recon:** `quantumgrid.xyz` = **parked premium domain** (not the project). `royalquantumgrid.xyz` / `.com` = NXDOMAIN. Project has **no live web registration** — Google Form was the only channel. Drop text's `royalmechanica.xyz` link is a **different project** (#180) — platforms not conflated.
+- **X tasks done for the record (no registration possible):**
+  - ✅ Follow @rhquantumgrid → https://x.com/rhquantumgrid (intent dialog "Ikuti @rhquantumgrid" → profile shows **Mengikuti**)
+- **Verdict:** Missed window (500 WL, drop arrived ~20h after the Aug 30 20:40 announcement). Nothing further actionable.
 
 ### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
