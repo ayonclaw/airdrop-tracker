@@ -1088,6 +1088,8 @@
 
 | Project | Detail | Status |
 |---------|--------|--------|
+| Royal Mechanica | WL join **#20646** · 6,666 · Robinhood Chain · 4/4 X tasks | ✅ |
+| Quantum Grid | Google Form CLOSED (500 WL, missed window) | ⛔ |
 | Ratical (Mutant Rat Club) | WL + X tasks + Google Form | ✅ |
 | Goobz | 5/5 tasks | ✅ |
 | The List | Pos #527 | ✅ |
