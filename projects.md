@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 31, 2026 (10:55 UTC)**
+> Last updated: **Aug 31, 2026 (16:40 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -70,6 +70,30 @@
 - **Pitfalls confirmed:** route-mode tokens (`method:"route"`) are always rejected with `verification_failed` — the backend binds the token to CF's browser attestation. `verify_url`/`verify_payload` on the sidecar also fails (it POSTs without the turnstile token field the endpoint expects). `/api/mailing-list` (footer newsletter) is a separate Turnstile-gated endpoint — same recipe applies but it is NOT the 24k-point path.
 - **Rate limit:** `send-code` returns 429 `rate_limited` after ~4 sends per email per window. Space retries ≥10 min.
 - **Script:** `scripts/airdrop-worker/output/confirm_interstice.py` (idempotent re-verify + `/api/me` check).
+
+### #179 Pawerpfps Early OGs Waitlist (127306) — ✅ DONE
+- **Date:** 2026-08-31 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSdbEY6z7pmpS-1FHq3AcSLcI7egdjOuq7jeI6uvRQ8SQ0ZuCw/viewform
+- **Reward:** OG role — only **50 loyal supporters** picked (GTD). Free mint, 10k supply, Robinhood Chain.
+- **Type:** Public Google Form (Type 4 / browser-fill). Drop linked `/formResponse` but `/viewform` returns 200 → form is PUBLIC.
+- **Result:** Submitted via MCP/Playwright browser fill → redirected to `/formResponse` → **"Thanks for submitting your contact info!"** + "Edit your response" = RECORDED ✅
+- **Fields (entry IDs):** `2005620554` FOLLOW checkbox · `1045781291` Like+RT checkbox · `1166974658` X username · `1065046570` quote link · `839337160` tag-4-friends link · `1508403493` EVM wallet
+- **Submitted values:** `osbornrdx` · quote URL · reply URL · `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **X tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @pawerpfps → https://x.com/pawerpfps (intent dialog "Ikuti @pawerpfps" → profile shows **Mengikuti**, followers 4.473)
+  - ✅ Like pinned post → https://x.com/pawerpfps/status/2094350131080433775 (like count 477→478→492, `unlike` state)
+  - ✅ Repost pinned post → same URL (`unretweet` state, reposts 190→210)
+  - ✅ Quote pinned post `I'm placing my paws on buttons with @pawerpfps` → https://x.com/osbornrdx/status/2094463496658546979
+  - ✅ Reply tagging 4 friends + funny line → https://x.com/osbornrdx/status/2094463779690213774
+- **Pinned/source post:** https://x.com/pawerpfps/status/2094350131080433775 ("Wrong paws only, Closes in 30hrs")
+- **Pitfalls solved:**
+  1. `x.com/compose/tweet?url=…&text=…` intent composer renders **`tweetButtonInline` permanently disabled** and `quotedTweet` never attaches → do NOT use intent URLs for quotes. Use the native retweet menu → **Kutip** flow instead.
+  2. Native quote menu must be opened on the **canonical article** (`article` index 0 on the status page). Opening it from a reply article quotes the *wrong* tweet — first attempt quoted @Shigzzy01's reply; deleted via `caret` → `Hapus` → `confirmationSheetConfirm` and redid it.
+  3. Retweet button testid flips to **`unretweet`** after reposting, and the menu then reads `['Batalkan posting ulang','Kutip']` — locator must try both testids.
+  4. Playwright `locator.click()` on `tweetButton` fails with *"subtree intercepts pointer events"* (X's invisible overlay) → use `evaluate` + `element.click()` (JS click) instead.
+  5. Google Forms checkboxes are `[role="checkbox"]` divs, not `input[type=checkbox]`; `aria-checked` flips only after a real `.click()` on the div. Text inputs filled via prototype `value` setter + `input`/`change` events, and **state survived a reload** so submit could run in a fresh session.
+  6. `/usr/bin/google-chrome` on this VPS is a **broken snap stub** (`requires the chromium snap`) and `/opt/google/chrome/chrome` is missing `libglib-2.0.so.0`. Working CDP binary: `/home/ubuntu/.cache/ms-playwright/chromium-1228/chrome-linux/chrome`. Also: `pkill -9 -f "chrome"` **self-kills** the launching shell (its own cmdline matches) — never prefix the Chrome start with it.
+  7. `ctx.add_cookies()` rejects cookies carrying both `domain` and `url` → inject via raw CDP `Storage.setCookies` with `domain` only.
+- **Script:** `scripts/airdrop-pipeline/pawerpfps/pw.py` (reusable Playwright-over-CDP + X cookie session helper)
 
 ### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
