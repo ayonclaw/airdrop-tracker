@@ -1,10 +1,26 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 30, 2026**
+> Last updated: **Aug 31, 2026**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
+- **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
+- **URL:** https://hoodnodez.com
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM)
+- **X Handle:** `@osbornrdx`
+- **Type:** Vite SPA "The Dungeon" allowlist. Server only receives `{handle, invite, wallet}` — X tasks are client-side self-attest (3.5s tab-visibility check); executed for real anyway:
+  - ✅ Follow @hoodnodez: https://x.com/hoodnodez (intent → button "Mengikuti")
+  - ✅ Like announcement: https://x.com/hoodnodez/status/2094192202142347605 (state "unlike" confirmed)
+  - ✅ Repost same post (state "unretweet" confirmed)
+  - ✅ Quote repost: https://x.com/osbornrdx/status/2094249466845086184
+  - ✅ Reply: https://x.com/osbornrdx/status/2094249813835686012
+- **Position:** #6675 on the allowlist
+- **Source:** https://x.com/hoodnodez/status/2094192202142347605
+
+
 
 ### 53. Tales of Blobs (talesofblobs.com) — Whitelist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/whitelist` returned `{"ok":true}` (HTTP 201)
@@ -1005,7 +1021,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 27 |
+| Completed | 28 |
 | In Progress | 4 |
 || Blocked | 3 |
 
