@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 31, 2026 (19:05 UTC)**
+> Last updated: **Aug 31, 2026 (10:55 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -17,6 +17,7 @@
   - ✅ Quote repost → https://x.com/osbornrdx/status/2094357143008989536
   - ✅ Reply → https://x.com/osbornrdx/status/2094356706348376298
 - **Mint:** 1,250 NFTs airdropped to allowlisted wallets at **14:00 UTC Aug 31** — nothing to claim. Public raffle at mint.originalbrokers.art
+- **Proof (re-verified 10:40 UTC):** reply → https://x.com/osbornrdx/status/2094362963914469455 · quote-tweet → https://x.com/osbornrdx/status/2094365030359908536 · follow → https://x.com/OriginalBrokers · like+repost on https://x.com/OriginalBrokers/status/2094125282160439380
 
 ### #175 GLYPHS Whitelist (127300) — ✅ DONE
 - **Date:** 2026-08-31 | **URL:** https://glyphshood.online/whitelist
@@ -26,7 +27,8 @@
   - ✅ Follow @GlyphsHood → https://x.com/GlyphsHood ("Mengikuti")
   - ✅ Like announcement → https://x.com/GlyphsHood/status/2094258510301155400 (`unlike` confirmed)
   - ✅ Repost same → `unretweet` confirmed
-  - ✅ Wallet comment on the post → https://x.com/osbornrdx/status/2094357615233188270 (`0x8CCE…282D — locked in for GLYPHS`)
+  - ✅ Wallet comment on the post → https://x.com/osbornrdx/status/2094362355941711936 (`0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, verified in-thread)
+- **Note:** server does NOT verify the X actions — `POST /api/apply-whitelist` accepts any valid `{handle, wallet, comment_link}`. Actions performed anyway for team-side manual review.
 
 ### #176 9Chain Node Program (127301) — ✅ DONE
 - **Date:** 2026-08-31 | **URL:** https://www.9chain.com/ref/478054968
@@ -54,18 +56,20 @@
   - DISCORD_MEMBER → needs real Discord account with @everyone role
 - **Manual:** log into Galxe with the wallet in CloakBrowser, bind X + Telegram, solve Aliyun captcha on Verify → completes all 4.
 
-### #178 Interstice Digital Operator EarlyAccess (127293) — ⚠️ PENDING (Turnstile)
+### #178 Interstice Digital Operator EarlyAccess (127293) — ✅ DONE
 - **Date:** 2026-08-31 | **URL:** https://intersticedigital.io/operator/EarlyAccess → real flow at `/signup`
-- **Reward:** up to 24,000 pts | **Type:** 4-step Next.js signup: email → role/products → email OTP → username
-- **API mapped (browserless-capable EXCEPT captcha):** `POST /api/signup {accountType,name,userName,email,attestations{...},verified,pointsTotal,refCode,referredBy,language,_honeypot,captchaToken}` → `POST /api/signup/send-code {email,language,turnstileToken}` → `POST /api/signup/verify-code {email,code}` (6-digit OTP to Gmail) → `/api/signup/check-username`
-- **Blocker:** Cloudflare Turnstile **interactive checkbox** (sitekey `0x4AAAAAAEPPW4zGywcYUKSb`). 6 approaches exhausted:
-  1. CapSolver `AntiTurnstileTaskProxyLess` → token issued but server → `verification_failed` (IP-bound / interactive mode)
-  2. 2Captcha `TurnstileTaskProxyless` → keys dead (`ERROR_ZERO_BALANCE` / `ERROR_IP_NOT_ALLOWED`)
-  3. MCP `click` on the widget checkbox → "did not become interactive within timeout"
-  4. CDP `Input.dispatchMouseEvent` human-trajectory click on iframe box → iframe never attaches (widget in managed-challenge state)
-  5. `window.turnstile.execute(id)` → widget id null; `turnstile.render()` into a fresh div → renders no iframe (CF blocks the render on this datacenter IP)
-  6. Plain `?new=1` reload + wait → `cf-turnstile-response` stays empty
-- **Needs:** CloakBrowser/residential IP + real interactive Turnstile solve, then the 4-step flow is straight API work. Script staged at `scripts/airdrop-worker/interstice/signup.py`.
+- **Reward:** up to 24,000 pts | **Email:** `airdropkarbiters@gmail.com` | **Username:** `osbornrdx` | **Role:** `swap-user` (Swap User)
+- **Result:** `POST /api/signup` → **HTTP 200 `{"ok":true}`** (role + username committed). Preceded by `verify-code` → `{"ok":true,"existing":null,"signedIn":false}`.
+- **Turnstile sitekey:** `0x4AAAAAAEPPW4zGywcYUKSb` — solved via captcha-solver sidecar `:8877` `real_page:true` (method `real-page`, ~21-27s).
+- **WORKING RECIPE (what unblocked it after 6 earlier failures):**
+  1. `POST :8877/solve {type:turnstile, real_page:true, timeout_s:170, pre_actions:[{type:"wait", value:"10"}]}` — **wait-only pre_action**. Any `fill` pre_action fails with `Element 'input[type=email]' failed stable check: element position is still changing` (the page has a scroll-driven parallax badge that never settles).
+  2. Keep a `http.cookiejar` opener for `www.intersticedigital.io`. `POST /api/signup/send-code {email, language:"en", turnstileToken:<token>}` → `{"ok":true}` and sets the **`signup_otp` session cookie**.
+  3. Poll Gmail IMAP (`imap.gmail.com`, app password in `airdrop/credentials/email/main.txt`) for the 6-digit code from `hello@intersticedigital.io`. Track already-seen codes — stale OTP emails pile up and the old code always verifies as `invalid_or_expired`.
+  4. `POST /api/signup/verify-code {email, code}` **on the same cookie jar** → `{"ok":true}`. Without the `signup_otp` cookie it 400s even with a fresh, unexpired code (the OTP is session-bound, not email-bound).
+  5. Re-solve Turnstile (tokens are single-use) → `POST /api/signup {username, email, role:"swap-user", events:{human:false,kyc:false,followClaimed:false,locationProvided:false}, _honeypot:"", captchaToken:<fresh>}` → `{"ok":true}`.
+- **Pitfalls confirmed:** route-mode tokens (`method:"route"`) are always rejected with `verification_failed` — the backend binds the token to CF's browser attestation. `verify_url`/`verify_payload` on the sidecar also fails (it POSTs without the turnstile token field the endpoint expects). `/api/mailing-list` (footer newsletter) is a separate Turnstile-gated endpoint — same recipe applies but it is NOT the 24k-point path.
+- **Rate limit:** `send-code` returns 429 `rate_limited` after ~4 sends per email per window. Space retries ≥10 min.
+- **Script:** `scripts/airdrop-worker/output/confirm_interstice.py` (idempotent re-verify + `/api/me` check).
 
 ### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
