@@ -138,6 +138,18 @@
   - ❌ TWITTER_FOLLOW sync → `"missing twitter args"` (needs Galxe account X OAuth linking)
   - ❌ TELEGRAM_JOIN sync → `"empty address"` (needs Galxe TG bot binding)
 - **Next:** Manual Galxe session in CloakBrowser: link X account + Telegram bot → creds sync automatically. Quest open until Sep 14, so no rush.
+
+### #183 Sexyhood Waitlist (127314) — ✅ DONE
+- **Date:** 2026-09-01 | **URL:** https://www.sexyhood.xyz/tasks
+- **Result:** 5-step quest (follow → like → repost → comment → handle+wallet) completed in-browser → **"you're on the list. stay feral."** wallet `0x8cce...282d`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) | **Handle:** `@osbornrdx`
+- **Type:** Next.js client-side self-attest quest wizard. Server only receives `{handle, wallet, honeypot, token}` from `/api/quest` → `/api/submit` (POST returns `code:"early"` if submitted <2.5s after token issue — browser hold pattern). All 4 X tasks executed for real:
+  - ✅ Follow @SexyHoodNFT → https://x.com/SexyHoodNFT (verified "Mengikuti")
+  - ✅ Like sneak post → https://x.com/SexyHoodNFT/status/2094416077363011628 (`unlike` state confirmed)
+  - ✅ Repost same post → `unretweet` state confirmed (297 RTs after)
+  - ✅ Comment "SEXYHOOD" → https://x.com/osbornrdx/status/2094618486446444626
+- **Mint:** 2,222 pixel girls on Robinhood Chain — free mint, one per wallet. No date announced yet.
+- **Source:** https://x.com/SexyHoodNFT/status/2094416077363011628
 ### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
 - **URL:** https://hoodnodez.com
@@ -1151,7 +1163,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 28 |
+| Completed | 29 |
 | In Progress | 4 |
 || Blocked | 3 |
 
