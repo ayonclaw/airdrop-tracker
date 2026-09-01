@@ -1,10 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 1, 2026 (05:45 UTC)**
+> Last updated: **Sep 1, 2026 (08:50 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### #188 AGNT Socials S3 Week 7 — Galxe Quest (127327) — ✅ DONE (X tasks, creds pending OAuth)
+- **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/AGNTHub/GCXCDtZ5FQ (Day 1) + https://app.galxe.com/quest/AGNTHub/GCv9RtZhZg (Day 2)
+- **Type:** Galxe Quest — AGNT Hub (space ID 77675), both campaigns type `Points`, status `Active`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
+- **Done (API pipeline + X browser actions):**
+  - ✅ SIWE SignIn (`0x8CCE...282D`) → JWT
+  - ✅ followSpace (AGNT Hub, ID: 77675) → `{"followSpace":1}`
+  - ✅ Day 1 (`GCXCDtZ5FQ`) creds: 2× TWITTER (Liker + Retweeters) tweet `2094407572887343181`
+  - ✅ Day 2 (`GCv9RtZhZg`) creds: 2× TWITTER (Liker ×2) tweets `2094407572887343181` + `2094674919523078622`
+  - ✅ X Like [2094407572887343181](https://x.com/agnt_hub/status/2094407572887343181) — verified `unlike` data-testid
+  - ✅ X Retweet [2094407572887343181](https://x.com/agnt_hub/status/2094407572887343181) — verified `unretweet` data-testid
+  - ✅ X Like [2094674919523078622](https://x.com/agnt_hub/status/2094674919523078622) — verified `unlike` data-testid
+- **Note:** TWITTER creds sync via API → `missing twitter args` (Galxe account X OAuth not linked); X actions done for real via MCP Chrome with @osbornrdx. Points creds auto-verify on Galxe side if X OAuth linked later.
+- **Source:** https://x.com/agnt_hub/status/2094674919523078622
 
 ### #186 X1 EcoChain — Flip X1 Coin Quest (127323) — ✅ DONE
 - **Date:** 2026-09-01 | **URL:** https://testnet.x1ecochain.com/ (quests: coinflip.x1ecochain.com)
