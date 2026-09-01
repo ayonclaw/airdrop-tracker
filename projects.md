@@ -2525,3 +2525,17 @@
 - **X Post:** ✅ https://x.com/osbornrdx/status/2094691969759113675 (screenshot + caption tagging @GenLayer)
 - **Portal Submission:** ⚠️ PENDING — wallet (0x8CCE...282D) registered via SIWE, email sent to airdropkarbiters@gmail.com, needs Turnstile+email code confirmation + Community journey (X linked → before submission gate)
 - **Manual steps:** Complete email verification (code from inbox), then submit X post URL via portal. Deadline Sep 10.
+
+### #189 Mibnub — Whitelist Registration (127329) — ✅ DONE
+- **Date:** 2026-09-01 | **URL:** https://mibnub.com
+- **Type:** Next.js X OAuth waitlist — follow/like/repost/reply + wallet submit
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx linked via OAuth
+- **X Actions (all done via MCP Chrome with @osbornrdx):**
+  - ✅ Follow @MibNubHQ — verified (button shows "Mengikuti")
+  - ✅ Like announcement tweet — verified (`unlike` data-testid, count 227→230)
+  - ✅ Repost announcement tweet — verified (`unretweet` data-testid, count 212→216)
+  - ✅ Reply to announcement — posted "LFG! 🚀" → https://x.com/osbornrdx/status/2094729306266325139
+- **Server verify:** `/api/x/verify-reply` → "Verified as your post."
+- **Submit:** `POST /api/join` → `{"ok":true,"entry":{"handle":"osbornrdx","ts":1788257601572}}`
+- **Note:** Server returned message "You already have a hat." = already registered from first submission attempt
+- **Source:** https://x.com/MibNubHQ/status/2094382989937357275
