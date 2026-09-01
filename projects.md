@@ -2496,3 +2496,17 @@
   - ✅ Comment "GM 🛸 0x8CCE..." → **https://x.com/osbornrdx/status/2094656813610467410**
 - **Mint:** Freemint (WL) on HyperEVM — mint page open at opensea.io/collection/hyp, mint "tomorrow" (Sep 2). WL form likely gates the free mint.
 - **Source:** https://x.com/HyperAlienNFT/status/2094499808014905474
+
+### #187 GenLayer — Talk to Mochi Special Quest (127324) — ✅ PARTIAL
+- **Date:** 2026-09-01 | **URL:** https://portal.genlayer.foundation/mission/16
+- **Reward:** 500–5,000 Community Points (+1,500 bonus)
+- **Deadline:** Sep 10, 12 PM UTC
+- **Status:** ✅ Conversation done, ✅ X post with screenshot, ⚠️ Portal submission pending
+- **Telegram:** ✅ Asked 3 questions to @GenMochiBot about GenLayer:
+  - Q1: What makes intelligent contracts different from traditional smart contracts? (Equivalence Principle, Optimistic Democracy)
+  - Q2: How does multi-validator consensus work for subjective data?
+  - Q3: Real-world use cases (decentralized arbitration, insurance)
+  - Q4: Auto-payout without centralized oracle? (Mochi confirmed: "Yes — that's exactly what GenLayer is built for")
+- **X Post:** ✅ https://x.com/osbornrdx/status/2094691969759113675 (screenshot + caption tagging @GenLayer)
+- **Portal Submission:** ⚠️ PENDING — wallet (0x8CCE...282D) registered via SIWE, email sent to airdropkarbiters@gmail.com, needs Turnstile+email code confirmation + Community journey (X linked → before submission gate)
+- **Manual steps:** Complete email verification (code from inbox), then submit X post URL via portal. Deadline Sep 10.
