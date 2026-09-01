@@ -2539,3 +2539,21 @@
 - **Submit:** `POST /api/join` → `{"ok":true,"entry":{"handle":"osbornrdx","ts":1788257601572}}`
 - **Note:** Server returned message "You already have a hat." = already registered from first submission attempt
 - **Source:** https://x.com/MibNubHQ/status/2094382989937357275
+
+### #190 SheikDoge — Telegram Bot Airdrop (127333) — ✅ DONE
+- **Date:** 2026-09-01 | **URL:** https://t.me/SheikDogeNewOfficialAirdropBot?start=515933843
+- **Type:** TG Bot — Math captcha → Join TG → X tasks → SOL wallet
+- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL airdrop_00)
+- **X:** @osbornrdx
+- **Method:** Telethon + MCP Chrome X actions:
+  - ✅ Math captcha (71-23=48) → passed
+  - ✅ Joined TG channel (@SheikDoge) + group (airdrop6community)
+  - ✅ Follow @SheikDoge on X → verified "Mengikuti"
+  - ✅ Like pinned tweet [2092772841221464145](https://x.com/SheikDoge/status/2092772841221464145) → verified "Disukai"
+  - ✅ Repost pinned tweet [2092772841221464145](https://x.com/SheikDoge/status/2092772841221464145) → verified "Diposting ulang" (28 reposts)
+  - ✅ Comment on pinned tweet [2092772841221464145](https://x.com/SheikDoge/status/2092772841221464145) → reply posted
+  - ✅ Submitted X handle (@osbornrdx) → confirmed
+  - ✅ Submitted SOL wallet (5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG) → ✅ Completed
+- **Result:** ✅ "Congratulations! You have successfully completed airdrop tasks."
+- **Reward:** $8 SHEIK for 400 random winners, distribution Dec 18
+- **Source:** Drop 127333 from @airdropfind
