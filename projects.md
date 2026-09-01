@@ -56,6 +56,8 @@
   - DISCORD_MEMBER → needs real Discord account with @everyone role
 - **Manual:** log into Galxe with the wallet in CloakBrowser, bind X + Telegram, solve Aliyun captcha on Verify → completes all 4.
 
+
+> **Extension notice (Sep 1):** Registration extended to Sep 2, 04:00 WIB — no action needed, already registered ✅
 ### #178 Interstice Digital Operator EarlyAccess (127293) — ✅ DONE
 - **Date:** 2026-08-31 | **URL:** https://intersticedigital.io/operator/EarlyAccess → real flow at `/signup`
 - **Reward:** up to 24,000 pts | **Email:** `airdropkarbiters@gmail.com` | **Username:** `osbornrdx` | **Role:** `swap-user` (Swap User)
