@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Aug 31, 2026 (17:10 UTC)**
+> Last updated: **Sep 1, 2026 (02:30 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -126,6 +126,18 @@
   - ✅ Follow @rhquantumgrid → https://x.com/rhquantumgrid (intent dialog "Ikuti @rhquantumgrid" → profile shows **Mengikuti**)
 - **Verdict:** Missed window (500 WL, drop arrived ~20h after the Aug 30 20:40 announcement). Nothing further actionable.
 
+### #182 Rewardy Wallet $USDT — Galxe Quest (127313) — ⚠️ PARTIAL
+- **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/886ccaFEX94U2QUKzp4Hjg/GCXrDtZ7Xi
+- **Campaign:** `GCXrDtZ7Xi` | **Space:** Rewardy Wallet: Gold & Rewards (ID 61894) | **Reward:** 15 USDT Raffle
+- **Done (GraphQL `graphigo.prd.galaxy.eco`, SIWE via `eth_account` on `airdrop_master`):**
+  - ✅ `signin` → JWT OK
+  - ✅ `followSpace(spaceId:61894)` → `1`
+  - ✅ X follow @RewardyJapan → https://x.com/RewardyJapan (verified "Mengikuti" state)
+  - ✅ X like latest tweet → https://x.com/RewardyJapan/status/2094422696914485430 (`unlike` confirmed)
+- **Blocked (expected — no X OAuth linked to Galxe account):**
+  - ❌ TWITTER_FOLLOW sync → `"missing twitter args"` (needs Galxe account X OAuth linking)
+  - ❌ TELEGRAM_JOIN sync → `"empty address"` (needs Galxe TG bot binding)
+- **Next:** Manual Galxe session in CloakBrowser: link X account + Telegram bot → creds sync automatically. Quest open until Sep 14, so no rush.
 ### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
 - **URL:** https://hoodnodez.com
