@@ -6,6 +6,21 @@
 
 ## ✅ COMPLETED
 
+### #186 X1 EcoChain — Flip X1 Coin Quest (127323) — ✅ DONE
+- **Date:** 2026-09-01 | **URL:** https://testnet.x1ecochain.com/ (quests: coinflip.x1ecochain.com)
+- **Type:** Testnet quest platform (SIWE wallet auth) + on-chain coinflip game
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx linked via OAuth | **Ref:** `gWl6PLur`
+- **Method:** Fully browserless API pipeline + 1 on-chain tx + X OAuth:
+  - ✅ SIWE sign-in (`GET /signin?address=` → sign message → `POST /signin`) → JWT
+  - ✅ **On-chain coinflip** — `createGame(0)` on `0xaD18687e69523e112d08dd7226ABa3269DA61444` (1 X1T wager, chain 10778) → tx `0x19fe256e63a6c0d26e8c7a1c8e0c32042b55a56225e2d140880c02236cc6de6a` → quest **"Try your luck at X1 Coin Flip" +100 ECO** ✅
+  - ✅ X OAuth authorize (`api.twitter.com/oauth/authorize`) → linked @osbornrdx → unlocked all social quests
+  - ✅ Faucet claim (`nft-api.x1eco.com/testnet/faucet`) → +1
+  - ✅ **33/45 quests completed → 815 ECO points, rank 111,788**
+- **Completable:** coinflip (+100), faucet (+1), Send X1T (+1), Link X (+2), Follow X (+5), 18× Like&Retweet social quests (+5 each), 6× partner quests (+100 each: Nomis/AnotherApp/Midas/Preddy/Sides/Superboard), Join Telegram (+1)
+- **Blocked (server-validated, no bypass):** Discord link/join, Swap/Add liquidity/Create token (need ecodex.one/constructor on-chain actions), Symbiosis/ZION/Arkada/Sweep/ZNS partner on-chain, Mint .x1eco domain, Nomis Score activation
+- **Proof:** On-chain tx on Maculatus explorer; dashboard shows 815 ECO pts; X: https://x.com/X1_EcoChain/status/1997624646586212564 (liked + reposted)
+- **Source:** https://x.com/X1_EcoChain/status/2094364017535914435
+
 ### #185 AGNT Weekly Socials | Sprint 6 Finisher (127322) — ⚠️ PARTIAL
 - **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/AGNTHub/GCx2RtZw2Z
 - **Type:** Galxe Quest — AGNT Hub (space ID 77675), campaign `GCx2RtZw2Z` (type: Points, numberID 364740, status: Active)
