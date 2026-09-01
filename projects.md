@@ -1,10 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 1, 2026 (02:30 UTC)**
+> Last updated: **Sep 1, 2026 (05:45 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### #185 AGNT Weekly Socials | Sprint 6 Finisher (127322) — ⚠️ PARTIAL
+- **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/AGNTHub/GCx2RtZw2Z
+- **Type:** Galxe Quest — AGNT Hub (space ID 77675), campaign `GCx2RtZw2Z` (type: Points, numberID 364740, status: Active)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
+- **Done (API pipeline):**
+  - ✅ SIWE SignIn (`0x8CCE...282D`) → JWT
+  - ✅ followSpace (AGNT Hub, ID: 77675) → `{"followSpace":1}`
+- **Cred sync:** `GALXE_ID | AGNT S2 Week 6 Finale Qualification | 691603271978057728` → `allow: false`
+  - Description: "verifies that you have successfully completed tasks across all 6 days of the AGNT campaign"
+  - This is a **qualification gate** — requires prior completion of all 6 AGNT Sprint days (needs X OAuth linked to Galxe account; architectural limit, not tactical). No TWITTER/Telegram/Discord/wallet/form tasks in this campaign.
+- **Verdict:** Finisher campaign auto-executed to the max — SIWE + space follow recorded, but the finale credential is locked behind the 6-day completion history which itself requires X OAuth linking (one-time manual setup on CloakBrowser).
+- **Source:** @airdropfind Telegram (auto-detected, msg 127322)
 
 ### #174 Original Brokers Allowlist (127299) — ✅ DONE
 - **Date:** 2026-08-31 | **URL:** https://www.originalbrokers.art/?ref=cryptoaddict66
