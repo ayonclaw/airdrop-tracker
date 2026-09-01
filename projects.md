@@ -138,6 +138,18 @@
   - ❌ TWITTER_FOLLOW sync → `"missing twitter args"` (needs Galxe account X OAuth linking)
   - ❌ TELEGRAM_JOIN sync → `"empty address"` (needs Galxe TG bot binding)
 - **Next:** Manual Galxe session in CloakBrowser: link X account + Telegram bot → creds sync automatically. Quest open until Sep 14, so no rush.
+
+### #183 Sexyhood Waitlist (127314) — ✅ DONE
+- **Date:** 2026-09-01 | **URL:** https://www.sexyhood.xyz/tasks
+- **Result:** 5-step quest (follow → like → repost → comment → handle+wallet) completed in-browser → **"you're on the list. stay feral."** wallet `0x8cce...282d`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) | **Handle:** `@osbornrdx`
+- **Type:** Next.js client-side self-attest quest wizard. Server only receives `{handle, wallet, honeypot, token}` from `/api/quest` → `/api/submit` (POST returns `code:"early"` if submitted <2.5s after token issue — browser hold pattern). All 4 X tasks executed for real:
+  - ✅ Follow @SexyHoodNFT → https://x.com/SexyHoodNFT (verified "Mengikuti")
+  - ✅ Like sneak post → https://x.com/SexyHoodNFT/status/2094416077363011628 (`unlike` state confirmed)
+  - ✅ Repost same post → `unretweet` state confirmed (297 RTs after)
+  - ✅ Comment "SEXYHOOD" → https://x.com/osbornrdx/status/2094618486446444626
+- **Mint:** 2,222 pixel girls on Robinhood Chain — free mint, one per wallet. No date announced yet.
+- **Source:** https://x.com/SexyHoodNFT/status/2094416077363011628
 ### 54. Hoodnodez (hoodnodez.com) — Allowlist ✅ 🆕
 - **Status:** ✅ Complete — `POST /api/allowlist` returned `{"ok":true,"position":6675}` (HTTP 200)
 - **URL:** https://hoodnodez.com
@@ -1151,7 +1163,7 @@
 
 | Total | Count |
 |-------|-------|
-| Completed | 28 |
+| Completed | 29 |
 | In Progress | 4 |
 || Blocked | 3 |
 
@@ -2117,7 +2129,7 @@
   - **WL** — 4:00 PM UTC · max 10/wallet · 1 FREE + 9×0.0014 ETH
   - **1 FREE mint per wallet** (needs real MetaMask unlock + gas)
 - **GTD Wallet Checker (Aug 18):** 🆕 checker live at `/mint` (wallet eligibility UI). Contract `0xFFc147384A49bBbf74fbaf54E1eD6C2ac1B3B0b4` on Robinhood chain, MAX_SUPPLY 10000, totalSupply 1, our wallet minted=0. Stage config verified via RPC: stage1 (GTD) start 15:00 UTC, merkle root `0xab606925...`, price 0.0012 ETH; stage2 (WL) 16:00 UTC, root `0xb55dcd33...`. Allowlist shards `/allowlists/shards/{root}/{wallet}/{prefix}.json` all 404 at 10:40 UTC — lists not published yet (publish at stage start 15:00 UTC). Re-check after 15:00 UTC for GTD proof; `mintCost` reverts = not active yet. Free mint needs MetaMask + gas at mint time.
-- **Notes:** 10,000 Genesis Artifacts, 72h window (code "bunker"). Client-side self-attest verification. GTD Wallet Checker live Aug 18 (`thebunkerhood.com/mint`): our wallet returns **404 on BOTH allowlist shards** (`/allowlists/shards/<wallet>/gtd/8c.json` + `/wl/8c.json`) at 10:47 UTC — either not on the GTD/WL roll OR lists unpublished until stage start (GTD 15:00 UTC, WL 16:00 UTC). Re-check after 15:00 UTC before mint. Mint is allowlist-gated only. Follow [@thebunkerhood](https://x.com/thebunkerhood) for updates.
+- **Notes:** 10,000 Genesis Artifacts, 72h window (code "bunker"). **Checker (Sep 1):** wallet NOT ELIGIBLE (NO CLEARANCE FOUND, not in GTD or WL snapshot). Mint was allowlist-gated only; our waitlist submission did not result in an allowlist spot. Client-side self-attest verification. GTD Wallet Checker live Aug 18 (`thebunkerhood.com/mint`): our wallet returns **404 on BOTH allowlist shards** (`/allowlists/shards/<wallet>/gtd/8c.json` + `/wl/8c.json`) at 10:47 UTC — either not on the GTD/WL roll OR lists unpublished until stage start (GTD 15:00 UTC, WL 16:00 UTC). Re-check after 15:00 UTC before mint. Mint is allowlist-gated only. Follow [@thebunkerhood](https://x.com/thebunkerhood) for updates.
 - **Date:** Aug 13, 2026 (WL) · Aug 15, 2026 (mint schedule)
 - **Source:** @airdropfind Telegram (auto-detected, msg 126925 + 126981)
 
