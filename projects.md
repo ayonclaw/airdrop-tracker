@@ -1106,7 +1106,7 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-||| KieDex | S2 daily 2026-09-01: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|| KieDex | S2 daily 2026-09-01: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||| | **MISSIONS**: 8/11 completed (7/11 → 8/11 after claims) |
 ||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
 ||| | - **"Like & Repost" s8 (+10 KDX)** → Claimed via Turnstile edge function ✅ (social 7/7) |
@@ -1115,11 +1115,6 @@
 ||| | - "$1000 volume" → $0/$1000 |
 ||| | **BALANCES**: Oil 120 (190→120 after 120 fee + 50 claim), KDX 505.17, Spot 675.05, Futures 115.01 USDT |
 ||| | **TRADING**: 1× 3-USDT BTC/USDT Long @ 20x (entry 78,617.15), Oil fee 120 |
-|| | - Total USDT: **743.08** (up from 692.97 pre-claims) |
-|| | - Oil balance: **50 Oil** (650 start - 600 fees) |
-|| | - Oil earned today: **100 Oil** (50 Use10x + 50 CloseWin) |
-|| | - KDX earned Season 2: **50 KDX**, Vol **$540** |
-|| | - Streak: 1 day |
 || | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
