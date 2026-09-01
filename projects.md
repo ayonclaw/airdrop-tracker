@@ -2454,3 +2454,17 @@
 - **URL:** qms.finance
 - **Type:** Post-quantum L1 blockchain waitlist
 - **Not processed this batch**
+
+### #184 HyperAlien WL (127321) — ✅ DONE
+- **Date:** 2026-09-01 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSfliDg4Oj8157XHoARoC9cQ8f8yYDXMrbRiEPexHgrp2d1QBA/viewform
+- **Reward:** Freemint (WL) — 3,333 supply, **HyperEVM** chain, mint page opensea.io/collection/hyp
+- **Type:** Google Form (public viewform, airdropkarbiters@gmail.com session) — 4 fields: Follow radio + X Username + Comment Link + Wallet
+- **Result:** Browser fill + submit → **"We have received your registration."** (formResponse confirm page, edit link generated)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) | **Handle:** `@osbornrdx`
+- **X tasks (all executed for real):**
+  - ✅ Follow @HyperAlienNFT → https://x.com/HyperAlienNFT (button flipped to "Mengikuti")
+  - ✅ Like announcement → https://x.com/HyperAlienNFT/status/2094499808014905474 (`unlike` state, "Disukai")
+  - ✅ Repost same post → `unretweet` state, "Diposting ulang" (272 RTs after)
+  - ✅ Comment "GM 🛸 0x8CCE..." → **https://x.com/osbornrdx/status/2094656813610467410**
+- **Mint:** Freemint (WL) on HyperEVM — mint page open at opensea.io/collection/hyp, mint "tomorrow" (Sep 2). WL form likely gates the free mint.
+- **Source:** https://x.com/HyperAlienNFT/status/2094499808014905474
