@@ -1106,14 +1106,15 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|| KieDex | S2 daily 2026-08-30: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
-|| | **MISSIONS**: 8/11 completed (7/11 → 8/11 after claims) |
-|| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
-|| | - **"Close a winning trade"** → Completed & Claimed ✅ (+50 Oil, position closed at +0.11 USDT profit) |
-|| | - **"Like & Repost" (+10 KDX)** → Claimed ✅ (social 7/7 server-side) |
-|| | - "Open 5 trades" → 1/5 (300 USDT merged into ONE position — merged adds count as 1 trade, not 5; need 4 SEPARATE pair/leverage combos) |
-|| | - "$1000 volume" → $300/$1000 progress |
-|| | **TRADING**: Opened 5× 3-USDT Long adds @ 20x (650→50 Oil spent, 600 fee), all merged into 1 position (15 USDT margin, 300 USDT size), closed profitable +0.11 USDT |
+||| KieDex | S2 daily 2026-09-01: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+||| | **MISSIONS**: 8/11 completed (7/11 → 8/11 after claims) |
+||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
+||| | - **"Like & Repost" s8 (+10 KDX)** → Claimed via Turnstile edge function ✅ (social 7/7) |
+||| | - "Open 5 trades" → 0/5 (1 trade opened, counter not advanced — merged-add behavior) |
+||| | - "Close a winning trade" → Pending (position losing -0.13 USDT, not closed) |
+||| | - "$1000 volume" → $0/$1000 |
+||| | **BALANCES**: Oil 120 (190→120 after 120 fee + 50 claim), KDX 505.17, Spot 675.05, Futures 115.01 USDT |
+||| | **TRADING**: 1× 3-USDT BTC/USDT Long @ 20x (entry 78,617.15), Oil fee 120 |
 || | - Total USDT: **743.08** (up from 692.97 pre-claims) |
 || | - Oil balance: **50 Oil** (650 start - 600 fees) |
 || | - Oil earned today: **100 Oil** (50 Use10x + 50 CloseWin) |
