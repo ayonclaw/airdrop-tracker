@@ -2557,3 +2557,16 @@
 - **Result:** ✅ "Congratulations! You have successfully completed airdrop tasks."
 - **Reward:** $8 SHEIK for 400 random winners, distribution Dec 18
 - **Source:** Drop 127333 from @airdropfind
+
+### #191 Robo — Whitelist Registration GTD (127337) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://therobowtfmeme.netlify.app/
+- **Type:** Supabase PostgREST open waitlist (`whitelist_registrations` table, insert-only RLS) — 4 self-attest X tasks + EVM wallet
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Actions (all done via MCP Chrome with @osbornrdx):**
+  - ✅ Follow @therobowtf — via intent URL, clicked "Ikuti @therobowtf" (profile shows "Mengikuti")
+  - ✅ Follow @erikcrty — via intent URL, clicked "Ikuti @Erikcrty"
+  - ✅ Like + Repost official post [2093679590866911304](https://x.com/therobowtf/status/2093679590866911304) — liked (404→ liked state), reposted (147→152, "Memposting ulang")
+  - ✅ Like + Repost whitelist announcement [2094835376913559983](https://x.com/therobowtf/status/2094835376913559983) — liked, reposted (→106, "Memposting ulang")
+- **Submit:** `POST https://yaxzhqnohouybcaxmeop.supabase.co/rest/v1/whitelist_registrations` with `{submitted_at, username:"osbornrdx", wallet_address:"0x8CCE...282D", tasks_completed:["follow_robo","follow_erik","like_retweet","like_retweet_latest"]}` → **HTTP 201** (insert-only RLS, reads return [])
+- **Reward:** Robo GTD whitelist — 3,333 NFTs, free mint for GTD holders, Robinhood chain
+- **Source:** Drop 127337 from @airdropfind
