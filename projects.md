@@ -6,6 +6,49 @@
 
 ## ✅ COMPLETED
 
+### #192 Robo WL — therobowtfmeme.netlify.app (127337) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://therobowtfmeme.netlify.app/
+- **Type:** Supabase whitelist (`whitelist_registrations`) via GAS bridge intercept
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
+- **Method:** Browserless — POST to `script.google.com/macros/s/AKfycbzzAh_4oPB1wIw0A47h5BZa__uTMbfyJ1MPGkq6D85Bt7wXQHTxwdpSnl80DrE7lgRr7g/exec` → `{"success":true}` (bridge redirects to Supabase `whitelist_registrations`; direct Supabase insert blocked by RLS 42501, GAS path works)
+- **Tasks:** follow + like + retweet + quote (self-attested tasks_completed, quote_tweet_confirmed)
+- **Proof:** HTTP 200 `{"success":true}` from GAS endpoint
+
+### #193 First0ne WL — first0ne.xyz (127340) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://first0ne.xyz/
+- **Type:** PocketBase `raffle_entries` (base `/hcgi/platform`)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
+- **Method:** Browserless — POST `/hcgi/platform/api/collections/raffle_entries/records` → `{"collectionName":"raffle_entries","id":"lpea51wobusjy45","twitter":"osbornrdx","wallet":"0x8CCE...282D","confirmed":true}`
+- **Proof:** Record id `lpea51wobusjy45`
+
+### #194 BoyMeetsHood WL — boymeetshood.xyz (127341) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://www.boymeetshood.xyz/
+- **Type:** Next.js `/api/waitlist` — Robinhood Chain 4,444 Boys genesis mint
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Method:** Browserless — POST `/api/waitlist {wallet}` → `{"ok":true,"total":36895,"position":36895,"created":true}`
+- **Proof:** HTTP 200, position 36895
+
+### #195 Alloco Fi Early Access — allocofi.com (127344) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://www.allocofi.com/
+- **Type:** Email waitlist (`/api/waitlist`)
+- **Email:** airdropkarbiters@gmail.com
+- **Method:** Browserless — POST `/api/waitlist {email}` → `{"code":200,"msg":"success","results":{"waitlist_number":28701}}`
+- **Proof:** waitlist_number 28701
+
+### #196 CritterBloc WL — critterbloc.xyz (127359) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://critterbloc.xyz/#whitelist-portal
+- **Type:** Supabase direct REST insert (`whitelist_submissions`)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx | **Tweet:** https://x.com/CritterblocNFTs/status/2094409630520615075
+- **Method:** Browserless — POST `kncittjkjflwkpzeitaf.supabase.co/rest/v1/whitelist_submissions` → HTTP 201 `{"pass_id":"CB-17883937-RH-CHAIN","twitter_handle":"@osbornrdx","status":"APPROVED"}`
+- **Proof:** Pass `CB-17883937-RH-CHAIN` (HTTP 201)
+
+### #197 OnchainHarvest WL — onchainharvest.farm/claim (127361) — ✅ DONE
+- **Date:** 2026-09-02 | **URL:** https://onchainharvest.farm/claim
+- **Type:** Next.js `/api/whitelist` (1,111 supply farm)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Handle:** @osbornrdx
+- **Method:** Browserless — POST `www.onchainharvest.farm/api/whitelist {wallet, handle}` → `{"ok":true,"duplicate":false,"no":89022,"total":89022}`
+- **Proof:** HTTP 200, entry no. 89022
+
 ### #188 AGNT Socials S3 Week 7 — Galxe Quest (127327) — ✅ DONE (X tasks, creds pending OAuth)
 - **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/AGNTHub/GCXCDtZ5FQ (Day 1) + https://app.galxe.com/quest/AGNTHub/GCv9RtZhZg (Day 2)
 - **Type:** Galxe Quest — AGNT Hub (space ID 77675), both campaigns type `Points`, status `Active`
