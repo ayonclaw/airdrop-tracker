@@ -1,10 +1,38 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 5, 2026 (16:20 UTC)**
+> Last updated: **Sep 5, 2026 (16:50 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### #203 Toobit Share The Race — taskon.xyz/quest/449980955 (127424) — ⚠️ PENDING
+- **Date:** 2026-09-05 | **URL:** https://taskon.xyz/quest/449980955
+- **Reward:** $5 USDT for 100 random winners (500 USDT pool, 100 × 5 USDT), ends Sep 9
+- **Type:** TaskOn social quest (Toobit/TIFT 2026 campaign)
+- **Tasks:** TaskOn login → Follow @Toobit_official → Quote TIFT tweet with #TIFT2026 #Toobit → Post original meme/racing poster → Join Toobit Telegram → Enter Toobit UID → Pick racing team
+- **Blocked:** No TaskOn account registered (Login wall) + no Toobit UID (requires real registered Toobit account) + meme upload requires manual asset creation. $5/100-random-winner value is too low to justify account creation.
+- **Manual:** If Rey wants: register TaskOn (wallet/X OAuth), do quote + meme, submit UID.
+- **Source:** Drop 127424 from @airdropfind
+
+
+### #202 4HEAL Galxe Quest — app.galxe.com/quest/4Heal/GC837tZu7z (127422) — ⚠️ PARTIAL
+- **Date:** 2026-09-05 | **URL:** https://app.galxe.com/quest/4Heal/GC837tZu7z
+- **Reward:** 5,000,000 $4HEAL + $100,000 USDT pools
+- **Type:** Galxe Parent campaign (2 children: "Awareness Wave" Points + "🎁4Heal Surprise Drop — Share 100 USDT" Token), space 4Heal (86123)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
+- **Done (API pipeline + X browser actions):**
+  - ✅ SIWE SignIn (`0x8CCE...282D`) → JWT
+  - ✅ followSpace (4Heal, ID: 86123) → `{"followSpace":1}`
+  - ✅ X Follow @4heal_ai → https://x.com/4heal_ai ("Mengikuti" confirmed)
+  - ✅ X Like tweet [2092529028838408378](https://x.com/4heal_ai/status/2092529028838408378) — verified "Disukai" (1951 likes)
+  - ✅ X Retweet same tweet — verified (1905 RTs)
+- **Blocked (architectural, as usual):**
+  - ⛔ TWITTER creds sync via API → `missing twitter args` (Galxe account X OAuth not linked)
+  - ⛔ DISCORD creds ×2 (`4Heal Discord 4Healers` + `4Heal Discord @everyone`) → `allow:false`, needs real Discord
+- **Note:** X actions done for real via MCP Chrome with @osbornrdx. Points creds auto-verify if X OAuth linked later.
+- **Source:** Drop 127422 from @airdropfind
+
 
 ### #198 KASHED Waitlist — kashed.fun (127414) — ✅ DONE
 - **Date:** 2026-09-05 | **URL:** https://www.kashed.fun/
