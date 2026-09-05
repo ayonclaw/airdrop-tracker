@@ -1,10 +1,62 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 1, 2026 (08:50 UTC)**
+> Last updated: **Sep 5, 2026 (16:20 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
 
 ## ✅ COMPLETED
+
+### #198 KASHED Waitlist — kashed.fun (127414) — ✅ DONE
+- **Date:** 2026-09-05 | **URL:** https://www.kashed.fun/
+- **Type:** Next.js SPA — 4-step X task flow (Follow → Like → Comment → Repost) + EVM wallet submit
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Method:** MCP Chrome DevTools (Plan B) — X cookie injection via CDP `Storage.setCookies` → X tasks via intent URLs + native SPA → wallet submit
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @playkashed → https://x.com/playkashed ("Mengikuti" confirmed)
+  - ✅ Like announcement [2095576536703459368](https://x.com/playkashed/status/2095576536703459368) (`unlike` state, "Disukai")
+  - ✅ Comment "LFG! 🔥 @playkashed" → [2095304127542960351](https://x.com/osbornrdx/status/2095304127542960351)
+  - ✅ Repost same post → `unretweet` state
+- **Wallet Submit:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **"Wallet Added. Your wallet is in the loop."** confirmation screen
+- **Source:** Drop 127414 from @airdropfind
+
+### #199 OWL ARC Waitlist — owlarc.xyz (127416) — ✅ DONE
+- **Date:** 2026-09-05 | **URL:** https://www.owlarc.xyz/
+- **Type:** Vanilla-JS wizard → Google Apps Script backend (`AKfycbzf4JTz9qIQh9Oq0lE4PzzDnERBZjpU5WxIq5fiNHm3REMKLinFy2GAABWOnkDuckBm/exec`) — 2,222 Owl Legends on Arc, ARC Mainnet Sep 16
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
+- **Method:** Browserless curl POST to GAS (x_handle/wallet/post_link/timestamp) → HTTP 302 → Google Sheets capture. Client-side 3-offering gate (Follow/Like/Repost) self-attest; real X actions done for proof.
+- **X Tasks:**
+  - ✅ Follow @owlarcnft → https://x.com/owlarcnft (intent dialog "Ikuti @owlarcnft")
+  - ✅ Like announcement [2095897754275057997](https://x.com/owlarcnft/status/2095897754275057997) (`unlike` state)
+  - ✅ Reply "LFG! 🔥 @owlarcnft" → [2096285823541117345](https://x.com/osbornrdx/status/2096285823541117345)
+  - ✅ Repost same post → `unretweet` state (1509 RTs after)
+- **Source:** Drop 127416 from @airdropfind
+
+### #200 FatCatBatWifHat WL — fatcatbatratwif.com (127418) — ✅ DONE
+- **Date:** 2026-09-05 | **URL:** https://fatcatbatratwif.com/
+- **Type:** Next.js 5-step wizard (Wallet → X handle → Trait → 3 X tasks → Quote post) → `POST /api/submit` (Cloudflare queue). 10,000 supply / 2,222 GTD freemint on Arc
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx | **Trait:** subject-01
+- **Method:** Browserless API POST → `{"ok":true,"queued":true,"message_id":"1W-1M1Uwu7IjqOtBQhT4ckzgJTqjEh8dMuI"}` (HTTP 202). X tasks done for real.
+- **X Tasks:**
+  - ✅ Follow @fatcatbatratwif → https://x.com/fatcatbatratwif ("Mengikuti" confirmed)
+  - ✅ Like announcement [2095912652203516028](https://x.com/fatcatbatratwif/status/2095912652203516028) (`unlike` state, "Disukai")
+  - ✅ Reply "LFG! 🔥 @fatcatbatratwif" → [2096297212435431870](https://x.com/osbornrdx/status/2096297212435431870)
+  - ✅ Quote post "Next CashCat, but on @arc / 3:Early. Free mint." → [2096298904090472557](https://x.com/osbornrdx/status/2096298904090472557)
+- **Proof:** API 202 + message_id; quote URL as above
+- **Source:** Drop 127418 from @airdropfind
+
+### #201 Blanko NFT WL — blankonft.xyz (127419) — ✅ DONE
+- **Date:** 2026-09-05 | **URL:** https://www.blankonft.xyz/
+- **Type:** React SPA registration portal (3,333 Robinhood Chain genesis, guaranteed WL pass) — wallet + X handle + 3 verify quests
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
+- **Method:** MCP Chrome — filled wallet + handle, opened X follow/like/repost/comment tasks (real), clicked 3× Verify (Done state), submit
+- **X Tasks:**
+  - ✅ Follow @BlankoNFT → https://x.com/BlankoNFT ("Mengikuti" confirmed)
+  - ✅ Like announcement [2095753630397997324](https://x.com/BlankoNFT/status/2095753630397997324) (`unlike` state, "Disukai")
+  - ✅ Repost same post → `unretweet` state
+  - ✅ Comment "LFG! 🔥 @BlankoNFT" → [2096302567710167536](https://x.com/osbornrdx/status/2096302567710167536)
+- **Result:** ✅ **WHITELIST REGISTRATION SUCCESSFUL — "You're on the Blanko List"** — Ticket ID **BLK-2888**, wallet added to Merkle tree, verified handle @osbornrdx
+- **Source:** Drop 127419 from @airdropfind
+
 
 ### #192 Robo WL — therobowtfmeme.netlify.app (127337) — ✅ DONE
 - **Date:** 2026-09-02 | **URL:** https://therobowtfmeme.netlify.app/
