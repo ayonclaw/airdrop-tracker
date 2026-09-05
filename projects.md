@@ -2707,3 +2707,20 @@
 - **Submit:** `POST https://yaxzhqnohouybcaxmeop.supabase.co/rest/v1/whitelist_registrations` with `{submitted_at, username:"osbornrdx", wallet_address:"0x8CCE...282D", tasks_completed:["follow_robo","follow_erik","like_retweet","like_retweet_latest"]}` → **HTTP 201** (insert-only RLS, reads return [])
 - **Reward:** Robo GTD whitelist — 3,333 NFTs, free mint for GTD holders, Robinhood chain
 - **Source:** Drop 127337 from @airdropfind
+
+### #205 HoodPepes — Robinhood Chain NFT Whitelist (127431) — ⚠️ PARTIAL (X tasks done, backend 500)
+- **Date:** 2026-09-05 | **URL:** https://hoodpepes.com/ | **OpenSea:** https://opensea.io/collection/hoodpepes
+- **Type:** Vanilla-JS mission-gated waitlist (3 X missions unlock form) + EVM wallet submit → `POST /api/waitlist`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Reward:** 6,969 free frogs on Robinhood Chain, free mint (MAX 20), mint Sept 5 4PM PT (23:00 UTC)
+- **X Actions (all done via MCP Chrome with @osbornrdx, on launch post 2094308892150993113):**
+  - ✅ Follow @hoodpepes → verified "Mengikuti @hoodpepes"
+  - ✅ Like launch post [2094308892150993113](https://x.com/hoodpepes/status/2094308892150993113) → `unlike` state ("Disukai")
+  - ✅ Repost launch post → `unretweet` state ("Diposting ulang", 163→164 RTs)
+  - ✅ Comment on launch post → reply with EVM: https://x.com/osbornrdx/status/2096349331968479355
+  - ✅ (also commented on source tweet 2095783918872207708 → https://x.com/osbornrdx/status/2096342363245568460)
+- **Form:** all 3 missions marked DONE ✓ → form unlocked → filled @osbornrdx + EVM wallet
+- **Blocked (server-side):** `POST /api/waitlist` consistently returns **HTTP 500** `{"ok":false,"error":"Could not save your entry."}` for ALL payloads (incl. probe wallet 0x0000...0001) → backend write failure, NOT payload/mission issue. GET `/api/waitlist?wallet=...` works (returns found:false), count endpoint live at 2,828→13,214. Retried 6× (browser + curl, spaced) → all 500.
+- **Status:** ⚠️ PARTIAL — X missions complete + verified with proof; form filled correctly; backend write blocked by server-side 500. Needs one-shot retry when backend recovers (apps-script-style lock/transient).
+- **Manual (if backend persists):** revisit https://hoodpepes.com/ → re-open 3 missions → re-submit @osbornrdx + EVM.
+- **Source:** Drop 127431 from @airdropfind — https://x.com/hoodpepes/status/2095783918872207708
