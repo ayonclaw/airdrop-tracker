@@ -6,6 +6,23 @@
 
 ## ✅ COMPLETED
 
+
+### #207 OpenCatz Whitelist — nft.opencatz.xyz (127440) — ✅ DONE
+- **Date:** 2026-09-06 | **URL:** https://nft.opencatz.xyz
+- **Type:** Terminal-TUI whitelist wizard (Astro SPA) — Connect X → proof of comment/quote on [@itsdizcorvus article](https://x.com/itsdizcorvus/status/2095105020345958486) → EVM wallet → 1-click Q&A captcha → `personal_sign` wallet signature → submit.
+- **Chain:** Robinhood Chain (#4663), 5,000 supply, SeaDrop 1.0, 80/20 mint/vault. Paid mint (price TBA).
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @itsdizcorvus → https://x.com/itsdizcorvus ("Mengikuti" confirmed)
+  - ✅ Like article [2095105020345958486](https://x.com/itsdizcorvus/status/2095105020345958486) ("Disukai" / `unlike` state)
+  - ✅ Comment on the article (proof link) → [2096440364026728922](https://x.com/osbornrdx/status/2096440364026728922)
+  - ✅ Source tweet [2095105726582841547](https://x.com/itsdizcorvus/status/2095105726582841547) located (same collection thread)
+- **Captcha:** 1-click quiz answered correctly (mint mechanism / network / wallet prefix / mascot / logo — server rotates prompts)
+- **Signature:** `personal_sign` over `OpenCatz Whitelist Verification\nWallet: 0x8CCE...\nTwitter: @@osbornrdx` (real key, airdrop_00; constant-mock sig → server 403 "Cryptographic signature verification failed")
+- **Server submit:** `POST /api/whitelist/submit` (real-browser session w/ injected real-signer ethereum mock) → **HTTP 200 `{"success":true,"alreadyRegistered":false,"receiptHash":"CATZ-4663-43461A45-09BD","message":"Whitelist registered successfully in Catz Vault database",status:"APPROVED"}`** — id b7d39040-3ad1-4519-9f02-404206417d7a, status APPROVED
+- **Key learning:** humanToken is session-bound — browserless (Python `requests`) captcha token rejected at submit (`403 Cryptographic signature verification failed`); must solve captcha + sign + submit in the same authenticated browser session.
+- **Source:** Drop 127440 from @airdropfind
+
 ### #206 CABAL Whitelist (Sentralab) — whitelist.sentralab.xyz (127438) — ✅ DONE
 - **Date:** 2026-09-06 | **URL:** https://whitelist.sentralab.xyz
 - **Type:** Client-side self-attest whitelist (localStorage `cabal-whitelist-tasks` + `POST /api/submit {wallet}`) — Tales-of-Blobs pattern. 9/9 tasks: follow, telegram, like, repost, notify, reply (×3 opens). Base chain.
