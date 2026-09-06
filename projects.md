@@ -1312,15 +1312,15 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-||| KieDex | S2 daily 2026-09-02: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
-|||| | **MISSIONS**: 8/11 completed (7/11 → 8/11 after claims) |
-|||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
-|||| | - **"Like & Repost" s8 (+10 KDX)** → Claimed (prev run, social 7/7 all Done) |
-|||| | - "Open 5 trades" → 0/5 (no new trades — position losing) |
-|||| | - "Close a winning trade" → Pending (position losing -1.01 USDT, skipped) |
-|||| | - "$1000 volume" → $0/$1000 |
-|||| | **BALANCES**: Oil 210 (160→210 after +50 claim), KDX 505.17, Spot 725.05, Futures 114.15 USDT |
-|||| | **TRADING**: 1× 60-USDT BTC/USDT Long @ 20x (entry 78,617.15), Est. PnL -1.01 USDT (losing, skipped close) |
+|||| KieDex | S2 daily 2026-09-06: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+||||| | **MISSIONS**: 9/11 completed (7/11 social → 9/11 after t3+t4) |
+||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
+||||| | - **"Close a winning trade"** → Claimed ✅ (+50 Oil, closed 3-USDT Long @ +1.05 USDT) |
+||||| | - **"Like & Repost" s8 (+10 KDX)** → Claimed (prev run, social 7/7 all Done) |
+||||| | - "Open 5 trades" → 0/5 (no new trades — Oil 140 enough for 1 only) |
+||||| | - "$1000 volume" → $0/$1000 |
+||||| | **BALANCES**: Oil ~140 (40 faucet + 50 t4 + 50 t3), KDX ~505, Spot ~725, Futures ~114+4 USDT |
+||||| | **TRADING**: BTC/USDT Long closed @ +1.05 USDT profit (t3 complete) |
 || | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
 | ERN DATA | X OAuth needed | ⚠️ |
 | Meoofia | WL registered | ✅ |
