@@ -6,6 +6,24 @@
 
 ## ✅ COMPLETED
 
+### #206 CABAL Whitelist (Sentralab) — whitelist.sentralab.xyz (127438) — ✅ DONE
+- **Date:** 2026-09-06 | **URL:** https://whitelist.sentralab.xyz
+- **Type:** Client-side self-attest whitelist (localStorage `cabal-whitelist-tasks` + `POST /api/submit {wallet}`) — Tales-of-Blobs pattern. 9/9 tasks: follow, telegram, like, repost, notify, reply (×3 opens). Base chain.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **TG:** @mxsyxfxx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @Basecable → https://x.com/Basecable ("Mengikuti" confirmed)
+  - ✅ Like announcement [2096261402726211734](https://x.com/Basecable/status/2096261402726211734) (`unlike` state, "Disukai")
+  - ✅ Repost same post → `unretweet` state (661 RTs, "Memposting ulang")
+  - ✅ Reply "0x8CCE...282D Done" on announcement → [2096416273605574749](https://x.com/osbornrdx/status/2096416273605574749)
+  - ✅ Like check-wallet post [2095915410789159324](https://x.com/Basecable/status/2095915410789159324) (`unlike` state)
+  - ✅ Repost same post → `unretweet` state (1256 RTs)
+  - ✅ Reply "0x8CCE...282D Done" on check-wallet post → [2096416871054794887](https://x.com/osbornrdx/status/2096416871054794887)
+  - ✅ Notifications ON for @Basecable ("Nonaktifkan notifikasi postingan" bell state)
+- **Telegram:** ✅ Joined t.me/basecabaI (BASECABAL) via Telethon @mxsyxfxx
+- **Server submit:** `POST /api/submit {wallet}` → **HTTP 200 `{"ok":true}`** — wallet registered, confirmation screen "You're on the list / Wallet registered for the $CABAL whitelist on Base"
+- **Source:** Drop 127438 from @airdropfind
+
+
 ### #204 AKA Whitelist — aka.fun/whitelist?ref=S8EH1BCX (127427) — ⚠️ PENDING (X tasks done)
 - **Date:** 2026-09-05 | **URL:** https://aka.fun/whitelist?ref=S8EH1BCX
 - **Reward:** 4,444 supply DN404 (NFT + ERC-20 hybrid) on Arc, mainnet Sep 16
