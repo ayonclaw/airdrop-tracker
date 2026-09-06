@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 5, 2026 (17:00 UTC)**
+> Last updated: **Sep 6, 2026 (02:10 UTC)**
 > Session: AYON + BREACH v3.0 👑⚡
 
 ---
@@ -1167,6 +1167,23 @@
 - **Manual:** open site → solve hCaptcha → fill @osbornrdx + comment link + wallet `0x8CCE...282D`
 
 
+### #206 Consensus — Genesis Allowlist (127436) — ✅ DONE
+- **Date:** 2026-09-06 | **URL:** https://whitelist.consensus.games/ (ref /i/3DTXTPC2)
+- **Reward:** WL — 777 free-mint seats, each earns ETH from protocol revenue; optional WL Boost (+50% tickets) 0.007 ETH
+- **Type:** X-OAuth waitlist — Connect X → 5 missions (follow/repost/like req; reply/quote opt) → EVM wallet → done
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx (OAuth linked)
+- **X Actions (all done via MCP Chrome with @osbornrdx, on post 2096042438041231477):**
+  - ✅ Follow @consensus_games → https://x.com/consensus_games ("Mengikuti" confirmed)
+  - ✅ Like [2096042438041231477](https://x.com/consensus_games/status/2096042438041231477) (`unlike` state)
+  - ✅ Repost same post (`unretweet` state)
+  - ✅ Reply "LFG @consensus_games 🏛️" → **https://x.com/osbornrdx/status/2096409122652762181**
+  - ✅ Quote "Bullish on @consensus_games 🏛️ 💪" → **https://x.com/osbornrdx/status/2096409467495866417**
+- **Missions:** 5/5 DONE (+10 follow, +15 repost, +5 like, +15 reply, +25 quote = 70 pts) — all verified server-side in UI
+- **Wallet step:** pasted `0x8CCE...282D` → "Saved to your entry."
+- **WL Boost:** skipped (paid 0.007 ETH, optional)
+- **Result:** ✅ "ALLOWLIST ENTRY CONFIRMED — You are in, **entry #3809**, 70 points"
+- **Source:** Drop 127436 from @airdropfind
+
 ## ⏳ PENDING
 
 ### Retium NFT Launchpad — Testnet Mint (Base, proprietary wallet) 🆕
@@ -1294,6 +1311,7 @@
 
 | Project | Detail | Status |
 |---------|--------|--------|
+| Consensus | WL entry **#3809** · 70 pts · 5/5 missions · ref 3DTXTPC2 | ✅ |
 | Royal Mechanica | WL join **#20646** · 6,666 · Robinhood Chain · 4/4 X tasks | ✅ |
 | Quantum Grid | Google Form CLOSED (500 WL, missed window) | ⛔ |
 | Ratical (Mutant Rat Club) | WL + X tasks + Google Form | ✅ |
