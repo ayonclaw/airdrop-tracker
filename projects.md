@@ -49,7 +49,10 @@
   - ✅ Reply "0x8CCE...282D Done" on check-wallet post → [2096416871054794887](https://x.com/osbornrdx/status/2096416871054794887)
   - ✅ Notifications ON for @Basecable ("Nonaktifkan notifikasi postingan" bell state)
 - **Telegram:** ✅ Joined t.me/basecabaI (BASECABAL) via Telethon @mxsyxfxx
+- **Wallet checker (cabal.sentralab.xyz):** ✅ **ELIGIBLE — 44,900 CABAL** token allocation (cap 97,000) dari 449 Base transactions, snapshot LIVE Base RPC. Screen: "ELIGIBLE / TOKEN ALLOCATION 44,900 CABAL / 0X8CCE...282D / 449 TRANSACTIONS"
+- **Announce + reply (re-post 2026-09-06):** ✅ Reply wallet on announcement → [2096694747633230082](https://x.com/osbornrdx/status/2096694747633230082) + Announce "I secured my $CABAL whitelist spot on Base" → [2096698484489683394](https://x.com/osbornrdx/status/2096698484489683394)
 - **Server submit:** `POST /api/submit {wallet}` → **HTTP 200 `{"ok":true}`** — wallet registered, confirmation screen "You're on the list / Wallet registered for the $CABAL whitelist on Base"
+- **Status:** ✅ FULLY DONE — whitelist 9/9 + wallet registered + ELIGIBLE 44,900 CABAL
 - **Source:** Drop 127438 from @airdropfind
 
 
