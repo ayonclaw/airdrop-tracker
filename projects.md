@@ -2855,3 +2855,22 @@
 - **No allocation confirmed yet.** "If you have been farming ORO credits, keep going."
 - **Action:** None — no registration form, no URL, no tasks. Track for airdrop portal launch.
 - **Source:** Drop 127457 from @airdropfind
+
+### #213 Purré Whitelist — Google Form (127459) — ✅ DONE
+- **Date:** 2026-09-07 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLScYcqT2Emj4NmTY2pCs_SPgY5MmdJPlU-BCfluY9RKJwoHxJg/viewform
+- **Type:** Type 12 — GOOGLE FORM (public, no login). Free mint whitelist on Robinhood Chain (3,434 supply). "Les Chats de Robinhood."
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
+- **X:** @osbornrdx
+- **X Tasks (executed for real):**
+  - ✅ Follow @purreh00d → https://x.com/purreh00d ("Mengikuti" confirmed)
+  - ✅ Like pinned post [2096644613763211530](https://x.com/purreh00d/status/2096644613763211530) ("Menyukai" state)
+  - ✅ Retweet pinned post [2096644613763211530](https://x.com/purreh00d/status/2096644613763211530) ("Posting ulang" state)
+  - ✅ Comment wallet on pinned post → https://x.com/osbornrdx/status/2096645768613560320 (reply with `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`)
+- **Form Answers:**
+  - Follow/Like/RT → Yes
+  - Wallet → `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+  - X Handle → `osbornrdx`
+  - Maison Purré building → A fashion brand ✅
+  - Collection size → 3,434 ✅
+- **Submit:** ✅ "Your response has been recorded."
+- **Source:** Drop 127459 from @airdropfind — https://x.com/purreh00d/status/2096644613763211530
