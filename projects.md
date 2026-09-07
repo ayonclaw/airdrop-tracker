@@ -2874,3 +2874,12 @@
   - Collection size → 3,434 ✅
 - **Submit:** ✅ "Your response has been recorded."
 - **Source:** Drop 127459 from @airdropfind — https://x.com/purreh00d/status/2096644613763211530
+
+### Alphea Connect — Update: Points Redemption Live 📱
+- **Date:** Sep 07, 2026
+- **URL:** https://hub.alphea.ai/home (alphea.ai/invitation?code=JAI90UUQGX)
+- **Status:** ⛔ MOBILE-ONLY — same project, now redeemable
+- **Update:** "Connect New Wallet → Request Redeem Points" now available in app
+- **Action:** No new execution — existing manual steps cover wallet connect + redeem
+- **Source:** @airdropfind drop_127460
+
