@@ -49,7 +49,10 @@
   - ✅ Reply "0x8CCE...282D Done" on check-wallet post → [2096416871054794887](https://x.com/osbornrdx/status/2096416871054794887)
   - ✅ Notifications ON for @Basecable ("Nonaktifkan notifikasi postingan" bell state)
 - **Telegram:** ✅ Joined t.me/basecabaI (BASECABAL) via Telethon @mxsyxfxx
+- **Wallet checker (cabal.sentralab.xyz):** ✅ **ELIGIBLE — 44,900 CABAL** token allocation (cap 97,000) dari 449 Base transactions, snapshot LIVE Base RPC. Screen: "ELIGIBLE / TOKEN ALLOCATION 44,900 CABAL / 0X8CCE...282D / 449 TRANSACTIONS"
+- **Announce + reply (re-post 2026-09-06):** ✅ Reply wallet on announcement → [2096694747633230082](https://x.com/osbornrdx/status/2096694747633230082) + Announce "I secured my $CABAL whitelist spot on Base" → [2096698484489683394](https://x.com/osbornrdx/status/2096698484489683394)
 - **Server submit:** `POST /api/submit {wallet}` → **HTTP 200 `{"ok":true}`** — wallet registered, confirmation screen "You're on the list / Wallet registered for the $CABAL whitelist on Base"
+- **Status:** ✅ FULLY DONE — whitelist 9/9 + wallet registered + ELIGIBLE 44,900 CABAL
 - **Source:** Drop 127438 from @airdropfind
 
 
@@ -1377,7 +1380,16 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|||| KieDex | S2 daily 2026-09-06: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+||||| KieDex | S2 daily 2026-09-07: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|||||| | **MISSIONS**: 8/11 completed (7/11 social + 1/4 trading) |
+|||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil, opened 3-USDT 20x Long) |
+|||||| | - "Close a winning trade" → 0/1 (position -0.09 USDT, losing — skip) |
+|||||| | - "Open 5 trades" → 0/5 (need 600 Oil, not feasible) |
+|||||| | - "$1000 volume" → $0/$1000 |
+|||||| | **BALANCES**: Oil ~90 (40 faucet + 50 claim), KDX ~505, Spot ~725, Futures ~116+3 USDT |
+|||||| | **TRADING**: 3-USDT 20x BTC/USDT Long open @ 79,957.40 (-0.09 USDT / -3.15%) |
+|||||| | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
+| ||||| KieDex | S2 daily 2026-09-06: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||| | **MISSIONS**: 9/11 completed (7/11 social → 9/11 after t3+t4) |
 ||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
 ||||| | - **"Close a winning trade"** → Claimed ✅ (+50 Oil, closed 3-USDT Long @ +1.05 USDT) |
@@ -2836,3 +2848,10 @@
 - **Verdict:** Dead/squatted domain. Not a valid waitlist. Excluded.
 - **Source:** Drop 127446 from @airdropfind — https://x.com/squinkfun/status/2096179478716170426
 
+
+### #212 ORO Airdrop & TGE Update (127457) — INFO (Status update, not actionable)
+- **Date:** 2026-09-07 | **URL:** N/A (no links in drop)
+- **Type:** Informational update — Ask_ORO (oracle network). Almost 1M wallets connected, $739M+ volume, $3M strategic round, $100K AWS grant, Fluency Campaigns launched, ORO Airdrop Portal announced, snapshot coming before TGE.
+- **No allocation confirmed yet.** "If you have been farming ORO credits, keep going."
+- **Action:** None — no registration form, no URL, no tasks. Track for airdrop portal launch.
+- **Source:** Drop 127457 from @airdropfind
