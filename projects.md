@@ -2848,3 +2848,10 @@
 - **Verdict:** Dead/squatted domain. Not a valid waitlist. Excluded.
 - **Source:** Drop 127446 from @airdropfind — https://x.com/squinkfun/status/2096179478716170426
 
+
+### #212 ORO Airdrop & TGE Update (127457) — INFO (Status update, not actionable)
+- **Date:** 2026-09-07 | **URL:** N/A (no links in drop)
+- **Type:** Informational update — Ask_ORO (oracle network). Almost 1M wallets connected, $739M+ volume, $3M strategic round, $100K AWS grant, Fluency Campaigns launched, ORO Airdrop Portal announced, snapshot coming before TGE.
+- **No allocation confirmed yet.** "If you have been farming ORO credits, keep going."
+- **Action:** None — no registration form, no URL, no tasks. Track for airdrop portal launch.
+- **Source:** Drop 127457 from @airdropfind
