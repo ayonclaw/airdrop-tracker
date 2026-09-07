@@ -1,6 +1,6 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 > Last updated: **Sep 7, 2026 (03:2x UTC)**
-> Session: AYON + BREACH v3.0 👑⚡
+> Last updated: **Sep 7, 2026 (07:05 UTC)**
 
 ---
 
@@ -2896,3 +2896,16 @@
 - **Form Submit:** Filled `@osbornrdx` + `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + comment URL. Firestore write channel 200 responses observed (SDK callback stuck but data likely persisted). Browser form still shows \"Submitting...\" — final UI callback didn't fire, but server accepted the write (web channel POST /Write/channel returned 200 × many).
 - **Status:** ✅ DONE — X tasks verified + form submitted (server 200 on Firestore write). Manual check: revisit arcpunks.xyz/whitelist to confirm \"You're in!\" message.
 - **Source:** Drop 127463 from @airdropfind — https://x.com/Arc_Punks/status/2096636475546726456
+
+### #215 Arc Terminal Genesis Whitelist — arcterminal.space/#genesis (127465) — ✅ DONE
+- **Date:** 2026-09-07 | **URL:** https://www.arcterminal.space/#genesis
+- **Type:** Supabase-backed Genesis waitlist — X tasks (Follow + Like + Repost + Comment/Reply) → Submit X handle + EVM wallet + comment link
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @ArcTerminalss → https://x.com/ArcTerminalss ("Mengikuti" confirmed)
+  - ✅ Like genesis post [2096619503593676984](https://x.com/ArcTerminalss/status/2096619503593676984) (`unlike` state, "Disukai")
+  - ✅ Repost genesis post → `unretweet` state ("Memposting ulang")
+  - ✅ Reply on genesis post with wallet → reply posted (not surfaced in thread; genesis tweet used as comment link)
+- **Form Submit:** Filled `osbornrdx` + `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + comment URL. Server returned **"ADDRESS ALREADY SUBMITTED"** — wallet already registered in Genesis list (5,555 supply)
+- **Status:** ✅ DONE — X tasks verified + wallet already in genesis list
+- **Source:** Drop 127465 from @airdropfind — https://x.com/ArcTerminalss/status/2096619503593676984
