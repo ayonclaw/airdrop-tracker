@@ -2908,3 +2908,65 @@
 - **Form Submit:** Filled `osbornrdx` + `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + comment URL. Server returned **"ADDRESS ALREADY SUBMITTED"** — wallet already registered in Genesis list (5,555 supply)
 - **Status:** ✅ DONE — X tasks verified + wallet already in genesis list
 - **Source:** Drop 127465 from @airdropfind — https://x.com/ArcTerminalss/status/2096619503593676984
+
+### #206 CABAL Whitelist (Sentralab) — whitelist.sentralab.xyz (127438) — ✅ DONE  [UPDATED: MINT ANNOUNCEMENT]
+- **Update 2026-09-08:** BaseCabal timed mint announcement (drop 127468) — https://opensea.io/collection/basecabal-341365337/overview
+- **Mint Schedule (Robinhood Chain):**
+  - NFT (WL FCFS): 2:30 PM UTC, 2026-09-08
+  - $CABAL token: 4:00 PM UTC, 2026-09-08
+  - Airdrop: 7:00 PM UTC, 2026-09-08
+- **Contract:** 0x191d1b8b959b922a0d2a5329bb2d0fd1e7bc9f3c (Robinhood Chain) via OpenSea v2 API
+- **Whitelist status:** Already ELIGIBLE with 44,900 CABAL allocation (from 127438). WL FCFS mint at 2:30 PM UTC today.
+- **⚠️ Robinhood Chain RPC is TLS-blocked from VPS** — server-side on-chain mint not viable. Must execute via CloakBrowser + real MetaMask (airdrop_00 on Robinhood, needs ~0.0022 ETH for gas).
+- **Action:** Monitor for mint window; execute via CloakBrowser at 2:30 PM UTC.
+
+### #216 SignalSprites — Google Form Waitlist (127491) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSdIL9QVF3-9Bw5XaplMpPD0yzX2feMDe27x8TMhCutuP_k-uw/viewform
+- **Type:** Public Google Form waitlist — "Signal Sprites Whitelist Gtd Open" + OpenSea collection (3,333 supply, Robinhood Chain)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Form Submit:** Already responded ("You've already responded") — wallet submitted in prior session via airdropkarbiters@gmail.com
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @SignalSprites → https://x.com/SignalSprites (already "Mengikuti" — following)
+  - ✅ Like tweet [2096841253036155298](https://x.com/SignalSprites/status/2096841253036155298) (`unlike` state — "Disukai")
+  - ✅ Repost same tweet → `unretweet` state ("Memposting ulang" — reposted)
+  - ✅ Reply wallet + "Done ✅ #SignalSprites" → https://x.com/osbornrdx/status/2097061013527077005
+- **OpenSea Contract:** 0x191d1b8b959b922a0d2a5329bb2d0fd1e7bc9f3c (Robinhood Chain)
+- **Mint:** GTD Phase 1, Sep 10, 2026 — Freemint
+- **Status:** ✅ FULLY DONE — form submitted + X tasks verified + waitlist secured
+- **Source:** Drop 127491 from @airdropfind
+
+### #217 AGNT Socials S3 Week 8 — Galxe Quest (127497) — ⚠️ PARTIAL (X tasks done, creds pending OAuth)
+- **Date:** 2026-09-08 | **URL:** https://app.galxe.com/quest/AGNTHub/GC8wetZbdy (Week 8) + https://app.galxe.com/quest/AGNTHub/GC2WRtZL45 (Week 7 Finale)
+- **Type:** Galxe Quest — AGNT Hub (space ID 77675), campaign GC8wetZbdy (Week 8 - Parent) + child campaigns
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Galxe API Execution:**
+  - ✅ followSpace (AGNT Hub, ID: 77675) → `{"followSpace":1}`
+  - ✅ Week 8 child campaigns processed: 4 credentials (2 TWITTER follows, 1 GALXE_ID visit X post, 1 TWITTER tweet liker)
+- **X Tasks (executed for real, @osbornrdx — source tweet 2096917007945855186):**
+  - ✅ Follow @agnt_hub → https://x.com/agnt_hub (already "Mengikuti" — following)
+  - ✅ Like tweet [2096917007945855186](https://x.com/agnt_hub/status/2096917007945855186) (`unlike` state — "Disukai")
+  - ✅ Repost same tweet → `unretweet` state ("Memposting ulang" — reposted)
+- **Credentials (syncCredentialValue via API):**
+  - ✅ TWITTER | agnt_hub - Twitter Followers → `allow:true` (auto-credited on followSpace)
+  - ⚠️ TWITTER | TruthAgentAI - Twitter Followers → `allow:false` (needs X OAuth linked to Galxe)
+  - ⚠️ GALXE_ID | Visit the X post → `allow:false` (needs X OAuth linked)
+  - ⚠️ TWITTER | agnt_hub - Tweet Liker (2096917007945855186) → SYNC EXC (X OAuth required for credit)
+- **Known Limit:** All TWITTER creds + GALXE_ID "Visit X post" require X OAuth account linked to Galxe (architectural — same as Week 7 #188, Week 5 #120/#121). X actions executed for proof; cred credits pending manual X OAuth link.
+- **Status:** ⚠️ PARTIAL — X tasks verified, followSpace done, TWITTER/GALXE_ID creds blocked by X OAuth requirement
+- **Source:** Drop 127497 from @airdropfind — https://x.com/agnt_hub/status/2096917007945855186
+
+### #218 HodlerStation (Giwa Eco) — Testnet Platform (127467) — ⚠️ HARD WALL (on-chain testnet SBT mint)
+- **Date:** 2026-09-08 | **URL:** https://app.hodlerstation.xyz/join?ref=60647C48
+- **Type:** IN-APP SOCIAL AIRDROP DASHBOARD (Type 20) + ON-CHAIN TESTNET TRADING (Type 21) — Korean crypto community platform with GIWA testnet points (HSP), daily check-ins, GIWA test ETH faucet, GIWA SBT minting
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Google:** airdropkarbiters@gmail.com (already logged in — "airdropkarbiters HODLER")
+- **Current State:**
+  - ✅ Google account created + referral code 60647C48 applied (logged in)
+  - ⚠️ Wallet connected in browser: `0x9f757507fc0e069ec316368c0c32fcc3c22f88c4` (NOT our airdrop_00 wallet) — visible on GIWA explorer link on points page
+  - ⚠️ Points: 0 HSP, 0 streak, "No quests today" on points page
+  - ⚠️ Missions page: "Failed to load missions" — no active community missions today
+- **Blocker:** GIWA SBT mint (Missions tab) + GIWA test ETH faucet + on-chain activities require real wallet connection on GIWA testnet. The connected wallet is not ours; connecting our wallet requires CloakBrowser + real MetaMask. This is a Type 21 hard wall — real on-chain testnet actions cannot be mocked.
+- **Daily off-chain:** No quests available today (points page shows "No quests today"). Missions failed to load.
+- **Status:** ⚠️ HARD WALL — on-chain testnet actions (SBT mint, faucet, HST mint) require CloakBrowser + real MetaMask on GIWA testnet. Off-chain account setup (Google + referral) done.
+- **Manual Recipe:** Open in CloakBrowser → connect MetaMask (airdrop_00, add GIWA testnet) → claim GIWA test ETH from faucet → complete missions/check-in → mint GIWA SBT on Missions tab.
+- **Source:** Drop 127467 from @airdropfind
+
