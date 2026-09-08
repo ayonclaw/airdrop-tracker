@@ -3014,3 +3014,12 @@
 - **List check (client-side `data/list.json`):** our EVM wallet NOT on guaranteed/whitelist/fcfs tiers yet (list is final-state for the mint; entries still being screened)
 - **Status:** ✅ DONE — entry recorded. Screening happens after close; final tiers published later. Mint date TBA (monitor for OpenSea Drop opening; GTD/WL = free).
 - **Source:** Drop 127499 from @airdropfind
+
+### #209 Polaris Finance — Testnet Interaction (127504) — ⚠️ PARTIAL (wallet connected, net-switch blocked)
+- **Date:** 2026-09-08 | **URL:** https://testnet.polaris.finance/
+- **Type:** Type 21 — ON-CHAIN TESTNET (Sepolia DeFi: swap/mint CDP/earn vaults). Source: https://x.com/polarisfnd/status/2085019905246597328
+- **Tasks:** Connect New Wallet → Try all features → Done
+- **Result:** ✅ MetaMask v13.40 freshly onboarded on the persistent profile with airdrop_00 SRP (`sport win enforce ... gate silk` → 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D). Polaris connected to wallet via modal → MetaMask (approval passed through notification page).
+- **Funds:** Wallet holds 6.307 Sepolia ETH (RPC-confirmed via publicnode/1rpc) — enough for testnet DeFi.
+- **Blocker:** MetaMask active network stuck on Ethereum mainnet; `wallet_switchEthereumChain` to Sepolia (0xaa36a7) stays pending forever — the MM notification/approval popup cannot render under the QEMU headless Chrome (same class of wall as before). dApp shows "Insufficient ETH (you have 0)" because it reads mainnet balance.
+- **Remaining (manual/CloakBrowser):** open MM → switch network to Sepolia → on Polaris: Buy pETH (0.01 ETH bonding-curve mint) → Open USDp CDP → Earn deposit → optionally vePOLAR lock. ~5 min of clicks once network is switched.
