@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 8, 2026 (02:56 UTC)**
+> Last updated: **Sep 8, 2026 (03:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #229 SatoId — 888 Mechanism Whitelist (127518) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://www.satoid.site
+- **Type:** Interactive "Find 888" game (vanilla JS) → Google Form wallet submit. Source announcement: [2096759697302860048](https://x.com/satoid888/status/2096759697302860048)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @satoid888 → https://x.com/satoid888 (button shows "Mengikuti")
+  - ✅ Like announcement [2096759697302860048](https://x.com/satoid888/status/2096759697302860048) ("Disukai", 111 likes)
+  - ✅ Retweet same post ("Diposting ulang", 62 RTs) via intent confirm dialog
+- **Game Flow:** "FOLLOW @SATOID888" gate passed → BEGIN game → auto-click at exactly 888 → "YOU FOUND 888" screen → wallet input revealed
+- **Wallet Submit (verified):** Filled Google Form `https://docs.google.com/forms/d/e/1FAIpQLSfVAgQOQ3HKwI6yaXzjUnPgB66U1O4hO-X0xjK7kmuUboCfBw/viewform` with `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **"Your response has been recorded."**
+- **Bonus:** Site-side submit also completed ("RECEIVED. THANK YOU." modal). Public confirmation reply on X: [2097382055403495554](https://x.com/osbornrdx/status/2097382055403495554)
+- **Source:** Drop 127518 from @airdropfind
 
 ### #221 Lost Beings Whitelist — lostbeings.xyz (127503) — ✅ DONE
 - **Date:** 2026-09-08 | **URL:** https://lostbeings.xyz
