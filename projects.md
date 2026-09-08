@@ -3023,3 +3023,72 @@
 - **Funds:** Wallet holds 6.307 Sepolia ETH (RPC-confirmed via publicnode/1rpc) — enough for testnet DeFi.
 - **Blocker:** MetaMask active network stuck on Ethereum mainnet; `wallet_switchEthereumChain` to Sepolia (0xaa36a7) stays pending forever — the MM notification/approval popup cannot render under the QEMU headless Chrome (same class of wall as before). dApp shows "Insufficient ETH (you have 0)" because it reads mainnet balance.
 - **Remaining (manual/CloakBrowser):** open MM → switch network to Sepolia → on Polaris: Buy pETH (0.01 ETH bonding-curve mint) → Open USDp CDP → Earn deposit → optionally vePOLAR lock. ~5 min of clicks once network is switched.
+
+### #222 Hyper Anonymous Airdrop — hyperanon.org (127515) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://hyperanon.org
+- **Reward:** 10,000 $HYPERANON FCFS, 1B total supply, 60% community. Campaign ends 00:00 GMT Sep 15, 2026. NFT collection: 7,777 NFTs public mint Sep 9 10AM GMT on OpenSea (hyperanon).
+- **Type:** Supabase task manifest + `/api/claim` (Next.js on Vercel). 5 X tasks (Follow, Repost launch, Repost NFT, Post on X, View OpenSea) with client-side self-attest → wallet claim.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @hyper_anon → https://x.com/hyper_anon ("Mengikuti" confirmed)
+  - ✅ Repost launch post [2097267885056082174](https://x.com/hyper_anon/status/2097267885056082174) (`unretweet` state)
+  - ✅ Like launch post (`unlike` state)
+  - ✅ Repost NFT post [2097277712675291422](https://x.com/hyper_anon/status/2097277712675291422) (`unretweet` state)
+  - ✅ Post on X "I am claiming the @hyper_anon airdrop." → [2097280989412348189](https://x.com/osbornrdx/status/2097280989412348189)
+  - ✅ View OpenSea collection (navigated)
+- **Claim:** POST `/api/claim` `{walletAddress: 0x8CCE...282D, completedTaskKeys: [follow,repost,nft_repost,post,opensea], userTimezone: UTC}` → **HTTP 200 `{"ok":true,"amount":10000,"status":"queued","message":"Claim queued.","tokenSymbol":"$HYPERANON","deliveryLabel":"00:00 GMT on September 15, 2026"}`** — dashboard "CLOSE SESSION / CLAIM QUEUED / Airdrop secured."
+- **Status:** ✅ FULLY DONE — 5/5 VERIFIED + claim queued, 10,000 $HYPERANON auto-distributed Sep 15.
+- **Source:** Drop 127515 from @airdropfind — https://x.com/hyper_anon/status/2097267885056082174
+
+### #223 Goalhood Early Access — goalhoodz.fun (127510) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://goalhoodz.fun
+- **Reward:** GoalHoodz Early Access ticket — 1-bit head soccer on Robinhood Chain. Registration #51615.
+- **Type:** FastAPI backend (`/api/early/*`). Register X username + EVM wallet → X tasks (follow/rt/quote) → ticket mint.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @goalhoodz → https://x.com/goalhoodz (following)
+  - ✅ Like source [2097087019721654321](https://x.com/goalhoodz/status/2097087019721654321) + Repost (`unretweet`)
+  - ✅ Quote "I just secured my Early Access ticket for GoalHoodz - 1-bit head soccer on Robinhood Chain." → [2097286648522510514](https://x.com/osbornrdx/status/2097286648522510514)
+- **Server completion:** `POST /api/early/tasks/{follow,rt,quote}/complete` with Bearer token → follow +50, rt +50, quote +100 = **200 pts**, `tasks:{follow:true,rt:true,quote:true}`, `completed:true`, `completed_at:2026-09-08T11:32:48Z`, ticket_no 51615
+- **Source:** Drop 127510 from @airdropfind — https://x.com/Goalhoodz/status/2096645482827141330
+
+### #224 SVP Chain Rewards — rewards.svpstars.com (127513) — ⚠️ PARTIAL (Genesis: bind + follow done; TG/Discord/faucet pending)
+- **Date:** 2026-09-08 | **URL:** https://rewards.svpstars.com/?invite=67UJX7JT
+- **Reward:** SVP Rewards points (SVP Chain — AI-native L1). Genesis Trail + daily + weekly quests.
+- **Type:** SIWE wallet auth + quest platform (FastAPI `/api/v1`). Register: new wallet + Genesis Trail + 3 quests.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Registered:** SIWE login offline via eth_account (mnemonic → account m/44'/60'/0'/0/0), invite 67UJX7JT applied → user id **13033**, invite code 5GEV5ZBS
+- **Quest completion:**
+  - ✅ **Bind X Account (+200)** — X OAuth linked @osbornrdx via browser authorize (SVPChain app) → server `/me` xHandle=osbornrdx → claim 200 pts
+  - ✅ **Follow Official X (+100)** — follow @SvpChain real (https://x.com/svpchain, "Mengikuti") → claim 100 pts (server x-follow verified via OAuth)
+  - ⚠️ **Join Telegram (+50)** — needs bot t.me/svpchain_bot?start=SVP-8Y85 START (Telethon session unavailable this run)
+  - ⛔ Join Discord (+50) — locked behind TG; needs Discord OAuth
+  - ⚠️ Daily: faucet_claim (+30, needs testnet tx hash), checkin locked behind faucet
+  - ⚠️ Weekly Broadcast (+150): tweet about SVP with hashtag
+- **Total:** 300 pts (Genesis 2/4 cleared)
+- **Source:** Drop 127513 from @airdropfind — https://x.com/svpchain
+
+### #225 HeyAura S1 Update — hub.heyaura.com (127509) — INFO (no action)
+- **Date:** 2026-09-08 | **URL:** https://hub.heyaura.com/loyalty?referral_code=DIAM
+- **Type:** Season 1 closed. "Reward claim page being developed. S1 is over. Keep farming AURA Points for next season." Snag white-label loyalty platform.
+- **Action:** None — S1 over, no tasks, existing account continues farming. Track for S2 claim page.
+- **Source:** Drop 127509 from @airdropfind
+
+### #226 YOM S1 Rewards Claim — app.team.finance/token-vesting (127512) — INFO (claim-only, no registration)
+- **Date:** 2026-09-08 | **URL:** https://app.team.finance/token-vesting
+- **Type:** YOM Season 1 rewards claim is LIVE. Token vesting claim (withdraw $YOM vesting). Live on Avalanche since June 5.
+- **Action:** Claim-only for existing holders. No registration/tasks. Requires existing vesting position + wallet connect to withdraw. Track only.
+- **Source:** Drop 127512 from @airdropfind
+
+### #227 VOICY NFT Collection — announcement (127508) — INFO (entry coming soon)
+- **Date:** 2026-09-08 | **URL:** https://x.com/voicecc/status/2096951536140132495
+- **Type:** 10,000 Soulbound NFTs, Free Mint, NFT qualifies for $VOICE airdrop, Top 300 higher TGE weight. "WL is earned, not given. Entry details coming soon."
+- **Action:** None yet — entry details not published. Track for WL entry mechanism.
+- **Source:** Drop 127508 from @airdropfind
+
+### #228 Pawffle Whitelist — pawffles.xyz (127514) — ⚠️ PENDING (X OAuth + 500 pts grind)
+- **Date:** 2026-09-08 | **URL:** https://www.pawffles.xyz
+- **Reward:** WL ticket at 500 pts, GTD at 5,000 pts. Only first 3,000 unique users secure WL.
+- **Type:** X OAuth + points-based whitelist. "Connect with X account → reach 500 points → WL ticket."
+- **Action:** Requires X OAuth app auth + point farming (daily interactions). Not executed this run (heavy browser OAuth).
+- **Source:** Drop 127514 from @airdropfind — https://x.com/Pawffle_nft/status/2096211324229365897
