@@ -1,9 +1,37 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 7, 2026 (07:05 UTC)**
+> Last updated: **Sep 8, 2026 (02:56 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #221 Lost Beings Whitelist — lostbeings.xyz (127503) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://lostbeings.xyz
+- **Type:** Interactive 3-step WL (X follow → Like/Repost/Quote/Comment+2 mentions → X handle + EVM wallet). "The Lost List", 500 GTD WL, 72h window.
+- **Chain:** Robinhood Chain. Source tweet: [2096994686275662223](https://x.com/lostbeings_nfts/status/2096994686275662223)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @lostbeings_nfts → https://x.com/lostbeings_nfts ("Mengikuti" confirmed)
+  - ✅ Like announcement [2096994686275662223](https://x.com/lostbeings_nfts/status/2096994686275662223) (`unlike` state)
+  - ✅ Retweet same post (via intent confirm dialog) → `unretweet` state
+  - ✅ Quote "I joined the Lost List. A little lost, a lot more found. 🌀 @lostbeings_nfts" → [2097185609857237421](https://x.com/osbornrdx/status/2097185609857237421)
+  - ✅ Comment + 2 mentions (@setyamickala @starkpete1) → [2097185682355855759](https://x.com/osbornrdx/status/2097185682355855759)
+  - ✅ Reply "Done! Applied for the Lost List 🎉" → [2097179883176869932](https://x.com/osbornrdx/status/2097179883176869932)
+- **Submit:** Step 3 form @osbornrdx + EVM wallet → **"SIGNAL DELIVERED — You're on our radar. Your application has been received."** Application received confirmation.
+- **Source:** Drop 127503 from @airdropfind
+
+### #220 HotDog Rise Whitelist — hotdogrise.com (127502) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://hotdogrise.com
+- **Type:** 4-step WL (wallet/X/discord → verify follow → verify retweet → reply link → submit). HDR Gameboys NFT, 3,000 NFTs, Robinhood Chain.
+- **Source tweet:** [2097071244579680569](https://x.com/hotdogrise/status/2097071244579680569)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx | **Discord:** akumosy
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @hotdogrise → https://x.com/hotdogrise ("Mengikuti" confirmed)
+  - ✅ Like announcement [2097071244579680569](https://x.com/hotdogrise/status/2097071244579680569) (`unlike` state, "Disukai")
+  - ✅ Retweet same post (intent confirm dialog) → `unretweet` state (619 RTs)
+  - ✅ Reply "HotDog Rise WL applied! 🚀" → [2097163461784662036](https://x.com/osbornrdx/status/2097163461784662036)
+- **Submit:** Step 1 (0x8CCE...282D, osbornrdx, akumosy) → Step 2 Verify follow ✅ → Step 3 Verify retweet ✅ → Step 4 reply link → **"You're on the list! Your whitelist application has been received."** Wallet/X/Discord displayed on confirmation.
+- **Source:** Drop 127502 from @airdropfind
 
 ### #208 Acepyr — Testnet Token Minting (127442) — ⚠️ HARD WALL (on-chain testnet)
 - **Date:** 2026-09-06 | **URL:** https://www.acepyr.com (Faucet: /faucet)
