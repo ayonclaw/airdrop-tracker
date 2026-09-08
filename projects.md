@@ -2970,3 +2970,19 @@
 - **Manual Recipe:** Open in CloakBrowser → connect MetaMask (airdrop_00, add GIWA testnet) → claim GIWA test ETH from faucet → complete missions/check-in → mint GIWA SBT on Missions tab.
 - **Source:** Drop 127467 from @airdropfind
 
+
+### #219 BOILERBROKERS — X Tasks + Allowlist Join (127499) — ✅ DONE (entry recorded, screening pending)
+- **Date:** 2026-09-08 | **URL:** https://boilerbrokers.xyz/list | **OpenSea:** https://opensea.io/collection/boilerbrokers-nft
+- **Type:** X-TASKS + ALLOWLIST (vanilla JS, client-side step unlock + server `/api/join`)
+- **Project:** 3,333 brokers, 1980s boiler room pixel art, Robinhood Chain, $BOILER token planned (not deployed). Mint = OpenSea Drop, 4 phases (GTD 2/wallet free, WL 1/wallet free, FCFS 0.001 ETH, Public 0.002 ETH), mint date TBA. Free phases = free (network fee only).
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) | **X:** @osbornrdx
+- **Campaign:** X handle `Boilerbrokers`, announcement post `2095131508809888252` (quote text: "Just picked up the phone. 3,333 desks, one floor.")
+- **X Tasks (executed for real, @osbornrdx):**
+  - ✅ Follow @Boilerbrokers → button flipped to "Mengikuti" — https://x.com/Boilerbrokers
+  - ✅ Like announcement [2095131508809888252](https://x.com/Boilerbrokers/status/2095131508809888252) → aria "1821 Suka. Menyukai" (1821 likes)
+  - ✅ Repost same tweet → "2947 posting ulang. Posting ulang" state
+  - ✅ Quote post → https://x.com/osbornrdx/status/2097144327822839942 ("Just picked up the phone. 3,333 desks, one floor. #BOILERBROKERS #NFT #Robinhood")
+- **Submit:** POST `https://boilerbrokers.xyz/api/join` `{handle:"osbornrdx", wallet:"0x8CCE...282D"}` → `{"ok":true,"message":"Entry recorded. Every entry is screened before the final list goes out."}` HTTP 200
+- **List check (client-side `data/list.json`):** our EVM wallet NOT on guaranteed/whitelist/fcfs tiers yet (list is final-state for the mint; entries still being screened)
+- **Status:** ✅ DONE — entry recorded. Screening happens after close; final tiers published later. Mint date TBA (monitor for OpenSea Drop opening; GTD/WL = free).
+- **Source:** Drop 127499 from @airdropfind
