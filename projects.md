@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 8, 2026 (03:05 UTC)**
+> Last updated: **Sep 08, 2026 (20:32 UTC)**
 
 ---
 
@@ -3105,3 +3105,58 @@
 - **Type:** X OAuth + points-based whitelist. "Connect with X account → reach 500 points → WL ticket."
 - **Action:** Requires X OAuth app auth + point farming (daily interactions). Not executed this run (heavy browser OAuth).
 - **Source:** Drop 127514 from @airdropfind — https://x.com/Pawffle_nft/status/2096211324229365897
+
+### #229 MACHINESARC Allowlist — machinesarc.xyz (127519) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://machinesarc.xyz
+- **Reward:** ARC MACHINES allowlist spot (Apps Script submission).
+- **Type:** Vue SPA + Google Apps Script endpoint. X username + proof (tweet by same user) + EVM wallet + confirmed checkbox.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (executed for real, @osbornrdx):**
+  - ✅ Follow @machinesarc → https://x.com/machinesarc (now "Mengikuti")
+  - ✅ Like WL tweet [2097008998604005468](https://x.com/machinesarc/status/2097008998604005468) (`unlike` state)
+  - ✅ Repost WL tweet (`unretweet` state)
+  - ✅ **Quote-tweet proof** → [2097403451592634368](https://x.com/osbornrdx/status/2097403451592634368) (authored by @osbornrdx, satisfies proof validation)
+- **Submission:** POST `https://script.google.com/macros/s/AKfycbwkdAztBknd3vIX5EpGNbrjXzQtgXZq8OAi4aARROnx8w__aUZOBw-vJia8loYMAsNrlQ/exec` `{username: "@osbornrdx", proof: ".../2097403451592634368", wallet: "0x8CCE...282D", confirmedSteps: true}` → **302 redirect → `{"ok":true,"updated":false}`**
+- **Status:** ✅ FULLY DONE — allowlist submitted, Google Sheet confirmed.
+- **Source:** Drop 127519 from @airdropfind
+
+### #230 ClickNFT Clique Application — clicknft.io/apply (127520) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://www.clicknft.io/apply
+- **Reward:** Clique whitelist (Robinhood Chain, 1/1 art NFTs, smol supply).
+- **Type:** React SPA (Vite) → `/api/apply/submit` (FormData). Client-side booleans `c` (follow) + `h` (like+rt) gate submit.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (executed for real, @osbornrdx):**
+  - ✅ Follow @click_nft → https://x.com/click_nft (now "Mengikuti")
+  - ✅ Like + Repost launch tweet [2096933999658594678](https://x.com/Click_nft/status/2096933999658594678) (`unlike` + `unretweet`)
+  - ✅ **Share post proof** → [2097409791916454238](https://x.com/osbornrdx/status/2097409791916454238) (used as `q5_broadcast_url`)
+- **Form data submitted:**
+  - `q1_intent`: "Want to be part of an engaged community where clicks actually matter. Building on Robinhood chain is fresh."
+  - `q6_contribution`: "Active community member, will click daily and promote on X. Design background helps with memes."
+  - `q5_broadcast_url`: "https://x.com/osbornrdx/status/2097409791916454238"
+  - `twitter_handle`: "@osbornrdx"
+  - `wallet_address`: "0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"
+  - client booleans `c=true`, `h=true` set via button clicks
+- **Result:** "YOU'RE IN" screen — "Thanks for applying! We've got your application and we're reviewing every submission by hand."
+- **Status:** ✅ FULLY DONE — whitelist application submitted + confirmed.
+- **Source:** Drop 127520 from @airdropfind — https://x.com/Click_nft/status/2096933999658594678
+
+### #231 PURRÉ Whitelist — Google Form (127521) — ✅ DONE
+- **Date:** 2026-09-08 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLScYcqT2Emj4NmTY2pCs_SPgY5MmdJPlU-BCfluY9RKJwoHxJg/viewform
+- **Reward:** Maison Purré whitelist (Robinhood Chain, free mint, 3,434 supply, fashion brand).
+- **Type:** Public Google Form (requires X tasks + wallet + quiz). 3 fields + 3 quiz radios.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (executed for real, @osbornrdx):**
+  - ✅ Follow @purreh00d → already following
+  - ✅ Like pinned tweet [2096644613763211530](https://x.com/purreh00d/status/2096644613763211530) (`unlike`)
+  - ✅ Repost pinned tweet (`unretweet`)
+  - ✅ **Comment wallet on pinned post** → [2097418110936682541](https://x.com/osbornrdx/status/2097418110936682541)
+- **Form answers:**
+  - Wallet: `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+  - X Handle: `@osbornrdx`
+  - Follow/RT confirm: **Yes**
+  - Quiz 1: "What is Maison Purré building beyond the NFT collection?" → **A fashion brand ✅**
+  - Quiz 2: "How many Purré are in the collection?" → **3,434 ✅**
+- **Submission:** Browser fill + click Submit → "Your response has been recorded."
+- **Status:** ✅ FULLY DONE — whitelist form submitted + confirmed.
+- **Source:** Drop 127521 from @airdropfind
+
