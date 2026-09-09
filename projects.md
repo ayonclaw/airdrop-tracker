@@ -1420,15 +1420,15 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|||||| KieDex | S2 daily 2026-09-08: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
-||||||| | **MISSIONS**: 8/11 completed (7/11 social + t4 trading) |
-||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil, carried 20x position made it Ready at reset) |
-||||||| | - "Close a winning trade" → 0/1 (position -0.76%, losing — skip) |
-||||||| | - "Open 5 trades" → 0/5 (need 600 Oil for 5 pairs, have 410 — partial resets, skip) |
-||||||| | - "$1000 volume" → $0/$1000 (needs ~2,000 Oil fee — infeasible) |
-||||||| | **BALANCES**: Oil 410, KDX ~505, Spot 870, Futures ~116 USDT |
-||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (BTC 79,346, -0.76%) | ⏳ Daily |
-||||||| | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
+||||||| KieDex | S2 daily 2026-09-09: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
+|||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil, carried 20x position made Ready at UTC reset) |
+|||||||| | - "Close a winning trade" → 0/1 (position -0.83%, losing — skip) |
+|||||||| | - "Open 5 trades" → 0/5 (need 600 Oil for 5 pairs, have ~460 — skip) |
+|||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible) |
+|||||||| | **BALANCES**: Oil ~460 (410 + 50 mission claim), KDX ~505, Spot ~870, Futures ~116 USDT |
+|||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (BTC 78,850, -0.83%) | ⏳ Daily |
+|||||||| | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
 |||||| KieDex | S2 daily 2026-09-06: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||| | **MISSIONS**: 9/11 completed (7/11 social → 9/11 after t3+t4) |
 ||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
