@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 08, 2026 (20:32 UTC)**
+> Last updated: **Sep 10, 2026 (03:45 UTC)**
 
 ---
 
@@ -3171,3 +3171,42 @@
 - **Status:** ✅ FULLY DONE — whitelist form submitted + confirmed.
 - **Source:** Drop 127521 from @airdropfind
 
+
+
+### #232 ARCAT NFT Whitelist — arcat-nft.xyz/wl (127533) — ✅ DONE
+- **Date:** 2026-09-09 | **URL:** https://www.arcat-nft.xyz/wl
+- **Type:** Vanilla JS whitelist → Google Apps Script webhook. Tasks: Follow @Arcatt_nft + Like/Quote announcement tweet → Submit X handle + EVM wallet.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (executed for real, @osbornrdx):**
+  - ✅ Follow @Arcatt_nft → https://x.com/Arcatt_nft ("Mengikuti" confirmed)
+  - ✅ Like announcement [2097375101679268317](https://x.com/Arcatt_nft/status/2097375101679268317) (`unlike` state)
+  - ✅ Retweet same post → `unretweet` state ("Memposting ulang")
+  - ✅ Quote "Just secured my WL spot for @Arcatt_nft 🐾 On-chain pixel collective is live.." → [2097865839114584367](https://x.com/osbornrdx/status/2097865839114584367)
+- **Submit:** POST to  →  — handle already registered from prior session. Whitelist spot confirmed.
+- **Status:** ✅ FULLY DONE — X tasks verified + wallet already in whitelist.
+- **Source:** Drop 127533 from @airdropfind — https://x.com/Arcatt_nft/status/2097375101679268317
+
+### #233 ShareHoodlers Whitelist — Google Form (127549) — ✅ DONE
+- **Date:** 2026-09-09 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSfmI-glaw__H3e3vPw35zbXQ3FS38ofQ0lfxf3HOD3Nm9at7Q/viewform
+- **Reward:** Free mint whitelist (3,333 supply, Robinhood Chain). "ShareHOODlers — Official Free Mint Whitelist Application."
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (executed for real, @osbornrdx):**
+  - ✅ Follow @sharehoodlers → https://x.com/sharehoodlers ("Mengikuti @sharehoodlers" confirmed)
+  - ✅ Like announcement [2097311742749790474](https://x.com/sharehoodlers/status/2097311742749790474) (`unlike` state)
+  - ✅ Retweet same post → `unretweet` state
+- **Form Submit:** Browser fill (X handle: @osbornrdx, Wallet: 0x8CCE..., RT link: https://x.com/sharehoodlers/status/2097311742749790474) → **"Your response has been recorded."**
+- **Status:** ✅ FULLY DONE — whitelist form submitted + confirmed.
+- **Source:** Drop 127549 from @airdropfind — https://x.com/sharehoodlers/status/2097311742749790474
+
+### #234 Element Class Genesis — elementborns.com/genesis (127552) — ✅ DONE
+- **Date:** 2026-09-10 | **URL:** https://elementborns.com/genesis
+- **Reward:** Genesis WL (777 souls, free mint). Code: VOID → FIRE → AIR → WATER. Tasks: 4-step initiation (Follow 2 accounts, Engage with post, Read story, Choose class).
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Tasks (all executed for real, @osbornrdx):**
+  - ✅ **Step 1 — Follow both:** @elementborns [Mengikuti](https://x.com/elementborns) + @justguyelement [Mengikuti @justguyelement](https://x.com/justguyelement)
+  - ✅ **Step 2 — Engage with post:** Like + Quote tweet [2097724007927697513](https://x.com/elementborns/status/2097724007927697513) → [2097886326066671820](https://x.com/osbornrdx/status/2097886326066671820)
+  - ✅ **Step 3 — Read story:** Open article [2097614142161007097](https://x.com/elementborns/status/2097614142161007097) + Like (`unlike` state)
+  - ✅ **Step 4 — Choose class:** Selected **VOID** (matches invite code sequence) → "I am Voidborn" → Seal entry
+- **Seal Entry:** Paste quote link (https://x.com/osbornrdx/status/2097886326066671820) + confirm checkbox → **"Form submitted. Your entry was received for manual review."**
+- **Status:** ✅ FULLY DONE — all 4 initiation steps completed, entry sealed for review.
+- **Source:** Drop 127552 from @airdropfind — https://x.com/elementborns/status/2097724007927697513
