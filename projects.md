@@ -1420,6 +1420,17 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+|||||||||| KieDex | S2 daily 2026-09-10: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
+|||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil |
+|||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready at UTC reset) |
+|||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent) |
+|||||||||| | - "Close a winning trade" → 0/1 (position -1.33 USDT / -44% — losing, skip) |
+|||||||||| | - "Open 5 trades" → 0/5 (market dumping hard: BTC -1%, DOGE -5%, ARB -11% — skip) |
+|||||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible) |
+|||||||||| | **BALANCES**: Oil **590** (net +90 today), KDX 505.17, Spot 975.05 USDT, Futures 114.86 USDT |
+|||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 78,198.66 → -1.33 USDT) | ⏳ Daily |
+|||||||||| | **NEW FINDING**: Oil fee = **40 Oil per 1 USDT margin @ 20x** (not a flat 120/3-USDT). So "Open 5 trades" on 5 different pairs @ 1 USDT = ~200 Oil total — actually feasible budget-wise, but reward is only 50 Oil (net −150) plus merge risk with the open loser. Still skipped. |
 ||||||| KieDex | S2 daily 2026-09-09: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 |||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil, carried 20x position made Ready at UTC reset) |
