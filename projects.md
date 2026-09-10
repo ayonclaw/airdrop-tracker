@@ -3218,3 +3218,13 @@
 | - | KITSUNE (kitsunerh.xyz) | DONE | WL sealed, App ID KTSN-784916EF, @osbornrdx | wallet 0x8CCE...282D | proof RT: https://x.com/KitsuneOnRH/status/2097371672521162880, reply: https://x.com/osbornrdx/status/2098158290488414280 |
 | - | AGNT Galxe Day2+Day3 | DONE | followSpace + likes 2097357171646161266, 2097440425619460437, 2097696741524967728 |
 | - | ODDFACES | DONE | Google Form submitted ok | @osbornrdx | 0x8CCE...282D | reply: https://x.com/osbornrdx/status/2098064540986642467, quote: https://x.com/osbornrdx/status/2098162541390348308 |
+
+
+## 2026-09-10 Scan & Execute (cont.)
+| # | Project | Status | Detail |
+|---|---------|--------|--------|
+| - | ZOOKLANDIA | PARTIAL | 3/6 missions: Post1 RT+Like, Post2 RT+Like, Follow+Notifs | Comments on X: 2098166001770856558, 2098166746750619787 | wallet pending server verification |
+
+| - | Motif | PENDING | X OAuth + Turnstile challenge (CF managed) | needs CloakBrowser |
+
+| - | Epic of Gilgamesh | TIMED-MINT | 2,222 Books on Robinhood Chain, mint Sep 11 13:00 UTC | check without connect at epicofgilgamesh.io/mint | our EVM 0x8CCE...282D |
