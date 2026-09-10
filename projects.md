@@ -3228,3 +3228,9 @@
 | - | Motif | PENDING | X OAuth + Turnstile challenge (CF managed) | needs CloakBrowser |
 
 | - | Epic of Gilgamesh | TIMED-MINT | 2,222 Books on Robinhood Chain, mint Sep 11 13:00 UTC | check without connect at epicofgilgamesh.io/mint | our EVM 0x8CCE...282D |
+
+| - | HAZELS | SKIPPED | GTD WL | studio.hazels.io | wallet connect required |
+| - | PRDCTR | SKIPPED | Loyalty hub | wallet + X/Discord connect |
+| - | World XYZ | SKIPPED | Solana | Phantom wallet + trade |
+| - | Liquid Launch | SKIPPED | OG claim | wallet connect |
+| - | ORO | SKIPPED | Keplr/Zigchain wallet |
