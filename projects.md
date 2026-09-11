@@ -3306,3 +3306,24 @@
 | - | World XYZ | SKIPPED | Solana | Phantom wallet + trade |
 | - | Liquid Launch | SKIPPED | OG claim | wallet connect |
 | - | ORO | SKIPPED | Keplr/Zigchain wallet |
+
+## 2026-09-11 Scan & Execute
+
+### #230 AGNT Weekly Socials | S3 Week 8 - Day 4 - WARN PARTIAL (X tasks done, creds blocked on X OAuth)
+- **Date:** 2026-09-11 | **URL:** https://app.galxe.com/quest/AGNTHub/GCbDitZhV7 (msg 127592)
+- **Type:** Galxe Quest - AGNT Hub (space ID 77675, alias `AGNTHub`), campaign `GCbDitZhV7` (type `Points`, status `Active`)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **API pipeline (SIWE, browserless):**
+  - OK SIWE SignIn -> JWT OK
+  - OK followSpace (AGNT Hub, ID 77675) -> `{"followSpace":1}`
+  - WARN 5 creds found; all `syncCredentialValue` -> `allow:false` / `missing twitter args`
+- **X Tasks (real actions, @osbornrdx):**
+  - OK Like [agnt_hub tweet 2098079343607996806](https://x.com/agnt_hub/status/2098079343607996806) -> `unlike` testid confirmed (liked)
+  - OK Like [TruthAgentAI tweet 2098083247561331171](https://x.com/TruthAgentAI/status/2098083247561331171) -> `unlike` testid confirmed (liked)
+- **Cred blockers (architectural - X OAuth not linked to Galxe account):**
+  - `TWITTER agnt_hub - Tweet Liker` -> `{"message":"missing twitter args","reason":"missing twitter args"}`
+  - `TWITTER TruthAgentAI - Tweet Liker` -> same `missing twitter args`
+  - `GALXE_ID Visit the AGNT Hub post` / `Visit the Instagram post` / `Visit the Truth post` -> `allow:false` (visit-based creds need real browser visit + X OAuth)
+- **Mock mode check:** `twitterOauth2Status` -> `mockFollow/mockLike/mockRetweet/mockQuote: true` (mock mode ON does NOT bypass - Geetest + OAuth are independent gates)
+- **Remaining manual step:** Link X (@osbornrdx) to Galxe account via Settings -> Social; then TWITTER creds auto-verify. Like actions are already performed.
+- **Source:** Drop 127592 from @airdropfind
