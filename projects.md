@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (03:00 UTC)**
+> Last updated: **Sep 11, 2026 (03:25 UTC)**
 
 ---
 
@@ -3238,6 +3238,21 @@
 - **Form Submit (verified):** Browser fill (email checkbox ✓, Follow:@osbornrdx, RT/Comment proof URL, Tag proof URL, X handle @osbornrdx, EVM wallet) → **"Your response has been recorded."**
 - **Source:** Drop 127582 from @airdropfind — https://x.com/PixelRealmsNfts/status/2095954929064308771
 
+
+### #237 The Reservoir — $RSV Whitelist (127583) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://www.thereservoir.xyz/#whitelist
+- **Type:** Vite static site → direct Supabase PostgREST insert (`whitelist_individual`). 5 mandatory X tasks + quote-tweet URL + EVM wallet + reason.
+- **Chain:** Robinhood Chain | **Supply:** 3333 Vessels | **Price:** Free mint | Mint date TBA
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **Source tweet:** [2098160660240793677](https://x.com/Thereservoirnft/status/2098160660240793677)
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @thereservoirnft → https://x.com/Thereservoirnft (button shows "Mengikuti")
+  - ✅ Like announcement [2098160660240793677](https://x.com/Thereservoirnft/status/2098160660240793677) (unlike state confirmed)
+  - ✅ Retweet same post via intent confirm dialog ("Posting ulang" → `unretweet` state)
+  - ✅ Comment (reply) → [2098249716060639515](https://x.com/osbornrdx/status/2098249716060639515)
+  - ✅ Quote tweet → [2098249857693843477](https://x.com/osbornrdx/status/2098249857693843477) ("Kutipan" quote card confirmed)
+- **Submit (verified):** Browserless Supabase insert → `POST https://zyesetyibtgzefmfjref.supabase.co/rest/v1/whitelist_individual` with publishable key `sb_publishable_V0Ozfe...` + `{quote_tweet_url, wallet_address, x_handle, reason}` → **HTTP 201**. ⚠️ Must NOT send `Prefer: return=representation` (RLS has no SELECT-back policy → 42501); default minimal insert succeeds.
+- **Source:** Drop 127583 from @airdropfind
 
 ## 2026-09-10 Scan & Execute
 | # | Project | Status | Detail |
