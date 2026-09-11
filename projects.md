@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (03:55 UTC)**
+> Last updated: **Sep 11, 2026 (08:05 UTC)**
 
 ---
 
@@ -3268,6 +3268,20 @@
   - ✅ Quote retweet with required copy "I joined the Slippy Club" → [2098257423446507987](https://x.com/osbornrdx/status/2098257423446507987)
 - **Submit (verified):** In-page 4-step panel completed via MCP Chrome — handle `@osbornrdx` + wallet `0x8CCE...282D` → `POST /api/whitelist` → response: **"That wallet is already on the list."** (server confirmed registration; prior session already recorded this wallet)
 - **Source:** Drop 127585 from @airdropfind
+
+### #239 Pixel Realms Whitelist — docs.google.com/forms (127591) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://docs.google.com/forms/u/0/d/e/1FAIpQLSeMuW3i04s6RP2qPnqRho0PCXGEYDe0yYAIirzQuzvPlS1wxw/viewform
+- **Type:** Public Google Form (5 questions) — Follow + Engage (Like/RT/Comment) + Tag 1 Friend + X handle + EVM wallet. Source: [2095954929064308771](https://x.com/PixelRealmsNfts/status/2095954929064308771)
+- **Project:** Pixel Realms — 4,444 pixel-art 1/1 characters, coming soon on @Arc | Free mint TBA (~0.0005 ETH / ~$1)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @PixelRealmsNfts → https://x.com/PixelRealmsNfts (button shows "Mengikuti @PixelRealmsNfts")
+  - ✅ Like announcement [2097981627175686487](https://x.com/PixelRealmsNfts/status/2097981627175686487) (`unlike` state = liked, 505 likes)
+  - ✅ Repost same post (`unretweet` state = reposted, 454 RTs)
+  - ✅ Comment → [2098240180973178902](https://x.com/osbornrdx/status/2098240180973178902) ("@PixelRealmsNfts @arc @opensea...")
+  - ✅ Tag 1 friend → [2098240746931568932](https://x.com/osbornrdx/status/2098240746931568932) ("@PixelRealmsNfts @ZookLandia check this out fren")
+- **Form Submit (verified):** MCP Chrome browser fill — email checkbox ✅ + follow proof `@osbornrdx` + like/RT/comment proof URL + tag-friend proof URL + X handle `@osbornrdx` + wallet `0x8CCE...282D` → **"Your response has been recorded."** (fbzx=-6264530579076537351)
+- **Source:** Drop 127591 from @airdropfind
 
 
 ## 2026-09-10 Scan & Execute
