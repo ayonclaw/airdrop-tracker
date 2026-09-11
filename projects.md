@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (08:05 UTC)**
+> Last updated: **Sep 11, 2026 (10:05 UTC)**
 
 ---
 
@@ -97,6 +97,13 @@
 
 
 ### #204 AKA Whitelist — aka.fun/whitelist?ref=S8EH1BCX (127427) — ⚠️ PENDING (X tasks done)
+- **🔎 Mint-Checker LIVE (Sep 11, drop 127594):** https://aka.fun/mint-check — "Find yourself" status page. Browserless API: `GET https://testnet.aka.fun/api/mint-check/?q=<wallet>` → `{spot, tier, handle, avatar}`.
+  - Batch stats: `GET /api/mint-check/count/` → **GTD 63 + WL 2888 = 2925 spots** (first batch; more to come). WL registrations total: **53,535**.
+  - ❌ **All 12 of our EVM wallets return `spot:false, tier:null`** — airdrop_00 `0x8CCE...282D`, airdrop_01..11, galleria set. NOT in batch 1.
+  - Batch 1 filled from 53,535 registrations → 2,925 spots (~5.5% hit rate). Next batch TBA — re-check periodically.
+  - Recheck cmd: `for w in <addrs>; do curl -s "https://testnet.aka.fun/api/mint-check/?q=$w"; done`
+- **Source (checker):** Drop 127594 → https://x.com/akadotfun/status/2098343244065345729
+
 - **Date:** 2026-09-05 | **URL:** https://aka.fun/whitelist?ref=S8EH1BCX
 - **Reward:** 4,444 supply DN404 (NFT + ERC-20 hybrid) on Arc, mainnet Sep 16
 - **Type:** Reown AppKit / WalletConnect waitlist — NEW wallet connect + X bind + Follow + Retweet → submit
