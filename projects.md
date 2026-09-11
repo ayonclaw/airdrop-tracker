@@ -1,9 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (16:20 UTC)**
+> Last updated: **Sep 11, 2026 (16:55 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #241 Diamond Reserve — GTD Application (127599) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSf6Nho2tfstb7ZIww3-hfxYtOAx8CLtKTHeUH69d8LtwYRhGg/viewform | **Mint:** 3,000 digital membership certificate NFTs on @opensea (Robinhood ecosystem — @RobinhoodApp)
+- **Type:** Public Google Form GTD → X follow + quote-tweet + EVM wallet submit. Source: [2098179463267704900](https://x.com/TheVaultOfGems/status/2098179463267704900) (@TheVaultOfGems)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @TheVaultOfGems → https://x.com/TheVaultOfGems (intent follow confirmed, autocomplete showed "Mengikuti")
+  - ✅ Quote post of source tweet (NOT RT) → [2098453346860581141](https://x.com/osbornrdx/status/2098453346860581141) ("Postingan Anda sudah terkirim.")
+- **Form Submit (verified):** Filled X username `@osbornrdx` + quote link `https://x.com/osbornrdx/status/2098453346860581141` + EVM wallet `0x8CCE...282D` + "Record email" checkbox → **"Your response has been recorded."**
+- **Intel:** Supply 3,000. Minting on @opensea, mint link dropping soon. FREE MINT. On-chain mint will need real MetaMask unlock + gas at mint time.
+- **Source:** Drop 127599 from @airdropfind
 
 ### #240 The Hooded — GTD / Giveaway (127598) — ✅ DONE
 - **Date:** 2026-09-11 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLScv_FlmLHE62SXzmXhhDkhCYLikhjj51ssDhUVYCdPjSxC_pg/viewform | **Mint:** [The Hooded](https://opensea.io/collection/the-hooded-ape) on Robinhood Chain
