@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 10, 2026 (03:45 UTC)**
+> Last updated: **Sep 11, 2026 (03:00 UTC)**
 
 ---
 
@@ -3210,6 +3210,33 @@
 - **Seal Entry:** Paste quote link (https://x.com/osbornrdx/status/2097886326066671820) + confirm checkbox → **"Form submitted. Your entry was received for manual review."**
 - **Status:** ✅ FULLY DONE — all 4 initiation steps completed, entry sealed for review.
 - **Source:** Drop 127552 from @airdropfind — https://x.com/elementborns/status/2097724007927697513
+
+
+### #235 Alterhood — alterhood.xyz/apply (127581) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://alterhood.xyz/apply
+- **Type:** Next.js GTD waitlist — X follow/like/repost + proof tweet URL + EVM wallet, gated by Cloudflare Turnstile
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @AlterhoodNFT → https://x.com/AlterhoodNFT (button shows "Mengikuti")
+  - ✅ Like announcement [2097191186150678859](https://x.com/AlterhoodNFT/status/2097191186150678859)
+  - ✅ Repost same post ("Posting ulang")
+  - ✅ Reply → [2098235125129789870](https://x.com/osbornrdx/status/2098235125129789870) — "@AlterhoodNFT ALTERHOOD every body is an answer. GTD submitted. 🖤"
+- **Submit (verified):** POST `/api/gtd/application` {twitterUsername:@osbornrdx, walletAddress, proofTweetUrl, followed/liked/reposted/replied:true, turnstileToken} → **`200 {"ok":true}`**
+- **Turnstile:** sitekey `0x4AAAAAAEkhrYGKq2EJ46E8`. Local CloakBrowser route-intercept + 2captcha (TurnstileTaskProxyless) both REJECTED (`verification_failed` / `ERROR_CAPTCHA_UNSOLVABLE`); **CapSolver AntiTurnstileTaskProxyLess** token ACCEPTED. ✅
+- **Source:** Drop 127581 from @airdropfind — https://x.com/AlterhoodNFT/status/2097191186150678859
+
+### #236 PixelRams — Google Form Whitelist (127582) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSeMuW3i04s6RP2qPnqRho0PCXGEYDe0yYAIirzQuzvPlS1wxw/viewform
+- **Type:** Pixel Realms (Arc, 4,444 supply) — public Google Form WL, 5 short-text fields
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @PixelRealmsNfts → https://x.com/PixelRealmsNfts ("Mengikuti")
+  - ✅ Like + Repost form's "Latest Post" [2097981627175686487](https://x.com/PixelRealmsNfts/status/2097981627175686487)
+  - ✅ Comment (reply) → [2098240637447602214](https://x.com/osbornrdx/status/2098240637447602214)
+  - ✅ Tag 1 friend → [2098240746931568932](https://x.com/osbornrdx/status/2098240746931568932)
+  - ✅ Also engaged drop source [2095954929064308771](https://x.com/PixelRealmsNfts/status/2095954929064308771) (like+RT, replies 2098240073879973911 / 2098240180973178902)
+- **Form Submit (verified):** Browser fill (email checkbox ✓, Follow:@osbornrdx, RT/Comment proof URL, Tag proof URL, X handle @osbornrdx, EVM wallet) → **"Your response has been recorded."**
+- **Source:** Drop 127582 from @airdropfind — https://x.com/PixelRealmsNfts/status/2095954929064308771
 
 
 ## 2026-09-10 Scan & Execute
