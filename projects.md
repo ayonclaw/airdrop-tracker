@@ -3320,7 +3320,7 @@
 |---|---------|--------|--------|
 | - | KITSUNE (kitsunerh.xyz) | DONE | WL sealed, App ID KTSN-784916EF, @osbornrdx | wallet 0x8CCE...282D | proof RT: https://x.com/KitsuneOnRH/status/2097371672521162880, reply: https://x.com/osbornrdx/status/2098158290488414280 |
 | - | AGNT Galxe Day2+Day3 | DONE | followSpace + likes 2097357171646161266, 2097440425619460437, 2097696741524967728 |
-| - | ODDFACES | DONE | Google Form submitted ok | @osbornrdx | 0x8CCE...282D | reply: https://x.com/osbornrdx/status/2098064540986642467, quote: https://x.com/osbornrdx/status/2098162541390348308 |
+| - | ODDFACES (oddfacesnft_) | DONE | Google Form submitted ("You've already responded") | @osbornrdx | 0x8CCE...282D | follow @ODDFACESNFT_ ✅, like+repost: https://x.com/ODDFACESNFT_/status/2097773827094638872, reply: https://x.com/osbornrdx/status/2098064540986642467, quote: https://x.com/osbornrdx/status/2098162541390348308 |
 
 
 ## 2026-09-10 Scan & Execute (cont.)
