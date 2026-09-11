@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (03:25 UTC)**
+> Last updated: **Sep 11, 2026 (03:55 UTC)**
 
 ---
 
@@ -3253,6 +3253,22 @@
   - ✅ Quote tweet → [2098249857693843477](https://x.com/osbornrdx/status/2098249857693843477) ("Kutipan" quote card confirmed)
 - **Submit (verified):** Browserless Supabase insert → `POST https://zyesetyibtgzefmfjref.supabase.co/rest/v1/whitelist_individual` with publishable key `sb_publishable_V0Ozfe...` + `{quote_tweet_url, wallet_address, x_handle, reason}` → **HTTP 201**. ⚠️ Must NOT send `Prefer: return=representation` (RLS has no SELECT-back policy → 42501); default minimal insert succeeds.
 - **Source:** Drop 127583 from @airdropfind
+
+### #238 Slippy Club NFT Whitelist — nft.slippy.club (127585) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://nft.slippy.club/
+- **Type:** Vite SPA + 4-step in-page whitelist panel (`aside[aria-label="SLIPPY whitelist"]`, hash `#whitelist-entry`). Steps: 1) Follow @Slippyclub → 2) Engage (Like+Comment+Quote) → 3) X handle → 4) Robinhood Chain wallet. Submit → `POST /api/whitelist` `{xHandle, wallet, source:"workshop"}`.
+- **Chain:** Robinhood Chain | **Supply:** 3333 | **Price:** Free mint | "One wallet per X account", steps 1-2 hand-verified
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **Source tweet:** [2098109264480845932](https://x.com/Slippyclub/status/2098109264480845932)
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @Slippyclub → https://x.com/Slippyclub (button shows "Mengikuti @Slippyclub")
+  - ✅ Like announcement [2098109264480845932](https://x.com/Slippyclub/status/2098109264480845932) (`unlike` state = liked, 2389 likes)
+  - ✅ Repost same post (intent confirm → `unretweet` state, 2343 RTs)
+  - ✅ Comment (reply) → [2098257122509443338](https://x.com/osbornrdx/status/2098257122509443338) ("I joined the Slippy Club 🐍")
+  - ✅ Quote retweet with required copy "I joined the Slippy Club" → [2098257423446507987](https://x.com/osbornrdx/status/2098257423446507987)
+- **Submit (verified):** In-page 4-step panel completed via MCP Chrome — handle `@osbornrdx` + wallet `0x8CCE...282D` → `POST /api/whitelist` → response: **"That wallet is already on the list."** (server confirmed registration; prior session already recorded this wallet)
+- **Source:** Drop 127585 from @airdropfind
+
 
 ## 2026-09-10 Scan & Execute
 | # | Project | Status | Detail |
