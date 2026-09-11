@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (10:05 UTC)**
+> Last updated: **Sep 11, 2026 (16:20 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #240 The Hooded — GTD / Giveaway (127598) — ✅ DONE
+- **Date:** 2026-09-11 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLScv_FlmLHE62SXzmXhhDkhCYLikhjj51ssDhUVYCdPjSxC_pg/viewform | **Mint:** [The Hooded](https://opensea.io/collection/the-hooded-ape) on Robinhood Chain
+- **Type:** Public Google Form GTD/giveaway → EVM wallet submit. Source: [2097639319053996187](https://x.com/hitmanbgm/status/2097639319053996187) (@hitmanbgm)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @hitmanbgm → https://x.com/hitmanbgm (button flipped to "unfollow" = following)
+  - ✅ Like pinned tweet [2097639319053996187](https://x.com/hitmanbgm/status/2097639319053996187) (like button → unlike state confirmed)
+  - ✅ Retweet same post ("Posting ulang" confirmed, unretweet state present)
+  - ✅ Reply/comment posted → [2098446107986850268](https://x.com/osbornrdx/status/2098446107986850268)
+- **Form Submit (verified):** Filled X (Twitter) Username `@osbornrdx` + Wallet Address (EVM) `0x8CCE...282D` + comment link + "Are you following on X? Yes" checkbox + "How did you discover" = X / Twitter → **"Your response has been recorded."**
+- **Intel:** Supply reduced to 500 (per @hitmanbgm follow-up). Mint Sept 12: 9:00 AM UTC mint opens / 9:30 AM GTD / 10:30 AM Public. Robinhood Chain — on-chain mint needs real MetaMask unlock + gas (TLS-blocked RPC from VPS).
+- **Source:** Drop 127598 from @airdropfind
 
 ### #229 SatoId — 888 Mechanism Whitelist (127518) — ✅ DONE
 - **Date:** 2026-09-08 | **URL:** https://www.satoid.site
