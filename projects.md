@@ -3413,3 +3413,17 @@
   - OK Like source post -> https://x.com/CryptoPons/status/2096949853431513181 (`unlike` testid confirmed)
   - OK Repost source post -> same URL (`unretweet` testid confirmed; RT count 397->398)
 - **Source tweet:** https://x.com/CryptoPons/status/2096949853431513181 | **Source:** Drop 127605 from @airdropfind
+
+### #245 ArcNormies — Whitelist (msg 127606) — DONE
+- **Date:** 2026-09-12 | **URL:** https://www.normiesarc.xyz/?ref=6920bb74 | **Supply:** 5,000 | **Reward:** None
+- **Type:** Type 2/3 hybrid — Supabase-backed X-OAuth whitelist (`@supabase/supabase-js` ESM). RLS on `submissions` blocks anon INSERT (HTTP 401 `42501` "new row violates row-level security policy") → real Supabase `auth.signInWithOAuth({provider:"x"})` session is mandatory (`user_id = auth.uid()`). Anon SELECT is permitted on `settings` + `submissions` but `submissions` is empty-read to anon.
+- **Config (public in `assets/config.js`):** SUPABASE_URL `https://qamuaqspumcgntfujidx.supabase.co`, anon key embedded. Task URLs from `settings` table: follow `x.com/NormiesARC`, like_retweet + wallet_post `x.com/NormiesARC/status/2098430071640076713`.
+- **Auth flow:** `connectBtn` → `supabase.auth.signInWithOAuth({provider:"x", redirectTo:"https://www.normiesarc.xyz/?ref=6920bb74"})` → `x.com/i/oauth2/authorize` (scopes users.email tweet.read users.read offline.access) → "Izinkan aplikasi" → redirect back with `#` fragment session. Handle pill resolved to `@osbornrdx`.
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @NormiesARC → https://x.com/NormiesARC (intent follow, profile shows "Mengikuti")
+  - ✅ Like source post → https://x.com/NormiesARC/status/2098430071640076713 (`unlike` testid confirmed)
+  - ✅ Repost source post → same URL (`unretweet` testid confirmed)
+  - ✅ Reply wallet on pinned post → https://x.com/osbornrdx/status/2098596851264192636
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Ref:** `6920bb74`
+- **Submission:** in-app `submissions.insert({user_id, twitter_username:"osbornrdx", wallet_address, followed:true, liked_retweeted:true, dropped_wallet_reply:true, referred_by:"6920bb74"})` → result panel **"You're on the list ✅"**, own referral code **`453dea75`** → https://www.normiesarc.xyz/?ref=453dea75
+- **Source tweet:** https://x.com/NormiesARC/status/2098430071640076713 | **Source:** Drop 127606 from @airdropfind
