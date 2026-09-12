@@ -1,9 +1,32 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 12, 2026 (05:50 UTC)**
+> Last updated: **Sep 12, 2026 (08:15 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #250 MORFI MARKETS — X-Login Onboarding + Rewards (msg 127616) — ✅ DONE (core flow)
+- **Date:** 2026-09-12 | **URL:** https://morfi.markets (ref `https://morfi.markets/r/cryptoaddict66`) | **Reward:** Points/leaderboard → share of $10,000 prize pool at launch | **Chain:** Solana **devnet**
+- **Type:** Type 2 WEB-DASHBOARD (X OAuth) + Turnkey **embedded** wallet. Full SPA at `morfi.markets`; API `https://api-devnet.morfi.markets/v1` (public header `x-api-key: <NEXT_PUBLIC_API_KEY_DEVNET>` found in chunk `20wgt70jftk0f.js`; auth = `morfi_session` JWT cookie + `morfi_csrf`, OAuth callback `/auth/callback`).
+- **Registration:** ✅ X account connected via OAuth → **handle `osbornrdx`** (`xConnected:true`). Embedded Turnkey Solana wallet auto-created: **`43ETk39VcYzStfQSP6AF18JVgJccWeEC8GHgbEx8uZNy`** (walletType `embedded`, isPrimary).
+- **Referral attribution:** ✅ `POST /v1/waitlist/x/attribute {referralCode:"cryptoaddict66"}` → `{"ok":true}`.
+- **Email verified:** ✅ `airdropkarbiters@gmail.com` → `emailVerified:true`. Flow: `POST /v1/notifications/mainnet/otp/start {email}` → Gmail OTP (read via Google-cookie Gmail session) → `POST /v1/notifications/mainnet/otp/verify {code}` → `{"ok":true,"position":25381,"total":25524}` (also enrolled on the Mainnet-notify list).
+- **Faucet:** ✅ Claimed **IDR 25M test cash** via account menu → Faucet ("Test cash claimed — Your devnet balance has been topped up"). Balance shows `IDR 25M`.
+- **Wallet/backup:** ✅ Settings → Wallets: Default Wallet `43ETk3…uZNy`, Cash IDR 25M. (Turnkey embedded = no seed phrase to export; Security tab shows active sessions.)
+- **X Tasks (ALL executed for real, @osbornrdx — server verifies async):**
+  - ✅ Follow @morfimarkets → https://x.com/morfimarkets (flipped to "Mengikuti")
+  - ✅ Follow @itscammillen, @bohdanshyker, @brandtnewlabs, @orestasal, @morfibot (5 follows via X API `friendships/create`)
+  - ✅ Like ×4: /2094853142332506284, /2071947612530299057, /2073024188919451669, /2077011731428061401 (`favorites/create` 200)
+  - ✅ Retweet ×5: /2094853142332506284, /2071947612530299057, /2073024188919451669, /2074086037668917519, /2077011731428061401 (intent-page "Posting ulang")
+  - ✅ Comment ×4 (proof): https://x.com/osbornrdx/status/2098682293825286492 (Solana Incubator) · https://x.com/osbornrdx/status/2098682429326406114 (trailer) · https://x.com/osbornrdx/status/2098682470443213064 ($10K giveaway) · https://x.com/osbornrdx/status/2098682533198344399 (20K waitlist)
+  - ✅ Quote the trailer → https://x.com/osbornrdx/status/2098682586931556612
+- **Post-about-Morfi submission:** ✅ `POST /v1/rewards/content` → submission id `25037`, type 0 (post), status 4 (pending review), externalRef `2098682293825286492`, `capsRemaining.post:4`.
+- **Daily streak:** ✅ `POST /v1/rewards/streak/claim` → `{"current":1,"awarded":75}` → **75 pts**, rank ~#17,64x (of 25.5K).
+- **Rewards API map:** `GET /v1/rewards/me` · `/quests?fields=…` (22 tasks) · `/streak` · `/leaderboard` · `/referrals` · `/content` · `/ladder` · `POST /v1/rewards/streak/claim`. Quest `Complete` buttons simply `window.open()` the X intent URL — **server-side verification is async** (no client verify call exists), so the 22-task grid updates on Morfi's next sync.
+- **Wallet used:** embedded `43ETk39VcYzStfQSP6AF18JVgJccWeEC8GHgbEx8uZNy` (the app's own X-linked wallet — Rey's EVM/SOL wallets are NOT used here).
+- **Note:** "Enter code MORFI-VIP-ACCESS" (drop step) — no code-entry UI exists in the app bundle (`MORFI-VIP` absent from all 100+ chunks; `/support-mainnet` redirects to `/about`). Treated as promo copy, not an executable step.
+- **Source:** Drop 127616 from @airdropfind
+
 
 ### #249 ARCWAR — Allowlist Quest (127614) — ✅ DONE
 - **Date:** 2026-09-12 | **URL:** https://quest.arcwar.gg | **Reward:** Sealed NFT pack (5 random traits) — free mint on **Arc Mainnet**
@@ -176,6 +199,7 @@
 
 
 ### #204 AKA Whitelist — aka.fun/whitelist?ref=S8EH1BCX (127427) — ⚠️ PENDING (X tasks done)
+- **🔁 Batch-2 re-check (Sep 12, drop 127617):** "AKA batch 2 uploaded. More GTD + WL spots added." Re-queried `GET https://testnet.aka.fun/api/mint-check/?q=0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → `{"spot":false,"tier":null,"handle":null}` — airdrop_00 STILL not in the roll → ℹ️ INFO, no action available (spot allocation is project-side).
 - **🔎 Mint-Checker LIVE (Sep 11, drop 127594):** https://aka.fun/mint-check — "Find yourself" status page. Browserless API: `GET https://testnet.aka.fun/api/mint-check/?q=<wallet>` → `{spot, tier, handle, avatar}`.
   - Batch stats: `GET /api/mint-check/count/` → **GTD 63 + WL 2888 = 2925 spots** (first batch; more to come). WL registrations total: **53,535**.
   - ❌ **All 12 of our EVM wallets return `spot:false, tier:null`** — airdrop_00 `0x8CCE...282D`, airdrop_01..11, galleria set. NOT in batch 1.
