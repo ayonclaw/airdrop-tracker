@@ -1,9 +1,34 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 12, 2026 (08:15 UTC)**
+> Last updated: **Sep 12, 2026 (09:20 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #251 SIGNAL WORKS — 500 USDT Giveaway (Galxe Survey) (msg 127618) — ✅ DONE
+- **Date:** 2026-09-12 | **URL:** https://app.galxe.com/quest/gG4ajxHPPe3MFM3Cjsc7sx/GCDxitZfdp | **Reward:** 500 USDT pool (100 winners x 5 USDT)
+- **Type:** Type 10 GALXE-QUEST (Survey) + GGEX exchange registration requirement.
+- **GGEX account:** ✅ created `airdropkarbiters@gmail.com` (creds: `/home/ubuntu/airdrop/credentials/ggex/ggex_account.txt`). Signup via `POST api.ggex.io/api/v1/user/signup` (reCAPTCHA v2 solved via CapSolver) → email verify code `229726` → `signupcertification` OK. Login `signinSingle` → 2FA email code `876207` → `signinSinglePW2FACheck` OK.
+- **GGEX UID:** `1274922334` (`UserViewID`, decrypted from EncUserInfo AES with sha1(UserToken)[:32]).
+- **Galxe:** SIWE JWT ✅ | followSpace **SIGNAL WORKS** (space 86706) ✅
+- **Survey submitted** via `syncCredentialValue` — `syncOptions.survey.answers = ["0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","1274922334","airdropkarbiters@gmail.com"]` → server stored answers (allow:false pending rolling review; final Galxe Verify 21–22 Sep 2026).
+- **Survey fields:** EVM Wallet / GGEX UID (10 digits) / Email — order confirmed via `credential.metadata.survey.surveies`.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Email:** `airdropkarbiters@gmail.com` | **Source:** Drop 127618 from @airdropfind
+
+---
+
+### #252 SWEEP — $100K Reward Pool (Galxe Campaign) (msg 127619) — ⚠️ PARTIAL
+- **Date:** 2026-09-12 | **URL:** https://app.galxe.com/quest/Sweep/GCA1RtZ2gS | **Reward:** $100,000 pool
+- **Type:** Type 10 GALXE-QUEST (Parent campaign, 4 sub-campaigns).
+- **Galxe:** SIWE JWT ✅ | followSpace **Sweep** (space 86682) ✅
+- **X tasks (real, @osbornrdx):**
+  - ✅ Follow @SweepGlobal → https://x.com/SweepGlobal (intent page — "Mengikuti")
+  - ✅ Like announcement → https://x.com/GalxeQuest/status/2097735052167684522 (`unlike` testid confirmed)
+  - ✅ Repost announcement → same URL (`unretweet` testid confirmed)
+- **Blocked (12 creds):** TWITTER creds → `missing twitter args` (needs X OAuth linked to Galxe at account level); TELEGRAM → `empty address`; EMAIL creds (Sign Up on Website / KYC / Play SweepBird / Invite 1·10·25·50·100 Friends) → `allow:false` (needs Sweep site account + KYC + referrals); GALXE_ID (Refer Friends) → `allow:false`.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx | **Source:** Drop 127619 from @airdropfind
+
+---
 
 ### #250 MORFI MARKETS — X-Login Onboarding + Rewards (msg 127616) — ✅ DONE (core flow)
 - **Date:** 2026-09-12 | **URL:** https://morfi.markets (ref `https://morfi.markets/r/cryptoaddict66`) | **Reward:** Points/leaderboard → share of $10,000 prize pool at launch | **Chain:** Solana **devnet**
@@ -1925,9 +1950,11 @@
 - **URL:** https://opensea.io/collection/base3rd/overview
 - **Status:** ⚠️ Mint check only (needs wallet connect on OpenSea)
 
-### 26. Pear Rewards — New Tasks Check
+### 26. Pear Rewards — Daily Streak Claim (Sep 12, 2026)
 - **URL:** https://rewards.pear.trade
-- **Status:** ℹ️ Recurring tasks only (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Existing cron handles daily claims.
+- **Status:** ✅ DONE — daily streak claimed **Sep 12 2026** (streak 3→4 days, **+93 pts**)
+- **Balance:** 4,912 pts · Rank **#42** (waitlist tier)
+- **Note:** Recurring tasks only (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Existing cron handles daily claims.
 
 
 ### 27. MBX Trade & Earn — FCFS 5 USDT
