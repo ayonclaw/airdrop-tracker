@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 12, 2026 (09:45 UTC)**
+> Last updated: **Sep 12, 2026 (10:20 UTC)**
 
 ---
 
@@ -3446,3 +3446,16 @@
 - **Source:** Drop 127607 from @airdropfind
 
 ---
+
+### #247 HOODBABES — Application Portal (msg 127608) — ✅ DONE
+- **Date:** 2026-09-12 | **URL:** https://hoodbabesnft.com/ | **Reward:** None (WL) | **Supply:** n/a (application review model)
+- **Type:** Type 4 BROWSERLESS (Supabase PostgREST RPC) — Vite/React SPA, no SSR. Backend fully open via anon key.
+- **Recon:** `assets/index-DH5xB-Dt.js` → `pc="https://efjomeyqocpkmuwgqrpa.supabase.co"` + anon JWT (`dc`). Submission is an RPC: `POST /rest/v1/rpc/submit_application {p_x_username, p_wallet_address, p_quote_tweet_link, p_discord_username}`. Task list from `POST /rest/v1/rpc/get_dynamic_tasks` → 3 tasks (follow / like / quote).
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @Hoodbabesnft → https://x.com/Hoodbabesnft (intent page "Ikuti @Hoodbabesnft" clicked)
+  - ✅ Like pinned post → https://x.com/Hoodbabesnft/status/2098056472806527098 (`unlike` testid confirmed = liked)
+  - ✅ Quote the pinned post (tagged 2 accounts) → https://x.com/osbornrdx/status/2098611807866990969
+- **Quote proof URL submitted:** https://x.com/osbornrdx/status/2098611807866990969
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Discord:** N/A
+- **Submission:** `POST /rest/v1/rpc/submit_application` → **`{"id":"47f51de6-e911-4f27-9ec3-3bdd5dabd1e9","message":"Application submitted successfully.","success":true}`** (2nd call HTTP 400 DUPLICATE_WALLET = first landed)
+- **Source tweet:** https://x.com/Hoodbabesnft/status/2098056472806527098 | **Source:** Drop 127608 from @airdropfind
