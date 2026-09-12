@@ -3537,3 +3537,12 @@
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Discord:** N/A
 - **Submission:** `POST /rest/v1/rpc/submit_application` → **`{"id":"47f51de6-e911-4f27-9ec3-3bdd5dabd1e9","message":"Application submitted successfully.","success":true}`** (2nd call HTTP 400 DUPLICATE_WALLET = first landed)
 - **Source tweet:** https://x.com/Hoodbabesnft/status/2098056472806527098 | **Source:** Drop 127608 from @airdropfind
+
+### #251 ORE/ORO Airdrop Update (ORE Points + Badge Share) — INFO / PENDING WALLET
+**Drop IDs:** 127626 (msg 127626, 2026-09-12)
+**Source:** @airdropfind — ORE Airdrop Update
+**Platform:** ORO (ZIGChain) — portal https://app.askoro.ai
+**Official tweet:** https://x.com/Ask_ORO/status/2098788729947103362
+**Tasks:** Follow @Ask_ORO (done), Like announcement (done), Repost announcement (done), Connect ZIGChain wallet (pending), Share badge (pending)
+**Status:** Social actions completed. Points-check and badge-share are wallet-gated (ZIGChain/MetaMask). App errors in headless Chrome. Manual via CloakBrowser + MetaMask recommended.
+**Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
