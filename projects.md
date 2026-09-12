@@ -1,9 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 12, 2026 (10:20 UTC)**
+> Last updated: **Sep 12, 2026 (11:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #248 USDC00L — Whitelist (127609) — ✅ DONE
+- **Date:** 2026-09-12 | **URL:** https://usdc00l.xyz/#whitelist | **Reward:** 10,000 c00l coins on **Arc Mainnet** (USDC-backed)
+- **Type:** Type 4 BROWSERLESS (Next.js API) — SPA with session-cookie waitlist flow. Endpoints: `GET /api/wl/state`, `POST /api/wl/start`, `POST /api/wl/task {task,action}`, `POST /api/wl/submit {address,website,turnstileToken}`. Task enum: follow, repost, like, comment, post. Server enforces `dwellMs:6000` between open→complete.
+- **X Tasks (all executed for real, @osbornrdx — verified via friendships/show + status/show + DOM testids):**
+  - ✅ Follow @usdc00l → https://x.com/usdc00l (`friendships/show` → `following:true`; button flipped to `Mengikuti` / `-unfollow` testid)
+  - ✅ Like launch post → https://x.com/usdc00l/status/2098022392635195512 (testid flipped `like`→`unlike`)
+  - ✅ Repost launch post → https://x.com/usdc00l/status/2098022392635195512 (`retweetConfirm` menu → testid flipped `retweet`→`unretweet`)
+  - ✅ Comment (reply) → https://x.com/osbornrdx/status/2098620102098997312 (submitted as proof; server rejected the source URL with `OWN_POST` until our own reply link was used)
+  - ✅ Post (generated banner share) → https://x.com/osbornrdx/status/2098620368969941126 (site `/api/wl/task {task:"post",action:"generate"}` → intentUrl posted; share code `eyJoIjoib3Nib3JucmR4Iiwi...`)
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
+- **Submission:** `POST /api/wl/submit {address, website:"", turnstileToken:""}` → **`{"ok":true,"address":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","handle":"osbornrdx","position":15999}`** HTTP 200
+- **Note:** `/api/wl/submit` REQUIRES the `address` key (sending `wallet` returns `{"error":"Required"}`). Turnstile field accepted empty — no captcha enforced server-side at submit time.
+- **Share/referral link:** https://usdc00l.xyz/s/eyJoIjoib3Nib3JucmR4IiwicyI6IjZiNGFhZWJiIiwidCI6MTc4OTE4NTAxODU4Nn0.tzugdjZSmVpxHOPl8veNDvbceqLoLQ5NzwHk9syhXig
+- **Source tweet:** https://x.com/usdc00l/status/2098022392635195512 | **Source:** Drop 127609 from @airdropfind
 
 ### #243 ZADDR — Whitelist (127604) — ✅ DONE
 - **Date:** 2026-09-12 | **URL:** https://zaddr.net/apply | **Supply:** 2,800 (Zcash shielded NFT, orchard pool) — mint "not scheduled", price undecided
