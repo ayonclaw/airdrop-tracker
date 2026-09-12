@@ -1,9 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 11, 2026 (16:55 UTC)**
+> Last updated: **Sep 12, 2026 (02:20 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #243 ZADDR — Whitelist (127604) — ✅ DONE
+- **Date:** 2026-09-12 | **URL:** https://zaddr.net/apply | **Supply:** 2,800 (Zcash shielded NFT, orchard pool) — mint "not scheduled", price undecided
+- **Type:** Type 2 WEB-DASHBOARD (X OAuth) — custom terminal-style "whitelist client" (zaddr 0.1.0). X OAuth session already live in MCP Chrome as @osbornrdx
+- **X Tasks (all executed for real, @osbornrdx, server-verified on-site):**
+  - ✅ Follow @zaddrnet → https://x.com/zaddrnet (site "verify" → `[x]`, profile shows "Mengikuti")
+  - ✅ Like + comment on launch post → Like on https://x.com/zaddrnet/status/2098376342580371874 (`unlike` testid confirmed) + reply https://x.com/osbornrdx/status/2098586418390196573 (task marked `done`, self-attest)
+  - ✅ Quote the launch post → https://x.com/osbornrdx/status/2098586082283839840 (site "verify" → server-side check passed, `[x]`)
+  - ✅ Repost source tweet → https://x.com/zaddrnet/status/2098376342580371874 (`unretweet` testid confirmed)
+- **ZEC address (Sapling, generated offline):** `zs102nl3aqvs0k77z5k8ngj3ssjf68qkr7p2uanpz4kwy0yc9jhrdwt8pnnc3e8duqgxhk36t6jvcf` — site validator returned `{"ok":true,"kind":"sapling"}` ("valid sapling — u1 preferred")
+- **ZEC wallet generated:** `~/airdrop/credentials/wallets/zec_wallet.txt` (mnemonic + `m/32'/133'/0'` + EFVK). Built with `@airgap/sapling-wasm` (librustzcash bindings) + BIP-173 bech32 encoder
+- **Result:** ✅ SUBMITTED — Application ID **ZA-1WIS41**, status **PENDING** (submitted → review → decision). Applications counter 1,405 → 1,409
+- **Proof card:** ZADDR WHITELIST ZA-1WIS41 @osbornrdx · address `zs102nl3aqvs…36t6jvcf`
+- **Source tweet:** https://x.com/zaddrnet/status/2098376342580371874 | **Source:** Drop 127604 from @airdropfind
+- **Intel:** Site warns "we watch who talks about zaddr on X — positive posts on your wall raise your chances" and "tasks undone after applying are detected too" → keep the follow/like/quote/repost live.
 
 ### #242 ByTeBoys — Whitelist (127603) — ✅ DONE
 - **Date:** 2026-09-12 | **URL:** https://byteboy.xyz/#whitelist | **Mint:** 3,333 BYTEBOY pixel identities on OpenSea (Robinhood Chain) — mint 13 Sep, free mint for GTD
@@ -1464,6 +1479,17 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+||||||||||| KieDex | S2 daily 2026-09-12: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+||||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
+||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT claimed first, then Oil; both flip to "Claimed") |
+||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
+||||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent — 0 "Open Task" links render) |
+||||||||||| | - "Close a winning trade" → 0/1 (position -1.99 USDT / -66% on margin — losing, skip) |
+||||||||||| | - "Open 5 trades" → 0/5 (needs 5 DIFFERENT pairs ≈ 200 Oil; skipped — market down, existing loser) |
+||||||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible) |
+||||||||||| | **BALANCES**: Oil **680** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot 1020 USDT, Futures 116.17 USDT, Total 1136.17 USDT |
+||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 77,310.00 → **-1.99 USDT**, liq 76,359.32) |
+||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close "winning trade"), "Use 10x+ leverage" already claimed, remaining missions need 200 Oil (5 pairs) or ~20k Oil ($1000 vol). Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk). |
 |||||||||| KieDex | S2 daily 2026-09-10: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 |||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil |
