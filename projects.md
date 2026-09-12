@@ -5,6 +5,19 @@
 
 ## ✅ COMPLETED
 
+### #242 ByTeBoys — Whitelist (127603) — ✅ DONE
+- **Date:** 2026-09-12 | **URL:** https://byteboy.xyz/#whitelist | **Mint:** 3,333 BYTEBOY pixel identities on OpenSea (Robinhood Chain) — mint 13 Sep, free mint for GTD
+- **Type:** Type 4 BROWSERLESS — vanilla JS `#wlForm` → `POST /api/whitelist {wallet}` (client sends ONLY the wallet; task state is NOT posted to server). Contract `0x2f4f99b4ab8f934fb83db72263e8954ebc12fad3` (chain: robinhood)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **API submit (verified):** `POST https://byteboy.xyz/api/whitelist` → `{"message":"Wallet submitted successfully!","success":true}` HTTP 200
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @biteboym → https://x.com/biteboym (intent follow; profile shows "Mengikuti")
+  - ✅ Repost source tweet → https://x.com/biteboym/status/2096703618103554112 (`unretweet` testid confirmed)
+  - ✅ Like source tweet → same tweet, `unlike` testid confirmed
+  - ✅ Reply (comment, tag 2 friends) → https://x.com/osbornrdx/status/2098574019654287388
+- **Source tweet:** https://x.com/biteboym/status/2096703618103554112 | **Source:** Drop 127603 from @airdropfind
+- **Intel:** Mint on Robinhood Chain — on-chain mint will need real MetaMask unlock + gas (RH chain RPC TLS-blocked from VPS).
+
 ### #241 Diamond Reserve — GTD Application (127599) — ✅ DONE
 - **Date:** 2026-09-11 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSf6Nho2tfstb7ZIww3-hfxYtOAx8CLtKTHeUH69d8LtwYRhGg/viewform | **Mint:** 3,000 digital membership certificate NFTs on @opensea (Robinhood ecosystem — @RobinhoodApp)
 - **Type:** Public Google Form GTD → X follow + quote-tweet + EVM wallet submit. Source: [2098179463267704900](https://x.com/TheVaultOfGems/status/2098179463267704900) (@TheVaultOfGems)
