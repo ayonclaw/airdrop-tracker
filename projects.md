@@ -1464,6 +1464,17 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+||||||||||| KieDex | S2 daily 2026-09-12: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+||||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
+||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT claimed first, then Oil; both flip to "Claimed") |
+||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
+||||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent — 0 "Open Task" links render) |
+||||||||||| | - "Close a winning trade" → 0/1 (position -1.99 USDT / -66% on margin — losing, skip) |
+||||||||||| | - "Open 5 trades" → 0/5 (needs 5 DIFFERENT pairs ≈ 200 Oil; skipped — market down, existing loser) |
+||||||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible) |
+||||||||||| | **BALANCES**: Oil **680** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot 1020 USDT, Futures 116.17 USDT, Total 1136.17 USDT |
+||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 77,310.00 → **-1.99 USDT**, liq 76,359.32) |
+||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close "winning trade"), "Use 10x+ leverage" already claimed, remaining missions need 200 Oil (5 pairs) or ~20k Oil ($1000 vol). Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk). |
 |||||||||| KieDex | S2 daily 2026-09-10: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 |||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil |
