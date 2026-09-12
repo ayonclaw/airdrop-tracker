@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 12, 2026 (02:20 UTC)**
+> Last updated: **Sep 12, 2026 (09:05 UTC)**
 
 ---
 
@@ -3397,3 +3397,19 @@
 - **Mock mode check:** `twitterOauth2Status` -> `mockFollow/mockLike/mockRetweet/mockQuote: true` (mock mode ON does NOT bypass - Geetest + OAuth are independent gates)
 - **Remaining manual step:** Link X (@osbornrdx) to Galxe account via Settings -> Social; then TWITTER creds auto-verify. Like actions are already performed.
 - **Source:** Drop 127592 from @airdropfind
+
+## 2026-09-12 Scan & Execute
+
+### #244 CryptoPons — Whitelist (msg 127605) — DONE
+- **Date:** 2026-09-12 | **URL:** https://tally.so/r/NpZe2Q | **Supply:** 10,000
+- **Type:** Type 4 BROWSERLESS-FIRST (Tally.so form) - 2 fields only: X username + Wallet address
+- **Tally API recon:** Next.js `/r/NpZe2Q` page embeds the form JSON (`formId":"NpZe2Q"`, `workspaceId":"wvNrWX"`). Reverse-engineered the submit call from `_next/static/chunks/91527-*.js`: `POST https://api.tally.so/forms/{formId}/respond` with `{sessionUuid, respondentUuid, responses:{<blockUuid>:value}, captchas:{}, isCompleted:true, password:null}`. No captcha on this form (`settings.isClosed:false`, no Turnstile/reCAPTCHA block).
+- **Block UUIDs (from embedded blocks array):**
+  - X (Twitter) username -> `5b10800e-7efd-48f3-a8d4-4eb2c3b9a893`
+  - Wallet address -> `8e0c9e41-30aa-4b5d-8c05-e635f6ef046d`
+- **Submission (browserless, python urllib):** responses `{"5b10800e-...":"@osbornrdx","8e0c9e41-...":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` -> **HTTP 200 `{"submissionId":"GekM1ep","respondentId":"b5Rl90L"}`**
+- **X Tasks (real actions, @osbornrdx):**
+  - OK Follow @CryptoPons -> https://x.com/CryptoPons (intent page flipped to "Mengikuti")
+  - OK Like source post -> https://x.com/CryptoPons/status/2096949853431513181 (`unlike` testid confirmed)
+  - OK Repost source post -> same URL (`unretweet` testid confirmed; RT count 397->398)
+- **Source tweet:** https://x.com/CryptoPons/status/2096949853431513181 | **Source:** Drop 127605 from @airdropfind
