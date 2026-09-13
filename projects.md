@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (03:20 UTC)**
+> Last updated: **Sep 13, 2026 (04:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #258 ANTARES — Main Whitelist Apply (msg 127642) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://www.antareslab.fun/whitelist | **Reward:** WL spot (2,000 supply, free mint) | **Chain:** Robinhood Chain | **Source:** https://x.com/Antares_Lab/status/2098786140220490119
+- **Type:** Type 4/17 hybrid — Next.js (Turbopack, immutable chunks) server-action form. No captcha, no wallet-connect required for submission (wallet is just a text field). Form posts a React Server Action (`submitMainWhitelist`, id `60b5427acea2731a1626f5fd0ceaca6ed4e49b7b02`) — NOT curl-able (RSC action binding), executed via MCP Chrome.
+- **Recon:** `curl` HTML → title "Whitelist · Antares"; 28 `_next/static/immutable/chunks/*.js`; form fields `username`, `commentUrl`, `wallet`; 4 self-attest tick checkboxes `task-follow/like/repost/comment`. Config chunk `03h4jjy1jaebe.js` → `X_ACCOUNT` handle `Antares_Lab`, pinned post `2098786140220490119`. Contract `0x9F4b21A7c3De0aB55e1Dd6c8Fa3B70e42c8D19aE`, supply 2000, `comingSoon:true`.
+- **X Tasks (all real, @osbornrdx):**
+  - ✅ Follow @Antares_Lab → https://x.com/Antares_Lab (intent confirm "Ikuti @Antares_Lab" clicked; button now "Mengikuti")
+  - ✅ Like pinned post → https://x.com/Antares_Lab/status/2098786140220490119 (`unlike` testid confirmed = liked)
+  - ✅ Repost pinned post → https://x.com/Antares_Lab/status/2098786140220490119 (`unretweet` testid confirmed = reposted)
+  - ✅ Comment/reply on pinned post → https://x.com/osbornrdx/status/2098993620842070399
+- **Comment proof URL submitted:** https://x.com/osbornrdx/status/2098993620842070399
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx
+- **Submission:** Browser submit → **"Whitelist application submitted successfully. We review applications in batches. Keep the same wallet: it is how we match you at mint."**
+- **Mint:** TBA (contract deployed, `comingSoon`). Free mint on Robinhood Chain — needs real MetaMask + gas at mint time (manual/CloakBrowser).
 
 ### #257 WASHMACHINE — Whitelist Apply (msg 127639) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://www.washmachine.xyz/#apply | **Reward:** WL spot (500 supply) | **Source:** https://x.com/washmachinesnft/status/2098469354400846157
