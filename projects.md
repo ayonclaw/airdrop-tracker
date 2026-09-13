@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (23:10 UTC)**
+> Last updated: **Sep 13, 2026 (16:35 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #265 KOBOS — Waitlist (msg 127654) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://www.kobos.world/ | **Supply:** 3,333 hand-drawn anime NFTs on **ARC** | **Price/Mint:** TBA | **Source:** @airdropfind drop 127654 / https://x.com/kobosnft/status/2096916082237861897
+- **Type:** Vite/React SPA (`/assets/index-qvjQ3-zT.js`), **fully browserless**. Supabase PostgREST backend: `wh.from("kobos_access_requests").insert({x_username, wallet_address, tasks_completed:!0})`. Anon key + project URL (`uwmpabkgjrmohyngwqdn.supabase.co`) extracted from the JS bundle.
+- **✅ X Tasks (all real, @osbornrdx — verified via `data-testid` re-check):**
+  - ✅ Follow @kobosnft → https://x.com/kobosnft (button flipped `Ikuti` → `Mengikuti`; verified `-unfollow` testid present)
+  - ✅ Like pinned post → https://x.com/kobosnft/status/2096916082237861897 (verified `unlike` testid present = LIKED)
+  - ✅ Repost pinned post → same URL (`retweet` → `retweetConfirm`; verified `unretweet` testid present = REPOSTED)
+- **✅ Submission:** `POST https://uwmpabkgjrmohyngwqdn.supabase.co/rest/v1/kobos_access_requests` → **HTTP 201** → `{"id":"b33ba69d-c92f-4117-b8a0-d395ed45e48e","x_username":"@osbornrdx","wallet_address":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","tasks_completed":true}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM — no lowercasing applied by client; submitted as-is)
+- **Notes:** Tasks are client-side self-attest checkboxes; only `tasks_completed:true` is posted (no per-task server verification). Real X actions performed for proof anyway. DB row id `b33ba69d-c92f-4117-b8a0-d395ed45e48e`.
+- **Proof:** https://x.com/kobosnft (follow), https://x.com/kobosnft/status/2096916082237861897 (like + repost)
 
 ### #264 Normieshood — Waitlist + Wallet Reply (msg 127653) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://normieshood.com/ | **Supply:** 4,444 Genesis NFTs (Robinhood Chain) | **Mint:** Freemint GTD / WL 0.0015 ETH, date TBA | **Source:** @airdropfind drop 127653 / https://x.com/normiesARTRH/status/2097659755271712869
