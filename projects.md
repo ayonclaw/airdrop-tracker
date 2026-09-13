@@ -3684,3 +3684,15 @@
 **Tasks:** Follow @Ask_ORO (done), Like announcement (done), Repost announcement (done), Connect ZIGChain wallet (pending), Share badge (pending)
 **Status:** Social actions completed. Points-check and badge-share are wallet-gated (ZIGChain/MetaMask). App errors in headless Chrome. Manual via CloakBrowser + MetaMask recommended.
 **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+
+---
+
+## 2026-09-13 Scan & Execute
+
+### #262 Pear Rewards — Daily Streak Claim (msg cron) — DONE
+- **Date:** 2026-09-13 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Headless Playwright gets 403 on x.com/i/oauth2/authorize (X blocks headless consent page - empty body). Escalated to MCP Chrome (real Xvfb Chrome, already-logged-in session on tab 6).
+- **Streak claim:** button.streak-claim -> "Claim" -> clicked -> flipped to `claimed` / disabled. **Streak 4->5 days, +99 pts.**
+- **Balance:** **5,011 points** | **Rank #42** (waitlist) | Milestones 2/15 completed
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) - no new tasks. Cron handles daily claim.
