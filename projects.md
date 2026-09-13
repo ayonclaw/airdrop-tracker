@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (16:05 UTC)**
+> Last updated: **Sep 13, 2026 (23:10 UTC)**
 
 ---
 
