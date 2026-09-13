@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (14:20 UTC)**
+> Last updated: **Sep 13, 2026 (15:50 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #261 PLAYBOYZ // Enter the Gate — Whitelist (msg 127649) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://playboyz.pro/whitelist | **Reward:** WL spot (Artchitect/Playboyz NFT) | **Source:** @airdropfind drop 127649 / https://x.com/Playboyzpro/status/2098766883516190860
+- **Type:** Type 3/17 hybrid — React SPA (Vite bundle `index-DCdWQDkc.js`) on Railway, backend `artchitect-backend-production.up.railway.app/api`. Cloudflare Turnstile gate (sitekey `0x4AAAAAADh9IZfqGnG5S1R6`) → 2 side quests (server-verified via `POST /tasks/{id}/complete`) → wallet submission.
+- **Recon:** Browserless curl hit Railway edge IP rate-limit (HTTP 429 `rate limited`, `x-hikari-trace: sin1`). Escalated to MCP Chrome. Turnstile solved via real browser click — token accepted, page rendered. Bundle analysis via in-page `fetch('/assets/index-DCdWQDkc.js')` (curl to asset also 429) revealed API base + endpoints: `POST /auth/login`, `POST /auth/register`, `GET /tasks`, `POST /tasks/{id}/complete`, `GET /users/me`.
+- **✅ X Tasks (all real, @osbornrdx — verified via `data-testid`):**
+  - ✅ Follow @Playboyzpro → https://x.com/playboyzpro (button flipped to `2095501668892708864-unfollow` / "Mengikuti")
+  - ✅ Like announcement post → https://x.com/Playboyzpro/status/2098766883516190860 (`like` → `unlike` testid)
+  - ✅ Repost announcement post → same URL (`retweet` → `unretweet` testid; menu item "Posting ulang")
+- **Quest completion:** Clicked "OPEN TASK" → "I DID IT ✓" for Quest 01 (Follow on X) and Quest 02 (Like and RT) → both flipped to DONE / "TASK COMPLETED" → wallet input unlocked.
+- **✅ Wallet submit:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (real keystrokes, button enabled) → **"YOUR WALLET HAS BEEN SUCCESSFULLY WHITELISTED"** confirmation screen.
+- **Proof:** Confirmation screen text captured; X URLs above.
 
 ### #260 AGNT Weekly Socials | S3 Week 8 - Day 5 — Galxe Quest (127647) — ⚠️ PARTIAL (X done; OAuth creds pending)
 - **Date:** 2026-09-13 | **URL:** https://app.galxe.com/quest/AGNTHub/GCumitZkX5 | **Reward:** Points | **Source:** @airdropfind drop 127647
