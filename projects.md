@@ -1555,6 +1555,17 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+||||||||||||| KieDex | S2 daily 2026-09-13: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" card Done/Claimed +50 Oil) — NOTE: header counter did NOT advance on the leverage claim, it read 8/11 both before and after (matches the known "counter lags / Ready already counted" behaviour) |
+||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed") |
+||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
+||||||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent — 0 "Open Task" links render, 0 enabled claims) |
+||||||||||||| | - "Close a winning trade" → 0/1 (position −1.96 USDT / −65% on margin — losing, skip) |
+||||||||||||| | - "Open 5 trades" → 0/5 (needs 5 DIFFERENT pairs ≈ 200 Oil; skipped — reward 50 Oil vs 200 spent) |
+||||||||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible) |
+||||||||||||| | **BALANCES**: Oil **770** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot **1070** USDT, Futures 116.17 USDT, Total **1186.17** USDT |
+||||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 77,262.71 → **−1.96 USDT**, liq 76,359.32 → **1.17% above liq = FORFEIT**) |
+||||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close a "winning trade") and sits 1.17% above liquidation, so it is forfeit; "Use 10x+ leverage" already claimed. Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk) for 1/5 progress that cannot complete today. |
 ||||||||||| KieDex | S2 daily 2026-09-12: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 ||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT claimed first, then Oil; both flip to "Claimed") |
