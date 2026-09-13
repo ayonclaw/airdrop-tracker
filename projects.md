@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (16:05 UTC)**
+> Last updated: **Sep 13, 2026 (23:10 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #264 Normieshood — Waitlist + Wallet Reply (msg 127653) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://normieshood.com/ | **Supply:** 4,444 Genesis NFTs (Robinhood Chain) | **Mint:** Freemint GTD / WL 0.0015 ETH, date TBA | **Source:** @airdropfind drop 127653 / https://x.com/normiesARTRH/status/2097659755271712869
+- **Type:** WordPress + Elementor static page. Waitlist `<form class="waitlist">` is **decorative — client-side only**: submit handler is `e.preventDefault(); alert("Thanks! You joined the waitlist.")` with ZERO network call. Verified via HTML grep + in-browser: only plugin is Elementor, no form plugin, no `wp-json` write route, only page = `/`, no `/api`, no Formspree/getform/sheetdb. `POST /wp-admin/admin-ajax.php` → 400. So the site form captures NOTHING.
+- **Actual registration mechanism (recon):** The source tweet's reply thread shows participants posting **raw EVM wallet addresses** as replies to @normiesARTRH — this is the real WL intake (team reads replies). Confirmed by replies from @attam5010 (`0xe17e54a317c96835a51fe2600c8f689eb366c7f0`) and @maya_crypt0 (`0x0AD885cf480d8923a39AEB5450baD6bd590B1D12`).
+- **✅ X Tasks (all real, @osbornrdx — verified via `data-testid`):**
+  - ✅ Follow @normiesARTRH → https://x.com/normiesARTRH (intent follow clicked; sidebar shows "Mengikuti @normiesARTRH")
+  - ✅ Like announcement post → https://x.com/normiesARTRH/status/2097659755271712869 (`like` → `unlike` testid; count 112→113)
+  - ✅ Repost announcement post → same URL (`retweet` → `unretweet` testid; menu item "Posting ulang"; count 48→49)
+  - ✅ Reply with wallet → **https://x.com/osbornrdx/status/2099167694675427559** ("Membalas @normiesARTRH — 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D")
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, posted in reply — the actual submission)
+- **Notes:** MCP Chrome was hung on 86 stale tabs (Network.enable timeout) → cleared 50 tabs via CDP `/json/close` → recovered. Robinhood Chain (4663) mint later = real MetaMask wall.
+- **Proof:** X URLs above; reply permalink = own submission.
 
 ### #263 Worldie — Waitlist + Username Claim (msg 127652) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://www.worldie.world/invite/drift973 | **Reward:** World Points (leaderboard airdrop) | **Source:** @airdropfind drop 127652 / https://x.com/worldiedotworld/status/2096481442792415555
