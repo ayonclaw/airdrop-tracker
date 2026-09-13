@@ -1,9 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (03:06 UTC)**
+> Last updated: **Sep 13, 2026 (03:20 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #257 WASHMACHINE — Whitelist Apply (msg 127639) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://www.washmachine.xyz/#apply | **Reward:** WL spot (500 supply) | **Source:** https://x.com/washmachinesnft/status/2098469354400846157
+- **Type:** Type 15 DCLOGIC/VANILLA-JS + Google Apps Script — single-page static site, inline `fetch()` handler. No framework, no captcha, no wallet-connect. Tasks are self-attest (site relies on submitted quote link for verification).
+- **Recon:** `curl` → title "Washing Machine"; single inline `<script>` with two endpoints: Discord webhook `discord.com/api/webhooks/1548013074672525474/...` (posts wallet + X + quote embed) and Google Apps Script `script.google.com/macros/s/AKfycbx2A9X-.../exec` (POST `{time,twitter,wallet,quote}`, `Content-Type: text/plain;charset=utf-8`, `mode:no-cors`). Client validation: `wallet.length >= 20 && proof.indexOf("x.com/") !== -1`.
+- **X tasks (all real, @osbornrdx):**
+  - ✅ Follow @washmachinesnft → https://x.com/washmachinesnft (already following, confirmed "Mengikuti")
+  - ✅ Like announcement → https://x.com/washmachinesnft/status/2098469354400846157 (`like` aria-label "1 Suka. Menyukai" = liked)
+  - ✅ Quote tweet (proof) → https://x.com/osbornrdx/status/2098974289194352678
+- **Submission (browserless, both endpoints):**
+  - Google Apps Script POST → **`{"ok":true}`** (302 → script.googleusercontent.com echo, GET'd for JSON)
+  - Discord webhook POST → **HTTP 204** (no content = success)
+  - Payload: `{time:"2026-09-13T03:17:43Z", twitter:"@osbornrdx", wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D", quote:"https://x.com/osbornrdx/status/2098974289194352678"}`
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Email:** N/A
+
+---
 
 ### #256 HAUNTING HOODS — Whitelist Hunt (msg 127638) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://www.hauntinghoods.xyz/ | **Reward:** WL spot (4,444 supply, free NFT, Robinhood Chain) | **Source:** https://x.com/Haunting_Hoods/status/2098467154169393290
