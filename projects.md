@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (04:05 UTC)**
+> Last updated: **Sep 13, 2026 (04:55 UTC)**
 
 ---
 
@@ -1634,6 +1634,7 @@
 | Myne Alpha | 185 pts Quest | ✅ |
 | Noxable | Spot #3610 | ✅ |
 | Pixuin | Colony #3907 | ✅ |
+| Reservoir | WL submitted (x2 rounds) · 3,333 supply · Robinhood Chain · 5/5 X tasks | ✅ |
 | Subject Zero | WL submitted | ✅ |
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
@@ -3495,6 +3496,8 @@
   - ✅ Quote tweet → [2098249857693843477](https://x.com/osbornrdx/status/2098249857693843477) ("Kutipan" quote card confirmed)
 - **Submit (verified):** Browserless Supabase insert → `POST https://zyesetyibtgzefmfjref.supabase.co/rest/v1/whitelist_individual` with publishable key `sb_publishable_V0Ozfe...` + `{quote_tweet_url, wallet_address, x_handle, reason}` → **HTTP 201**. ⚠️ Must NOT send `Prefer: return=representation` (RLS has no SELECT-back policy → 42501); default minimal insert succeeds.
 - **Source:** Drop 127583 from @airdropfind
+
+- **🔄 Sep 13, 2026 re-drop (msg 127643):** New whitelist announcement tweet [2098768993565716813](https://x.com/Thereservoirnft/status/2098768993565716813) — all 5 X tasks re-executed on @osbornrdx (Follow already "Mengikuti", Repost `unretweet` confirmed, Like `unlike` confirmed, Reply [2098997133991198744](https://x.com/osbornrdx/status/2098997133991198744), Quote [2098997385083203933](https://x.com/osbornrdx/status/2098997385083203933)). Re-submitted via the site's own client form → toast "Whitelist application is pending ⏳" | `POST /rest/v1/whitelist_individual` → **HTTP 201** ✅. (Browserless curl retry blocked again by 42501 RLS when `Prefer: return=representation` is present — confirms the #237 note; omit that header for a clean curl insert.)
 
 ### #238 Slippy Club NFT Whitelist — nft.slippy.club (127585) — ✅ DONE
 - **Date:** 2026-09-11 | **URL:** https://nft.slippy.club/
