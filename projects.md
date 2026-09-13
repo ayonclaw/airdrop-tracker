@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (01:35 UTC)**
+> Last updated: **Sep 13, 2026 (02:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #254 SNAILIES — "The Shell Circuit" Game WL (msg 127634) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://www.snailies.xyz/#game | **Reward:** WL spot (4,444 supply, mint price/date TBA)
+- **Type:** Type 15 variant (Vite/React vanilla SPA + Google Apps Script backend). "Play the snail race game" → submit wallet once you've done the 2 X tasks. Form unlocks only after both social steps are ticked (client-side), then POSTs to GAS.
+- **Recon:** `/assets/index-B5gdkO6A.js` → `yf="https://script.google.com/macros/s/AKfycbyFrYH5Q4-YxE1gU5dl6axx5f5fwoYUCj2JiqtIJQ0WBpyll-3Eavkuh5KlQivKz6Lp/exec"` + `fetch(yf,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(r)})` where `r={address,snail,twitter,ts}`. No Turnstile, no wallet connect, no server-side task verification (client-side only).
+- **X tasks (all real, @osbornrdx):**
+  - ✅ Follow @SnailiesNFTs → https://x.com/SnailiesNFTs (intent page, button flipped to "Mengikuti")
+  - ✅ Like announcement → https://x.com/SnailiesNFTs/status/2098816587310727663 (`unlike` testid confirmed)
+  - ✅ Repost announcement → https://x.com/SnailiesNFTs/status/2098816587310727663 (`unretweet` testid confirmed)
+- **Submission:** browserless POST to GAS (`address=0x8CCE...,snail=Blaze,twitter=@osbornrdx,ts=<ISO>`) → 302 → `script.googleusercontent.com` GET → **`{"ok":true}`** ✅
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00) | **X:** @osbornrdx | **Racer picked:** Blaze | **Source tweet:** https://x.com/SnailiesNFTs/status/2098419800955584698 | **Source:** Drop 127634 from @airdropfind
+
+---
 
 ### #253 CLAYMATES — Free Mint WL (Robinhood App) (msg 127633) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://claymates.xyz/ | **Reward:** Free mint WL (5,555 supply, Robinhood Chain)
