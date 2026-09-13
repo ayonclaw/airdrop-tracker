@@ -1,10 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (12:20 UTC)**
+> Last updated: **Sep 13, 2026 (14:20 UTC)**
 
 ---
 
 ## ✅ COMPLETED
 
+### #260 AGNT Weekly Socials | S3 Week 8 - Day 5 — Galxe Quest (127647) — ⚠️ PARTIAL (X done; OAuth creds pending)
+- **Date:** 2026-09-13 | **URL:** https://app.galxe.com/quest/AGNTHub/GCumitZkX5 | **Reward:** Points | **Source:** @airdropfind drop 127647
+- **Type:** Galxe Quest — AGNT Hub (space ID 77675), campaign `GCumitZkX5` (type: `Points`, numberID 364861, status: Active). Standalone Points campaign (NOT a Parent — `childrenCampaigns: null`).
+- **API pipeline (python3.12 + eth_account):**
+  - ✅ SIWE SignIn → JWT (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`)
+  - ✅ followSpace (AGNT Hub, ID: 77675) → `{"followSpace":1}`
+  - ⚠️ 3× GALXE_ID "Visit" creds → `allow:false` (needs real browser visit + X OAuth linked)
+  - ❌ 2× TWITTER "Tweet Liker" creds → `"missing twitter args"` GraphQL error (X OAuth not linked at Galxe account level)
+- **✅ X Tasks (real, @osbornrdx — verified via `data-testid`):**
+  - ✅ Like @agnt_hub → https://x.com/agnt_hub/status/2098386757234356542 (`unlike` testid = liked)
+  - ✅ Like @TruthAgentAI → https://x.com/TruthAgentAI/status/2098415978543472682 (`unlike` testid = liked)
+- **Creds:** GALXE_ID 720976527101001728 (Visit AGNT post), 721011740673835008 (Visit IG video), 721011860513488896 (Visit Truth post) | TWITTER 720976529290428416, 721011858303090688
+- **Blocker:** Architectural — X OAuth link at Galxe account level required for TWITTER creds; visit creds need browser visit. Same matrix as prior AGNT weeks (#188, #185).
 ### #259 OTTO — Waitlist Apply (msg 127644) — ⚠️ PARTIAL (X done; Discord gate)
 - **Date:** 2026-09-13 | **URL:** https://ottoclub.io/ | **Reward:** WL spot (free mint, Robinhood Chain, supply TBA) | **Source:** https://x.com/ottoclubhouse/status/2094741994916434103
 - **Type:** Type 20/17 hybrid — Next.js (React Server Actions) whitelist wizard with 5 steps: (1) X handle, (2) Follow X, (3) Discord connect+join (server-verified), (4) Engage (like/repost), (5) Wallet submit.
