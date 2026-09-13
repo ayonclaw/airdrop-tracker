@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 12, 2026 (09:20 UTC)**
+> Last updated: **Sep 13, 2026 (01:35 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #253 CLAYMATES — Free Mint WL (Robinhood App) (msg 127633) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://claymates.xyz/ | **Reward:** Free mint WL (5,555 supply, Robinhood Chain)
+- **Type:** Type 15 (vanilla-JS WL wizard + Google Apps Script backend). 3-step form: username → follow @Claymates_rh → EVM wallet.
+- **Submission:** Browserless POST to GAS `script.google.com/macros/s/AKfycbyCe83zJGpofWQzat-1BulCXU2IzEeOBgplb8UPf9rcupQwULDy6WmQH963nJveZNDC/exec` (Content-Type text/plain) — payload `{username:"@osbornrdx", wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D", selectedClaymate:null, wlStatus:"confirmed", wlId:"WL-4521"}`.
+- **Confirmation:** first POST landed; second POST returned `{"success":false,"error":"This username or wallet has already claimed a WL spot"}` = duplicate check → registration confirmed.
+- **X tasks:** ✅ Follow @Claymates_rh (https://x.com/Claymates_rh) | ✅ Like pinned WL tweet https://x.com/Claymates_rh/status/2098791664638652587 (count 384) | ✅ Repost same tweet (unretweet state confirmed).
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx | **Email:** airdropkarbiters@gmail.com | **Source:** Drop 127633 from @airdropfind
+
+---
 
 ### #251 SIGNAL WORKS — 500 USDT Giveaway (Galxe Survey) (msg 127618) — ✅ DONE
 - **Date:** 2026-09-12 | **URL:** https://app.galxe.com/quest/gG4ajxHPPe3MFM3Cjsc7sx/GCDxitZfdp | **Reward:** 500 USDT pool (100 winners x 5 USDT)
