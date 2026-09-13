@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (15:50 UTC)**
+> Last updated: **Sep 13, 2026 (16:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #263 Worldie — Waitlist + Username Claim (msg 127652) — ✅ DONE
+- **Date:** 2026-09-13 | **URL:** https://www.worldie.world/invite/drift973 | **Reward:** World Points (leaderboard airdrop) | **Source:** @airdropfind drop 127652 / https://x.com/worldiedotworld/status/2096481442792415555
+- **Type:** Privy-auth Next.js waitlist (Vercel). Invite via `@drift973`. Login methods google/twitter/wallet.
+- **Recon:** Browserless. Grepped Next.js chunks → `/api/world-points` (GET/POST) + `/api/world/ticket`. Found Privy **appId `cmss9q1kt02i40djux53p9103`**. `POST /api/enter` password gate returns 401 (unused path). **Browserless SIWE:** `POST https://auth.privy.io/api/v1/siwe/init {address}` → sign SIWE message with `eth_account` → `POST /api/v1/siwe/authenticate` → `token` accepted by `Authorization: Bearer <privy_token>` on `/api/world-points`.
+- **Registration:** `POST /api/world-points {displayName:"osbornrdx", twitter:"osbornrdx", wallet:"0x8CCE...282D", inviteCode:"drift973"}`. First attempts hit transient HTTP 429 "Invites are busy right now" — retried with backoff → **HTTP 200**. Persisted across fresh SIWE sessions.
+- **✅ Confirmed (`you` object):** `id/username/referralCode = osbornrdx`, **worldPoints 210**, rank 2, badges `[early]`, `xHandle @osbornrdx`, `walletAddress 0x8C…282D`.
+- **✅ Points events credited:** `join_waitlist +100`, `connect_x +50`, `connect_wallet +50`, `daily_streak +10`.
+- **✅ X Tasks (all real, @osbornrdx — verified via `data-testid`):**
+  - ✅ Follow @worldiedotworld → https://x.com/worldiedotworld (button flipped to `2096002281569153029-unfollow` / "Mengikuti")
+  - ✅ Like announcement post → https://x.com/worldiedotworld/status/2096481442792415555 (`like` → `unlike` testid)
+  - ✅ Repost announcement post → same URL (`retweet` → `unretweet` testid; menu item "Posting ulang")
+- **⚠️ Discord (+400 pts):** NOT joined — Discord account not logged in (`discord.com/login`). Self-attest only via `joinDiscord` — per skill rules, NOT faked. Manual: join https://discord.gg/y2JmpeKyzf then click "Join Discord" in app.
+- **Proof:** `you` object + events list captured; X URLs above.
 
 ### #261 PLAYBOYZ // Enter the Gate — Whitelist (msg 127649) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://playboyz.pro/whitelist | **Reward:** WL spot (Artchitect/Playboyz NFT) | **Source:** @airdropfind drop 127649 / https://x.com/Playboyzpro/status/2098766883516190860
