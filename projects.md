@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (01:55 UTC)**
+> Last updated: **Sep 14, 2026 (04:10 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #269 KUBORA — The Mythic Vault Whitelist (drop 127663) — ✅ DONE
+- **Date:** 2026-09-14 | **URL:** https://whitelist.kuboraa.xyz/ | **Source:** @airdropfind drop 127663 / https://x.com/kubora_xyz/status/2098798101473693923
+- **Type:** Next.js (vinext) SPA whitelist. Browserless: page chunk `page-DBAIPGhc.js` exposes `POST /api/whitelist` with zod schema `{xHandle, wallet, email?, website?(honeypot, max 0)}`. No wallet connect / no signature needed.
+- **Tasks:** Like post + Repost on X (only 2 social actions — NO follow task). Both via @osbornrdx session.
+- **✅ X Like:** https://x.com/kubora_xyz/status/2098798101473693923 (intent like?tweet_id=2098798101473693923) — `[data-testid="unlike"]` confirmed.
+- **✅ X Repost:** same tweet — reposted via "Posting ulang" menu item; `[data-testid="unretweet"]` confirmed.
+- **✅ Whitelist submit:** `POST /api/whitelist {"xHandle":"osbornrdx","wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","email":"airdropkarbiters@gmail.com","website":""}` → **HTTP 201 `{"reference":"KB-0E8233DC1958","status":"received"}`**.
+- **Reward:** 3,000 free mint on @RobinhoodApp (Robinhood Chain). 90 Mythic edition of 3,000.
+- **Reference:** KB-0E8233DC1958 | **X:** @osbornrdx | **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+
 ### #268 ForestRoad Vault — Whitelist Point Program (drop 127658) — ✅ DONE (2/3 tasks)
 - **Date:** 2026-09-14 | **URL:** https://whitelist.forestroadvault.com/?ref=3V9K34M4 | **Source:** @airdropfind drop 127658 / https://x.com/forestroadvault/status/2098652830932271580
 - **Type:** Next.js (Vercel) SPA + **X OAuth 2.0 (PKCE)** whitelist. `/api/auth/x?ref=...` → x.com/i/oauth2/authorize → callback sets `fvw_session` cookie → `/join` form (wallet + quote-post URL) → `POST /api/join`.
