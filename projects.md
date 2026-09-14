@@ -747,7 +747,8 @@
   - ✅ Follow @rhquantumgrid → https://x.com/rhquantumgrid (intent dialog "Ikuti @rhquantumgrid" → profile shows **Mengikuti**)
 - **Verdict:** Missed window (500 WL, drop arrived ~20h after the Aug 30 20:40 announcement). Nothing further actionable.
 
-### #182 Rewardy Wallet $USDT — Galxe Quest (127313) — ⚠️ PARTIAL
+### #182 Rewardy Wallet $USDT — Galxe Quest (127313, 127666) — ⛔ EXPIRED / NO ENTRY
+- **2026-09-14 UPDATE (Drop 127666 "Check Result Galxe"):** Campaign `GCXrDtZ7Xi` now **Expired** (ran 2026-08-31 04:00 → 2026-09-14 04:00 UTC). SIWE re-auth OK; `campaign.participationStatus(addr)=null`, `claimedTimes=0`, `userParticipants.totalCount=0` → **wallet was never entered in the raffle** (the TWITTER follow cred never synced because X is not OAuth-linked to the Galxe account, so the requirement was never satisfied). No result, no claim, nothing actionable. Original header below kept for history.
 - **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/886ccaFEX94U2QUKzp4Hjg/GCXrDtZ7Xi
 - **Campaign:** `GCXrDtZ7Xi` | **Space:** Rewardy Wallet: Gold & Rewards (ID 61894) | **Reward:** 15 USDT Raffle
 - **Done (GraphQL `graphigo.prd.galaxy.eco`, SIWE via `eth_account` on `airdrop_master`):**
@@ -3799,3 +3800,15 @@
 - **Balance:** **5,011 points** | **Rank #42** (waitlist) | Milestones 2/15 completed
 - **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
 - **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) - no new tasks. Cron handles daily claim.
+
+## 2026-09-14 Scan & Execute
+
+### #265 Galxe "Check Result" — Rewardy Wallet $USDT Raffle (msg 127666) — ⛔ EXPIRED / NO ENTRY (dup of #182)
+- **Date:** 2026-09-14 | **URL:** https://app.galxe.com/quest/886ccaFEX94U2QUKzp4Hjg/GCXrDtZ7Xi | **Reward:** 15 USDT Raffle
+- **Type:** Type 10 GALXE-QUEST — duplicate URL of already-tracked entry **#182** (same campaign `GCXrDtZ7Xi`, same space ID 61894).
+- **SIWE API result (graphigo.prd.galaxy.eco, wallet 0x8CCE...282D):** campaign `status="Expired"`, window 2026-08-31 04:00 → 2026-09-14 04:00 UTC (drop arrived 04:45 UTC, 45 min after close).
+  - `participationStatus(address)` = **null** | `claimedTimes(address)` = **0** | `userParticipants.totalCount` = **0**
+  - Creds: `TWITTER` RewardyJapan-Followers + `TELEGRAM` @Rewardy_Announcements — both never synced (no X OAuth linked to Galxe, no TG binding).
+- **Verdict:** ⛔ Nothing to claim. Wallet never entered the raffle because the follow-credential requirement was never satisfied. No X tasks re-run (campaign closed). **Do not re-execute.**
+- **Recurring fix (manual, one-time):** link X (@osbornrdx) + Telegram to the Galxe account via app.galxe.com → Settings → Social, so future Galxe quests auto-verify. See #120/#121/#217 for the same architectural blocker.
+- **Source:** Drop 127666 from @airdropfind
