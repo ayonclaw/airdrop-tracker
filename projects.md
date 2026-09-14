@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (16:25 UTC)**
+> Last updated: **Sep 14, 2026 (16:40 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #275 Hood WARRIORS — Whitelist (FREE MINT, Robinhood Chain) (msg 127679) — ✅ DONE
+- **Date:** 2026-09-14 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSehE88f0x5wZqPwu45KmT2u_Yog22fVSiN-rgNMK3YqftZwPA/viewform | **Reward:** Free mint / GTD (first 300 wallets) | **Source:** @airdropfind drop 127679 | **X:** @MetalWarriorsx
+- **Type:** Type 4 BROWSERLESS-FIRST → Google Form (PUBLIC, no login required for entry but Google session active). Source tweet: https://x.com/MetalWarriorsx/status/2094822221919207443
+- **✅ X Follow @MetalWarriorsx:** https://x.com/MetalWarriorsx (button flipped to unfollow/"Mengikuti" confirmed)
+- **✅ X Like:** https://x.com/MetalWarriorsx/status/2094822221919207443 (`[data-testid="unlike"]` confirmed)
+- **✅ X Repost:** same announcement tweet (`[data-testid="unretweet"]` confirmed)
+- **✅ X Comment:** https://x.com/osbornrdx/status/2099533636240560229 ("Done ✅ 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D")
+- **✅ Form submitted:** browser fill + Submit → **"Your response has been recorded."** (`/formResponse`)
+  - Fields: community="X / Twitter", caractere="Warrior", twitter="@osbornrdx", EVM="0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D", follow=Yes, LIKE RT COMMENT=YES
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Email:** airdropkarbiters@gmail.com
+- **Notes:** Form has 6 fields (2 required text + Twitter handle + EVM wallet + 2 radios). Public form — curl POST bounces (modern GF session-binding), browser fill is the reliable path. No wallet connect needed.
+
 ### #271 Zec Frogs — FROGLIST Whitelist (drop 127671) — ⚠️ SUBMITTED / ADDRESS UNCORRECTABLE
 - **Date:** 2026-09-14 | **URL:** https://zecfrogs.xyz | **Source:** @airdropfind drop 127671 | **X:** @zecfrogs
 - **Type:** vanilla-JS 6-step wizard (`/assets/js/app.js`) + X OAuth → Supabase auth → RPC `ZECFROGS_submit_application`. Backend: `qjahsukaytfpntquahqr.supabase.co`, table `ZECFROGS_applications`.
