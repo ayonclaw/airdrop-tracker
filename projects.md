@@ -1,9 +1,28 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 13, 2026 (17:05 UTC)**
+> Last updated: **Sep 14, 2026 (01:45 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #267 Melee Markets — Beta Waitlist (msg 127657) — ✅ DONE (partial ⚠️ X-OAuth)
+- **Date:** 2026-09-14 | **URL:** https://www.melee.markets/ (app: https://beta.melee.markets/) | **Source:** @airdropfind drop 127657 / https://x.com/meleemarkets/status/2097369654805119326
+- **Type:** Next.js SPA + GraphQL backend (`https://api.stg.melee.markets/graphql/`) — Solana-native prediction-market app (beta). Auth = **SIWE over Solana** (`logInWithSolanaWallet` mutation: server issues nonce message → `signMessage` with Solana keypair → Bearer token). No browser needed — full browserless flow via `solders` + `requests`.
+- **✅ Auth (browserless Solana SIWE):** challenge → sign message (base58 signature + base58 pubkey) → `logInWithSolanaWallet` → **Bearer token** (roles: User, Creator). Wallet `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` bound to account (`solanaWalletAddress` confirmed).
+- **✅ Profile:** `updateProfile` → username `osbornrdx` set.
+- **✅ Daily Check-In:** `submitDailyCheckIn` → streak 1, next `2026-09-15T01:34Z`.
+- **✅ Faucet:** `claimFreePlay` → **400 free-play balance** (`totalRemaining:400`, `faucetEnabled:true`).
+- **✅ Welcome Case:** `openWelcomeCase` (+200) — included in the 400 balance.
+- **✅ Quests progress:** profileCreated ✅ (`completedCount:1/5`, `accessGranted:true`).
+- **⚠️ X OAuth BLOCKED (4 quests):** `xConnected` / `followsMelee` / `likedScorePost` / `retweetedScorePost` remain false. The X OAuth2 authorize flow (`client_id T2QzcFZRMGpOdUdiWnRvdjNpeHE6MTpjaQ`, scope `tweet.read users.read follows.read like.read offline.access`) returns the known **"Ada kesalahan teknis"** wall (400 on `x.com/i/api/2/oauth2/authorize`) — X-app scope/config issue, deterministic (tried browserless + MCP Chrome, with/without `offline.access`). NOT stale cookies. The platform verifies X actions server-side ONLY after OAuth links the account — so the X actions below do NOT auto-count yet.
+- **✅ X actions performed anyway (proof, @osbornrdx):**
+  - ✅ Follow @meleemarkets → https://x.com/meleemarkets (button flipped `Ikuti` → `Mengikuti`)
+  - ✅ Like score post → https://x.com/meleemarkets/status/2092975483822469335 (`like` → `unlike` testid; count 8016→8018)
+  - ✅ Repost score post → same URL (`retweet` → `unretweet` testid confirmed)
+- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (SOL)
+- **Balance:** 400 free-play | **Melee Score:** `NO_ELIGIBLE_HISTORY` (needs ≥1 completed market for reveal)
+- **Remaining manual:** Link X via OAuth (blocked by X app config) → 4 quests auto-verify → then trade ≥1 market to reveal Melee Score.
+- **Proof:** https://x.com/meleemarkets (follow), https://x.com/meleemarkets/status/2092975483822469335 (like + repost)
+
 
 ### #266 Arc Chibi — Whitelist (msg 127655) — ✅ DONE
 - **Date:** 2026-09-13 | **URL:** https://chibiarc.xyz/whitelist | **Supply:** 4,444 Chibis | **Mint:** TBA | **Source:** @airdropfind drop 127655 / https://x.com/Arc_Chibi/status/2098022603268960688
