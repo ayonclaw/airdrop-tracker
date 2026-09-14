@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (16:20 UTC)**
+> Last updated: **Sep 14, 2026 (16:25 UTC)**
 
 ---
 
@@ -646,6 +646,11 @@
 - **Blocked (server-validated, no bypass):** Discord link/join, Swap/Add liquidity/Create token (need ecodex.one/constructor on-chain actions), Symbiosis/ZION/Arkada/Sweep/ZNS partner on-chain, Mint .x1eco domain, Nomis Score activation
 - **Proof:** On-chain tx on Maculatus explorer; dashboard shows 815 ECO pts; X: https://x.com/X1_EcoChain/status/1997624646586212564 (liked + reposted)
 - **Source:** https://x.com/X1_EcoChain/status/2094364017535914435
+- **↻ UPDATE 2026-09-14 (drop 127675 — "X1 Wheel of Fortune" quest live):** New linking quest **"Daily wheel spin"** (`wheel.x1ecochain.com`, +100 ECO) announced. Completed fully browserless:
+  - ✅ **On-chain `roll()`** on WheelOfFortune `0xE6404cA54d11b6d7972e8a48fa522A3AF9F8a596` (chain 10778) — tx [`0xec3d531c31f78ae274f98fd19c33033e1f2bc33ab62c26d31a139b7efd3e7866`](https://maculatus-scan.x1eco.com/tx/0xec3d531c31f78ae274f98fd19c33033e1f2bc33ab62c26d31a139b7efd3e7866) → `RollRequested` event, rollId `0x4e7` (1255), gas 246,849.
+  - ✅ **Quest claim** `POST /quests?quest_id=6aa7b3432ade9bf5f7af9a3e` → completion id `6aa7d175bf5534a7fac9fdec` → **+100 ECO**.
+  - ✅ **ECO points 815 → 915** (verified via `GET /me`). Balance 198.99 X1T.
+  - **Blocked (unchanged, server-validated):** Discord link/join, Swap/Add liquidity/Create token (need ecodex.one/constructor on-chain), Symbiosis/ZION/Arkada/Sweep/ZNS partner on-chain, Mint .x1eco domain, Nomis Score activation.
 
 ### #185 AGNT Weekly Socials | Sprint 6 Finisher (127322) — ⚠️ PARTIAL
 - **Date:** 2026-09-01 | **URL:** https://app.galxe.com/quest/AGNTHub/GCx2RtZw2Z
