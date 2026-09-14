@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (01:45 UTC)**
+> Last updated: **Sep 14, 2026 (01:55 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #268 ForestRoad Vault — Whitelist Point Program (drop 127658) — ✅ DONE (2/3 tasks)
+- **Date:** 2026-09-14 | **URL:** https://whitelist.forestroadvault.com/?ref=3V9K34M4 | **Source:** @airdropfind drop 127658 / https://x.com/forestroadvault/status/2098652830932271580
+- **Type:** Next.js (Vercel) SPA + **X OAuth 2.0 (PKCE)** whitelist. `/api/auth/x?ref=...` → x.com/i/oauth2/authorize → callback sets `fvw_session` cookie → `/join` form (wallet + quote-post URL) → `POST /api/join`.
+- **✅ X OAuth:** @osbornrdx authorized Forest Road Vault app (`Izinkan aplikasi`) → session cookie `fvw_session`.
+- **✅ Whitelist submit:** `POST /api/join {"address":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","postUrl":"https://x.com/osbornrdx/status/2099314248174510520"}` → **`{"ok":true,"check":"approved"}`**. Wallet `0x8CCE…282D` saved ("WHITELISTED"), rank **#448**.
+- **✅ X Follow @ForestRoadVault:** followed → task registered (+10). Proof: https://x.com/ForestRoadVault
+- **✅ X Repost launch post** (https://x.com/forestroadvault/status/2098816148837925074) → task registered (+10). `unretweet` testid confirmed = reposted.
+- **✅ Quote-post with 3 tags** (submitted as the entry proof): https://x.com/osbornrdx/status/2099314248174510520 (quotes campaign post, tags @MeeMoses83411 @Helgaweb_3 @jvstme_ophyxial)
+- **Final:** **50 points**, **2/3 tasks**, rank **#327** of 448 verified entries.
+- **⚠️ Discord task pending:** "Join the Discord" (+10) requires Discord OAuth — `/api/auth/discord` → discord.com/oauth2/authorize hangs (no Discord account logged in the profile). Manual via CloakBrowser + Discord session.
+- **X:** @osbornrdx | **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | **Referral:** 3V9K34M4
+
 ### #267 Melee Markets — Beta Waitlist (msg 127657) — ✅ DONE (partial ⚠️ X-OAuth)
 - **Date:** 2026-09-14 | **URL:** https://www.melee.markets/ (app: https://beta.melee.markets/) | **Source:** @airdropfind drop 127657 / https://x.com/meleemarkets/status/2097369654805119326
 - **Type:** Next.js SPA + GraphQL backend (`https://api.stg.melee.markets/graphql/`) — Solana-native prediction-market app (beta). Auth = **SIWE over Solana** (`logInWithSolanaWallet` mutation: server issues nonce message → `signMessage` with Solana keypair → Bearer token). No browser needed — full browserless flow via `solders` + `requests`.
