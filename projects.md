@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (16:40 UTC)**
+> Last updated: **Sep 15, 2026 (04:35 UTC)**
 
 ---
 
@@ -3891,3 +3891,15 @@
 - **Action taken:** built `/home/ubuntu/.hermes/scripts/glrtch_mint.py` (conditional: checks balance+phase, mints `publicMint(1)` @ 0.0016 ETH, waits for receipt). Scheduled `no_agent` cron `914e193113f7` at **14:00/14:15/14:30/14:45 UTC** (public window) — fires ONLY if wallet is funded by then; silent otherwise.
 - **Manual path:** fund `0x8CCE...282D` with ≥0.0017 ETH on Robinhood Chain (bridge from L1) → cron auto-mints, OR CloakBrowser + MetaMask at 14:00 UTC.
 - **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+
+### #276 heyAura Loyalty Season 1 — Claim Portal (msg 127683) — ℹ️ INFO / NOT ELIGIBLE (claim-only, browserless-verified)
+- **Date:** 2026-09-15 | **URL:** https://heyaura.com/claim | **Reward:** ADX tokens + S1 Credit-Pass NFT + Ambire Gas Tank USDC | **Source:** @airdropfind drop 127683 | **X:** @heyAura
+- **Type:** Type 13-adjacent CLAIM-ONLY portal (Season 1 closed). No registration, no tasks, no email form — connect-wallet-only eligibility reveal. Follow-up to existing entry **#225** (hub.heyaura.com, S1 closed INFO).
+- **Stack:** React Router v7 SPA (Vercel) + wagmi/viem wallet connect. All eligibility data is **static JSON on the CDN — fully browserless, NO wallet connect needed** to check:
+  - `GET /claim/data/adx-app-claims.json` — `heyaura-adx-claims-v1`, chainId 1 (Ethereum), ADX, merkleRoot `0x64b8e537…23865`, **602 recipients**, 350,105 ADX total
+  - `GET /claim/data/nft-claims.json` — `heyaura-credit-pass-v2`, chainId 8453 (Base), merkleRoot `0x79b6f9a9…babd7`, **1002 wallets** (S1 Credit-Pass NFT)
+  - `GET /claim/data/season-rewards.json` — `heyaura-season-rewards-v1`, season 1, pointsAsOf 2026-08-28, **9,996 ranked wallets** + **1,000 Gas Tank** USDC recipients ($11,950 total)
+- **Eligibility check (browserless):** checked `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + the 9 other EVM creds + all 500 galleria wallets against all three rosters → **0 hits in ADX, 0 in NFT, 0 in points, 0 in Gas Tank**. No wallet of ours ever farmed heyAura S1.
+- **Verdict:** ℹ️ **NOT ELIGIBLE** — nothing to claim, nothing to register. The claim portal is live (Connect Wallet reveals points/ticket/ADX/NFT/Gas Tank) but requires a wallet that participated in S1. No action possible.
+- **Notes:** RPC targets are Ethereum mainnet (`eth.merkle.io`/`ethereum.reth.rs`) + Base (`mainnet.base.org`) via wagmi — even if eligible, the on-chain claim would need a funded eligible wallet. Season 2 confirmed upcoming ("What next? Season 2😄") — re-check hub.heyaura.com for S2 farming.
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (not eligible)
