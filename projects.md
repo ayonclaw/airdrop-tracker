@@ -1731,6 +1731,17 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+|||||||||||||| KieDex | S2 daily 2026-09-14: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" card Done/Claimed +50 Oil) — header counter again did NOT advance on the leverage claim (read 8/11 both before and after), matching the known "Ready already counted / counter lags" behaviour |
+|||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed") |
+|||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
+|||||||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent — 0 "Open Task" anchors, 0 enabled claims) |
+|||||||||||||| | - "Close a winning trade" → 0/1 (position −2.34 USDT / −78% on margin — losing, skip) |
+|||||||||||||| | - "Open 5 trades" → 0/5 (needs 5 DIFFERENT pairs ≈ 200 Oil; skipped — reward 50 Oil vs 200 spent) |
+|||||||||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible) |
+|||||||||||||| | **BALANCES**: Oil **860** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot **1120** USDT, Futures 116.17 USDT, Total **1236.17** USDT |
+|||||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 76,834.99 → **−2.34 USDT**, liq 76,359.32 → **0.62% above liq = FORFEIT**) |
+|||||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close a "winning trade") and sits 0.62% above liquidation (<2% threshold), so it is forfeit; "Use 10x+ leverage" already claimed. Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk) for 1/5 progress that cannot complete today. Quest API re-queried: 11 active quests (t1–t4, s1/s3/s4/s5/s6/s7/s8) — no new s9+ listing missions. |
 ||||||||||||| KieDex | S2 daily 2026-09-13: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" card Done/Claimed +50 Oil) — NOTE: header counter did NOT advance on the leverage claim, it read 8/11 both before and after (matches the known "counter lags / Ready already counted" behaviour) |
 ||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed") |
