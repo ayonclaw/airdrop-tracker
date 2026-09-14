@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (16:05 UTC)**
+> Last updated: **Sep 14, 2026 (16:20 UTC)**
 
 ---
 
@@ -3844,6 +3844,15 @@
 - **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) - no new tasks. Cron handles daily claim.
 
 ## 2026-09-14 Scan & Execute
+
+### #273 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-09-14 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Headless Playwright gets **403 on x.com/i/oauth2/authorize** (X blocks headless consent page -> empty body `<html><head></head><body></body></html>`). Escalated to MCP Chrome (real Xvfb Chrome 148, already-authenticated X session). Dashboard loaded logged-in on first try.
+- **Streak claim:** `button.streak-claim` -> "Claim" -> clicked -> flipped to "Claimed" / disabled. **Streak 5 -> 6 days, +105 pts.**
+- **Balance:** **5,116 points** | **Rank #41,882** (waitlist) | Milestones 2/15 completed (650/13,200 pts)
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
+
 
 ### #265 Galxe "Check Result" — Rewardy Wallet $USDT Raffle (msg 127666) — ⛔ EXPIRED / NO ENTRY (dup of #182)
 - **Date:** 2026-09-14 | **URL:** https://app.galxe.com/quest/886ccaFEX94U2QUKzp4Hjg/GCXrDtZ7Xi | **Reward:** 15 USDT Raffle
