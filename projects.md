@@ -3868,3 +3868,14 @@
 - **Verdict:** ⛔ Nothing to claim. Wallet never entered the raffle because the follow-credential requirement was never satisfied. No X tasks re-run (campaign closed). **Do not re-execute.**
 - **Recurring fix (manual, one-time):** link X (@osbornrdx) + Telegram to the Galxe account via app.galxe.com → Settings → Social, so future Galxe quests auto-verify. See #120/#121/#217 for the same architectural blocker.
 - **Source:** Drop 127666 from @airdropfind
+
+### #274 GLRTCH Genesis — Timed Mint (Robinhood Chain mainnet) (msg 127676) — ⚠️ TIMED MINT / NO WL + 0 GAS
+- **Date:** 2026-09-14 | **URL:** https://www.glrtch.xyz/mint | **Reward:** GLRTCH Genesis NFT | **Platform:** glrtch.xyz (Next.js on Vercel) | **Source:** @airdropfind drop 127676
+- **Type:** Type 5 TIMED-MINT — 3 phases, Robinhood Chain **mainnet** (chainId **4663** / `0x1237`), contract `0xDa719Be13Af43757CeDe32D82F021c13CE29d991`, selector `publicMint(uint256)=0x2db11544`, `whitelistMint(qty,maxAllowance,proof)` for allowlist.
+- **Schedule (UTC):** Treasury 12:30 (free, 44/wallet, 30min) → **Glrtchlist 13:00** (0.0016 ETH, 1/wallet, 60min) → **Public 14:00–15:00** (0.0016 ETH, 2/wallet). `maxSupply=3404`, `totalMinted=0`, `paused=false`.
+- **Eligibility (browserless, NO wallet needed):** `GET /api/whitelist-proof?address=<addr>` → `{"eligible":false}` and `/api/treasury-proof` → `{"eligible":false}` for our wallet `0x8CCE...282D` (and every wallet tested incl. the collection owner). On-chain `merkleRoot()=0xe27649979117c7333770704bbfab7220916733ea58e26bbb221705b1346f4e0d` — root IS set, so the Glrtchlist is a real merkle allowlist; our wallets are genuinely NOT on it.
+- **⛔ HARD WALL — 0 ETH on Robinhood Chain mainnet.** `eth_getBalance` = `0x0` for `0x8CCE...282D` + all 500 galleria wallets. Mint needs 0.0016 ETH + ~0.000022 ETH gas ≈ **0.001622 ETH**. `eth_estimateGas` → `insufficient funds`. Funding path = Robinhood canonical bridge (L1→L2, ~10 min) but L1/Base/Arb balances are dust (~0.0000076 ETH L1). Not fundable server-side.
+- **RPC works from VPS:** the site proxies `/api/rpc` → `0x1237` (bypasses the TLS-blocked `rpc.robinhood.com`); publicnode + blxrbdn also reachable. So a server-side mint WOULD work if the wallet were funded — no browser needed.
+- **Action taken:** built `/home/ubuntu/.hermes/scripts/glrtch_mint.py` (conditional: checks balance+phase, mints `publicMint(1)` @ 0.0016 ETH, waits for receipt). Scheduled `no_agent` cron `914e193113f7` at **14:00/14:15/14:30/14:45 UTC** (public window) — fires ONLY if wallet is funded by then; silent otherwise.
+- **Manual path:** fund `0x8CCE...282D` with ≥0.0017 ETH on Robinhood Chain (bridge from L1) → cron auto-mints, OR CloakBrowser + MetaMask at 14:00 UTC.
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
