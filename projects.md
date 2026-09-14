@@ -1,9 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (05:20 UTC)**
+> Last updated: **Sep 14, 2026 (05:50 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #270 Arc VOXELS — Whitelist Application (drop 127668) — ✅ DONE
+- **Date:** 2026-09-14 | **URL:** https://arcvoxels.xyz/apply.html | **Source:** @airdropfind drop 127668 / https://x.com/ARCVOXELS/status/2099280384819106152
+- **Type:** Type 15 DCLogic-adjacent vanilla-JS wizard (Vercel static + `assets/js/config.js` + `apply.js`) → Google Apps Script backend (`sheetEndpoint` /exec). Client-side task gating (follow/like/rt click-tracking), real submit POSTs `{handle,wallet,reply,code,refby,ua}` as `text/plain;charset=utf-8` to the Apps Script web-app.
+- **✅ X Follow @ARCVOXELS:** https://x.com/ARCVOXELS (intent follow?screen_name=ARCVOXELS → confirmation sheet "Ikuti @ARCVOXELS" → sheet dismissed).
+- **✅ X Like:** https://x.com/ARCVOXELS/status/2099280384819106152 — `[data-testid="unlike"]` confirmed.
+- **✅ X Repost:** same intro post — via "Posting ulang" menu item (ID locale); `[data-testid="unretweet"]` confirmed.
+- **✅ X Reply tagging 2 friends:** https://x.com/osbornrdx/status/2099374415607918742 (tags @kobosnft @meleemarkets, in reply to the intro post).
+- **✅ WL submit (curl, Apps Script 302→echo):** `POST .../exec` body `{"handle":"osbornrdx","wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","reply":"https://x.com/osbornrdx/status/2099374415607918742","code":"AV-2F4KT9","refby":"","ua":"..."}` → **`{"ok":true,"updated":false,"code":"AV-2F4KT9","queue":4091,"referrals":0}`**.
+- **Reward:** WL for 666 voxel characters on Arc (mint "Soon").
+- **Reference:** AV-2F4KT9 | **Queue:** #4091 | **X:** @osbornrdx | **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+
 ### #269 KUBORA — The Mythic Vault Whitelist (drop 127663) — ✅ DONE
 - **Date:** 2026-09-14 | **URL:** https://whitelist.kuboraa.xyz/ | **Source:** @airdropfind drop 127663 / https://x.com/kubora_xyz/status/2098798101473693923
 - **Type:** Next.js (vinext) SPA whitelist. Browserless: page chunk `page-DBAIPGhc.js` exposes `POST /api/whitelist` with zod schema `{xHandle, wallet, email?, website?(honeypot, max 0)}`. No wallet connect / no signature needed.
