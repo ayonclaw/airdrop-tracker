@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 14, 2026 (04:10 UTC)**
+> Last updated: **Sep 14, 2026 (05:20 UTC)**
 
 ---
 
@@ -2083,6 +2083,15 @@
 
 ---
 ## ⛔ SKIPPED / EXPIRED
+
+### SOL INCINERATOR (sol-incinerator.com) — "Instant Claim SOL" — ⛔ NOT AN AIRDROP 🆕
+- **Date:** Sep 14, 2026
+- **URL:** https://sol-incinerator.com/?ref=earlyuser
+- **Source:** @airdropfind drop 127667 (msg 127667)
+- **Status:** ⛔ SKIPPED — **not an airdrop/waitlist**. Non-custodial Solana wallet cleaner by the Sol Slugs team: it scans a connected wallet for empty SPL / Token-2022 accounts and closes them to reclaim the ~0.00204 SOL rent deposit (less a cleanup fee).
+- **No registration / no waitlist / no points / no X tasks.** Public pages (`/index.md`, `/llms.txt`, `/stats`, `/airdrop-checker`) are read-only informational. `?ref=earlyuser` is analytics-only — the JS bundle classifies it as a `"referral"` traffic source, not a referral program.
+- **Reward:** None (the drop title "Instant Claim SOL" = reclaiming rent from your own empty token accounts, not a token distribution).
+- **Action:** Nothing to execute — no form, no API, no tasks. Wallet connect + on-chain close would only ever return the user’s own rent. Not tracked as an airdrop.
 
 ### PLUMBERS (plumbers.farm) — Claim Airdrop — NOT ELIGIBLE 🆕
 - **Date:** Aug 21, 2026
