@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (09:40 UTC)**
+> Last updated: **Sep 15, 2026 (11:40 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #287 FBYT Rewards Program — Waitlist (msg 127708) — ✅ DONE (browserless API + X follow)
+- **Date:** 2026-09-15 | **URL:** https://fbyt.io/rewards-hub | **Reward:** FBYT Rewards Program early access / points | **Source:** @airdropfind drop 127708 | **X:** @FBYTio
+- **Type:** BROWSERLESS-FIRST — Next.js landing (`fbyt.io`) + separate NestJS API host `api.fbyt.io`. Form = single Solana address field + "Join Waiting List".
+- **API reverse-engineering:** grepped `_next/static/chunks/page-*.js` → `POST https://api.fbyt.io/api/waitlist` with body `{"walletAddress":"<sol>"}`.
+  - `fbyt.io/api/waitlist` (relative) → **404** (Next.js page route, not the API) — must use the **absolute `api.fbyt.io`** host.
+  - Direct curl from VPS → **403** `"The waitlist accepts submissions from the FBYT sites only"` (Origin/Referer allowlist) OR **429 ThrottlerException** (per-IP rate limit, `retry-after: 14`).
+  - **Working path:** run the POST from **inside the fbyt.io page context** (MCP Chrome `evaluate_script` → `fetch('https://api.fbyt.io/api/waitlist', ...)`) so the browser sends the correct `Origin: https://fbyt.io` → **HTTP 201**.
+- **✅ Result:** `{"walletAddress":"5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG","position":582,"createdAt":"2026-09-15T11:36:44.726Z","alreadyRegistered":false}` — **position #582**, fresh registration.
+- **✅ X task:** Followed **@FBYTio** via MCP Chrome (X account @osbornrdx, Indonesian locale) — profile button flipped to **"Mengikuti"** (Following). Proof: https://x.com/FBYTio
+- **⚠️ Wallet-address correction (IMPORTANT):** The skill/docs list Solana `5yw3K...R3KM**U**u8676mG`, but the **stored private key** (`wallets/solana_private.txt`) derives to `5yw3K...R3KM**Z**u8676mG`. Verified via `solders.Keypair.from_bytes(base58decode(pk)).pubkey()`. Submitted the **Z** variant (the one we actually control). Both are valid base58 pubkeys; the U variant appears to be a documentation typo — recommend correcting the skill's wallet list.
+- **Notes:** Discord (`discord.gg/fbyt`) +50 pts is self-attest — no real Discord account connected, left unclaimed. X follow +50 pts credited automatically once Rewards Program goes live.
+- **Wallet:** SOL `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`
 
 ### #286 Kaleido Pre-Season 1 — Arc Waitlist (msg 127704) — ✅ DONE (browserless registration + X follow/repost)
 - **Date:** 2026-09-15 | **URL:** https://kaleidofi.xyz/waitlist?ref=cyzkxq54 | **Reward:** $kPoint (Pre-Season 1, feeds Season 1 / pre-TGE) | **Source:** @airdropfind drop 127704 | **X:** @kaleido_finance
