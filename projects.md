@@ -1,9 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (09:10 UTC)**
+> Last updated: **Sep 15, 2026 (09:40 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #286 Kaleido Pre-Season 1 — Arc Waitlist (msg 127704) — ✅ DONE (browserless registration + X follow/repost)
+- **Date:** 2026-09-15 | **URL:** https://kaleidofi.xyz/waitlist?ref=cyzkxq54 | **Reward:** $kPoint (Pre-Season 1, feeds Season 1 / pre-TGE) | **Source:** @airdropfind drop 127704 | **X:** @kaleido_finance
+- **Type:** WEB3-WALLET waitlist with **off-chain EIP-191 signature** (no on-chain tx, no gas). Chain context = **Arc mainnet (chainId 5042)** — only used to display the switch prompt; the actual registration is a `personal_sign` message.
+- **✅ Registration (browserless):** Reverse-engineered the exact message templates from `app/waitlist/page-*.js`:
+  - Register: `"Join the Kaleido Pre-Season 1 Arc waitlist.\nWallet: <addr>"` → `POST /api/waitlist {address, signature, ref:"cyzkxq54"}`
+  - X tasks: `"Confirm my Kaleido waitlist X <follow|retweet> for wallet <addr>."` → `POST /api/waitlist/x {address, signature, task}`
+  - Link: `"Link my X account to the Kaleido waitlist wallet <addr>."`
+  - Signed offline with `eth_account` (`encode_defunct`), submitted via urllib. **Result: `{"wallet":"0x8cce…282d","refCode":"69xh3ii3","rank":364,"points":100,"welcomePoints":100,"new":true}`**
+- **✅ X tasks:** X OAuth via `/api/auth/twitter?returnTo=/waitlist` (X account already logged in in MCP Chrome) → Authorize → `/api/auth/callback` → **`{"linked":true,"handle":"osbornrdx","id":"374505265"}`**. Then submitted signed `link` + `follow` + `retweet` → all `{"ok":true}`.
+- **Proof (X actions):**
+  - Follow: https://x.com/kaleido_finance (button flipped to `…-unfollow`, confirmed)
+  - Repost: https://x.com/kaleido_finance/status/2099572698380730531 (announce tweet; `unretweet` testid present = reposted)
+- **Final state:** `points:300` (100 welcome + 100 follow + 100 retweet), `xTasks: {linked:done, followed:done, retweeted:done}` (counting opens within 5h).
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Ref code earned:** `69xh3ii3`
 
 ### #283 Flipt Testnet — Launch / Trade / Graduate / Bond (msg 127702) — ✅ DONE (core on-chain flow complete, browserless)
 - **Date:** 2026-09-15 | **URL:** https://testnet.flipt.fun | **Reward:** Phase Ø NFT (Arc mainnet) + Gold/Silver/Bronze tier by final rank | **Source:** @airdropfind drop 127702 | **X:** @Fliptfun (https://x.com/Fliptfun/status/2099423058289410155)
