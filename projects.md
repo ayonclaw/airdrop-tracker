@@ -2207,6 +2207,12 @@
 ---
 ## ⛔ SKIPPED / EXPIRED
 
+### #283 Bybit Indonesia — Free CGV Movie Tickets Promo (msg 127698) — ⛔ NOT AUTOMATABLE (exchange KYC + real funds)
+- **Date:** 2026-09-15 | **URL:** https://www.bybit.id/en-IDN/promo/campaign/free-cgv-tickets-on-bybit-indonesia/?affiliate_id=50416 | **Reward:** 2 free CGV movie tickets | **Source:** @airdropfind drop 127698
+- **Type:** Type 7 EXCHANGE-TRADE-REQUIREMENT — Bybit Indonesia new-user promo. Requires: register on Bybit Indonesia (real KYC), **deposit IDR from your bank**, **withdraw IDR back to your bank account**, then claim campaign reward.
+- **Probe:** `curl -sL` → **HTTP 403** (Bybit edge blocks the VPS IP / requires logged-in session). No web waitlist, no wallet, no X tasks — the "tasks" are real fiat banking actions on a KYC'd exchange account.
+- **Verdict:** ⛔ Not automatable — needs a real Bybit Indonesia account with completed KYC + real IDR bank deposit/withdrawal. No form/API/waitlist to submit. Same class as MBX Trade & Earn (#earlier). Nothing to execute server-side.
+
 ### #282 Prosper Scholar Alpha — Galxe Quest "Check Result" (msg 127695) — ⛔ EXPIRED (raffle result check, no entry)
 - **Date:** 2026-09-15 | **URL:** https://app.galxe.com/quest/JEThHuaAtrn2QVbyQGkBHx/GCBPDtZ4NY | **Reward:** 500 USD pool raffle | **Source:** @airdropfind drop 127695
 - **Type:** Type 10 GALXE-QUEST — campaign `GCBPDtZ4NY` "Prosper Scholar Alpha" (type `Token`, **status `Expired`**, window 2026-09-01 04:00 → 2026-09-14 04:00 UTC).
