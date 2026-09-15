@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (09:20 UTC)**
+> Last updated: **Sep 15, 2026 (10:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #277 Playgrabba — Whitelist "Be there for the first pull" (msg 127690) — ✅ DONE (client-side) / ⚠️ NO BACKEND
+- **Date:** 2026-09-15 | **URL:** https://playgrabba.com/#whitelist | **Reward:** Whitelist allocation for $GRABBA (claw-machine collectible, Robinhood Chain) | **Source:** @airdropfind drop 127690 | **X:** @PlayGrabba
+- **Type:** Type 11 VANILLA-JS-WL-CONFIG / NO BACKEND — single static page, inline `<script>` with a 4-step sequence wizard (`grabba_whitelist` localStorage key). The submit handler literally ends with `/* Hook your backend up here if you want the addresses sent somewhere. */` — there is **NO server endpoint**; the "whitelist" is purely client-side localStorage. No `/api/`, no form action, no fetch.
+- **✅ X Follow @PlayGrabba:** https://x.com/PlayGrabba (intent dialog → "Ikuti @PlayGrabba" → profile shows **Mengikuti**)
+- **✅ X Like:** https://x.com/PlayGrabba/status/2099472249963061590 (`[data-testid="unlike"]` confirmed)
+- **✅ X Repost:** same announcement tweet (`[data-testid="unretweet"]` confirmed; Indonesian menu item "Posting ulang")
+- **✅ Wallet submit (client-side):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → msg "You're on the whitelist." → all 4 steps unlocked → final state `{wallets:["0x8cce…282d"], step:5}` → "You're all set. See you at the first pull."
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Email:** airdropkarbiters@gmail.com
+- **⚠️ Notes:** Because there is NO backend, the wallet was NOT transmitted anywhere — the registration is not verifiable server-side. X tasks were done for real (proof above) so the project team can verify from the handle. Flag for manual follow-up if PlayGrabba publishes a real submission endpoint.
+
 ### #276 Arctrons — Whitelist "Claim Your Seat" (msg 127688) — ✅ DONE
 - **Date:** 2026-09-15 | **URL:** https://arctrons.cash/whitelist | **Reward:** Whitelist seat (ERC-404 collection on Arc, 6,666 machines) | **Source:** @airdropfind drop 127688 | **X:** @Arctrons404
 - **Type:** Type 4 BROWSERLESS-FIRST → Next.js SPA (`POST /api/whitelist`, open endpoint, no captcha). Client-side gated steps (Follow→Like→Retweet) are self-attest flags in the payload.
