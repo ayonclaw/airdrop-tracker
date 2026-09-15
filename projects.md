@@ -21,6 +21,7 @@
 - **✅ X actions (MCP Chrome, real session):** ✅ Follow @TruthAgentAI (`x.com/intent/follow?screen_name=TruthAgentAI`) · ✅ Follow @agnt_hub (`x.com/intent/follow?screen_name=agnt_hub`) · ✅ Like [2099475722574200934](https://x.com/agnt_hub/status/2099475722574200934) — verified `unlike` data-testid + aria-label "3 Suka. Menyukai".
 - **Blocker:** TWITTER creds → `syncCredentialValue` returns `"missing twitter args"` (requires `twitter:{captcha,campaignID}` = **Aliyun captcha**); GALXE_ID visit creds need browser visit; account-level X OAuth not linked. Same matrix as #188/#185/#260.
 - **Verdict:** ⚠️ PARTIAL — all X actions performed (proof above). Points claim pending account-level X OAuth link.
+- **🔁 Re-delivered as drop 127697 (msg 127697, 2026-09-15):** the PARENT campaign URL `https://app.galxe.com/quest/AGNTHub/GC6petZPw3` arrived via @airdropfind — it exposes the SAME 5 creds as Day 1 (`GCSfitZWsP`). Re-ran SIWE pipeline: ✅ `followSpace(77675)` → `{"followSpace":1}`; re-verified X actions live in MCP Chrome — @TruthAgentAI follow still active (`2080237951150063616-unfollow` = "Mengikuti"), tweet 2099475722574200934 still liked (`[data-testid="unlike"]`). No new action needed — duplicate of #281. No duplicate tracker entry created.
 
 ### #279 VividGeneration — Whitelist (msg 127692) — ✅ DONE
 - **Date:** 2026-09-15 | **URL:** https://vividgeneration.art/apply | **Reward:** Whitelist allocation (Phase 2 GTD full → whitelist) | **Source:** @airdropfind drop 127692 | **X:** @VIVIDGENERATION
