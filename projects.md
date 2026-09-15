@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (11:40 UTC)**
+> Last updated: **Sep 15, 2026 (12:05 UTC)**
 
 ---
 
@@ -17,6 +17,21 @@
 - **⚠️ Wallet-address correction (IMPORTANT):** The skill/docs list Solana `5yw3K...R3KM**U**u8676mG`, but the **stored private key** (`wallets/solana_private.txt`) derives to `5yw3K...R3KM**Z**u8676mG`. Verified via `solders.Keypair.from_bytes(base58decode(pk)).pubkey()`. Submitted the **Z** variant (the one we actually control). Both are valid base58 pubkeys; the U variant appears to be a documentation typo — recommend correcting the skill's wallet list.
 - **Notes:** Discord (`discord.gg/fbyt`) +50 pts is self-attest — no real Discord account connected, left unclaimed. X follow +50 pts credited automatically once Rewards Program goes live.
 - **Wallet:** SOL `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`
+
+### #288 Archetypes — Whitelist Apply (msg 127709) — ✅ DONE (X OAuth raid 4/4 + papers filed)
+- **Date:** 2026-09-15 | **URL:** https://archetypesnft.xyz/apply | **Reward:** Free mint whitelist (700 supply, hand-drawn 1/1s, mint on Arc) | **Source:** @airdropfind drop 127709 | **X:** @archetypesNFTs
+- **Type:** Next.js SPA + **better-auth X OAuth** (client `grok_1c73fcfebde34945a696408bebde0f77` via `auth.grok.me`) → **server-verified X raid** (follow/like/quote/reply checked against the X API) → archetype + handle + EVM wallet + essay → filed.
+- **Recon (browserless first):** grepped `assets/apply-*.js` → raid gating via `ae()` component + server functions; endpoints `/api/auth/sign-in/social`, `/api/apply`; filing code `ARCHETYPES`; quote must include the code; reply must be from the signed-in handle. Better-auth providers probed via `/api/auth/providers`.
+- **✅ X OAuth:** MCP Chrome (X already logged in as @osbornrdx) → "Sign in with X" → `x.com/i/oauth2/authorize` consent (showed @osbornrdx) → Authorize → `/apply` loaded with account chip "Osborn".
+- **✅ Raid 4/4 (all verified server-side, progress bar 0→4/4):**
+  1. **Follow** @archetypesNFTs — profile button flipped to "Mengikuti" (testid `2088733038200975360-unfollow`). Proof: https://x.com/archetypesNFTs
+  2. **Like** announcement tweet. Proof: https://x.com/archetypesnfts/status/2099151887983374346
+  3. **Quote** with filing code ARCHETYPES — https://x.com/osbornrdx/status/2099827938967597173 (site: "Saved https://x.com/i/status/2099827938967597173")
+  4. **Reply** — https://x.com/osbornrdx/status/2099828167376826551 (site: "Saved https://x.com/i/status/2099828167376826551")
+- **✅ Papers filed:** Archetype **Predator / CONSTRUCT** · Role **Collector** · X **@osbornrdx** · Wallet **0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D** · essay submitted.
+- **✅ Confirmation:** redirected to `/account` → **"UNDER REVIEW — FILED SEP 15, 2026 — You're done. Papers are in the formation. Sit tight."**
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+
 
 ### #286 Kaleido Pre-Season 1 — Arc Waitlist (msg 127704) — ✅ DONE (browserless registration + X follow/repost)
 - **Date:** 2026-09-15 | **URL:** https://kaleidofi.xyz/waitlist?ref=cyzkxq54 | **Reward:** $kPoint (Pre-Season 1, feeds Season 1 / pre-TGE) | **Source:** @airdropfind drop 127704 | **X:** @kaleido_finance
