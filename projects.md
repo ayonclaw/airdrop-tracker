@@ -4054,3 +4054,15 @@
 - **Verdict:** Best-effort complete - every API-doable cred synced + all 4 real X actions executed with data-testid proof. Remaining blockers (X OAuth linking, Discord OAuth, Geetest, on-chain claim tx) are architectural. Manual fix (one-time): link X + Discord to Galxe account; then the 5 social creds auto-verify and the quest can be completed in-browser.
 - **X proof links:** https://x.com/looputo_fi (follow) - https://x.com/0xLRM (follow) - https://x.com/looputo_fi/status/2099337612427149598 (like + retweet)
 - **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+
+
+### #285 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-09-15 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Headless Playwright `pear_daily.py` failed again — X `/i/oauth2/authorize` consent page renders **empty body** for headless Chromium (X anti-bot). Same 403/blank pattern as #273. Escalated to **MCP Chrome** (real Xvfb Chrome 148, X session already authenticated) → dashboard loaded logged-in first try.
+- **Streak claim:** `button.streak-claim` → "Claim" → clicked → flipped to **"Claimed" (disabled)**. Modal fired: **"Day 7 milestone! +111 daily + 250 milestone = +361 pts"**.
+- **Streak:** 6 → **7 days** | **Reward this claim: +361 pearls** (111 daily + 250 day-7 milestone)
+- **Balance:** **5,477 points** (was 5,116) | **Rank #41,859** (waitlist, improved from #41,882) | Milestones 2/15 completed (650/13,200 pts)
+- **Next milestone:** day 14 unlocks +500 pts.
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
+- **Cron script note:** `~/.hermes/profiles/ayon/scripts/pear_daily.py` OAuth fallback is broken (headless X OAuth consent = blank page). Session persistence in `/tmp/pear_daily_v7` also lost. MCP Chrome path is the reliable route.
