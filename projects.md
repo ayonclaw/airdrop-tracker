@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (16:55 UTC)**
+> Last updated: **Sep 15, 2026 (17:25 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #291 Raycash (by Zama) — Waitlist + X Tasks (msg 127716) — ✅ DONE (email OTP + X follow/post, 400 RP)
+- **Date:** 2026-09-15 | **URL:** https://www.raycash.xyz/r/RQE4JF | **Reward:** RP points (400 RP earned) | **Source:** @airdropfind drop 127716 | **X:** @raycashxyz
+- **Type:** Next.js SPA waitlist (Better-Auth + email OTP). 4 tasks: Join waitlist (+100), Subscribe newsletter (+100), Follow @raycashxyz (+100), Post about us on X (+100).
+- **Recon:** grepped Turbopack chunks → `POST /api/user/waitlist`, `POST /api/user/verify {task}`, `GET /api/user`, `POST /api/user/x`. Email OTP login via Better-Auth `email-otp`. Server does X verification (follow + post mention) via server-side X API.
+- **✅ Registration:** `POST /api/send/waitlist {email:"airdropkarbiters@gmail.com",newsletterOptIn:true}` → `{"success":true,"signIn":true}` (HTTP 200).
+- **✅ Email OTP:** OTP retrieved via IMAP from airdropkarbiters@gmail.com (code 250583) → signed in. X account linked (@osbornrdx).
+- **✅ X tasks (MCP Chrome, @osbornrdx, Indonesian X locale):**
+  - **Follow @raycashxyz** → intent page button flipped to **"Mengikuti"** (confirmed following). Proof: https://x.com/raycashxyz
+  - **Post about us** → posted via intent: `https://x.com/osbornrdx/status/2099911798124339331`. Proof: https://x.com/osbornrdx/status/2099911798124339331
+- **✅ Verify:** `POST /api/user/verify {task:"follow"}` → `state:"complete"`; `{task:"post"}` → `state:"complete", evidenceUrl:"https://x.com/i/web/status/2099911798124339331"`. Final `GET /api/user` → waitlist/newsletter/follow/post all `state:"complete"`, 4/4 steps, **400 RP**.
+- **Verdict:** ✅ FULLY COMPLETE — all 4 tasks server-verified complete, 400 RP.
+- **X proof links:** https://x.com/raycashxyz (follow) - https://x.com/osbornrdx/status/2099911798124339331 (post)
+- **Wallet:** none required (email + X only)
 
 ### #290 DND Aliens — Allowlist (Investigation Game) (msg 127714) — ✅ DONE (browserless API + investigation game score 96/100)
 - **Date:** 2026-09-15 | **URL:** https://www.dndaliens.com/allowlist | **Reward:** Allowlist spot (2,026 supply) | **Source:** @airdropfind drop 127714 | **X:** @DNDaliens
