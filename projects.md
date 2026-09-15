@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (10:05 UTC)**
+> Last updated: **Sep 15, 2026 (10:15 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #278 RichGirlsClub — Whitelist (msg 127691) — ✅ DONE
+- **Date:** 2026-09-15 | **URL:** https://richgirlsclub.xyz/# | **Reward:** Whitelist allocation | **Source:** @airdropfind drop 127691 | **X:** @RichGirlsClub_
+- **Type:** Type 15 DCLOGIC/GOOGLE-APPS-SCRIPT VARIANT — single static page, two inputs (`#walletInput`, `#twitterInput`) + `Join Whitelist` button. Submit handler POSTs `{wallet, twitter}` (JSON, `mode:'no-cors'`) to a Google Apps Script `SCRIPT_URL`. No wallet connect, no captcha.
+- **Endpoint:** `POST https://script.google.com/macros/s/AKfycbyBV6YyfzIxLsHuySMYR5ibBF5xaSfpNGGVPOERAqsDBeTGduwsKDod9qfeXaABkGJzLA/exec`
+- **✅ Submit:** `{"wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","twitter":"@osbornrdx"}` → 302 → `script.googleusercontent.com/macros/echo` → **`{"result":"success"}`** (HTTP 200)
+- **✅ X Follow @RichGirlsClub_:** https://x.com/RichGirlsClub_ (intent dialog → "Ikuti @RichGirlsClub_" → confirm)
+- **✅ X Like:** https://x.com/RichGirlsClub_/status/2099434079015883138 (`[data-testid="unlike"]` confirmed)
+- **✅ X Repost:** same announcement tweet (`[data-testid="unretweet"]` confirmed; Indonesian menu "Posting ulang")
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Email:** airdropkarbiters@gmail.com | **X handle:** @osbornrdx
+- **Notes:** "Complete All Task" = follow/like/retweet the source announcement tweet (no task checkboxes in the UI). Server-side record confirmed via Apps Script `{"result":"success"}`.
+
 ### #277 Playgrabba — Whitelist "Be there for the first pull" (msg 127690) — ✅ DONE (client-side) / ⚠️ NO BACKEND
 - **Date:** 2026-09-15 | **URL:** https://playgrabba.com/#whitelist | **Reward:** Whitelist allocation for $GRABBA (claw-machine collectible, Robinhood Chain) | **Source:** @airdropfind drop 127690 | **X:** @PlayGrabba
 - **Type:** Type 11 VANILLA-JS-WL-CONFIG / NO BACKEND — single static page, inline `<script>` with a 4-step sequence wizard (`grabba_whitelist` localStorage key). The submit handler literally ends with `/* Hook your backend up here if you want the addresses sent somewhere. */` — there is **NO server endpoint**; the "whitelist" is purely client-side localStorage. No `/api/`, no form action, no fetch.
