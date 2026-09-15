@@ -1,9 +1,26 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (11:05 UTC)**
+> Last updated: **Sep 15, 2026 (11:30 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #280 AGNT Weekly Socials | S3 Week 8 - Finale — Galxe Quest (msg 127694) — ⛔ NOT ELIGIBLE (qualification gate; feeders expired)
+- **Date:** 2026-09-15 | **URL:** https://app.galxe.com/quest/AGNTHub/GCWhitZQLx | **Reward:** 1000 Points | **Source:** @airdropfind drop 127694
+- **Type:** Type 10 GALXE-QUEST — AGNT Hub space ID `77675`, campaign `GCWhitZQLx` (type `Points`, status `Active`). Single credential: `GALXE_ID 722060027023589376` "AGNT S3 Week 8 Finale Qualification" (description: "verifies that you have successfully completed tasks across all days of the AGNT campaign").
+- **SIWE API (graphigo.prd.galaxy.eco, wallet 0x8CCE...282D):** ✅ signed in; ✅ `followSpace(77675)` → `{"followSpace":1}`; cred sync → `allow:false`.
+- **⛔ Blocker:** Finale is a pure **qualification gate** — it requires the Week-8 Day 1-7 daily campaigns to have been completed. Enumerated space 77675 Week 8: **Days 1-5 all `status:"Expired"`**, Finale = qualification-only (no standalone syncable action). The daily feeders' `TWITTER` creds also require Galxe account-level X OAuth, which is not linked.
+- **Note:** Week 9 has since started (parent `GC6petZPw3` Active, Day 1 `GCSfitZWsP` Active) — see #281.
+- **Verdict:** ⛔ Nothing claimable for Week 8 Finale. Architectural — same X-OAuth-link blocker as #188/#185/#260.
+
+### #281 AGNT Weekly Socials | S3 Week 9 - Day 1 — Galxe Quest (bonus, space 77675) — ⚠️ PARTIAL (X done; OAuth creds pending)
+- **Date:** 2026-09-15 | **URL:** https://app.galxe.com/quest/AGNTHub/GCSfitZWsP | **Reward:** 15+10 Points | **Source:** discovered during Week-8 Finale investigation
+- **Type:** Type 10 GALXE-QUEST — parent `GC6petZPw3` "S3 Week 9" (Active), Day 1 `GCSfitZWsP` (Active, window 2026-09-14 04:00 → 2026-09-21 04:00 GMT+7).
+- **Creds:** GALXE_ID 722062213703008256 (Visit IG) · 722062213686231040 (Visit X page) · TWITTER 702847578827390976 (@TruthAgentAI Followers) · GALXE_ID 722065462313091072 (Visit X post) · TWITTER 722065462220816384 (@agnt_hub Tweet Liker — Tweet 2099475722574200934)
+- **✅ API:** `followSpace(77675)` → `{"followSpace":1}`. GALXE_ID visit creds sync → `allow:false` (need in-browser visit).
+- **✅ X actions (MCP Chrome, real session):** ✅ Follow @TruthAgentAI (`x.com/intent/follow?screen_name=TruthAgentAI`) · ✅ Follow @agnt_hub (`x.com/intent/follow?screen_name=agnt_hub`) · ✅ Like [2099475722574200934](https://x.com/agnt_hub/status/2099475722574200934) — verified `unlike` data-testid + aria-label "3 Suka. Menyukai".
+- **Blocker:** TWITTER creds → `syncCredentialValue` returns `"missing twitter args"` (requires `twitter:{captcha,campaignID}` = **Aliyun captcha**); GALXE_ID visit creds need browser visit; account-level X OAuth not linked. Same matrix as #188/#185/#260.
+- **Verdict:** ⚠️ PARTIAL — all X actions performed (proof above). Points claim pending account-level X OAuth link.
 
 ### #279 VividGeneration — Whitelist (msg 127692) — ✅ DONE
 - **Date:** 2026-09-15 | **URL:** https://vividgeneration.art/apply | **Reward:** Whitelist allocation (Phase 2 GTD full → whitelist) | **Source:** @airdropfind drop 127692 | **X:** @VIVIDGENERATION
@@ -2188,6 +2205,12 @@
 
 ---
 ## ⛔ SKIPPED / EXPIRED
+
+### #282 Prosper Scholar Alpha — Galxe Quest "Check Result" (msg 127695) — ⛔ EXPIRED (raffle result check, no entry)
+- **Date:** 2026-09-15 | **URL:** https://app.galxe.com/quest/JEThHuaAtrn2QVbyQGkBHx/GCBPDtZ4NY | **Reward:** 500 USD pool raffle | **Source:** @airdropfind drop 127695
+- **Type:** Type 10 GALXE-QUEST — campaign `GCBPDtZ4NY` "Prosper Scholar Alpha" (type `Token`, **status `Expired`**, window 2026-09-01 04:00 → 2026-09-14 04:00 UTC).
+- **Creds:** TWITTER 715289073845010432 (ProsperTicker Followers) · TWITTER 715289255458373632 (ProsperDesk Followers) · GALXE_ID 717399439743909888 (Quiz: Prosper Scholar Badge Quiz).
+- **Verdict:** ⛔ "Check Result" = raffle-result notification, not a new entry. Campaign expired 2026-09-14 04:00 UTC; our wallet never entered (follow creds never synced — X OAuth unlinked). Nothing to claim. Do not re-execute.
 
 ### SOL INCINERATOR (sol-incinerator.com) — "Instant Claim SOL" — ⛔ NOT AN AIRDROP 🆕
 - **Date:** Sep 14, 2026
