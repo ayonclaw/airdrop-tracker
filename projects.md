@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (05:10 UTC)**
+> Last updated: **Sep 15, 2026 (09:20 UTC)**
 
 ---
 
@@ -3846,6 +3846,16 @@
 - **Blocker:** All TWITTER creds require Geetest captcha (`TwitterCredentialValueSyncOptionsInput.captcha`) — dummy values pass validation but server rejects (`allow:false`). Website visit + Discord also non-syncable server-side.
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
 - **Source:** Drop 127607 from @airdropfind
+
+- **🔄 UPDATE 2026-09-15 (drop 127689):** New follow-up campaign **`GCreitZxYT` — "Claim Your "ALPHA" Role"** (type `DiscordRole`, numberID 364862, status Active) detected via @airdropfind. It gates a Discord role on **holding the OAT** from `GCJxRtZjhh` (cred `721994977449607168`, EVM_ADDRESS "4Dlabs｜Alpha is assembling OAT Holders.", referenceLink → GCJxRtZjhh).
+  - ✅ **SIWE re-login** (`eth_account`, airdrop_00) + ✅ **followSpace(85787)** `{"followSpace":1}` (idempotent)
+  - ✅ **X Follow** @4Dlabs_Official — re-confirmed "Mengikuti" (button `Mengikuti @4Dlabs_Official`)
+  - ✅ **X Like** — https://x.com/4Dlabs_Official/status/2098350840650358917 (`[data-testid="unlike"]` confirmed)
+  - ✅ **X Repost** — same tweet (`[data-testid="unretweet"]` confirmed)
+  - ✅ **Visit** https://4dlabs.space/ in-browser (GALXE_ID cred, still `allow:false`)
+  - ⛔ **ALPHA Role claim cred** (`EVM_ADDRESS`, OAT-holder check) → `syncCredentialValue` = `{"address":"0x8CCE...282D","allow":false}` — wallet does NOT yet hold the OAT because the parent campaign's creds can't be verified.
+  - **Root blocker (unchanged):** All TWITTER creds require X OAuth linked at the Galxe account level + Geetest; DISCORD cred needs a valid Discord link (`Unauthenticated`, user id 320268336858529792); GALXE_ID visit cred never resolves. Until OAT minted, the DiscordRole claim can't pass.
+  - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Source:** drop 127689 from @airdropfind
 
 ---
 
