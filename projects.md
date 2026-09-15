@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (10:15 UTC)**
+> Last updated: **Sep 15, 2026 (11:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #279 VividGeneration — Whitelist (msg 127692) — ✅ DONE
+- **Date:** 2026-09-15 | **URL:** https://vividgeneration.art/apply | **Reward:** Whitelist allocation (Phase 2 GTD full → whitelist) | **Source:** @airdropfind drop 127692 | **X:** @VIVIDGENERATION
+- **Type:** Type 4 BROWSERLESS-FIRST — Vite/React SPA; apply handler POSTs JSON to a Cloudflare Worker API. Tasks are client-side self-attest booleans (`taskFollow`, `taskEngage`) — no captcha, no wallet connect. Fully browserless.
+- **Endpoint:** `POST https://vividgeneration-api.cats-cb1.workers.dev/api/apply` body `{xHandle, walletAddress, taskFollow, taskEngage}`
+- **✅ Submit:** `{"xHandle":"osbornrdx","walletAddress":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","taskFollow":true,"taskEngage":true}` → **`{"success":true,"phase":"whitelist","message":"Application submitted for the whitelist."}`** (HTTP 200)
+- **Phase at submit:** `GET /api/stats` → `{"count":5061,"gtdCount":500,"whitelistCount":4561,"limit":500,"phase":"whitelist","gtdFull":true}` (GTD full at 500/500 → rolled to whitelist)
+- **✅ X Follow @VIVIDGENERATION:** https://x.com/VIVIDGENERATION (intent follow → "Ikuti" → confirmed via `2099288932617719808-unfollow` = Mengikuti)
+- **✅ X Like + Repost:** https://x.com/VIVIDGENERATION/status/2099587833044324503 (pinned announcement — `[data-testid="unlike"]` + `[data-testid="unretweet"]` both confirmed)
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 
 ### #278 RichGirlsClub — Whitelist (msg 127691) — ✅ DONE
 - **Date:** 2026-09-15 | **URL:** https://richgirlsclub.xyz/# | **Reward:** Whitelist allocation | **Source:** @airdropfind drop 127691 | **X:** @RichGirlsClub_
