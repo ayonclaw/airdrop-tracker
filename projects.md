@@ -4030,3 +4030,27 @@
 - **Verdict:** ℹ️ **NOT ELIGIBLE** — nothing to claim, nothing to register. The claim portal is live (Connect Wallet reveals points/ticket/ADX/NFT/Gas Tank) but requires a wallet that participated in S1. No action possible.
 - **Notes:** RPC targets are Ethereum mainnet (`eth.merkle.io`/`ethereum.reth.rs`) + Base (`mainnet.base.org`) via wagmi — even if eligible, the on-chain claim would need a funded eligible wallet. Season 2 confirmed upcoming ("What next? Season 2😄") — re-check hub.heyaura.com for S2 farming.
 - **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (not eligible)
+
+
+## 2026-09-15 Scan & Execute (cont. - drop 127703)
+
+### #284 Looputo Early Access - Galxe Campaign (msg 127703) - PARTIAL (API + real X actions done; Geetest + X-OAuth + on-chain tx wall)
+- **Date:** 2026-09-15 | **URL:** https://app.galxe.com/quest/JjJgtGrzk8ZE4zSd8NFUSD/GCXnitZR5Q | **Reward:** $5 USDC for 100 random winners | **Source:** @airdropfind drop 127703 | **X:** @looputo_fi, @0xLRM
+- **Type:** Type 10 GALXE-QUEST - campaign GCXnitZR5Q, space Looputo (spaceId 86664), status Active, type Token, numberID 364889.
+- **Completed (API, wallet 0x8CCE...282D):**
+  - SIWE SignIn -> JWT OK
+  - followSpace(86664) -> {"data":{"followSpace":1}} OK
+  - syncCredentialValue GALXE_ID "Follow Looputo on Galxe" (cred 716375970830876672) -> allow:true OK
+- **Completed (real X actions via MCP Chrome, @osbornrdx, Indonesian X locale):**
+  - **Follow @looputo_fi** -> profile shows "Mengikuti" (following) - https://x.com/looputo_fi
+  - **Follow @0xLRM** -> profile shows "Mengikuti" (following) - https://x.com/0xLRM
+  - **Like** tweet 2099337612427149598 -> data-testid flipped like->unlike (confirmed liked) - https://x.com/looputo_fi/status/2099337612427149598
+  - **Retweet** same tweet -> data-testid flipped retweet->unretweet (confirmed reposted) - https://x.com/looputo_fi/status/2099337612427149598
+- **Walls (architectural, not tactical):**
+  1. 4x TWITTER creds (722085569751941120 follow looputo_fi, 722085569756135424 tweet liker, 722085569655472128 tweet retweeter, 722085569638694912 follow 0xLRM) -> syncCredentialValue returns "missing twitter args" (InvalidArgument). X OAuth is NOT linked at the Galxe account level - one-time manual setup required (app.galxe.com -> Settings -> Social -> link @osbornrdx).
+  2. 1x DISCORD cred (722085569525448704 "Looputo Discord Verified") -> Unauthenticated - needs real Discord join + OAuth link to Galxe.
+  3. prepareParticipate -> {"allow":false,"disallowReason":"rpc error: code = InvalidArgument desc = valid quest info err: 1001:Invalid recaptcha token"} - Geetest v4 captcha gate on quest participation.
+  4. participate mutation requires an on-chain tx (NON_NULL) - campaign type Token = claim-tx flow, so even past Geetest it needs a signed on-chain transaction.
+- **Verdict:** Best-effort complete - every API-doable cred synced + all 4 real X actions executed with data-testid proof. Remaining blockers (X OAuth linking, Discord OAuth, Geetest, on-chain claim tx) are architectural. Manual fix (one-time): link X + Discord to Galxe account; then the 5 social creds auto-verify and the quest can be completed in-browser.
+- **X proof links:** https://x.com/looputo_fi (follow) - https://x.com/0xLRM (follow) - https://x.com/looputo_fi/status/2099337612427149598 (like + retweet)
+- **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
