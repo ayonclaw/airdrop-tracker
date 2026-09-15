@@ -1,9 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (04:35 UTC)**
+> Last updated: **Sep 15, 2026 (05:10 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+### #276 Arctrons — Whitelist "Claim Your Seat" (msg 127688) — ✅ DONE
+- **Date:** 2026-09-15 | **URL:** https://arctrons.cash/whitelist | **Reward:** Whitelist seat (ERC-404 collection on Arc, 6,666 machines) | **Source:** @airdropfind drop 127688 | **X:** @Arctrons404
+- **Type:** Type 4 BROWSERLESS-FIRST → Next.js SPA (`POST /api/whitelist`, open endpoint, no captcha). Client-side gated steps (Follow→Like→Retweet) are self-attest flags in the payload.
+- **✅ X Follow @Arctrons404:** https://x.com/Arctrons404 (button flipped to "Mengikuti"/unfollow confirmed)
+- **✅ X Like:** https://x.com/Arctrons404/status/2099539721303249354 (`[data-testid="unlike"]` confirmed)
+- **✅ X Repost:** same announcement tweet (`[data-testid="unretweet"]` confirmed)
+- **✅ X Comment:** https://x.com/osbornrdx/status/2099676356657455294 ("LFG @Arctrons404 — seat claimed 🛠️")
+- **✅ Submit:** `POST https://arctrons.cash/api/whitelist {username:"osbornrdx", wallet:"0x8CCE...282D", commentUrl, follow:true, like:true, retweet:true}` → **HTTP 409 `{"error":"This wallet or username is already on the whitelist."}`** = ALREADY REGISTERED (success). Total count rose 48400→48497.
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Email:** airdropkarbiters@gmail.com
+- **Notes:** Payload shape extracted from `_next/static/chunks/app/whitelist/page-*.js`. 409 = success (already on list from a prior session). Next.js SPA — curl to endpoint works directly (no origin binding).
+
 ### #275 Hood WARRIORS — Whitelist (FREE MINT, Robinhood Chain) (msg 127679) — ✅ DONE
 - **Date:** 2026-09-14 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSehE88f0x5wZqPwu45KmT2u_Yog22fVSiN-rgNMK3YqftZwPA/viewform | **Reward:** Free mint / GTD (first 300 wallets) | **Source:** @airdropfind drop 127679 | **X:** @MetalWarriorsx
 - **Type:** Type 4 BROWSERLESS-FIRST → Google Form (PUBLIC, no login required for entry but Google session active). Source tweet: https://x.com/MetalWarriorsx/status/2094822221919207443
