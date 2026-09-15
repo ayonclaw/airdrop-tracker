@@ -5,6 +5,23 @@
 
 ## ✅ COMPLETED
 
+### #282 Bitcoin Base (BCB) Airdrop Round 2 — Gleam Competition (msg 127700) — ✅ DONE (mandatory tasks complete, 35 entries)
+- **Date:** 2026-09-15 | **URL:** https://gleam.io/GTInO/bitcoin-base-airdrop-round-2 (short link https://wn.nr/Lqr9wKm) | **Reward:** Top 25,000 share 1,000,000 $BCB | **Source:** @airdropfind drop 127700
+- **Type:** Gleam.io competition (X-OAuth gated). X login as @osbornrdx (Gleam display "Mosyafik Jr"). Cloudflare Turnstile on task submission — solved in-browser (MCP Chrome).
+- **✅ Completed tasks (35 entries total):**
+  - **Wallet address (+5)** — BCB wallet `BGVeyDGVhVenNDJqmqfJCJzDT59rStwxzL` (Base58Check, version byte 25, prefix B — real wallet generated, saved to /home/ubuntu/airdrop/credentials/wallets/)
+  - **Follow @bitcoinbcb on X (+5)** — https://x.com/bitcoinbcb (now "Mengikuti @bitcoinbcb") | username @osbornrdx submitted
+  - **Repost @bitcoinbcb on X (+5)** — retweeted announcement: https://x.com/bitcoinbcb/status/2099623051994292577 (unretweet control present = confirmed) + liked
+  - **Visit the Bitcoin Base website (+5)** — https://bitcoinbcb.com/
+  - **Join Telegram Group (+5)** — https://t.me/bitcoinbase_community
+  - **Join Telegram Channel (+5)** — https://t.me/bitcoinbase_news
+  - **Follow @BitdaxGlobal on X (+5, optional)** — https://x.com/BitdaxGlobal ("Mengikuti @BitdaxGlobal") | username @osbornrdx submitted
+  - **Daily Check-In (+5/day)** — claimed
+- **⚠️ Skipped (optional/manual — out of scope):** Participate in Public Sale/ICO (+50, needs real payment tx), Create YouTube video (+50, manual review), Set up masternode (+250, needs real node + 1000s BCB collateral), Refer Friends (+10, needs referrals).
+- **X proof links:** https://x.com/bitcoinbcb (follow) · https://x.com/bitcoinbcb/status/2099623051994292577 (repost+like) · https://x.com/BitdaxGlobal (follow)
+- **Wallet:** BCB `BGVeyDGVhVenNDJqmqfJCJzDT59rStwxzL` (EVM/SOL not applicable — BCB chain)
+- **Notes:** Initial wallet submit silently failed on first pass (Angular panel reset after reload); re-submitted with real keystrokes via `type_text` → wallet task flipped to `completed-entry-method`, entries 30→35.
+
 ### #280 AGNT Weekly Socials | S3 Week 8 - Finale — Galxe Quest (msg 127694) — ⛔ NOT ELIGIBLE (qualification gate; feeders expired)
 - **Date:** 2026-09-15 | **URL:** https://app.galxe.com/quest/AGNTHub/GCWhitZQLx | **Reward:** 1000 Points | **Source:** @airdropfind drop 127694
 - **Type:** Type 10 GALXE-QUEST — AGNT Hub space ID `77675`, campaign `GCWhitZQLx` (type `Points`, status `Active`). Single credential: `GALXE_ID 722060027023589376` "AGNT S3 Week 8 Finale Qualification" (description: "verifies that you have successfully completed tasks across all days of the AGNT campaign").
