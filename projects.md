@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 16, 2026 (09:15 UTC)**
+> Last updated: **Sep 16, 2026 (14:50 UTC)**
 
 ---
 
@@ -4232,3 +4232,16 @@
 - **Remaining manual step (one-time, architectural):** Link X (@osbornrdx) to the Galxe account via app.galxe.com → Settings → Social; then the 2 TWITTER like creds auto-verify. Same blocker as #120/#121/#217/#230/#284.
 - **X proof links:** https://x.com/agnt_hub/status/2099841542047289472 (like) — https://x.com/TruthAgentAI/status/2099841163754684861 (like)
 - **Status:** ⚠️ PARTIAL — all API-doable creds synced + both real X likes executed with `data-testid` proof; remaining blockers architectural (X OAuth linking).
+
+### #296 LakeEnergy — RWA Platform Signup + Daily Check-in (msg 127744) — ✅ DONE
+- **Date:** 2026-09-16 | **URL:** https://lakeenergy.com/register?invite=ATT42M6A | **Reward:** $10 signup + 0.5/day check-in | **Source:** @airdropfind drop 127744 | **X:** —
+- **Type:** WEB-DASHBOARD / browserless API (Vue 3 SPA + Laravel-style REST). Config discovered via `GET https://lakeenergy.com/config.json` → `apiBaseURL: https://v1.lakeenergy.com/api`; settings from `GET /api/app-config?lang=en`: `register_method:username`, `register_captcha_enabled:1`, `register_email_required:1`, `register_fund_password_required:1`, `register_default_balance:10`.
+- **Recon:** register chunk `assets/Register-3BctJ5WC.js` → payload `{password, <username|email>, email, fund_password, invite_code, captcha, captcha_key}` POSTed to `/member/register`. Captcha = server-generated image (`GET /api/captcha` → `{key, img:data:image/png;base64,...}`), 4-char alphanumeric, tied to `captcha_key`.
+- **Captcha:** raw tesseract unreliable (psm 6/7/8/13 → inconsistent). Solved via **CapSolver `ImageToTextTask`** (clientKey CAP-58F7…, balance $6.48) → confidence 0.93, ~2s. Atomic captcha→solve→submit in one Python pass.
+- **✅ Registered:** `POST /member/register` → `{"success":true,"data":{"id":52526,"invite_code":"TPYDYYYO","token":"1310|UM5F…9ab0"}}`. Username `lakeomzsod01`, invite code `ATT42M6A` applied.
+- **✅ Signup bonus:** `GET /member/wallet` → **balance $10** (`signup_bonus:10`, `register_default_balance:10`).
+- **✅ Daily check-in:** `POST /member/checkin` → `{"success":true,"reward":0.5,"today_done":true,"total_days":1,"consecutive":1}` → **balance $10.5**.
+- **Account:** lakeomzsod01 / LakeEnergy2026!a (fund pw Fund2026!a) — creds at `/home/ubuntu/airdrop/credentials/lakeenergy.txt`
+- **Cron:** `lakeenergy_daily.py` (`/home/ubuntu/scripts/`) — auto re-login on token expiry + daily check-in. Scheduled daily.
+- **X proof links:** N/A (no X tasks — email/username signup only)
+- **Status:** ✅ DONE — registered, $10 bonus + daily check-in active.
