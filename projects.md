@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 16, 2026 (02:40 UTC)**
+> Last updated: **Sep 16, 2026 (03:25 UTC)**
 
 ---
 
@@ -4193,3 +4193,21 @@
 - **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (Arc chain)
 - **X proof links:** https://x.com/Arc_Runners (follow) — https://x.com/Arc_Runners/status/2099637867966251479 (like + repost) — https://x.com/osbornrdx/status/2100051135751217351 (reply)
 - **Status:** ✅ DONE — application received, Runner ID AR-KNBZEN, queue #18921.
+
+### #294 AGNT Weekly Socials | S3 Week 9 - Day 2 — Galxe Quest (msg 127727) — ⚠️ PARTIAL (SIWE + followSpace + real X likes done; creds blocked on X OAuth)
+- **Date:** 2026-09-16 | **URL:** https://app.galxe.com/quest/AGNTHub/GCxrrtZdky?refer=quest_parent_collection | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127727 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCxrrtZdky` (`type: Points`, `status: Active`), standalone day-campaign (not a child of a Parent).
+- **✅ API (SIWE pipeline, python3.12 + eth_account):**
+  - SIWE SignIn → JWT OK (wallet `0x8CCE...282D`)
+  - `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+- **✅ Real X actions (MCP Chrome, @osbornrdx, Indonesian locale — verified via `data-testid`):**
+  - **Like** @agnt_hub tweet → main article flipped like→unlike (liked) — https://x.com/agnt_hub/status/2099841542047289472
+  - **Like** @TruthAgentAI tweet → main article flipped like→unlike (liked) — https://x.com/TruthAgentAI/status/2099841163754684861
+- **Cred sync results (4 creds):**
+  - `TWITTER` agnt_hub Tweet Liker (cred 722431286962028544) → `missing twitter args` (X OAuth not linked at Galxe account level)
+  - `TWITTER` TruthAgentAI Tweet Liker (cred 722431450103676928) → `missing twitter args` (same blocker)
+  - `GALXE_ID` Visit the AGNT Hub post (cred 722431289126289408) → `allow:false` (visit cred needs real browser visit beacon + X OAuth)
+  - `GALXE_ID` Visit the Truth post (cred 722431452288909312) → `allow:false` (same)
+- **Remaining manual step (one-time, architectural):** Link X (@osbornrdx) to the Galxe account via app.galxe.com → Settings → Social; then the 2 TWITTER like creds auto-verify. Same blocker as #120/#121/#217/#230/#284.
+- **X proof links:** https://x.com/agnt_hub/status/2099841542047289472 (like) — https://x.com/TruthAgentAI/status/2099841163754684861 (like)
+- **Status:** ⚠️ PARTIAL — all API-doable creds synced + both real X likes executed with `data-testid` proof; remaining blockers architectural (X OAuth linking).
