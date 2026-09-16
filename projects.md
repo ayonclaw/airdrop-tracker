@@ -1,10 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 16, 2026 (03:25 UTC)**
+> Last updated: **Sep 16, 2026 (09:15 UTC)**
 
 ---
 
 ## ✅ COMPLETED
 
+### #295 Pear Rewards — Daily Streak Claim + Fresh X Tasks (cron) — ✅ DONE
+- **Date:** 2026-09-16 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v8 failed again — headless Playwright X `/i/oauth2/authorize` consent page renders **empty body** (X anti-bot headless detection); selector `button.streak-claim` not found. Escalated to **MCP Chrome** (real Xvfb Chrome 148, X session already authenticated) → dashboard loaded logged-in first try.
+- **Recon:** Next.js RSC + `temp.pear.trade/api/*` REST backend. Endpoints: `GET /api/streak`, `POST /api/streak/claim`, `GET /api/milestones`, `POST /api/milestones/<id>/claim`, `GET /api/tasks`, `POST /api/tasks/<id>/{start,verify,claim}`. Privy app id `cmmtgs24k01gi0cjfyfku199k`.
+- **✅ Daily streak:** 7 → **8 days** | Day-8 claim **+117 pts** (modal: "Day 8 claimed! +117 pts credited to your balance.")
+- **✅ Milestone:** 7-day streak milestone **+250 pts** claimed (`POST /api/milestones/6a284b0b7185134261dd58c5/claim` → 200).
+- **✅ Fresh X tasks (MCP Chrome, @osbornrdx, Indonesian X locale)** — target tweet https://x.com/tradeonpear/status/2085048287388942680:
+  - **Like this post** (+50 pts) → `like`→`unlike` testid flip confirmed
+  - **RT this post!** (+50 pts) → 2-click menu "Posting ulang" → `retweet`→`unretweet` confirmed
+  - **Comment on this post!** (+50 pts) → reply posted via real keystrokes (`tweetTextarea_0` + `type_text`), proof: https://x.com/osbornrdx/status/2100150056175489469
+  - 3 of 4 fresh tasks auto-claimed (2-click Verify pattern, 20s API delay each). Discord join task left **rejected** — requires real Discord account (not self-attested).
+- **Points:** 5,477 → **5,994 pts** (+517 total: 117 daily + 250 milestone + 150 X tasks) | **Rank:** #42300 | **Milestones:** 3/15 (900/13,200 pts)
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **X proof links:** https://x.com/tradeonpear/status/2085048287388942680 (like+repost) · https://x.com/osbornrdx/status/2100150056175489469 (comment)
+- **Cron script note:** `pear_daily.py` OAuth fallback still broken (headless X OAuth = blank consent page). MCP Chrome is the reliable route — script should be updated to drive CDP or use persistent authenticated profile.
 ### #291 Raycash (by Zama) — Waitlist + X Tasks (msg 127716) — ✅ DONE (email OTP + X follow/post, 400 RP)
 - **Date:** 2026-09-15 | **URL:** https://www.raycash.xyz/r/RQE4JF | **Reward:** RP points (400 RP earned) | **Source:** @airdropfind drop 127716 | **X:** @raycashxyz
 - **Type:** Next.js SPA waitlist (Better-Auth + email OTP). 4 tasks: Join waitlist (+100), Subscribe newsletter (+100), Follow @raycashxyz (+100), Post about us on X (+100).
