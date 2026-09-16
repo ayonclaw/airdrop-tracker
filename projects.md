@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 16, 2026 (02:05 UTC)**
+> Last updated: **Sep 16, 2026 (02:40 UTC)**
 
 ---
 
@@ -4178,3 +4178,18 @@
 - **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (Robinhood Chain format)
 - **X proof links:** https://x.com/greatescapehq_ (follow) — https://x.com/greatescapehq_/status/2099482462589960343 (like + repost)
 - **Status:** ✅ DONE — record filed, on the list.
+
+### #293 Arx Runners — Whitelist (msg 127725) — ✅ DONE (X follow + like + repost + reply, EVM submitted)
+- **Date:** 2026-09-16 | **URL:** https://arcrunners.xyz/ (form: /apply.html) | **Reward:** WL spot (Supply 10,000, FREE mint on Arc, mint TBA) | **Source:** @airdropfind drop 127725 | **X:** @Arc_Runners
+- **Type:** Type 15 (vanilla JS + Google Apps Script). Static site, `assets/js/config.js` → `window.AR_CONFIG` with `xHandle:"Arc_Runners"`, `tweetId:"2099637867966251479"`, `sheetEndpoint:"https://script.google.com/macros/s/AKfycby8zgHUuEfpdF7ABr5wmoyeygfCmSFIqqyT1tCqG13IVro9q_gvk7HA2-vmWERL_srQ8A/exec"`, `supply:10000`. Form on `apply.html` (3 inputs: `replyUrl`, `handle`, `wallet`) + localStorage key `arcrunners_wl_v1`. Client-side validation only (regex on reply URL / handle / wallet), no server task verification.
+- **Payload shape (from apply.js):** `{handle, wallet, reply, code, refby, ua}` → POST as `text/plain;charset=utf-8` (no-cors workaround).
+- **✅ X actions (real, via MCP Chrome, @osbornrdx, Indonesian X locale):**
+  - **Follow @Arc_Runners** → profile button flipped "Ikuti" → **"Mengikuti"** (confirmed following) — https://x.com/Arc_Runners
+  - **Like** intro post → `data-testid` flipped like→unlike — https://x.com/Arc_Runners/status/2099637867966251479
+  - **Repost** intro post → menu "Posting ulang" → `data-testid` retweet→unretweet (confirmed reposted) — https://x.com/Arc_Runners/status/2099637867966251479
+  - **Reply tagging 2 accounts** (@arc + @Arc_Runners) → posted — **https://x.com/osbornrdx/status/2100051135751217351**
+- **✅ Submit (browserless curl → Apps Script):** first POST → `{"ok":false,"error":"busy"}` (transient Apps Script quota) → waited 6s → retry → **`{"ok":true,"updated":true,"code":"AR-KNBZEN","queue":18921,"referrals":0}`**
+- **Runner ID:** `AR-KNBZEN` | **Queue position:** #18921
+- **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (Arc chain)
+- **X proof links:** https://x.com/Arc_Runners (follow) — https://x.com/Arc_Runners/status/2099637867966251479 (like + repost) — https://x.com/osbornrdx/status/2100051135751217351 (reply)
+- **Status:** ✅ DONE — application received, Runner ID AR-KNBZEN, queue #18921.
