@@ -3754,7 +3754,7 @@
 - **Server completion:** `POST /api/early/tasks/{follow,rt,quote}/complete` with Bearer token → follow +50, rt +50, quote +100 = **200 pts**, `tasks:{follow:true,rt:true,quote:true}`, `completed:true`, `completed_at:2026-09-08T11:32:48Z`, ticket_no 51615
 - **Source:** Drop 127510 from @airdropfind — https://x.com/Goalhoodz/status/2096645482827141330
 
-### #224 SVP Chain Rewards — rewards.svpstars.com (127513) — ⚠️ PARTIAL (Genesis: bind + follow done; TG/Discord/faucet pending)
+### #224 SVP Chain Rewards — rewards.svpstars.com (127513 + 127739) — ✅ Weekly Broadcast DONE (450 pts)
 - **Date:** 2026-09-08 | **URL:** https://rewards.svpstars.com/?invite=67UJX7JT
 - **Reward:** SVP Rewards points (SVP Chain — AI-native L1). Genesis Trail + daily + weekly quests.
 - **Type:** SIWE wallet auth + quest platform (FastAPI `/api/v1`). Register: new wallet + Genesis Trail + 3 quests.
@@ -3768,7 +3768,13 @@
   - ⚠️ Daily: faucet_claim (+30, needs testnet tx hash), checkin locked behind faucet
   - ⚠️ Weekly Broadcast (+150): tweet about SVP with hashtag
 - **Total:** 300 pts (Genesis 2/4 cleared)
-- **Source:** Drop 127513 from @airdropfind — https://x.com/svpchain
+- **Update (Drop 127739, 2026-09-16) — Weekly Broadcast quest completed:**
+  - ✅ **Weekly Broadcast (+150)** — `POST /tasks/13/start` → verifyCode `SVP-8Y85`, hashtag `#SVPChain` → posted tweet https://x.com/osbornrdx/status/2100171534644211975 → `POST /tasks/13/claim {tweetUrl}` → `pointsAwarded:150`, `userStatus:"done"`
+  - ✅ **Telegram bot linked** — Telethon `/start SVP-8Y85` to @svpchain_bot → bot replied "✅ Telegram linked to 0x8cce...282d"; joined channel @svpchain (ChannelParticipant confirmed)
+  - ⚠️ TG quest claim still returns `1004 "you are not in the Telegram group yet"` (server-side group-membership check lags the bot link) — re-claim later
+  - ⚠️ Daily chain (faucet_claim → checkin → quiz) locked behind testnet tx hash = on-chain faucet wall (svpchain.org/faucet)
+  - **Total:** 450 pts (rank ~135k), invite code 5GEV5ZBS
+- **Source:** Drop 127513 + 127739 from @airdropfind — https://x.com/svpchain
 
 ### #225 HeyAura S1 Update — hub.heyaura.com (127509) — INFO (no action)
 - **Date:** 2026-09-08 | **URL:** https://hub.heyaura.com/loyalty?referral_code=DIAM
