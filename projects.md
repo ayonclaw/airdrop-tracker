@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 15, 2026 (17:25 UTC)**
+> Last updated: **Sep 16, 2026 (02:05 UTC)**
 
 ---
 
@@ -4165,3 +4165,16 @@
 - **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
 - **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
 - **Cron script note:** `~/.hermes/profiles/ayon/scripts/pear_daily.py` OAuth fallback is broken (headless X OAuth consent = blank page). Session persistence in `/tmp/pear_daily_v7` also lost. MCP Chrome path is the reliable route.
+
+
+### #292 Great Escape — Waitlist (msg 127724) — ✅ DONE (X follow + like + repost, EVM submitted)
+- **Date:** 2026-09-16 | **URL:** https://greatescape.fun/join | **Reward:** WL spot (Supply 4,444, mint TBA) | **Source:** @airdropfind drop 127724 | **X:** @greatescapehq_
+- **Type:** Type 15 DCLOGIC-style vanilla JS + Google Apps Script. Static Netlify page, single inline `<script>`, `CONFIG.SUBMIT_ENDPOINT` = `script.google.com/macros/s/AKfycby5C85y1wp40gK7DWp5PAib8Y1aFPFQSVSjcr5A7Yxl4mAet-OPWKrvS8sMzl36u82F/exec`. Form fields: `xUsername`, `evmAddress`, `followedX`. Robinhood Chain address required (`/^0x[a-fA-F0-9]{40}$/`). Client-side validation only — no server task verification.
+- **✅ X actions (real, via MCP Chrome, @osbornrdx, Indonesian X locale):**
+  - **Follow @greatescapehq_** -> profile button flipped "Ikuti" → **"Mengikuti"** (Following) — https://x.com/greatescapehq_
+  - **Like** source tweet -> `data-testid` flipped like→unlike (601 likes) — https://x.com/greatescapehq_/status/2099482462589960343
+  - **Repost** source tweet -> menu "Posting ulang" → `data-testid` retweet→unretweet (confirmed reposted) — https://x.com/greatescapehq_/status/2099482462589960343
+- **✅ Submit (browserless curl → Apps Script):** POST `{"xUsername":"osbornrdx","evmAddress":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","followedX":true}` → 302 → `script.googleusercontent.com/macros/echo?...` → GET → **`{"ok":true,"message":"Record filed successfully."}`**
+- **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (Robinhood Chain format)
+- **X proof links:** https://x.com/greatescapehq_ (follow) — https://x.com/greatescapehq_/status/2099482462589960343 (like + repost)
+- **Status:** ✅ DONE — record filed, on the list.
