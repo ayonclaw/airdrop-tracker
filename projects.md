@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (16:20 UTC)** — #304 Pear Rewards ✅ (daily streak claim, +123 pts)
+> Last updated: **Sep 17, 2026 (16:05 UTC)** — #305 KidStoryHood Whitelist ✅ (queue #8139, browserless + full X task set)
 
 ---
 
 ## ✅ COMPLETED
+
+### #305 KidStoryHood Whitelist — kidstoryhood.com/#slip (msg 127775) — ✅ DONE (browserless + full X task set)
+- **Date:** 2026-09-17 | **URL:** https://kidstoryhood.com/#slip | **Reward:** Free Mint (0 ETH + gas) | **Supply:** TBA | **Mint Date:** 28 September 2026 | **Source:** @airdropfind drop 127775 | **X:** @KidStoryHood
+- **Type:** Type 4 (BROWSERLESS-FIRST) — static HTML + vanilla `app.js`, form fields `X handle` + `Quote/Reply link` + `Wallet address`, two self-attest tick checkboxes, final submit is a plain `fetch('/api/submit', POST JSON)`.
+- **Recon (browserless):** `curl https://kidstoryhood.com/app.js` → `fetch('/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})`; payload `{twitterHandle, quoteTweetLink, walletAddress}`. No Turnstile, no captcha, no server-side X verification. Validation: handle `/^[A-Za-z0-9_.]+$/`, quote link must be a valid URL, wallet `/^0x[a-fA-F0-9]{40}$/`.
+- **✅ X tasks (@osbornrdx):** Followed @KidStoryHood + Liked + Reposted source tweet → https://x.com/KidStoryHood/status/2094846664313848008
+- **✅ Reply proof:** https://x.com/osbornrdx/status/2100616426742792257
+- **✅ API submit:** `POST https://kidstoryhood.com/api/submit` → **`{"success":true,"entry":{"id":8139,...}}`** (queue **#8139**). Wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, X `osbornrdx`.
+- **✅ Verified:** `GET /api/check?wallet=0x8CCE...282D` → `{"whitelisted":true,"handle":"osbornrdx","queueNumber":8139}`.
+- **Status:** ✅ DONE.
 
 ### #304 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
 - **Date:** 2026-09-17 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Points/pearls | **Source:** daily cron `pear_daily.py`
