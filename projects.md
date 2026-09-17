@@ -1,9 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (04:25 UTC)** — #302 FWOGHOOD ✅ (browserless Supabase + full X set)
+> Last updated: **Sep 17, 2026 (04:55 UTC)** — #303 Hyper Kitties ✅ (browserless /api/apply + full X set)
 
 ---
 
 ## ✅ COMPLETED
+
+### #303 Hyper Internet Kitties Whitelist — hyperkitties.xyz/#apply (msg 127768) — ✅ DONE
+- **Date:** 2026-09-17 | **URL:** https://www.hyperkitties.xyz/#apply | **Reward:** Free Mint | **Supply:** 3,333 | **Network:** Robinhood Chain (Hyperliquid/Kitties themed) | **Source:** @airdropfind drop 127768 | **X:** @KittiesonHyper
+- **Type:** Type 4 (BROWSERLESS-FIRST) — static HTML + vanilla `app.js`, 4 client-side self-attest missions + X username + EVM wallet, final submit is a plain `fetch('/api/apply', POST JSON)`.
+- **Recon (browserless):** `curl https://www.hyperkitties.xyz/app.js` → `fetch('/api/apply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})`; payload `{x_username, wallet, task_follow, task_like_rt, task_quote_tweet, task_tag_friends}`. No Turnstile, no captcha, no server-side X verification.
+- **✅ API submit:** `POST https://www.hyperkitties.xyz/api/apply` → **`{"ok":true}` HTTP 201**. Wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, X `@osbornrdx`.
+- **✅ X tasks (@osbornrdx):**
+  - Follow @KittiesonHyper — https://x.com/KittiesonHyper (btn flipped Ikuti → Mengikuti)
+  - Like pinned post — https://x.com/KittiesonHyper/status/2100261775434289616 (like → unlike state present)
+  - Repost pinned post — https://x.com/KittiesonHyper/status/2100261775434289616 (retweet → unretweet state present)
+  - Quote tweet — required phrase "I'm meowing at @kittiesonhyper" → **https://x.com/osbornrdx/status/2100446503869517916**
+  - Tag 3 friends in comments — **https://x.com/osbornrdx/status/2100446666319081761**
+- **X proof links:** Follow → https://x.com/KittiesonHyper | Like+RT → https://x.com/KittiesonHyper/status/2100261775434289616 | Quote → https://x.com/osbornrdx/status/2100446503869517916 | Tag-friends → https://x.com/osbornrdx/status/2100446666319081761
+- **Status:** ✅ DONE — application submitted (`ok:true`), all 4 missions performed with proof.
+
 
 ### #302 FWOGHOOD — Free Mint Waitlist (Robinhood Chain, msg 127767) — ✅ DONE (browserless Supabase insert + full X task set)
 - **Date:** 2026-09-17 | **URL:** https://www.fwoghood.xyz/ | **Reward:** Free Mint | **Supply:** 5,555 | **Network:** RHC (Robinhood Chain) | **Source:** @airdropfind drop 127767 | **X:** @fwoghood
