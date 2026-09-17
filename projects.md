@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (04:05 UTC)** — #301 FLIPIT ✅ (MINT ID #0782)
+> Last updated: **Sep 17, 2026 (04:25 UTC)** — #302 FWOGHOOD ✅ (browserless Supabase + full X set)
 
 ---
 
 ## ✅ COMPLETED
+
+### #302 FWOGHOOD — Free Mint Waitlist (Robinhood Chain, msg 127767) — ✅ DONE (browserless Supabase insert + full X task set)
+- **Date:** 2026-09-17 | **URL:** https://www.fwoghood.xyz/ | **Reward:** Free Mint | **Supply:** 5,555 | **Network:** RHC (Robinhood Chain) | **Source:** @airdropfind drop 127767 | **X:** @fwoghood
+- **Type:** Type 8-nuance (Lovable SPA) — React SPA on `lovable.cloud`, tasks are **client-side self-attest** (7 steps), final submit is a direct **Supabase PostgREST insert** into `whitelist_applications`. Backend: `https://c--aabd9508-6a8c-4b42-bbb4-601908e82798-prod.lovable.cloud` with publishable key `sb_publishable_798Qs4xokOiLY8IaSEYW0g_4LDkTKQE`.
+- **Recon (browserless):** grepped `assets/index-ByVBJjfx.js` → `oj.from("whitelist_applications").insert({x_username, comment_link, quote_link, wallet_address})`, client `nj=` lovable.cloud URL + `yg=` `sb_publishable_…` key. Error `23505` = "This wallet address has already applied."
+- **✅ X tasks (@osbornrdx):**
+  - Follow @fwoghood — https://x.com/fwoghood (btn flipped Ikuti → Mengikuti)
+  - Notifications bell on profile — enabled (Aktifkan notifikasi postingan → clicked)
+  - Like — https://x.com/fwoghood/status/2099907596983349616 (like → unlike present)
+  - Retweet — https://x.com/fwoghood/status/2099907596983349616 (unretweet → Memposting ulang)
+  - Comment/reply — https://x.com/osbornrdx/status/2100440222219792596
+  - Quote tweet — https://x.com/osbornrdx/status/2100440323185148395 (text: "I Entered into the FwogHOOD, get yours now 🐸")
+- **✅ Submission:** `POST {supabase}/rest/v1/whitelist_applications` with `apikey` + `Authorization: Bearer <publishable key>` → **HTTP 201**; re-POST returns **409 `23505` duplicate on `whitelist_applications_wallet_address_key`** = row persisted. Payload: `{x_username:"@osbornrdx", comment_link:"https://x.com/osbornrdx/status/2100440222219792596", quote_link:"https://x.com/osbornrdx/status/2100440323185148395", wallet_address:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}`.
+- **Notes:** RLS requires BOTH `apikey` AND `Authorization: Bearer <same publishable key>` headers — `apikey` alone → 401 RLS `42501`. `Prefer: return=representation` also trips 401; omit it. No Turnstile, no wallet connect, no X OAuth — fully browserless after doing X tasks in-browser. Mint Date: TBA.
 
 ### #301 FLIPIT — Free Mint Waitlist (Robinhood Network, msg 127766) — ✅ DONE (X OAuth + wallet, MINT ID #0782)
 - **Date:** 2026-09-17 | **URL:** https://www.flipitrh.xyz/ | **Reward:** Free Mint (1 COIN · 2 SIDES · 100% Retro On-Chain) | **Network:** Robinhood | **Source:** @airdropfind drop 127766 | **X:** @Flipitrh
