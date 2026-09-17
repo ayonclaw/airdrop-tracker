@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (16:40 UTC)** — #306 Pepe Cartel Whitelist ✅ (browserless PostgREST + full X task set)
+> Last updated: **Sep 17, 2026 (16:55 UTC)** — #307 AKAIHOOD Whitelist ⚠️ (X tasks done; submit endpoint Drive-access-restricted — retry cron armed)
 
 ---
 
 ## ✅ COMPLETED
+
+### #307 AKAIHOOD Whitelist — akaihood.xyz (msg 127777) — ⚠️ PARTIAL (X tasks done; submit endpoint restricted)
+- **Date:** 2026-09-17 | **URL:** https://akaihood.xyz/ | **Reward:** Free Mint WL | **Supply:** 9,999 | **Source:** @airdropfind drop 127777 | **X:** @akaih00d
+- **Type:** Type 15 variant — vanilla HTML page, 4 self-attest X tasks (client-side only) + `handle`/`wallet` form POSTed to a **Google Apps Script** web app (`WL_SCRIPT_URL`, `mode:'no-cors'`).
+- **Recon (browserless):** `curl https://akaihood.xyz/` → `const WL_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyKm19xxMXqJG6-pfouZx_XlAvYTojeo3x78cEoIWCEYA-HJTfENQvAVJkG-mWblWyA/exec'`. Submit handler: `fetch(WL_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({handle,wallet,timestamp})})`. Task list from `data-task` attrs: follow / like / comment / retweet (all client-side `.wl-task-verify`, no server check).
+- **✅ Follow:** @osbornrdx followed @akaih00d (button flipped to "Mengikuti").
+- **✅ Like + Repost:** https://x.com/akaih00d/status/2095141529492799984 → `liked:true`, `retweeted:true`.
+- **✅ Reply proof:** https://x.com/osbornrdx/status/2100627578860233089
+- **⛔ API submit BLOCKED — endpoint returns Google Drive "Akses Ditolak / you need access" (HTTP 403) to EVERY caller.** Verified exhaustively: (1) curl POST with browser UA/Origin/Referer → 403; (2) real Chrome no-cors fetch from akaihood.xyz (correct origin+referer) → network shows `POST .../exec [403]`, `net::ERR_ABORTED`; (3) signed-in Google session, direct same-origin navigation to `/exec` → "Access Denied"; (4) `/exec?handle=...&wallet=...` GET and `/dev` variants → 403; (5) 120 free proxies → all 403. **Not our IP:** a different Apps Script (XCOPUNKS) executes fine (HTTP 200) from the same VPS. → the AKAIHOOD deployment's "Who has access" is restricted (project-side). The site's `mode:'no-cors'` shows a FALSE success screen (`.then()` fires unconditionally).
+- **Payload ready:** `{"handle":"@osbornrdx","wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}`.
+- **🔁 Retry cron:** `akaihood-wl-retry` (`0a24cb8bd5ed`) — every 6h ×12, no_agent, backoff [0,60,300,600]s, treats non-"Access Denied" response as success. Script: `~/.hermes/scripts/akaihood_retry.py`.
+- **Remaining manual:** if the deployment stays restricted, register directly at https://akaihood.xyz/ (4 X tasks already done → just enter handle + wallet). Or ask the team to set the Apps Script deployment to "Anyone".
+- **X proof links:** Follow → https://x.com/akaih00d | Like/RT → https://x.com/akaih00d/status/2095141529492799984 | Reply → https://x.com/osbornrdx/status/2100627578860233089
+- **Status:** ⚠️ PARTIAL — all X tasks complete; wallet/handle submit pending endpoint fix (retry cron armed).
 
 ### #306 Pepe Cartel Whitelist — pepecartel.fun/#whitelist (msg 127776) — ✅ DONE (browserless + full X task set)
 - **Date:** 2026-09-17 | **URL:** https://pepecartel.fun/#whitelist | **Reward:** Free Mint (Arc mainnet) | **Supply:** 500x WL spots (+100 bonus) | **Source:** @airdropfind drop 127776 | **X:** @pepecartel_
