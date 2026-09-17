@@ -1,9 +1,16 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (04:55 UTC)** — #303 Hyper Kitties ✅ (browserless /api/apply + full X set)
+> Last updated: **Sep 17, 2026 (16:20 UTC)** — #304 Pear Rewards ✅ (daily streak claim, +123 pts)
 
 ---
 
 ## ✅ COMPLETED
+
+### #304 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
+- **Date:** 2026-09-17 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Points/pearls | **Source:** daily cron `pear_daily.py`
+- **Type:** Privy X-OAuth gated dashboard. Headless Playwright gets HTTP **403** on `x.com/i/oauth2/authorize` (bot detection) → escalated to Playwright `connect_over_cdp` against real Chrome @9222.
+- **Flow:** X cookies injected → `Enter our waitlist platform` → Privy `Twitter` login → X OAuth2 authorize (auto-approved via injected session) → dashboard.
+- **✅ Result:** Daily streak claimed — streak advanced **8 → 9 days**. Streak bonus **+123 pts**. Balance **6,117 pts**, Rank **#40,709**. Claim button now `disabled` (claim accepted).
+- **Status:** ✅ DONE.
 
 ### #303 Hyper Internet Kitties Whitelist — hyperkitties.xyz/#apply (msg 127768) — ✅ DONE
 - **Date:** 2026-09-17 | **URL:** https://www.hyperkitties.xyz/#apply | **Reward:** Free Mint | **Supply:** 3,333 | **Network:** Robinhood Chain (Hyperliquid/Kitties themed) | **Source:** @airdropfind drop 127768 | **X:** @KittiesonHyper
