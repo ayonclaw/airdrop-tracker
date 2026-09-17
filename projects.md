@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (09:35 UTC)**
+> Last updated: **Sep 17, 2026 (10:25 UTC)**
 
 ---
 
@@ -4304,3 +4304,17 @@
 - **Cron:** `lakeenergy_daily.py` (`/home/ubuntu/scripts/`) — auto re-login on token expiry + daily check-in. Scheduled daily.
 - **X proof links:** N/A (no X tasks — email/username signup only)
 - **Status:** ✅ DONE — registered, $10 bonus + daily check-in active.
+
+### #300 RadioRelic Whitelist — radiorelic.fun/whitelist (msg 127765) — ✅ DONE
+- **Type:** Vanilla-JS/Next.js whitelist — 3 click-gated X missions + registration form (X username + comment link + EVM address) + Cloudflare Turnstile, manual verification queue.
+- **Project:** Radio Relic — 4,444 community NFT collection on **Robinhood Chain**. X: @radiorelicnft. Announcement: https://x.com/radiorelicnft/status/2099707157906407886
+- **✅ Mission 1 — Follow on X:** @osbornrdx followed @radiorelicnft → mission flipped to **VERIFIED**.
+- **✅ Mission 2 — Repost on X:** reposted announcement tweet (2099707157906407886) → **VERIFIED**.
+- **✅ Mission 3 — Comment on X:** posted reply → **VERIFIED**.
+  - **Proof (comment URL submitted):** https://x.com/osbornrdx/status/2100425616613069097
+- **✅ Form submitted:** xUsername `osbornrdx` | commentLink `https://x.com/osbornrdx/status/2100425616613069097` | evmAddress `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **✅ Confirmation:** "Your Transmission Has Been Sent — Thank you! Your registration has entered the manual verification queue. Results will be announced through the official X channel — @radiorelicnft."
+- **Turnstile:** solved in-page via real click on the widget checkbox (uid 35_55). Route-mode sidecar token was REJECTED (`captcha_failed`) — session-bound. real_page sidecar timed out (408) ×3.
+- **🔧 Infra fix:** `brunhild.challenges.cloudflare.com` is **IPv6-only** (no A record) and this VPS has no IPv6 → in-page Turnstile widget failed with `ERR_NAME_NOT_RESOLVED`. Fixed by appending `104.18.17.146 brunhild.challenges.cloudflare.com` to `/etc/hosts`. After the fix the widget resolved (HTTP 204) and solved normally. **Keep this hosts entry** — it unblocks ALL Cloudflare Turnstile in-browser flows on this VM.
+- **X proof links:** Follow → https://x.com/radiorelicnft | Repost+Comment → https://x.com/osbornrdx/status/2100425616613069097
+- **Status:** ✅ DONE — whitelist registration submitted (manual verification queue).
