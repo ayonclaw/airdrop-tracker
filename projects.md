@@ -1,9 +1,18 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (08:50 UTC)**
+> Last updated: **Sep 17, 2026 (09:35 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #299 VOICY Pass Mint — voice.cc/mint (127763) — ⚠️ PENDING (CF managed challenge + Privy X-OAuth + PAID mint)
+- **Date:** 2026-09-17 | **URL:** https://voice.cc/mint | **Reward:** VOICY Pass NFT (holders qualify for $VOICE airdrop) | **Source:** @airdropfind drop 127763
+- **Type:** PAID mint — "Fee to mint, one per wallet, the holders are qualified for the airdrop". Requires Privy auth (X OAuth) + wallet connect + on-chain tx.
+- **⛔ Blocker 1 — Cloudflare Managed Challenge:** `curl https://voice.cc/{,mint,socialcamp}` → HTTP 403, `cType:'managed'`, `Just a moment...`. Server-side CF challenge — not solvable from the Oracle VPS IP (captcha-solver can't handle managed challenge). Confirmed 3 URLs.
+- **⛔ Blocker 2 — Privy → X OAuth authorize button dead:** In MCP Chrome the Privy login dialog opens and the X consent screen renders ("Privy.io ingin mengakses izin pada akun Anda" / @osbornrdx), but clicking **"Izinkan aplikasi"** (button type=button, no form, no React onClick prop exposed) does NOT fire. Direct `POST https://x.com/i/api/2/oauth2/authorize` → 403 (no bearer) / 400 `Missing required parameter [approval]` / 400 `Missing required parameter [code]` — new X OAuth2 flow requires a param the SPA isn't sending; `approval=true`+`code=true` request hung 120s.
+- **Attempts (per escalation ladder):** (1) browserless curl ×3 → CF 403; (2) MCP Chrome dialog click → Twitter → X consent → authorize (×4 distinct clicks incl. real MouseEvent dispatch) → no navigation; (3) direct X OAuth2 API POST ×3 param variants → 403/400. Max 2 per mode exhausted.
+- **Manual path:** CloakBrowser (real browser passes CF managed challenge) → voice.cc/mint → Privy "Continue with Twitter" → Authorize → connect wallet (`0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` EVM) → pay mint fee → mint 1 VOICY Pass.
+- **Status:** ⚠️ PENDING — needs CloakBrowser + real wallet with mint-fee gas. Not automatable from VPS.
 
 ### #298 AGNT Weekly Socials | S3 Week 9 - Day 3 — Galxe Quest (msg 127762) — ⚠️ PARTIAL (SIWE + followSpace + real X like/RT done; visit/OAuth creds pending)
 - **Date:** 2026-09-17 | **URL:** https://app.galxe.com/quest/AGNTHub/GCkRrtZvPk | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127762 | **X:** @agnt_hub + @TruthAgentAI
