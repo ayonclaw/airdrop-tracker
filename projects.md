@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (10:25 UTC)**
+> Last updated: **Sep 17, 2026 (04:05 UTC)** — #301 FLIPIT ✅ (MINT ID #0782)
 
 ---
 
 ## ✅ COMPLETED
+
+### #301 FLIPIT — Free Mint Waitlist (Robinhood Network, msg 127766) — ✅ DONE (X OAuth + wallet, MINT ID #0782)
+- **Date:** 2026-09-17 | **URL:** https://www.flipitrh.xyz/ | **Reward:** Free Mint (1 COIN · 2 SIDES · 100% Retro On-Chain) | **Network:** Robinhood | **Source:** @airdropfind drop 127766 | **X:** @Flipitrh
+- **Type:** WEB3-WALLET + X OAuth (Type 2/3 hybrid). Next.js on Vercel. Steps: Connect X (OAuth2 PKCE) → Complete All Tasks (follow/like/retweet/comment) → Submit Robinhood EVM wallet → apply.
+- **Recon (browserless):** `POST /api/whitelist` without session → `401 {"error":"Connect your X profile first."}`; `GET /api/auth/me` → `{"connected":false}`; `GET /api/auth/twitter` → 307 to `twitter.com/i/oauth2/authorize` (client_id `RnVXQkxvakR2MDFQbTdNQXdySHI6MTpjaQ`, scope `tweet.read users.read`, PKCE S256). X login is the gate — no browserless bypass.
+- **✅ X tasks (@osbornrdx):**
+  - Follow @Flipitrh — https://x.com/Flipitrh
+  - Like — https://x.com/Flipitrh/status/2099860960190296131 (like confirmed, unlike-btn present)
+  - Retweet — https://x.com/Flipitrh/status/2099860960190296131 (unretweet-btn present)
+  - Comment/reply — https://x.com/osbornrdx/status/2100435162224038180
+- **✅ OAuth:** MCP Chrome → "Connect your X profile" → x.com/i/oauth2/authorize (app "flipitaccess") → Izinkan aplikasi → redirected `https://www.flipitrh.xyz/?twitter=connected` → STEP 1 CONNECT SOCIAL = **Verified**.
+- **✅ Wallet:** Robinhood Network EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → "Robinhood wallet recognized." → APPLY FOR FREE MINT.
+- **✅ Result:** "**APPLICATION SENT!** You're on the waitlist for the upcoming Flip It free mint." — **MINT ID: #0782** | Connected: @osbornrdx | Registered Wallet: `0x8CCE...282D`.
+- **Notes:** Wallet-field input required real keystrokes (`type_text`) — React-controlled, `fill()` would not enable the button. Free mint (no gas needed at application stage); actual mint is on Robinhood Network.
 
 ### #299 VOICY Pass Mint — voice.cc/mint (127763) — ⚠️ PENDING (CF managed challenge + Privy X-OAuth + PAID mint)
 - **Date:** 2026-09-17 | **URL:** https://voice.cc/mint | **Reward:** VOICY Pass NFT (holders qualify for $VOICE airdrop) | **Source:** @airdropfind drop 127763
