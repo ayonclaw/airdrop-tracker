@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (16:05 UTC)** — #305 KidStoryHood Whitelist ✅ (queue #8139, browserless + full X task set)
+> Last updated: **Sep 17, 2026 (16:40 UTC)** — #306 Pepe Cartel Whitelist ✅ (browserless PostgREST + full X task set)
 
 ---
 
 ## ✅ COMPLETED
+
+### #306 Pepe Cartel Whitelist — pepecartel.fun/#whitelist (msg 127776) — ✅ DONE (browserless + full X task set)
+- **Date:** 2026-09-17 | **URL:** https://pepecartel.fun/#whitelist | **Reward:** Free Mint (Arc mainnet) | **Supply:** 500x WL spots (+100 bonus) | **Source:** @airdropfind drop 127776 | **X:** @pepecartel_
+- **Type:** Type 4/20 hybrid — Next.js SPA, client-side task list + direct **Supabase PostgREST** insert (no Edge Function, no captcha, no server-side X verification).
+- **Recon (browserless):** `curl https://pepecartel.fun/_next/static/chunks/app/page-948c10251432ba8b.js` → `fetch(SUPABASE_URL + "/rest/v1/whitelist", {method:"POST", headers:{apikey,Authorization:"Bearer "+anon,Prefer:"return=minimal"}, body:JSON.stringify({x_username, wallet})})`. Supabase `https://cirlvtpmpgcjubmtfrwk.supabase.co`, anon JWT extracted from bundle. `whitelist_count` RPC for capacity (26,004 at detection → no cap).
+- **Task list (from bundle):** follow @pepecartel_ + like/retweet/reply tweet1 (2099512628611842409) + like/retweet/reply tweet2 (2099893648850829670) + drop X username + drop EVM wallet.
+- **✅ Follow:** @osbornrdx followed @pepecartel_ (intent page → button flipped to "Mengikuti").
+- **✅ Tweet 1 like + repost:** https://x.com/pepecartel_/status/2099512628611842409 → `liked:true`, `retweeted:true`.
+- **✅ Tweet 2 like + repost:** https://x.com/pepecartel_/status/2099893648850829670 → `liked:true`, `retweeted:true`.
+- **✅ Reply 1 proof:** https://x.com/osbornrdx/status/2100624059755286595
+- **✅ Reply 2 proof:** https://x.com/osbornrdx/status/2100624134162251790
+- **✅ API submit:** `POST https://cirlvtpmpgcjubmtfrwk.supabase.co/rest/v1/whitelist` `{"x_username":"osbornrdx","wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` → **HTTP 201**. `whitelist_count` 26,004 → **26,036** (submission confirmed landed).
+- **X proof links:** Follow → https://x.com/pepecartel_ | Likes/RTs → 2099512628611842409 + 2099893648850829670 | Replies → 2100624059755286595, 2100624134162251790
+- **Status:** ✅ DONE — whitelist registration submitted (browserless PostgREST insert).
 
 ### #305 KidStoryHood Whitelist — kidstoryhood.com/#slip (msg 127775) — ✅ DONE (browserless + full X task set)
 - **Date:** 2026-09-17 | **URL:** https://kidstoryhood.com/#slip | **Reward:** Free Mint (0 ETH + gas) | **Supply:** TBA | **Mint Date:** 28 September 2026 | **Source:** @airdropfind drop 127775 | **X:** @KidStoryHood
