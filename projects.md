@@ -1,9 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 16, 2026 (14:50 UTC)**
+> Last updated: **Sep 17, 2026 (08:05 UTC)**
 
 ---
 
 ## ✅ COMPLETED
+
+### #297 Boneheads — Wastelist (Zcash-native NFT, msg 127760) — ✅ DONE
+- **Date:** 2026-09-17 | **URL:** https://boneheads.space/wastelist | **Reward:** WL spot (3,333 supply, Zcash-native NFT, free mint TBA) | **Source:** @airdropfind drop 127760 | **X:** @BoneHeadzec
+- **Type:** Type 4 BROWSERLESS-FIRST variant — static HTML + `config.js` + `script.js`, self-attest tasks + **Turnstile** + **Zcash unified (u1) shielded address** (Noir wallet). Backend = Railway API (`https://api-production-413d.up.railway.app`).
+- **Recon:** `config.js` → `{apiBaseUrl:'https://api-production-413d.up.railway.app', turnstileSiteKey:'0x4AAAAAAE4nj26W1weXlWz8'}`. Endpoints: `GET /api/wastelist/config` → `{"applicationsOpen":true}`; `POST /api/wastelist` (submit); `POST /api/wastelist/status` (lookup). Submit payload `{username, liked, retweeted, replyUrl, wallet, turnstileToken}`. Server validates: wallet must start `u1`, replyUrl must be x.com/twitter.com `<user>/status/<id>` AND match the submitted username.
+- **✅ Real X actions (MCP Chrome, @osbornrdx, Indonesian locale — verified via `data-testid`):**
+  - **Follow** @BoneHeadzec via `x.com/intent/follow?screen_name=BoneHeadzec` → button flipped `Ikuti` → `Mengikuti` ✅
+  - **Like** pinned post → `data-testid="like"` → flipped to `unlike` ✅ — https://x.com/BoneHeadzec/status/2100238292390183248
+  - **Retweet** pinned post → `retweet` → menu `Posting ulang` → `data-testid="unretweet"` confirmed ✅ — https://x.com/BoneHeadzec/status/2100238292390183248
+  - **Reply** (real keystrokes, `tweetTextarea_0` + `type_text` → `tweetButton`) ✅ — **proof: https://x.com/osbornrdx/status/2100387091473666448**
+- **Wallet:** Zcash unified address derived from own Sapling EFVK via `/tmp/ua/ua.py` (bech32 + F4Jumble, HRP `u`, const `0x2bc830a3`) → `u1nhqa0yyexl5d5t2knsstlyy5qr0p3g5hpvsyw0stcejy4scltgk7zh04farjq7x6fl82u07thgkg4w5yvqq39v0ylmu0fchvrg9axzpj` (len 106, server validator returns `kind:unified`).
+- **✅ Submit:** Turnstile solved via captcha sidecar `real_page:true` (sitekey `0x4AAAAAAE4nj26W1weXlWz8`) → token len 752 → **atomic** `POST /api/wastelist` → **HTTP 201 `{"ok":true,"status":"PENDING"}`**
+- **✅ Verified:** `POST /api/wastelist/status {wallet}` → **`{"found":true,"status":"PENDING","allocation_tier":null}`** — entry live, awaiting WL tier assignment.
+- **Notes:** Turnstile token must be submitted in the SAME script as the solve (<60s TTL, single-use). Site's own `script.js` validation reproduced server-side (username normalized to `@osbornrdx`, reply URL host+user match).
+- **X proof links:** https://x.com/BoneHeadzec/status/2100238292390183248 (like + repost) — https://x.com/osbornrdx/status/2100387091473666448 (reply)
+- **Status:** ✅ DONE — on Wastelist, PENDING tier.
 
 ### #295 Pear Rewards — Daily Streak Claim + Fresh X Tasks (cron) — ✅ DONE
 - **Date:** 2026-09-16 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
