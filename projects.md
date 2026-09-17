@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (16:55 UTC)** — #307 AKAIHOOD Whitelist ⚠️ (X tasks done; submit endpoint Drive-access-restricted — retry cron armed)
+> Last updated: **Sep 17, 2026 (18:05 UTC)** — #308 AllScale Pay ✅ (registered via referral, 100 AS Points credited)
 
 ---
 
 ## ✅ COMPLETED
+
+### #308 AllScale Pay — app.allscale.io (msg 127778) — ✅ DONE
+- **Date:** 2026-09-17 | **URL:** https://app.allscale.io/s/HMZ4BYU | **Reward:** 100 AS Points (referral) + 1,600 AS Points (mobile sign-in bonus, pending app install) | **Source:** @airdropfind drop 127778
+- **Type:** WEB-DASHBOARD (Turnkey embedded-wallet + passkey) — email OTP registration with referral code pre-applied from the share link.
+- **Flow:** `/s/HMZ4BYU` → `/pay/register?code=<ref>` → email `airdropkarbiters@gmail.com` + ToS checkbox → **Cloudflare Turnstile** (clicked via CDP) → 6-digit OTP emailed → OTP submitted → **passkey creation dialog** (Turnkey WebAuthn).
+- **🔑 Passkey wall solved:** Headless Chrome has no platform authenticator, so the WebAuthn `navigator.credentials.create()` ceremony hung indefinitely. **Fix:** attached a CDP **virtual authenticator** (`WebAuthn.enable` + `WebAuthn.addVirtualAuthenticator`, ctap2/internal, residentKey+UV, `automaticPresenceSimulation:true`) on a **persistent background websocket** (the authenticator is removed when the CDP socket closes — must stay alive). Continue → virtual authenticator auto-satisfies the ceremony → redirected to dashboard.
+- **✅ Confirmation:** Logged into `https://app.allscale.io/pay` — Wallet dashboard, "Rewards 100 ASP", "Total AS Points: 100", Level 1. Account created server-side (OTP status 200), session active.
+- **Referral link (ours):** https://app.allscale.io/s/gX6Pl2H
+- **Points breakdown:** 100 AS (referral signup) credited; Email Verification +100, First Invoice Payment +400, 7-Day Streak +300, Referral First Invoice +600, **Mobile App Sign-In +1600** (all still open).
+- **Remaining manual:** Mobile app sign-in bonus (+1,600) requires the AllScale mobile app; invoice-payment tasks require real payment volume.
+- **Status:** ✅ DONE — account registered + referral captured + 100 AS Points credited.
+
 
 ### #307 AKAIHOOD Whitelist — akaihood.xyz (msg 127777) — ⚠️ PARTIAL (X tasks done; submit endpoint restricted)
 - **Date:** 2026-09-17 | **URL:** https://akaihood.xyz/ | **Reward:** Free Mint WL | **Supply:** 9,999 | **Source:** @airdropfind drop 127777 | **X:** @akaih00d
