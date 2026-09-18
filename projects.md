@@ -1,9 +1,29 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 18, 2026 (03:45 UTC)** — #309 The Bitfoots ✅ (application received; X follow+like+comment+quote verified; Orchard-receiver ZEC UA submitted)
+> Last updated: **Sep 18, 2026 (11:35 UTC)** — #310 AGNT Weekly Socials S3 W9 Day 4 ⚠️ PARTIAL (Galxe SIWE+followSpace ✅; X like/RT both tweets ✅; OAuth creds architectural)
 
 ---
 
 ## ✅ COMPLETED
+
+### #310 AGNT Weekly Socials | S3 Week 9 - Day 4 — Galxe Quest (msg 127783) — ⚠️ PARTIAL (SIWE + followSpace + real X like/RT done; visit/OAuth creds pending)
+- **Date:** 2026-09-18 | **URL:** https://app.galxe.com/quest/AGNTHub/GCmmitZCi5 | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127783 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCmmitZCi5` (`type: Points`, `status: Active`, numberID 364919), standalone day-campaign (NOT a Parent — `childrenCampaigns: null`).
+- **✅ API (SIWE pipeline, python3.12 + eth_account, wallet `0x8CCE...282D`):**
+  - SIWE SignIn → JWT OK
+  - `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+- **✅ Real X actions (MCP Chrome, @osbornrdx, Indonesian locale — verified via `data-testid`):**
+  - **Like + Retweet** @agnt_hub tweet → `like`→`unlike` + `retweet`→`unretweet` (menu `Posting ulang`, count 4→5) — https://x.com/agnt_hub/status/2100601904413720801
+  - **Like + Retweet** @TruthAgentAI tweet → `like`→`unlike` + `retweet`→`unretweet` (count →3) — https://x.com/TruthAgentAI/status/2100602597677654091
+  - **Follow** @agnt_hub → already following (`Mengikuti` / `1838361774287958016-unfollow`) ✅
+  - **Follow** @TruthAgentAI → already following (`Mengikuti` / `2080237951150063616-unfollow`) ✅
+- **Cred sync results (4 creds):**
+  - `TWITTER` agnt_hub Tweet Liker (cred 723191682803171328, tweet 2100601904413720801) → `missing twitter args` (X OAuth not linked at Galxe account level)
+  - `TWITTER` TruthAgentAI Tweet Liker (cred 723192277723250688, tweet 2100602597677654091) → `missing twitter args` (same blocker)
+  - `GALXE_ID` Visit the AGNT Hub post (cred 723191685093261312) → `allow:false`
+  - `GALXE_ID` Visit the Truth post (cred 723192275605127168) → `allow:false`
+- **Remaining manual step (one-time, architectural):** Link X (@osbornrdx) to the Galxe account via app.galxe.com → Settings → Social; then the 2 TWITTER like creds auto-verify. Same blocker as #120/#121/#217/#230/#284/#294/#298.
+- **X proof links:** https://x.com/agnt_hub/status/2100601904413720801 (like + repost) — https://x.com/TruthAgentAI/status/2100602597677654091 (like + repost)
+- **Status:** ⚠️ PARTIAL — API-doable creds synced (followSpace ✅) + all real X like/RT/follow actions executed with `data-testid` proof; remaining blockers architectural (X OAuth linking + visit beacons).
 
 ### #309 The Bitfoots — apply.bitfoots.xyz (msg 127779) — ✅ DONE
 - **Date:** 2026-09-18 | **URL:** https://apply.bitfoots.xyz/apply | **Reward:** Bitfoots List allowlist spot (ZEC-shielded collector list) | **Source:** @airdropfind drop 127779 | **X:** @BITFOOTS_
