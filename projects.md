@@ -1,9 +1,28 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 18, 2026 (23:05 UTC)** — #312 Robinhood Byte WL ✅ DONE (Google Form GTD — X follow/like/RT + EVM submit)
+> Last updated: **Sep 18, 2026 (23:45 UTC)** — #313 Bloomshire Whitelist ✅ DONE (browserless API submit + X follow/like/RT/reply)
 
 ---
 
 ## ✅ COMPLETED
+
+### #313 Bloomshire Whitelist — bloomshire.xyz/whitelist (msg 127795) — ✅ DONE
+- **Date:** 2026-09-18 | **URL:** https://bloomshire.xyz/whitelist#apply | **Reward:** Founding Farmers WL spot (2,222 supply, free mint, Robinhood Chain) | **Source:** @airdropfind drop 127795 | **X:** @Bloomshire_
+- **Type:** Browserless First (Type 4) — Next.js/Esm whitelist API with server-side form token + anti-bot time gate. No Turnstile configured (`turnstile:null`).
+- **API recon:** `GET /api/whitelist/form` → `{"token":"...","campaign":"founding-farmers-wl-1","spots":1000,"supply":2222,"postUrls":[...],"turnstile":null}`. Submit = `POST /api/whitelist/apply`.
+- **Gate:** server rejects fast submits with `{"error":"That was too quick -- please take a moment and try again."}` → wait ≥10s between token fetch and POST.
+- **✅ Submit:** `POST /api/whitelist/apply` `{token, campaign:"founding-farmers-wl-1", handle:"osbornrdx", wallet:"0x8CCE...282D", confirmed:true, country:"ID", community:"yes", web3:"experienced"}` → **`{"ok":true,"ref":"wlf46f4e015c9f","at":1789749982254,"wallet":"0x8CCE...282D"}`** (HTTP 200). Application ref `wlf46f4e015c9f`.
+- **✅ Real X actions (@osbornrdx, Indonesian locale, verified via `data-testid`):**
+  - **Follow** @Bloomshire_ → `Ikuti` → `Mengikuti` — https://x.com/Bloomshire_
+  - **Like** post 1 → `like`→`unlike` — https://x.com/Bloomshire_/status/2099831969693450290
+  - **Repost** post 1 → `retweet`→menu `Posting ulang`→`unretweet` — https://x.com/Bloomshire_/status/2099831969693450290
+  - **Reply** post 1 → https://x.com/osbornrdx/status/2100990060988633337
+  - **Like** post 2 → `like`→`unlike` — https://x.com/Bloomshire_/status/2100208115794739516
+  - **Repost** post 2 → `retweet`→`unretweet` — https://x.com/Bloomshire_/status/2100208115794739516
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) | **Mint:** free, supply 2,222, "coming soon on Robinhood"
+- **X proof links:** Follow → https://x.com/Bloomshire_ | Like+RT #1 → https://x.com/Bloomshire_/status/2099831969693450290 | Reply → https://x.com/osbornrdx/status/2100990060988633337 | Like+RT #2 → https://x.com/Bloomshire_/status/2100208115794739516
+- **Status:** ✅ DONE — whitelist application accepted (ref `wlf46f4e015c9f`), all X tasks executed.
+
+---
 
 ### #312 Robinhood Byte WL — Robinhood Byte GTD (Google Form) (msg 127794) — ✅ DONE
 - **Date:** 2026-09-18 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSfdrhHXAFy-7bO11PbP4ofn2UdIRyS_G-rmR4iQeZ1K6rcr7Q/viewform | **Reward:** WL/GTD spot for guaranteed free mint (3,333 pixel-art NFTs, Robinhood Chain) | **Source:** @airdropfind drop 127794 | **X:** @RobinhoodByte
