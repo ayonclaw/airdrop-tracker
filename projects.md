@@ -2164,6 +2164,19 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
+|||||||||||||||||| KieDex | S2 daily 2026-09-18: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
+|||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter advanced 7/11 → 9/11 as the two trading claims landed |
+|||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2) |
+|||||||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) — board was EMPTY at run start (`open_positions` []), so a FRESH trade was legitimately opened: 1 USDT margin @20x = 40 Oil fee, BTC/USDT Long @ 76,600 (BBO fill, liq 73,153 = 4.5% below mark) |
+|||||||||||||||||| | - **"Close a winning trade"** → Claimed ✅ (+50 Oil) — closed that fresh position in profit via `close_trade_atomic(p_position_id, p_exit_price)` (exit 76,630 → **+0.0078 USDT**, counted_volume 15, position_value 20). Small but positive ⇒ t3 satisfied at ZERO extra Oil cost |
+|||||||||||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent — 0 "Open Task" anchors, 0 enabled claims; Social Verify step is a no-op) |
+|||||||||||||||||| | - "Open 5 trades" → 1/5 (the one fresh position counted; needs 5 DIFFERENT pairs ≈ 200 Oil; skipped — reward 50 Oil vs 200 spent) |
+|||||||||||||||||| | - "$1000 volume" → $15/$1000 (the close's counted_volume; needs ~20k Oil — infeasible) |
+|||||||||||||||||| | **BALANCES**: Oil **1250** (net +100 today: +40 faucet, +50 leverage mission, +50 close-winning mission, −40 trade fee), KDX 505.18, Spot **1320** USDT, Futures 116.49 USDT, Total **1436.49** USDT |
+|||||||||||||||||| | **TRADING**: Flat — 0 open positions. Fresh 1-USDT 20x BTC/USDT Long opened @ 76,600 (liq 73,153) then closed same-run @ 76,630 in profit. |
+|||||||||||||||||| | **LIQ-DISTANCE TREND**: position GONE (Sep-16) → board EMPTY at Sep-18 run start. The carried Sep-01 BTC Long remains off the board; t3/t4 now re-farmable each reset day. |
+|||||||||||||||||| | **CLAIM PATH NOTE**: trading-mission claims done via on-page `Claim +50 Oil` buttons (`evaluate_script` `.click()`, first of each duplicate pair) — NO captcha. Edge function `claim-task-mission` remains Turnstile-blocked for API-only claims. |
+|||||||||||||||||| | **DECISION**: Traded (board reset, Oil 1190 ≫ 40 needed). Opened 1 USDT @20x to satisfy t4 (+50), then closed it green for t3 (+50) — net **+60 Oil** for the day on trading. Skipped t1 (net −150) and t2 (infeasible). Quest API re-queried: 11 active quests (s1,s3,s4,s5,s6,s7,s8,t1,t2,t3,t4) — no new s9+ listing missions. |
 ||||||||||||||||| KieDex | S2 daily 2026-09-17: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter read 7/11 → 9/11 as the two trading claims landed (correct this run, unlike the Sep-16 cosmetic lag) |
 ||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2) |
