@@ -718,6 +718,29 @@
 - **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
 - **Submission:** `POST /q/join` → **`{"ok":true,"position":19808,"at":"2026-09-12T05:48:00.017Z","pull":{"traits":{...},"rarity":"common"}}`** — verified via `GET /q/find/osbornrdx` → `{"ok":true,"position":19808,...,"wallet":"0x8CCE…282D"}`
 - **Note:** All 4 tasks were submitted as `true` in the join payload — the server does NOT verify X tasks (client-side self-attest only). Real X actions done anyway for proof.
+### #249b ARCWAR — "The Watchers" MINT (drop 127790) — ⏳ SCHEDULED
+- **Date:** 2026-09-18 | **Source:** Drop 127790 (@airdropfind) | **Source tweet:** https://x.com/Arcwargg/status/2100591636115869972
+- **What it is:** NOT a new drop — **mint-schedule + eligibility announcement** for already-tracked **#249 ARCWAR** (quest spot #19,808 held by @osbornrdx / `0x8CCE…282D`). Free mint, 3,000 supply, Arc Mainnet.
+- **Eligibility:** @osbornrdx is **NOT on the GTD (669) or FCFS (7,215) roster** (Google Sheet `1_KP3hoOxO2ezayuYTBmZ5naOiIVnu8xMyvJAEuZa30g` — 7,884 rows, handle absent). Only the **Public round** applies to us.
+- **Mint schedule (UTC):**
+  - R1 GTD: 2026-09-18 15:00–23:00 UTC (11:00 ET) — size 670
+  - R2 FCFS: 2026-09-18 23:00 → 2026-09-19 07:00 UTC (19:00 ET) — size 7,885
+  - **R3 Public: 2026-09-19 07:00 UTC (03:00 ET) — open to all, unlimited** ← our window
+- **Mint mechanism (reverse-engineered from chunk `2k8un519skp7i.js`):**
+  1. `POST https://quest.arcwar.gg/n/nft/mint/prepare` `{"address":"0x…"}` → `{spot, signature, contract}` (currently `403 {"error":"not_open"}`)
+  2. `mint(uint32 spot, bytes signature)` on contract **`0x2245562e2a7e8250388d8FDE4708e0bf8e8471AE`** (chainId **5042 / Arc Mainnet**)
+  3. `POST /n/nft/minted` `{address, tx}`
+  - Status API: `GET /n/nft/mint/status/<wallet>` → `{public,current,rounds,supply,listed,eligibleRound,canMint,reason,spot,watcher}`
+  - Contract selectors confirmed on-chain: `mint(uint32,bytes)` `0x036e73c8`, `signer()`, `totalSupply()`.
+- **⛔ Blocker:** Arc Mainnet native gas token is **USDC** (18 dec). Wallet balance = **0.0 USDC** → cannot broadcast the mint tx. Gas needed ≈ **0.005–0.01 USDC** (20 gwei × ~250k). Base balance is only 0.0035 USDC / 6.2e-5 ETH (dust, not bridgeable). **Needs manual USDC top-up on Arc (bridge via CCTP from a funded chain).**
+- **Automation ready:** browserless mint script at `/home/ubuntu/airdrop/arcwar/mint.py` (prepare → build tx → sign with airdrop_00 PK → `eth_sendRawTransaction` → `/n/nft/minted`). Cron `arcwar-watchers-mint` scheduled **2026-09-19 06:58 UTC** (2 min before Public open).
+- **Cron jobs (no_agent, script `~/.hermes/scripts/arcwar_watchers_mint.py`):**
+  - `93518d23e5d5` — `58 13 19 9 *` WIB = **2026-09-19 06:58 UTC** (2 min before Public open)
+  - `d296858f4273` — `2 14 19 9 *` WIB = 2026-09-19 07:02 UTC (retry)
+  - `d8b349f19272` — `20 14 19 9 *` WIB = 2026-09-19 07:20 UTC (retry)
+  - Script is idempotent: silent if already minted / not open; prints ⚠️ alert if open-but-unfunded; prints ✅ + tx hash on success.
+- **Status:** ⏳ SCHEDULED — 3 crons armed at Public open. Auto-mints if Arc USDC gas present; otherwise alerts for manual top-up.
+
 ### #248 USDC00L — Whitelist (127609) — ✅ DONE
 - **Date:** 2026-09-12 | **URL:** https://usdc00l.xyz/#whitelist | **Reward:** 10,000 c00l coins on **Arc Mainnet** (USDC-backed)
 - **Type:** Type 4 BROWSERLESS (Next.js API) — SPA with session-cookie waitlist flow. Endpoints: `GET /api/wl/state`, `POST /api/wl/start`, `POST /api/wl/task {task,action}`, `POST /api/wl/submit {address,website,turnstileToken}`. Task enum: follow, repost, like, comment, post. Server enforces `dwellMs:6000` between open→complete.
