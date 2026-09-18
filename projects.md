@@ -1,9 +1,27 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 17, 2026 (18:05 UTC)** — #308 AllScale Pay ✅ (registered via referral, 100 AS Points credited)
+> Last updated: **Sep 18, 2026 (03:45 UTC)** — #309 The Bitfoots ✅ (application received; X follow+like+comment+quote verified; Orchard-receiver ZEC UA submitted)
 
 ---
 
 ## ✅ COMPLETED
+
+### #309 The Bitfoots — apply.bitfoots.xyz (msg 127779) — ✅ DONE
+- **Date:** 2026-09-18 | **URL:** https://apply.bitfoots.xyz/apply | **Reward:** Bitfoots List allowlist spot (ZEC-shielded collector list) | **Source:** @airdropfind drop 127779 | **X:** @BITFOOTS_
+- **Type:** WEB-DASHBOARD (X OAuth) + 4-step application wizard with **server-side X verification** + **Zcash unified-address validation**.
+- **Auth:** X OAuth 2.0 PKCE — injected `@osbornrdx` cookies via CDP `Storage.setCookies` (22 cookies incl. httpOnly auth_token/kdt), clicked "Izinkan aplikasi" on the consent screen → session bound to @osbornrdx.
+- **✅ Task 1 — Follow:** @osbornrdx followed @BITFOOTS_ → `POST /apply/check {kind:"follow"}` → `{"ok":true,"state":"pass"}`
+- **✅ Task 2 — Like:** liked the campaign post (x.com/BITFOOTS_/status/2100244353004572896) → `{"ok":true,"state":"pass"}`
+- **✅ Task 3 — Comment:** replied to the campaign post → `{"ok":true,"state":"pass"}`
+  - **Proof (comment URL):** https://x.com/osbornrdx/status/2100789859107619265
+- **✅ Task 4 — Quote repost:** quoted the campaign post → `{"ok":true,"state":"pass"}`
+  - **Proof (quote URL):** https://x.com/osbornrdx/status/2100789974023197106
+- **🔑 ZEC address wall solved:** Drop required a `u1` **shielded** address. Our stored `u1nhqa…` was a **Sapling-only** UA (receiver tc=0x02) — the server rejected it as "isn't complete or valid" (needs an **Orchard** receiver, tc=0x03, per ZIP-316 completeness). Server does REAL UA parsing (dummy/hand-rolled receivers rejected). **Fix:** generated a real **Orchard** spending key + address with the Rust `orchard 0.15` crate (rustup stable 1.98.1), then encoded the 43-byte Orchard receiver into a spec-correct unified address with `zcash_address 0.13` (`Address::try_from_items([Receiver::Orchard(raw)])` + `Encoding::encode(Main)`; round-trip verified). Result: **`u1hrlv7p705kv6q620k9x00hcecd874fa0zvtza5zcrmd8ufa73vuqswwc7x0ll4v0yhkuuk89vlr0kjwpmm8mr8l4ax7ajq07dvn0ug45`** → `POST /apply/address` → `{"ok":true}`.
+  - **Orchard SK (save):** `b36fb73bdd19180d9e47d877824e0157038db1fff184f12fe8dbbbe7caf5211f` (diversifier index 0, External scope)
+- **✅ Submitted:** `POST /apply` (form: csrf, wallet, laugh, nfts, referrer, comment_link, quote_link) → 302 → `/status`
+- **✅ Confirmation:** **"APPLICATION RECEIVED — Status: PENDING"** — "Good luck, hunter. The team will look at your application." Sent 2026-09-18 03:42 UTC.
+- **X proof links:** Follow → https://x.com/BITFOOTS_ | Like → https://x.com/BITFOOTS_/status/2100244353004572896 | Comment → https://x.com/osbornrdx/status/2100789859107619265 | Quote → https://x.com/osbornrdx/status/2100789974023197106
+- **ZEC address submitted:** `u1hrlv7p705kv6q620k9x00hcecd874fa0zvtza5zcrmd8ufa73vuqswwc7x0ll4v0yhkuuk89vlr0kjwpmm8mr8l4ax7ajq07dvn0ug45` (Orchard-receiver UA)
+- **Status:** ✅ DONE — application received (pending team review).
 
 ### #308 AllScale Pay — app.allscale.io (msg 127778) — ✅ DONE
 - **Date:** 2026-09-17 | **URL:** https://app.allscale.io/s/HMZ4BYU | **Reward:** 100 AS Points (referral) + 1,600 AS Points (mobile sign-in bonus, pending app install) | **Source:** @airdropfind drop 127778
