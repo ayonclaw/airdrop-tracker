@@ -1,9 +1,30 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 19, 2026** — #316 Dukz Whitelist ✅ DONE (X OAuth + follow/like/repost + ZEC address, reg #00881 PENDING)
+> Last updated: **Sep 19, 2026** — #317 ChainGuard TG-bot airdrop ✅ DONE (captcha solved, email+BSC wallet+app screenshot, TG joins, X follow/RT/like)
 
 ---
 
 ## ✅ COMPLETED
+
+### #317 ChainGuard Airdrop — ChainGuardAirdropBot (TG bot, msg 127813) — ✅ DONE
+- **Type:** Telegram-bot airdrop (TG-BOT) — Telethon userbot flow. Reward $3 USDT.
+- **Project:** ChainGuard — independent blockchain security analyzer (BSC/BEP-20 rewards). Bot: @ChainGuardAirdropBot.
+- **Flow executed (all via Telethon `session`):**
+  - ✅ `/start ref_515933843` → welcome + "Join Airdrop & Register"
+  - ✅ Image-emoji captcha solved: image showed a stylized word OCR'd as "game/gamed" → clicked 🎮 `[1][1]` → accepted
+  - ✅ Email submitted: `airdropkarbiters@gmail.com`
+  - ✅ BEP-20 wallet submitted: `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+  - ✅ App screenshot link submitted: ChainGuard iOS App Store page screenshot → uploaded to `https://d.uguu.se/LkicRVsf.png`
+  - ✅ Joined TG channel `@ChainGuardCannle` (required, 0.5 USDT) — verified MEMBER
+  - ✅ Joined promoter channel `@Airdrop` (optional, 0.25 USDT) — verified MEMBER
+  - ✅ Joined group `@AirdropGroup` + `@AirdropGroupii` (for optional X-task gate)
+  - ✅ X optional task: Follow @AirdropStario + Retweet + Like the pinned ChainGuard announcement
+  - ✅ Clicked "I have joined" → "Joined" → **final: "Well done! Thank you for being a part of ChainGuard project!"**
+- **X proof links:**
+  - Follow → https://x.com/AirdropStario
+  - Like + Repost → https://x.com/AirdropStario/status/2101326165197680849
+- **Referral link:** https://t.me/ChainGuardAirdropBot?start=ref_983121959
+- **Status:** ✅ DONE — registration complete. Reward distributed Nov 1, 2026 (100 random participants).
+- **Notes:** Required = iOS app screenshot (2 USDT) + join ChainGuard channel (0.5 USDT). Optional = promoter channel + X follow/RT. Screenshot was the real App Store listing page; accepted by bot.
 
 ### #316 Dukz Whitelist — dukz.fun (msg 127812) — ✅ DONE
 - **Type:** Social-verification whitelist (Type 17 style) — X OAuth connect → 3 X tasks (follow/like/repost, self-attest button after opening link) → Zcash address → submit. Server-side X identity check via `/api/auth/x/me`.
