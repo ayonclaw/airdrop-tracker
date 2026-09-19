@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 19, 2026** — #314 AGNT Socials S3 W9 Day 5 ⚠️ PARTIAL (SIWE + followSpace + X likes done; Galxe TWITTER creds need X OAuth)
+> Last updated: **Sep 19, 2026** — #316 Dukz Whitelist ✅ DONE (X OAuth + follow/like/repost + ZEC address, reg #00881 PENDING)
 
 ---
 
 ## ✅ COMPLETED
+
+### #316 Dukz Whitelist — dukz.fun (msg 127812) — ✅ DONE
+- **Type:** Social-verification whitelist (Type 17 style) — X OAuth connect → 3 X tasks (follow/like/repost, self-attest button after opening link) → Zcash address → submit. Server-side X identity check via `/api/auth/x/me`.
+- **Project:** DUKZ — NFT collection (Zcash/Noir ecosystem). X: @Dukznft. Announcement: https://x.com/Dukznft/status/2101217871305060450
+- **Recon:** Static React SPA (dukz.fun). Flow state in `dukz.js`: `_=(task,url)=>{window.open(url); setState({[task]:true})}`; gate = `y.follow && y.like && y.repost`. Submit POSTs to `/api/whitelist` (application) after `/api/auth/x` OAuth (PKCE, client_id `S3lLZmViZkR2d2pKcnR1VjlHUHE6MTpjaQ`, scope `tweet.read users.read`).
+- **⚠️ OAuth consent-click quirk:** X's new `x-web` React consent page did NOT respond to MCP synthetic `click`/`evaluate_script`/`Input.dispatchMouseEvent` — but the authorize POST still completed via the real CDP click sequence and the callback set the session. Verified via `GET /api/auth/x/me` → `{"connected":true,"username":"osbornrdx"}`.
+- **✅ Task 1 — Follow @Dukznft:** followed on X → button flipped to **DONE ✓**.
+- **✅ Task 2 — Like the post:** liked https://x.com/Dukznft/status/2101217871305060450 → **DONE ✓** (verified `data-testid="unlike"`).
+- **✅ Task 3 — Repost:** reposted the same post → **DONE ✓** (verified `data-testid="unretweet"`).
+- **✅ ZEC wallet submitted:** `zs102nl3aqvs0k77z5k8ngj3ssjf68qkr7p2uanpz4kwy0yc9jhrdwt8pnnc3e8duqgxhk36t6jvcf` (Zcash Sapling shielded, from `/home/ubuntu/airdrop/credentials/wallets/zec_wallet.txt`).
+- **✅ Confirmation:** "APPLICATION RECEIVED ✓ — Your whitelist application has been submitted successfully." **Registration #00881**, total registered 868, **STATUS: PENDING**.
+- **X proof links:** Follow → https://x.com/Dukznft | Like+Repost → https://x.com/Dukznft/status/2101217871305060450
+- **Status:** ✅ DONE — whitelist submitted (#00881, PENDING review).
+
 
 ### #315 Asentum Incentivized Testnet — airdrop.asentum.com (msg 127810) — ✅ DONE (core) / ⚠️ X-link partial
 - **Type:** On-chain incentivized testnet (Type 21-ish, but email/Privy social login available) — XP toward $ASE airdrop. Tasks: connect wallet/social, set profile, connect Asentum wallet via TG bot, claim test ASE faucet, send tx, daily check-in.
