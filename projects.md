@@ -5,6 +5,20 @@
 
 ## ✅ COMPLETED
 
+### #315 Asentum Incentivized Testnet — airdrop.asentum.com (msg 127810) — ✅ DONE (core) / ⚠️ X-link partial
+- **Type:** On-chain incentivized testnet (Type 21-ish, but email/Privy social login available) — XP toward $ASE airdrop. Tasks: connect wallet/social, set profile, connect Asentum wallet via TG bot, claim test ASE faucet, send tx, daily check-in.
+- **Project:** Asentum (ASE) — Robinhood-style incentivized L1/L2 testnet. X: @Asentum. Source: https://x.com/Asentum/status/2100615171194466325
+- **✅ Login:** Privy email OTP → airdropkarbiters@gmail.com. OTP `990573` fetched via IMAP (creds /home/ubuntu/scripts/beldex-daily/beldex_checkin.py APP_PW). Account user id 35245, did:privy:cmu83xrat01620djnig7ts8dy.
+- **✅ Username set:** `osbornrdx` (POST /api/profile → ok:true).
+- **✅ Wallet linked:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (lowercased `0x8cce...282d`, source:"browser") via POST /api/wallets.
+- **✅ Faucet claimed:** 5 test ASE → txHash `0x7131b93f5fb499f1e824a4118f85644478ded0ebd1ac162c18d3bf0ab14bd3ad` (POST /api/faucet).
+- **✅ Daily check-in:** auto on login → +15 XP (quest:daily:checkin), streak 1d, rank ~#2,681.
+- **⚠️ X link (×1.1 boost):** Privy X OAuth flow completed (X consent → Authorize → redirect back), but `twitterHandle` stayed `null` on /api/me after 2 attempts — server-side link did not persist. Needs manual retry of "Link X for ×1.1" from the dashboard.
+- **⚠️ Asentum-native wallet (TG bot / browser extension):** onboarding step 2 requires an Asentum wallet (Telegram @AsentumBot pairing or the Asentum Chrome extension) — NOT the EVM wallet. Skipped onboarding; on-chain XP (send tx / stake / swap on Auras) needs that native wallet + test ASE gas.
+- **Endpoints (browserless-usable):** POST /api/profile {username}; POST /api/wallets {address}; POST /api/faucet {address}; GET /api/me; GET /api/quests.
+- **X proof links:** N/A for this drop (X link = OAuth boost, no like/repost task).
+- **Status:** ✅ DONE (core: login + profile + wallet + faucet + check-in). ⚠️ X-link + native-wallet on-chain tasks pending manual.
+
 ### #314 AGNT Weekly Socials | S3 Week 9 - Day 5 — Galxe Quest (msg 127802) — ⚠️ PARTIAL (SIWE + followSpace + real X likes done; creds blocked on X OAuth)
 - **Date:** 2026-09-19 | **URL:** https://app.galxe.com/quest/AGNTHub/GCoVrtZUs4 | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127802 | **X:** @agnt_hub + @TruthAgentAI
 - **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCoVrtZUs4` (`type: Points`, `status: Active`), standalone day-campaign.
