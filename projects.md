@@ -1,9 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 18, 2026 (23:45 UTC)** — #313 Bloomshire Whitelist ✅ DONE (browserless API submit + X follow/like/RT/reply)
+> Last updated: **Sep 19, 2026** — #314 AGNT Socials S3 W9 Day 5 ⚠️ PARTIAL (SIWE + followSpace + X likes done; Galxe TWITTER creds need X OAuth)
 
 ---
 
 ## ✅ COMPLETED
+
+### #314 AGNT Weekly Socials | S3 Week 9 - Day 5 — Galxe Quest (msg 127802) — ⚠️ PARTIAL (SIWE + followSpace + real X likes done; creds blocked on X OAuth)
+- **Date:** 2026-09-19 | **URL:** https://app.galxe.com/quest/AGNTHub/GCoVrtZUs4 | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127802 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCoVrtZUs4` (`type: Points`, `status: Active`), standalone day-campaign.
+- **Done:**
+  - SIWE SignIn via `eth_account` (wallet `0x8CCE...282D`) → JWT OK
+  - `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+  - ✅ X Like: https://x.com/agnt_hub/status/2100979341454639295 (liked via `[data-testid="like"]` click, verified `unlike` state)
+  - ✅ X Like: https://x.com/TruthAgentAI/status/2100979961733525838 (liked, verified `unlike` state)
+- **Blocked (one-time manual):** TWITTER creds (`agnt_hub - Tweet Liker`, `TruthAgentAI - Tweet Liker`) → `missing twitter args` on sync = X account not OAuth-linked to Galxe. GALXE_ID visit creds → `allow:false` (visit beacon needs real browser + OAuth).
+- **Note:** Same pattern as #294 (W9D2), #230 (W8D4), #217 (W8) — consistent, non-blocking; X actions performed for proof.
 
 ### #313 Bloomshire Whitelist — bloomshire.xyz/whitelist (msg 127795) — ✅ DONE
 - **Date:** 2026-09-18 | **URL:** https://bloomshire.xyz/whitelist#apply | **Reward:** Founding Farmers WL spot (2,222 supply, free mint, Robinhood Chain) | **Source:** @airdropfind drop 127795 | **X:** @Bloomshire_
