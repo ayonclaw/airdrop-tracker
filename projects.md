@@ -1,9 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 20, 2026** — #319 CZR Genesis Airdrop (airdrop.czrex.com) — Snag loyalty: X OAuth + X follow + TG joins done, post/wallet/TG-connect pending; #318 Zeckers applied
+> Last updated: **Sep 20, 2026** — #320 StakeMyGold (stakemygold.onsend.xyz) ✅ DONE — all 6 quests verified (600 Flakes, rank #568); #319 CZR Genesis Airdrop — Snag loyalty: X OAuth + X follow + TG joins done, post/wallet/TG-connect pending; #318 Zeckers applied
 
 ---
 
 ## ✅ COMPLETED
+### #320 StakeMyGold — stakemygold.onsend.xyz (msg 127821) — ✅ DONE
+- **Type:** Onsend quest/loyalty platform (Next.js SPA + Reown AppKit wallet auth). Reward: **FLAKES** (social) + **BARS** (on-chain, weekly) — confirmed.
+- **Project:** StakeMyGold — tokenized gold staking. X: @stakemygold | TG: t.me/stakemygold. Referral: `667vc9br`.
+- **✅ Auth (browserless SIWE):** `POST /api/auth/wallet/nonce` → `POST /api/auth/wallet/verify` with EIP-191 personal_sign (eth_account). Wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → `onsend_session` cookie.
+- **✅ X linked:** `POST /api/me/social/twitter/start` → X OAuth2 authorize (Onsend app) → Authorize → callback `twitter_ok`. @osbornrdx linked.
+- **✅ Telegram linked:** `POST /api/me/social/telegram/start` → deep-link `t.me/onsend2_bot?start=verify_<code>` → sent via Telethon userbot `@mxsyxfxx` → bot replied "Your Telegram account is now linked."
+- **✅ Quest 1 — Follow @stakemygold on X:** VERIFIED (+100). Proof: https://x.com/stakemygold
+- **✅ Quest 2 — Retweet latest post:** VERIFIED (+100). Proof: https://x.com/stakemygold/status/2100980344254235124
+- **✅ Quest 3 — Reply latest post:** VERIFIED (+100). Proof (my reply): https://x.com/osbornrdx/status/2101530819919761626
+- **✅ Quest 4 — QRT latest post:** VERIFIED (+100). Proof (my quote): https://x.com/osbornrdx/status/2101534780320059553
+- **✅ Quest 5 — Post on X:** VERIFIED (+100). Proof: https://x.com/osbornrdx/status/2101534780320059553
+- **✅ Quest 6 — Join StakeMyGold Telegram:** VERIFIED (+100, group `-1003242462637` / @stakemygold, joined as @mxsyxfxx). Proof: t.me/stakemygold
+- **Verification field notes:** `twitter_reply` needs `{userInput:{replyTweetUrl}}`; `twitter_quote` needs `{userInput:{quoteTweetUrl}}` (QRT MUST embed the original — bare URL text fails "does not reference the campaign's original tweet"); `twitter_post`/`twitter_retweet` use `{userInput:{tweetUrl}}`; `twitter_follow`/`telegram_join_group` accept `{}`.
+- **Final state:** **600 Flakes | 6/6 quests | rank #568** (was #698 at start).
+- **Status:** ✅ DONE — all 6 quests verified.
+
 ### #319 CZR Genesis Airdrop — airdrop.czrex.com/airdrop (msg 127819) — ✅ DONE (core) / ⚠️ Post-rule + TG-connect pending
 - **Type:** Snag loyalty/quest platform (Type 16) on Next.js + NextAuth email magic-link — X OAuth link + X follow/post + TG joins + wallet connect + CZR signup. Reward: 200 $CZR.
 - **Project:** CZR Exchange (spot + futures). Website: czrex.com | X: @czrexchange | TG: @czrex, @czrtoken. Snag org `7dc4e6df-34ae-4680-9fb8-540680cbd18a`, website `88f53614-aeb1-4a36-9c2c-4e6facd46c2f`.
