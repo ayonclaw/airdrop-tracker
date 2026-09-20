@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 20, 2026** — #271 ZecFrogs re-announced (final 24h); X like/RT/reply re-engaged on new post, application state re-verified (allowlist #1464, address-correction blocker confirmed permanent)
+> Last updated: **Sep 20, 2026** — #318 Zeckers (ZEC) whitelist applied (409 already-registered) + full X task set; #271 ZecFrogs re-announced (final 24h)
 
 ---
 
 ## ✅ COMPLETED
+### #318 Zeckers Whitelist — www.zeckers.xyz/apply (msg 127818) — ✅ DONE
+- **Type:** Next.js (Vercel) whitelist wizard, 3-step: X username → quests (self-attest) → ZEC address. Browserless `POST /api/apply`.
+- **Chain:** ZEC (Zcash) — 3333 supply, mint price 0.0026 ZEC, mint 21 Sept.
+- **Window:** OPEN (deadline 2026-09-21T12:46:00Z, 72h window). Kings registered at time of run: 42,335.
+- **API:** `POST https://www.zeckers.xyz/api/apply` body `{xUsername, zecAddress, quests:{follow,likeRepost,tag}}` → returned HTTP 409 `{"ok":false,"error":"This X username has already applied."}` = **already registered (SUCCESS)**.
+- **ZEC address submitted (validation target):** `u1hrlv7p705kv6q620k9x00hcecd874fa0zvtza5zcrmd8ufa73vuqswwc7x0ll4v0yhkuuk89vlr0kjwpmm8mr8l4ax7ajq07dvn0ug45` (Orchard u1, from `/home/ubuntu/airdrop/credentials/wallets/zec_orchard_u1.txt`).
+- **X handle:** @osbornrdx
+- **X tasks (real actions performed):**
+  - Follow → https://x.com/ZeckersNFT (confirmed "Mengikuti @ZeckersNFT")
+  - Like → https://x.com/ZeckersNFT/status/2100929834721648860 (like count 7278→7279, state `unlike`)
+  - Repost → https://x.com/ZeckersNFT/status/2100929834721648860 (state `unretweet`, "Memposting ulang")
+  - Reply + tag 2 friends → https://x.com/osbornrdx/status/2101469755362390392
+- **Verdict:** ✅ DONE — already applied (409), full X task set re-performed for proof.
+
 
 ### #317 ChainGuard Airdrop — ChainGuardAirdropBot (TG bot, msg 127813) — ✅ DONE
 - **Type:** Telegram-bot airdrop (TG-BOT) — Telethon userbot flow. Reward $3 USDT.
