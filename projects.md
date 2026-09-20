@@ -2347,17 +2347,6 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|||||||||||||||||| KieDex | S2 daily 2026-09-20: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
-|||||||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" Done/Claimed +50 Oil); counter read 7/11 → 8/11 as the t4 claim landed
-|||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2). Oil 1350 → 1390, Spot 1370 → 1420
-|||||||||||||||||| | - **"Use 10x+ leverage" (t4)** → Claimed ✅ (+50 Oil) via `claim_task_mission {p_mission_id:"t4"}` — board was EMPTY at run start (`open_positions` []), so a FRESH trade legitimately satisfied it: 1 USDT margin @20x = 40 Oil fee, BTC/USDT Long @ 81,276.01 (BBO fill, liq 77,618.59)
-|||||||||||||||||| | - **"Close a winning trade" (t3)** → ⏳ NOT claimed — BTC fell all run (entry 81,276.01 → mark 80,579). TWO poll watchers (~95 min combined, 8s interval, `close_trade_atomic` armed to auto-fire on the first tick > entry) both expired; best tick seen 81,175.61 = never crossed. Position CARRIES OVER open at −0.17 USDT, liq-distance 3.67% (no liquidation risk). t3 re-attemptable next run if/when mark > entry
-|||||||||||||||||| | - All 7 social missions (s1/Follow, s3/Share, s4/TG Group, s5/TG Channel, s6/s7/s8 Like+Repost) → Done ✅ (one-time, permanent — 0 "Open Task" anchors, 0 enabled claims; Social Verify step is a no-op)
-|||||||||||||||||| | - "Open 5 trades" → 0/5 (fresh position did not register this run; needs 5 DIFFERENT pairs ≈ 200 Oil; skipped — reward 50 Oil vs 200 spent)
-|||||||||||||||||| | - "$1000 volume" → $0/$1000 (needs ~20k Oil — infeasible)
-|||||||||||||||||| | **BALANCES**: Oil **1400** (net +50 today: +40 faucet, +50 t4 mission, −40 trade fee; t3's +50 NOT earned), KDX 505.18, Spot **1420** USDT, Futures 115.50 USDT (1 USDT now locked as position margin), Total **1535.50** USDT
-|||||||||||||||||| | **TRADING**: 1 open position — BTC/USDT Long 20x, 1 USDT margin, entry 81,276.01, liq 77,618.59, mark 80,579 (−0.17 USDT, liq-distance 3.67%). Carried into tomorrow; watcher will close + claim t3 as soon as mark > entry.
-|||||||||||||||||| | **LIQ-DISTANCE TREND**: board EMPTY at run start (carried Sep-01 BTC Long remains off the board) — fourth consecutive reset day the fresh-trade play was available; t4 farmed successfully (+50 Oil), t3 missed on a down-only tape.
 |||||||||||||||||| KieDex | S2 daily 2026-09-19: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter read 7/11 → 9/11 as the two trading claims landed
 |||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2)
