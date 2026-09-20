@@ -451,6 +451,8 @@
 - **Notes:** Discord (`discord.gg/fbyt`) +50 pts is self-attest — no real Discord account connected, left unclaimed. X follow +50 pts credited automatically once Rewards Program goes live.
 - **Wallet:** SOL `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`
 
+- **🔁 Re-announcement (msg 127830, Sep 20 2026):** Drop `welcome.flpp.io/4haOazQ` (utm_campaign=rickyrhp) → **301** → `app.flpp.io/perps/rewards`. Same FBYT/FLPP stack — **already registered** (main SOL wallet `5yw3K...R3KMZUu8676mG` verified: `position:582, alreadyRegistered:true`, HTTP 201). New intel from drop: "Perps Mainnet Launch", "New XP Quest Dropped (Social/Trading)", "First Bonus Code (Bonus100)". XP quests (Social/Trading) are gated behind in-app **Solana wallet connect via Claimr widget** (`widgets.claimr.io/claimr.min.js`) + `POST /api/waitlist/x` requiring a signed message → ⚠️ on-chain hard wall (needs real Solana wallet sign + trading activity). No new waitlist form to submit. Bonus code `Bonus100` applied at rewards-program launch (in-app). X proof: https://x.com/FBYTio
+
 ### #288 Archetypes — Whitelist Apply (msg 127709) — ✅ DONE (X OAuth raid 4/4 + papers filed)
 - **Date:** 2026-09-15 | **URL:** https://archetypesnft.xyz/apply | **Reward:** Free mint whitelist (700 supply, hand-drawn 1/1s, mint on Arc) | **Source:** @airdropfind drop 127709 | **X:** @archetypesNFTs
 - **Type:** Next.js SPA + **better-auth X OAuth** (client `grok_1c73fcfebde34945a696408bebde0f77` via `auth.grok.me`) → **server-verified X raid** (follow/like/quote/reply checked against the X API) → archetype + handle + EVM wallet + essay → filed.
