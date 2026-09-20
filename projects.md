@@ -1,9 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #322 LASTWICK ✅ DONE; #321 ZRC20 (zrc20.io) ✅ DONE — 5 X steps (follow+2 likes+post+repost) + ZEC address registered to Supabase (409 dup = confirmed); #320 StakeMyGold ✅ DONE; #319 CZR Genesis — Snag loyalty partial.
+> Last updated: **Sep 20, 2026** — #323 VENTRA (ventran.xyz) ✅ DONE — Arbitrum allocation checker whitelist; wallet `0x8CCE...282D` submitted (`{"ok":true}`) + 4/4 tasks (Follow @ventranxyz, Like, Repost, Reply, TG join).
 
 ---
 
 ## ✅ COMPLETED
+### #323 VENTRA — ventran.xyz (msg 127829) — ✅ DONE
+- **Date:** 2026-09-20 | **URL:** https://www.ventran.xyz | **Reward:** $VENTRA Arbitrum One airdrop allocation (180 $VENTRA/tx, 2.8B community pool) | **Source:** @airdropfind drop 127829 | **X:** @ventranxyz | **TG:** t.me/ventranxyz
+- **Type:** BROWSERLESS-FIRST — Vite/React SPA (TanStack Start, Vercel) + single plain REST endpoint `POST /api/submit {wallet}`. Tasks are **client-side self-attest** (localStorage key `ventra.tasks.done`); NO server-side task verification. Allocation check is a server function (`GET /api/...` read of Arbitrum One tx count), but the whitelist gate is just the wallet POST.
+- **Recon:** `curl` HTML → title "VENTRA · Arbitrum whitelist"; `assets/index-BQXOyxig.js` → `routes-VdRi5dbE.js` exposed submit handler: `fetch('/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({wallet:e.trim()})})`. Config chunk `config-Dneu0FiT.js`: chain 42161 (Arbitrum One, arb1.arbitrum.io/rpc), post `https://x.com/Ventranxyz/status/2101630968973107656`, per-tx 180, supply 10B. Wallet provider = **Privy** (claim step only, not needed for whitelist).
+- **✅ Step 1 — Check allocation:** tx-count read from Arbitrum One (live, non-self-reported).
+- **✅ Step 2 — Tasks (4/4, client-side self-attest):**
+  - **Follow @ventranxyz:** followed, button flipped to "Mengikuti". Proof: https://x.com/ventranxyz
+  - **Turn on post notifications:** profile bell (client-attest).
+  - **Like + comment + repost the post:** ✅ Like + ✅ Repost + ✅ Reply (all on https://x.com/Ventranxyz/status/2101630968973107656).
+  - **Join t.me/ventranxyz:** joined via Telethon userbot @mxsyxfxx → entity "Ventran" resolved.
+- **✅ Step 3 — Wallet submitted:** `POST https://www.ventran.xyz/api/submit` `{"wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` → **HTTP 200 `{"ok":true}`** (idempotent on repeat = confirmed).
+- **X proof links:** Follow → https://x.com/ventranxyz | Like+Repost → https://x.com/Ventranxyz/status/2101630968973107656 | Reply → https://x.com/osbornrdx/status/2101673933150065110
+- **Wallet used:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM / Arbitrum One)
+- **Status:** ✅ DONE — wallet whitelisted (`{"ok":true}`); all 4 tasks executed (3 X + 1 TG). Step 4 (Claim) opens TBA via Privy.
+
 ### #322 LASTWICK — form.lastwick.xyz (msg 127827) — ✅ DONE
 - **Date:** 2026-09-21 | **URL:** https://form.lastwick.xyz | **Reward:** 999-candle free mint on $ZEC (whitelist) | **Source:** @airdropfind drop 127827 | **X:** @wickonzec
 - **Type:** BROWSERLESS-FIRST — static Cloudflare-fronted page + clean JSON API (`/api/check`, `/api/ticket`, `/api/register`). X tasks done in MCP Chrome; registration submitted via curl (no browser needed).
