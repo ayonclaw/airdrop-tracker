@@ -1974,6 +1974,12 @@
   - `/api/profile/{address}` — GET (Legionnaire, $0 TVL)
 - **Date:** Aug 6, 2026
 - **Note:** Monitor for application reopening. @airdropfind announced "Epoch 7 is Live"
+- **Phase 2 Update (Sep 20, 2026):** @airdropfind posted "Stabilizer Phase 2 Testnet whitelist is now closed" (https://x.com/StabilizerFi/status/2101685164808020378)
+  - Re-checked `GET /api/whitelist/check/0x8CCE...282D` → `{"whitelisted": false}` (still not whitelisted)
+  - `POST /api/whitelist/apply` → `{"error":"Invalid Ethereum address"}` (endpoint no longer accepts the wallet payload shape — intake effectively closed)
+  - Site copy confirms: "Stabilizer is currently in the **Transition Phase**, so SP, rankings, epochs, and epoch-based NFT claims are paused until Phase 2. Existing Phase 1 participants retain access."
+  - **Verdict:** Phase 2 whitelist CLOSED to non-Phase-1 wallets. Nothing to submit. Monitor Discord (discord.gg/6RQ6w6BCbT) / TG (t.me/stabilizer_finance) for Phase 2 reopen.
+- **Source:** https://x.com/StabilizerFi/status/2101685164808020378
 
 ### N+3. Hoodlife — Wallet Waitlist 🆕
 - **Status:** ✅ Registered — 10 Wallets Submitted
