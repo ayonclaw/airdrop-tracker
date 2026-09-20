@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 20, 2026** — #321 ZRC20 (zrc20.io) ✅ DONE — 5 X steps (follow+2 likes+post+repost) + ZEC address registered to Supabase (409 dup = confirmed); #320 StakeMyGold ✅ DONE; #319 CZR Genesis — Snag loyalty partial.
+> Last updated: **Sep 21, 2026** — #322 LASTWICK ✅ DONE; #321 ZRC20 (zrc20.io) ✅ DONE — 5 X steps (follow+2 likes+post+repost) + ZEC address registered to Supabase (409 dup = confirmed); #320 StakeMyGold ✅ DONE; #319 CZR Genesis — Snag loyalty partial.
 
 ---
 
 ## ✅ COMPLETED
+### #322 LASTWICK — form.lastwick.xyz (msg 127827) — ✅ DONE
+- **Date:** 2026-09-21 | **URL:** https://form.lastwick.xyz | **Reward:** 999-candle free mint on $ZEC (whitelist) | **Source:** @airdropfind drop 127827 | **X:** @wickonzec
+- **Type:** BROWSERLESS-FIRST — static Cloudflare-fronted page + clean JSON API (`/api/check`, `/api/ticket`, `/api/register`). X tasks done in MCP Chrome; registration submitted via curl (no browser needed).
+- **✅ Follow @wickonzec:** followed via intent URL (`x.com/intent/follow?screen_name=wickonzec`), button flipped to "Mengikuti". Proof: https://x.com/wickonzec
+- **✅ Like announcement post:** liked via `x.com/intent/like?tweet_id=2101412922853294373`. Proof: https://x.com/wickonzec/status/2101412922853294373
+- **✅ Repost announcement post:** reposted via `x.com/intent/retweet?tweet_id=2101412922853294373`. Proof: https://x.com/wickonzec/status/2101412922853294373
+- **✅ Reply to announcement post:** reply "🕯️" posted. Proof: https://x.com/osbornrdx/status/2101616805727105319
+- **✅ Quote tweet:** "999 candles. Free mint on $ZEC 🕯️" quoting the announcement. Proof: https://x.com/osbornrdx/status/2101616973633450430
+- **Wallet submitted (ZEC Orchard u1):** `u1hrlv7p705kv6q620k9x00hcecd874fa0zvtza5zcrmd8ufa73vuqswwc7x0ll4v0yhkuuk89vlr0kjwpmm8mr8l4ax7ajq07dvn0ug45`
+- **✅ Confirmation:** `POST /api/ticket` → t token; 13s MIN_WAIT honored; `POST /api/register` → `{"ok":true,"paddle":178}`. Verified `GET /api/check?x=osbornrdx` → `{"ok":true,"taken":true}`.
+- **Status:** ✅ DONE — whitelist registration submitted (Paddle No. 178).
+
 ### #321 ZRC20 Fairlaunch Airdrop — zrc20.io (msg 127825) — ✅ DONE
 - **Date:** 2026-09-20 | **URL:** https://www.zrc20.io | **Reward:** ZRC20 airdrop allocation (ZEC mainnet fairlaunch) | **Source:** @airdropfind drop 127825 | **X:** @bitx2100
 - **Type:** BROWSERLESS-FIRST — Vite/React SPA (TanStack Start) + Supabase PostgREST. 5 client-side self-attest X steps + ZEC address submit. NO server-side task verification.
