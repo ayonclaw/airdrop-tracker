@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #326 Catalyst Markets waitlist DONE (catalyst.markets/aksara, msg 127847) — Privy X-OAuth + follow @CatalystMkts_ + post on X (proof: x.com/osbornrdx/status/2101919223820017702); server-side verifyPost returned 500 (flaky, X actions confirmed live).
+> Last updated: **Sep 21, 2026** — #327 ZeeNodes whitelist DONE (zeenodes.cc, msg 127851) — client-side X flow (follow @Zeenodes + post on X) executed with proof; no backend (Type 11, session-local confirm).
 
 ---
 
 ## ✅ COMPLETED
+### #327 ZeeNodes — zeenodes.cc (msg 127851) — ✅ DONE
+- **Date:** 2026-09-21 | **URL:** https://zeenodes.cc | **Reward:** Whitelist slot (1,111 units, ZEC chain) | **Source:** @airdropfind drop 127851 | **X:** @Zeenodes
+- **Type:** Type 11 VANILLA-JS-WL-CONFIG (no backend) — single static HTML page, inline `<script>` only, **zero** `fetch`/`XMLHttpRequest`/API calls. `submitProof()` writes to the DOM only ("logged locally for this session"); no POST endpoint exists.
+- **Recon:** 146 KB static page; `completeStep1()` opens x.com/Zeenodes, `completeStep2()` opens `twitter.com/intent/tweet` with the preset payload, `submitProof()` shows the `#confirmBox`. No wallet field, no email field, no server.
+- **✅ Step 1 — Follow @Zeenodes:** MCP Chrome (X session live as @osbornrdx) → profile header button flipped to **"Mengikuti"**. Proof: https://x.com/Zeenodes
+- **✅ Step 2 — Post on X:** posted preset payload via intent URL → **live post: https://x.com/osbornrdx/status/2101956418530312301** (`> encrypting payload... [AES-256] / > relay: @Zeenodes / > access_request: sealed / > status: transmitting_`).
+- **✅ Step 3 — Submit proof:** pasted post URL into `#proofInput`, ran `submitProof()` → `#confirmBox` shown: **"// SLOT_REGISTERED — You're in the queue."** (`proofNote` = "proof received").
+- **X proof links:** Follow → https://x.com/Zeenodes | Post → https://x.com/osbornrdx/status/2101956418530312301 | Source → @airdropfind msg 127851
+- **Wallet used:** N/A (no wallet field — ZEC-chain collection, no EVM/SOL submit)
+- **Note:** No backend to receive the proof (client-side only) — project states it will "cross-check the broadcast" (i.e. verify the on-X post manually against @osbornrdx). X actions are live with proof.
+- **Status:** ✅ DONE — both X tasks executed with proof + site confirmation reached.
+
 ### #326 Catalyst Markets — catalyst.markets/aksara (msg 127847) — ✅ DONE (server verify flaky)
 - **Date:** 2026-09-21 | **URL:** https://catalyst.markets/aksara | **Reward:** Early access to Catalyst Markets outcome waitlist (top-1000 cap, granted in waves) | **Source:** @airdropfind drop 127847 | **X:** @CatalystMkts_
 - **Type:** Type 2 WEB-DASHBOARD OAuth — Next.js on Vercel SPA + Privy auth (X OAuth) + tRPC backend at `api-production-9b8ba.up.railway.app`. No browserless path (Privy session token required).
@@ -2451,6 +2463,7 @@
 
 | Project | Detail | Status |
 |---------|--------|--------|
+| ZeeNodes | WL slot queued · 1,111 · ZEC chain · follow+post X (proof: x.com/osbornrdx/status/2101956418530312301) | ✅ |
 | Consensus | WL entry **#3809** · 70 pts · 5/5 missions · ref 3DTXTPC2 | ✅ |
 | Royal Mechanica | WL join **#20646** · 6,666 · Robinhood Chain · 4/4 X tasks | ✅ |
 | Quantum Grid | Google Form CLOSED (500 WL, missed window) | ⛔ |
