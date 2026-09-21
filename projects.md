@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #323 VENTRA re-drop (ventran.xyz, msg 127839) ✅ DONE — wallet `{"ok":true}`, X follow+like+repost+reply re-run, TG re-joined.
+> Last updated: **Sep 21, 2026** — #302 FWOGHOOD mint announced (OpenSea `fwoghoodrobin`, msg 127843) — NFT `0x5c669e…49b2` on Robinhood Chain, supply 5,555; presale 17:00 UTC (FREE, 1/wallet) · public 18:00 UTC (0.0012 ETH, 2/wallet) ⚠️ needs real MetaMask + RHC gas.
 
 ---
 
@@ -330,6 +330,10 @@
   - Quote tweet — https://x.com/osbornrdx/status/2100440323185148395 (text: "I Entered into the FwogHOOD, get yours now 🐸")
 - **✅ Submission:** `POST {supabase}/rest/v1/whitelist_applications` with `apikey` + `Authorization: Bearer <publishable key>` → **HTTP 201**; re-POST returns **409 `23505` duplicate on `whitelist_applications_wallet_address_key`** = row persisted. Payload: `{x_username:"@osbornrdx", comment_link:"https://x.com/osbornrdx/status/2100440222219792596", quote_link:"https://x.com/osbornrdx/status/2100440323185148395", wallet_address:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}`.
 - **Notes:** RLS requires BOTH `apikey` AND `Authorization: Bearer <same publishable key>` headers — `apikey` alone → 401 RLS `42501`. `Prefer: return=representation` also trips 401; omit it. No Turnstile, no wallet connect, no X OAuth — fully browserless after doing X tasks in-browser. Mint Date: TBA.
+- **🆕 MINT ANNOUNCED (msg 127843, 2026-09-21):** OpenSea collection `fwoghoodrobin` → https://opensea.io/collection/fwoghoodrobin — `Mint soon`, Price FREE.
+  - **NFT contract:** `0x5c669ebee5768d666788feb224028e12b8f849b2` (SeaDrop V1 ERC721) on **Robinhood Chain** (`robinhood`). Owner profile `0xa58dc16645b481d8af2f095613944c2254311972` (Fwoghood). Supply **5,555**.
+  - **Stages:** Signed Presale (allowlist, label "Fwogs") **2026-09-21 17:00→18:00 UTC**, FREE, max **1**/wallet, allowlistMemberCount **3225** · Public Sale **2026-09-21 18:00→23:00 UTC**, **0.0012 ETH** (~$3.19), max **2**/wallet.
+  - **Status:** ⚠️ MINT WALL — on-chain mint on Robinhood Chain; RPC `rpc.robinhood.com` is TLS-blocked from the VPS (no server-side mint). Requires **CloakBrowser + real MetaMask (airdrop_00)** with Robinhood Chain added + ETH gas at 17:00 UTC (presale) or 18:00 UTC (public). Not a duplicate entry — mint announcement for #302.
 
 ### #301 FLIPIT — Free Mint Waitlist (Robinhood Network, msg 127766) — ✅ DONE (X OAuth + wallet, MINT ID #0782)
 - **Date:** 2026-09-17 | **URL:** https://www.flipitrh.xyz/ | **Reward:** Free Mint (1 COIN · 2 SIDES · 100% Retro On-Chain) | **Network:** Robinhood | **Source:** @airdropfind drop 127766 | **X:** @Flipitrh
