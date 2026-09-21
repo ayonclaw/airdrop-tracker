@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #328 Pear Rewards daily streak claimed (rewards.pear.trade) — streak 12→13d, +147 pearls, 6,669 pts, rank #32,093. Cron `pear_daily.py` v9 via real-Chrome CDP.
+> Last updated: **Sep 21, 2026** — #329 Parcel RWA whitelist (parcelrwa.xyz) — sheet #267 claimed, all 3 X tasks live (follow/like/repost @ParcelRWA).
 
 ---
 
 ## ✅ COMPLETED
+### #329 Parcel RWA — parcelrwa.xyz (msg 127853) — ✅ DONE
+- **Date:** 2026-09-21 | **URL:** https://parcelrwa.xyz/?ref=cryptoaddict66 | **Reward:** Early-access "drawing sheet" number (FCFS, 256+ issued at detection) | **Source:** @airdropfind drop 127853 | **X:** @ParcelRWA
+- **Type:** Type 11-adjacent VANILLA-JS FCFS whitelist — static HTML + inline `<script>` (`CONFIG` global), single endpoint `/api/claim` (issues number + token on first call, updates shared/wallet on later calls with the token). No wallet-connect lib, no captcha.
+- **Recon:** `CONFIG = {HANDLE:"ParcelRWA", POST_ID:"2101933347228496224", VERIFY_MS:3500}`; tasks = `["follow","like","repost"]`; `GET /api/stats` → `{"count":256}`. POST body `{handle, ref, tasks, shared, wallet, token}`.
+- **✅ Task 1 — Follow @ParcelRWA:** X intent (`/intent/follow?screen_name=ParcelRWA`) → dialog "Ingin mengikuti @ParcelRWA?" → clicked "Ikuti" → header flipped to **"Mengikuti @ParcelRWA"**. Proof: https://x.com/ParcelRWA
+- **✅ Task 2 — Like announcement:** X intent (`/intent/like?tweet_id=2101933347228496224`) → "Kini Anda dapat menyukai postingan tersebut." → clicked "Suka" → `[data-testid="unlike"]` present, aria "282 Suka. Menyukai". Proof: https://x.com/ParcelRWA/status/2101933347228496224
+- **✅ Task 3 — Repost announcement:** X intent (`/intent/retweet?tweet_id=2101933347228496224`) → menu "Posting ulang" → first attempt didn't stick (retweet count 251→252 but no `unretweet` state) → retried via `[data-testid="retweet"]` + Dropdown menuitem → **"253 posting ulang. Memposting ulang"** (`[data-testid="unretweet"]` present). Proof: https://x.com/ParcelRWA/status/2101933347228496224
+- **✅ Claim:** `POST /api/claim {handle:"osbornrdx", ref:"cryptoaddict66", tasks:3, shared:true, wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D", token:"498e39381ed59cff48ac9a06"}` → `{"number":267,"already":true,"applied":true}` — **sheet number 267 issued, wallet + share applied**. `GET /api/stats` → `{"count":274}`.
+- **X proof links:** Follow → https://x.com/ParcelRWA | Like/Repost → https://x.com/ParcelRWA/status/2101933347228496224 | Source → @airdropfind msg 127853
+- **Wallet used:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **Account:** Osborn (@osbornrdx)
+- **Status:** ✅ DONE — all 3 X tasks live with proof + number 267 claimed.
+
 ### #328 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
 - **Date:** 2026-09-21 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard) | **Source:** daily cron `pear_daily.py` (v9)
 - **Type:** Privy X-OAuth gated Next.js dashboard. v9 script drives **real Chrome over CDP** (`connect_over_cdp http://127.0.0.1:9222`) — headless Playwright gets HTTP 403 on `x.com/i/oauth2/authorize`, so the CDP route is the reliable one.
