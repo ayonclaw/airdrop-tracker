@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #324 NUANCE LABS (nuancelabs.ai/waitlist) ✅ DONE — Framer email waitlist; HubSpot submit confirmed ("emailed you a confirmation link").
+> Last updated: **Sep 21, 2026** — #323 VENTRA re-drop (ventran.xyz, msg 127839) ✅ DONE — wallet `{"ok":true}`, X follow+like+repost+reply re-run, TG re-joined.
 
 ---
 
@@ -29,6 +29,7 @@
 - **X proof links:** Follow → https://x.com/ventranxyz | Like+Repost → https://x.com/Ventranxyz/status/2101630968973107656 | Reply → https://x.com/osbornrdx/status/2101673933150065110
 - **Wallet used:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM / Arbitrum One)
 - **Status:** ✅ DONE — wallet whitelisted (`{"ok":true}`); all 4 tasks executed (3 X + 1 TG). Step 4 (Claim) opens TBA via Privy.
+- **🔁 Re-drop (msg 127839, 2026-09-21):** VENTRA re-announced ("Check wallets that frequently transact on the ARB Chain"). Same site, same flow — re-verified. Wallet re-submitted `POST /api/submit {"wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` → **HTTP 200 `{"ok":true}`**. X re-run via MCP Chrome (X cookies injected): Follow @ventranxyz confirmed (button "Mengikuti"), Like + Repost on post 2101630968973107656 (repost count 6286→6290), new reply posted. TG re-joined `t.me/ventranxyz` (channel id 4390443713). **New proof links:** Follow → https://x.com/ventranxyz | Like+Repost → https://x.com/Ventranxyz/status/2101630968973107656 | Reply (new) → https://x.com/osbornrdx/status/2101873673657553326 | Wallet → `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`.
 
 ### #322 LASTWICK — form.lastwick.xyz (msg 127827) — ✅ DONE
 - **Date:** 2026-09-21 | **URL:** https://form.lastwick.xyz | **Reward:** 999-candle free mint on $ZEC (whitelist) | **Source:** @airdropfind drop 127827 | **X:** @wickonzec
