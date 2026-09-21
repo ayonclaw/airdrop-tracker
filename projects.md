@@ -1,9 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #327 ZeeNodes whitelist DONE (zeenodes.cc, msg 127851) — client-side X flow (follow @Zeenodes + post on X) executed with proof; no backend (Type 11, session-local confirm).
+> Last updated: **Sep 21, 2026** — #328 Pear Rewards daily streak claimed (rewards.pear.trade) — streak 12→13d, +147 pearls, 6,669 pts, rank #32,093. Cron `pear_daily.py` v9 via real-Chrome CDP.
 
 ---
 
 ## ✅ COMPLETED
+### #328 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
+- **Date:** 2026-09-21 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard) | **Source:** daily cron `pear_daily.py` (v9)
+- **Type:** Privy X-OAuth gated Next.js dashboard. v9 script drives **real Chrome over CDP** (`connect_over_cdp http://127.0.0.1:9222`) — headless Playwright gets HTTP 403 on `x.com/i/oauth2/authorize`, so the CDP route is the reliable one.
+- **Flow:** 22 X cookies parsed from `x_cookies_netscape.txt` (Netscape, space-separated, `#HttpOnly_` preserved) → `ctx.add_cookies()` → navigate `/dashboard` (already authenticated, no login wall) → locate `button` matching `/^claim$/i` → click → re-read stats.
+- **✅ Result:** Daily streak claimed — streak advanced **12 → 13 days**. Points **6,522 → 6,669** (**+147 pearls**). Rank **#32,093** (unchanged).
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Cron log:** `[2] streak=12d points=6,522 rank=#32093` → `[3] Claim: clicked` → `[4] streak=13d points=6,669 rank=#32093` → `Action: clicked`
+- **Status:** ✅ DONE.
 ### #327 ZeeNodes — zeenodes.cc (msg 127851) — ✅ DONE
 - **Date:** 2026-09-21 | **URL:** https://zeenodes.cc | **Reward:** Whitelist slot (1,111 units, ZEC chain) | **Source:** @airdropfind drop 127851 | **X:** @Zeenodes
 - **Type:** Type 11 VANILLA-JS-WL-CONFIG (no backend) — single static HTML page, inline `<script>` only, **zero** `fetch`/`XMLHttpRequest`/API calls. `submitProof()` writes to the DOM only ("logged locally for this session"); no POST endpoint exists.
