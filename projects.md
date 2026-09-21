@@ -1,9 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 20, 2026** — #323 VENTRA (ventran.xyz) ✅ DONE — Arbitrum allocation checker whitelist; wallet `0x8CCE...282D` submitted (`{"ok":true}`) + 4/4 tasks (Follow @ventranxyz, Like, Repost, Reply, TG join).
+> Last updated: **Sep 21, 2026** — #324 NUANCE LABS (nuancelabs.ai/waitlist) ✅ DONE — Framer email waitlist; HubSpot submit confirmed ("emailed you a confirmation link").
 
 ---
 
 ## ✅ COMPLETED
+### #324 Nuance Labs Waitlist — www.nuancelabs.ai/waitlist (msg 127838) — ✅ DONE
+- **Date:** 2026-09-21 | **URL:** https://www.nuancelabs.ai/waitlist | **Reward:** Early access to Nuance Labs research preview ($50M Series A, emotional AI avatar) | **Source:** @airdropfind drop 127838 | **X:** @nuance_ai
+- **Type:** BROWSERLESS-PROBE → BROWSER-SUBMIT (Framer-hosted form). Landing is a **Framer** site; the `<form class="framer-1ljh1ny">` has NO `action` attribute and the submit endpoint is **runtime-injected from component props** (not statically discoverable). Framer's runtime (`framer.Bes6H6sG.mjs`) submits via `fetch(e,{method:'POST',headers:{'Framer-Site-Id':...,'Framer-POW':<worker-computed PoW>,'Framer-Form-Fields':...}})`, with a **client-side Web Worker proof-of-work** gate (`function sf()` → Worker with `salt/difficulty/tokenLength/maxTime`). No curl-able static endpoint → real browser submit required.
+- **Recon:** `curl` HTML → title "Nuance Labs: Join the Waitlist"; form fields: `First Name`, `Last Name`, `Email` (all required), radio `user_motivation` ∈ {Consumer (default checked), Developer, Company / Enterprise, Other}; 11 invisible honeypot inputs (`website`,`company`,`message`,`subject`,`title`,`description`,`feedback`,`notes`,`details`,`remarks`,`comments`, `transform:scale(0)`). Grepped all 6 modulepreload chunks — no form endpoint exposed; endpoint resolved only at runtime.
+- **Submit path:** Playwright headless Chromium (MCP Chrome was unstable / protocol-timeout) → blocked GA/HubSpot/events.framer trackers so `domcontentloaded` settles → filled First Name / Last Name / Email with real values → clicked `button[type="submit"]`.
+- **✅ Confirmation:** Success screen rendered — **"We've emailed you a confirmation link to secure your spot. Don't see it? Check spam — it happens to the best of us."** Network capture confirms the POST fired: `POST https://api.hsforms.com/submissions/v3/integration/submit/246978044/be83b284-8c5d-4f31-8b5a-3f2c7e42cce1` (HubSpot portal **246978044**) body `{"fields":[{"name":"First Name","value":"Airdrop"},{"name":"Last Name","value":"Karbiters"},{"name":"Email","value":"airdropkarbiters@gmail.com"},{"name":"user_motivation","value":"Consumer"}],"context":{"pageUri":"https://www.nuancelabs.ai/waitlist","pageName":"Nuance Labs: Join the Waitlist"}}`.
+- **Email used:** airdropkarbiters@gmail.com (confirmation link sent to inbox)
+- **X proof links:** N/A (no X tasks — drop text is "Submit Details / Done"; pure email waitlist). Source tweet: https://x.com/nuance_ai/status/2099563334920282175
+- **Wallet:** N/A (no wallet field)
+- **Status:** ✅ DONE — email waitlist submitted (HubSpot) + success confirmation rendered.
+
 ### #323 VENTRA — ventran.xyz (msg 127829) — ✅ DONE
 - **Date:** 2026-09-20 | **URL:** https://www.ventran.xyz | **Reward:** $VENTRA Arbitrum One airdrop allocation (180 $VENTRA/tx, 2.8B community pool) | **Source:** @airdropfind drop 127829 | **X:** @ventranxyz | **TG:** t.me/ventranxyz
 - **Type:** BROWSERLESS-FIRST — Vite/React SPA (TanStack Start, Vercel) + single plain REST endpoint `POST /api/submit {wallet}`. Tasks are **client-side self-attest** (localStorage key `ventra.tasks.done`); NO server-side task verification. Allocation check is a server function (`GET /api/...` read of Arbitrum One tx count), but the whitelist gate is just the wallet POST.
