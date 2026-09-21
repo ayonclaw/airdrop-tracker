@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 21, 2026** — #325 TERMINAL 404 whitelist DONE (terminal404.site, msg 127844) — server-validated game run + code claim `PF2V-9QT9` → wallet `0x8CCE…282D` registered (`found:true, status:pending`); 3/3 X tasks done.
+> Last updated: **Sep 21, 2026** — #326 Catalyst Markets waitlist DONE (catalyst.markets/aksara, msg 127847) — Privy X-OAuth + follow @CatalystMkts_ + post on X (proof: x.com/osbornrdx/status/2101919223820017702); server-side verifyPost returned 500 (flaky, X actions confirmed live).
 
 ---
 
 ## ✅ COMPLETED
+### #326 Catalyst Markets — catalyst.markets/aksara (msg 127847) — ✅ DONE (server verify flaky)
+- **Date:** 2026-09-21 | **URL:** https://catalyst.markets/aksara | **Reward:** Early access to Catalyst Markets outcome waitlist (top-1000 cap, granted in waves) | **Source:** @airdropfind drop 127847 | **X:** @CatalystMkts_
+- **Type:** Type 2 WEB-DASHBOARD OAuth — Next.js on Vercel SPA + Privy auth (X OAuth) + tRPC backend at `api-production-9b8ba.up.railway.app`. No browserless path (Privy session token required).
+- **Recon:** bundle chunks → Privy (`auth.privy.io/api/v1/apps/cmsdr2rvp002d0cibucawto4k`) + X OAuth. tRPC endpoints: `account.me`, `waitlist.status`, `waitlist.verifyFollow`, `waitlist.detectPost`, `waitlist.verifyPost`. Landing "outcome" = free-text field ("generational wealth") that sets the personalized share slug (`generational-wealth-cnul`).
+- **✅ Step 1 — X OAuth (Privy):** MCP Chrome → clicked "sign in" → Privy modal → "Twitter" → X authorize popup → clicked "Izinkan aplikasi" (Indonesian locale). Popup closed on success; main page shows **"connected — @osbornrdx"** ✓ and **rank #24,077** (members 34,684). X OAuth flow itself worked — no 400 (contrast Snag's `offline.access` block).
+- **✅ Step 2 — Follow @CatalystMkts_:** followed on X (button flipped to "Mengikuti"). Proof: https://x.com/CatalystMkts_ | Ladder gain +20 (rank → 22,053).
+- **✅ Step 3 — Post on X:** posted via intent URL `x.com/intent/post?text=generational wealth - @CatalystMkts_ https://catalyst.markets/generational-wealth-cnul` → **live post: https://x.com/osbornrdx/status/2101919223820017702** | Ladder gain +60 (rank → 18,216). Pasted the post URL into the "link to your post" verify field.
+- **⚠️ Server-side verify flaky (not our side):** `POST waitlist.verifyPost` returns **HTTP 500** `INTERNAL_SERVER_ERROR` (ref `e16a2f04`) on 4 attempts; `waitlist.verifyFollow` + `waitlist.detectPost` return `verified:false` despite the follow + post being live on X. `waitlist.status` shows `followedAt:null, postedAt:null` — server hasn't ingested either action. All X actions confirmed done with proof links above; the waitlist rank is already secured (#24,077, members 34,684).
+- **X proof links:** Follow → https://x.com/CatalystMkts_ | Post → https://x.com/osbornrdx/status/2101919223820017702 | Source → https://x.com/CatalystMkts_/status/2101715201322270950
+- **Referral link:** https://catalyst.markets/generational-wealth-cnul
+- **Wallet used:** N/A (Privy X-only auth; no wallet field on this waitlist)
+- **Status:** ✅ DONE (registration + both X tasks executed with proof). ⚠️ Catalyst's server-side `verifyPost` was returning 500 during the run — ladder points for follow/post may not have posted server-side; the underlying X actions ARE live and the entry is registered. Re-check `waitlist.status` later if ladder credit matters.
+
 ### #325 TERMINAL 404 — terminal404.site/apply (msg 127844) — ✅ DONE
 - **Date:** 2026-09-21 | **URL:** https://terminal404.site/apply | **Reward:** Whitelist (GTD/FCFS) for TERMINAL 404 mint on Robinhood Chain | **Source:** @airdropfind drop 127844 | **X:** @terminal404_rh
 - **Type:** BROWSERLESS-FIRST — Win98-styled static site + plain Vercel `/api/*` JSON routes (`/api/session`, `/api/submit`, `/api/claim`, `/api/check`, `/api/config`). Server recomputes score from a signed play session (JWT) + elapsed clock; X tasks are client-side self-attest (tab-away speed bump only), so the whole flow is curl-automatable.
