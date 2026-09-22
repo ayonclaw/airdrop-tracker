@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #334 AGNT Weekly Socials S3 Week 10 Day 1 (Galxe, msg 127874) — SIWE + followSpace + both real X likes done; TWITTER creds server-gated on X OAuth (same architectural blocker).
+> Last updated: **Sep 22, 2026** — #335 Pear Rewards daily streak claim (rewards.pear.trade) — streak 13→14d, +653 pearls, 7,322 pts, rank #10,153.
 
 ---
 
 ## ✅ COMPLETED
+### #335 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
+- **Date:** 2026-09-22 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard) | **Source:** daily cron `pear_daily.py` (v9)
+- **Type:** Privy X-OAuth gated Next.js dashboard. v9 script drives **real Chrome over CDP** (`connect_over_cdp http://127.0.0.1:9222`) — headless Playwright gets HTTP 403 on `x.com/i/oauth2/authorize`, so the CDP route is the reliable one.
+- **Flow:** 22 X cookies parsed from `x_cookies_netscape.txt` (Netscape, space-separated, `#HttpOnly_` preserved) → `ctx.add_cookies()` → navigate `/dashboard` (already authenticated, no login wall) → locate `button` matching `/^claim$/i` → click → re-read stats.
+- **✅ Result:** Daily streak claimed — streak advanced **13 → 14 days** (button flipped to `streak-claim claimed` disabled, card shows **+653 pts**). Points **6,669 → 7,322** (**+653 pearls**). Rank **#10,153** | Milestones **3/15 completed** (900/13,200 pts).
+- **⚠️ Script bug found:** `pear_daily.py` rank regex `Rank\s*\n?#(\d+)` is unreliable — it reported `#42` while the dashboard actually shows `#10,153` (regex is matching an unrelated `#NN` token, likely a leaderboard row). Points + streak regexes are correct. Fix: read the rank from the stat block (`.dash-milestone` / `#10153` element) or drop the rank field.
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Cron log:** `[2] streak=13d points=6,669 rank=#42` → `[3] Claim: clicked` → `[4] streak=14d points=7,322 rank=#42` → `Action: clicked` (rank value bogus — see script bug above; verified real rank **#10,153** via independent dashboard scrape)
+- **Status:** ✅ DONE.
+
 ### #334 AGNT Weekly Socials | S3 Week 10 - Day 1 — Galxe Quest (msg 127874) — ⚠️ PARTIAL (SIWE + followSpace + both real X likes done; TWITTER creds blocked on X OAuth)
 - **Date:** 2026-09-22 | **URL:** https://app.galxe.com/quest/AGNTHub/GCz1rtZmeS | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127874 | **X:** @agnt_hub + @TruthAgentAI
 - **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCz1rtZmeS` (`type: Points`, `status: Active`, numberID 364948).
