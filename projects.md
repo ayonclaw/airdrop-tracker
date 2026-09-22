@@ -4386,6 +4386,20 @@
   - ⚠️ TG quest claim still returns `1004 "you are not in the Telegram group yet"` (server-side group-membership check lags the bot link) — re-claim later
   - ⚠️ Daily chain (faucet_claim → checkin → quiz) locked behind testnet tx hash = on-chain faucet wall (svpchain.org/faucet)
   - **Total:** 450 pts (rank ~135k), invite code 5GEV5ZBS
+- **Update (Drop 127875, 2026-09-22) — Daily on-chain tasks CLEARED via direct RPC signing:**
+  - ✅ **Faucet claim (+30)** — ALTCHA PBKDF2 PoW solved offline (`keyPrefix`+salt/counterStart), token POSTed to `www.svpchain.org/api/faucet/claim` → +30 SVP. tx `0x42602ebe1be4bf0a4b047df2cc1f7ae8f955d9192030fdaed38dad1f0729f23d` (no browser, no CapSolver).
+  - ✅ **Daily check-in (+20)** — `POST /tasks/6/start` → `claim` → +20.
+  - ✅ **Daily quiz (+30)** — `POST /tasks/12/start` → `claim` → +30.
+  - ✅ **Contract deploy (+1000)** — deployed minimal contract via eth_account raw tx → tx `0x09c2f...` → `POST /tasks/7/claim {txHash}` → +1000.
+  - ✅ **3-direction Swap (+300)** — NovaSwap router `0xFe7bf2DFd5CB268C6779f1F614638a436Cb701e4`; 4 unique directions (USDV→WETH, USDV→WSVP, WETH→USDV, WSVP→USDV) via direct `swapExactTokensForTokens` raw txs → `/tasks/16/verify` progress 3/3 → claim +300.
+  - ✅ **Lending (+150)** — Lendora cToken SVP `0xc67a1F0B635522E5dAdBBFAFd5aA24a3176EDF3e` `mint()` + Comptroller `0x0faBb2B5057b14224b04E4cbB217Dd6b275f75a7` `enterMarkets` → `/tasks/18/verify` supply 1/1 → claim +150.
+  - ✅ **Join Telegram (+50)** — joined required group `t.me/svp_group` via Telethon (`JoinChannelRequest`) → `POST /tasks/3/claim` → +50.
+  - ✅ **Weekly Broadcast (+150)** — posted tweet https://x.com/osbornrdx/status/2102290255659573352 → `POST /tasks/13/claim {tweetUrl}` → +150.
+  - ✅ **Bridge (+150)** — `depositNative(421614, SVP_ARB, dest, 0)` on bridge `0xC2C7f43735C4bEC84eABbcce32bDA269c2c75f20`, 0.1 SVP (min 0.06, fee 0.05) → tx `0x6bd91394ecb26748042229b653c62c58a78f2864007684953a2b36f6c86e301f` → deposit_id 104182 → after destination confirmation `/tasks/17/verify` progress 1/1 → claim +150.
+  - ⚠️ **Discord join (+50)** — claimable; needs Discord OAuth (no linked account).
+  - ⚠️ **Invite a crew member (+100)** — `POST /tasks/14/claim` → `1004 no valid invite in this period yet` (needs someone to use invite 5GEV5ZBS).
+  - ⚠️ **Weekly on-chain tx count (+200)** — `PRODUCT_TASK_NOT_SUPPORTED` via API (needs ≥5 weekly txs, UI-only claim).
+  - **Total:** **2330 pts** (rank 187898 → 19141), invite code 5GEV5ZBS
 - **Source:** Drop 127513 + 127739 from @airdropfind — https://x.com/svpchain
 
 ### #225 HeyAura S1 Update — hub.heyaura.com (127509) — INFO (no action)
