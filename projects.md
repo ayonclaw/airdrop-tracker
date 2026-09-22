@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #337 Bamboo Riot Whitelist (bambooriot.xyz) — 4-step X+wallet application submitted, ref 34f20792.
+> Last updated: **Sep 22, 2026** — #337 Bamboo Riot Whitelist (bambooriot.xyz) — 4-step X+wallet application submitted, ref 34f20792. (#336 MovitOn loyalty also done.)
 
 ---
 
