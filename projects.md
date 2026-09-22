@@ -196,6 +196,7 @@
 - **✅ Confirmation:** "APPLICATION RECEIVED ✓ — Your whitelist application has been submitted successfully." **Registration #00881**, total registered 868, **STATUS: PENDING**.
 - **X proof links:** Follow → https://x.com/Dukznft | Like+Repost → https://x.com/Dukznft/status/2101217871305060450
 - **Status:** ✅ DONE — whitelist submitted (#00881, PENDING review).
+- **↻ Re-confirmed (drop 127863, Sep 22 2026):** duplicate announcement of the same DUKZ whitelist. Re-verified live — X OAuth `connected:true` (@osbornrdx), tasks COMPLETED, `GET /api/whitelist/status` → `registered:true` (application #881, PENDING, wallet `zs102nl3aqvs0k77z5k8ngj3ssjf68qkr7p2uanpz4kwy0yc9jhrdwt8pnnc3e8duqgxhk36t6jvcf`), count 3710. New drop text asks for a `u1…` unified address (we hold `u1hrlv7p705kv6q620k9x00hcecd874fa0zvtza5zcrmd8ufa73vuqswwc7x0ll4v0yhkuuk89vlr0kjwpmm8mr8l4ax7ajq07dvn0ug45`), but `POST /api/whitelist/submit` returns `409 {"error":"ALREADY_REGISTERED"}` — no re-submit/update endpoint exists (submit body is `{wallet}` only). No action possible; existing registration stands.
 
 
 ### #315 Asentum Incentivized Testnet — airdrop.asentum.com (msg 127810) — ✅ DONE (core) / ⚠️ X-link partial
