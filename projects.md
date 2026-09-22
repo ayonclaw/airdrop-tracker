@@ -1,9 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #330 ZecMap whitelist (zecmap.world) — X OAuth via pure-HTTP authorize, survey score 100/100, ZEC UA submitted (ok:true).
+> Last updated: **Sep 22, 2026** — #331 The Goat (7thegoat.xyz) — 4/4 X tasks (follow/like+RT/comment/quote) + WL inserted to Supabase `applications` (HTTP 201).
 
 ---
 
 ## ✅ COMPLETED
+### #331 The Goat (TGOAT) — 7thegoat.xyz (msg 127866) — ✅ DONE
+- **Date:** 2026-09-22 | **URL:** https://7thegoat.xyz/wl | **Reward:** WL for 2,500-piece pixel-art PFP on Robinhood Chain ($TGOAT) | **Source:** @airdropfind drop 127866 | **X:** @7thegoat
+- **Type:** Next.js SPA whitelist, Supabase PostgREST direct insert (browserless). 4 self-attest X tasks + handle/wallet/comment-link/quote-link.
+- **Recon:** chunk `3hb4vwsrtjsoq.js` → `new sv("https://vajdgldkznatsddbocpf.supabase.co","sb_publishable_4ZS7JFSX-ZavhYGU4_MPpw_kJIJylxs")`; submit = `s_.from("applications").insert({x_handle,wallet,comment_link,quote_link})`. Validators: wallet `/^0x[a-fA-F0-9]{40}$/`, comment/quote must be valid http(s) URL. No Turnstile, no captcha, no server-side X verification.
+- **✅ Task 1 — Follow @7thegoat:** profile `[data-testid$="-follow"]` → button flipped `Ikuti` → `Mengikuti` (unfollow state). Proof: https://x.com/7thegoat
+- **✅ Task 2 — Like + RT pinned post:** pinned tweet = https://x.com/7thegoat/status/2102082425157279908 → `[data-testid=like]` → `unlike` state LIKED; `[data-testid=retweet]` → `retweetConfirm` → `unretweet` state RETWEETED.
+- **✅ Task 3 — Comment on pinned post:** reply posted via composer (real keystrokes). Proof: https://x.com/osbornrdx/status/2102239543282012454
+- **✅ Task 4 — Quote the pinned post:** intent/post with quote card. Proof: https://x.com/osbornrdx/status/2102239652908609871
+- **✅ WL submit:** `POST https://vajdgldkznatsddbocpf.supabase.co/rest/v1/applications` (apikey `sb_publishable_...`, Origin/Referer 7thegoat.xyz) body `{"x_handle":"@osbornrdx","wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","comment_link":"https://x.com/osbornrdx/status/2102239543282012454","quote_link":"https://x.com/osbornrdx/status/2102239652908609871"}` → **HTTP 201 Created**.
+- **Pitfall:** `Prefer: return=representation` → HTTP 401 `42501 permission denied for table applications` (anon has INSERT but no SELECT). Drop the Prefer header → 201.
+- **Wallet used:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Account:** Osborn (@osbornrdx)
+- **Status:** ✅ DONE — 4/4 X tasks live with proof, WL application inserted (HTTP 201).
+
 ### #330 ZecMap — zecmap.world (msg 127865) — ✅ DONE
 - **Date:** 2026-09-22 | **URL:** https://www.zecmap.world/whitelist | **Reward:** Whitelist for 2222-tile Zcash map (ZEC) | **Source:** @airdropfind drop 127865 | **X:** @ZecMap_
 - **Type:** Next.js SPA + X OAuth (custom `/auth/x/login` → `x.com/i/oauth2/authorize`) + client-side survey game + `/api/whitelist` POST. No wallet-connect lib — ZEC address is typed into a field.
