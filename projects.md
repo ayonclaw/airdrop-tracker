@@ -1,9 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #332 Rankz (whitelist.rankz.fun) — X OAuth + post-card verification confirmed ("You are on the list", 1 ticket). X follow @rankzdotfun + post live.
+> Last updated: **Sep 22, 2026** — #333 AGNT Weekly Socials S3 Week 9 Finale (Galxe, msg 127871) — SIWE + followSpace + real X follow/like done; finale qualification cred server-gated on X OAuth.
 
 ---
 
 ## ✅ COMPLETED
+### #333 AGNT Weekly Socials | S3 Week 9 - Finale — Galxe Quest (msg 127871) — ⚠️ PARTIAL (SIWE + followSpace + real X follow/like done; finale cred is server-computed)
+- **Date:** 2026-09-22 | **URL:** https://app.galxe.com/quest/AGNTHub/GChWrtZ6Nh | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127871 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GChWrtZ6Nh` (`type: Points`, `status: Active`, numberID 364945).
+- **✅ SIWE SignIn:** EVM `0x8CCE...282D` → JWT (GalxeID `LUZFfaqSPcJJ9to9HXzoG`).
+- **✅ followSpace(77675):** `{"followSpace":1}` (AGNT Hub followed).
+- **Cred (single):** `GALXE_ID` "AGNT S3 Week 9 Finale Qualification" (id `724607191184572416`) — description: *"verifies that you have successfully completed tasks across all days of the AGNT campaign."* This is a SERVER-COMPUTED qualification cred, not a clickable task. `syncCredentialValue` → `allow:false` (server evaluates all Week 9 day-completions; our days were tracked but X-OAuth creds never credit → not qualified).
+- **Parent Week 9** `GC6petZPw3` (Parent): Days 1-5 (`GCSfitZWsP`/`GCxrrtZdky`/`GCkRrtZvPk`/`GCmmitZCi5`/`GCoVrtZUs4`) all **Expired** — each had TWITTER like creds (blocked on X OAuth link) + GALXE_ID visit creds (`allow:false`). All 5 days were already tracked in prior sessions (#281, #294, #298, #310, #314).
+- **✅ X follow (already following):** @agnt_hub `Mengikuti` (testid `1838361774287958016-unfollow`) — https://x.com/agnt_hub | @TruthAgentAI `Mengikuti` (testid `2080237951150063616-unfollow`) — https://x.com/TruthAgentAI
+- **✅ X likes verified live (`unlike` testid = liked):**
+  - https://x.com/agnt_hub/status/2100979341454639295 (W9 D5 agnt_hub) → `unlike`
+  - https://x.com/TruthAgentAI/status/2100979961733525838 (W9 D5 Truth) → `unlike`
+  - https://x.com/agnt_hub/status/2099475722574200934 (W9 D1 agnt_hub) → `unlike`
+- **⚠️ Blocked:** Finale qualification cred needs X OAuth linked at Galxe account level (one-time manual setup) + all Week 9 day creds credited. `syncCredentialValue` → `allow:false`.
+- **Account:** Osborn (@osbornrdx) | **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Status:** ⚠️ PARTIAL — SIWE + followSpace + real X follow/like complete; finale reward cred server-gated on X OAuth link + full-week completion.
+
 ### #332 Rankz (Z-Pass) — whitelist.rankz.fun (msg 127867) — ✅ DONE
 - **Date:** 2026-09-22 | **URL:** https://whitelist.rankz.fun/ | **Reward:** WL for free Z-Pass mint, 555 supply, Robinhood Chain | **Source:** @airdropfind drop 127867 | **X:** @rankzdotfun
 - **Type:** Node/Express app on Railway (`server.js` injects `window.RZ`), X OAuth 2.0 PKCE + "post your card" verification. Flow: connect X → post share card with ref code → paste post link → `/api/check` verifies the post contains your code → confirmed.
