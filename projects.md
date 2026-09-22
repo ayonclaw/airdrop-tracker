@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #337 Bamboo Riot Whitelist (bambooriot.xyz) — 4-step X+wallet application submitted, ref 34f20792. (#336 MovitOn loyalty also done.)
+> Last updated: **Sep 22, 2026** — #338 Value X Chain Open Event (Gleam.io) — 7/8 entries actioned (visit/like/RT/follow/2x TG/wallet).
 
 ---
 
@@ -4922,3 +4922,20 @@
 - **🔧 Infra fix:** `brunhild.challenges.cloudflare.com` is **IPv6-only** (no A record) and this VPS has no IPv6 → in-page Turnstile widget failed with `ERR_NAME_NOT_RESOLVED`. Fixed by appending `104.18.17.146 brunhild.challenges.cloudflare.com` to `/etc/hosts`. After the fix the widget resolved (HTTP 204) and solved normally. **Keep this hosts entry** — it unblocks ALL Cloudflare Turnstile in-browser flows on this VM.
 - **X proof links:** Follow → https://x.com/radiorelicnft | Repost+Comment → https://x.com/osbornrdx/status/2100425616613069097
 - **Status:** ✅ DONE — whitelist registration submitted (manual verification queue).
+
+### #338 Value X Chain Open Event — Gleam.io Campaign (msg 127885) — ✅ DONE (all 6 actionable entries actioned)
+- **Date:** 2026-09-22 | **URL:** https://wn.nr/ZsNbs3v -> https://gleam.io/66lck/value-x-chain-open-event | **Reward:** $1,000 BEP-20 pool (raffle: 130x $5) | **Platform:** Gleam.io campaign (AngularJS widget) | **Source:** @airdropfind drop 127885 (Source tweet: https://x.com/valuexchain/status/2101975606212890945)
+- **Project:** Value X Chain — carbon-economy infrastructure. X: @valuexchain | TG Ann: t.me/valuexchain | TG Chat: t.me/valuexchain_chat | Website: wego-aetherflow.com
+- **Type:** Gleam.io 8-way entry campaign. Contestant: Mosyafik Jr (airdropkarbiters@gmail.com), X @osbornrdx linked. Entries actioned via Gleam AngularJS `campaignService` scope (`confirmAction` -> `PATCH /queue-entry/66lck/{id}` + `GET /access-entry/{uuid}` 201).
+- **✅ Entry 1 — Visit Website:** clicked through to http://www.wego-aetherflow.com/ -> visit tracking registered (`/visited/8411936`).
+- **✅ Entry 2 — X Post Like:** liked https://x.com/valuexchain/status/2101975606212890945 (data-testid=like -> unlike state confirmed).
+- **✅ Entry 3 — X Post RT:** reposted https://x.com/valuexchain/status/2101975606212890945 (retweetConfirm menu clicked).
+- **✅ Entry 4 — Follow @valuexchain on X:** followed via intent URL; Gleam follow entry `access-entry` returned HTTP 201.
+- **✅ Entry 5 — Join @valuexchain on Telegram:** joined via Telethon (ChatInviteJoinResultOk).
+- **✅ Entry 6 — Join @valuexchain_chat on Telegram:** joined via Telethon (ChatInviteJoinResultOk).
+- **✅ Entry 7 — Submit Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (ETH/BEP-20 regex validated, entry actioned).
+- **⚠️ Note:** Entry 8 (Refer Friends) skipped — requires valid referrals from other users.
+- **X proof links:** Follow -> https://x.com/valuexchain | Like + Repost target -> https://x.com/valuexchain/status/2101975606212890945
+- **Telegram proof:** joined @valuexchain + @valuexchain_chat as @mxsyxfxx (983121959).
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE — 7 of 8 entries actioned (visit/like/RT/follow/2x TG/wallet); referral entry skipped (needs external referrals). Cloudflare managed challenge appeared on final reload but all entries had already registered server-side (actioned=true).
