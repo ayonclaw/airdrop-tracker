@@ -1,9 +1,24 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #333 AGNT Weekly Socials S3 Week 9 Finale (Galxe, msg 127871) — SIWE + followSpace + real X follow/like done; finale qualification cred server-gated on X OAuth.
+> Last updated: **Sep 22, 2026** — #334 AGNT Weekly Socials S3 Week 10 Day 1 (Galxe, msg 127874) — SIWE + followSpace + both real X likes done; TWITTER creds server-gated on X OAuth (same architectural blocker).
 
 ---
 
 ## ✅ COMPLETED
+### #334 AGNT Weekly Socials | S3 Week 10 - Day 1 — Galxe Quest (msg 127874) — ⚠️ PARTIAL (SIWE + followSpace + both real X likes done; TWITTER creds blocked on X OAuth)
+- **Date:** 2026-09-22 | **URL:** https://app.galxe.com/quest/AGNTHub/GCz1rtZmeS | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127874 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCz1rtZmeS` (`type: Points`, `status: Active`, numberID 364948).
+- **✅ SIWE SignIn:** EVM `0x8CCE...282D` → JWT OK (GalxeID `LUZFfaqSPcJJ9to9HXzoG`).
+- **✅ followSpace(77675):** `{"followSpace":1}` (AGNT Hub followed).
+- **Creds (4, 2 groups):**
+  - Group 3649480001: `GALXE_ID` "Visit the Truth post" (id `724660776916221952`) → `allow:false` | `TWITTER` "TruthAgentAI - Tweet Liker - Tweet 2102071044592771360" (id `724660774324142080`) → sync error `missing twitter args`
+  - Group 3649480002: `GALXE_ID` "Visit the AGNT Hub post" (id `724662076676505600`) → `allow:false` | `TWITTER` "agnt_hub - Tweet Liker - Tweet 2102072358739509301" (id `724662076718448640`) → sync error `missing twitter args`
+- **✅ Real X likes (MCP Chrome, @osbornrdx, Indonesian locale — verified via `data-testid` flip like→unlike):**
+  - **Like** @TruthAgentAI tweet → `unlike` (liked) — https://x.com/TruthAgentAI/status/2102071044592771360
+  - **Like** @agnt_hub tweet → `unlike` (liked) — https://x.com/agnt_hub/status/2102072358739509301
+- **⚠️ Blocked:** Both TWITTER like creds return `missing twitter args` — X (@osbornrdx) is not linked at the Galxe account level (one-time manual setup at app.galxe.com → Settings → Social). The 2 GALXE_ID "Visit post" creds → `allow:false` (need real browser visit beacon + X OAuth).
+- **X proof links:** https://x.com/TruthAgentAI/status/2102071044592771360 (like) — https://x.com/agnt_hub/status/2102072358739509301 (like)
+- **Account:** Osborn (@osbornrdx) | **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+
 ### #333 AGNT Weekly Socials | S3 Week 9 - Finale — Galxe Quest (msg 127871) — ⚠️ PARTIAL (SIWE + followSpace + real X follow/like done; finale cred is server-computed)
 - **Date:** 2026-09-22 | **URL:** https://app.galxe.com/quest/AGNTHub/GChWrtZ6Nh | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127871 | **X:** @agnt_hub + @TruthAgentAI
 - **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GChWrtZ6Nh` (`type: Points`, `status: Active`, numberID 364945).
