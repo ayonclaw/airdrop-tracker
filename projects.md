@@ -9,9 +9,10 @@
 - **Type:** Privy X-OAuth gated Next.js dashboard. v9 script drives **real Chrome over CDP** (`connect_over_cdp http://127.0.0.1:9222`) — headless Playwright gets HTTP 403 on `x.com/i/oauth2/authorize`, so the CDP route is the reliable one.
 - **Flow:** 22 X cookies parsed from `x_cookies_netscape.txt` (Netscape, space-separated, `#HttpOnly_` preserved) → `ctx.add_cookies()` → navigate `/dashboard` (already authenticated, no login wall) → locate `button` matching `/^claim$/i` → click → re-read stats.
 - **✅ Result:** Daily streak claimed — streak advanced **13 → 14 days** (button flipped to `streak-claim claimed` disabled, card shows **+653 pts**). Points **6,669 → 7,322** (**+653 pearls**). Rank **#10,153** | Milestones **3/15 completed** (900/13,200 pts).
-- **⚠️ Script bug found:** `pear_daily.py` rank regex `Rank\s*\n?#(\d+)` is unreliable — it reported `#42` while the dashboard actually shows `#10,153` (regex is matching an unrelated `#NN` token, likely a leaderboard row). Points + streak regexes are correct. Fix: read the rank from the stat block (`.dash-milestone` / `#10153` element) or drop the rank field.
+- **⚠️ Script bug found (race condition, not regex):** `pear_daily.py` reads stats only 5s after `domcontentloaded`. At ~4s the dashboard is only partially hydrated (**661 chars** body) and renders a **placeholder rank `#42`**; the real value appears at ~6s once fully rendered (**3,467 chars** body). Regex is correct — the early read just captures a skeleton value. Points/streak happen to be correct because those elements hydrate slightly earlier.
+- **🔧 Fix:** poll `document.body.innerText` until `len > 2000` (or wait for `networkidle`) before reading stats, instead of a flat 5s sleep.
 - **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
-- **Cron log:** `[2] streak=13d points=6,669 rank=#42` → `[3] Claim: clicked` → `[4] streak=14d points=7,322 rank=#42` → `Action: clicked` (rank value bogus — see script bug above; verified real rank **#10,153** via independent dashboard scrape)
+- **Cron log:** `[2] streak=13d points=6,669 rank=#42` → `[3] Claim: clicked` → `[4] streak=14d points=7,322 rank=#42` → `Action: clicked` (rank value bogus — early-read race condition; verified real rank **#10,153** via independent post-hydration scrape)
 - **Status:** ✅ DONE.
 
 ### #334 AGNT Weekly Socials | S3 Week 10 - Day 1 — Galxe Quest (msg 127874) — ⚠️ PARTIAL (SIWE + followSpace + both real X likes done; TWITTER creds blocked on X OAuth)
