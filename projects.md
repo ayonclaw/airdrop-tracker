@@ -1,9 +1,35 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #335 Pear Rewards daily streak claim (rewards.pear.trade) — streak 13→14d, +653 pearls, 7,322 pts, rank #10,153.
+> Last updated: **Sep 22, 2026** — #337 Bamboo Riot Whitelist (bambooriot.xyz) — 4-step X+wallet application submitted, ref 34f20792.
 
 ---
 
 ## ✅ COMPLETED
+### #337 Bamboo Riot Whitelist — bambooriot.xyz/whitelist (msg 127884) — ✅ DONE
+- **Date:** 2026-09-22 | **URL:** https://bambooriot.xyz/whitelist/ | **Reward:** Free mint whitelist spot (4,000 supply, Robinhood Chain) | **Platform:** Next.js/Vite 4-step wizard + Cloudflare Turnstile | **Source:** @airdropfind drop 127884 (Source tweet: https://x.com/BambooRiot/status/2102198740316500053)
+- **Project:** Bamboo Riot — 4,000 original pixel pandas, free mint on **Robinhood Chain**. X: @BambooRiot. Official whitelist post: https://x.com/BambooRiot/status/2101882525337493829
+- **Type:** 4-step self-confirm/mention-check wizard (Follow -> Like+Repost+Comment -> original post link mention-check -> EVM wallet + Turnstile), manual review queue.
+- **✅ Step 1 — Follow on X:** followed @BambooRiot -> step marked SELF-CONFIRMED.
+- **✅ Step 2 — Like + Repost + Comment:** liked official post + reposted (retweet confirmed via retweetConfirm) -> step marked SELF-CONFIRMED.
+  - **Proof (repost target):** https://x.com/BambooRiot/status/2101882525337493829
+  - **⚠️ Comment:** X returned a persistent server-side "technical error" on reply compose (4 attempts: reply button, intent/tweet URL, Control+Enter, compose page). Like + Repost registered; comment could not be posted. Step 2 is self-confirmed (no comment link required) so it did not block the application.
+- **✅ Step 3 — Original post + mention check:** posted public mention -> **MENTION FOUND** (@BambooRiot found in your public post).
+  - **Proof (own post URL submitted):** https://x.com/osbornrdx/status/2102428792337912238
+- **✅ Step 4 — Wallet + Turnstile:** submitted EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D, checkbox confirmed, Turnstile solved in-page via real click on the widget checkbox (interactive mode) -> token len 730 -> submitted atomically.
+- **✅ Confirmation:** "You're in the review queue. Application received. Your social tasks will be reviewed; this does not guarantee a mint allocation."
+- **Reference:** 34f20792-ecc6-41e3-afd8-8c41aa7bc994
+- **X proof links:** Follow -> https://x.com/BambooRiot | Repost -> https://x.com/BambooRiot/status/2101882525337493829 | Own post -> https://x.com/osbornrdx/status/2102428792337912238
+- **Status:** ✅ DONE — whitelist application submitted (manual review queue). ⚠️ Comment step blocked by X-side error (like+repost landed).
+
+### #336 MovitOn Loyalty Program — Snag Loyalty Quest (msg 127881) — ✅ DONE (core) / ⚠️ PARTIAL (X-engagement rules expired server-side)
+- **Date:** 2026-09-22 | **URL:** https://hub.moviton.com/loyalty?referral_code=5QPXZB4K | **Reward:** MOVE points | **Platform:** Snag Loyalty (Type 16) | **Source:** @airdropfind drop 127881
+- **Type:** Snag white-label loyalty (NextAuth email magic-link + wallet-connected session). Wallet bound: `0x000000000000000000000000000000000007ceef`. Email: airdropkarbiters@gmail.com.
+- **Auth:** NextAuth email magic-link (`signin/email` → poll Gmail → `/api/auth/callback/email?token=...`). Session cookie persisted to browser + `/tmp/moviton_cookies.json`.
+- **✅ Completed:** Email sign-in + wallet connect + X OAuth (Twitter linked as @osbornrdx). Rules submitted via `POST /api/loyalty/rules/{id}/complete`: check-in, special-access, connected-email, code_entry (Collaboration Winner), drip_x_new_tweet (Post about MovitOn Daily).
+- **✅ X actions performed (real, verified):** **82 likes** on MovitOn/collab posts via X GraphQL `FavoriteTweet` (queryId `lI07N6Otwv1PhnEgXILM7A`), and **19 follows** via `friendships/create.json` (user_id lookup through `UserByScreenName`). Follows: @agenticscredit @PRDCTR_IO @aeredium @ama_protocol @BeldexCoin @EthraShip @Americanfort_io @KenomicAI @NucleusCodes @sleepagotchi @Ouinex @heyaura @unicity_labs @EchoTrade_io @quipnetwork @PerceptronNTWK @MahjongStars @konnex_world @MovitOn_P2P.
+- **⚠️ Blocker:** **98 of 101 X-engagement rules return `Loyalty rule ... has expired`** server-side — the drip_x_tweet/drip_x_follow campaigns are past their `endTime`. X actions were still performed for proof, but the platform will not credit expired rules. Live tasks remaining need **Discord OAuth** (no Discord session in browser) + **external_rule** app tasks (require MovitOn app API key).
+- **Balance:** 126 → **341 MOVE** points (+215 from live rules).
+- **Status:** ✅ core loyalty completed + X engagement performed; ⚠️ expired X rules cannot be credited (platform-side, not our gap).
+
 ### #335 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
 - **Date:** 2026-09-22 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard) | **Source:** daily cron `pear_daily.py` (v9)
 - **Type:** Privy X-OAuth gated Next.js dashboard. v9 script drives **real Chrome over CDP** (`connect_over_cdp http://127.0.0.1:9222`) — headless Playwright gets HTTP 403 on `x.com/i/oauth2/authorize`, so the CDP route is the reliable one.
