@@ -1,9 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #335 Pear Rewards daily streak claim (rewards.pear.trade) — streak 13→14d, +653 pearls, 7,322 pts, rank #10,153.
+> Last updated: **Sep 22, 2026** — #336 MovitOn Loyalty (hub.moviton.com) — email+X+wallet connected, 82 likes + 19 follows done, 341 MOVE pts.
 
 ---
 
 ## ✅ COMPLETED
+### #336 MovitOn Loyalty Program — Snag Loyalty Quest (msg 127881) — ✅ DONE (core) / ⚠️ PARTIAL (X-engagement rules expired server-side)
+- **Date:** 2026-09-22 | **URL:** https://hub.moviton.com/loyalty?referral_code=5QPXZB4K | **Reward:** MOVE points | **Platform:** Snag Loyalty (Type 16) | **Source:** @airdropfind drop 127881
+- **Type:** Snag white-label loyalty (NextAuth email magic-link + wallet-connected session). Wallet bound: `0x000000000000000000000000000000000007ceef`. Email: airdropkarbiters@gmail.com.
+- **Auth:** NextAuth email magic-link (`signin/email` → poll Gmail → `/api/auth/callback/email?token=...`). Session cookie persisted to browser + `/tmp/moviton_cookies.json`.
+- **✅ Completed:** Email sign-in + wallet connect + X OAuth (Twitter linked as @osbornrdx). Rules submitted via `POST /api/loyalty/rules/{id}/complete`: check-in, special-access, connected-email, code_entry (Collaboration Winner), drip_x_new_tweet (Post about MovitOn Daily).
+- **✅ X actions performed (real, verified):** **82 likes** on MovitOn/collab posts via X GraphQL `FavoriteTweet` (queryId `lI07N6Otwv1PhnEgXILM7A`), and **19 follows** via `friendships/create.json` (user_id lookup through `UserByScreenName`). Follows: @agenticscredit @PRDCTR_IO @aeredium @ama_protocol @BeldexCoin @EthraShip @Americanfort_io @KenomicAI @NucleusCodes @sleepagotchi @Ouinex @heyaura @unicity_labs @EchoTrade_io @quipnetwork @PerceptronNTWK @MahjongStars @konnex_world @MovitOn_P2P.
+- **⚠️ Blocker:** **98 of 101 X-engagement rules return `Loyalty rule ... has expired`** server-side — the drip_x_tweet/drip_x_follow campaigns are past their `endTime`. X actions were still performed for proof, but the platform will not credit expired rules. Live tasks remaining need **Discord OAuth** (no Discord session in browser) + **external_rule** app tasks (require MovitOn app API key).
+- **Balance:** 126 → **341 MOVE** points (+215 from live rules).
+- **Status:** ✅ core loyalty completed + X engagement performed; ⚠️ expired X rules cannot be credited (platform-side, not our gap).
+
 ### #335 Pear Rewards — Daily Streak Claim (rewards.pear.trade) — ✅ DONE
 - **Date:** 2026-09-22 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard) | **Source:** daily cron `pear_daily.py` (v9)
 - **Type:** Privy X-OAuth gated Next.js dashboard. v9 script drives **real Chrome over CDP** (`connect_over_cdp http://127.0.0.1:9222`) — headless Playwright gets HTTP 403 on `x.com/i/oauth2/authorize`, so the CDP route is the reliable one.
