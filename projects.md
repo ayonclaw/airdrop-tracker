@@ -1,5 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #350 Hazels NFT WL Draw ✅ | #349 SlothCoin Round 1 Galxe ⚠️ partial (SIWE+followSpace+X follow/like/RT/quote+TG join ✅; Galxe X OAuth link needed) | #348 MUPOS WL ✅ | #347 Bunimal World WL ✅
+> Last updated: **Sep 23, 2026** — #351 ZECDUG Miner Recruitment ✅ (app #01080, all 5 X missions + u1) | #350 Hazels NFT WL Draw ✅ | #349 SlothCoin Round 1 Galxe ⚠️ partial | #348 MUPOS WL ✅
+
+### #351 ZECDUG — Miner Recruitment Board (Zcash, msg 127911) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://zecdug.com/apply/ | **Reward:** 4,096 Miner NFTs Free Mint (Season One application) | **Source:** @airdropfind drop 127911 | **X:** @ZecDug
+- **Type:** Type 2/17 hybrid — custom server API (`/api/v1`) + X OAuth1 account linking + 5 server-tracked X missions + Zcash unified-address (u1) submit + apply. Static nginx SPA (route scripts via `navigation.mjs` → `app.js?v=public-u1-application-v1`).
+- **API decoded:** `POST /api/v1/users` → sessionToken (Bearer, sessionStorage `zecdug-session`); `POST /api/v1/oauth/x/start` → `{authorizationUrl: https://api.x.com/oauth/authenticate?oauth_token=...}`; `GET /api/v1/campaigns/human-review/quest`; `POST .../tasks/{id}/complete`; `POST .../u1 {u1Address}`; `POST .../apply`. Recruitment window 2026-09-21T13:00Z → 2026-09-24T01:00Z.
+- **✅ X account linked:** OAuth1 authorize ("Izinkan aplikasi") → callback `zecdug.com/apply/?x=connected` → xIdentity `@osbornrdx` (xUserId 374505265). X cookies (Netscape, Aug 21) injected via CDP `Storage.setCookies` — still valid.
+- **✅ Task 1 — Follow @ZecDug:** followed via `x.com/intent/follow?screen_name=ZECDUG`. Proof: https://x.com/ZecDug
+- **✅ Task 2 — Repost campaign post:** browser DOM `[data-testid=retweet]` → "Posting ulang". Proof: https://x.com/ZecDug/status/2102020705672110246
+- **✅ Task 3 — Like campaign post:** browser DOM `[data-testid=like]`. Proof: https://x.com/ZecDug/status/2102020705672110246
+- **✅ Task 4 — Comment (evidence):** reply posted via real keystrokes (type_text) → "Balas". Evidence URL submitted to API. Proof: https://x.com/osbornrdx/status/2102810624728383919
+- **✅ Task 5 — Quote post (evidence):** quote-tweet via `x.com/intent/post?url=...` (intent composer quotes correctly; the inline repost→"Kutip" menu grabbed a stale tweet — intent URL is the reliable path). Evidence URL submitted. Proof: https://x.com/osbornrdx/status/2102810882283897040
+- **✅ u1 submitted:** `POST .../u1` → submissionId `d7576f8b-3977-49ec-ba79-9a674070044e`. Wallet: Zcash Orchard Unified Address `u1hrl...ug45` (`zec_orchard_u1.txt`, checksum-valid Mainnet). NOTE: u1 endpoint requires 5/5 missions complete first (`QUEST_INCOMPLETE` otherwise).
+- **✅ Application submitted:** `POST .../apply` → **Application #01080**, candidatePreviewMinerId 1080, status `SELECTION_PENDING`, reviewStatus `PENDING`. Username osbornrdx.
+- **Technique notes:** FOLLOW/REPOST/LIKE are self-attest (`complete` with empty body); COMMENT/QUOTE require `{evidenceUrl}` matching an X `/status/<id>` URL. Reply/quote composers need REAL keystrokes (`type_text`) — `execCommand('insertText')` sets DOM but leaves React state empty so the Post button stays disabled. The repost→"Kutip" menu can bind the wrong tweet; use `x.com/intent/post?url=<tweet>` for reliable quote-posting.
+- **Status:** ✅ DONE — all 5 missions + u1 + application #01080 submitted (final selection pending / manual review).
 
 ### #350 Hazels NFT WL Draw — Last Chance (msg 127910) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://draw.hazels.io/gtd | **Reward:** 500 Hazels NFT whitelist spots (random draw) | **Source:** @airdropfind drop 127910 ("Last Chance for Hazels NFT WL", 24h window)
