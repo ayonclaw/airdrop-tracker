@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #346 Travix Beta WL ✅ (form + follow + quote) | #345 VOICE x Layer3 ⚠️ CF-blocked | #344 BigShort ⛔ not in snapshot
+> Last updated: **Sep 23, 2026** — Alphea Hub Round Three ⛔ mobile-app-gated (hub login `signup_required`) | #346 Travix Beta WL ✅ (form + follow + quote) | #345 VOICE x Layer3 ⚠️ CF-blocked | #344 BigShort ⛔ not in snapshot
 
 ### #346 Travix Beta Whitelist — Genesis Trader Application (msg 127901) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSesa-KTJxCQQ_fa_SL9AXyE3fs53mH5HBZCY1-v7XUIJs1CFg/viewform | **Reward:** Beta invite code + hidden Discord + up to $500/valid feedback (total pool $5,000) + VIP3 limits post-mainnet | **Source:** @airdropfind drop 127901
@@ -4371,6 +4371,18 @@
 - **Update:** "Connect New Wallet → Request Redeem Points" now available in app
 - **Action:** No new execution — existing manual steps cover wallet connect + redeem
 - **Source:** @airdropfind drop_127460
+
+### Alphea Hub — Round Three Is Live (msg 127902) — ⛔ MOBILE-ONLY (hub web login blocked)
+- **Date:** 2026-09-23 | **URL:** https://hub.alphea.ai | **Reward:** Points convertible to token (Round Three) | **Source:** @airdropfind drop 127902 — https://x.com/alpheanetwork/status/2102581024274416077
+- **Project:** ALPHEA (hub.alphea.ai) — web companion hub for the ALPHEA Connect DePIN app. Round Three ends Sep 26, 23:59 UTC.
+- **Type:** WEB-DASHBOARD but signup-gated to the mobile app (Type 1 hybrid).
+- **Recon (browserless, JS bundle `assets/index-MRKCyC51.js`):**
+  - Auth RPC: `POST https://edge.alphea.ai/alphea.connect.v1.AuthService/{BeginGoogleLogin,RequestEmailChallenge,ResendEmailChallenge,VerifyEmailChallenge,RefreshSession,CurrentSession,Logout}`
+  - Google client `793282516510-iu1q6g71m732o4qg4r9isscgls5ot7ck`, Reown project `a745bfabeb89ca071c93db47afb950ab`, session key `alphea.hub.connect.session`
+- **Attempted:** Google OAuth (`Continue with Google`) → consent → callback → **HTTP 403 `signup_required`**: *"Sign-up is required. Download the Connect app to create your account, then try again."*
+  - `RequestEmailChallenge {email, delivery:"EMAIL_DELIVERY_OTP"}` → HTTP 503 `{"code":"unavailable","message":"challenge unavailable"}` (no web account creation).
+- **Verdict:** ⛔ HARD BLOCK — web hub login requires an account that can ONLY be created in the ALPHEA Connect mobile app (`com.alphea.alpheaconnect`). No web signup endpoint. Not automatable from the VPS.
+- **Manual steps (Rey):** 1) Open ALPHEA Connect app (already registered with code `JAI90UUQGX`) → 2) ensure account exists / sign in with same Google account → 3) open https://hub.alphea.ai in a browser, `Continue with Google` → 4) complete Round Three tasks + points tracking before **Sep 26 23:59 UTC**.
 
 
 ### #214 Arc Punks Whitelist — arcpunks.xyz/whitelist (127463) — ✅ DONE
