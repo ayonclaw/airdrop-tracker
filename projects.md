@@ -1,7 +1,34 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #342 Snurps by Catapult Trade (catapult.trade) — full 4-step X/TG/Discord whitelist flow + quote share, `isWhitelisted:true` confirmed server-side.
+> Last updated: **Sep 23, 2026** — #343 GenLayer Portal Connect Mochi ✅ (+1,000 GLP) | #344 BigShort ⛔ not in snapshot | #345 VOICE x Layer3 ⚠️ CF-blocked
 
 ---
+
+### #345 VOICE x Layer3 Quest — app.layer3.xyz/campaigns/voice-campaign (msg 127897) — ⚠️ PENDING (CF managed challenge)
+- **Date:** 2026-09-23 | **URL:** https://app.layer3.xyz/campaigns/voice-campaign | **Reward:** VOICY pass mint + Social Camp vote + feedback quest | **Source:** @airdropfind drop 127897
+- **Project:** Layer3 (app.layer3.xyz) — quest platform. Campaign = VOICE (VOICY pass).
+- **⛔ Blocker:** `app.layer3.xyz` serves a **Cloudflare managed challenge** ("Just a moment... / Performing security verification", Ray IDs a3f80533089cfe1e, a3f8056f895efe1e) on every route. curl → **HTTP 403**; `layer3.xyz` root also 403. `api.layer3.xyz` → connection failure (HTTP 000). Two reloads + 8s waits in MCP Chrome did not clear it.
+- **Attempts:** (1) curl app.layer3.xyz → 403 CF; (2) curl layer3.xyz + api.layer3.xyz → 403/000; (3) MCP Chrome new_page → CF interstitial; (4) MCP reload + 8s wait → still CF. Captcha-solver N/A (no Turnstile sitekey — server-side managed challenge).
+- **Status:** ⚠️ PENDING — needs a residential/CloakBrowser IP. Layer3 also requires a Layer3 account (X/Discord OAuth) + wallet connect for the VOICY mint, so even past CF it is a multi-step wallet flow.
+
+### #344 $short Airdrop — airdrop.bigshort.xyz (msg 127898) — ⛔ NOT ELIGIBLE (not in snapshot)
+- **Date:** 2026-09-23 | **URL:** https://airdrop.bigshort.xyz/?ref=EVM-2J3U | **Reward:** $short token (Robinhood traders / Pumpfun / Arc / BNB snapshot) | **Platform:** Next.js SPA + REST (`portal-admin`-style API at `/api/v1/airdrops/{campaign}/...`) | **Source:** @airdropfind drop 127898
+- **Project:** Big Short — airdrop portal. Campaign id recovered from the JS bundle: **`airdrop-20260920-v1`**.
+- **✅ Browserless recon:** `GET /api/v1/airdrops/airdrop-20260920-v1/config` (public) + `GET /api/v1/airdrops/airdrop-20260920-v1/eligibility?namespace=evm&address=<addr>`.
+- **⛔ Result:** our EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **`not_in_snapshot`** (not eligible). SOL `5yw3K...` also checked → not eligible.
+- **Status:** ⛔ NOT ELIGIBLE — address not in the airdrop snapshot. No claim possible; nothing to submit. (Eligibility endpoint is public + stateless, so this is definitive — no wallet connect needed.)
+
+### #343 GenLayer Portal — Connect Mochi task (msg 127899) — ✅ DONE (+1,000 points)
+- **Date:** 2026-09-23 | **URL:** https://portal.genlayer.foundation | **Reward:** 1,000 points (GLP) for "Connect Mochi on Telegram" | **Platform:** Next.js SPA + Django REST (`portal-admin.genlayer.foundation/api/v1/...`) | **Source:** @airdropfind drop 127899
+- **Project:** GenLayer — intelligent-contract L1. Portal (Contributor/Community track). X: @GenLayer | Mochi bot: https://t.me/GenMochiBot
+- **✅ Recon:** JS bundle `assets/index-fSyfGaBL.js` exposed `wX = https://portal-admin.genlayer.foundation` (axios `baseURL = ${wX}/api/v1`), Turnstile sitekey `0x4AAAAAADta8A7uRoh0vcjX`, Mochi bot `https://t.me/GenMochiBot` (`?start=<code>` deep link), and the full endpoint list (`/users/mochi/connect/`, `/social-tasks/`, `/social-tasks/{slug}/complete/`, `/auth/nonce/`, `/auth/login/`, `/auth/signup/email/start|confirm/`).
+- **✅ Step 1 — SIWE login (browserless):** `GET /api/auth/nonce/?purpose=login` → EIP-4361 message ("portal.genlayer.foundation wants you to sign in… Chain ID: 4221") → signed with `eth_account` (EVM PK) → `POST /api/auth/login/` → `{"pending_signup":true,"address":"0x8cce…282d"}`.
+- **✅ Step 2 — Signup + email verify:** Turnstile solved via **CapSolver AntiTurnstileTaskProxyLess** (sitekey above, token ready on first poll) → `POST /api/auth/signup/email/start/ {email, turnstile_token}` → `{"sent":true}` → code **875570** read from Gmail via IMAP (`imap.gmail.com`, app password) → `POST /api/auth/signup/email/confirm/ {code}` → **`{"authenticated":true,"user_id":67526,"created":true,"referral_code":"UX5EROUD"}``.
+- **✅ Step 3 — Mochi connect:** `POST /api/v1/users/mochi/connect/` (needs `X-CSRFToken` from the `csrftoken` cookie) → `201 {"status":"pending","code":"gmc_cea7c28aba10_…"}` → sent `/start gmc_cea7c28aba10_…` to **@GenMochiBot** via Telethon (session `session_mochi2`, as **@mxsyxfxx / 983121959**) → bot replied **"Portal connected. You're all set."** → `GET /api/v1/users/mochi/status/` → **`{"status":"connected","telegram_username":"mxsyxfxx"}``.
+- **✅ Step 4 — Task complete + points:** `POST /api/v1/social-tasks/connect-mochi-telegram/complete/` → **`201 {"status":"completed","points_awarded":1000,"completed_at":"2026-09-23T08:01:07Z"}``. Task card now `status: "completed"`, `can_complete: false`.
+- **Other portal tasks (not required by this drop):** follow-genlayer-x (500), join-genlayer-discord (500), star-genlayer-boilerplate (25), star-internet-court-skill (50) — all `can_complete:true`, all need GitHub/X/Discord OAuth link (not done).
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (user_id 67526, name "Osborn") | **Email:** airdropkarbiters@gmail.com | **TG:** @mxsyxfxx
+- **Status:** ✅ DONE — 1,000 GLP points awarded for Connect Mochi.
+
 
 ### #342 Snurps by Catapult Trade — catapult.trade (msg 127893) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://catapult.trade/snurps?code=4444 | **Reward:** NFT whitelist spot (4,444 supply, "Meet Snurps") | **Platform:** SolidJS SPA + GraphQL (`POST /graphql`, `snurpsWhitelistTaskStatus` / mutations) behind Cloudflare | **Source:** @airdropfind drop 127893 (Source tweet: https://x.com/letsCatapult/status/2102444214038495457)
