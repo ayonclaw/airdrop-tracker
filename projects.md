@@ -1,6 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — Alphea Hub Round Three ⛔ mobile-app-gated (hub login `signup_required`) | #346 Travix Beta WL ✅ (form + follow + quote) | #345 VOICE x Layer3 ⚠️ CF-blocked | #344 BigShort ⛔ not in snapshot
+> Last updated: **Sep 23, 2026** — #347 Bunimal World WL ✅ (X OAuth + 3 quests + EVM) | Alphea Hub Round Three ⛔ mobile-app-gated | #346 Travix Beta WL ✅ | #345 VOICE x Layer3 ⚠️ CF-blocked | #344 BigShort ⛔ not in snapshot
 
+### #347 Bunimal World Whitelist — whitelist.bunimal.com (msg 127904) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://whitelist.bunimal.com/apply | **Reward:** WL spot for next mint (Bunimal World NFT) | **Source:** @airdropfind drop 127904 (source tweet: https://x.com/Bunimal_World/status/2102446452836540547)
+- **Project:** Bunimal World (@Bunimal_World) — Robinhood Chain NFT collection. Whitelist desk (Roundbox Studio). Flow: X OAuth → 3 quests → submit EVM.
+- **Type:** Next.js SPA + X OAuth (OAuth2 PKCE, scope `tweet.read users.read`) + server-verified quests (X API) + EVM submit.
+- **Recon:** `/api/campaign` (handle `bunimal_world`, hashtag `#BunimalWhitelist`, template text), `/api/apply/state`, `/api/apply/submit {evm_address}`, `/api/apply/verify`. Unauthenticated submit → `{"error":{"code":"not_connected"}}` (X session cookie `xw_session` required). Endpoints in `_next/static/chunks/0as_o8vjh1to3.js` + `179jw-cgf-795.js`.
+- **X Tasks (all executed for real as @osbornrdx, server-verified):**
+  - ✅ Follow @Bunimal_World → https://x.com/Bunimal_World (intent follow, "Ikuti"→followed)
+  - ✅ Like + Repost campaign post → https://x.com/bunimal_world/status/2102446452836540547
+  - ✅ Comment on the post → https://x.com/osbornrdx/status/2102689018387530035 ("gm Bunimals! I want on the whitelist for the next mint. #BunimalWhitelist")
+- **✅ Server verification:** `GET /api/apply/state` → `tasks.verified = {follow:true, like_rt:true, post:true}` (project-side X API check passed all 3).
+- **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **✅ Confirmation:** `status:"submitted"`, `evm_address:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"`, `submitted_at:"2026-09-23T09:19:32Z"` — page shows "You're in the queue / Submitted".
+- **Status:** ✅ DONE — X OAuth linked, 3 quests verified, EVM submitted. Awaiting WL announcement on X.
 ### #346 Travix Beta Whitelist — Genesis Trader Application (msg 127901) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSesa-KTJxCQQ_fa_SL9AXyE3fs53mH5HBZCY1-v7XUIJs1CFg/viewform | **Reward:** Beta invite code + hidden Discord + up to $500/valid feedback (total pool $5,000) + VIP3 limits post-mainnet | **Source:** @airdropfind drop 127901
 - **Project:** Travix (@Travix_fi) — on-chain RWA perpetuals DEX. 50-code whitelist for Genesis Traders.
