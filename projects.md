@@ -1,5 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #347 Bunimal World WL ✅ (X OAuth + 3 quests + EVM) | Alphea Hub Round Three ⛔ mobile-app-gated | #346 Travix Beta WL ✅ | #345 VOICE x Layer3 ⚠️ CF-blocked | #344 BigShort ⛔ not in snapshot
+> Last updated: **Sep 23, 2026** — #348 MUPOS WL ✅ (X follow+like+RT+comment + Google Form) | #347 Bunimal World WL ✅ (X OAuth + 3 quests + EVM) | Alphea Hub Round Three ⛔ mobile-app-gated | #346 Travix Beta WL ✅ | #345 VOICE x Layer3 ⚠️ CF-blocked
+
+### #348 MUPOS Whitelist Phase 2 — Google Form (msg 127908) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSfw184cujxJXSehwuRCUIQCh2UbE6w-B6uLreJDSmp5N52HGw/viewform | **Reward:** WL spot (333 wallets only, Phase 2) | **Source:** @airdropfind drop 127908 (source tweet: https://x.com/MUPOS_NFT/status/2102399904287224143)
+- **Project:** MUPOS (@MUPOS_NFT) — NFT collection. Whitelist Phase 2, 333 wallets. Access code `HOOD`.
+- **Type:** Public Google Form (3 required fields) — browser fill + submit (curl bounces without fbzx/session).
+- **X Tasks (all executed for real as @osbornrdx):**
+  - ✅ Follow @MUPOS_NFT → https://x.com/MUPOS_NFT (unfollow state confirmed)
+  - ✅ Like campaign post → https://x.com/MUPOS_NFT/status/2102399904287224143 (unlike state confirmed)
+  - ✅ Repost campaign post → https://x.com/MUPOS_NFT/status/2102399904287224143 (unretweet state confirmed)
+  - ✅ Comment wallet address on the post → https://x.com/osbornrdx/status/2102794370944807373
+- **Form payload:** Wallet (EVM) `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | Retweet/comment link `https://x.com/osbornrdx/status/2102794370944807373` | Access code `HOOD`
+- **✅ Confirmation:** "Your response has been recorded" at `/formResponse`
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE — all 4 X tasks + form submitted (manual verification queue).
 
 ### #347 Bunimal World Whitelist — whitelist.bunimal.com (msg 127904) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://whitelist.bunimal.com/apply | **Reward:** WL spot for next mint (Bunimal World NFT) | **Source:** @airdropfind drop 127904 (source tweet: https://x.com/Bunimal_World/status/2102446452836540547)
