@@ -1083,7 +1083,7 @@
 
 ---
 
-### #251 SIGNAL WORKS — 500 USDT Giveaway (Galxe Survey) (msg 127618) — ✅ DONE
+### #251 SIGNAL WORKS — 500 USDT Giveaway (Galxe Survey) (msg 127618) — ✅ DONE (raffle lost — no claim)
 - **Date:** 2026-09-12 | **URL:** https://app.galxe.com/quest/gG4ajxHPPe3MFM3Cjsc7sx/GCDxitZfdp | **Reward:** 500 USDT pool (100 winners x 5 USDT)
 - **Type:** Type 10 GALXE-QUEST (Survey) + GGEX exchange registration requirement.
 - **GGEX account:** ✅ created `airdropkarbiters@gmail.com` (creds: `/home/ubuntu/airdrop/credentials/ggex/ggex_account.txt`). Signup via `POST api.ggex.io/api/v1/user/signup` (reCAPTCHA v2 solved via CapSolver) → email verify code `229726` → `signupcertification` OK. Login `signinSingle` → 2FA email code `876207` → `signinSinglePW2FACheck` OK.
@@ -1092,6 +1092,7 @@
 - **Survey submitted** via `syncCredentialValue` — `syncOptions.survey.answers = ["0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D","1274922334","airdropkarbiters@gmail.com"]` → server stored answers (allow:false pending rolling review; final Galxe Verify 21–22 Sep 2026).
 - **Survey fields:** EVM Wallet / GGEX UID (10 digits) / Email — order confirmed via `credential.metadata.survey.surveies`.
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **Email:** `airdropkarbiters@gmail.com` | **Source:** Drop 127618 from @airdropfind
+- **🎲 Result check (2026-09-23, drop 127896 "GGEX Check Result And Claim if you win"):** Campaign now `status: Expired` (numberID **364833**, distributionType `ZK_RAFFLE`, 6,795 participants / 100 winners × 5 USDT). `getUserGGRaffleResults(questId:364833)` → **`resultsInfo: null`** and `listUserGGRaffleResultsHistory` (ToClaim/Claimed/Expired) → **null** for our wallet → **NOT a winner — nothing to claim.** Claim window `claimEndTime` = 1791377940 (2026-10-07). On-chain claim (if eligible) would be `claimGGReward(...)` on raffle contract `0x29403f769a2041ed84210efec829cf886c52eb52` (USDT `0x55d398326f99059fF775485246999027B3197955`, BSC). Verified via Galxe GraphQL `graphigo.prd.galaxy.eco` (SIWE). **Final status: ✅ CLOSED — entry registered, raffle lost (no claim).**
 
 ---
 
