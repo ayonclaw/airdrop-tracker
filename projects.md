@@ -1,5 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #343 GenLayer Portal Connect Mochi ✅ (+1,000 GLP) | #344 BigShort ⛔ not in snapshot | #345 VOICE x Layer3 ⚠️ CF-blocked
+> Last updated: **Sep 23, 2026** — #346 Travix Beta WL ✅ (form + follow + quote) | #345 VOICE x Layer3 ⚠️ CF-blocked | #344 BigShort ⛔ not in snapshot
+
+### #346 Travix Beta Whitelist — Genesis Trader Application (msg 127901) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSesa-KTJxCQQ_fa_SL9AXyE3fs53mH5HBZCY1-v7XUIJs1CFg/viewform | **Reward:** Beta invite code + hidden Discord + up to $500/valid feedback (total pool $5,000) + VIP3 limits post-mainnet | **Source:** @airdropfind drop 127901
+- **Project:** Travix (@Travix_fi) — on-chain RWA perpetuals DEX. 50-code whitelist for Genesis Traders.
+- **Type:** Google Form (public) — 8 required fields. Browser fill + submit (curl bounces on modern GForms).
+- **X Tasks (all executed for real, @osbornrdx):**
+  - ✅ Follow @Travix_fi → https://x.com/Travix_fi ("Mengikuti" confirmed via `-unfollow` state)
+  - ✅ Quote tweet of campaign post → https://x.com/osbornrdx/status/2102673769487806941
+- **Source tweet:** https://x.com/Travix_fi/status/2102609480131502126
+- **Form payload:** email `airdropkarbiters@gmail.com` | X `@osbornrdx` | Quote `https://x.com/osbornrdx/status/2102673769487806941` | Discord `akumosy` | Wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | Exp: Traded CEX perps | Test focus: RWA Perps | Platforms: Hyperliquid, GMX, dYdX
+- **✅ Confirmation:** "我们已收到您的回答" (Your response has been recorded) at `/formResponse` — submission recorded.
+- **Status:** ✅ DONE — form submitted, invite code arrives by email + Discord if selected.
 
 ---
 
