@@ -1,5 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #348 MUPOS WL ✅ (X follow+like+RT+comment + Google Form) | #347 Bunimal World WL ✅ (X OAuth + 3 quests + EVM) | Alphea Hub Round Three ⛔ mobile-app-gated | #346 Travix Beta WL ✅ | #345 VOICE x Layer3 ⚠️ CF-blocked
+> Last updated: **Sep 23, 2026** — #349 SlothCoin Round 1 Galxe ⚠️ partial (SIWE+followSpace+X follow/like/RT/quote+TG join ✅; Galxe X OAuth link needed) | #348 MUPOS WL ✅ | #347 Bunimal World WL ✅
+
+### #349 SlothCoin Round 1 — $300 USDC Reward Pool — Galxe Quest (msg 127909) — ⚠️ PARTIAL (Galxe social creds need X OAuth link)
+- **Date:** 2026-09-23 | **URL:** https://app.galxe.com/quest/eqZkn9WxdPHWzKpR6phuaU/GC4KrtZyuU | **Reward:** $300 USDC pool (Round 1) | **Source:** @airdropfind drop 127909
+- **Project:** SlothCoin ($SLOC) — digital security for rainforest conservation / verified environmental credits. Space `SlothCoin (SLOC)` id 86603, alias `eqZkn9WxdPHWzKpR6phuaU`. Campaign `GC4KrtZyuU` (numberID 364956, type Token, status Active).
+- **Type:** Galxe quest (Type 10). API pipeline: SIWE SignIn → resolve space → campaign query → followSpace → syncCredentialValue.
+- **Credentials (6):** 4× TWITTER (Followers / Tweet Liker / Tweet Retweeters / "Tweet Bullish About @SlothCoinSLOC"), 1× TWITTER (X Account Requirement), 1× TELEGRAM (Join @slothcoinontelegram).
+- **✅ SIWE login:** `signin` → JWT for `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (HTTP 200).
+- **✅ followSpace(86603):** `{"data":{"followSpace":1}}`.
+- **X Tasks (all executed for real as @osbornrdx):**
+  - ✅ Follow @SlothCoinSLOC → https://x.com/SlothCoinSLOC (confirmationSheetConfirm "Ikuti @SlothCoinSLOC")
+  - ✅ Like campaign post → https://x.com/SlothCoinSLOC/status/2102488633215168987 (`like`→`unlike` confirmed)
+  - ✅ Repost campaign post → https://x.com/SlothCoinSLOC/status/2102488633215168987 (`retweet`→`unretweet`, aria "208 posting ulang. Memposting ulang")
+  - ✅ Bullish quote/post → https://x.com/osbornrdx/status/2102798713211224258 (+ https://x.com/osbornrdx/status/2102798602439676055)
+- **✅ Telegram:** joined @slothcoinontelegram (channel id 3954594460 "Slothcoin") via Telethon as @mxsyxfxx.
+- **⚠️ API cred sync limits (architectural):** TWITTER creds → `"missing twitter args"` (Galxe account-level X OAuth link required); "X Account Requirement" + Bullish cred → `allow:false`; TELEGRAM cred → `"empty address"` (needs Galxe Telegram bot verify).
+- **Wallet:** EVM 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ⚠️ PARTIAL — all 4 X actions + TG join done for real; Galxe-side verification of the TWITTER/TELEGRAM creds requires linking X OAuth to the Galxe account (manual, one-time). followSpace + space-follow cred recorded server-side.
 
 ### #348 MUPOS Whitelist Phase 2 — Google Form (msg 127908) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSfw184cujxJXSehwuRCUIQCh2UbE6w-B6uLreJDSmp5N52HGw/viewform | **Reward:** WL spot (333 wallets only, Phase 2) | **Source:** @airdropfind drop 127908 (source tweet: https://x.com/MUPOS_NFT/status/2102399904287224143)
