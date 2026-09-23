@@ -1,9 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 22, 2026** — #338 Value X Chain Open Event (Gleam.io) — 7/8 entries actioned (visit/like/RT/follow/2x TG/wallet).
+> Last updated: **Sep 23, 2026** — #339 WindowsPNG Whitelist (pngwindows.xyz) — whitelist submitted (ok:true) + follow/like/RT/reply done.
 
 ---
 
 ## ✅ COMPLETED
+### #339 WindowsPNG Whitelist — pngwindows.xyz (msg 127888) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://pngwindows.xyz/#list | **Reward:** Free mint whitelist spot (555 supply, Robinhood Chain) | **Platform:** Static HTML + vanilla JS form → Google Apps Script backend (Type 15) | **Source:** @airdropfind drop 127888 (Source tweet: https://x.com/windows_png/status/2096947778165637576)
+- **Project:** @windows_png — 555 handcrafted artworks on Robinhood. X: @windows_png. Mint: free, Sep 23 2026 17:00 UTC on OpenSea.
+- **Type:** 4-task self-attest form (follow / notif / like+RT / comment) + X handle + EVM wallet → `POST` JSON to Apps Script `/exec`.
+- **✅ Browserless submission:** extracted `window.WINDOWS.sheetsUrl` from `config.js?v=8` → `https://script.google.com/macros/s/AKfycbwHtZ6E8SyRxyPRHOYDmsCBOtjoS6qiBdTRR-_lwdPk9DtolLkb650rdbVrAJ-CZXo/exec`. POSTed payload `{kind:"whitelist", x_handle:"osbornrdx", wallet:"0x8CCE...282D", followed:true, notif:true, liked_rt:true, commented:true, ...}` with `Content-Type: text/plain;charset=utf-8` → 302 → `script.googleusercontent.com` → **`{"ok":true}`**.
+- **✅ X actions (real, verified):** followed @windows_png; liked the source post; reposted it (menu "Posting ulang" confirmed); replied tagging 2 friends.
+  - **Proof (follow):** https://x.com/windows_png
+  - **Proof (like + repost target):** https://x.com/windows_png/status/2096947778165637576
+  - **Proof (own reply):** https://x.com/osbornrdx/status/2102571498028568713
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE — whitelist entry accepted (`ok:true`), all 4 X tasks performed. Free mint Sep 23 17:00 UTC on OpenSea (Robinhood Chain) — needs real MetaMask + gas at mint time.
+
 ### #337 Bamboo Riot Whitelist — bambooriot.xyz/whitelist (msg 127884) — ✅ DONE
 - **Date:** 2026-09-22 | **URL:** https://bambooriot.xyz/whitelist/ | **Reward:** Free mint whitelist spot (4,000 supply, Robinhood Chain) | **Platform:** Next.js/Vite 4-step wizard + Cloudflare Turnstile | **Source:** @airdropfind drop 127884 (Source tweet: https://x.com/BambooRiot/status/2102198740316500053)
 - **Project:** Bamboo Riot — 4,000 original pixel pandas, free mint on **Robinhood Chain**. X: @BambooRiot. Official whitelist post: https://x.com/BambooRiot/status/2101882525337493829
