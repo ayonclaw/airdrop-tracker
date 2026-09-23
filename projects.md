@@ -1,7 +1,26 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #341 Wickr (wickr.app) — EVM wallet + email early-access form submitted via Netlify Forms (HTTP 200).
+> Last updated: **Sep 23, 2026** — #342 Snurps by Catapult Trade (catapult.trade) — full 4-step X/TG/Discord whitelist flow + quote share, `isWhitelisted:true` confirmed server-side.
 
 ---
+
+### #342 Snurps by Catapult Trade — catapult.trade (msg 127893) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://catapult.trade/snurps?code=4444 | **Reward:** NFT whitelist spot (4,444 supply, "Meet Snurps") | **Platform:** SolidJS SPA + GraphQL (`POST /graphql`, `snurpsWhitelistTaskStatus` / mutations) behind Cloudflare | **Source:** @airdropfind drop 127893 (Source tweet: https://x.com/letsCatapult/status/2102444214038495457)
+- **Project:** Catapult Trade — @letsCatapult. Snurps = 4,444-NFT collection; holder benefits: 0% trading fees, permanent point multipliers. WL (not GTD). Mint: Sep 30, 2026.
+- **Type:** 4-step wizard (Profile → Follow → Engage → Socials) + share-card quote step. Server-verified via GraphQL `snurpsWhitelistTaskStatus`.
+- **✅ Step 1 — Profile:** X handle @osbornrdx + EVM wallet 0x8CCE...282D submitted (code=4444 referral param captured).
+- **✅ Step 2 — Follow:** followed @letsCatapult (server `xFollow:true`). Proof: https://x.com/letsCatapult
+- **✅ Step 3 — Engage (4 sub-tasks, all server-verified):**
+  - **Like:** https://x.com/letsCatapult/status/2102444214038495457 (`xLike:true`)
+  - **Repost (QRT):** reposted source tweet (`xQrt:true`) — Proof target: https://x.com/letsCatapult/status/2102444214038495457
+  - **Comment:** replied to source tweet → **Proof:** https://x.com/osbornrdx/status/2102599130883498255 (`xComment:true`)
+  - **Read Article:** opened article post https://x.com/letsCatapult/status/2102390828173836506 (`xComment:true` bundle verified)
+- **✅ Step 4 — Socials:** Telegram joined `t.me/letsCatapult` via Telethon (`tgChannel:true`); Discord verified via in-page "Verify" button (`discord:true`).
+- **✅ Share/Quote step:** posted quote tweet of the announcement → **Proof:** https://x.com/osbornrdx/status/2102600384389030038 → clicked "I've Shared" → **"Congrats! You're on the List"**.
+- **✅ Server confirmation (GraphQL):** `{"allStepsCompleted":true,"evmAddress":"0x8cce57930bc7dfcb133f5d34889d362cb1bc282d","isWhitelisted":true,"xFollow":true,"xQrt":true,"xLike":true,"xComment":true,"tgChannel":true,"discord":true}`
+- **X proof links:** Follow → https://x.com/letsCatapult | Like+Repost target → https://x.com/letsCatapult/status/2102444214038495457 | Comment → https://x.com/osbornrdx/status/2102599130883498255 | Quote → https://x.com/osbornrdx/status/2102600384389030038
+- **Telegram proof:** joined @letsCatapult (channel id 2300348606) as @mxsyxfxx.
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE — whitelist confirmed server-side (`isWhitelisted:true`). Optional GTD path available ("Wanna GTD?").
 
 
 ### #341 Wickr Early Access — wickr.app (msg 127891) — ✅ DONE
