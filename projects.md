@@ -1,7 +1,18 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #340 D3 Frontier (frontier.d3.com) — email signup + X linked (@osbornrdx) + username saved, +10,000 pts (Privy embedded wallet created).
+> Last updated: **Sep 23, 2026** — #341 Wickr (wickr.app) — EVM wallet + email early-access form submitted via Netlify Forms (HTTP 200).
 
 ---
+
+
+### #341 Wickr Early Access — wickr.app (msg 127891) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://wickr.app/ | **Reward:** Early-access whitelist spot (private beta, Robinhood Chain) | **Platform:** Static Netlify-hosted HTML + vanilla JS form → Netlify Forms backend (`POST /`) | **Source:** @airdropfind drop 127891 (Source tweet: https://x.com/Wickrdotapp/status/2102431567436210554)
+- **Project:** Wickr — "Leverage, done properly." Coming soon on Robinhood Chain. X: @Wickrdotapp.
+- **Type:** 1-step early-access form — Wallet address (EVM) + Email → `POST /` (Netlify Forms, `form-name=early-access`). No X follow/like/RT tasks required (drop text: "Submit EVM Address" only).
+- **✅ Browserless submission:** grepped page JS for the submit handler → `fetch('/', {method:'POST', body: URLSearchParams(FormData)})`. Replayed with curl: `form-name=early-access` + `bot-field=` (empty honeypot) + `wallet=0x8CCE...282D` + `email=airdropkarbiters@gmail.com`. Server is **Netlify** (`server: Netlify`, `x-nf-request-id` present) → HTTP **200** (Netlify Forms success; site JS treats `r.ok` as "You're on the list.").
+- **Source tweet (verified):** "Wickr will rise on @RobinhoodCrypto … Early access: https://t.co/Vux3FfA9R4" — no like/RT/follow requirement attached.
+- **X proof:** project account https://x.com/Wickrdotapp (no follow task required by drop).
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | **Email:** airdropkarbiters@gmail.com
+- **Status:** ✅ DONE — early-access form submitted (wallet + email) via Netlify Forms, HTTP 200.
 
 ## ✅ COMPLETED
 ### #340 D3 Frontier — frontier.d3.com (msg 127889) — ✅ DONE
