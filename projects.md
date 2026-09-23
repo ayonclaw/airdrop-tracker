@@ -1,9 +1,23 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #339 WindowsPNG Whitelist (pngwindows.xyz) — whitelist submitted (ok:true) + follow/like/RT/reply done.
+> Last updated: **Sep 23, 2026** — #340 D3 Frontier (frontier.d3.com) — email signup + X linked (@osbornrdx) + username saved, +10,000 pts (Privy embedded wallet created).
 
 ---
 
 ## ✅ COMPLETED
+### #340 D3 Frontier — frontier.d3.com (msg 127889) — ✅ DONE
+- **Date:** 2026-09-23 | **URL:** https://frontier.d3.com/?ref=0sjqqq6ykwb7d | **Reward:** 10,000 Frontier Points (sign-up bonus) + deposit/backing program | **Platform:** Next.js SPA + **Privy** auth (email OTP) + WalletConnect/Web3Modal | **Source:** @airdropfind drop 127889
+- **Project:** D3 Frontier — priority access to new TLDs in ICANN's 2026 round. 7,976 members, 35 extensions live, Epoch 1 4x. X: @D3inc | Discord: discord.gg/doma
+- **Type:** 4-step signup — Sign up with email → Connect X → Create username → Done (Privy email OTP + X OAuth link).
+- **✅ Step 1 — Email signup:** Privy modal → entered `airdropkarbiters@gmail.com` → OTP sent → code `168501` read from Gmail IMAP (`no-reply@mail.privy.io` "Your login code for Frontier") → entered → authenticated.
+- **✅ Step 2 — Terms:** accepted Privy "One last step" terms dialog. Privy auto-created an **embedded wallet** ("Creating your wallet...").
+- **✅ Step 3 — Connect X:** "Link X" → X OAuth consent (`x.com/i/oauth2/authorize`, client `Privy.io`) → authorized as **@osbornrdx** → status flipped to "@osbornrdx / Your X account is connected."
+- **✅ Step 4 — Create username:** X handle pre-filled as `osbornrdx` ("Username is available.") → **Save username** → ✅ "You earned 10,000 pts — Your signup bonus."
+- **✅ Verified profile:** https://frontier.d3.com/profile — user **osbornrdx**, Total points **10,000**, Rank #7,996 (Top 99.8%), points history "Sign-up bonus +10,000 pts Sep 23 2026 01:46 UTC". 2 wallets linked.
+- **Invite link:** https://frontier.d3.com/?ref=sgnblqsqhxxn1
+- **X proof (follow/link):** https://x.com/D3inc (linked @osbornrdx via Privy OAuth)
+- **Wallet:** Privy embedded wallet (auto-created). Deposits/vault backing (Epoch deposits open Sep 28) require funded assets — not part of signup.
+- **Status:** ✅ DONE — signup complete, X linked, username saved, +10,000 pts credited. Optional follow-up (back extensions / deposit) needs funded assets.
+
 ### #339 WindowsPNG Whitelist — pngwindows.xyz (msg 127888) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://pngwindows.xyz/#list | **Reward:** Free mint whitelist spot (555 supply, Robinhood Chain) | **Platform:** Static HTML + vanilla JS form → Google Apps Script backend (Type 15) | **Source:** @airdropfind drop 127888 (Source tweet: https://x.com/windows_png/status/2096947778165637576)
 - **Project:** @windows_png — 555 handcrafted artworks on Robinhood. X: @windows_png. Mint: free, Sep 23 2026 17:00 UTC on OpenSea.
