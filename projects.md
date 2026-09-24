@@ -1,6 +1,15 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 23, 2026** — #351 ZECDUG Miner Recruitment ✅ (app #01080, all 5 X missions + u1) | #350 Hazels NFT WL Draw ✅ | #349 SlothCoin Round 1 Galxe ⚠️ partial | #348 MUPOS WL ✅
+> Last updated: **Sep 24, 2026** — #352 Pear Rewards Daily Streak ✅ (day 16, 8,146 pts) | #351 ZECDUG Miner Recruitment ✅ | #350 Hazels NFT WL Draw ✅ | #349 SlothCoin Round 1 Galxe ⚠️ partial
 
+
+### #352 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-09-24 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v9 (CDP against real Chrome @9222) ran clean — CDP connect OK, X OAuth auto-authorized, dashboard loaded logged-in on first try.
+- **✅ Daily streak:** 15 → **16 days** | Day-16 claim **+165 pts** (modal credited to balance)
+- **Points:** 7,981 → **8,146 pts** (+165) | **Rank:** **#21462** (real rank read from dashboard; script's regex parsed the `#42` hydration placeholder — always cross-check the sidebar card) | **Milestones:** 4/15 (1,400/13,200 pts)
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
+- **Status:** ✅ DONE — daily streak claimed (day 16), today's streak button shows "Claimed" (disabled).
 ### #351 ZECDUG — Miner Recruitment Board (Zcash, msg 127911) — ✅ DONE
 - **Date:** 2026-09-23 | **URL:** https://zecdug.com/apply/ | **Reward:** 4,096 Miner NFTs Free Mint (Season One application) | **Source:** @airdropfind drop 127911 | **X:** @ZecDug
 - **Type:** Type 2/17 hybrid — custom server API (`/api/v1`) + X OAuth1 account linking + 5 server-tracked X missions + Zcash unified-address (u1) submit + apply. Static nginx SPA (route scripts via `navigation.mjs` → `app.js?v=public-u1-application-v1`).
