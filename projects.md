@@ -1,6 +1,15 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 24, 2026** — #352 Pear Rewards Daily Streak ✅ (day 16, 8,146 pts) | #351 ZECDUG Miner Recruitment ✅ | #350 Hazels NFT WL Draw ✅ | #349 SlothCoin Round 1 Galxe ⚠️ partial
+> Last updated: **Sep 25, 2026** — #353 Pear Rewards Daily Streak ✅ (day 17, 8,317 pts) | #352 Pear Rewards Daily Streak ✅ (day 16) | #351 ZECDUG Miner Recruitment ✅ | #350 Hazels NFT WL Draw ✅
 
+
+### #353 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-09-25 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v9 (CDP against real Chrome @9222) ran clean — 22 X cookies loaded, CDP connect OK, dashboard loaded logged-in on first try.
+- **✅ Daily streak:** 16 → **17 days** | Day-17 claim **+171 pts**
+- **Points:** 8,146 → **8,317 pts** (+171) | **Rank:** **#26436**
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
+- **Status:** ✅ DONE — daily streak claimed (day 17), streak button returned `clicked` (Claim → Claimed).
 
 ### #352 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
 - **Date:** 2026-09-24 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
