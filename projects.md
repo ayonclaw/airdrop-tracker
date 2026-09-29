@@ -1,6 +1,15 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 28, 2026** — #354 Pear Rewards Daily Streak ✅ (day 20, 8,866 pts) | #353 Pear Rewards Daily Streak ✅ (day 17, 8,317 pts) | #352 Pear Rewards Daily Streak ✅ (day 16) | #351 ZECDUG Miner Recruitment ✅
+> Last updated: **Sep 29, 2026** — #355 Pear Rewards Daily Streak ✅ (day 21, 9,811 pts) | #354 Pear Rewards Daily Streak ✅ (day 20, 8,866 pts) | #353 Pear Rewards Daily Streak ✅ (day 17, 8,317 pts) | #352 Pear Rewards Daily Streak ✅ (day 16) | #351 ZECDUG Miner Recruitment ✅
 
+
+### #355 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-09-29 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v9 (CDP against real Chrome @9222) ran clean — 22 X cookies loaded, CDP connect OK, dashboard loaded logged-in on first try (no OAuth wall).
+- **✅ Daily streak:** 20 → **21 days** | Day-21 claim **+945 points**
+- **Points:** 8,866 → **9,811 points** (+945) | **Rank:** **#26196**
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
+- **Status:** ✅ DONE — daily streak claimed (day 21), streak button returned `clicked` (Claim → Claimed).
 
 ### #354 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
 - **Date:** 2026-09-28 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
@@ -2808,7 +2817,6 @@
 | Cite Chain | Email registered | ✅ |
 | USDCurve | Verify pending | 🚧 90% |
 | Aura | 2,000 pts | ⚠️ Gas |
-|||||||||||||||||| KieDex | S2 daily 2026-09-24: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter read 7/11 at run start → 8/11 after the t4 claim → **9/11** after the t3 claim
 |||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flipped to "Claimed", FAUCETS CLAIMED 0/2 → 2/2). Claimed via the scrolled trusted-click recipe (`scrollIntoView({block:'center'})` → re-read rect → `Input.dispatchMouseEvent` mousePressed+mouseReleased at the NEW centre y=384). Balance proof: Spot 1570 → **1620** (+50), Oil 1740 → **1780** (+40).
 |||||||||||||||||| | - **Google OAuth** → logged in WITHOUT manual intervention: "Continue with Google" (had to patch `window.open` to observe the popup) → email `airdropkarbiters@gmail.com` → **2FA TRIGGERED** (Google Authenticator page) → solved in-page with the TOTP secret from the credential store (`MY4O3J2U3JDKR4HWQCDBOSWJSSYLGF4U`, RFC-6238 SHA-1/6-digit/30s) → code accepted → authenticated. **This is the first run where 2FA was bypassed automatically via TOTP rather than requiring Rey's phone tap.**
@@ -2821,9 +2829,7 @@
 |||||||||||||||||| | **TRADING**: Flat — 0 open positions at end (fresh Long opened and closed same run). Oil delta for the trading play: −40 fee +100 claims = **net +60 Oil** for one run — the highest-value trading play, available because the board was empty at run start.
 |||||||||||||||||| | **LIQ-DISTANCE TREND**: N/A this run — board was EMPTY at run start (no carried position; the 09-23 position was harvested same-run). The fresh position's liq sat 4.50% below mark (84,309.72 entry vs 80,515.78 liq) and was closed within ~11 min, so no countdown was in flight.
 |||||||||||||||||| | **CLAIM PATH NOTE**: trading-mission claims done via the on-page `Claim +50 Oil` buttons using scrolled trusted-clicks (targeting the VISIBLE 334×40 button — the duplicate at index 0 is a 0×0 hidden element). NO captcha. `POST /rest/v1/rpc/claim_task_mission` is still PGRST202/edge-function (Turnstile-gated) — use the UI.
-|||||||||||||||||| | **TOKEN NOTE**: the ES256 access token dumped from `localStorage` **fails via curl/urllib** with `PGRST301 "None of the keys was able to decode the JWT"` even though the identical token works from an **in-page `fetch`** (HTTP 200). KieDex's Supabase now signs with ES256 + a `kid` header; the shell-side path is broken, so **all API calls must be made from inside the page** (`Runtime.evaluate` + `awaitPromise`). This is why the detached watcher was moved in-page. The `evaluate_script filePath` export also silently did not write — use `btoa()` + a file write instead.
 |||||||||||||||||| | **DECISION**: Board empty ⇒ ran the t4+t3 farm immediately (no deliberation). Opened 1 USDT @ 20x (40 Oil fee), closed in profit for +100 Oil of claims → **net +60 Oil**. Skipped t1 (net −110 Oil) and t2 (~20k Oil, infeasible). Quest API re-queried: **11 active quests** (t1,t2,t3,t4,s1,s3,s4,s5,s6,s7,s8) — **no new s9+ listing missions**.
-|||||||||||||||||| KieDex | S2 daily 2026-09-23: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter read 7/11 at run start → 9/11 after the two trading claims landed
 |||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flipped to "Claimed", FAUCETS CLAIMED 0/2 → 2/2). Claimed via the scrolled trusted-click recipe (`scrollIntoView({block:'center'})` → re-read rect → `Input.dispatchMouseEvent` mousePressed+mouseReleased at the NEW centre). Balance proof: Spot 1520 → **1570** (+50), Oil 1640 → **1680** (+40).
 |||||||||||||||||| | - **"Use 10x+ leverage" (t4)** → Claimed ✅ (+50 Oil) — board was EMPTY at run start, so opened a FRESH 1-USDT-margin BTC/USDT Long @ 20x. Pre-flight readout confirmed `Margin 1.00 USDT` / `Oil fee 40.00 / 1680 Oil`. BBO filled the price box to 86,620.00; `Buy / Long` filled IMMEDIATELY (Current Positions 1, Open Orders 0). Verified the fill via `open_positions` REST: id `8ad0695a`, entry **86,620**, liq 82,722.10, margin 1, leverage 20.
@@ -2838,7 +2844,6 @@
 |||||||||||||||||| | **DECISION**: Board empty ⇒ ran the t4+t3 farm immediately (no deliberation). Opened 1 USDT @ 20x (40 Oil fee), closed in profit for +100 Oil of claims → **net +60 Oil**. Skipped t1 (net −150 Oil) and t2 (~20k Oil, infeasible). Quest API re-queried: **11 active quests** (t1,t2,t3,t4,s1,s3,s4,s5,s6,s7,s8) — **no new s9+ listing missions**.
 |||||||||||||||||| | **NOTE — MISSED DAYS**: 2026-09-22 and 2026-09-20 have NO tracker rows in `origin/main`. 09-20 partially executed (opened the carried Long @ 81,276.01, later harvested 09-21) but was never logged; 09-22 appears to have no run. Their epochs have closed and reset — not re-verified retroactively.
 |||||||||||||||||| | **TRACKER RECOVERY**: local clone was `ahead 3, behind 3` → used the `git show origin/main:projects.md` base + `tracker-insert-daily-row.py` insert path (never `git pull --rebase`), preserving the 3 remote auto-sync commits.
-|||||||||||||||||| KieDex | S2 daily 2026-09-21: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" claimed +50 Oil) — counter read 8/11 → 9/11 as the trading claims landed
 |||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flipped to "Claimed", FAUCETS CLAIMED 0/2 → 2/2)
 |||||||||||||||||| | - **"Close a winning trade"** → Claimed ✅ (+50 Oil) — the carried 1-USDT 20x BTC/USDT Long (opened 2026-09-20 @ 81,276.01) was IN PROFIT this run (mark 81,610, +0.41%) → closed via `close_trade_atomic(p_position_id, p_exit_price=81610)` → **pnl +0.0822 USDT**, counted_volume 20, position_value 20. ZERO new Oil cost (fee already sunk on 09-20).
@@ -2852,7 +2857,6 @@
 |||||||||||||||||| | **CLAIM PATH NOTE**: trading-mission claims done via the on-page `Claim +50 Oil` buttons (`.click()` on the card's own button, targeting the VISIBLE one — the duplicate at index 0 is a 0×0 hidden element) — NO captcha. Edge function `claim-task-mission` remains Turnstile-blocked for API-only claims.
 |||||||||||||||||| | **DECISION**: Traded only the ZERO-COST close (t3, +50 Oil — fee already sunk on 09-20). Did NOT open a fresh position: t4 was already Ready, and re-opening a same-pair Long would only have spent 40 Oil for no additional mission. Skipped t1 (net −150 Oil) and t2 (~20k Oil, infeasible). Quest API re-queried: 11 active quests (s1,s3,s4,s5,s6,s7,s8,t1,t2,t3,t4) — **no new s9+ listing missions**.
 |||||||||||||||||| | **NOTE — MISSED DAY**: 2026-09-20 has NO tracker row in either the local copy or `origin/main`. That run partially executed (it opened the carried BTC/USDT Long @ 81,276.01 at 2026-09-20T01:03:33Z) but was never logged. Its faucets/missions were not re-verified retroactively (that epoch has closed and reset).
-|||||||||||||||||| KieDex | S2 daily 2026-09-19: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter read 7/11 → 9/11 as the two trading claims landed
 |||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2)
 |||||||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) — board was EMPTY at run start (`open_positions` []), so a FRESH trade was legitimately opened: 1 USDT margin @20x = 40 Oil fee, BTC/USDT Long @ 81,553.74 (BBO fill, liq 77,883.82 = 4.5% below mark)
@@ -2865,7 +2869,6 @@
 |||||||||||||||||| | **LIQ-DISTANCE TREND**: board EMPTY at run start (carried Sep-01 BTC Long remains off the board). t3/t4 re-farmable each reset day — third consecutive reset day the farm play worked.
 |||||||||||||||||| | **CLAIM PATH NOTE**: trading-mission claims done via on-page `Claim +50 Oil` buttons (`evaluate_script` `.click()`, first of each duplicate pair) — NO captcha. Edge function `claim-task-mission` remains Turnstile-blocked for API-only claims.
 |||||||||||||||||| | **DECISION**: Traded (board reset, Oil 1290 ≫ 40 needed). Opened 1 USDT @20x to satisfy t4 (+50), then closed it green for t3 (+50) — net **+60 Oil** for the day on trading. Skipped t1 (net −150) and t2 (infeasible). Quest API re-queried: 11 active quests (s1,s3,s4,s5,s6,s7,s8,t1,t2,t3,t4) — no new s9+ listing missions.
-|||||||||||||||||| KieDex | S2 daily 2026-09-18: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter advanced 7/11 → 9/11 as the two trading claims landed |
 |||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2) |
 |||||||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) — board was EMPTY at run start (`open_positions` []), so a FRESH trade was legitimately opened: 1 USDT margin @20x = 40 Oil fee, BTC/USDT Long @ 76,600 (BBO fill, liq 73,153 = 4.5% below mark) |
@@ -2878,7 +2881,6 @@
 |||||||||||||||||| | **LIQ-DISTANCE TREND**: position GONE (Sep-16) → board EMPTY at Sep-18 run start. The carried Sep-01 BTC Long remains off the board; t3/t4 now re-farmable each reset day. |
 |||||||||||||||||| | **CLAIM PATH NOTE**: trading-mission claims done via on-page `Claim +50 Oil` buttons (`evaluate_script` `.click()`, first of each duplicate pair) — NO captcha. Edge function `claim-task-mission` remains Turnstile-blocked for API-only claims. |
 |||||||||||||||||| | **DECISION**: Traded (board reset, Oil 1190 ≫ 40 needed). Opened 1 USDT @20x to satisfy t4 (+50), then closed it green for t3 (+50) — net **+60 Oil** for the day on trading. Skipped t1 (net −150) and t2 (infeasible). Quest API re-queried: 11 active quests (s1,s3,s4,s5,s6,s7,s8,t1,t2,t3,t4) — no new s9+ listing missions. |
-||||||||||||||||| KieDex | S2 daily 2026-09-17: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||||||||| | **MISSIONS**: 9/11 shown in header counter (7/7 social Done + "Close a winning trade" Done/Claimed +50 Oil + "Use 10x+ leverage" Done/Claimed +50 Oil) — counter read 7/11 → 9/11 as the two trading claims landed (correct this run, unlike the Sep-16 cosmetic lag) |
 ||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2) |
 ||||||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) — board had RESET (open_positions EMPTY at run start: the carried 3-USDT BTC/USDT Long from Sep-01 was liquidated — 24h low 75,064.82 had crossed its liq 76,359.32), so a FRESH trade was legitimately opened: 1 USDT margin @20x = 40 Oil fee, BTC/USDT Long @ 76,230 (filled via BBO, liq 72,799.65) |
@@ -2891,7 +2893,6 @@
 ||||||||||||||||| | **LIQ-DISTANCE TREND**: 0.62% (Sep-14) → 1.94% (Sep-15) → **position GONE** (Sep-16, board reset). The carried Sep-01 BTC Long is confirmed off the board — countdown resolved. |
 ||||||||||||||||| | **CLAIM PATH NOTE**: edge function `claim-task-mission` via REST returned {"success":false,"error":"Captcha verification required"} for t3/t4 — API-only claim is BLOCKED by Turnstile. The on-page `Claim +50 Oil` buttons (clicked via `evaluate_script` `.click()`, first of each duplicate pair) claimed successfully with NO captcha. **Prefer UI claim buttons over the edge function for trading missions.** |
 ||||||||||||||||| | **DECISION**: Traded (board reset, Oil 1090 ≫ 40 needed). Opened 1 USDT @20x to satisfy t4 (+50), then closed it green for t3 (+50) — net **+60 Oil** for the day on trading. Skipped t1 (net −150) and t2 (infeasible). Quest API re-queried: 11 active quests (t2,t1,t3,t4,s1,s4,s5,s6,s3,s7,s8) — no new s9+ listing missions. |
-||||||||||||||||| KieDex | S2 daily 2026-09-16: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" Done/Claimed +50 Oil + "Close a winning trade" claimed +50 Oil) — header counter again read 8/11 despite both trading claims landing (known cosmetic lag; card text + OIL EARNED TODAY + balances delta are authoritative) |
 ||||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2) |
 ||||||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) — board had RESET (open_positions empty; the carried 3-USDT BTC Long from Sep-01 was liquidated/closed), so a FRESH trade was legitimately opened: 1 USDT margin @20x = 40 Oil fee, BTC/USDT Long @ 75,753.96 |
@@ -2903,7 +2904,6 @@
 ||||||||||||||||| | **TRADING**: Flat — 0 open positions. Fresh 1-USDT 20x BTC/USDT Long opened @ 75,753.96 (liq 72,345.03 = 4.44% below mark — healthy distance) then closed same-run in profit. |
 ||||||||||||||||| | **LIQ-DISTANCE TREND**: 1.94% (Sep-15) → position GONE (Sep-16). The carried Sep-01 BTC Long is no longer on the board — the countdown resolved (liquidated or closed) and the t1/t3/t4 board reset with it. |
 ||||||||||||||||| | **DECISION**: Traded (board reset, Oil 950 ≫ 40 needed). Opened 1 USDT @20x to satisfy t4 (+50), then closed it green for t3 (+50) — net **+60 Oil** for the day on trading. Skipped t1 (net −150) and t2 (infeasible). Quest API re-queried: 11 active quests (t1–t4, s1/s3/s4/s5/s6/s7/s8), no new s9+ listing missions. |
-||||||||||||||| KieDex | S2 daily 2026-09-15: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" card Done/Claimed +50 Oil) — header counter again read 8/11 both before and after the leverage claim (known cosmetic lag; card + OIL EARNED TODAY are authoritative) |
 ||||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed", FAUCETS CLAIMED 2/2) |
 ||||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
@@ -2915,7 +2915,6 @@
 ||||||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 77,868.88 → **−1.57 USDT / −52% of margin**, liq 76,359.32 → **1.94% above liq**) |
 ||||||||||||||| | **LIQ-DISTANCE TREND**: 1.17% (Sep-13) → 0.62% (Sep-14) → **1.94% (Sep-15)** — the countdown REVERSED, BTC bounced off the 76,636 24h low; position no longer on a monotonic path to liquidation, but still deep red so t3 stays dead |
 ||||||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (−52% of margin, cannot close a "winning trade"), and "Use 10x+ leverage" already claimed. Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk) for 1/5 progress that cannot complete today. Quest API re-queried: 11 active quests (t1–t4, s1/s3/s4/s5/s6/s7/s8) — no new s9+ listing missions. |
-|||||||||||||| KieDex | S2 daily 2026-09-14: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" card Done/Claimed +50 Oil) — header counter again did NOT advance on the leverage claim (read 8/11 both before and after), matching the known "Ready already counted / counter lags" behaviour |
 |||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed") |
 |||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
@@ -2926,7 +2925,6 @@
 |||||||||||||| | **BALANCES**: Oil **860** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot **1120** USDT, Futures 116.17 USDT, Total **1236.17** USDT |
 |||||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 76,834.99 → **−2.34 USDT**, liq 76,359.32 → **0.62% above liq = FORFEIT**) |
 |||||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close a "winning trade") and sits 0.62% above liquidation (<2% threshold), so it is forfeit; "Use 10x+ leverage" already claimed. Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk) for 1/5 progress that cannot complete today. Quest API re-queried: 11 active quests (t1–t4, s1/s3/s4/s5/s6/s7/s8) — no new s9+ listing missions. |
-||||||||||||| KieDex | S2 daily 2026-09-13: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||||| | **MISSIONS**: 8/11 shown in header counter (7/7 social Done + "Use 10x+ leverage" card Done/Claimed +50 Oil) — NOTE: header counter did NOT advance on the leverage claim, it read 8/11 both before and after (matches the known "counter lags / Ready already counted" behaviour) |
 ||||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT first, then Oil; both flip to "Claimed") |
 ||||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
@@ -2937,7 +2935,6 @@
 ||||||||||||| | **BALANCES**: Oil **770** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot **1070** USDT, Futures 116.17 USDT, Total **1186.17** USDT |
 ||||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 77,262.71 → **−1.96 USDT**, liq 76,359.32 → **1.17% above liq = FORFEIT**) |
 ||||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close a "winning trade") and sits 1.17% above liquidation, so it is forfeit; "Use 10x+ leverage" already claimed. Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk) for 1/5 progress that cannot complete today. |
-||||||||||| KieDex | S2 daily 2026-09-12: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 ||||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil (USDT claimed first, then Oil; both flip to "Claimed") |
 ||||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready 1/1 at UTC reset — no new trade needed) |
@@ -2948,7 +2945,6 @@
 ||||||||||| | **BALANCES**: Oil **680** (net +90 today: 40 faucet + 50 mission), KDX 505.18, Spot 1020 USDT, Futures 116.17 USDT, Total 1136.17 USDT |
 ||||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 77,310.00 → **-1.99 USDT**, liq 76,359.32) |
 ||||||||||| | **DECISION**: Skipped trading — carried position is LOSING (cannot close "winning trade"), "Use 10x+ leverage" already claimed, remaining missions need 200 Oil (5 pairs) or ~20k Oil ($1000 vol). Opening a same-pair Long would MERGE into the loser (averaging down = added liquidation risk). |
-|||||||||| KieDex | S2 daily 2026-09-10: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 |||||||||| | - **Daily faucets** → Claimed ✅ +50 USDT, +40 Oil |
 |||||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil; carried 20x position made mission Ready at UTC reset) |
@@ -2959,7 +2955,6 @@
 |||||||||| | **BALANCES**: Oil **590** (net +90 today), KDX 505.17, Spot 975.05 USDT, Futures 114.86 USDT |
 |||||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (mark 78,198.66 → -1.33 USDT) | ⏳ Daily |
 |||||||||| | **NEW FINDING**: Oil fee = **40 Oil per 1 USDT margin @ 20x** (not a flat 120/3-USDT). So "Open 5 trades" on 5 different pairs @ 1 USDT = ~200 Oil total — actually feasible budget-wise, but reward is only 50 Oil (net −150) plus merge risk with the open loser. Still skipped. |
-||||||| KieDex | S2 daily 2026-09-09: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 |||||||| | **MISSIONS**: 8/11 completed (7/7 social Done + 1/4 trading [Use 10x+ leverage claimed]) |
 |||||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil, carried 20x position made Ready at UTC reset) |
 |||||||| | - "Close a winning trade" → 0/1 (position -0.83%, losing — skip) |
@@ -2968,7 +2963,6 @@
 |||||||| | **BALANCES**: Oil ~460 (410 + 50 mission claim), KDX ~505, Spot ~870, Futures ~116 USDT |
 |||||||| | **TRADING**: 3-USDT 20x BTC/USDT Long still open @ 79,957.40 (BTC 78,850, -0.83%) | ⏳ Daily |
 |||||||| | **LESSON**: 5 fills on SAME pair/leverage merge into 1 position = only 1/5 trades credit. For "Open 5 trades": use 5 DIFFERENT pairs (BTC/ETH/SOL/XRP/DOGE) so positions stay separate. | ⏳ Daily |
-|||||| KieDex | S2 daily 2026-09-06: **FAUCETS CLAIMED** 2/2 (+50 USDT +40 Oil) | ✅ Complete |
 ||||| | **MISSIONS**: 9/11 completed (7/11 social → 9/11 after t3+t4) |
 ||||| | - **"Use 10x+ leverage"** → Claimed ✅ (+50 Oil) |
 ||||| | - **"Close a winning trade"** → Claimed ✅ (+50 Oil, closed 3-USDT Long @ +1.05 USDT) |
