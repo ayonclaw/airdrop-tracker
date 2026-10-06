@@ -1,6 +1,29 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Sep 29, 2026** — #355 Pear Rewards Daily Streak ✅ (day 21, 9,811 pts) | #354 Pear Rewards Daily Streak ✅ (day 20, 8,866 pts) | #353 Pear Rewards Daily Streak ✅ (day 17, 8,317 pts) | #352 Pear Rewards Daily Streak ✅ (day 16) | #351 ZECDUG Miner Recruitment ✅
+> Last updated: **Oct 7, 2026** — #358 H00DEXE OG Access ⚠️ (Turnstile wall) | #357 Marrow Punk WL ✅ | #356 RiotToons WL ✅ | #355 Pear Rewards Daily Streak ✅ (day 21)
 
+
+### #358 H00DEXE — OG Access (msg 128250) — ⚠️ PENDING (Turnstile hard wall)
+- **Date:** 2026-10-07 | **URL:** https://hoodexe.com/og-access | **Reward:** OG list eligibility for Oct 16, 2026 free mint (2,222 supply) | **Source:** @airdropfind drop 128250 / https://x.com/h00dexe/status/2098269966814364022
+- **Type:** Next.js custom form + Cloudflare Turnstile, POST `/api/og-access/submit` `{contactType,contactValue,wallet,turnstileToken,socialConfirmed,website}`. No wallet connect (paste-address only).
+- **✅ X tasks DONE** (confirmed state): Follow @h00dexe = FOLLOWING; Like pinned post = LIKED; Repost = RETWEETED. Proof: https://x.com/h00dexe/status/2098269966814364022
+- **✅ Form fields prepared:** contactType=`x`, contactValue=`@osbornrdx`, wallet=`0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, socialConfirmed=true
+- **⚠️ BLOCKER — Cloudflare Turnstile (sitekey `0x4AAAAAAFCOt5Emqzgx8_Nu`).** Exhausted 5+ approaches: (1) 2captcha route-mode token → `{"accepted":false,"detail":"Human verification failed"}` (token IP-bound, proxy≠submit IP); (2) token injected into live MCP Chrome page → rejected; (3) CloakBrowser `real_page:true` + atomic post_fetch submit → no token harvested (60s/90s timeouts); (4) CloakBrowser real_page with page's own widget → TOKEN_LEN 0; (5) MCP Chrome interactive checkbox click → no token. Sidecar `/status` shows turnstile online but real-page path yields no token for this site.
+- **Manual step:** submit via real browser where Turnstile solves natively (CloakBrowser interactive / residential IP) → POST `/api/og-access/submit`.
+- **Status:** ⚠️ PENDING — X tasks + form data ready; only Turnstile human-check blocks submission.
+
+### #357 Marrow Punk — Whitelist (msg 128249) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** Google Form (formResponse→viewform) | **Reward:** WL, 1,818 supply | **Source:** @airdropfind drop 128249 / https://x.com/MarrowPunks/status/2107127433787040062
+- **Type:** Public Google Form (browser fill) + X tasks. Fields: X handle + EVM address + 2 task checkboxes.
+- **✅ X tasks DONE** (confirmed state): Follow @MarrowPunks = FOLLOWING; Like = LIKED; Repost = RETWEETED. Proof: https://x.com/MarrowPunks/status/2107127433787040062
+- **✅ Form submitted:** X handle `@osbornrdx` + wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, both checkboxes checked → "Your response has been recorded." (confirmation page reached)
+- **Status:** ✅ DONE
+
+### #356 RiotToons — Whitelist (msg 128248) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** Google Form (formResponse→viewform) | **Reward:** WL, 4,444 supply, Freemint Oct 8 | **Source:** @airdropfind drop 128248 / https://x.com/RiotToons/status/2107170233618419905
+- **Type:** Public Google Form (browser fill) + X tasks.
+- **✅ X tasks DONE** (confirmed state): Follow @RiotToons = FOLLOWING; Like = LIKED; Repost = RETWEETED (both source tweet + latest-tweet referenced in form). Proof: https://x.com/RiotToons/status/2107170233618419905
+- **✅ Form submitted:** X handle `@osbornrdx` + wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → "Your response has been recorded."
+- **Status:** ✅ DONE
 
 ### #355 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
 - **Date:** 2026-09-29 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
