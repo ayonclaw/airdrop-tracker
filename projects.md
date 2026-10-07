@@ -1,5 +1,18 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #366 dHorse Genesis DONE (all 6 tasks + Knight status, Taproot bc1p…98f6) | #365 Elios DONE | #364 GOMO DONE | #363 Gas Cash DONE | #361 CONSO/EtherBubu WL DONE
+> Last updated: **Oct 7, 2026** — #367 Temrush WL DONE (follow+like+RT+QT+tag3, Apps Script ok:true) | #366 dHorse Genesis DONE | #365 Elios DONE | #364 GOMO DONE | #363 Gas Cash DONE
+### #367 Temrush (temrush.xyz) — Whitelist (msg 128282) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** https://www.temrush.xyz/ | **Reward:** Free mint (Robinhood, 4444 entities, 200 EVM approved) | **Source:** @airdropfind drop 128282
+- **Type:** Type 15 variant — vanilla JS static page + `wlForm` → Google Apps Script backend (`script.google.com/macros/s/.../exec`, POST `text/plain` JSON `{action:"submit", xUsername, wallet, quoteProof, tagFriendsProof}`).
+- **Tasks + proof:**
+  - ✅ Follow @TemrushNFTs — via intent URL (button flipped to "Mengikuti"). Proof: https://x.com/TemrushNFTs
+  - ✅ Like pinned post — https://x.com/TemrushNFTs/status/2107824798957269233
+  - ✅ Repost pinned post — retweetConfirm clicked (unretweet state confirmed).
+  - ✅ Quote-tweet pinned post — Proof: https://x.com/osbornrdx/status/2107865664593829995
+  - ✅ Tag 3 friends post — Proof: https://x.com/osbornrdx/status/2107865795766427892
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM)
+- **Submission:** Apps Script 302 → `script.googleusercontent.com/macros/echo` → `{"ok":true,"status":"PENDING"}`. Checker re-query `{"ok":true,"status":"PENDING"}` (application recorded).
+- **Status:** ✅ DONE — all 4 tasks + wallet submitted, awaiting project approval.
+
 ### #366 dHorse Genesis (genesis.dhorse.fun) — BTC RGB Knight Tasks (msg 128281) — ✅ DONE (all 6 tasks + Knight status granted)
 - **Date:** 2026-10-07 | **URL:** https://genesis.dhorse.fun/ | **Reward:** 1,000 Horseshoes + Darkhorse Knight UDA + future RGB ecosystem airdrop eligibility | **Source:** @airdropfind drop 128281
 - **Type:** Type 2/3 hybrid — X OAuth (OAuth2 PKCE) login + in-app task dashboard + BTC Taproot address bind. Next.js SPA on Cloudflare Workers; API is same-origin `/api/*` (worker intermittently 500s = Cloudflare error 1101, transient — retry loop resolves).
