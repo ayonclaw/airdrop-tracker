@@ -1,5 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #364 GOMO ✅ (acct set up, X tasks full) | #363 Gas Cash ✅ | #361 CONSO/EtherBubu WL ✅ | #360 GiwaPunk WL ✅ | #359 Giwaascii WL ✅
+> Last updated: **Oct 7, 2026** — #365 Elios DONE (waitlist code FS3MQFF, pos 11205 + @eliospay followed) | #364 GOMO DONE | #363 Gas Cash DONE | #361 CONSO/EtherBubu WL DONE | #360 GiwaPunk WL DONE
+### #365 Elios (eliospay.com) — Waitlist + X Follow (msg 128280) — DONE
+- **Date:** 2026-10-07 | **URL:** https://www.eliospay.com/r/T9W26GB | **Reward:** Early-access waitlist slot (self-custodial stablecoin account + card on HyperEVM/Hyperliquid) | **Source:** @airdropfind drop 128280
+- **Type:** Type 18/4 hybrid — email-only waitlist behind Supabase email-OTP (jjcgqrquprizalolysif.supabase.co auth). Next.js SPA; submit endpoint POST https://www.eliospay.com/api/signup requires the authenticated Supabase session cookie (sb-jjcgqrquprizalolysif-auth-token).
+- **Referral code:** T9W26GB (captured from /r/T9W26GB to ?ref=T9W26GB).
+- **Flow:** (1) POST /api/otp {email:airdropkarbiters@gmail.com} returns {ok:true} (code mailed). (2) Read 6-digit code from Gmail via MCP Chrome (from:eliospay) = 177462. (3) POST /supabase/auth/v1/verify {type:email,token:177462} returns session access_token + refresh_token (user id 860046a1-be7b-4d83-bb2e-80b1cf066a6d, email_confirmed_at set). (4) POST /api/signup with Cookie sb-jjcgqrquprizalolysif-auth-token=<base64 session> + body {referral_code:"T9W26GB", email:"airdropkarbiters@gmail.com"} returns {"alreadyOnList":false,"code":"FS3MQFF","queuePosition":11205,"pseudonym":"LoafingMargayBundler"} (HTTP 200).
+- **X Follow:** followed @eliospay via x.com/eliospay (button flipped Ikuti to Mengikuti, testid ...-unfollow).
+- **Proof - X:** https://x.com/eliospay
+- **Proof - Waitlist:** confirmation code FS3MQFF, queue position 11205, pseudonym LoafingMargayBundler (email airdropkarbiters@gmail.com).
+- **Note:** Drop text also says "Connect X / Telegram" — portal X/TG linking is a post-approval step (portal still gated on email sign-in); X follow performed out-of-band for the manual-verification requirement.
+- **Status:** DONE — waitlist joined (code FS3MQFF, pos 11205) + @eliospay followed.
+
+
 
 ### #364 GOMO (gomofamily.life) — X Task Rewards, $0.50/task in SOL (msg 128279) — ✅ ACCOUNT SET UP (X linked; task slots filled before claim — monitor daily)
 - **Date:** 2026-10-07 | **URL:** https://gomofamily.life/@setyamickala (→ /tasks) | **Reward:** $0.50 per task, paid in SOL to a Privy-generated gomo wallet | **Source:** @airdropfind drop 128279
@@ -5261,3 +5273,13 @@
 - **Telegram proof:** joined @valuexchain + @valuexchain_chat as @mxsyxfxx (983121959).
 - **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
 - **Status:** ✅ DONE — 7 of 8 entries actioned (visit/like/RT/follow/2x TG/wallet); referral entry skipped (needs external referrals). Cloudflare managed challenge appeared on final reload but all entries had already registered server-side (actioned=true).
+
+## GOMO (gomofamily.life) — SKIPPED
+- **Date:** 2026-10-07 | **URL:** https://gomofamily.life/@setyamickala | **Reward:** ~$2 SOL (share @gomo_family + CA) + $0.5/task
+- **Source:** Rey forward (GOMO "Free $2 in SOL to trade like a GOMO")
+- **Stack:** React/Vite SPA (Lovable) + Supabase `vhuqvlvaffjsktvkkavp` + Privy auth. API: `gomofamily.life/api/public/fn/api/*`
+- **CA:** 9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump (pump.fun, 3,709 holders, legit)
+- **Requirements:** X blue check (`blueRequired:true`) + min 100 followers + buy min $1 GOMO + hold 10 min
+- **Blocker:** @osbornrdx (`verified:False`, 1,036 followers) — NO blue check. GOMO rejects non-blue accounts.
+- **Econ:** cost $1 buy → reward ~$2. Thin margin, only 1 task open (others 100/100 full). Not worth.
+- **Status:** ❌ SKIPPED per Rey (needs blue + $1 buy for $2 reward)
