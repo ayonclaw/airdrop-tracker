@@ -1,6 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #361 CONSO/EtherBubu WL ✅ | #360 GiwaPunk WL ✅ (browserless) | #359 Giwaascii WL ✅ | #358 H00DEXE OG Access ⚠️ (Turnstile wall)
+> Last updated: **Oct 7, 2026** — #362 AGNT S4 W2D2 Galxe ⚠️ (X-OAuth link wall) | #361 CONSO/EtherBubu WL ✅ | #360 GiwaPunk WL ✅ | #359 Giwaascii WL ✅
 
+
+### #362 AGNT Weekly Socials | S4 Week 2 - Day 2 — Galxe Quest (msg 128268) — ⚠️ PARTIAL (SIWE + followSpace + both real X likes done; TWITTER creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-07 | **URL:** https://app.galxe.com/quest/AGNTHub/GCpABtZwKB | **Reward:** 20 Points (Galxe) | **Source:** @airdropfind drop 128268 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Galxe Quest (Type 10) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCpABtZwKB` (`type: Points`, `status: Active`). Window 2026/10/06 04:00 → 2026/10/12 04:00 GMT+7.
+- **✅ SIWE SignIn:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → JWT OK (GalxeID `LUZFfaqSPcJJ9to9HXzoG`).
+- **✅ followSpace(77675):** `{"followSpace":1}` (AGNT Hub followed on Galxe).
+- **✅ X actions (real, in-browser MCP Chrome):**
+  - Follow @TruthAgentAI → already following (`2080237951150063616-unfollow`) — https://x.com/TruthAgentAI
+  - Follow @agnt_hub → already following (`1838361774287958016-unfollow`) — https://x.com/agnt_hub
+  - Like @TruthAgentAI tweet → `unlike` state (liked) — https://x.com/TruthAgentAI/status/2107499214699683911
+  - Like @agnt_hub tweet → `unlike` state (liked) — https://x.com/agnt_hub/status/2107499872802730160
+- **X proof links:** https://x.com/TruthAgentAI/status/2107499214699683911 (like) | https://x.com/agnt_hub/status/2107499872802730160 (like)
+- **Creds (4):** GALXE_ID "Visit the Truth post" (id 730089067814846464) → `allow:false` | TWITTER "TruthAgentAI - Tweet Liker" (id 730089069995884544) → sync error `missing twitter args` | GALXE_ID "Visit the AGNT Hub post" (id 730089581285736448) → `allow:false` | TWITTER "agnt_hub - Tweet Liker" (id 730089583596797952) → sync error `missing twitter args`.
+- **⚠️ Blocked:** Both TWITTER like creds return `missing twitter args` — X (@osbornrdx) not linked at the Galxe account level (one-time manual setup at app.galxe.com → Settings → Social). The 2 GALXE_ID "Visit post" creds → `allow:false` (need real browser visit beacon while logged into Galxe).
+- **Status:** ⚠️ PARTIAL — all real X actions (follow+like) done; Galxe-side verification of TWITTER creds requires linking X OAuth to the Galxe account (manual, one-time). Same blocker as prior AGNT days (#334, #349, etc.).
 
 ### #361 CONSO (EtherBubu collab) — Whitelist Raffle (msg 128267) — ✅ DONE
 - **Date:** 2026-10-07 | **URL:** https://guild.xyz/etherbubu/conso-event → Google Form "₍ᐢ. .ᐢ₎ CONSO Whitelist Raffle" | **Reward:** Free Mint WL spot raffle + Chests | **Source:** @airdropfind drop 128267 / https://x.com/EtherBubu/status/2107487379447558466
