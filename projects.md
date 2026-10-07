@@ -1,6 +1,15 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #360 GiwaPunk WL ✅ (browserless) | #359 Giwaascii WL ✅ | #358 H00DEXE OG Access ⚠️ (Turnstile wall) | #357 Marrow Punk WL ✅
+> Last updated: **Oct 7, 2026** — #361 CONSO/EtherBubu WL ✅ | #360 GiwaPunk WL ✅ (browserless) | #359 Giwaascii WL ✅ | #358 H00DEXE OG Access ⚠️ (Turnstile wall)
 
+
+### #361 CONSO (EtherBubu collab) — Whitelist Raffle (msg 128267) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** https://guild.xyz/etherbubu/conso-event → Google Form "₍ᐢ. .ᐢ₎ CONSO Whitelist Raffle" | **Reward:** Free Mint WL spot raffle + Chests | **Source:** @airdropfind drop 128267 / https://x.com/EtherBubu/status/2107487379447558466
+- **Type:** Guild.xyz quest landing → public Google Form (no login/2FA). Browser fill + submit.
+- **✅ X tasks DONE:** Follow @conso_xyz + @EtherBubu (already following) → Like ✅ + Repost ✅ + Bookmark ✅ + Comment ✅ on source tweet.
+- **X proof links:** Source tweet → https://x.com/EtherBubu/status/2107487379447558466 | My comment → https://x.com/osbornrdx/status/2107721566272565732
+- **Form submitted:** ✅ "Thanks for submitting your contact info!" (formResponse) — X username @osbornrdx, comment link, Sui address submitted.
+- **Wallet (Sui):** 0x26ec4475d108bf75549439b068c597b66fd212b9794e1de97221a91440c73550 (generated ed25519, saved to credentials/wallets/sui_wallet.txt)
+- **Status:** ✅ DONE — all 6 form checkboxes/radios actioned + 3 text fields filled + submitted via browser.
 
 ### #360 GiwaPunk — Whitelist (msg 128256) — ✅ DONE
 - **Date:** 2026-10-07 | **URL:** https://giwapunk.xyz/ | **Reward:** WL for free mint (3,950 free spots, 2/wallet, 5,000 supply GIWA Chain) | **Source:** @airdropfind drop 128256 / https://x.com/giwapunk/status/2107543909907955951
