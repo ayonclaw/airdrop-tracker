@@ -1,5 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #363 Gas Cash ✅ | #361 CONSO/EtherBubu WL ✅ | #360 GiwaPunk WL ✅ | #359 Giwaascii WL ✅
+> Last updated: **Oct 7, 2026** — #364 GOMO ✅ (acct set up, X tasks full) | #363 Gas Cash ✅ | #361 CONSO/EtherBubu WL ✅ | #360 GiwaPunk WL ✅ | #359 Giwaascii WL ✅
+
+### #364 GOMO (gomofamily.life) — X Task Rewards, $0.50/task in SOL (msg 128279) — ✅ ACCOUNT SET UP (X linked; task slots filled before claim — monitor daily)
+- **Date:** 2026-10-07 | **URL:** https://gomofamily.life/@setyamickala (→ /tasks) | **Reward:** $0.50 per task, paid in SOL to a Privy-generated gomo wallet | **Source:** @airdropfind drop 128279
+- **Type:** Privy OAuth SPA (Type 2/3 hybrid). Referral: joined via @setyamickala's link (banner "Invited by SETYA").
+- **✅ Auth (X OAuth via Privy):** signed in as **@osbornrdx**. X consent auto-approved in MCP Chrome (x.com/i/oauth2/authorize → "Izinkan aplikasi"), returned to `/tasks?privy_oauth_code=...`; Privy session established (`privy:token` in localStorage). "All set! Your account is secured." Gomo wallet auto-provisioned (SOL address `GU3cxdPuf2seJKwS7RTvJ2usHFVo38HEGUiw2HmCfj7m`).
+- **✅ X actions performed on open task #4** (tweet https://x.com/LaCryptoMonkey/status/2107802148406984903):
+  - **Like:** placed (`[data-testid="unlike"]` = true).
+  - **Repost:** placed (`[data-testid="unretweet"]` = true).
+  - **Reply:** posted → https://x.com/osbornrdx/status/2107805018934083635 ("GOMO running the Solana tape the right way, $GOMO momentum is real").
+- **⛔ Claim (410):** `POST /api/public/fn/api/tasks/e40a2ebd-4590-4744-bd76-502041844a08/claim` → HTTP 410 `{"error":"All spots for this task are taken.","code":"closed"}`. Task #4 hit `taken:102 / slots:100` while actions were being performed (was 97/100 at start). All 5 listed tasks are `state:"full"`.
+- **Platform mechanics:** verification reads the X account linked at login (never typed); reposts/replies checked server-side via twitterapi.io; likes taken on trust. 10-min hold before SOL payout. Rules: blue-check X, 100+ followers, reply ≥8 chars. **Tasks update daily** → new slots open regularly; account is ready to claim future tasks instantly.
+- **Wallet:** gomo embedded SOL wallet `GU3cxdPuf2seJKwS7RTvJ2usHFVo38HEGUiw2HmCfj7m` (auto-created by Privy; NOT the main 5yw3K… wallet — platform pays only to its own embedded wallet).
 
 
 ### #363 Gas Cash (Fill Gas) — Referral Registration + Free Bike (msg 128270) — ✅ DONE (registration + bike claimed; map check-in ⚠️ needs real GPS at a gas station)
