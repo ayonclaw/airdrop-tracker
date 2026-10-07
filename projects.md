@@ -1,6 +1,16 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #359 Giwaascii WL ✅ (browserless) | #358 H00DEXE OG Access ⚠️ (Turnstile wall) | #357 Marrow Punk WL ✅ | #356 RiotToons WL ✅
+> Last updated: **Oct 7, 2026** — #360 GiwaPunk WL ✅ (browserless) | #359 Giwaascii WL ✅ | #358 H00DEXE OG Access ⚠️ (Turnstile wall) | #357 Marrow Punk WL ✅
 
+
+### #360 GiwaPunk — Whitelist (msg 128256) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** https://giwapunk.xyz/ | **Reward:** WL for free mint (3,950 free spots, 2/wallet, 5,000 supply GIWA Chain) | **Source:** @airdropfind drop 128256 / https://x.com/giwapunk/status/2107543909907955951
+- **Type:** Next.js (Vercel) whitelist — two-step: reply to pinned X post with EVM address, then paste address + reply link. POST `/api/list` `{addr,reply,hp}`. No wallet connect, no captcha. Browserless submit.
+- **✅ X tasks DONE** (confirmed state): Follow @giwapunk = FOLLOWING (Mengikuti); Like source post = LIKED. Reply posted with EVM address.
+- **X proof link (reply):** https://x.com/osbornrdx/status/2107645057998483598
+- **Source post:** https://x.com/giwapunk/status/2107543909907955951
+- **✅ Form submitted:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + reply link → `{"ok":true,"n":1473,"repeat":false}` (HTTP 200).
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE
 
 ### #359 Giwaascii — Whitelist (msg 128254) — ✅ DONE
 - **Date:** 2026-10-07 | **URL:** https://giwaascii.art/ | **Reward:** WL for OG draw, free mint (4,444 supply, GIWA Chain) | **Source:** @airdropfind drop 128254 / https://x.com/GiwaASCII/status/2107500557166612788
