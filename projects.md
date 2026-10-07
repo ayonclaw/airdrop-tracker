@@ -1,6 +1,15 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #358 H00DEXE OG Access ⚠️ (Turnstile wall) | #357 Marrow Punk WL ✅ | #356 RiotToons WL ✅ | #355 Pear Rewards Daily Streak ✅ (day 21)
+> Last updated: **Oct 7, 2026** — #359 Giwaascii WL ✅ (browserless) | #358 H00DEXE OG Access ⚠️ (Turnstile wall) | #357 Marrow Punk WL ✅ | #356 RiotToons WL ✅
 
+
+### #359 Giwaascii — Whitelist (msg 128254) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** https://giwaascii.art/ | **Reward:** WL for OG draw, free mint (4,444 supply, GIWA Chain) | **Source:** @airdropfind drop 128254 / https://x.com/GiwaASCII/status/2107500557166612788
+- **Type:** Next.js (Vercel) whitelist — paste-EVM-address form only, POST `/api/whitelist` `{addr,hp}`. No wallet connect, no captcha. Browserless submit.
+- **✅ Form submitted:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → `{"ok":true}` (HTTP 200). Endpoint found in chunk `0rnns9eqbguf0.js`.
+- **✅ X tasks DONE** (confirmed state): Follow @GiwaASCII = FOLLOWING (Mengikuti); Like source post = LIKED (unlike state); Repost = RETWEETED (unretweet state).
+- **X proof link:** https://x.com/GiwaASCII/status/2107500557166612788
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE
 
 ### #358 H00DEXE — OG Access (msg 128250) — ⚠️ PENDING (Turnstile hard wall)
 - **Date:** 2026-10-07 | **URL:** https://hoodexe.com/og-access | **Reward:** OG list eligibility for Oct 16, 2026 free mint (2,222 supply) | **Source:** @airdropfind drop 128250 / https://x.com/h00dexe/status/2098269966814364022
