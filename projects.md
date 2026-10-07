@@ -1,5 +1,31 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #367 Temrush WL DONE (follow+like+RT+QT+tag3, Apps Script ok:true) | #366 dHorse Genesis DONE | #365 Elios DONE | #364 GOMO DONE | #363 Gas Cash DONE
+> Last updated: **Oct 7, 2026** — #369 Hood Cabals WL DONE (follow+like+RT+QT, ok:true) | #368 The Squad WL DONE (receipt SQ-ED931212) | #367 Temrush WL DONE | #366 dHorse Genesis DONE | #365 Elios DONE
+### #369 Hood Cabals (hoodcabals.art) — Whitelist (msg 128284) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** https://www.hoodcabals.art/ | **Reward:** Genesis NFT whitelist (10,000 supply) | **Source:** @airdropfind drop 128284
+- **Type:** Type 4 (BROWSERLESS-FIRST) — static HTML + `app.js` → `POST /api/applications` JSON `{xUsername, xPostLink, walletAddress}`. No captcha, no wallet connect.
+- **Tasks + proof:**
+  - ✅ Follow @Hoodcabals — https://x.com/Hoodcabals (unfollow state confirmed)
+  - ✅ Like pinned post — https://x.com/hoodcabals/status/2107529532567945701 (unlike state confirmed)
+  - ✅ Repost pinned post — retweetConfirm clicked (unretweet state confirmed)
+  - ✅ Quote-tweet pinned post — Proof: https://x.com/osbornrdx/status/2107876935611326562
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM)
+- **Submission:** `POST /api/applications` → `{"ok":true}` HTTP 201 (first attempt hit a transient 502 "transmission could not be recorded", retry succeeded).
+- **Status:** ✅ DONE — 4 X tasks + wallet submitted.
+
+### #368 The Squad (thesquadnfts.xyz) — Whitelist (msg 128283) — ✅ DONE
+- **Date:** 2026-10-07 | **URL:** https://thesquadnfts.xyz/ | **Reward:** Whitelist (200 EVM approved) | **Source:** @airdropfind drop 128283 (drop title mislabeled "Temrush"; actual project = The Squad / @TheSquadNFT)
+- **Type:** Vite/React SPA → `POST /api/applications` JSON `{handle, wallet, website(honeypot), requestId(crypto.randomUUID), linkOpenings:{follow,like,repost,quote,comment}=1}`. Server requires ALL 5 linkOpenings flags = 1; returns `{receipt:"SQ-XXXXXXXX"}`.
+- **Tasks + proof:**
+  - ✅ Follow @TheSquadNFT — https://x.com/TheSquadNFT (unfollow state confirmed)
+  - ✅ Like post — https://x.com/TheSquadNFT/status/2106434620438831418 (unlike state confirmed)
+  - ✅ Repost post — retweetConfirm clicked (unretweet state confirmed)
+  - ✅ Quote-tweet post — Proof: https://x.com/osbornrdx/status/2107877238075199699
+  - ✅ Reply / tag friends — Proof: https://x.com/osbornrdx/status/2107877384003391857
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM)
+- **Submission:** `POST /api/applications` → `{"receipt":"SQ-ED931212"}` HTTP 201 (re-submit returns 409 "already has a whitelist application" = confirmed registered).
+- **Status:** ✅ DONE — 5 X tasks + wallet submitted.
+
+
 ### #367 Temrush (temrush.xyz) — Whitelist (msg 128282) — ✅ DONE
 - **Date:** 2026-10-07 | **URL:** https://www.temrush.xyz/ | **Reward:** Free mint (Robinhood, 4444 entities, 200 EVM approved) | **Source:** @airdropfind drop 128282
 - **Type:** Type 15 variant — vanilla JS static page + `wlForm` → Google Apps Script backend (`script.google.com/macros/s/.../exec`, POST `text/plain` JSON `{action:"submit", xUsername, wallet, quoteProof, tagFriendsProof}`).
