@@ -1,5 +1,25 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #365 Elios DONE (waitlist code FS3MQFF, pos 11205 + @eliospay followed) | #364 GOMO DONE | #363 Gas Cash DONE | #361 CONSO/EtherBubu WL DONE | #360 GiwaPunk WL DONE
+> Last updated: **Oct 7, 2026** — #366 dHorse Genesis DONE (all 6 tasks + Knight status, Taproot bc1p…98f6) | #365 Elios DONE | #364 GOMO DONE | #363 Gas Cash DONE | #361 CONSO/EtherBubu WL DONE
+### #366 dHorse Genesis (genesis.dhorse.fun) — BTC RGB Knight Tasks (msg 128281) — ✅ DONE (all 6 tasks + Knight status granted)
+- **Date:** 2026-10-07 | **URL:** https://genesis.dhorse.fun/ | **Reward:** 1,000 Horseshoes + Darkhorse Knight UDA + future RGB ecosystem airdrop eligibility | **Source:** @airdropfind drop 128281
+- **Type:** Type 2/3 hybrid — X OAuth (OAuth2 PKCE) login + in-app task dashboard + BTC Taproot address bind. Next.js SPA on Cloudflare Workers; API is same-origin `/api/*` (worker intermittently 500s = Cloudflare error 1101, transient — retry loop resolves).
+- **Login:** X OAuth2 (client_id Vk5taHlj..., PKCE). `/api/x/login` (POST, needs Turnstile) returns authorizeUrl → click "Authorize app" on x.com/i/oauth2/authorize → `/api/x/callback` sets `genesis_session` cookie. Handle @osbornrdx bound.
+- **Referral code:** C1BQXC (auto-assigned).
+- **Tasks (all server-verified via POST /api/tasks/verify {task}):**
+  1. **address** ✅ — bound BTC Taproot `bc1pwsp4qc0p78thxehm7welz7xpvh7dqvz8ejdfm68ljzgduqeg8vxq0n98f6` (POST /api/address). Freshly generated BIP86 Taproot wallet (embit, mnemonic saved to ~/airdrop/credentials/wallets/btc_taproot_wallet.txt).
+  2. **follow** ✅ — followed @RGBHorse (official) + @RGB_Bitcoin + @FedericoTenga + @birk1907; registered follow-clicks via GET /api/tasks/follow-click?handle=X.
+  3. **like** ✅ — liked campaign post https://x.com/RGBHorse/status/2106768539105505447
+  4. **repost** ✅ — reposted the same post (unretweet testid confirmed).
+  5. **tweet** ✅ — posted Genesis declaration: https://x.com/osbornrdx/status/2107856023650447525 (includes invite code C1BQXC).
+  6. **tg** ✅ — bound Telegram @mxsyxfxx via bot https://t.me/RGBHorse_bot?start=a57eb413... (Telethon StartBotRequest) + joined group https://t.me/RGB_Horse. Bot replied "Linked successfully ✅".
+- **Proof - X like/repost:** https://x.com/RGBHorse/status/2106768539105505447
+- **Proof - X declaration:** https://x.com/osbornrdx/status/2107856023650447525
+- **Proof - X follows:** https://x.com/RGBHorse | https://x.com/RGB_Bitcoin | https://x.com/FedericoTenga | https://x.com/birk1907
+- **Proof - Wallet:** bc1pwsp4qc0p78thxehm7welz7xpvh7dqvz8ejdfm68ljzgduqeg8vxq0n98f6
+- **Proof - Telegram:** @mxsyxfxx joined t.me/RGB_Horse, bot-linked (payload a57eb413348dac1afe77a2d9bea864e01d3beed2).
+- **Result:** `knight: true` — "All tasks complete — Darkhorse Knight status granted!" (completedTasks: address, follow, knight_grant, like, repost, tg, tweet).
+- **Note:** Server `/api/tasks` and `/api/me` returned intermittent Cloudflare error 1101 during the session; a browser-side retry loop (15-20 attempts) was required. No wallet connect needed — just Taproot address bind.
+- **Status:** DONE — Darkhorse Knight granted, all 6 tasks + knight_grant completed.
 ### #365 Elios (eliospay.com) — Waitlist + X Follow (msg 128280) — DONE
 - **Date:** 2026-10-07 | **URL:** https://www.eliospay.com/r/T9W26GB | **Reward:** Early-access waitlist slot (self-custodial stablecoin account + card on HyperEVM/Hyperliquid) | **Source:** @airdropfind drop 128280
 - **Type:** Type 18/4 hybrid — email-only waitlist behind Supabase email-OTP (jjcgqrquprizalolysif.supabase.co auth). Next.js SPA; submit endpoint POST https://www.eliospay.com/api/signup requires the authenticated Supabase session cookie (sb-jjcgqrquprizalolysif-auth-token).
