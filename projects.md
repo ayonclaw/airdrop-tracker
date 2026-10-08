@@ -1,5 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 8, 2026** — #370 Snoozr DONE (70 SUP: quiz+share) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
+> Last updated: **Oct 8, 2026** — #371 Arcus WL DONE | #370 Snoozr DONE (70 SUP) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
+### #371 Arcus (waitlist.arcus.xyz) — Waitlist (msg 128292) — ✅ DONE
+- **Date:** 2026-10-08 | **URL:** https://waitlist.arcus.xyz/ | **Reward:** Season 1 points / leaderboard allocation | **Source:** @airdropfind drop 128292 ("Arcus Season 1 Week 1 Done!", links https://app.arcus.xyz/rewards)
+- **Type:** Type 3 (WEB3-WALLET) + Privy X-OAuth link — Privy app `cmobo450d00ug0cjy8hcx1645`, backend `waitlist.vee-cinco-prod.com`. Join requires a **Privy identity token with a linked X account** (wallet-only token rejected: `403 {"error":"identity token has no linked X account"}`).
+- **Method (fully browserless except the X consent click):**
+  1. SIWE via `eth_account` against `auth.privy.io/api/v1/siwe/init` + `/siwe/authenticate` — exact message template lifted from `arcus_wl.js` (`kL=({address,chainId,nonce})`): `waitlist.arcus.xyz wants you to sign in with your Ethereum account:` … `URI: https://waitlist.arcus.xyz` / `Version: 1` / `Chain ID: 4663` (Robinhood Chain) / `Nonce` / `Issued At` / `Resources:
+- https://privy.io`. Needs a **browser User-Agent** (default Python UA → Cloudflare 403).
+  2. `POST /api/v1/oauth/init {provider:"twitter", redirect_to, code_challenge(PKCE S256), state_code}` with `privy-id-token` + `authorization: Bearer <access_token>` → returns X authorize URL.
+  3. Open the X authorize URL in the persistent Chrome (X cookies injected via `Storage.setCookies`), click **"Izinkan aplikasi"** (Indonesian-locale X). Privy 302s to `waitlist.arcus.xyz/?privy_oauth_state=…&privy_oauth_provider=twitter&privy_oauth_code=…`.
+  4. `POST /api/v1/oauth/link {authorization_code, code_type:"raw", state_code, code_verifier}` → 200. **Note:** `code_type` MUST be `"raw"` (not `"oauth"`); the code lives in `privy_oauth_code` (NOT `code`), and the plain `oauth/callback` URL's `code` is single-use/consumed by the browser redirect — capture the FINAL `waitlist.arcus.xyz` URL, not the callback.
+- **Tasks + proof:**
+  - ✅ X account linked to Privy — `linked_accounts: [('wallet','0x8CCE5793'), ('twitter_oauth','osbornrdx')]`
+  - ✅ Follow @arcus_xyz (X OAuth consent = app authorization; no separate follow task on the waitlist)
+  - ✅ Wallet submitted — 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, chain 4663)
+- **Submission:** `POST https://waitlist.vee-cinco-prod.com/v1/waitlist/joinWithAddress {ethereumAddress, signature("Join Arcus Waitlist"), xHandle:"osbornrdx"}` → **200** `{"userId":"c967531b-f9bb-4829-961e-9391ce5254e3","ethereumAddress":"0x8cce57930bc7dfcb133f5d34889d362cb1bc282d","xHandle":"osbornrdx","joinedAt":1791434198457,"position":1791434198457274334,"isFriend":false}`
+- **Status:** ✅ DONE — waitlist join confirmed (userId + position returned). Drop itself was a weekly points/leaderboard status update; the underlying waitlist was still open and was joined.
+
 ### #369 Hood Cabals (hoodcabals.art) — Whitelist (msg 128284) — ✅ DONE
 - **Date:** 2026-10-07 | **URL:** https://www.hoodcabals.art/ | **Reward:** Genesis NFT whitelist (10,000 supply) | **Source:** @airdropfind drop 128284
 - **Type:** Type 4 (BROWSERLESS-FIRST) — static HTML + `app.js` → `POST /api/applications` JSON `{xUsername, xPostLink, walletAddress}`. No captcha, no wallet connect.
