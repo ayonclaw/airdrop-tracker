@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 7, 2026** — #369 Hood Cabals WL DONE (follow+like+RT+QT, ok:true) | #368 The Squad WL DONE (receipt SQ-ED931212) | #367 Temrush WL DONE | #366 dHorse Genesis DONE | #365 Elios DONE
+> Last updated: **Oct 8, 2026** — #370 Snoozr DONE (70 SUP: quiz+share) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
 ### #369 Hood Cabals (hoodcabals.art) — Whitelist (msg 128284) — ✅ DONE
 - **Date:** 2026-10-07 | **URL:** https://www.hoodcabals.art/ | **Reward:** Genesis NFT whitelist (10,000 supply) | **Source:** @airdropfind drop 128284
 - **Type:** Type 4 (BROWSERLESS-FIRST) — static HTML + `app.js` → `POST /api/applications` JSON `{xUsername, xPostLink, walletAddress}`. No captcha, no wallet connect.
@@ -5342,3 +5342,17 @@
 - **Blocker:** @osbornrdx (`verified:False`, 1,036 followers) — NO blue check. GOMO rejects non-blue accounts.
 - **Econ:** cost $1 buy → reward ~$2. Thin margin, only 1 task open (others 100/100 full). Not worth.
 - **Status:** ❌ SKIPPED per Rey (needs blue + $1 buy for $2 reward)
+
+### #370 Snoozr (snoozr.me) — Web Dashboard Quiz (msg 128290) — ✅ DONE
+- **Date:** 2026-10-08 | **URL:** https://snoozr.me/?ref=BYYE75MD | **Reward:** 70 SUP token | **Source:** @airdropfind drop 128290
+- **Type:** Type 2 (WEB-DASHBOARD) — Next.js SPA. Auth via Zitadel OAuth (`auth.davinqi.cc`, Google IdP) OR **SIWE wallet** (`/api/auth/siwe/nonce` + `/api/auth/siwe/verify`). Chose the browserless SIWE path.
+- **Auth method:** EIP-4361 message signed with EVM key (`eth_account`), chainId **56 (BNB Chain)** — chain 1 rejected with "Switch to BNB Chain or Base". Session returned `userId f12fe47d-...`.
+- **Tasks + server confirmations:**
+  - ✅ Register / sign-in — `{"session":{"method":"wallet","userId":"f12fe47d-9ac0-4f40-b32d-ca0453c85538","address":"0x8cce...282d"}}`
+  - ✅ Complete Quiz (5 Q: later/alarm/phone/ideas/sleepin, quizVersion 2) → `{"typeId":"snoozeAddict"}` → **+50 SUP**
+  - ✅ Share result on X → `POST /api/sup/share` → **+20 SUP**
+- **Final balance:** `{"balance":70,"weekBalance":70,"inviteCode":"MGH368P2","claimed":{"quiz":true,"share":true}}`
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (BNB Chain SIWE)
+- **Invite/referral code:** MGH368P2
+- **Status:** ✅ DONE — 70 SUP claimed (quiz 50 + share 20). Invite-friend task (+30) left open (needs external referrals).
+- **Note:** `/api/auth/siwe/verify` is slow (~120s, occasional 502 from Vercel edge) — nonce TTL is short, so use a fresh nonce + long curl timeout (`-m 200`). requests lib timed out; curl succeeded.
