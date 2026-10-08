@@ -1,5 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 8, 2026** — #374 Pear Daily Streak DONE (30d, 11,834 pts) | #373 AGNT S4W2D3 Galxe PARTIAL | #372 Semi Vivus WL DONE | #371 Arcus WL DONE
+> Last updated: **Oct 8, 2026** — #375 FungoLabs WL SEALED (in review) | #374 Pear Daily Streak DONE (30d, 11,834 pts) | #373 AGNT S4W2D3 Galxe PARTIAL | #372 Semi Vivus WL DONE
+### #375 FungoLabs Genesis Whitelist (fungolabs.org/apply) — ✅ SEALED (in review)
+- **Date:** 2026-10-08 | **URL:** https://fungolabs.org/apply/ | **Reward:** Genesis whitelist — 500 free-mint spots (whitelist + nominees), gas only | **Source:** @airdropfind drops 128225 (original WL, Oct 6) + 128302 (update, Oct 8: "only ~20% of whitelist spots filled") | **X:** @fungolabs | **Track:** wl
+- **Type:** Type 2/3 hybrid — Vite SPA + **X OAuth** (`/api/auth/x/start` → `x.com/i/oauth2/authorize`) + **Cloudflare Turnstile** (`0x4AAAAAAFNfzjq6DXZ0_TUm`, auto-solved in real browser session) + 4 X tasks + 3 written questions + seal. API base `/api` with `x-fungo: 1` header (custom WAF-ish guard).
+- **✅ X OAuth:** Continue with X → Authorize → `/api/auth/x/callback` → signed in as @osbornrdx (profile read: name/handle/avatar/counts/account age).
+- **✅ 4 X tasks (real actions, verified on X):**
+  - ✅ Follow [@fungolabs](https://x.com/fungolabs) — `Mengikuti` confirmed
+  - ✅ Like [announcement tweet 2107951087345172878](https://x.com/fungolabs/status/2107951087345172878) — `unlike` testid confirmed
+  - ✅ Reply — https://x.com/osbornrdx/status/2108145877999337913 ("Seen by all, known by one. Encrypted NFTs on Ethereum with FHE on Zama...")
+  - ✅ Repost [announcement tweet 2107951087345172878](https://x.com/fungolabs/status/2107951087345172878) — `unretweet` testid confirmed
+- **✅ 3 questions answered** (sealed / corner / why — saved via `PUT /api/answers`, each ≥20 chars).
+- **✅ Seal:** `POST /api/submit` → status `draft` → **`submitted`**. Checker confirms: **"@osbornrdx: In review. has a sealed application. The team reads every application by hand."**
+- **Method:** MCP Chrome DevTools server was DOWN (13 consecutive failures) → drove the live Chrome @9222 directly via **Playwright `connect_over_cdp`** (contexts[0], X already logged in). Turnstile auto-solved by the real browser session (no sidecar token needed — the OAuth anchor's `cf=` param was minted client-side by the page's own Turnstile widget).
+- **Wallet:** not required at apply stage (whitelist is X-account based; wallet linked later before mint).
+- **Status:** ✅ SEALED — in review. No further action; team picks by hand, list announced on X.
+- **Proof links:** follow @fungolabs — like+repost https://x.com/fungolabs/status/2107951087345172878 — reply https://x.com/osbornrdx/status/2108145877999337913
+
 ### #374 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
 - **Date:** 2026-10-08 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
 - **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v9 (CDP against real Chrome @9222) ran clean — 22 X cookies loaded, CDP connect OK, dashboard loaded logged-in on first try (no OAuth wall).
