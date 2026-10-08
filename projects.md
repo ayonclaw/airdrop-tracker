@@ -1,5 +1,22 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 8, 2026** — #372 Semi Vivus WL DONE | #371 Arcus WL DONE | #370 Snoozr DONE (70 SUP) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
+> Last updated: **Oct 8, 2026** — #373 AGNT S4W2D3 Galxe PARTIAL | #372 Semi Vivus WL DONE | #371 Arcus WL DONE | #370 Snoozr DONE (70 SUP) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
+### #373 AGNT Weekly Socials | S4 Week 2 - Day 3 (app.galxe.com/quest/AGNTHub/GCnXBtZRyY) — Galxe Quest (msg 128296) — ⚠️ PARTIAL (API + real X likes done; visit creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-08 | **URL:** https://app.galxe.com/quest/AGNTHub/GCnXBtZRyY | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128296 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCnXBtZRyY` (`type: Points`, `status: Active`, numberID 365091). Standalone day-campaign (NOT a child of a Parent).
+- **API pipeline (SIWE via eth_account 0.13.7, python3.12):**
+  - ✅ SIWE SignIn → JWT (needed ~5 retries; Galxe `signin` was in a server-side outage — `"no healthy upstream"` / `"Fail to update jwt info: context deadline exceeded"` for ~2 min, then recovered)
+  - ✅ `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+  - ⚠️ `TWITTER` creds `730425162708549632` (TruthAgentAI Tweet Liker 2107835506373620006) + `730425708651741184` (agnt_hub Tweet Liker 2107836028388003979) → `"missing twitter args"` (X OAuth not linked at Galxe account level — architectural)
+  - ⚠️ `GALXE_ID` creds `730425160510734336` (Visit the Truth post) + `730425711055077376` (Visit the AGNT Hub post) → `allow:false` (visit creds need real browser visit beacon + X OAuth)
+- **Real X actions (raw CDP, logged-in @osbornrdx — MCP wrapper was down, used websocket-client against :9222):**
+  - ✅ Like [TruthAgentAI tweet 2107835506373620006](https://x.com/TruthAgentAI/status/2107835506373620006) — `like`→`unlike` testid confirmed, count 40→41
+  - ✅ Like [agnt_hub tweet 2107836028388003979](https://x.com/agnt_hub/status/2107836028388003979) — `like`→`unlike` testid confirmed, count →45
+  - ✅ Follow [@agnt_hub](https://x.com/agnt_hub) — `Mengikuti` confirmed (bonus, recurring weekly reputation)
+  - ✅ Follow [@TruthAgentAI](https://x.com/TruthAgentAI) — `Mengikuti` confirmed (bonus)
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, SIWE)
+- **Status:** ⚠️ PARTIAL — SIWE ✅, followSpace ✅, 2× X like ✅, 2× X follow ✅. Blocked: TWITTER creds need Galxe-level X OAuth link (one-time manual setup); visit creds need real browser visit + X OAuth.
+- **X proof links:** https://x.com/TruthAgentAI/status/2107835506373620006 (like) — https://x.com/agnt_hub/status/2107836028388003979 (like) — follows @agnt_hub + @TruthAgentAI
+
 ### #372 Semi Vivus (semivivus.world) — Whitelist (msg 128294) — ✅ DONE
 - **Date:** 2026-10-08 | **URL:** https://semivivus.world/ | **Reward:** Genesis whitelist (696 supply, freemint) | **Source:** @airdropfind drop 128294 (links https://opensea.io/collection/semivivus, @semi_vivus)
 - **Type:** Type 4/SPA hybrid — TanStack Start (`@tanstack/react-start`) SPA. Register form = 3 X tasks (like/repost confirm + comment-link proof) + EVM wallet. Submit calls TanStack server functions at `POST /_serverFn/<hash>` with Seroval-encoded body (`{data:{address,ref,tasks[],commentUrl}}`). Browserless curl to the endpoint works for auth (403 without `Origin`/`Referer`/`User-Agent` headers, 500 with them because the body must be Seroval-serialized) — so executed via the site's own React form in CDP Chrome.
