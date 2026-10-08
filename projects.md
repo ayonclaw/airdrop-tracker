@@ -1,5 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 8, 2026** — #375 FungoLabs WL SEALED (in review) | #374 Pear Daily Streak DONE (30d, 11,834 pts) | #373 AGNT S4W2D3 Galxe PARTIAL | #372 Semi Vivus WL DONE
+> Last updated: **Oct 8, 2026** — #376 Robolynz WL DONE (Applicant #17718) | #375 FungoLabs WL SEALED (in review) | #374 Pear Daily Streak DONE (30d) | #373 AGNT S4W2D3 Galxe PARTIAL
+### #376 Robolynz Waitlist (roblynz.art/apply) — ✅ DONE (Applicant #17718)
+- **Date:** 2026-10-08 | **URL:** https://www.roblynz.art/apply | **Reward:** Whitelist (5,555 supply, free mint Robinhood Chain) | **Source:** @airdropfind drop 128310 | **X:** @roblynzhood | **Track:** wl
+- **Type:** Type 4 browserless — SvelteKit SPA, 4-step form (X username → tasks → EVM wallet → filed). No wallet connect / no signature ("We only store your X username and wallet address. Nothing gets signed.").
+- **✅ 4 X tasks (real actions, verified on X):**
+  - ✅ Follow [@roblynzhood](https://x.com/roblynzhood) — `Mengikuti` confirmed
+  - ✅ Like [tweet 2107882525125435787](https://x.com/roblynzhood/status/2107882525125435787) — `unlike` testid confirmed
+  - ✅ Repost [tweet 2107882525125435787](https://x.com/roblynzhood/status/2107882525125435787) — `unretweet` testid confirmed
+  - ✅ Reply tagging 2 friends — https://x.com/osbornrdx/status/2108230481930277083 ("Two goblins who need to be on the @roblynzhood list: @0xkenzolee @AirdropStario")
+- **✅ Submit:** `POST /api/apply` → `{"ok":true,"id":17718,"handle":"osbornrdx","createdAt":"2026-10-08T16:12:10.759Z"}`
+- **Method:** Browserless API submit (endpoint from JS bundle: `fetch("/api/apply")` with `{handle, wallet, tasks:{follow, likeRt, tag}}`). X actions via Playwright `connect_over_cdp` (MCP Chrome DevTools server down) against live Chrome @9222 (X already logged in as @osbornrdx).
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Status:** ✅ DONE — waitlist registered (Applicant No. 17718), all 4 X tasks completed with proof.
+- **Proof links:** follow https://x.com/roblynzhood — like+repost https://x.com/roblynzhood/status/2107882525125435787 — reply https://x.com/osbornrdx/status/2108230481930277083
+
 ### #375 FungoLabs Genesis Whitelist (fungolabs.org/apply) — ✅ SEALED (in review)
 - **Date:** 2026-10-08 | **URL:** https://fungolabs.org/apply/ | **Reward:** Genesis whitelist — 500 free-mint spots (whitelist + nominees), gas only | **Source:** @airdropfind drops 128225 (original WL, Oct 6) + 128302 (update, Oct 8: "only ~20% of whitelist spots filled") | **X:** @fungolabs | **Track:** wl
 - **Type:** Type 2/3 hybrid — Vite SPA + **X OAuth** (`/api/auth/x/start` → `x.com/i/oauth2/authorize`) + **Cloudflare Turnstile** (`0x4AAAAAAFNfzjq6DXZ0_TUm`, auto-solved in real browser session) + 4 X tasks + 3 written questions + seal. API base `/api` with `x-fungo: 1` header (custom WAF-ish guard).
