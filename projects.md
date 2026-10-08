@@ -1,5 +1,18 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 8, 2026** — #371 Arcus WL DONE | #370 Snoozr DONE (70 SUP) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
+> Last updated: **Oct 8, 2026** — #372 Semi Vivus WL DONE | #371 Arcus WL DONE | #370 Snoozr DONE (70 SUP) | #369 Hood Cabals WL DONE | #368 The Squad WL DONE
+### #372 Semi Vivus (semivivus.world) — Whitelist (msg 128294) — ✅ DONE
+- **Date:** 2026-10-08 | **URL:** https://semivivus.world/ | **Reward:** Genesis whitelist (696 supply, freemint) | **Source:** @airdropfind drop 128294 (links https://opensea.io/collection/semivivus, @semi_vivus)
+- **Type:** Type 4/SPA hybrid — TanStack Start (`@tanstack/react-start`) SPA. Register form = 3 X tasks (like/repost confirm + comment-link proof) + EVM wallet. Submit calls TanStack server functions at `POST /_serverFn/<hash>` with Seroval-encoded body (`{data:{address,ref,tasks[],commentUrl}}`). Browserless curl to the endpoint works for auth (403 without `Origin`/`Referer`/`User-Agent` headers, 500 with them because the body must be Seroval-serialized) — so executed via the site's own React form in CDP Chrome.
+- **Target post:** https://x.com/semi_vivus/status/2107961684044190016
+- **Tasks + proof:**
+  - ✅ Like the post — https://x.com/semi_vivus/status/2107961684044190016 (unlike state confirmed after click)
+  - ✅ Repost the post — https://x.com/semi_vivus/status/2107961684044190016 (unretweet state confirmed after menu click "Posting ulang")
+  - ✅ Comment / reply on the post — Proof: https://x.com/osbornrdx/status/2108058551507931462 ("Half alive. Ready for the chrome. @semi_vivus")
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM)
+- **Submission:** form submit → redirected to `/w/0x8cce...282d` profile page. **"You're in"** confirmation, STANDING **130** (100 join + 5 like + 5 repost + 20 comment), 3/3 tasks Done.
+- **Status:** ✅ DONE — whitelist application submitted, wallet on the list, standing 130.
+
+
 ### #371 Arcus (waitlist.arcus.xyz) — Waitlist (msg 128292) — ✅ DONE
 - **Date:** 2026-10-08 | **URL:** https://waitlist.arcus.xyz/ | **Reward:** Season 1 points / leaderboard allocation | **Source:** @airdropfind drop 128292 ("Arcus Season 1 Week 1 Done!", links https://app.arcus.xyz/rewards)
 - **Type:** Type 3 (WEB3-WALLET) + Privy X-OAuth link — Privy app `cmobo450d00ug0cjy8hcx1645`, backend `waitlist.vee-cinco-prod.com`. Join requires a **Privy identity token with a linked X account** (wallet-only token rejected: `403 {"error":"identity token has no linked X account"}`).
