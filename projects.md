@@ -1,5 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 8, 2026** — #377 Sible Network DONE (17.9 SIB, mining active) | #376 Robolynz WL DONE (Applicant #17718) | #375 FungoLabs WL SEALED (in review) | #374 Pear Daily Streak DONE (30d) | #373 AGNT S4W2D3 Galxe PARTIAL
+> Last updated: **Oct 9, 2026** — #378 Hop Heads WL DONE (pad #484, @osbornrdx) | #377 Sible Network DONE (17.9 SIB) | #376 Robolynz WL DONE | #375 FungoLabs WL SEALED
+
+### #378 Hop Heads Allowlist (hopheads.xyz) — ✅ DONE (pad #484, @osbornrdx)
+- **Date:** 2026-10-09 | **URL:** https://www.hopheads.xyz/ | **Reward:** Free mint WL on Robinhood Chain (colourful frogs NFT) | **Source:** @airdropfind drop 128315 | **X:** @hopheadsarc | **Track:** nft
+- **Type:** Type 3/4 hybrid — Next.js SPA allowlist with **X OAuth (server-verified)** + 5 on-site quests + fly-catching minigame + EVM wallet submit. Server (`POST /api/allowlist`) validates the X session AND the real quote/reply tweet URLs.
+- **✅ Full flow completed (all real actions, proof links below):**
+  - ✅ Catch 8 flies (minigame) — **16.3s** (clicked fly to extend tongue; primed mouth before last fly) — 484th pad
+  - ✅ Connect X + follow [@hopheadsarc](https://x.com/hopheadsarc) — OAuth as @osbornrdx → "Connected as @osbornrdx" → Confirm
+  - ✅ Like + repost pinned post — [x.com/hopheadsarc/status/2108230222164414673](https://x.com/hopheadsarc/status/2108230222164414673) (like LIKED + repost REPOSTED confirmed via `[data-testid]`)
+  - ✅ Quote the pinned post — **proof:** [x.com/osbornrdx/status/2108383358250279057](https://x.com/osbornrdx/status/2108383358250279057)
+  - ✅ Tag 3 friends in comments — **proof:** [x.com/osbornrdx/status/2108383625674961088](https://x.com/osbornrdx/status/2108383625674961088) (@Hoodcabals @TemrushNFTs @TheSquadNFT)
+  - ✅ Submit EVM wallet — 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D → recorded on allowlist
+- **Server confirmation:** `GET /api/allowlist` → entry `{address:0x8cce...282d, handle:osbornrdx, flyTimeMs:16300, createdAt:2026-10-09T02:24:25Z}`. POST re-submit returned 409 "already in the pond" (expected — registered).
+- **Method:** Browserless recon (curl + JS bundle) mapped the 7-step quest + `/api/allowlist` shape. Executed via MCP Chrome on Playwright Chromium @9222 (X cookies injected via CDP `Storage.setCookies`; system Chrome is x86/QEMU-segfault on this aarch64 box). X actions via intent URLs + `evaluate_script` click handlers (Indonesian locale: Ikuti/Mengikuti, Repost). Minigame auto-played via synthesized `MouseEvent` clicks on the fly's live `transform` coords.
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **X:** @osbornrdx | **Handle record:** @osbornrdx
+- **Status:** ✅ DONE — pad #484 of 484+ on the allowlist, all 5 quests server-verified with real proof URLs.
 
 ### #377 Sible Network (mine.sible.network/Airdropfind) — ✅ DONE (balance 17.9 SIB, mining active)
 - **Date:** 2026-10-08 | **URL:** https://mine.sible.network/Airdropfind | **Reward:** Confirmed (Sible mining points / token) | **Source:** @airdropfind drop 128311 | **X:** @scale_networkai | **Track:** app
