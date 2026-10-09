@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 9, 2026** — #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+> Last updated: **Oct 9, 2026** — #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
 ### #385 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
 - **Date:** 2026-10-09 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
 - **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v9 (CDP against real Chrome @9222) — this run hit the OAuth login wall (script's JS `.click()` on the X consent button did not fire the React handler; 17 no-op clicks). Fixed by switching to **real Playwright mouse events** (`mouse.move` → `mouse.down` → `mouse.up`) on the consent button, which navigated correctly to `/dashboard`.
@@ -9,6 +9,24 @@
 - **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
 - **Status:** ✅ DONE — daily streak claimed (day 31), Claim button returned `clicked`.
 - **Fix note:** v10 flow = real mouse click for Privy/X-consent (JS + CDP `Input.dispatchMouseEvent` + MCP click all failed to trigger the OAuth consent handler). Saved to `/tmp/pear_v10.py`; recommend porting into `pear_daily.py` for future cron runs.
+
+
+### #386 Coincamps — Galxe Quest "No Gimmicks!!! Read to Earn" (app.galxe.com/quest/Coincamps/GCUMBtZjzn) — Galxe Quest (msg 128328) — ✅ PARTIAL (API + real X follow/quote done; TWITTER creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-09 | **URL:** https://app.galxe.com/quest/Coincamps/GCUMBtZjzn | **Reward:** $500 USDT / 100 random winners | **Source:** @airdropfind drop 128328 | **X:** @coincamps + @Mesoc_DCS | **Track:** galxe
+- **Type:** Type 10 (GALXE-QUEST) — `app.galxe.com/quest/<alias>/<id>` → `galxe-quest-execution` skill pipeline.
+- **✅ SIWE login (browserless):** `graphigo.prd.galaxy.eco/query` SignIn via `eth_account` (wallet 0x8CCE...282D) → JWT OK. Space `Coincamps` resolved → **spaceId 86739**.
+- **✅ followSpace(86739)** → `{"followSpace":1}`.
+- **✅ GALXE_ID "Follow Coincamps on Galxe" (credId 723020702793334784)** → `syncCredentialValue` → **allow:true** (auto-completed).
+- **✅ X actions (@osbornrdx, MCP Chrome, verified via button-state):**
+  - ✅ Follow [@coincamps](https://x.com/coincamps) — button flipped `Ikuti @coincamps` → `Mengikuti`
+  - ✅ Follow [@Mesoc_DCS](https://x.com/Mesoc_DCS) — profile button `Mengikuti @Mesoc_DCS`
+  - ✅ Like [announcement tweet 2108478456845713822](https://x.com/coincamps/status/2108478456845713822) — clicked like
+  - ✅ Quote-tweet same tweet → **[quote post](https://x.com/osbornrdx/status/2108521842873073809)** ("Postingan Anda sudah terkirim")
+- **⚠️ TWITTER creds BLOCKED (architectural):** `syncCredentialValue` for all 3 TWITTER creds (coincamps Followers 224400330243874816, Mesoc_DCS Followers 664698685036167168, Tweet Quoters 731070651665743872) returns `{"errors":[{"message":"missing twitter args",...}]}` — requires X OAuth linked at the Galxe account level. No inline syncOption bypass exists (adding `tweetId`/`twitterHandle` → 422). Same wall as AGNT/MTX/Trady.
+- **⚠️ GALXE_ID "Visit the coincamps read to earn" (731016428580241408):** `allow:false` — visit-based cred requires a real browser visit with X OAuth linked. Not syncable via API.
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, Galxe SIWE)
+- **Status:** ✅ PARTIAL — SIWE + followSpace + GALXE_ID follow-space cred auto-completed; X follow×2 + like + quote done (real actions). Blocked on Galxe account-level X OAuth linking (one-time manual setup) for the 3 TWITTER creds + the visit cred.
+- **X proof links:** Follow → https://x.com/coincamps | Follow → https://x.com/Mesoc_DCS | Like/Quote target → https://x.com/coincamps/status/2108478456845713822 | Quote post → https://x.com/osbornrdx/status/2108521842873073809
 
 
 ### #383 Catalyst (catalyst.app) — Email + X Waitlist (msg 128323) — ✅ DONE
