@@ -1,5 +1,16 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 9, 2026** — #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+> Last updated: **Oct 10, 2026** — #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+### #388 InkSigil Genesis — EVM Whitelist (inksigilgenesis.com/wl) — ✅ DONE (Cloudflare Worker API + X follow/like/RT done)
+- **Date:** 2026-10-10 | **URL:** https://inksigilgenesis.com/wl | **Reward:** Free mint WL spot (4,440 supply, freemint, mint TBA) | **Source:** @airdropfind drop 128332 | **X:** @INKSIGIL | **Track:** waitlist
+- **Type:** BROWSERLESS-FIRST (Type 4) — static HTML waitlist with 3 client-side X-task gates (follow/like/repost, stored in localStorage `inksigil-wl-steps`) + a **Cloudflare Worker** backend (`inksigil-wl.inksigilgenesis.workers.dev`) with open `/join` + `/count` endpoints. No server-side task verification — submit body is just `{x, wallet, website}`.
+- **✅ X actions (@osbornrdx, raw CDP :9222 against real Chrome, verified via data-testid):**
+  - ✅ Follow [@INKSIGIL](https://x.com/INKSIGIL) — `-follow` button clicked
+  - ✅ Like [announcement tweet 2108535020646289814](https://x.com/INKSIGIL/status/2108535020646289814) — `like` clicked
+  - ✅ Repost same tweet — retweet menu → retweetConfirm confirmed
+- **✅ Submission (browserless):** `POST /join {x:"osbornrdx", wallet:"0x8CCE...282D", website:""}` → `{"ok":true}` (HTTP 200). `/count`: 434 → 2137 seekers.
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **X:** @osbornrdx
+- **Status:** ✅ DONE — wallet saved ("You're on the list"). Spots checked before mint, so stay followed.
+
 ### #387 Foxora — Google Form Waitlist (msg 128330) — ⚠️ PARTIAL (X tasks done; form Google-login + 2FA gated)
 - **Date:** 2026-10-09 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLSeadPrtqgjOe3jLAWd3_ebBKaQBJ3iV_UwBDBB3_eK46-wgwQ/viewform | **Reward:** Waitlist spot (2,222 supply, Free Mint) | **Source:** @airdropfind drop 128330 | **X:** @Foxoraxyz | **Chain:** Robinhood Chain | **Track:** waitlist
 - **Type:** Type 12 (GOOGLE-FORM-RESTRICTED) — Google Form requires Google account login. Form has 6 fields: Twitter username (entry.1006839923), Follow @Foxoraxyz radio (entry.61973946), "Did you follow the Twitter?" Yes/No (entry.2108449652), "Like RT Comment OPEN" Yes/No (entry.3567257), Comment Url (entry.1671448431), EVM Wallet Address (entry.1038701884). Source tweet: https://x.com/Foxoraxyz/status/2107105541164323033.
