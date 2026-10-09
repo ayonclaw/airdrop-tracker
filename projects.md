@@ -5524,3 +5524,8 @@
 - **Invite/referral code:** MGH368P2
 - **Status:** ✅ DONE — 70 SUP claimed (quiz 50 + share 20). Invite-friend task (+30) left open (needs external referrals).
 - **Note:** `/api/auth/siwe/verify` is slow (~120s, occasional 502 from Vercel edge) — nonce TTL is short, so use a fresh nonce + long curl timeout (`-m 200`). requests lib timed out; curl succeeded.
+
+### #382 Jumatan (google.com/search?q=masjid+terdekat) — Joke/Meme Post (msg 128321) — ⛔ SKIPPED
+- **Date:** 2026-10-09 | **Reward:** "Pahala For Muslim" (not a token) | **Source:** @airdropfind drop 128321
+- **Type:** Joke/meme post masquerading as an airdrop — title "New Airdrops : Jumatan", reward is a non-crypto "blessing", link is a `google.com/search?q=masjid+terdekat` (nearest mosque search), task steps are jokes (Mandi → Cari Masjid → Wudhu → Sholat).
+- **Verdict:** ⛔ SKIPPED per triage rule — reward is not a token, link is non-crypto (`google.com/search`), zero wallet/NFT/mint signal. No URL probed. No registration exists.
