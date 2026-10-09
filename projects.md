@@ -1,5 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 9, 2026** — #381 AGNT S4W2 Day 4 PARTIAL (Galxe API + 2× X like) | #380 EscCap Genesis WL DONE (PASS #1947, @osbornrdx) | #379 Hypest DONE (Hype ID #3638) | #378 Hop Heads WL DONE (pad #484)
+> Last updated: **Oct 9, 2026** — #383 Catalyst WL DONE (server-issued ref `Hy7qc`, X follow+like+RT @osbornrdx) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE (PASS #1947) | #379 Hypest DONE
+### #383 Catalyst (catalyst.app) — Email + X Waitlist (msg 128323) — ✅ DONE
+- **Date:** 2026-10-09 | **URL:** https://catalyst.app/?r=wOwlW | **Reward:** Early-access waitlist (batched invites) | **Source:** @airdropfind drop 128323 | **X:** @catalystlabsx | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA landing; waitlist modal POSTs to a separate API host. Drop link was malformed (`catalyst.app](https://catalyst.app/?r=wOwlW`) but the real target is **catalyst.app** (216.24.57.1 Vercel). `usecatalyst.com` is only a redirect lander (`/lander?r=wOwlW`).
+- **Recon:** DNS stub (`127.0.0.53`) was timing out — resolved via `getent`/`host` + `curl --resolve catalyst.app:443:216.24.57.1`. Grepped 49 `_next/static/chunks/*.js` for the auth client: `createAuthApiClient` → `baseUrl + "/api/v1"`; `getApiBaseUrl()` → `https://api.catalyst.app` (Render origin behind Cloudflare). Endpoint `joinWaitlist` = `POST /auth/waitlist` `{email, twitterHandle, referralCode}`.
+- **✅ Waitlist submitted (browserless):** `POST https://api.catalyst.app/api/v1/auth/waitlist` with `{"email":"airdropkarbiters@gmail.com","twitterHandle":"osbornrdx","referralCode":"wOwlW"}` → **HTTP 200** `{"referralLink":"https://catalyst.app/?r=Hy7qc"}`. Server-issued referral code **Hy7qc** (idempotent on re-POST, same link returned). `GET /api/v1/auth/requirements/invitation` → `{"required":true}` — the `?r=wOwlW` referral satisfied the invite gate.
+- **✅ X actions (@osbornrdx, raw CDP via MCP :9222, verified via data-testid):**
+  - ✅ Follow [@catalystlabsx](https://x.com/catalystlabsx) — `-unfollow` testid = following
+  - ✅ Like [announcement tweet 2108255062124564516](https://x.com/catalystlabsx/status/2108255062124564516) — `unlike` testid confirmed
+  - ✅ Repost same tweet — `unretweet` testid confirmed (retweetConfirm menu clicked)
+- **⚠️ Discord join (discord.com/invite/usecatalyst):** NOT done — no Discord account/credentials on this server (checked `/home/ubuntu/airdrop/credentials/`). Marked pending; needs a real Discord login.
+- **Wallet:** none required (email + X waitlist).
+- **Status:** ✅ DONE — waitlist registered (referral `Hy7qc`), X follow + like + repost complete. Discord join pending manual.
+- **X proof links:** Follow → https://x.com/catalystlabsx | Like + Repost target → https://x.com/catalystlabsx/status/2108255062124564516 | Source tweet → https://x.com/catalystlabsx/status/2108255062124564516
+
 
 ### #381 AGNT Weekly Socials | S4 Week 2 - Day 4 (app.galxe.com/quest/AGNTHub/GCJgBtZBR1) — Galxe Quest (msg 128319) — ⚠️ PARTIAL (API + real X likes done; TWITTER creds blocked on Galxe-level X OAuth)
 - **Date:** 2026-10-09 | **URL:** https://app.galxe.com/quest/AGNTHub/GCJgBtZBR1 | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128319 | **X:** @agnt_hub + @TruthAgentAI
