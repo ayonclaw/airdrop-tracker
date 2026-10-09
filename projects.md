@@ -1,5 +1,5 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 9, 2026** — #383 Catalyst WL DONE (server-issued ref `Hy7qc`, X follow+like+RT @osbornrdx) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE (PASS #1947) | #379 Hypest DONE
+> Last updated: **Oct 9, 2026** — #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE | #379 Hypest DONE
 ### #383 Catalyst (catalyst.app) — Email + X Waitlist (msg 128323) — ✅ DONE
 - **Date:** 2026-10-09 | **URL:** https://catalyst.app/?r=wOwlW | **Reward:** Early-access waitlist (batched invites) | **Source:** @airdropfind drop 128323 | **X:** @catalystlabsx | **Track:** waitlist
 - **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA landing; waitlist modal POSTs to a separate API host. Drop link was malformed (`catalyst.app](https://catalyst.app/?r=wOwlW`) but the real target is **catalyst.app** (216.24.57.1 Vercel). `usecatalyst.com` is only a redirect lander (`/lander?r=wOwlW`).
