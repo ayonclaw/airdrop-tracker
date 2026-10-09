@@ -1,5 +1,34 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 9, 2026** — #378 Hop Heads WL DONE (pad #484, @osbornrdx) | #377 Sible Network DONE (17.9 SIB) | #376 Robolynz WL DONE | #375 FungoLabs WL SEALED
+> Last updated: **Oct 9, 2026** — #380 EscCap Genesis WL DONE (PASS #1947, @osbornrdx) | #379 Hypest DONE (Hype ID #3638) | #378 Hop Heads WL DONE (pad #484) | #377 Sible Network DONE (17.9 SIB)
+### #380 EscCap Genesis Whitelist (esccap.xyz/proof) — ✅ DONE (WHITELISTED, PASS #1947)
+- **Date:** 2026-10-09 | **URL:** https://www.esccap.xyz/proof | **Reward:** Free mint WL — Retro Keyboard NFT (3,333 supply, Genesis Phase 1) | **Source:** @airdropfind drop 128317 | **X:** @esccapHQ | **Track:** nft
+- **Type:** Type 2/17 hybrid — Next.js SPA, 5-step server-verified community quest (X OAuth → Follow → Repost → Quote → Submit proof+wallet).
+- **✅ Full flow completed (all real actions, proof links below):**
+  - ✅ Step 1 Connect — X OAuth as @osbornrdx (server-verified, "DONE ✓")
+  - ✅ Step 2 Follow [@esccapHQ](https://x.com/esccapHQ) — followed (intent page showed "Mengikuti") → server "DONE ✓"
+  - ✅ Step 3 Like + Repost announcement — [x.com/esccapHQ/status/2107530483638903266](https://x.com/esccapHQ/status/2107530483638903266) (like LIKED + repost REPOSTED confirmed via `[data-testid=unlike]/[data-testid=unretweet]`)
+  - ✅ Step 4 Quote Tweet + tag 2 friends + #EscCap + switch type — **proof:** [x.com/osbornrdx/status/2108391947312525421](https://x.com/osbornrdx/status/2108391947312525421) (tagged @actan0x @DskySakura, "Linear switches all day")
+  - ✅ Step 5 Submit Quote URL + EVM wallet — submitted via form (real keystrokes) → **WHITELISTED ✓**
+- **Server confirmation:** `STEP 5 OF 5 [100% COMPLETED]` / `WHITELIST STATUS: WHITELISTED ✓` / `GENESIS ALLOCATION: EARLY MINT SECURED ✓` / **PASS #1947 (RARE)**. VERIFIED PROOFS counter incremented 1,937 → 1,948 on submit.
+- **Referral link:** https://www.esccap.xyz/proof?ref=osbornrdx
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **X:** @osbornrdx
+- **Status:** ✅ DONE — WL verified, PASS #1947, early mint secured.
+
+### #379 Hypest (hypest.gg) — ✅ DONE (Hype ID #3638, registered)
+- **Date:** 2026-10-09 | **URL:** https://hypest.gg/ | **Reward:** Hype points airdrop (fantasy meta, Robinhood Chain) | **Source:** @airdropfind drop 128316 | **X:** @hypestgg | **Track:** app
+- **Type:** Type 20-style in-app registration — X OAuth (server-verified) → 4-task quest (Follow + Like/Repost/Reply 3-tap) → EVM wallet submit.
+- **✅ Full flow completed (all real actions, proof links below):**
+  - ✅ X OAuth as @osbornrdx → account created, **Hype ID #3638**
+  - ✅ FOLLOW @hypestgg — followed (intent "Ikuti @hypestgg" → "Mengikuti")
+  - ✅ LIKE launch post — [x.com/hypestgg/status/2107498304674349174](https://x.com/hypestgg/status/2107498304674349174)
+  - ✅ REPOST launch post — same tweet (repost confirmed via `[data-testid=unretweet]`)
+  - ✅ REPLY to launch post — **proof:** [x.com/osbornrdx/status/2108390316181184944](https://x.com/osbornrdx/status/2108390316181184944) ("The fantasy meta on Robinhood Chain 🔥 registered, card minted 🦄")
+  - ✅ Submit EVM wallet — 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D → "YOU'RE REGISTERED"
+- **Server confirmation:** `GET /api/hub/state` → user_id `bed0a86a-...`, `reply_url: v2-user-reg`, wallet recorded. UI: `STEP [100%]` "YOU'RE REGISTERED".
+- **Note:** On-site 3-tap verify is client-side random (1/3 pass) — LIKE required 1 retry ("TRY AGAIN"). All 3 taps eventually DONE.
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **X:** @osbornrdx
+- **Status:** ✅ DONE — registered, Hype ID #3638, wallet + all X tasks complete.
+
 
 ### #378 Hop Heads Allowlist (hopheads.xyz) — ✅ DONE (pad #484, @osbornrdx)
 - **Date:** 2026-10-09 | **URL:** https://www.hopheads.xyz/ | **Reward:** Free mint WL on Robinhood Chain (colourful frogs NFT) | **Source:** @airdropfind drop 128315 | **X:** @hopheadsarc | **Track:** nft
