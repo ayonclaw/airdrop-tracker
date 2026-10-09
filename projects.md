@@ -1,5 +1,16 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 9, 2026** — #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE | #379 Hypest DONE
+> Last updated: **Oct 9, 2026** — #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+### #385 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-10-09 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **Type:** Next.js SPA + Privy auth (X OAuth). Cron script `pear_daily.py` v9 (CDP against real Chrome @9222) — this run hit the OAuth login wall (script's JS `.click()` on the X consent button did not fire the React handler; 17 no-op clicks). Fixed by switching to **real Playwright mouse events** (`mouse.move` → `mouse.down` → `mouse.up`) on the consent button, which navigated correctly to `/dashboard`.
+- **✅ Daily streak:** 30 → **31 days** | Day-31 claim **+2,255 pearls**
+- **Points:** 11,834 → **15,089 pearls** (+3,255 total this run) | **Rank:** **#19379**
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Recurring tasks only** (Daily Streak, Pear Post, Pear Clips, Refer) — no new tasks detected. Cron handles daily claim.
+- **Status:** ✅ DONE — daily streak claimed (day 31), Claim button returned `clicked`.
+- **Fix note:** v10 flow = real mouse click for Privy/X-consent (JS + CDP `Input.dispatchMouseEvent` + MCP click all failed to trigger the OAuth consent handler). Saved to `/tmp/pear_v10.py`; recommend porting into `pear_daily.py` for future cron runs.
+
+
 ### #383 Catalyst (catalyst.app) — Email + X Waitlist (msg 128323) — ✅ DONE
 - **Date:** 2026-10-09 | **URL:** https://catalyst.app/?r=wOwlW | **Reward:** Early-access waitlist (batched invites) | **Source:** @airdropfind drop 128323 | **X:** @catalystlabsx | **Track:** waitlist
 - **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA landing; waitlist modal POSTs to a separate API host. Drop link was malformed (`catalyst.app](https://catalyst.app/?r=wOwlW`) but the real target is **catalyst.app** (216.24.57.1 Vercel). `usecatalyst.com` is only a redirect lander (`/lander?r=wOwlW`).
