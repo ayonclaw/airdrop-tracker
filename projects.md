@@ -1,5 +1,16 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 10, 2026** — #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+> Last updated: **Oct 10, 2026** — #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+### #392 ACI (Airdrop Computing Intelligence?) — Season 1 Update (msg 128341) — ℹ️ INFO (no actionable tasks)
+- **Date:** 2026-10-10 | **Source:** @airdropfind drop 128341 | **X:** [@ACIToken](https://x.com/ACIToken/status/2108512519769723266) | **Reward:** None (update notice)
+- **Type:** Update/announcement — NOT a new registration. No form, no wallet field, no task links (`links: []`).
+- **Key dates:**
+  - ✅ Season 1 extended to **October 19**
+  - 📌 Airdrop **eligibility check starts October 12** (monitor for claim/check portal)
+  - 🆕 New missions (ACI Learn + ACI Smart Intelligence) — pending app store approval
+  - 🏆 ADAM trading competition ends October 19 (winners announced on ADAM)
+  - 📸 Snapshot taken when testnet closes
+- **Status:** ℹ️ INFO — nothing to execute today. Re-check ~Oct 12 for eligibility portal.
+
 ### #391 YneraX One — Early User Campaign + Priority Pass (msg 128339) — ✅ DONE (X OAuth + follow/repost/wallet all completed)
 - **Date:** 2026-10-10 | **URL:** https://www.ynerax.one/ | **Reward:** $150K USDT + 4M $YNX (22K winners) + Priority Pass (free FCFS mint, "more info soon") | **Source:** @airdropfind drop 128339 | **X:** @yneraxone
 - **Type:** Type 2 (WEB-DASHBOARD OAuth) — Supabase-backed Next.js app. "Continue with X" → Supabase OAuth (`puvmgctzzvbxmvnoiahm.supabase.co`, provider `x`) → X consent → dashboard. The Priority Pass itself is a forward-looking announcement (no mint link/contract published yet — "More info soon").
