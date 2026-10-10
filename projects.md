@@ -1,5 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 10, 2026** — #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+> Last updated: **Oct 10, 2026** — #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+### #389 AGNT Weekly Socials | S4 Week 2 - Day 5 (app.galxe.com/quest/AGNTHub/GCtpBtZeG7) — Galxe Quest (msg 128334) — ⚠️ PARTIAL (API + real X likes done; TWITTER creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-10 | **URL:** https://app.galxe.com/quest/AGNTHub/GCtpBtZeG7 | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128334 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCtpBtZeG7` (`type: Points`, `status: Active`, numberID `365114`). Standalone day-campaign (NOT a child of a Parent) — same series as #381 (Day 4) / #373 (Day 3) / #362 (Day 2).
+- **API pipeline (SIWE via eth_account 0.13.7, python3.12):**
+  - ✅ SIWE SignIn → JWT (first try)
+  - ✅ `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+  - ⚠️ `TWITTER` creds `731193031864090624` (TruthAgentAI Tweet Liker 2108603278728589428) + `731193904669392896` (agnt_hub Tweet Liker 2108604178905846224) → `"missing twitter args"` (X OAuth not linked at Galxe account level — architectural)
+  - ⚠️ `GALXE_ID` creds `731193110742171648` (Visit the Truth post) + `731193904874913792` (Visit the AGNT Hub post) → `allow:false` (visit creds need real browser visit beacon + X OAuth)
+- **Real X actions (raw CDP websocket against :9222, logged-in @osbornrdx, verified via `data-testid` `like`→`unlike`):**
+  - ✅ Like [TruthAgentAI tweet 2108603278728589428](https://x.com/TruthAgentAI/status/2108603278728589428) — `unlike` testid confirmed
+  - ✅ Like [agnt_hub tweet 2108604178905846224](https://x.com/agnt_hub/status/2108604178905846224) — `unlike` testid confirmed
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, SIWE)
+- **Status:** ⚠️ PARTIAL — SIWE ✅, followSpace ✅, 2× X like ✅. Blocked: TWITTER creds need Galxe-level X OAuth link (one-time manual setup); visit creds need real browser visit + X OAuth.
+- **X proof links:** https://x.com/TruthAgentAI/status/2108603278728589428 (like) — https://x.com/agnt_hub/status/2108604178905846224 (like)
+
+
 ### #388 InkSigil Genesis — EVM Whitelist (inksigilgenesis.com/wl) — ✅ DONE (Cloudflare Worker API + X follow/like/RT done)
 - **Date:** 2026-10-10 | **URL:** https://inksigilgenesis.com/wl | **Reward:** Free mint WL spot (4,440 supply, freemint, mint TBA) | **Source:** @airdropfind drop 128332 | **X:** @INKSIGIL | **Track:** waitlist
 - **Type:** BROWSERLESS-FIRST (Type 4) — static HTML waitlist with 3 client-side X-task gates (follow/like/repost, stored in localStorage `inksigil-wl-steps`) + a **Cloudflare Worker** backend (`inksigil-wl.inksigilgenesis.workers.dev`) with open `/join` + `/count` endpoints. No server-side task verification — submit body is just `{x, wallet, website}`.
