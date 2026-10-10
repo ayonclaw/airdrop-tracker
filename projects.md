@@ -1,5 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
-> Last updated: **Oct 10, 2026** — #394 MineHood WL DONE (X OAuth + 7/7 tasks + wallet 0x8CCE, 170 XP) | #393 The Unbound (Jadebound) WL DONE (X follow/like/RT + wallet 0x8CCE; Discord OAuth pending) | #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+
+### #395 Embervale — Early Access (msg 128346) — ✅ DONE (X OAuth + follow/like/repost/quote/comment + wallet)
+
+- **Date:** 2026-10-10 | **URL:** https://embervalegame.com/#/ | **Reward:** Early Access spot (pixel farming game on Robinhood Chain) | **Source:** @airdropfind drop 128346 | **X:** [@Embervale_](https://x.com/Embervale_)
+- **Type:** X OAuth2-gated Early Access (5-step wizard + EVM wallet). API: `GET /api/ea/me`, `POST /api/ea/step {step, url?}`, `POST /api/ea/wallet {wallet}` (session-cookie auth, no CSRF). Auth = X OAuth2 PKCE via `GET /api/ea/x/login` -> `x.com/i/oauth2/authorize` -> "Izinkan aplikasi" -> `/api/ea/x/callback?code&state` -> `/?x=ok`.
+- **✅ X OAuth:** @osbornrdx linked (cardId `vhSPJmrDpdZ8`).
+- **✅ Tasks completed (server step 0->4):**
+  - ✅ Follow [@Embervale_](https://x.com/Embervale_) (button flipped to "Mengikuti") -> `POST /step {step:1}`
+  - ✅ Like post [2108549589447930121](https://x.com/Embervale_/status/2108549589447930121) (6524->6525) -> `POST /step {step:2}`
+  - ✅ Repost same post (9498->9499) -> `POST /step {step:2}`
+  - ✅ Quote post -> `POST /step {step:3, url}` — proof: https://x.com/osbornrdx/status/2108967191408464356 ("Joined Embervale Early Access 🌾 Farming pixel adventures...")
+  - ✅ Comment (reply) -> `POST /step {step:4, url}` — proof: https://x.com/osbornrdx/status/2108967366340284537 ("Ready to farm! 🌾 LFG @Embervale_")
+- **✅ Wallet submitted:** `POST /api/ea/wallet {wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` -> `user.wallet="0x8cce57930bc7dfcb133f5d34889d362cb1bc282d", step:4` (status -> approved).
+- **Status:** ✅ DONE — 4/4 steps + wallet registered.
+
+> Last updated: **Oct 10, 2026** — #395 Embervale Early Access DONE (X OAuth + follow/like/repost/quote/comment + wallet 0x8CCE) | #394 MineHood WL DONE (X OAuth + 7/7 tasks + wallet 0x8CCE, 170 XP) | #393 The Unbound (Jadebound) WL DONE (X follow/like/RT + wallet 0x8CCE; Discord OAuth pending) | #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
 ### #394 MineHood — Waitlist (msg 128345) — ✅ DONE (X OAuth + 7/7 tasks + wallet)
 
 - **Date:** 2026-10-10 | **URL:** https://www.minehood.io/#waitlist | **Reward:** Waitlist spot (skill-based pixel mining game on Robinhood Chain) | **Source:** @airdropfind drop 128345 | **X:** [@minehood_rh](https://x.com/minehood_rh)
