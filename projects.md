@@ -1,6 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
 
+### #398 MASKUZA — The Roll (maskuza.art/apply) — Waitlist (msg 128353) — ✅ DONE (X follow/like/repost + EVM wallet)
+- **Date:** 2026-10-11 | **URL:** https://maskuza.art/apply | **Reward:** None (waitlist spot, 666 supply — "666 encrypted Maskuza" on Robinhood Chain) | **Source:** @airdropfind drop 128353 | **X:** [@PixelMaskuza](https://x.com/PixelMaskuza)
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA, submit is `POST /api/apply` with `{x_username, wallet}`. Server-side validation: `x_username` `/^[A-Za-z0-9_]{1,15}$/`, wallet `/^0x[a-fA-F0-9]{40}$/` (EVM only, no ENS, no SOL). Client also enforces `x_username` max 15 chars + raw `0x…` address.
+- **Tasks (per page copy "Answer the latest post"):**
+  - ✅ Follow [@PixelMaskuza](https://x.com/PixelMaskuza) — intent-follow, button flipped to "Mengikuti" (MCP Chrome, @osbornrdx)
+  - ✅ Like source post [x.com/pixelmaskuza/status/2108934026509643994](https://x.com/pixelmaskuza/status/2108934026509643994) — `data-testid` `like`→`unlike` confirmed
+  - ✅ Repost same post — `data-testid` `retweet`→`unretweet` confirmed (menu "Posting ulang")
+- **✅ Wallet submitted:** `POST /api/apply {"x_username":"osbornrdx","wallet":"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` → **HTTP 201 `{"ok":true,"x_username":"osbornrdx","wallet":"0x8cce57930bc7dfcb133f5d34889d362cb1bc282d"}`**
+- **X proof links:** follow https://x.com/PixelMaskuza | like/repost https://x.com/pixelmaskuza/status/2108934026509643994
+- **Status:** ✅ DONE — all 3 X actions + wallet registered (`ok:true`, 201).
+
 ### #397 AGNT Weekly Socials | S4 Week 2 - Day 6 (app.galxe.com/quest/AGNTHub/GCAHBtZ3hy) — Galxe Quest (msg 128352) — ⚠️ PARTIAL (API + real X like done; TWITTER cred blocked on Galxe-level X OAuth)
 - **Date:** 2026-10-11 | **URL:** https://app.galxe.com/quest/AGNTHub/GCAHBtZ3hy | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128352 | **X:** @agnt_hub
 - **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCAHBtZ3hy` (`type: Points`, `status: Active`, numberID `365125`). Standalone day-campaign (NOT a child of a Parent) — same series as #389 (Day 5) / #381 (Day 4) / #373 (Day 3).
