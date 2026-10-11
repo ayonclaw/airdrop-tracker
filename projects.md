@@ -1,5 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #400 AiFame Index Waitlist (aifame.xyz/waitlist) — Waitlist (msg 128356) — ✅ DONE (X follow/like/repost/post + handle submit)
+- **Date:** 2026-10-11 | **URL:** https://aifame.xyz/waitlist/?ref=VjRusmayana404 | **Reward:** None (waitlist spot + points/leaderboard — Founding Fan badge, Top-100 wall + vote) | **Source:** @airdropfind drop 128356 | **X:** [@AIFameIndex](https://x.com/AIFameIndex)
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA (`AI Fame Index`). Submit is `POST /api/waitlist/` with JSON. Two actions: `{action:"join",handle,ref}` then `{action:"task",handle,task}` per task (`follow`/`like`/`repost`/`post`). Tasks are **client-side self-attest clicks** (window.open intent + 5s timer → POST task), but server records each task against the handle.
+- **Tasks (page: "Submit username X" + "Complete Task (Just Clicks)"):**
+  - ✅ Handle submitted: `{"action":"join","handle":"osbornrdx","ref":"VjRusmayana404"}` → `{"handle":"osbornrdx","points":100,"position":260,...}`
+  - ✅ Follow [@AIFameIndex](https://x.com/AIFameIndex) — intent-follow, button flipped to "Mengikuti" (MCP Chrome, @osbornrdx)
+  - ✅ Like launch post [x.com/AIFameIndex/status/2108957678290833510](https://x.com/AIFameIndex/status/2108957678290833510) — `data-testid` like→unlike confirmed
+  - ✅ Repost same post — `data-testid` retweet→unretweet confirmed (menu "Posting ulang")
+  - ✅ Post about the index — [x.com/osbornrdx/status/2109136498344034715](https://x.com/osbornrdx/status/2109136498344034715)
+- **✅ Task records submitted:** `follow` → +100 (pos 231) | `like` → +50 (pos 226) | `repost` → +100 (pos 223) | `post` → +150 (pos 216). **Final: 500 pts, position #216** (tasks all `true`).
+- **X proof links:** follow https://x.com/AIFameIndex | like/repost https://x.com/AIFameIndex/status/2108957678290833510 | post https://x.com/osbornrdx/status/2109136498344034715
+- **Status:** ✅ DONE — handle registered (500 pts, #216), all 4 tasks recorded server-side, all 4 X actions performed for proof.
 
 ### #399 Stark World Waitlist (strkworld.com) — Waitlist (msg 128355) — ✅ DONE (X follow + post + Starknet wallet)
 - **Date:** 2026-10-11 | **URL:** https://strkworld.com/ | **Reward:** None (early-access waitlist, voxel 3D social world on Starknet) | **Source:** @airdropfind drop 128355 | **X:** [@strkworld](https://x.com/strkworld)
