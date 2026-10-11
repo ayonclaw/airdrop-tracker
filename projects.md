@@ -1052,19 +1052,22 @@
 - **↻ Re-confirmed (drop 127863, Sep 22 2026):** duplicate announcement of the same DUKZ whitelist. Re-verified live — X OAuth `connected:true` (@osbornrdx), tasks COMPLETED, `GET /api/whitelist/status` → `registered:true` (application #881, PENDING, wallet `zs102nl3aqvs0k77z5k8ngj3ssjf68qkr7p2uanpz4kwy0yc9jhrdwt8pnnc3e8duqgxhk36t6jvcf`), count 3710. New drop text asks for a `u1…` unified address (we hold `u1hrlv7p705kv6q620k9x00hcecd874fa0zvtza5zcrmd8ufa73vuqswwc7x0ll4v0yhkuuk89vlr0kjwpmm8mr8l4ax7ajq07dvn0ug45`), but `POST /api/whitelist/submit` returns `409 {"error":"ALREADY_REGISTERED"}` — no re-submit/update endpoint exists (submit body is `{wallet}` only). No action possible; existing registration stands.
 
 
-### #315 Asentum Incentivized Testnet — airdrop.asentum.com (msg 127810) — ✅ DONE (core) / ⚠️ X-link partial
+### #315 Asentum Incentivized Testnet — airdrop.asentum.com (msg 127810 / 128364) — ✅ DONE (core) / ⚠️ on-chain quests partial
 - **Type:** On-chain incentivized testnet (Type 21-ish, but email/Privy social login available) — XP toward $ASE airdrop. Tasks: connect wallet/social, set profile, connect Asentum wallet via TG bot, claim test ASE faucet, send tx, daily check-in.
 - **Project:** Asentum (ASE) — Robinhood-style incentivized L1/L2 testnet. X: @Asentum. Source: https://x.com/Asentum/status/2100615171194466325
 - **✅ Login:** Privy email OTP → airdropkarbiters@gmail.com. OTP `990573` fetched via IMAP (creds /home/ubuntu/scripts/beldex-daily/beldex_checkin.py APP_PW). Account user id 35245, did:privy:cmu83xrat01620djnig7ts8dy.
 - **✅ Username set:** `osbornrdx` (POST /api/profile → ok:true).
 - **✅ Wallet linked:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (lowercased `0x8cce...282d`, source:"browser") via POST /api/wallets.
 - **✅ Faucet claimed:** 5 test ASE → txHash `0x7131b93f5fb499f1e824a4118f85644478ded0ebd1ac162c18d3bf0ab14bd3ad` (POST /api/faucet).
+- **✅ Faucet re-claimed (drop 128364, 2026-10-11):** +5 test ASE → linked wallet `ase13n890yctcl0ukyelt56g38fk9jcmc2pdak4mpt` (= bech32 of EVM `0x8CCE...282D`), balance now ~10.49 ASE. txHash `0x3d76e1856b6d0cf1c7b6da87dbfd84d84f1549b092137e8a2865873b0155f911`. UI: "Sent 5 ASE to your linked wallet".
+- **✅ Check-in (drop 128364):** today's check-in DONE, total XP 31, streak 1d, rank #92,534.
+- **⚠️ 2 NEW QUESTS (drop 128364) — on-chain, require native Asentum (Dilithium3) wallet:** (1) "Send ASE to another wallet" +20 XP (0/1) — chain is post-quantum ML-DSA-65 (Dilithium3), NOT ECDSA; `eth_sendRawTransaction` → `-32601 method not found`; addresses are bech32 `ase1…` derived from `BLAKE3(pubkey)[0:20]`, so the Privy-linked EVM key is **receive-only** (can hold/claim ASE but cannot sign a transfer). (2) "Sign a block as a validator" +40 XP — needs a bonded validator node. Both need the Asentum Chrome extension / @AsentumBot native wallet + testnet ASE gas. Bot-session sign API (`POST wallet.asentum.com/api/sessions/{id}/sign-request {type:"transfer",to,amount}`) returns `404 session not connected` until a native wallet pairs. Marked ⚠️ pending manual (native wallet unlock), per Rule 8.
 - **✅ Daily check-in:** auto on login → +15 XP (quest:daily:checkin), streak 1d, rank ~#2,681.
-- **⚠️ X link (×1.1 boost):** Privy X OAuth flow completed (X consent → Authorize → redirect back), but `twitterHandle` stayed `null` on /api/me after 2 attempts — server-side link did not persist. Needs manual retry of "Link X for ×1.1" from the dashboard.
+- **✅ X link (×1.1 boost) — RESOLVED (drop 128364, 2026-10-11):** Privy X OAuth re-run in MCP Chrome → consent page → Authorize → dashboard now shows **`X · @osbornrdx linked` +×0.1** (SOCIAL BOOST ×1.10 ACTIVE). Link persisted this time.
 - **⚠️ Asentum-native wallet (TG bot / browser extension):** onboarding step 2 requires an Asentum wallet (Telegram @AsentumBot pairing or the Asentum Chrome extension) — NOT the EVM wallet. Skipped onboarding; on-chain XP (send tx / stake / swap on Auras) needs that native wallet + test ASE gas.
 - **Endpoints (browserless-usable):** POST /api/profile {username}; POST /api/wallets {address}; POST /api/faucet {address}; GET /api/me; GET /api/quests.
 - **X proof links:** N/A for this drop (X link = OAuth boost, no like/repost task).
-- **Status:** ✅ DONE (core: login + profile + wallet + faucet + check-in). ⚠️ X-link + native-wallet on-chain tasks pending manual.
+- **Status:** ✅ DONE (core: login + profile + wallet + faucet + check-in + **X link now active**). ⚠️ on-chain quests (send ASE / validator) pending manual — need native Dilithium3 wallet, the EVM-linked address cannot sign transfers.
 
 ### #314 AGNT Weekly Socials | S3 Week 9 - Day 5 — Galxe Quest (msg 127802) — ⚠️ PARTIAL (SIWE + followSpace + real X likes done; creds blocked on X OAuth)
 - **Date:** 2026-09-19 | **URL:** https://app.galxe.com/quest/AGNTHub/GCoVrtZUs4 | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127802 | **X:** @agnt_hub + @TruthAgentAI
