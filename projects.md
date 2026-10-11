@@ -1,5 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+
+### #397 AGNT Weekly Socials | S4 Week 2 - Day 6 (app.galxe.com/quest/AGNTHub/GCAHBtZ3hy) — Galxe Quest (msg 128352) — ⚠️ PARTIAL (API + real X like done; TWITTER cred blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-11 | **URL:** https://app.galxe.com/quest/AGNTHub/GCAHBtZ3hy | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128352 | **X:** @agnt_hub
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCAHBtZ3hy` (`type: Points`, `status: Active`, numberID `365125`). Standalone day-campaign (NOT a child of a Parent) — same series as #389 (Day 5) / #381 (Day 4) / #373 (Day 3).
+- **API pipeline (SIWE via eth_account 0.13.7, python3.12):**
+  - ✅ SIWE SignIn → JWT (first try)
+  - ✅ `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+  - ⚠️ `TWITTER` cred `731539126867722240` (agnt_hub - Tweet Liker - Tweet 2108947468045939106) → `"missing twitter args"` (X OAuth not linked at Galxe account level — architectural)
+  - ⚠️ `GALXE_ID` cred `731539126909665280` (Visit the AGNT Hub post) → `allow:false` (visit cred needs real browser visit beacon + X OAuth)
+- **Real X action (raw CDP websocket against :9222, logged-in @osbornrdx, verified via `data-testid` `like`→`unlike` + persisted across reload):**
+  - ✅ Like [agnt_hub tweet 2108947468045939106](https://x.com/agnt_hub/status/2108947468045939106) — `unlike` testid confirmed
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, SIWE)
+- **Status:** ⚠️ PARTIAL — SIWE ✅, followSpace ✅, 1× X like ✅. Blocked: TWITTER cred needs Galxe-level X OAuth link (one-time manual setup); visit cred needs real browser visit + X OAuth.
+- **X proof link:** https://x.com/agnt_hub/status/2108947468045939106 (like)
+
 ### #395 Embervale — Early Access (msg 128346) — ✅ DONE (X OAuth + follow/like/repost/quote/comment + wallet)
 
 - **Date:** 2026-10-10 | **URL:** https://embervalegame.com/#/ | **Reward:** Early Access spot (pixel farming game on Robinhood Chain) | **Source:** @airdropfind drop 128346 | **X:** [@Embervale_](https://x.com/Embervale_)
@@ -14,7 +29,7 @@
 - **✅ Wallet submitted:** `POST /api/ea/wallet {wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` -> `user.wallet="0x8cce57930bc7dfcb133f5d34889d362cb1bc282d", step:4` (status -> approved).
 - **Status:** ✅ DONE — 4/4 steps + wallet registered.
 
-> Last updated: **Oct 11, 2026** — #396 $AXIS SKIPPED (tokenomics announcement, no link) | #395 Embervale Early Access DONE (X OAuth + follow/like/repost/quote/comment + wallet 0x8CCE) | #394 MineHood WL DONE (X OAuth + 7/7 tasks + wallet 0x8CCE, 170 XP) | #393 The Unbound (Jadebound) WL DONE (X follow/like/RT + wallet 0x8CCE; Discord OAuth pending) | #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+> Last updated: **Oct 11, 2026** — #397 AGNT S4W2 Day 6 PARTIAL (API followSpace + 1× X like done; X OAuth wall) | #396 $AXIS SKIPPED (tokenomics announcement, no link) | #395 Embervale Early Access DONE (X OAuth + follow/like/repost/quote/comment + wallet 0x8CCE) | #394 MineHood WL DONE (X OAuth + 7/7 tasks + wallet 0x8CCE, 170 XP) | #393 The Unbound (Jadebound) WL DONE (X follow/like/RT + wallet 0x8CCE; Discord OAuth pending) | #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
 ### #394 MineHood — Waitlist (msg 128345) — ✅ DONE (X OAuth + 7/7 tasks + wallet)
 
 - **Date:** 2026-10-10 | **URL:** https://www.minehood.io/#waitlist | **Reward:** Waitlist spot (skill-based pixel mining game on Robinhood Chain) | **Source:** @airdropfind drop 128345 | **X:** [@minehood_rh](https://x.com/minehood_rh)
