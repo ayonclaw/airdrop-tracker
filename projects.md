@@ -3225,6 +3225,9 @@
 - **Action for Rey:** Open nft.retium.org in CloakBrowser (real wallet), connect via Retium popup, mint the testnet NFT, copy CA.
 - **Date:** Aug 21, 2026
 - **Source:** @airdropfind Telegram (auto-detected, msg 127074)
+- **🔁 UPDATE (msg 128381, Oct 12 2026):** "My ID NFT Mint Is Live for VIPs" — eligible **OG members** have 48h to mint the **Retium Identity NFT** (`Retium Identity` / `RID`, mint_mode `identity`, wallet_limit 1) on testnet. Mint link `https://nft.retium.org/c/4f29161cd8d3e2d65ba33c5097977e936576dc68e0239441b79e5c0749b49019`.
+- **Re-verified wall (browserless recon):** `GET /api/config` → `identityContractId 4f29...b49019`, `treasuryWallet rete88cba...b63b`; `GET /api/collections/<cid>` confirms `mint_mode:"identity"`, `mint_price_atomic 1e20` (100 RTM). Identity mint is gated to Retium-native **`rete…` addresses** — the SDK/bundle explicitly rejects EVM: `"EVM address, not a rete one"`. Our EVM `0x8CCE…282D` and SOL wallet are NOT `rete…` — not eligible. Mint requires the proprietary `window.retium` popup wallet (`wallet.retium.org/connect/sdk/retium-sdk-1.2.0.js`) + RTM testnet gas.
+- **Verdict:** ⚠️ PENDING MANUAL (unchanged) — no browserless/registration path; `rete…`-address OG gate + proprietary popup wallet = hard wall. Not actionable by the pipeline.
 
 ### 50. MPC Mining RWA — Waitlist + SBT Mint (BNB Chain) 🆕
 - **Status:** ⚠️ PENDING MANUAL — hard wallet-connect wall (Reown AppKit / Dynamic.xyz). Needs real MetaMask + BNB gas for on-chain SBT mint.
@@ -5757,3 +5760,13 @@
 - **Type:** Tokenomics/allocation announcement — photo-only drop (`MessageMediaPhoto`), `links: []`. OCR of the image = "$AXIS TOKEN ALLOCATION ROBOTICS" pie chart (1B fixed supply, Contributor Rewards 10%, Kaito Reward Pool 0.25%, Sonar 1%, etc.). No URL, no form, no tasks, no wallet field.
 - **Search:** DDG HTML + Bing + lite endpoints → no registration portal found for the project.
 - **Verdict:** ⛔ SKIPPED — announcement only, zero registration surface. Nothing to submit. Moved drop → done/.
+
+## TickerGeist (tickergeist.xyz) — WL MISSED, fully minted
+- **Date:** 2026-10-11 | **Project:** Tickergeist — 3,333 retro-futuristic "1970s quotation terminal" NFT on **Robinhood Chain L2** (chainId 4663)
+- **Contract:** 0xc2ce2497df2a4054847ee615659b2c3ec0af39eb (ERC-721 SeaDrop) | token 0xFD76d60D685840D701c130F96A9B78d71C48157d | vault 0xb753B0addEd868350654A65949d926F869cD6c25
+- **Links:** https://x.com/tickergeist (2,148 flw) | https://opensea.io/collection/tickergeist | site = static SPA (app.js+config.js) + Google Apps Script backend
+- **WL window:** closed 2026-10-10T20:00Z (MISSED — 1 day late). Mint 2026-10-10T19:00Z. `isOpen:false` in config.
+- **Production:** site still had fake tweet IDs (x.com/tickergeist/status/18880123456789 placeholder) + admin passcode default 8888 in HTML.
+- **On-chain:** totalSupply = 3333/3333 **FULLY MINTED**. wallet 0x8CCE...282D balance = 0 (never minted).
+- **Verified legit:** RPC 4663 live (chainId 0x1237); OpenSea: 1,691 owners, 3,935 sales, floor ~5.72e-5 ETH (~$0.145 @ ETH $2,528).
+- **Status:** ⏳ WL missed. Option = buy secondary ~$0.15. Awaiting Rey decision (asked, no reply).
