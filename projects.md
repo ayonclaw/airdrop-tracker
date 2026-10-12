@@ -1,5 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #401 $EVMS Rainbow Box Giveaway (evmseth.xyz/#airdrop) — Web Waitlist (msg 128385) — ✅ DONE (X follow/like/RT/reply + wallet submit)
+- **Date:** 2026-10-12 | **URL:** https://evmseth.xyz/#airdrop | **Reward:** 3 Rainbow Boxes × 10K $EVMS (30K total) | **Source:** @airdropfind drop 128385 | **X:** [@EVM_eths](https://x.com/EVM_eths) | **Campaign post:** https://x.com/EVM_eths/status/2109313894351274143
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Vite/React SPA (TanStack Router). Submit = `POST https://api.sheetbest.com/sheets/af29f8e3-0834-4eed-aa85-9dbf786346b6` with `{"wallet address","comment link","x link"}`. No captcha, no wallet-connect. Tasks: follow @EVM_eths + comment on campaign post + submit EVM address (localStorage dedup key `x link`).
+- **Tasks:**
+  - ✅ Follow [@EVM_eths](https://x.com/EVM_eths) — intent-follow, button flipped to "Mengikuti" (MCP Chrome, @osbornrdx)
+  - ✅ Like campaign post [x.com/EVM_eths/status/2109313894351274143](https://x.com/EVM_eths/status/2109313894351274143) — data-testid like→unlike confirmed
+  - ✅ Repost same post — data-testid retweet→unretweet confirmed (menu "Posting ulang")
+  - ✅ Reply (wallet dropped) → [x.com/osbornrdx/status/2109507932505452718](https://x.com/osbornrdx/status/2109507932505452718)
+- **Wallet submitted:** `0x8cce57930bc7dfcb133f5d34889d362cb1bc282d` (EVM) — SheetBest `POST` → HTTP 200, record echoed + verified present in sheet (row 684, 684 total rows).
+- **X proof links:** follow https://x.com/EVM_eths | like/repost https://x.com/EVM_eths/status/2109313894351274143 | reply https://x.com/osbornrdx/status/2109507932505452718
+- **Status:** ✅ DONE — wallet + comment link + x link recorded in the project sheet.
+
 ### #400 AiFame Index Waitlist (aifame.xyz/waitlist) — Waitlist (msg 128356) — ✅ DONE (X follow/like/repost/post + handle submit)
 - **Date:** 2026-10-11 | **URL:** https://aifame.xyz/waitlist/?ref=VjRusmayana404 | **Reward:** None (waitlist spot + points/leaderboard — Founding Fan badge, Top-100 wall + vote) | **Source:** @airdropfind drop 128356 | **X:** [@AIFameIndex](https://x.com/AIFameIndex)
 - **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA (`AI Fame Index`). Submit is `POST /api/waitlist/` with JSON. Two actions: `{action:"join",handle,ref}` then `{action:"task",handle,task}` per task (`follow`/`like`/`repost`/`post`). Tasks are **client-side self-attest clicks** (window.open intent + 5s timer → POST task), but server records each task against the handle.
