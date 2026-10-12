@@ -477,6 +477,7 @@
 
 
 ### #363 Gas Cash (Fill Gas) — Referral Registration + Free Bike (msg 128270) — ✅ DONE (registration + bike claimed; map check-in ⚠️ needs real GPS at a gas station)
+- **🔄 Update (msg 128391, Oct 12 2026):** Drop = "Gas Cash Update, claims now depend on car power, not quantity." V1→V2 cutover — V1 migration pool share drops to zero Oct 16. **V2 key claim is V1-only** (`GET /api/me/migration-keys` → `{campaign:"v2-cutover", keys:[], upgrade:{inFlight:0,doneUnseen:0}}`); our account (created Oct 7, post-cutover) is already V2, so NO key to claim. Re-authed via Privy X OAuth as @osbornrdx (wallet 0x2389225f8497593d3F03944838F52bE3c8bDBeE5), bike re-confirmed in Garage. Not a new registration — update notice for an already-tracked project.
 - **Date:** 2026-10-07 | **URL:** https://gas.cash/r/Aksara (→ https://app.gas.cash/) | **Reward:** USO stock-token payouts from "pump" claims (Robinhood Chain, chainId 4663) + free Bike NFT (7 claims) | **Source:** @airdropfind drop 128270 / https://x.com/gasdotcash/status/2107626478422954419
 - **Type:** Privy OAuth SPA (Type 2/3 hybrid) — "Login with Google account" per drop text, but the app's Privy modal offers Twitter/Google/Apple. Referral cookie `gas_ref=aksara` set from `/r/Aksara`.
 - **✅ Auth (X OAuth via Privy):** X OAuth2 consent auto-approved **browserlessly** — the new X web client (`x-web` entry) never hydrates the "Izinkan aplikasi" button so synthetic clicks are dead; instead used the internal API directly:
