@@ -1,5 +1,18 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #402 ANONHOOD Whitelist (anonhood.fun/whitelist) — X-Task + Wallet Waitlist (msg 128395) — ✅ DONE (X follow/like/RT/reply + EVM wallet submit)
+- **Date:** 2026-10-12 | **URL:** https://anonhood.fun/whitelist | **Reward:** Allowlist spot (GTD/WL/FCFS) for the OpenSea drop — 4,444 supply, opens 2026-09-30 09:00 UTC | **Source:** @airdropfind drop 128395 | **X:** [@anonhoodntf](https://x.com/anonhoodntf) | **Campaign post:** https://x.com/anonhoodntf/status/2104904809874686081
+- **Type:** Type 17 variant — Next.js SPA wizard (Call sign → Signal → Wallet → Logged). Backend `wl.anonhood.fun` (`/check`, `/apply`, `/result`) rejects plain HTTP **and** `curl_cffi` TLS-impersonation with `403 {"error":"browser required"}` → escalated to MCP Chrome. Tasks are **self-reported** (client-side sessionStorage `anonhood:whitelist`), gated only by Cloudflare Turnstile on final submit.
+- **Reply code:** `AH-DW6Q6A` (from `/check`) | **Reply token:** `AH-DW6Q6A._W_OXTCx2VgmVJjpQu_ch7skjt6HIWGrKDoEjaCxagM`
+- **Tasks (@osbornrdx, MCP Chrome):**
+  - ✅ Follow [@anonhoodntf](https://x.com/anonhoodntf) — intent-follow, confirmation sheet confirmed
+  - ✅ Like [x.com/anonhoodntf/status/2104904809874686081](https://x.com/anonhoodntf/status/2104904809874686081) — `[data-testid="like"]` clicked
+  - ✅ Repost same post — `[data-testid="retweet"]` → `retweetConfirm`
+  - ✅ Reply with code `AH-DW6Q6A` tagging @anonhoodntf → [x.com/osbornrdx/status/2109684044720140391](https://x.com/osbornrdx/status/2109684044720140391)
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) — final `POST /apply` via real browser + valid Turnstile token → **"APPLICATION LOGGED / SIGNAL RECEIVED."** Status: **In review** (call sign @osbornrdx, wallet 0x8CCE...282D).
+- **X proof links:** follow https://x.com/anonhoodntf | like/repost https://x.com/anonhoodntf/status/2104904809874686081 | reply https://x.com/osbornrdx/status/2109684044720140391
+- **Status:** ✅ DONE — application logged, in review. Results announced on X / checkable at anonhood.fun/whitelist.
+
 ### #401 $EVMS Rainbow Box Giveaway (evmseth.xyz/#airdrop) — Web Waitlist (msg 128385) — ✅ DONE (X follow/like/RT/reply + wallet submit)
 - **Date:** 2026-10-12 | **URL:** https://evmseth.xyz/#airdrop | **Reward:** 3 Rainbow Boxes × 10K $EVMS (30K total) | **Source:** @airdropfind drop 128385 | **X:** [@EVM_eths](https://x.com/EVM_eths) | **Campaign post:** https://x.com/EVM_eths/status/2109313894351274143
 - **Type:** Type 4 (BROWSERLESS-FIRST) — Vite/React SPA (TanStack Router). Submit = `POST https://api.sheetbest.com/sheets/af29f8e3-0834-4eed-aa85-9dbf786346b6` with `{"wallet address","comment link","x link"}`. No captcha, no wallet-connect. Tasks: follow @EVM_eths + comment on campaign post + submit EVM address (localStorage dedup key `x link`).
