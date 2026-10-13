@@ -1,5 +1,19 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #406 Top Floor Waitlist (list.topfloor.fun) — EVM Waitlist + 4 X Tasks (msg 128410) — ✅ DONE (Application No. 3322)
+- **Date:** 2026-10-13 | **URL:** https://list.topfloor.fun/?ref=MQ3FRB | **Reward:** 250 guest-list spots for free mint (888 1/1 NFTs, Robinhood Chain) | **Source:** @airdropfind drop 128410 | **X:** [@TopFloorFun](https://x.com/TopFloorFun) | **Campaign post:** https://x.com/TopFloorFun/status/2109660926139826559
+- **Type:** Type 4 (BROWSERLESS-FIRST) — multi-step wizard (handle → 4 X tasks → wallet → application) with a clean JSON API. Tasks are **client-side self-attest** (click `Open ↗` → 6s timer → `state.tasks[t]="done"`), but the server's `/api/apply` enforces all 4 booleans true (`{"error":"Complete all four tasks first.","missing":[...]}`). No external X-verification API — payload booleans are authoritative, so real X actions done for proof + submitted `true` for all four.
+- **Recon:** `config.js` → `window.TOPFLOOR_CONFIG` (X_HANDLE `topfloorfun`, ANNOUNCEMENT_TWEET_ID `2109660926139826559`, REPLY_TEXT "Champagne on the top floor? I'm in 🍾", WAITLIST_CLOSES_AT 2026-10-15T15:02:15Z, SPOTS 250). `app.js` endpoints: `GET /api/handle/{h}` (taken check), `POST /api/apply`, `GET /api/application/{code}`. `GET /api/handle/osbornrdx` → `{"taken":false}`.
+- **X actions (@osbornrdx, MCP Chrome → direct CDP fallback):**
+  - ✅ Follow [@TopFloorFun](https://x.com/TopFloorFun) — button flipped "Ikuti" → "Mengikuti"
+  - ✅ Like https://x.com/TopFloorFun/status/2109660926139826559 — `[data-testid=like]`→`unlike` confirmed
+  - ✅ Repost https://x.com/TopFloorFun/status/2109660926139826559 — retweet menu "Posting ulang" → `[data-testid=unretweet]` confirmed
+  - ✅ Reply https://x.com/osbornrdx/status/2109844611120406933 — "Champagne on the top floor? I'm in 🍾" (verified on `/with_replies`)
+- **Submission:** `POST /api/apply` `{handle:"osbornrdx", wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D", tasks:{follow,like,repost,reply:true}, ref:"MQ3FRB"}` → `{"number":3322,"numberLabel":"3322","code":"HBEX5D","referrals":0,"referredBy":"MQ3FRB"}`. Verified via `GET /api/application/HBEX5D`.
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, Robinhood Chain)
+- **X proof links:** https://x.com/TopFloorFun/status/2109660926139826559 (like+repost) — https://x.com/osbornrdx/status/2109844611120406933 (reply) — follow @TopFloorFun
+- **Mint:** Free, TBA. 250 of 888 spots from this list; selected guests get guaranteed mint spot + personalized invitation. Results announced on site.
+
 ### #405 XRPL Emergency Patch 3.4.1 — News/Blog Article (msg 128405) — ⛔ SKIPPED (news article, zero registration surface)
 - **Date:** 2026-10-13 | **URL:** https://airdropfinder.com/id/blogs/xrpl-rilis-patch-darurat-3-4-1-usai-bug-overflow-bisa-ciptakan-xrp-baru | **Reward:** None | **Source:** @airdropfind drop 128405
 - **Type:** Non-actionable news/blog post — an Airdrop Finder editorial about the XRP Ledger 3.4.1 emergency patch (overflow bug in the 2015 payment engine; researcher estimated potential minting of trillions of XRP). `reward: null`, no Galxe/quest flags.
