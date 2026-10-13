@@ -1,5 +1,29 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #404 AGNT Weekly Socials | S4 Week 3 (app.galxe.com/quest/AGNTHub/GCG6BtZsdm) — Galxe Quest (msg 128404) — ⚠️ PARTIAL (API + real X likes + follows done; TWITTER creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-13 | **URL:** https://app.galxe.com/quest/AGNTHub/GCG6BtZsdm | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128404 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCG6BtZsdm` (`type: Parent`, `status: Active`, numberID `365143`). Parent campaign with `credentialGroups: []` — creds live in child Day 1 campaign `GCLSBtZCv8` (numberID `365144`), merged per the Parent-campaign pattern.
+- **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):**
+  - ✅ `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+  - ⚠️ `TWITTER` creds `732287922715230208` (TruthAgentAI Tweet Liker 2109695981881118937) + `732297227950620672` (agnt_hub Tweet Liker 2109707496105427306) → `"missing twitter args"` (X OAuth not linked at Galxe account level — architectural)
+  - ⚠️ `GALXE_ID` creds `732287920806821888` (Visit the Truth post) + `732297245772218368` (Visit the AGNT Hub post) → `allow:false` (visit creds need real browser visit beacon + X OAuth)
+- **X actions (@osbornrdx, MCP Chrome):**
+  - ✅ Like [TruthAgentAI tweet 2109695981881118937](https://x.com/TruthAgentAI/status/2109695981881118937) — `like`→`unlike` testid confirmed (10→11)
+  - ✅ Like [agnt_hub tweet 2109707496105427306](https://x.com/agnt_hub/status/2109707496105427306) — `like`→`unlike` testid confirmed (18→19)
+  - ✅ Follow [@agnt_hub](https://x.com/agnt_hub) — `-unfollow` testid confirmed ("Mengikuti")
+  - ✅ Follow [@TruthAgentAI](https://x.com/TruthAgentAI) — confirmation sheet confirmed
+- **X proof links:** https://x.com/TruthAgentAI/status/2109695981881118937 (like) — https://x.com/agnt_hub/status/2109707496105427306 (like) — follows @agnt_hub + @TruthAgentAI
+- **Blocker:** TWITTER + visit creds need X OAuth linked at Galxe account level (one-time manual CloakBrowser setup). Recurring weekly series.
+
+### #403 AGNT Weekly Socials | S4 Week 2 - Finale (app.galxe.com/quest/AGNTHub/GCC2BtZ9yB) — Galxe Quest (msg 128404) — ⚠️ PARTIAL (API followSpace done; qualification cred `allow:false`)
+- **Date:** 2026-10-13 | **URL:** https://app.galxe.com/quest/AGNTHub/GCC2BtZ9yB | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128404 | **X:** @agnt_hub
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCC2BtZ9yB` (`type: Points`, `status: Active`, numberID `365137`). Standalone Points campaign (not a Parent) — "Finale" of the S4 Week 2 series (#397/#389/#381/#373).
+- **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):**
+  - ✅ `followSpace(77675)` → `{"followSpace":1}` (AGNT Hub followed on Galxe)
+  - ⚠️ `GALXE_ID` cred `732185354475405312` ("AGNT S4 Week 2 Finale Qualification") → `allow:false` — qualification cred (requires completing all Week 2 day-campaign tasks incl. OAuth-linked X creds), not directly syncable
+- **X proof links:** @agnt_hub + @TruthAgentAI followed (recurring weekly reputation)
+- **Blocker:** Finale qualification depends on X OAuth-linked Week 2 day tasks (architectural). Recurring weekly series.
+
 ### #402 ANONHOOD Whitelist (anonhood.fun/whitelist) — X-Task + Wallet Waitlist (msg 128395) — ✅ DONE (X follow/like/RT/reply + EVM wallet submit)
 - **Date:** 2026-10-12 | **URL:** https://anonhood.fun/whitelist | **Reward:** Allowlist spot (GTD/WL/FCFS) for the OpenSea drop — 4,444 supply, opens 2026-09-30 09:00 UTC | **Source:** @airdropfind drop 128395 | **X:** [@anonhoodntf](https://x.com/anonhoodntf) | **Campaign post:** https://x.com/anonhoodntf/status/2104904809874686081
 - **Type:** Type 17 variant — Next.js SPA wizard (Call sign → Signal → Wallet → Logged). Backend `wl.anonhood.fun` (`/check`, `/apply`, `/result`) rejects plain HTTP **and** `curl_cffi` TLS-impersonation with `403 {"error":"browser required"}` → escalated to MCP Chrome. Tasks are **self-reported** (client-side sessionStorage `anonhood:whitelist`), gated only by Cloudflare Turnstile on final submit.
@@ -88,7 +112,7 @@
 - **✅ Wallet submitted:** `POST /api/ea/wallet {wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` -> `user.wallet="0x8cce57930bc7dfcb133f5d34889d362cb1bc282d", step:4` (status -> approved).
 - **Status:** ✅ DONE — 4/4 steps + wallet registered.
 
-> Last updated: **Oct 11, 2026** — #397 AGNT S4W2 Day 6 PARTIAL (API followSpace + 1× X like done; X OAuth wall) | #396 $AXIS SKIPPED (tokenomics announcement, no link) | #395 Embervale Early Access DONE (X OAuth + follow/like/repost/quote/comment + wallet 0x8CCE) | #394 MineHood WL DONE (X OAuth + 7/7 tasks + wallet 0x8CCE, 170 XP) | #393 The Unbound (Jadebound) WL DONE (X follow/like/RT + wallet 0x8CCE; Discord OAuth pending) | #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
+> Last updated: **Oct 13, 2026** — #404 AGNT S4W3 PARTIAL (API followSpace + 2× X like + 2× X follow done; X OAuth wall) | #403 AGNT S4W2 Finale PARTIAL (API followSpace; qualification cred allow:false) | #397 AGNT S4W2 Day 6 PARTIAL (API followSpace + 1× X like done; X OAuth wall) | #396 $AXIS SKIPPED (tokenomics announcement, no link) | #395 Embervale Early Access DONE (X OAuth + follow/like/repost/quote/comment + wallet 0x8CCE) | #394 MineHood WL DONE (X OAuth + 7/7 tasks + wallet 0x8CCE, 170 XP) | #393 The Unbound (Jadebound) WL DONE (X follow/like/RT + wallet 0x8CCE; Discord OAuth pending) | #392 ACI S1 Update ℹ️ INFO (eligibility check Oct 12) | #391 YneraX Early User Campaign DONE (X OAuth + follow/repost/wallet, 200 entries) | #390 JeanPhilHoods WL ⚠️ PARTIAL (X follow/like/RT done; Google Form 2FA gated) | #389 AGNT S4W2 Day 5 PARTIAL (API + 2× X like done; X OAuth wall) | #388 InkSigil WL DONE (browserless Worker API + X follow/like/RT) | #387 Foxora PARTIAL (X follow+like+RT+reply done; Google Form login+2FA gated) | #386 Coincamps Galxe PARTIAL (API+follow+quote done) | #385 Pear Rewards Daily Streak DONE (31d, pearls 11,834→15,089) | #384 Numen Cash PARTIAL (X follow+like+RT+reply done; site registration gated by `SITE_GATE_KEY`) | #383 Catalyst WL DONE (ref `Hy7qc`) | #382 Jumatan SKIPPED (joke) | #381 AGNT S4W2 Day 4 PARTIAL | #380 EscCap Genesis WL DONE
 ### #394 MineHood — Waitlist (msg 128345) — ✅ DONE (X OAuth + 7/7 tasks + wallet)
 
 - **Date:** 2026-10-10 | **URL:** https://www.minehood.io/#waitlist | **Reward:** Waitlist spot (skill-based pixel mining game on Robinhood Chain) | **Source:** @airdropfind drop 128345 | **X:** [@minehood_rh](https://x.com/minehood_rh)
