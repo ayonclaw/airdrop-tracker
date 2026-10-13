@@ -1,5 +1,10 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #405 XRPL Emergency Patch 3.4.1 — News/Blog Article (msg 128405) — ⛔ SKIPPED (news article, zero registration surface)
+- **Date:** 2026-10-13 | **URL:** https://airdropfinder.com/id/blogs/xrpl-rilis-patch-darurat-3-4-1-usai-bug-overflow-bisa-ciptakan-xrp-baru | **Reward:** None | **Source:** @airdropfind drop 128405
+- **Type:** Non-actionable news/blog post — an Airdrop Finder editorial about the XRP Ledger 3.4.1 emergency patch (overflow bug in the 2015 payment engine; researcher estimated potential minting of trillions of XRP). `reward: null`, no Galxe/quest flags.
+- **Recon:** `curl` → HTTP 200, `content-type: text/html`, Next.js SSR blog page (title "XRPL Rilis Patch Darurat 3.4.1 ... — Airdrop Finder Indonesia"). Grep for `<form>` / `type="email"` / `connect wallet` / `join waitlist` / `/api/(register|subscribe|claim|waitlist)` → **none**. Only matches are unrelated article-card links ("Dua Ethereum L2 Tumbang pada Oktober") + CDN image alt text.
+- **Verdict:** ⛔ SKIPPED — zero registration/task/wallet surface. It's an industry news article published in the airdrop channel, not a drop. Nothing to submit. Moved drop → done/.
 ### #404 AGNT Weekly Socials | S4 Week 3 (app.galxe.com/quest/AGNTHub/GCG6BtZsdm) — Galxe Quest (msg 128404) — ⚠️ PARTIAL (API + real X likes + follows done; TWITTER creds blocked on Galxe-level X OAuth)
 - **Date:** 2026-10-13 | **URL:** https://app.galxe.com/quest/AGNTHub/GCG6BtZsdm | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128404 | **X:** @agnt_hub + @TruthAgentAI
 - **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCG6BtZsdm` (`type: Parent`, `status: Active`, numberID `365143`). Parent campaign with `credentialGroups: []` — creds live in child Day 1 campaign `GCLSBtZCv8` (numberID `365144`), merged per the Parent-campaign pattern.
