@@ -1,5 +1,21 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #407 Zeenodes Freemint (zeenodes.cc) — X-OAuth Whitelist + 4 X Tasks + Wallet (msg 128421) — ✅ DONE (wallet_in, pending review)
+- **Date:** 2026-10-13 | **URL:** https://www.zeenodes.cc/apply | **Reward:** Free mint spot — 1,111 encrypted NFTs on Ethereum (Zama FHE) | **Source:** @airdropfind drop 128421 | **X:** [@Zeenodes](https://x.com/Zeenodes) | **Campaign post:** https://x.com/Zeenodes/status/2107562182968004817
+- **Type:** Type 17 (SOCIAL-VERIFICATION-CLAIM) — X OAuth2 (PKCE) gate → server-verified Follow/RT/Comment (+optional Quote) → EVM wallet submit. "One X account, one wallet, one slot. No wallet connect, no signatures."
+- **Recon:** `/checker` = read-only status checker → `GET /api/status?wallet=0x...` (returned `notfound` before apply). `/apply` inline JS → `GET /api/me` (state), `POST /api/check {task}` (verify follow|engage|quote), `POST /api/submit {wallet}`, `POST /api/auth/start|disconnect`. X OAuth `client_id=WERMZkozcUwzWlpVWkswR1AwazI6MTpjaQ`, redirect `https://www.zeenodes.cc/api/auth/callback`, scope `users.read tweet.read offline.access`. Gate: X account ≥15 days old + ≥50 followers (ours: 5,505 days, 1,033 followers → `eligible:true`).
+- **X actions (@osbornrdx, MCP Chrome, verified server-side):**
+  - ✅ Follow [@Zeenodes](https://x.com/Zeenodes) — intent page → `confirmationSheetConfirm` "Ikuti @Zeenodes" → `/api/check {task:"follow"}` → `{"ok":true,"task":"follow"}`
+  - ✅ Like https://x.com/Zeenodes/status/2107562182968004817 — `[data-testid=like]` → `unlike` confirmed
+  - ✅ Repost https://x.com/Zeenodes/status/2107562182968004817 — retweet menu "Posting ulang" → `[data-testid=unretweet]` confirmed
+  - ✅ Reply → https://x.com/osbornrdx/status/2109948681088831520 ("Encrypted nodes on Zama FHE. Locked in. 🔐")
+  - ✅ Quote (optional boost) → https://x.com/osbornrdx/status/2109949235504492932 (payload `[AES-332]` + campaign URL)
+  - ✅ Engage verify: `/api/check {task:"engage"}` → `{"ok":true,"retweet":true,"comment":true}` | Quote verify: `/api/check {task:"quote"}` → `{"ok":true}`
+- **Submission:** `POST /api/submit {wallet:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D"}` → `{"ok":true,"status":"wallet_in","wallet":"0x8CCE...282D","record":{"username":"osbornrdx","followers":1033,"tasks":{connected,follow,retweet,comment,quote,wallet:true}}}`. Checker confirms: `{"state":"pending","mode":"wallet","status":"wallet_in","label":"Wallet in. Waiting for review."}`.
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, Ethereum mainnet)
+- **X proof links:** https://x.com/Zeenodes/status/2107562182968004817 (like+repost) — https://x.com/osbornrdx/status/2109948681088831520 (reply) — https://x.com/osbornrdx/status/2109949235504492932 (quote) — follow @Zeenodes
+- **Status:** ✅ Wallet in queue, awaiting project review. Free mint, TBA.
+
 ### #406 Top Floor Waitlist (list.topfloor.fun) — EVM Waitlist + 4 X Tasks (msg 128410) — ✅ DONE (Application No. 3322)
 - **Date:** 2026-10-13 | **URL:** https://list.topfloor.fun/?ref=MQ3FRB | **Reward:** 250 guest-list spots for free mint (888 1/1 NFTs, Robinhood Chain) | **Source:** @airdropfind drop 128410 | **X:** [@TopFloorFun](https://x.com/TopFloorFun) | **Campaign post:** https://x.com/TopFloorFun/status/2109660926139826559
 - **Type:** Type 4 (BROWSERLESS-FIRST) — multi-step wizard (handle → 4 X tasks → wallet → application) with a clean JSON API. Tasks are **client-side self-attest** (click `Open ↗` → 6s timer → `state.tasks[t]="done"`), but the server's `/api/apply` enforces all 4 booleans true (`{"error":"Complete all four tasks first.","missing":[...]}`). No external X-verification API — payload booleans are authoritative, so real X actions done for proof + submitted `true` for all four.
