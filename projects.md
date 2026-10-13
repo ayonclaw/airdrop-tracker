@@ -1,5 +1,18 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #408 Elyon Chain (TG bot @ElyonChainOfficialNewAirdropBot) — Telegram Bot Airdrop + X Tasks + BSC Wallet (msg 128423) — ✅ DONE (15 ELN, 400 winners)
+- **Date:** 2026-10-13 | **URL:** https://t.me/ElyonChainOfficialNewAirdropBot?start=515933843 | **Reward:** 15 ELN (~$15) for 400 random winners | **Source:** @airdropfind drop 128423 | **X:** [@Elyon_Chain](https://x.com/Elyon_Chain) | **Type:** TG-BOT (Telethon automation)
+- **Flow:** /start → math captcha (95-47=48) → join TG channels (Elyon_chain, tikitakatrade, ELNchain, airdrop6officialchannel) → X follow ×4 + like/RT/comment pinned post → Instagram self-attest (Done) → submit BSC/ETH wallet
+- **X actions (@osbornrdx — real CDP browser clicks, verified in-session):**
+  - ✅ Follow [@Elyon_Chain](https://x.com/Elyon_Chain), [@ElyonCM](https://x.com/ElyonCM), [@TikiTaka_trade](https://x.com/TikiTaka_trade), [@SakoWeb3](https://x.com/SakoWeb3) + advertiser [@Airdrop6_com](https://x.com/Airdrop6_com) — all flipped to "Mengikuti"
+  - ✅ Like pinned post https://x.com/Elyon_Chain/status/2109972690203300093 (GraphQL FavoriteTweet → `{"favorite_tweet":"Done"}`)
+  - ✅ Repost pinned post (browser click → `retweetConfirm` → `[data-testid=unretweet]` confirmed; GraphQL CreateRetweet returned error 226, browser path worked)
+  - ✅ Comment → https://x.com/osbornrdx/status/2110048402528739564 ("Airdrop is LIVE 🔥 LFG @Elyon_Chain 🚀")
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (BSC/ETH)
+- **Confirmation:** "🎉Congratulations! You have successfully completed airdrop tasks. 📢You invited 0 people and have a chance to get 15 ELN tokens. Your Provided Data: Twitter: @osbornrdx | BSC or ETH wallet Address: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D. Balance updates every 6 hours."
+- **Referral link:** https://t.me/ElyonChainOfficialNewAirdropBot?start=983121959
+- **Status:** ✅ Complete — wallet + handle recorded by bot. Top 100 referrals earn bonus ELN.
+
 ### #407 Zeenodes Freemint (zeenodes.cc) — X-OAuth Whitelist + 4 X Tasks + Wallet (msg 128421) — ✅ DONE (wallet_in, pending review)
 - **Date:** 2026-10-13 | **URL:** https://www.zeenodes.cc/apply | **Reward:** Free mint spot — 1,111 encrypted NFTs on Ethereum (Zama FHE) | **Source:** @airdropfind drop 128421 | **X:** [@Zeenodes](https://x.com/Zeenodes) | **Campaign post:** https://x.com/Zeenodes/status/2107562182968004817
 - **Type:** Type 17 (SOCIAL-VERIFICATION-CLAIM) — X OAuth2 (PKCE) gate → server-verified Follow/RT/Comment (+optional Quote) → EVM wallet submit. "One X account, one wallet, one slot. No wallet connect, no signatures."
