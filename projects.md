@@ -1,5 +1,20 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #412 NULORA Genesis Waitlist (nulora.io) — Monero Digital Collectibles (msg 128441) — ✅ DONE
+- **Date:** 2026-10-14 | **URL:** https://nulora.io/ | **Reward:** Genesis waitlist spot (7 XP, rank #545) | **Source:** @airdropfind drop 128441 | **X:** [@nuloraio](https://x.com/nuloraio) | **Track:** waitlist
+- **Type:** Type 3+2 hybrid (WEB3-WALLET + X tasks) — Monero-ecosystem launchpad. 5 tasks / 7 XP. Auth = project's OWN hosted Monero mainnet wallet (iframe `wallet.nulora.io`, postMessage bridge) — NOT EVM/SOL.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Follow @nuloraio → button flipped to "Mengikuti" | proof: [x.com/nuloraio](https://x.com/nuloraio)
+  - ✅ Like + Repost announcement → [x.com/nuloraio/status/2110065565222027526](https://x.com/nuloraio/status/2110065565222027526)
+  - ✅ Comment (reply) → [x.com/osbornrdx/status/2110290528374002121](https://x.com/osbornrdx/status/2110290528374002121)
+  - ✅ Quote post → [x.com/osbornrdx/status/2110290754522521641](https://x.com/osbornrdx/status/2110290754522521641)
+  - ✅ Wallet connect → real Monero mainnet wallet created in-browser + signed via iframe ("Confirm and join")
+- **Wallet (Monero mainnet):** `46vxHSqxrZRUddbHsLYr7C8TPHxRTba6RXLUUcu1X7BoN6hMUwFX1Pe3Jmd9pRekR4ERLzBczFKUJFGrem1FWSzw3FuZ2kW` (25-word mnemonic + wallet file saved to `~/airdrop/credentials/wallets/nulora/`)
+- **Confirmation:** "You're on the waitlist. Early access allocation is not guaranteed." — status **#545**, TOTAL XP **7**, EARLY ACCESS: "Eligible for consideration". `POST /api/waitlist` → 200.
+- **Referral link:** https://nulora.io/?ref=1cbea390c91a4e43a059
+- **Status:** ✅ DONE — 5/5 tasks completed in one pass.
+
+
 ### #411 RAFA Finance Testnet (rafa.ai/invest) — On-Chain Testnet Fund (msg 128433) — ⚠️ PENDING (Type 21 hard wall: needs real MetaMask + on-chain deposit/redeem)
 - **Date:** 2026-10-14 | **URL:** https://www.rafa.ai/invest | **Reward:** testnet participation (RWA fund shares) | **Source:** @airdropfind drop 128433 | **X:** [@RAFA_AI](https://x.com/RAFA_AI) | **Track:** testnet
 - **Type:** Type 21 (ON-CHAIN TESTNET TRADING) — Next.js dApp, "Connect wallet", **Base Sepolia (chainId 84532)**, RPC `sepolia.base.org`, contract `0xE840b49BCf3791d94eD3253d2E67Fa6d5B0D6a15`.
