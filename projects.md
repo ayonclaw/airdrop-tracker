@@ -1225,6 +1225,7 @@
 - **Endpoints (browserless-usable):** POST /api/profile {username}; POST /api/wallets {address}; POST /api/faucet {address}; GET /api/me; GET /api/quests.
 - **X proof links:** N/A for this drop (X link = OAuth boost, no like/repost task).
 - **Status:** ✅ DONE — **FULL**. Login/profile/X-link + native Dilithium3 wallet linked + all 3 daily quests (check-in, Auras LP, AseDex LP) completed on-chain 2026-10-14 and automated via daily cron `f9c9a13f00d7`. Only remaining gap: validator-sign + X-Spaces code tasks (no bonded validator node; Spaces codes are first-come and always full).
+- **✅ Daily update (drop 128449, 2026-10-15):** `scripts/asentum/daily.sh` executed successfully. Bot faucet queued **+5 ASE**, **4 ASE** transferred to the native Dilithium wallet, then Auras and AseDex liquidity quests completed and receipts reported **MINED**. Daily on-chain routine remains operational.
 
 ### #314 AGNT Weekly Socials | S3 Week 9 - Day 5 — Galxe Quest (msg 127802) — ⚠️ PARTIAL (SIWE + followSpace + real X likes done; creds blocked on X OAuth)
 - **Date:** 2026-09-19 | **URL:** https://app.galxe.com/quest/AGNTHub/GCoVrtZUs4 | **Reward:** Points (Galxe) | **Source:** @airdropfind drop 127802 | **X:** @agnt_hub + @TruthAgentAI
