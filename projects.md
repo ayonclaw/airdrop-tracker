@@ -1,5 +1,41 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
 
+### #411 RAFA Finance Testnet (rafa.ai/invest) — On-Chain Testnet Fund (msg 128433) — ⚠️ PENDING (Type 21 hard wall: needs real MetaMask + on-chain deposit/redeem)
+- **Date:** 2026-10-14 | **URL:** https://www.rafa.ai/invest | **Reward:** testnet participation (RWA fund shares) | **Source:** @airdropfind drop 128433 | **X:** [@RAFA_AI](https://x.com/RAFA_AI) | **Track:** testnet
+- **Type:** Type 21 (ON-CHAIN TESTNET TRADING) — Next.js dApp, "Connect wallet", **Base Sepolia (chainId 84532)**, RPC `sepolia.base.org`, contract `0xE840b49BCf3791d94eD3253d2E67Fa6d5B0D6a15`.
+- **Tasks:** Connect wallet → Claim faucet tokens (tUSDC) → Deposit tUSDC into a test fund → Receive fund-share tokens → Try redeeming shares → Explore features.
+- **Recon:** `POST /api/faucet|/api/claim|/faucet` → all **404** (no browserless endpoint; the faucet is an in-app/on-chain button). Gas check: wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` on Base Sepolia = **0.0494 ETH** ✅ (gas sufficient).
+- **Blocker:** Tasks ARE chain activity — mock `window.ethereum` injection buys nothing (no off-chain task to fake). CDP browser :9222 has no MetaMask vault. Needs real MetaMask unlock + Base Sepolia + on-chain deposit/redeem signatures.
+- **Manual recipe (CloakBrowser + real MetaMask, airdrop_00):** open rafa.ai/invest → Connect Wallet (Base Sepolia) → Claim faucet tUSDC → Deposit into test fund → confirm fund-share receipt → Redeem shares → explore.
+- **Verdict:** ⚠️ PENDING — hard wall (real wallet + signed on-chain tx). No browserless path.
+
+### #410 AGNT Weekly Socials | S4 Week 3 - Day 2 (app.galxe.com/quest/AGNTHub/GCAVBtZG2j) — Galxe Quest (msg 128430) — ⚠️ PARTIAL (API + real X likes done; TWITTER creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-14 | **URL:** https://app.galxe.com/quest/AGNTHub/GCAVBtZG2j | **Reward:** Galxe points (AGNT Hub, 10+10+20) | **Source:** @airdropfind drop 128430 | **X:** @agnt_hub + @TruthAgentAI
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCAVBtZG2j` (`type: Points`, `status: Active`). Standalone Points campaign (not a Parent) — Day 2 of the S4 Week 3 series (#404). Window 2026/10/13 04:00 – 2026/10/19 04:00 GMT+7.
+- **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, pipeline `~/scripts/galxe/agnt_s4w3d2_pipeline.py`):**
+  - ✅ SIWE SignIn → JWT; ✅ `followSpace(77675)` → `{"followSpace":1}`
+  - ⚠️ `TWITTER` creds `732562579968229376` (TruthAgentAI Tweet Liker 2109972725171109901) + `732563110354747392` (agnt_hub Tweet Liker 2109973438756446209) → `"missing twitter args"` (X OAuth not linked at Galxe account level — architectural, one-time manual)
+  - ⚠️ `GALXE_ID` creds `732562563996319744` (Visit the Truth post) + `732563110593822720` (Visit the AGNT Hub post) → `allow:false` (visit creds need real browser visit beacon + X OAuth)
+- **X actions (@osbornrdx, MCP Chrome CDP):** ✅ Like [TruthAgentAI tweet 2109972725171109901](https://x.com/TruthAgentAI/status/2109972725171109901) | ✅ Like [agnt_hub tweet 2109973438756446209](https://x.com/agnt_hub/status/2109973438756446209)
+- **Blocker:** Galxe browser session not logged in (`Log in` on quest page) — X OAuth link requires a Galxe web login (wallet/social) + X consent. Same architectural wall as #404/#403/#397. Retry when Galxe X OAuth is linked once at account level.
+- **Verdict:** ⚠️ PARTIAL — followSpace + both real X likes done; 4 creds blocked on Galxe-level X OAuth.
+
+### #409 ZMINE (zmine.si) — Web Dashboard: Mining + SI Quiz + X Tasks (msg 128429) — ✅ DONE (full account, 7/7 X tasks + 12/12 quiz)
+- **Date:** 2026-10-14 | **URL:** https://zmine.si/register?ref=EHQWWTP6 | **Reward:** $MINE (210,000,000 fixed supply, no pre-mine, no team allocation) | **Source:** @airdropfind drop 128429 | **X:** [@zminedotsi](https://x.com/zminedotsi) | **Track:** quest (daily-repeatable)
+- **Account:** handle `XVSN140K`, userId `e5f20674-6843-4a45-b8a2-d004a22c4ff3`, loginKey `LK-P8VVQ-...` + 24-word recovery phrase → `~/airdrop/credentials/projects/zmine.txt`. Referral `EHQWWTP6` (Rey's). Login: `POST /api/v1/auth/login {loginKey}` → `zmine_session` cookie.
+- **API (reversed from `_next` chunks):** `/auth/{register,login,2fa,recover}` · `/mining/{activate,overview,boosts}` · `/si/{tasks/next,tasks/answer,advisor,agent}` · `/social/{bind,confirm,verify}` · `/wallet/stake`. Base `https://zmine.si/api/v1`.
+- **✅ Mining session active:** `POST /mining/activate` → session 24h (expires 2026-10-15T06:04Z). Hashpower **133,620 mH** = base 1,000 + mind 60,000 + social 70,000, ×1.02 streak multiplier. Network share 0.0065%, **projected 59.83 $MINE/day**.
+- **✅ SI quiz 12/12 correct** (+5,000 mH each, 60,000 mH total): solver at `~/scripts/zmine/solve_tasks.py` (rules engine: ZEC↔zatoshi ×1e8, arithmetic verify, blocks/day 86400/N, epochs×6/hr, %, Math.floor, sequences, SI-vs-IEC units, typeof null). Daily cap 12, answers <1.5s void, 3 wrongs = 10 min pause.
+- **✅ X tasks 7/7 verified (70,000 mH):** bind code `zmine-c1da1344` posted from @osbornrdx → `POST /social/confirm` linked (1,033 followers). Then:
+  - Follow [@zminedotsi](https://x.com/zminedotsi) → ✅
+  - Repost https://x.com/zminedotsi/status/2110235160373244328 → ✅
+  - Quote same → ✅ | Reply same → https://x.com/osbornrdx/status/2110252990666100943
+  - Repost https://x.com/zminedotsi/status/2109635078640816373 → ✅
+  - Quote same → ✅ | Reply same → https://x.com/osbornrdx/status/2110253337929281856
+  - Tasks re-arm every 7 days (`days:7`, `expiresAt` on each).
+- **Proof:** bind tweet = @osbornrdx timeline 06:11Z (`zmine-c1da1344`); replies above; `GET /social` → `earnedMh: 70000`, all 7 `done:true`.
+- **Verdict:** ✅ DONE — full onboarding, mining live, all quiz + social credits earned. Weekly re-verify cron candidate (tasks expire 2026-10-21).
+
 ### #408 Elyon Chain (TG bot @ElyonChainOfficialNewAirdropBot) — Telegram Bot Airdrop + X Tasks + BSC Wallet (msg 128423) — ✅ DONE (15 ELN, 400 winners)
 - **Date:** 2026-10-13 | **URL:** https://t.me/ElyonChainOfficialNewAirdropBot?start=515933843 | **Reward:** 15 ELN (~$15) for 400 random winners | **Source:** @airdropfind drop 128423 | **X:** [@Elyon_Chain](https://x.com/Elyon_Chain) | **Type:** TG-BOT (Telethon automation)
 - **Flow:** /start → math captcha (95-47=48) → join TG channels (Elyon_chain, tikitakatrade, ELNchain, airdrop6officialchannel) → X follow ×4 + like/RT/comment pinned post → Instagram self-attest (Done) → submit BSC/ETH wallet
