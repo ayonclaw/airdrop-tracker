@@ -6017,3 +6017,40 @@
 - **BREZ TECH** (msg 128483) — mobile-only (Play Store) → manual app.
 - **Jumatan** (msg 128489) — joke/meme post, non-crypto link → SKIPPED per triage rule.
 - **Galxe AGNT Weekly Socials S4 W3 D3/D4** (msg 128454, 128482) — Galxe quests → `galxe-quest-execution` pipeline.
+
+### #413 INKFLUX Waitlist (inkflux.live) — 1,555 supply · freemint (msg 128456) — ⚠️ PENDING
+- **Date:** 2026-10-16 | **URL:** https://inkflux.live/ | **Source:** [x.com/InkFlux_/status/2109756112778231909](https://x.com/InkFlux_/status/2109756112778231909)
+- **Tasks (@osbornrdx):** ✅ 3/3 missions verified + "ACCESS GRANTED" gate cleared. Handle `osbornrdx` + EVM address filled via native setter AND real CDP keystrokes.
+- **Blocker:** the Next.js server-action wallet submit **silently no-ops** — `button.click()`, `form.requestSubmit()` and real keystrokes all produce **zero POST** to origin (Network.enable captured nothing). Server-action ID not reachable without the internal action hash; the one early attempt that did reach the server returned "Something went wrong saving your submission."
+- **Wallet (EVM):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Needs:** manual browser submit (wallet address only, no wallet connect required).
+
+### #414 Sick Mind Guy Waitlist (sickmindguy.xyz) — 2,222 supply · freemint (msg 128462) — ⛔ SITE BROKEN
+- **Date:** 2026-10-16 | **URL:** https://sickmindguy.xyz | **Source:** [x.com/sickmindguy/status/2108583035557782016](https://x.com/sickmindguy/status/2108583035557782016)
+- **Blocker:** server-side **NextAuth misconfiguration** — `/api/auth/signin/twitter` returns 302 → `/api/auth/error?error=Configuration`. X OAuth provider has no client id/secret configured. Not fixable client-side; the X gate can never be satisfied until the project fixes its deployment.
+- **Verdict:** no action possible. Re-check the domain in ~1 week; if still `error=Configuration`, drop it.
+
+### #415 Arco Finance Testnet (app.arco.financial) — Giwa Sepolia DeFi (msg 128466) — ⚠️ PENDING (wallet SDK)
+- **Date:** 2026-10-16 | **URL:** https://app.arco.financial | **Faucet:** https://faucet.giwa.io | **Explorer:** https://sepolia-explorer.giwa.io
+- **Intel recovered (Vite bundle `assets/index-CdTnGlwO.js`):**
+  - **RPC `https://sepolia-rpc.giwa.io` is REACHABLE from this VPS** — `eth_chainId` → `0x164ce` (91342). ✅ Server-side on-chain calls are possible.
+  - API base: `https://arco-giwa-api-release.onrender.com` (`/api/v1/evm/catalog/91342`, `/api/v1/evm/market/91342`), `/health` → `{"ok":true}`. Auth = **Dynamic.xyz** env `4855c810-3521-425f-a6f3-963854d2b013`.
+  - 8 products (bEQTY, auMINT, arcoUSD, aBTC, aETH, aXRP, iBENJI, aCAPIX) each with productToken/depositVault/redemptionVault/priceFeed addresses. **All `depositsEnabled:false`, `redemptionsEnabled:false`** (registry `giwa-preprod-2026-06-27`).
+  - 4 payment tokens: tUSDC `0x869d9c8d9bf0a961fc2fd3bba300fdbeee3c2633`, tBTC `0x2330e111fb116bf8041f694145e961ed9b66243e`, tWETH `0xd6499f5d8c162d81a52302b855b7b2961917fead`, tXRP `0x8b93214e63d83d64de4437c82a8eb6f73481a922`.
+  - EVM balance on Giwa Sepolia for our wallet: **0**.
+- **Blocker:** `window.ethereum` and `window.dynamicClient` both **undefined** — the Dynamic.xyz SDK never initialised, and "Connect Wallet" / "Mint test assets" are inert. No browsable sign-in path.
+- **To finish manually:** CloakBrowser + MetaMask → add Giwa Sepolia (RPC `https://sepolia-rpc.giwa.io`, chain 91342) → `https://faucet.giwa.io` (CF-protected, solve challenge) → connect → verify email → mint test tokens → use features.
+
+### #416 XREIGN UNITS Genesis (xreign.app/units) — 5,555 · free mint on Robinhood Chain (msg 128469) — ⚠️ NOT ON LIST
+- **Date:** 2026-10-16 | **URL:** https://xreign.app/units | **Source:** [x.com/xreign_app/status/2108449226250183030](https://x.com/xreign_app/status/2108449226250183030)
+- **Session:** signed in as **@osbornrdx** (X OAuth via CDP browser) — 72,866 $REIGN, 80.25 $USDT, 16 tasks done.
+- **Page state:** `LIST: Closed` · `YOUR SPOT: Not on the list` · "The list is closed — results soon." · 2,194 with priority / 19,069 on the list / 5,555 supply. Passport: X account **Strong**, Socials **Done**, Wallet **Open**, Referrals **0/3**.
+- **Blocker:** the UNITS allowlist closed without our entry. `/api/tasks` (Bearer token from `localStorage['xreign.accessToken']`) returns 17 items with `passport:{held:false}` and no UNITS registration task — there is **no submit surface left**. Nothing to automate.
+- **Next:** monitor for the mint/results announcement; free mint will need Robinhood Chain gas + real MetaMask (RPC TLS-blocked from this VPS).
+
+### #417 Galxe — AGNT Weekly Socials S4 W3 Day 3 + Day 4 (msg 128454, 128482) — ⚠️ PARTIAL
+- **Date:** 2026-10-16 | **URLs:** [GC76btZW1r](https://app.galxe.com/quest/AGNTHub/GC76btZW1r) · [GCuQbtZmwk](https://app.galxe.com/quest/AGNTHub/GCuQbtZmwk) | **Space:** AGNTHub
+- **NEW WIN — Galxe SIWE via `eth_account` offline sign → HTTP 200 + JWT** (no browser, no wallet extension). Galxe ID `LUZFnfaqSPcJJ9to9HXzoG` (wallet `0x8CCE…282D`) restored. Both campaigns confirmed **Active**.
+- ✅ **4 × GALXE_ID "Visit the post" credentials synced** (`syncCredentialValue` → `SyncCredentialValueOutput`, no error) — credIds `732950494669963264`, `732951882376413184`, `733336485775802368`, `733336926983028736`.
+- ⚠️ **4 × TWITTER "Tweet Liker" credentials blocked** — `syncCredentialValue` requires `syncOptions.twitter.captcha` (Geetest/hCaptcha); empty captcha → `GRAPHQL_VALIDATION_FAILED` "Invalid request". Also needs X OAuth linked to the Galxe ID. Tweets referenced: `2110360591411921057`, `2110362207926063280` (D3) · `2110746633633780182`, `2110747194248614005` (D4).
+- **Needs:** Galxe X OAuth link + Geetest solve (one-time), then the 4 Tweet Liker creds can be synced via API.
