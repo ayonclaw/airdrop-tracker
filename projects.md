@@ -5986,7 +5986,8 @@
 - **✅ Card:** `POST /api/reason {custom}` → card No. **1249**; `POST /api/card {png}` (must be **1200x630** PNG data URL — 1200x1200/960x960 rejected "That isn't a card.") → card asset **https://karmafuckers.fun/s/1249?v=mvap0iqn**
 - **✅ X post:** **https://x.com/osbornrdx/status/2111008340356800640** → `POST /api/posted {url}` → `posted:true`
 - **✅ Soul game WON:** hand-drawn-stroke noughts & crosses (`POST /api/ttt/new {as:"x"}` → `POST /api/ttt/move {id, strokes}`). Strokes are `[[x,y,tMs],...]` normalized 0..1; constraints met: each line dur ≥25ms, total span ≥120ms, len(a) ≤0.75, two lines must intersect, intersection must land in the target cell. Won on game 8 (`o-xxxxoo-`).
-- **⛔ Blocker:** `POST /api/drop {wallet, turnstile}` → **403 `{"error":"Cloudflare wasn't sure you're human."}`**. Turnstile sitekey `0x4AAAAAAFRJhwoGtcNAJVkc`, `appearance:interaction-only` + `execution:execute`. Sidecar solve returned 422; in-browser `window.turnstile` not loaded (lazy). Needs a real Turnstile token on the drop step.
+- **⛔ Blocker:** `POST /api/drop {wallet, turnstile}` → **403 `{"error":"Cloudflare wasn't sure you're human."}`**. Turnstile sitekey `0x4AAAAAAFRJhwoGtcNAJVkc`, `appearance:interaction-only` + `execution:execute` (needs explicit `execute()`, NOT auto). Attempts: (1) in-browser widget render x2, (2) captcha-solver sidecar `type:turnstile` route-mode → 422 schema, (3) sidecar `real_page:true` + `page_url` + `timeout_s:120` → **408 solve timed out**. 5 approaches exhausted → PENDING.
+- **Remaining step:** one valid Turnstile token for the drop step. `passedAt` (game win) persists server-side, so a single `POST /api/drop {wallet, turnstile:<token>}` from the signed-in browser session completes it.
 - **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | Card No. 1249
 
 ### #405 Sick Mind Guy (sickmindguy.xyz) — NextAuth Twitter WL (msg 128462) — ⚠️ PENDING (server misconfig)
