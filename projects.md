@@ -5587,7 +5587,7 @@
 | - | Epic of Gilgamesh | TIMED-MINT | 2,222 Books on Robinhood Chain, mint Sep 11 13:00 UTC | check without connect at epicofgilgamesh.io/mint | our EVM 0x8CCE...282D |
 
 | - | HAZELS | SKIPPED | GTD WL | studio.hazels.io | wallet connect required |
-| - | PRDCTR | SKIPPED | Loyalty hub | wallet + X/Discord connect |
+| - | PRDCTR | DAILY AUTO | loyalty hub — mock-wallet API + X session (`scripts/prdctr/prdctr_daily.py`) | wallet `0x8CCE...282D` · cron `86dbbe8a5192` |
 | - | World XYZ | SKIPPED | Solana | Phantom wallet + trade |
 | - | Liquid Launch | SKIPPED | OG claim | wallet connect |
 | - | ORO | SKIPPED | Keplr/Zigchain wallet |
@@ -6054,3 +6054,12 @@
 - ✅ **4 × GALXE_ID "Visit the post" credentials synced** (`syncCredentialValue` → `SyncCredentialValueOutput`, no error) — credIds `732950494669963264`, `732951882376413184`, `733336485775802368`, `733336926983028736`.
 - ⚠️ **4 × TWITTER "Tweet Liker" credentials blocked** — `syncCredentialValue` requires `syncOptions.twitter.captcha` (Geetest/hCaptcha); empty captcha → `GRAPHQL_VALIDATION_FAILED` "Invalid request". Also needs X OAuth linked to the Galxe ID. Tweets referenced: `2110360591411921057`, `2110362207926063280` (D3) · `2110746633633780182`, `2110747194248614005` (D4).
 - **Needs:** Galxe X OAuth link + Geetest solve (one-time), then the 4 Tweet Liker creds can be synced via API.
+
+## PRDCTR Loyalty — DAILY AUTO (prdctr.xyz) — LIVE 2026-10-16
+- **Type:** loyalty hub (daily check-in + one-time X quests) | **Entry now:** Daily (auto cron)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx (session cookie, no wallet extension required)
+- **Engine:** `/home/ubuntu/scripts/prdctr/prdctr_daily.py` — signs in with wallet address + X session, claims every eligible rule via the loyalty API; X like/follow executed with **real CDP input events** on the trusted browser (`x_cdp.py`, CDP :9222) because fresh Playwright contexts get their engagement dropped by X.
+- **Cron:** `prdctr-daily` · job `86dbbe8a5192` · daily 01:00 WIB · `no_agent` · silent unless a new claim lands (no spam on unchanged days).
+- **Pitfall fixed:** CSS attribute selectors with a leading hyphen (`[data-testid$=-follow]`) are invalid CSS — must be quoted (`[data-testid$="-follow"]`), otherwise the follow button is never found. Also wait for `[data-testid="primaryColumn"]` before hunting buttons.
+- ✅ **2026-10-16 claims:** `Follow X` (100 pts) and `Engage with Post` (50 pts) — both confirmed by server reply `400 "You have already been rewarded for osbornrdx"`; daily check-in + monthly Special Access rule also done.
+- ⚠️ **Still gated (needs account linking):** Join Telegram · Join Discord · Invite Friends — and `Report bugs on Discord` unlocks only after those.
