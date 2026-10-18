@@ -6144,3 +6144,9 @@
 - **API results:** Not attempted via API because the quest requires installing a mobile app and connecting an account.
 - **Blocker:** The quest requires installing the Hive Calls mobile app (Android/iOS) and connecting a DataHive account. This cannot be automated via browser or API. Manual steps: install Hive Calls app, sign up/login, connect wallet (if needed), complete the quest to claim the Buzzer Discord role.
 - **Verdict:** ⚠️ PENDING — requires mobile app installation and account connection. No browserless path.
+
+| Elysium Faucet | ⚠️ Pending | Need MetaMask unlock + connect wallet + gas on Polygon Mumbai. Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D. |
+
+| Taskon Quest | ⚠️ Pending | Need to join Telegram group via Telethon, then click Link & Verify on site. X: @osbornrdx. |
+
+| Vaelorn Whitelist | ✅ DONE | Completed whitelist: wallet 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D, X handle @osbornrdx, performed follow/like/repost/comment on X. Proof: https://x.com/osbornrdx/status/2111742437567983928 |
