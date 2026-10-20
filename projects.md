@@ -1,4 +1,17 @@
 # 🪂 AIRDROP TRACKER — Rey's Missions
+### #432 WEBHOOD Waitlist (webhoodr) — 2,222 supply · freemint (msg 128566) — ✅ DONE
+- **Date:** 2026-10-19 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLScP4Vi8ikEhzIMGg-fkeUg-xyC5wbbkLZ7ojY7qMcKT__9XoA/viewform?usp=publish-editor | **Reward:** Waitlist spot for Web Hood NFT mint | **Source:** @airdropfind drop 128566 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Google Form waitlist with X tasks and wallet submission.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Follow @webhoodr → button flipped to "Mengikuti" | proof: [x.com/webhoodr](https://x.com/webhoodr)
+  - ✅ Like announcement tweet → [x.com/webhoodr/status/2110287963116523812](https://x.com/webhoodr/status/2110287963116523812)
+  - ✅ Retweet announcement tweet → [x.com/webhoodr/status/2110287963116523812](https://x.com/webhoodr/status/2110287963116523812)
+  - ✅ Comment (reply) → [x.com/osbornrdx/status/2112024125787226121](https://x.com/osbornrdx/status/2112024125787226121)
+  - ✅ Submit EVM wallet → 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Wallet submitted:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, Robinhood Chain)
+- **Confirmation:** "Jawaban Anda telah direkam." (Your answer has been recorded).
+- **Status:** ✅ DONE — all tasks completed in one pass.
+
 
 ### #412 NULORA Genesis Waitlist (nulora.io) — Monero Digital Collectibles (msg 128441) — ✅ DONE
 - **Date:** 2026-10-14 | **URL:** https://nulora.io/ | **Reward:** Genesis waitlist spot (7 XP, rank #545) | **Source:** @airdropfind drop 128441 | **X:** [@nuloraio](https://x.com/nuloraio) | **Track:** waitlist
@@ -376,7 +389,8 @@
 - **Status:** ⚠️ PARTIAL — SIWE ✅, followSpace ✅, 2× X like ✅, 2× X follow ✅. Blocked: TWITTER creds need Galxe-level X OAuth link (one-time manual setup); visit creds need real browser visit + X OAuth.
 - **X proof links:** https://x.com/agnt_hub/status/2108237786650173541 (like) — https://x.com/TruthAgentAI/status/2108238299248607557 (like) — follows @agnt_hub + @TruthAgentAI
 
-### #380 EscCap Genesis Whitelist (esccap.xyz/proof) — ✅ DONE (WHITELISTED, PASS #1947)
+  - ✅ Submit EVM wallet — 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D → "YOU'RE REGISTERED"
+### #380 EscCap Genesis Whitelist (esccap.xyz/proof) — ✅ DONE (WHITELISTED, PASS #1947) + 🔜 MINT: Oct 21 3 PM UTC (Phase 2 FCFS Free Mint, OpenSea)
 - **Date:** 2026-10-09 | **URL:** https://www.esccap.xyz/proof | **Reward:** Free mint WL — Retro Keyboard NFT (3,333 supply, Genesis Phase 1) | **Source:** @airdropfind drop 128317 | **X:** @esccapHQ | **Track:** nft
 - **Type:** Type 2/17 hybrid — Next.js SPA, 5-step server-verified community quest (X OAuth → Follow → Repost → Quote → Submit proof+wallet).
 - **✅ Full flow completed (all real actions, proof links below):**
@@ -388,18 +402,16 @@
 - **Server confirmation:** `STEP 5 OF 5 [100% COMPLETED]` / `WHITELIST STATUS: WHITELISTED ✓` / `GENESIS ALLOCATION: EARLY MINT SECURED ✓` / **PASS #1947 (RARE)**. VERIFIED PROOFS counter incremented 1,937 → 1,948 on submit.
 - **Referral link:** https://www.esccap.xyz/proof?ref=osbornrdx
 - **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **X:** @osbornrdx
-- **Status:** ✅ DONE — WL verified, PASS #1947, early mint secured.
+- **🔜 MINT INFO (verified via checker at https://www.esccap.xyz/checker):**
+  - **Mint time:** Oct 21, 2026 15:00 UTC (Phase 2: FCFS Access)
+  - **Mint type:** Free mint, FCFS (first-come, first-served)
+  - **Platform:** OpenSea (collection: esccaphq)
+  - **Chain:** Robinhood Chain (chainId 4663 / 0x1237)
+  - **Checker result:** ✅ Whitelisted: FCFS Spot Confirmed | Spot: FCFS Mint | Price: FREE MINT | Phase: Phase 2: FCFS Access
+  - **Wallet verified:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **⚠️ MINT EXECUTION:** Robinhood Chain RPC is TLS-blocked from VPS (CloudFront handshake failure). Must use **CloakBrowser + real MetaMask (airdrop_00 with Robinhood Chain added + ~0.0022 ETH for gas)**. OpenSea mint button at https://opensea.io/collection/esccaphq when live.
+- **Status:** ✅ WL DONE — 🔜 MINT PENDING (Oct 21 15:00 UTC)
 
-### #379 Hypest (hypest.gg) — ✅ DONE (Hype ID #3638, registered)
-- **Date:** 2026-10-09 | **URL:** https://hypest.gg/ | **Reward:** Hype points airdrop (fantasy meta, Robinhood Chain) | **Source:** @airdropfind drop 128316 | **X:** @hypestgg | **Track:** app
-- **Type:** Type 20-style in-app registration — X OAuth (server-verified) → 4-task quest (Follow + Like/Repost/Reply 3-tap) → EVM wallet submit.
-- **✅ Full flow completed (all real actions, proof links below):**
-  - ✅ X OAuth as @osbornrdx → account created, **Hype ID #3638**
-  - ✅ FOLLOW @hypestgg — followed (intent "Ikuti @hypestgg" → "Mengikuti")
-  - ✅ LIKE launch post — [x.com/hypestgg/status/2107498304674349174](https://x.com/hypestgg/status/2107498304674349174)
-  - ✅ REPOST launch post — same tweet (repost confirmed via `[data-testid=unretweet]`)
-  - ✅ REPLY to launch post — **proof:** [x.com/osbornrdx/status/2108390316181184944](https://x.com/osbornrdx/status/2108390316181184944) ("The fantasy meta on Robinhood Chain 🔥 registered, card minted 🦄")
-  - ✅ Submit EVM wallet — 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D → "YOU'RE REGISTERED"
 - **Server confirmation:** `GET /api/hub/state` → user_id `bed0a86a-...`, `reply_url: v2-user-reg`, wallet recorded. UI: `STEP [100%]` "YOU'RE REGISTERED".
 - **Note:** On-site 3-tap verify is client-side random (1/3 pass) — LIKE required 1 retry ("TRY AGAIN"). All 3 taps eventually DONE.
 - **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM) | **X:** @osbornrdx
@@ -6150,3 +6162,165 @@
 | Taskon Quest | ⚠️ Pending | Need to join Telegram group via Telethon, then click Link & Verify on site. X: @osbornrdx. |
 
 | Vaelorn Whitelist | ✅ DONE | Completed whitelist: wallet 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D, X handle @osbornrdx, performed follow/like/repost/comment on X. Proof: https://x.com/osbornrdx/status/2111742437567983928 |
+### #424 ELYSIUM Testnet Faucet and Bridge (https://elysium.kinetiq.xyz/testnet-faucet) — ⚠️ PENDING (Turnstile blocks wallet connection)
+
+- **Date:** 2026-10-18 | **URL:** https://elysium.kinetiq.xyz/testnet-faucet | **Reward:** None | **Source:** @airdropfind drop 128531 | **X:** @osbornrdx | **Track:** testnet
+- **Type:** TESTNET FAUCET + BRIDGE — Connect wallet, claim HYPE faucet, register, bridge HYPE testnet to Elysium testnet.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ⚠️ Turnstile blocks wallet connection — unable to proceed with faucet claim.
+- **Wallet (EVM):**  (used for intended connection)
+- **Wallet (EVM):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (used for intended connection)
+- **Confirmation:** None — blocked at Turnstile.
+- **Status:** ⚠️ PENDING — needs manual Turnstile solve or alternative approach.
+
+### #425 Alice AI Taskon Campaign (https://taskon.xyz/quest/398652634) — ⚠️ PENDING (Telegram join required)
+
+- **Date:** 2026-10-18 | **URL:** https://taskon.xyz/quest/398652634 | **Reward:** None | **Source:** @airdropfind drop 128533 | **X:** @osbornrdx | **Track:** quest
+- **Type:** QUEST PLATFORM (Taskon) — Join Telegram group to unlock rewards, then click Link & Verify on site.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ⚠️ Telegram join required — manual join or Telethon automation needed.
+- **Wallet:** Not required
+- **Confirmation:** None — awaiting Telegram join.
+- **Status:** ⚠️ PENDING — needs Telegram join to proceed.
+
+### #426 ESC CAP Whitelist Submissions Closed (https://x.com/esccapHQ/status/2111544075061264656) — ⛔ SKIPPED (Whitelist closed)
+
+- **Date:** 2026-10-18 | **URL:** https://x.com/esccapHQ/status/2111544075061264656 | **Reward:** None | **Source:** @airdropfind drop 128539 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** CLOSED WAITLIST — Whitelist submissions officially closed; no registration possible.
+- **Tasks + proof:** None — whitelist closed.
+- **Wallet:** Not required
+- **Confirmation:** None
+- **Status:** ⛔ SKIPPED — whitelist closed, no action possible.
+
+### #427 Saphyre Perps Testnet (https://perps.saphyre.xyz) — ⚠️ PENDING (Privy wallet connection required)
+
+- **Date:** 2026-10-18 | **URL:** https://perps.saphyre.xyz | **Reward:** None | **Source:** @airdropfind drop 128543 | **X:** @osbornrdx | **Track:** testnet
+- **Type:** TESTNET PERPS PLATFORM — Connect wallet, claim faucet, try testnet features, submit feedback via Telegram.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ⚠️ Privy wallet connection modal appeared — needs wallet connection (MetaMask/Coinbase) and email submission.
+- **Wallet (EVM):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (intended for connection)
+- **Confirmation:** None — awaiting wallet connection and email submission.
+- **Status:** ⚠️ PENDING — needs wallet connection and email submission to proceed.
+
+### #428 Acepyr Tokenomics Update (https://docs.acepyr.com/docs/token/tokenomics) — ✅ DONE (Informational only)
+
+- **Date:** 2026-10-18 | **URL:** https://docs.acepyr.com/docs/token/tokenomics | **Reward:** None | **Source:** @airdropfind drop 128544 | **X:** @osbornrdx | **Track:** informational
+- **Type:** INFORMATIONAL — Tokenomics details, no registration or tasks required.
+- **Tasks + proof:** None — informational page only.
+- **Wallet:** Not required
+- **Confirmation:** None
+- **Status:** ✅ DONE — no action needed.
+
+
+
+### #413 Pumpfun App (pump.fun/join/AIRDROPFINDER) — Memecoin Launchpad Airdrop (msg 128545) — ⚠️ PENDING (requires wallet funding >0 + 5-day trading)
+- **Date:** 2026-10-18 | **URL:** https://pump.fun/join/AIRDROPFINDER | **Reward:** 0 after 5 days of daily trading | **Source:** @airdropfind drop 128545 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type ? (APP-TASK) — Pumpfun memecoin launchpad requiring wallet download, funding >0 via cash/card/google Play, trade a memecoin/stocks once daily for 5 days, claim 0 after 5 days.
+- **Tasks attempted:** Browserless check returned 200; no wallet connect or trading possible without external funding.
+- **Status:** ⚠️ PENDING — cannot automate due to funding/trading requirement. Manual steps: download Pumpfun wallet, fund with >0, trade daily for 5 days, then claim.
+
+### #429 HDLR Whitelist (hoodlers.cash/whitelist) — ✅ DONE
+- **Date:** 2026-10-18 | **URL:** https://hoodlers.cash/whitelist | **Reward:** HDLR Tokens | **Source:** @airdropfind drop 128550 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Simple form (X handle, wallet, tweet link) with Retweet task.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Quote retweet pinned post → proof: [x.com/osbornrdx/status/2111805474089947191](https://x.com/osbornrdx/status/2111805474089947191)
+  - ✅ Submit form with X handle, wallet, tweet link → proof: "You’re on the list." snapshot
+- **Wallet (EVM):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Confirmation:** "You’re on the list. Entry saved for @osbornrdx. Keep an eye on our X — that’s where the airdrop gets announced."
+- **Status:** ✅ DONE — tasks completed in one pass.
+
+### #430 Thetimecard (www.thetimecard.xyz/quest) — Registration Closed (msg 128560) — ⛔ SKIPPED (registration closed)
+
+- **Date:** 2026-10-19 | **URL:** https://www.thetimecard.xyz/quest | **Reward:** None | **Source:** @airdropfind drop 128560 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Closed waitlist (registration ended before start)
+- **Tasks + proof:** None — registration closed; no form to submit.
+- **Wallet submitted:** None
+- **Confirmation:** None
+- **Status:** ⛔ SKIPPED — registration closed, no action possible.
+
+
+
+### #431 Avior (useavior.com) — Waitlist + optional X handle (msg 128562) — ✅ DONE
+- **Date:** 2026-10-19 | **URL:** https://useavior.com/ | **Reward:** None (waitlist spot) | **Source:** @airdropfind drop 128562 | **X:** @osbornrdx (optional) | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — simple form (email, optional X handle) with submit button.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Submit email → airdropkarbiters@gmail.com
+  - ✅ Submit optional X handle → osbornrdx
+  - ✅ Click "Reserve my spot" → confirmation: “You’re on the list.” with position #158,162 and reserved handle @osbornrdx.
+- **Wallet submitted:** None (EVM not required)
+- **Confirmation:** “You’re on the list.” (snapshot shows position #158,162, reserved handle @osbornrdx)
+- **Status:** ✅ DONE — all tasks completed in one pass.
+
+### #433 INKTROPY Waitlist (inktropy.xyz) — 1,111 supply · TBA mint (msg 128568) — ✅ DONE
+- **Date:** 2026-10-19 | **URL:** https://inktropy.xyz/ | **Reward:** Waitlist spot for INKTROPY NFT mint | **Source:** @airdropfind drop 128568 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Custom waitlist with X tasks and wallet submission via Google Apps Script.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - Follow @inktropynft → proof: https://x.com/inktropynft
+  - Like pinned tweet (ID 2111889916137189397) → proof: https://x.com/inktropynft/status/2111889916137189397
+  - Repost pinned tweet → proof: https://x.com/inktropynft/status/2111889916137189397 (retweet)
+  - Reply with "I see a moth" tagging @osbornrdx @ayo → proof: https://x.com/osbornrdx/status/2112039691231141979
+  - Submit EVM wallet 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D → handled via Google Apps Script (handle already registered, dup_handle error treated as already on list)
+- **Wallet used:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **X handle:** @osbornrdx
+- **Email:** airdropkarbiters@gmail.com (not used)
+
+### #434 Ryfinite x Qern Quest — ⚠️ PENDING (awaiting OTP from email)
+- **Date:** 2026-10-19 | **URL:** https://ryfinite.com/app/quests/qern-dex | **Reward:** $250,000 $QEN | **Source:** @airdropfind drop 128569 | **X:** @osbornrdx | **Track:** quest
+- **Type:** Type 2 (WEB-DASHBOARD) — email login + Turnstile + OTP verification.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):
+  - ✅ Entered email → airdropkarbiters@gmail.com
+  - ✅ Solved Turnstile (checkbox challenge)
+  - ⚠️ Awaiting OTP from email (5-digit code) — need to retrieve from airdropkarbiters@gmail.com inbox.
+- **Wallet submitted:** Not yet (EVM wallet will be required after OTP verification? Not sure; but likely after OTP we need to submit wallet.)
+- **Confirmation:** None yet.
+- **Status:** ⚠️ PENDING — awaiting OTP.
+
+### #411 Stash Wallet Beta Waitlist (stashapes) — STASH Points — 2026-10-19 — ⚠️ PENDING
+- **Date:** 2026-10-19 | **URL:** https://stashapes.xyz/r/56259dcc | **Reward:** STASH Points via staking, inviting, burning | **Source:** @airdropfind drop 128570 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 3 (WEB3-WALLET) — MetaMask SDK pattern requiring mobile wallet connection
+- **Wallet Connection:** All options require mobile app QR code scanning (MetaMask, WalletConnect, RainbowKit, Coinbase Wallet, Trust Wallet, OKX Wallet)
+- **Earning Mechanism:** Stake, invite and burn for STASH Points
+- **Status:** ⚠️ PENDING - Requires mobile wallet to complete connection
+- **Next Steps:** Connect wallet via mobile app (MetaMask, WalletConnect, etc.) then:
+  1. Click Watch > Next (completed)
+  2. Connect with NEW wallet (requires mobile app)
+  3. Claim Stash Point (via staking, inviting, or burning)
+  4. Go to earn to get more points
+
+
+
+### #435 DECENTRALIZED INTELLIGENCE Check-in Waitlist (di.xyz) — Whitelist access after 30 check-ins (msg 128571) — ⚠️ PENDING
+- **Date:** 2026-10-19 | **URL:** https://di.xyz/check-in | **Reward:** Whitelist access (after 30 cumulative check-ins) | **Source:** @airdropfind drop 128571 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 20? (IN-APP SOCIAL AIRDROP DASHBOARD?) or Type 14? (PASSIVE-ANALYTICS?) — Requires accessing platform to perform check-ins
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):** 
+  - ⚠️ SITE UNREACHABLE — Cannot access https://di.xyz/check-in (ERR_CONNECTION_TIMED_OUT)
+  - Unable to determine exact check-in mechanism without site access
+- **Status:** ⚠️ PENDING - Site unreachable, needs manual investigation when accessible
+- **Next Steps:** 
+  1. Verify site accessibility (may be temporary downtime)
+  2. If accessible, determine check-in mechanism (likely daily button/task completion)
+  3. Automate check-in process via appropriate method (browserless/MCP)
+  4. Track progress toward 30 check-ins
+
+
+### #435 NFT Kalos Genesis Mainnet — WL NFT ON MAINNET (msg 128587) — ⚠️ PENDING
+- **Date:** 2026-10-19 | **URL:** https://www.kalos.fun/ | **Reward:** WL NFT ON MAINNET | **Source:** @airdropfind drop 128587 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 3 (WEB3-WALLET) — requires wallet connection (MetaMask/Phantom) to create account and proceed with faucet claim, NFT purchase, and chat verification.
+- **Status:** ⚠️ PENDING — wallet connection failed in MCP Chrome; needs CloakBrowser with real wallet extension (MetaMask) installed and unlocked with airdrop_00 EVM wallet.
+
+### #436 Q Lounge Wallet — MOBILE-ONLY (msg 128598) — ⛔ SKIPPED
+- **Date:** 2026-10-19 | **URL:** https://affiliate.dj-maxrex.com/i/335331101192 | **Reward:** MQP Points → $MQX (TBA) | **Source:** @airdropfind drop 128598 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 1 (MOBILE-ONLY) — CTA redirects to Play Store/App Store or requires app download; see manual steps.
+- **Status:** ⛔ SKIPPED — MOBILE-ONLY: Download app → register with email/google → submit code `335331101192` → save phrase & back up → open wallet → choose MQP points → complete easy task → done. No X tasks; proof not required.
+6316. QMS Testnet Streak | https://testnet.qwap.xyz/ | ⚠️ PENDING - Wallet connection requires MetaMask mobile app or real MetaMask extension (Mock injection attempted but dApp uses MetaMask SDK requiring mobile app) | Daily swap + add liquidity to earn Quanta points (8/day, 10 for Pioneers/Qwabbits, 6/7 days for bonus)
+6317. Galxe Quest AGNTHub/GCNxbtZHj6 | https://app.galxe.com/quest/AGNTHub/GCNxbtZHj6 | SKIPPED - Quest not found or unavailable (404 on API)
+
+
+### #437 Lebrel AI Waitlist (early.lebrel.ai) — Early Access Waitlist (msg 128611) — ⚠️ PENDING (X tasks require manual login)
+- **Date:** 2026-10-20 | **URL:** https://early.lebrel.ai/ | **Reward:** Early access to Lebrel AI | **Source:** @airdropfind drop 128611 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — simple email waitlist with X tasks and wallet submission (though wallet not required? we didn't see a wallet field).
+- **Tasks attempted (@osbornrdx, browserless POST):**\n  - ✅ Submit email → airdropkarbiters@gmail.com with ref=EARLYUSER\n  - ⚠️ X tasks (follow, like, quote) require manual login to X via MCP Chrome or CloakBrowser
+- **Wallet submitted:** Not required (no wallet field in form)
+- **Confirmation:** \"{\"token\":\"LS5EVqzasVmJpP-BEDQK8IMisALcfTl43_f7ua-wxRs\",\"created\":true}\" (email submission successful)
+- **Status:** ⚠️ PENDING — email submitted, X tasks pending manual login.
+- AGNT Weekly Socials | S4 Week 3 - Finale (Galxe quest) - SIWE ✅, followSpace ✅, creds synced: 0/1
