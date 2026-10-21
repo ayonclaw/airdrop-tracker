@@ -6373,3 +6373,17 @@
 - **Wallets:** EVM airdrop_00 (0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D) for MetaMask; SOL 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG for Phantom if needed
 - **Notes:** Drop mentions "paper LTC" but announcement shows Paper BTC/USDT. May refer to testnet LTC (tLTC) from faucet deposit.
 
+
+### #440 Holo707 Waitlist (holo707.ink) — 707 supply · freemint on Ink (msg 128647) — ✅ DONE
+- **Date:** 2026-10-21 | **URL:** https://holo707.ink/ | **Reward:** Waitlist spot for free mint (707 supply, Ink chain) | **Source:** @airdropfind drop 128647 | **X:** [@Holo_whole](https://x.com/Holo_whole) | **Track:** waitlist
+- **Type:** Type 17 (SOCIAL-VERIFICATION-CLAIM) — Multi-step wizard with server-verified X tasks: X handle → EVM wallet → Follow @Holo_whole → Like post + Reply → Quote post → Submit Signal.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ X handle: @osbornrdx
+  - ✅ EVM wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+  - ✅ Follow @Holo_whole → button flipped to "Mengikuti" | proof: [x.com/Holo_whole](https://x.com/Holo_whole)
+  - ✅ Like announcement tweet (ID 2112622313405297007) → [x.com/Holo_whole/status/2112622313405297007](https://x.com/Holo_whole/status/2112622313405297007)
+  - ✅ Reply to announcement tweet → [x.com/osbornrdx/status/2112784326677201367](https://x.com/osbornrdx/status/2112784326677201367)
+  - ✅ Quote announcement tweet → [x.com/osbornrdx/status/2112785847514976725](https://x.com/osbornrdx/status/2112785847514976725)
+- **Wallet submitted:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, Ink chain)
+- **Confirmation:** "Signal locked — @osbornrdx is on the list. One free mint on Ink, 21 October, 11:00 AM UTC."
+- **Status:** ✅ DONE — all 5 steps completed in one pass, server-verified.
