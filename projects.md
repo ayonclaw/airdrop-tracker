@@ -6451,3 +6451,16 @@
 - **Confirmation:** Wallet saved — "Saved. This address cannot be changed" | Registration status: "Registration incomplete / Not selected" (Discord incomplete)
 - **Discord invite:** https://discord.gg/H8TYRxCes
 - **Status:** ✅ DONE — all automatable tasks completed in one pass; Discord step blocked by hCaptcha on Discord OAuth login, requires manual completion.
+
+### #433 Enter The Anime GTD Whitelist (entertheanime.com) — 3,333 supply · freemint Robinhood Chain (msg 128689) — ⚠️ PARTIAL
+- **Date:** 2026-10-22 | **URL:** https://entertheanime.com/home | **Reward:** GTD Whitelist spot for Enter The Anime NFT mint (Free, Robinhood Chain) | **Source:** @airdropfind drop 128689 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 17 (SOCIAL-VERIFICATION-CLAIM) — Wallet + Discord OAuth + X OAuth + Follow @entertheanime & @etalabshq → Apply GTD
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Tasks completed:**
+  - ✅ Wallet submitted via API (`POST /api/claim`) — returned `{"ok":true}`
+  - ✅ X Follow @entertheanime — [tweet](https://x.com/intent/follow?screen_name=entertheanime)
+  - ✅ X Follow @etalabshq — [tweet](https://x.com/intent/follow?screen_name=etalabshq)
+  - ✅ X OAuth Sign In — authorized "Enter The Anime" app (shows @OSBORNRDX on frontend)
+  - ⚠️ Discord OAuth — **BLOCKED**: requires manual Discord login (no automated Discord credentials)
+- **Status:** Frontend shows X connected, wallet saved, Discord pending. Backend API still shows `discord:false, twitter:false` — needs Discord OAuth completion to finalize.
+- **Manual action required:** Complete Discord OAuth at https://discord.com/login?redirect_to=%2Foauth2%2Fauthorize%3Fclient_id%3D1553770097427095663 → authorize → returns to site → click "CONNECT WALLET, DISCORD, AND X"
