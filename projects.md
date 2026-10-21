@@ -6387,3 +6387,23 @@
 - **Wallet submitted:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, Ink chain)
 - **Confirmation:** "Signal locked — @osbornrdx is on the list. One free mint on Ink, 21 October, 11:00 AM UTC."
 - **Status:** ✅ DONE — all 5 steps completed in one pass, server-verified.
+
+### #441 AXIS Robotics Airdrop Checker (airdrop.axisrobotics.ai) — Eligibility Check + Claim Portal (msg 128655) — ⚠️ PARTIAL (X OAuth authenticated; AXIS Hub Account connected; Sonar Wallet connect pending for Campaign 1)
+- **Date:** 2026-10-21 | **URL:** https://airdrop.axisrobotics.ai/ | **Reward:** $AXIS allocation (Campaign 1: Sonar Community Sale, Campaign 2: Community Contributor, Campaign 3: Binance Wallet, Campaign 4: Discord Role) | **Source:** @airdropfind drop 128655 | **X:** [@osbornrdx](https://x.com/osbornrdx) | **Track:** claim
+- **Type:** Type 3 (WEB3-WALLET) + Type 2 (WEB-DASHBOARD) — Base Mainnet claim portal. Auth via X OAuth (Privy) or Google OAuth or Wallet Connect (Sonar Wallet, Binance Wallet, MetaMask). Claim opens **Oct 21, 2026 at 12:00 UTC**.
+- **Auth (@osbornrdx, MCP Chrome CDP):** ✅ X OAuth → Privy callback successful. AXIS Hub Account connected: `0x94A6...e972` (wallet linked to @osbornrdx in AXIS Hub).
+- **Eligibility Results (after X OAuth):**
+  - Campaign 1 (Sonar Community Sale): **Connect your Sonar Wallet** — wallet used in Sonar Community Sale required (C1 tier). Not connected yet.
+  - Campaign 2 (Community Contributor): **No points at the snapshot** — AXIS Hub Account `0x94A6...e972` has 0 points.
+  - Campaign 3 (Binance Wallet): **No points at the snapshot** — no Binance Wallet linked.
+  - Campaign 4 (Discord Role): **No Discord account linked at the snapshot** — no Discord linked.
+- **Claim Schedule:** Opens Oct 21 12:00 UTC. Claims available until Jan 21 2027 12:00 UTC. Each unlocked portion claimable separately or batched.
+- **Wallet for Claim:** Campaign 1 requires Sonar Wallet (from Sonar Community Sale). Campaign 2-4 show no allocation for current linked accounts.
+- **X Proof:** X OAuth authorization → [x.com/i/oauth2/authorize?client_id=YlJMT0QtbzB1RU1kaDd6Q2xPem06MTpjaQ](https://x.com/i/oauth2/authorize?client_id=YlJMT0QtbzB1RU1kaDd6Q2xPem06MTpjaQ) (allowed Privy.io)
+- **Status:** ⚠️ PARTIAL — X OAuth authenticated, AXIS Hub Account connected (0x94A6...e972). **Campaign 1 allocation pending Sonar Wallet connection** (needs wallet from Sonar Community Sale). Claim opens at 12:00 UTC today. No actionable allocation for current wallet (0x8CCE...282D) unless it was used in Sonar Community Sale. Manual check needed: verify if 0x8CCE...282D or 5yw3KKcX... is a Sonar Wallet from the sale.
+- **Next Steps (for 12:00 UTC claim):**
+  1. If Rey has a Sonar Wallet from the Community Sale → connect via "Connect your Sonar Wallet" button (WalletConnect QR) in CloakBrowser
+  2. Monitor Campaign 2-4 for any late allocation updates
+  3. Discord link for Campaign 4 (if applicable)
+  4. Binance Wallet connect for Campaign 3 (if applicable)
+
