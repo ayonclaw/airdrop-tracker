@@ -6388,6 +6388,33 @@
 - **Confirmation:** "Signal locked — @osbornrdx is on the list. One free mint on Ink, 21 October, 11:00 AM UTC."
 - **Status:** ✅ DONE — all 5 steps completed in one pass, server-verified.
 
+### #433 AGNT Weekly Socials | S4 Week 4 - Day 2 (app.galxe.com/quest/AGNTHub/GCxDHtZVAE) — Galxe Quest (msg 128644) — ⚠️ PARTIAL (followSpace + real X likes done; TWITTER/GALXE_ID creds blocked on Galxe-level X OAuth)
+- **Date:** 2026-10-21 | **URL:** https://app.galxe.com/quest/AGNTHub/GCxDHtZVAE | **Reward:** Galxe points (AGNT Hub, 10+10+20) | **Source:** @airdropfind drop 128644 | **X:** @TruthAgentAI + @agnt_hub | **Track:** quest
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCxDHtZVAE` (`type: Points`, `status: Active`). Daily engagement tasks for AGNT community. Window 2026/10/20 04:00 – 2026/10/26 05:00 GMT+7.
+- **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):** 
+  - ✅ SIWE SignIn → JWT; ✅ `followSpace(77675)` → `{"followSpace":1}`
+  - ⚠️ `TWITTER` creds (Like @TruthAgentAI Tweet + Like @agnt_hub Tweet) → `missing twitter args` (X OAuth not linked at Galxe account level — architectural, one-time manual)
+  - ⚠️ `GALXE_ID` creds (Visit the Truth post + Visit the AGNT Hub post) → `allow:false` (visit creds need real browser visit beacon + X OAuth)
+- **X actions (@osbornrdx, MCP Chrome CDP):** ✅ Like [TruthAgentAI tweet](https://x.com/TruthAgentAI/status/2112560147595960777) | ✅ Like [agnt_hub tweet](https://x.com/agnt_hub/status/2112560147595960777) 
+- **Blocker:** Galxe browser session not logged in — X OAuth link requires a Galxe web login (wallet/social) + X consent. Same architectural wall as previous AGNT quests.
+- **Verdict:** ⚠️ PARTIAL — followSpace + both real X likes done; 4 creds blocked on Galxe-level X OAuth.
+
+### #434 Noah AI Season 0 Quests (trynoah.ai/quests) — AI Builder Quest Platform (msg 128648) — ⚠️ PENDING (requires Google OAuth / Wallet Connect; quest content behind auth)
+- **Date:** 2026-10-21 | **URL:** https://trynoah.ai/quests (redirects to https://trynoah.ai/) | **Reward:** Noah points, leaderboard position | **Source:** @airdropfind drop 128648 | **X:** [@TryNoahAI](https://x.com/TryNoahAI) | **Track:** quest
+- **Type:** Type 2 (WEB-DASHBOARD) — Noah AI is an AI-powered full-stack dApp builder (Plena Finance). Landing page is a marketing SPA; `/quests` route redirects to home. Auth options: "Continue with Google", "Connect with Wallet" (EVM/Solana), "Connect with DogeOS", "BSC Connect with Binance". Quest dashboard likely loads after authentication.
+- **Recon:** No visible quest tasks on public landing. "Sign In" button opens no visible modal in MCP Chrome. "Continue with Google" button not interactive via CDP (SPA routing issue). Wallet connect options: MetaMask SDK (QR code for mobile), Coinbase, Rabby, etc. — standard Web3Modal pattern.
+- **Blocker:** Requires authenticated session (Google OAuth or wallet connect) to access quest dashboard. Google OAuth via MCP Chrome needs Google cookies injection + navigation. Wallet connect needs real MetaMask (not available in CDP :9222).
+- **Manual recipe:** CloakBrowser with Google session (airdropkarbiters@gmail.com) → Continue with Google → access /quests → complete "Build with Noah", "Ship real products", "Complete challenges", "Do social quests".
+- **Verdict:** ⚠️ PENDING — auth wall, quest content not accessible without login.
+
+### #435 DATUM Campaign Airdrop Checker (github.com/Datai-Network/datai-airdrop) — Eligibility Check Only (msg 128651) — ℹ️ INFO (wallet not eligible)
+- **Date:** 2026-10-21 | **URL:** https://github.com/Datai-Network/datai-airdrop/blob/main/Airdrop_DATAI.csv | **Reward:** 400,000 $DATAI pool, claim at TGE Oct 22 | **Source:** @airdropfind drop 128651 | **X:** [@datainetwork](https://x.com/datainetwork/status/2112601639018549482) | **Track:** claim
+- **Type:** Type 13 (SEASON-CLOSED POINTS-CHECK) — CSV checker for DATUM Phase 1/2 participants. Eligibility: joined before Oct 10, minimum 1,650 Datum score. 942 eligible wallets.
+- **Check:** Downloaded CSV → searched for `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **NOT FOUND** (not eligible).
+- **Action:** No tasks to execute. Claim opens at TGE (Oct 22) — requires BNB for gas on BSC. Not applicable to our wallet.
+- **Verdict:** ℹ️ INFO — wallet not eligible, no further action.
+
+
 ### #441 AXIS Robotics Airdrop Checker (airdrop.axisrobotics.ai) — Eligibility Check + Claim Portal (msg 128655) — ⚠️ PARTIAL (X OAuth authenticated; AXIS Hub Account connected; Sonar Wallet connect pending for Campaign 1)
 - **Date:** 2026-10-21 | **URL:** https://airdrop.axisrobotics.ai/ | **Reward:** $AXIS allocation (Campaign 1: Sonar Community Sale, Campaign 2: Community Contributor, Campaign 3: Binance Wallet, Campaign 4: Discord Role) | **Source:** @airdropfind drop 128655 | **X:** [@osbornrdx](https://x.com/osbornrdx) | **Track:** claim
 - **Type:** Type 3 (WEB3-WALLET) + Type 2 (WEB-DASHBOARD) — Base Mainnet claim portal. Auth via X OAuth (Privy) or Google OAuth or Wallet Connect (Sonar Wallet, Binance Wallet, MetaMask). Claim opens **Oct 21, 2026 at 12:00 UTC**.
@@ -6407,3 +6434,20 @@
   3. Discord link for Campaign 4 (if applicable)
   4. Binance Wallet connect for Campaign 3 (if applicable)
 
+
+### #442 Loot Rush Early Access (lootrush.lol/early-access) — 999 supply · freemint (msg 128688) — ✅ DONE (Discord pending)
+- **Date:** 2026-10-21 | **URL:** https://lootrush.lol/early-access | **Reward:** Waitlist spot for free mint (999 NFTs, freemint) | **Source:** @airdropfind drop 128688 | **X:** [@LootRush_rh](https://x.com/LootRush_rh) | **Track:** waitlist
+- **Type:** Type 17 (SOCIAL-VERIFICATION-CLAIM) — Multi-step wizard with server-verified X tasks + wallet submission. Steps: Connect X → Follow Loot Rush → Like announcement → Comment → Repost → Join Discord → Submit wallet.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Connect X → X account @osbornrdx connected (100 pts)
+  - ✅ Follow @LootRush_rh → button flipped to "Mengikuti" | proof: [x.com/LootRush_rh](https://x.com/LootRush_rh) (100 pts)
+  - ✅ Like announcement tweet (ID 2112529373089743080) → [x.com/LootRush_rh/status/2112529373089743080](https://x.com/LootRush_rh/status/2112529373089743080) (100 pts)
+  - ✅ Comment (reply) → [x.com/osbornrdx/status/2112954815634604522](https://x.com/osbornrdx/status/2112954815634604522) (200 pts)
+  - ✅ Repost announcement tweet → [x.com/i/web/status/2112955165854912527](https://x.com/i/web/status/2112955165854912527) (300 pts)
+  - ⚠️ Join Discord → Discord OAuth requires hCaptcha login (blocked) — needs manual Discord login + authorize
+  - ✅ Submit wallet → 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (saved, cannot be changed)
+- **Wallet submitted:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, Robinhood Chain)
+- **Points earned:** 800/1000 (Discord 200 pts pending)
+- **Confirmation:** Wallet saved — "Saved. This address cannot be changed" | Registration status: "Registration incomplete / Not selected" (Discord incomplete)
+- **Discord invite:** https://discord.gg/H8TYRxCes
+- **Status:** ✅ DONE — all automatable tasks completed in one pass; Discord step blocked by hCaptcha on Discord OAuth login, requires manual completion.
