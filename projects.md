@@ -6324,3 +6324,52 @@
 - **Confirmation:** \"{\"token\":\"LS5EVqzasVmJpP-BEDQK8IMisALcfTl43_f7ua-wxRs\",\"created\":true}\" (email submission successful)
 - **Status:** ⚠️ PENDING — email submitted, X tasks pending manual login.
 - AGNT Weekly Socials | S4 Week 3 - Finale (Galxe quest) - SIWE ✅, followSpace ✅, creds synced: 0/1
+
+### #438 CONSO Bots Free Mint (conso.xyz/bots) — Sui Timed Mint (msg 128634) — ⚠️ PENDING (Not GTD eligible, wait for FCFS public mint)
+- **Date:** 2026-10-20 | **URL:** https://conso.xyz/bots | **Reward:** Free CONSO BOT NFT (5,555 supply, Sui blockchain) | **Source:** @airdropfind drop 128634 | **X:** [@conso_xyz](https://x.com/conso_xyz) | **Track:** timed-mint
+- **Type:** Type 5 (TIMED-MINT) — Eligibility checker page. X handle `@osbornrdx` checked → **Not eligible for GTD**. "+ FCFS" indicates public round after GTD phase.
+- **Mint schedule:** Opens **October 22, 2026 15:00 UTC** (countdown: 2 days 4 hours at check time). Phase 1: GTD (~48h), Phase 2: Impressions Raffle (~2h), Phase 3: Public/FCFS Round.
+- **X check proof:** Page shows "Checking as @osbornrdx" + "Not eligible" with sad bot image.
+- **Wallet:** Not required for eligibility check (Sui wallet needed at mint time — use Phantom via CloakBrowser).
+- **Status:** ⚠️ PENDING — Not GTD eligible. Will monitor for FCFS/public mint on Oct 22 15:00 UTC. May need cron for mint time.
+- **Next:** Set up mint cron 2 min before open (Oct 22 14:58 UTC) if FCFS round confirmed.
+
+
+### #439 Polyester Testnet (testnet.polyester.com) — Testnet DEX Trading + Paper Assets (msg 128642) — ⚠️ PENDING
+- **Date:** 2026-10-21 | **URL:** https://testnet.polyester.com/ | **Reward:** Paper Assets (daily ~$1,000 Paper BTC + 1,000 Paper USDT), Testnet trading experience, Potential real prize events | **Source:** @airdropfind drop 128642 | **X:** @osbornrdx | **Track:** testnet-trading
+- **Type:** Type 21 (ON-CHAIN TESTNET TRADING PLATFORM) — Full DEX testnet requiring wallet/embedded wallet, X+Discord binding for daily rewards, Paper Asset claims, spot trading on order book, optional native testnet deposits (tBTC, tBCH, tLTC via faucets).
+- **Cloudflare:** Site protected by Cloudflare Managed Challenge — bypassed via MCP Chrome (real browser fingerprint). Browserless/curl blocked.
+- **Auth options (tested via MCP Chrome):**
+  - ✅ Email OTP flow works (airdropkarbiters@gmail.com) — creates embedded wallet
+  - ✅ Google OAuth available (needs Google cookies)
+  - ⚠️ Wallet connect (MetaMask, Rabby, Phantom, WalletConnect) — needs real extension with unlocked account
+- **Tasks from drop + announcement:**
+  1. Login email (✅ email OTP flow tested)
+  2. Choose username (onboarding step)
+  3. Bind account social — Connect X (@polyester) + Discord (discord.gg/polyester) for daily reward eligibility
+  4. Claim Daily free Paper Assets (first day: ~$1,000 Paper BTC + 1,000 Paper USDT)
+  5. Transfer to trading account (automatic after claim)
+  6. Try active trade — Spot trade Paper BTC/USDT on order book (market/limit orders, TWAP, Ladder, TP/SL)
+  7. Optional: Deposit testnet assets (tBTC, tBCH, tLTC, etc.) via Zipper from external testnet wallets/faucets
+- **Key findings:**
+  - Paper Assets = ERC-20 on Ethereum Sepolia (minted by Polyester, unlimited supply for rewards)
+  - Testnet Assets = Native testnet assets (tBTC, tBCH, tLTC from source chains, need faucets)
+  - Daily rewards shared release time (countdown in app), not per-user timer
+  - Community events with real money prizes announced
+- **Status:** ⚠️ PENDING — Hard wall for automation. Requires:
+  - Real browser session (Cloudflare challenge)
+  - X OAuth + Discord OAuth binding for daily rewards
+  - On-chain testnet trading actions (wallet/embedded wallet + order placement)
+  - No API endpoints for automated trading
+- **Manual steps for Rey:**
+  1. Open in CloakBrowser (bypasses Vercel/CF) with Chrome profile having MetaMask unlocked (airdrop_00) OR use email OTP login (airdropkarbiters@gmail.com) to create embedded wallet
+  2. Complete onboarding: choose username
+  3. Connect X (@osbornrdx) + Discord (@mxsyxfxx) via in-app OAuth
+  4. Claim daily Paper Assets when available (check countdown)
+  5. Trade Paper BTC/USDT on spot market (market/limit orders)
+  6. Optional: Get tLTC from Litecoin testnet faucet → deposit via Zipper → trade LTC/USDT
+  7. Monitor for community events with real prizes
+- **Proof links needed:** X follow @polyester, Discord join, trade tx hashes, daily claim confirmation
+- **Wallets:** EVM airdrop_00 (0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D) for MetaMask; SOL 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG for Phantom if needed
+- **Notes:** Drop mentions "paper LTC" but announcement shows Paper BTC/USDT. May refer to testnet LTC (tLTC) from faucet deposit.
+
