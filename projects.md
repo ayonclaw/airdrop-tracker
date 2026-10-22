@@ -6539,3 +6539,33 @@
 - **Blocker:** Season ended. No active campaign. On-chain tasks require real MetaMask + testnet ELN from faucet. CDP browser :9222 has no MetaMask vault. This is a Type 21 hard wall.
 - **Wallet:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00) — would need Elyon Testnet added + testnet ELN from faucet.
 - **Status:** ℹ️ INFO — Season closed. Track for potential Season 2. No actionable tasks now. Moved drop → done/.
+
+### #447 INKORA Genesis Whitelist (inkorawhitelist.vercel.app) — 1,000 supply, freemint (msg 128713) — ⚠️ PENDING (Turnstile session-binding blocks automated submission)
+- **Date:** 2026-10-22 | **URL:** https://inkorawhitelist.vercel.app/ | **Reward:** Genesis whitelist spot (1,000 supply, freemint, TBA) | **Source:** @airdropfind drop 128713 | **X:** [@INKORA_NFT](https://x.com/INKORA_NFT) | **Track:** waitlist
+- **Type:** Type 4 hybrid (BROWSERLESS-FIRST with Turnstile) — Next.js SPA on Vercel, inline script with `CONFIG` object. Waitlist modal requires X handle, quote tweet URL, wallet, and Cloudflare Turnstile (`sitekey: 0x4AAAAAAFd1lNflK73X0B3M`). Final submit POSTs to Google Apps Script (`script.google.com/macros/s/AKfycbwIQ-bpPMewtvSQLF6P8jTxQbvb9xekBTx6Pri9NwnPt287CKyK99tAIx39PlFvLbKr/exec`).
+- **Tasks required:**
+  1. Enter X handle: `@osbornrdx`
+  2. Quote tweet: `https://x.com/osbornrdx/status/2112785847514976725` (post with wallet + tag INKORA)
+  3. Submit EVM wallet: `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00)
+  4. Complete Turnstile captcha
+- **Automation attempts (exhausted):**
+  - ✅ CapSolver API (route mode) → token rejected: `captcha_failed` (session-binding)
+  - ✅ 2Captcha API (route mode) → token rejected: `captcha_failed` (session-binding)
+  - ✅ Sidecar `real_page: true` (CloakBrowser engine) → **hard timeout at 60s** (sidecar limit)
+  - ✅ Playwright browser fetch with route mode tokens (CapSolver + 2Captcha) → both `captcha_failed`
+  - ✅ Playwright browser fetch without token → `captcha_failed`
+  - ✅ Client-side validation bypass (doneF/doneL/wallet/tsToken injection) → button enable logic works but server rejects route-mode tokens
+- **Blocker:** Google Apps Script endpoint enforces Turnstile session-binding — tokens must originate from the **same browser session** that submits the form. Route-mode tokens (CapSolver/2Captcha) are solved in a different browser context and rejected. Sidecar `real_page: true` solves in its own CloakBrowser but hits hardcoded 60s timeout before solving.
+- **X tasks performed (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Quote tweet posted: [x.com/osbornrdx/status/2112785847514976725](https://x.com/osbornrdx/status/2112785847514976725) (with wallet + tag INKORA)
+- **Manual path:** Open in CloakBrowser (or real browser with X logged in) → fill form → solve Turnstile visually → submit. Wallet: airdrop_00 (`0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`).
+- **Verdict:** ⚠️ PENDING — Turnstile session-binding is a hard wall for VPS automation. Needs manual browser with Turnstile solve.
+
+### #448 Datai Network Airdrop Claim (Sablier) — BNB Chain Claim Portal (msg 128716) — ⚠️ PENDING (wallet connect required on BNB Chain)
+- **Date:** 2026-10-22 | **URL:** https://app.sablier.com/airdrops/campaign/0x6f65a00383227ccd702b4f07d31a955df80bf9a5-56 | **Reward:** $DATAI claim (400,000 total pool, 341,333 claimed) | **Source:** @airdropfind drop 128716 | **X:** [@datainetwork](https://x.com/datainetwork/status/2113118900057485580) | **Track:** claim
+- **Type:** Claim portal on Sablier (BNB Chain, chainId 56). Campaign: Datai Network Campaign Airdrop (Instant). Token: DATAI (0x5063ef56477935e84f953dc41a126133a9cfc294). Claiming opened Oct 22 13:00 UTC.
+- **Recon:** Page loads campaign data (aggregateAmount 400k DATAI, balance 341k, claimed 58.6k). Claim button triggers on-chain transaction via wallet connect (Web3Modal/Privy). No browserless API endpoint discovered.
+- **Wallet:** EVM airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (needs BNB Chain added + ~0.001 BNB for gas). Solana wallet not applicable.
+- **Blocker:** Requires real wallet connection (MetaMask/Trust Wallet) on BNB Chain to sign claim transaction. CDP browser :9222 has no MetaMask vault. Mock injection cannot sign.
+- **Manual recipe (CloakBrowser + real MetaMask):** Open URL in CloakBrowser with MetaMask unlocked (airdrop_00, BNB Chain selected) → Connect Wallet → Click Claim → Confirm tx → Verify claim in history.
+- **Status:** ⚠️ PENDING — hard wall (real wallet + signed on-chain claim). No browserless path.
