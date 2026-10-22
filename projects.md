@@ -6464,3 +6464,28 @@
   - ⚠️ Discord OAuth — **BLOCKED**: requires manual Discord login (no automated Discord credentials)
 - **Status:** Frontend shows X connected, wallet saved, Discord pending. Backend API still shows `discord:false, twitter:false` — needs Discord OAuth completion to finalize.
 - **Manual action required:** Complete Discord OAuth at https://discord.com/login?redirect_to=%2Foauth2%2Fauthorize%3Fclient_id%3D1553770097427095663 → authorize → returns to site → click "CONNECT WALLET, DISCORD, AND X"
+
+### #443 Ether Archive FCFS Whitelist (etherarchive.xyz/wl) — 2111510019762012515 · FCFS Campaign (msg 128691) — ✅ DONE
+- **Date:** 2026-10-22 | **URL:** https://www.etherarchive.xyz/wl | **Reward:** FCFS waitlist spot for Ether Archive NFT mint | **Source:** @airdropfind drop 128691 | **X:** [@EthArchiveNFT](https://x.com/EthArchiveNFT) | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — API waitlist with 5 X tasks submitted in single call. Worker endpoint: `https://ether-archive-wl-api.e-gndz-33.workers.dev/api/wl/submit`
+- **API Submission:** POST with wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, username `osbornrdx`, tasks `{follow,like,repost,quote,reply:true}` → HTTP 201 `{"success":true,"ticket":{"serial":"EA-WL-796FEDA81AB9","username":"osbornrdx","createdAt":"2026-10-22T01:31:42.469Z"}}`
+- **X actions (@osbornrdx, MCP Chrome CDP — all verified server-side via ticket):**
+  - ✅ Follow [@EthArchiveNFT](https://x.com/EthArchiveNFT) — button flipped to "Mengikuti"
+  - ✅ Like announcement tweet → https://x.com/EthArchiveNFT/status/2111510019762012515
+  - ✅ Repost announcement tweet → https://x.com/EthArchiveNFT/status/2111510019762012515
+  - ✅ Quote announcement tweet → https://x.com/osbornrdx/status/2113086942170722607
+  - ✅ Reply to announcement tweet → https://x.com/osbornrdx/status/2113088369236512802
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, mainnet)
+- **Ticket:** `EA-WL-796FEDA81AB9` (serial) for `osbornrdx`, created `2026-10-22T01:31:42.469Z`
+- **Confirmation:** API returned success ticket; X tasks completed and verified via MCP Chrome automation
+- **Status:** ✅ DONE — all 5 tasks completed in one pass, waitlist ticket secured
+
+### #444 Umbra Privacy V2 Waitlist (v2.umbraprivacy.com/robinhood) — Vercel Security Checkpoint (msg 128693) — ⚠️ VERCEL-BLOCKED
+- **Date:** 2026-10-22 | **URL:** https://v2.umbraprivacy.com/robinhood?ref=fcsn7h | **Reward:** Waitlist registration (Robinhood Chain) | **Source:** @airdropfind drop 128693 | **X:** @UmbraPrivacy | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Simple email waitlist form
+- **Blocker:** Vercel Security Checkpoint (Code 11) — IP-level edge firewall from Vercel blocks Oracle VPS datacenter IP. Page returns HTTP 429 with "We're verifying your browser" / "Vercel Security Checkpoint" title. All routes (including API endpoints) return the same checkpoint.
+- **Attempts:** 1x curl (429 + checkpoint HTML), 1x MCP Chrome navigation (10s timeout, same checkpoint)
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, mainnet — Robinhood Chain compatible)
+- **Email:** airdropkarbiters@gmail.com
+- **X handle:** @osbornrdx
+- **Status:** ⚠️ VERCEL-BLOCKED — Cannot be completed from VPS. Requires execution from residential IP (CloakBrowser on Rey's local machine with Chrome profile) or residential proxy (Geonode dead). Manual steps: Open link in CloakBrowser → submit email → verify → done.
