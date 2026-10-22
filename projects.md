@@ -6489,3 +6489,20 @@
 - **Email:** airdropkarbiters@gmail.com
 - **X handle:** @osbornrdx
 - **Status:** ⚠️ VERCEL-BLOCKED — Cannot be completed from VPS. Requires execution from residential IP (CloakBrowser on Rey's local machine with Chrome profile) or residential proxy (Geonode dead). Manual steps: Open link in CloakBrowser → submit email → verify → done.
+
+### #445 IndiGG Galxe Quest (GCViHtZvpu) — Galxe Quest (msg 128697) — ⚠️ PARTIAL (X tasks done; Galxe SIWE auth blocked on new signin mutation format)
+
+- **Date:** 2026-10-22 | **URL:** https://app.galxe.com/quest/indigg/GCViHtZvpu | **Reward:** Galxe points (IndiGG space) | **Source:** @airdropfind drop 128697 | **X:** [@LebrelAI](https://x.com/LebrelAI) + [@brvx_ai](https://x.com/brvx_ai) | **Track:** quest
+- **Type:** Type 10 (GALXE-QUEST) — IndiGG space (alias `indigg`, ID `1390`), campaign `GCViHtZvpu` (`type: Points`, `status: Active`). 11 credentials: 5 TWITTER, 2 GALXE_ID, 2 EMAIL, 1 TWITTER (X account age >12mo + followers >60), 1 TWITTER (Visit waitlist).
+- **API Recon (GraphQL `graphigo.prd.galaxy.eco/query`):** Space ID `1390` resolved. Campaign has `credentialGroups` with 11 creds. New `signin` mutation requires `Auth!` input with fields: `address`, `addressType` (EVM), `message` (SIWE), `signature`, `publicKey`. Standard EIP-4361 SIWE message + `eth_account` signature returns `"Invalid signature"` — Galxe uses non-standard SIWE format or nonce source.
+- **X actions (@osbornrdx, MCP Chrome CDP — all verified):**
+  - ✅ Follow [@LebrelAI](https://x.com/LebrelAI) — button flipped to "Mengikuti"
+  - ✅ Like tweet `2112227280848048494` → https://x.com/LebrelAI/status/2112227280848048494
+  - ✅ Follow [@brvx_ai](https://x.com/brvx_ai) — button flipped to "Mengikuti"
+  - ✅ Like tweet `2112526002890969108` → https://x.com/brvx_ai/status/2112526002890969108
+  - ✅ Retweet tweet `2112526002890969108` → retweet menu "Posting ulang" clicked
+- **Blocker:** Galxe signin mutation format changed — standard SIWE rejected. Need to reverse-engineer exact message format from Galxe frontend or use CloakBrowser with real MetaMask (MetaMask SDK v0.33.1 detected — requires real extension/mobile app, mock injection fails). GALXE_ID, EMAIL, and Visit creds need Galxe auth + X OAuth linking.
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X proof links:** https://x.com/LebrelAI/status/2112227280848048494 (like) — https://x.com/brvx_ai/status/2112526002890969108 (like+retweet) — follows @LebrelAI + @brvx_ai
+- **Status:** ⚠️ PARTIAL — 5/11 creds (TWITTER follow/like/retweet) completed via X automation; 6 creds (GALXE_ID ×2, EMAIL ×2, TWITTER age/followers, Visit) blocked on Galxe authentication wall. Needs real MetaMask for SIWE signin.
+
