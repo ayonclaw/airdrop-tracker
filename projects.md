@@ -6583,3 +6583,15 @@
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
 - **Status:** ⚠️ PARTIAL — API recon complete; auth wall prevents credential sync. No X tasks performed yet (blocked on Galxe auth). Needs real MetaMask for SIWE signin or Galxe API format discovery.
 - **Next:** Retry when Galxe X OAuth is linked once at account level, or use CloakBrowser with real MetaMask for SIWE signin.
+
+### #450 evmbot.net Waitlist (http://evmbot.net/i/2MKZCY) — EXPIRED/INVALID INVITE (msg 128733) — ⛔ SKIPPED
+- **Date:** 2026-10-23 | **URL:** http://evmbot.net/i/2MKZCY | **Reward:** Waitlist registration (invite-gated) | **Source:** @airdropfind drop 128733 | **X:** [@evmbot](https://x.com/evmbot/status/2113338084796612691) | **Track:** waitlist
+- **Type:** Type 9 (REFERRAL-CODE-GATED PRE-REGISTER) — Invite link returns 404 "This page isn't onchain. The link may be mistyped, or the pass does not exist."
+- **Recon:** 
+  - `curl http://evmbot.net/i/2MKZCY` → HTTP 404, page shows "This page isn't onchain. The link may be mistyped, or the pass does not exist." + "Back to evmbot" link
+  - `curl http://evmbot.net` → Next.js SPA with docs/leaderboard links (client-side only, no SSR waitlist form)
+  - `curl http://evmbot.net/leaderboard` → 404 "This page isn't onchain"
+- **Blocker:** Invite code `2MKZCY` appears to be invalid or expired. The pass does not exist. No waitlist form accessible without valid invite.
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, airdrop_00) — not submitted
+- **X handle:** @osbornrdx — no X tasks available
+- **Status:** ⛔ SKIPPED — Invalid/expired invite code. No actionable surface.
