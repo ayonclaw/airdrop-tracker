@@ -6664,3 +6664,51 @@
   4. Check status / eligibility
   5. Verify registration confirmation
 - **Status:** ⚠️ PENDING — WalletConnect/AppKit is a hard wall for VPS automation. Needs CloakBrowser + real MetaMask with airdrop_00 wallet unlocked. Discord role + 150+ points eligibility unverified.
+
+### #454 OnePump Waitlist (oneswap.cc/waitlist) — Canton memecoin launchpad (msg 128748) — ✅ DONE
+- **Date:** 2026-10-24 | **URL:** https://www.oneswap.cc/waitlist | **Reward:** Waitlist position + Citizen Card #12,690 (The Waving Sprout: Common) | **Source:** @airdropfind drop 128748 | **X:** [@onepumpcc](https://x.com/onepumpcc) | **Track:** waitlist
+- **Type:** Type 2 (WEB-DASHBOARD) — Next.js SPA waitlist with email verification, X handle + Telegram username, multi-step form.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Email submit → airdropkarbiters@gmail.com
+  - ✅ X handle → @osbornrdx
+  - ✅ Telegram username → @mxsyxfxx
+  - ✅ Email verification → clicked confirmation link from hello@oneswap.cc
+- **Position:** #12,690 of 12,690 in line
+- **Citizen Card:** #12,690 — "A potted hand with a sprout in a foggy castle wall. The Waving Sprout: Common."
+- **Referral link:** https://www.oneswap.cc/w/VXB7N9QQ
+- **Dashboard:** https://www.oneswap.cc/waitlist/dashboard (MORE WAYS TO CLIMB)
+- **Confirmation:** "You're in. Citizen Card number 12,690, @osbornrdx on X. A potted hand with a sprout in a foggy castle wall. The Waving Sprout: Common."
+- **Status:** ✅ DONE — waitlist confirmed, email verified, position secured.
+
+
+### #455 Hypest.gg Hype Hub Waitlist (hypest.gg) — Social Tasks + Mystery Box + GTD Whitelist Race (msg 128753) — ✅ DONE
+- **Date:** 2026-10-24 | **URL:** https://hypest.gg/ | **Reward:** Hype Points, Rainbow Box card pull (Simon Dedic, common), GTD Whitelist race (Rank #469, 1,050 pts) | **Source:** @airdropfind drop 128753 | **X:** [@hypestgg](https://x.com/hypestgg) | **Track:** waitlist + social + mystery box
+- **Type:** Type 17 hybrid (SOCIAL-VERIFICATION-CLAIM + Mystery Box gamification) — Next.js SPA with invite-code gate (X handles as codes). Tasks: invite code → daily streak → X follow @hypestgg → X repost announcement → X reply/share → Rainbow Box open → Leaderboard climb for GTD Whitelist.
+- **Invite code discovery:** Scraped X replies on announcement tweet (https://x.com/hypestgg/status/2113716557281185919) — tested multiple user handles as codes. Working code: **`rh1bara`** (from @rh1bara). Codes are single-use or limited-uses — most exhausted.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Invite code entry → `rh1bara` accepted (entered Hype Hub)
+  - ✅ Daily streak claim → 50 Hype Points (1-day streak, next in 2h 33m)
+  - ✅ Follow @hypestgg → button flipped to "Mengikuti" | proof: [x.com/hypestgg](https://x.com/hypestgg)
+  - ✅ Repost announcement tweet → [x.com/hypestgg/status/2113716557281185919](https://x.com/hypestgg/status/2113716557281185919) (retweet count 568→570, button shows "Memposting ulang")
+  - ✅ Reply/share post → [x.com/osbornrdx/status/2113743023985348868](https://x.com/osbornrdx/status/2113743023985348868) ("Hype Hub is live! 🚀 @hypestgg #HYPEST")
+  - ✅ Rainbow Box open → pulled **Simon Dedic (common)** — [image](https://hypest.gg/storage/hypest-webp/1600230048572792846/common.webp)
+  - ✅ Inventory: 1/400 cards (Simon Dedic, common NEW)
+- **Wallet connected:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00) — displayed on dashboard
+- **Leaderboard:** Rank **#469** with **1,050 points** — **SPOT NOT LOCKED** (needs wallet connect confirmation for GTD Top 1,000 whitelist before snapshot). "Connect your wallet. It's required for your GTD spot before the snapshot."
+- **Blocker for GTD lock:** Wallet connect confirmation requires real MetaMask extension (WalletConnect/AppKit modal) — current CDP browser :9222 has MetaMask extension installed but no vault unlocked. **Hard wall for VPS automation.**
+- **Manual path for GTD lock:** CloakBrowser + real MetaMask (airdrop_00 unlocked) → Connect wallet on leaderboard page → Confirm GTD spot.
+- **Access Pass:** Phase 1 "ALLOCATING NOW" — GTD for Top 1,000. Phase 2 registration opens later. Rankings lock at snapshot (date TBA).
+- **Referral code:** Your X handle is your invite code → `@osbornrdx` (3 of 3 invites left, 150 Hype Points each)
+- **Confirmation:** Rainbow Box opened successfully, card added to inventory, leaderboard rank #469 secured.
+- **Status:** ✅ DONE — all automatable tasks completed in one pass; GTD whitelist lock pending manual wallet confirmation.
+
+
+### #456 Payphone NFT Waitlist (payphonenft.xyz/#apply) — ⛔ SITE DEPLOYMENT DISABLED
+- **Date:** 2026-10-24 | **URL:** https://www.payphonenft.xyz/#apply | **Reward:** 1,111 supply, Free mint on OpenSea, Robinhood Chain | **Source:** @airdropfind drop 128755 | **X:** [@PayphoneNFT](https://x.com/PayphoneNFT) | **Track:** waitlist
+- **Type:** Type 13 (SEASON-CLOSED / SITE DOWN) — Vercel deployment returns **HTTP 402 "Payment required" + DEPLOYMENT_DISABLED** on all paths (`/`, `/#apply`). The deployment has been disabled by Vercel due to billing/payment issues.
+- **Tasks listed:** Follow X (@PayphoneNFT) → Submit X username → Submit EVM wallet → Done
+- **Site status:** Completely inaccessible — returns plain text "Payment required\n\nDEPLOYMENT_DISABLED" with `x-vercel-error: DEPLOYMENT_DISABLED` header. No waitlist form, no content, no API endpoints reachable.
+- **Action taken:** Probed root and `/#apply` — both return 402. No further attempts possible; the site is offline at the Vercel infrastructure level.
+- **Wallet intended:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **Status:** ⛔ SKIPPED — Site deployment disabled by Vercel. Will re-check if deployment is restored. Logged under SKIPPED/EXPIRED.
+
