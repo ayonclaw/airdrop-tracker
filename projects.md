@@ -6561,15 +6561,24 @@
 - **Manual path:** Open in CloakBrowser (or real browser with X logged in) → fill form → solve Turnstile visually → submit. Wallet: airdrop_00 (`0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`).
 - **Verdict:** ⚠️ PENDING — Turnstile session-binding is a hard wall for VPS automation. Needs manual browser with Turnstile solve.
 
-### #448 Datai Network Airdrop Claim (Sablier) — BNB Chain Claim Portal (msg 128716) — ⚠️ PENDING (wallet connect required on BNB Chain)
-- **Date:** 2026-10-22 | **URL:** https://app.sablier.com/airdrops/campaign/0x6f65a00383227ccd702b4f07d31a955df80bf9a5-56 | **Reward:** $DATAI claim (400,000 total pool, 341,333 claimed) | **Source:** @airdropfind drop 128716 | **X:** [@datainetwork](https://x.com/datainetwork/status/2113118900057485580) | **Track:** claim
+### #448 Datai Network Airdrop Claim (Sablier) — BNB Chain Claim Portal (msg 128716 + 128745) — ⛔ NOT ELIGIBLE (all 10 wallets checked)
+- **Date:** 2026-10-22 / 2026-10-23 | **URL:** https://app.sablier.com/airdrops/campaign/0x6f65a00383227ccd702b4f07d31a955df80bf9a5-56 | **Reward:** $DATAI claim (400,000 total pool, 341,333 claimed) | **Source:** @airdropfind drops 128716 + 128745 | **X:** [@datainetwork](https://x.com/datainetwork/status/2113118900057485580) | **Track:** claim
 - **Type:** Claim portal on Sablier (BNB Chain, chainId 56). Campaign: Datai Network Campaign Airdrop (Instant). Token: DATAI (0x5063ef56477935e84f953dc41a126133a9cfc294). Claiming opened Oct 22 13:00 UTC.
-- **Recon:** Page loads campaign data (aggregateAmount 400k DATAI, balance 341k, claimed 58.6k). Claim button triggers on-chain transaction via wallet connect (Web3Modal/Privy). No browserless API endpoint discovered.
-- **Wallet:** EVM airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (needs BNB Chain added + ~0.001 BNB for gas). Solana wallet not applicable.
-- **Blocker:** Requires real wallet connection (MetaMask/Trust Wallet) on BNB Chain to sign claim transaction. CDP browser :9222 has no MetaMask vault. Mock injection cannot sign.
-- **Manual recipe (CloakBrowser + real MetaMask):** Open URL in CloakBrowser with MetaMask unlocked (airdrop_00, BNB Chain selected) → Connect Wallet → Click Claim → Confirm tx → Verify claim in history.
-- **Status:** ⚠️ PENDING — hard wall (real wallet + signed on-chain claim). No browserless path.
-
+- **Recon:** Page loads campaign data (aggregateAmount 400k DATAI, balance 341k, claimed 58.6k). "Check eligibility" dialog allows address input + check.
+- **Eligibility Check (MCP Chrome CDP, all 10 HD wallets):** Checked airdrop_00 through airdrop_09 via "Check eligibility" dialog:
+  - airdrop_00: `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **NOT ELIGIBLE**
+  - airdrop_01: `0x50d1Ce2Be5E3Fb8a229e9826E1685549c171D19b` → **NOT ELIGIBLE**
+  - airdrop_02: `0x8f20c36FF287c1f5a9d3d4824e7453560f2C2eeC` → **NOT ELIGIBLE**
+  - airdrop_03: `0x7B6380acDdd18ad210D0Efd3e67A8521C2C7E1B7` → **NOT ELIGIBLE**
+  - airdrop_04: `0xFE0476C8C18D532F69c723b47e53AA8f5A5DFc7d` → **NOT ELIGIBLE**
+  - airdrop_05: `0x05977C8D6B3E7524322a18c0bDaEc455Ce8455A7` → **NOT ELIGIBLE**
+  - airdrop_06: `0x19b8fdaD37d0ee54617A71Bd9EB153e7fd6d901B` → **NOT ELIGIBLE**
+  - airdrop_07: `0x7FF8fFB9cE432ADeBEd1bF9eAa401CFD28ac8269` → **NOT ELIGIBLE**
+  - airdrop_08: `0x2D8EDa631252307A02ce119d352c8AF48F6a5C63` → **NOT ELIGIBLE**
+  - airdrop_09: `0x01aCAd0BF45D3205b6816141ac05A22c8F0BA519` → **NOT ELIGIBLE**
+- **Result:** All 10 wallets return "Not eligible. Try another address? This address is not eligible for this airdrop." No wallet from our HD mnemonic is in the recipient list (942 recipients, 331.54K DATAI in contract).
+- **Wallet:** None eligible — no claim possible.
+- **Status:** ⛔ NOT ELIGIBLE — all 10 wallets checked, zero eligible. No further action needed. Moved drop 128745 → done/.
 ### #449 AGNT Weekly Socials | S4 Week 4 - Day 4 (app.galxe.com/quest/AGNTHub/GC1bHtZTgb) — Galxe Quest (msg 128722) — ⚠️ PARTIAL (followSpace + API attempts; Galxe SIWE auth wall + X OAuth blocked)
 - **Date:** 2026-10-23 | **URL:** https://app.galxe.com/quest/AGNTHub/GC1bHtZTgb | **Reward:** Galxe points (AGNT Hub, daily engagement) | **Source:** @airdropfind drop 128722 | **X:** @agnt_hub + @TruthAgentAI (typical AGNT tasks) | **Track:** quest
 - **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GC1bHtZTgb` (`type: Points`, `status: Active`). Daily engagement tasks for AGNT community. Window 2026/10/22 04:00 – 2026/10/28 04:00 GMT+7.
@@ -6595,3 +6604,63 @@
 - **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM, airdrop_00) — not submitted
 - **X handle:** @osbornrdx — no X tasks available
 - **Status:** ⛔ SKIPPED — Invalid/expired invite code. No actionable surface.
+
+### #451 Weird Cats Whitelist (weirdcats.xyz/r/cryptoaddict66) — 222 free mints + 600 GTD + 3,500 FCFS (msg 128737) — ⚠️ NETWORK-BLOCKED
+- **Date:** 2026-10-23 | **URL:** https://weirdcats.xyz/r/cryptoaddict66 (redirects to https://weirdcats.xyz/weirdlist/room-v2/?ref=cryptoaddict66) | **Reward:** Waitlist spot for freemint (222 free + 600 GTD + 3,500 FCFS, supply tracking live) | **Source:** @airdropfind drop 128737 | **X:** [@weirdcats_nft](https://x.com/weirdcats_nft/status/2111200543096045819) | **Track:** waitlist
+- **Type:** Type 2 (WEB-DASHBOARD) — Next.js SPA on Cloudflare. Steps: Connect X → Click Print My Ticket → Insert Coin (Submit EVM address).
+- **Recon (Playwright + xvfb, successful first run before network block):** Site passes Cloudflare challenge → shows interactive "Weirdlist" room with HUD buttons. Task flow confirmed: "I already follow, let me in" (#door-skip) → "Print my ticket" (#print-btn) → modal for EVM address submission.
+- **Tasks required (from drop text + UI recon):**
+  1. Connect X account (button "X" in HUD)
+  2. Click "Print My Ticket" 
+  3. Insert Coin → Submit EVM address
+- **Attempts:** 
+  - ✅ Playwright + xvfb (chromium-1234) — first run SUCCESS: passed Cloudflare, reached room, identified all buttons (#door-skip, #print-btn, X connect, etc.)
+  - ⚠️ Subsequent runs: `net::ERR_CONNECTION_TIMED_OUT` — VPS IP appears blocked/rate-limited by Cloudflare after initial success
+  - ⚠️ Captcha solver sidecar (type=cloudflare, real_page:true) — 408 timeout at 120s (hard limit)
+  - ⚠️ curl direct — connection timeout
+- **Blocker:** Network-level Cloudflare rate limit/block on Oracle VPS IP after initial automated access. Site works from residential IP.
+- **Wallet for submission:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X handle:** @osbornrdx
+- **Manual path (CloakBrowser on Rey's local machine):** Open referral link → pass Cloudflare → click "I already follow, let me in" → click "Print my ticket" → submit EVM address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → confirm.
+- **X proof needed:** Follow @weirdcats_nft, Print My Ticket click confirmation, wallet submission confirmation
+- **Status:** ⚠️ NETWORK-BLOCKED — VPS cannot reach site after initial Cloudflare challenge pass. Requires residential IP execution.
+
+
+### #452 XREIGN UNITS Free Mint (opensea.io/collection/xreign-units) — 5,555 supply · free mint on Robinhood Chain (msg 128739) — ⚠️ TIMED-MINT (NEEDS MANUAL CLOAKBROWSER MINT)
+- **Date:** 2026-10-23 | **URL:** https://opensea.io/collection/xreign-units/overview | **Reward:** Free mint (5,555 AI agents, one per wallet across all stages) | **Source:** @airdropfind drop 128739 | **X:** [@xreign_app](https://x.com/xreign_app) | **Track:** timed-mint
+- **Type:** Type 5 (TIMED-MINT) — OpenSea collection page, countdown timer, free public mint on Robinhood Chain. No tasks, no WL form — pure timed mint.
+- **Contract:** `0xc6533bdb59b28d314e60e55aa966ec345ff5025f` (Robinhood Chain, chainId 4663 / 0x1237)
+- **OpenSea API:** `total_supply: 0`, `unique_item_count: 0` = pre-mint state confirmed.
+- **Mint schedule (from drop + xreign.app/units page):** Drop posted 10:42 UTC "in the next 1 hour" → mint opens **~11:42 UTC**. xreign.app/units shows staged mint (GTD → WL → Public) with countdown. "Public runs until the supply is gone."
+- **Allowlist check:** `GET /al/0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D.json` → **HTTP 404** (ambiguous per merkle-allowlist-shard-checker pattern: 404 before stage start = "not on roll OR not published yet"). Stage start times embedded in page JS (`stages[0].start`). Public stage = "Everyone — Any wallet, until the supply is gone."
+- **HARD WALL:** Robinhood Chain RPC (`rpc.robinhood.com`) is **TLS-blocked from this VPS** (CloudFront SSL handshake failure). Public RPCs return CF managed challenges. **Server-side on-chain `mint()` call is NOT viable.** Must execute via **CloakBrowser + real MetaMask** (airdrop_00 wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` already has Robinhood Chain added per xreign.app UI).
+- **Gas:** Mint is free. Gas on Robinhood Chain paid in ETH, very low (~0.0022 ETH). airdrop_00 needs ~0.0022+ ETH on Robinhood Chain for mint tx.
+- **Manual recipe (CloakBrowser on Rey's local machine):**
+  1. Open CloakBrowser with MetaMask unlocked (airdrop_00, Robinhood Chain selected)
+  2. Navigate to https://opensea.io/collection/xreign-units/overview at **11:40 UTC** (2 min before mint)
+  3. Connect wallet → click "Mint" when live → confirm tx in MetaMask
+  4. Verify mint success on OpenSea / tx hash
+- **Wallet for mint:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X proof needed:** Mint transaction hash on OpenSea / Etherscan-equivalent for Robinhood Chain
+- **Status:** ⚠️ TIMED-MINT — mint window ~11:42 UTC. VPS cannot execute (RPC TLS block). Requires CloakBrowser + real MetaMask at mint time.
+
+
+### #453 GenLayer Airdrop Registration (airdrop.genlayer.com) — $GEN Token Reward (msg 128747) — ⚠️ PENDING (WalletConnect/AppKit — needs real MetaMask + SIWE signing)
+- **Date:** 2026-10-23 | **URL:** https://airdrop.genlayer.com/ | **Reward:** $GEN token allocation (verify activity to unlock) | **Source:** @airdropfind drop 128747 | **X:** [@GenLayer](https://x.com/GenLayer) | **Track:** waitlist/registration
+- **Type:** Type 3 (WEB3-WALLET) — Next.js SPA with WalletConnect/AppKit (Reown) modal. Steps: Connect Wallet → Sign message (free, no gas) → Check status. Eligibility: Discord community role + at least 150 GenLayer Points + accepted contribution.
+- **Wallet connect modal (Reown AppKit):** Options — WalletConnect, Trust Wallet, MetaMask, Binance Wallet, SafePal, "Search Wallet 80+". MetaMask "Browser" option shows "Not Detected" — no MetaMask extension in current CDP browser profile.
+- **Attempts:**
+  - ✅ Navigate to airdrop.genlayer.com
+  - ✅ Click "Connect Wallet" → Reown/AppKit modal opens
+  - ✅ Click "MetaMask" → "Browser" option → shows "Not Detected"
+  - ✅ Click "MetaMask" → "Mobile" option → shows QR code for mobile app pairing
+- **Blocker:** WalletConnect/AppKit requires a **real wallet extension or mobile app** — mock `window.ethereum` injection does NOT work (AppKit uses WalletConnect protocol with dedicated relay server, not standard EIP-1193). Current CDP browser on :9222 has MetaMask extension installed but **no vault imported** (never unlocked on this VPS).
+- **Eligibility check:** Requires Discord role + 150+ GenLayer Points — unknown if @osbornrdx qualifies (need to check Discord).
+- **Wallet for registration:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **Manual recipe (CloakBrowser on Rey's local machine):**
+  1. Open CloakBrowser with MetaMask unlocked (airdrop_00 wallet imported)
+  2. Navigate to https://airdrop.genlayer.com/
+  3. Click "Connect Wallet" → Select MetaMask → Approve connection + sign message
+  4. Check status / eligibility
+  5. Verify registration confirmation
+- **Status:** ⚠️ PENDING — WalletConnect/AppKit is a hard wall for VPS automation. Needs CloakBrowser + real MetaMask with airdrop_00 wallet unlocked. Discord role + 150+ points eligibility unverified.
