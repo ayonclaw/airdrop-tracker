@@ -6569,3 +6569,17 @@
 - **Blocker:** Requires real wallet connection (MetaMask/Trust Wallet) on BNB Chain to sign claim transaction. CDP browser :9222 has no MetaMask vault. Mock injection cannot sign.
 - **Manual recipe (CloakBrowser + real MetaMask):** Open URL in CloakBrowser with MetaMask unlocked (airdrop_00, BNB Chain selected) → Connect Wallet → Click Claim → Confirm tx → Verify claim in history.
 - **Status:** ⚠️ PENDING — hard wall (real wallet + signed on-chain claim). No browserless path.
+
+### #449 AGNT Weekly Socials | S4 Week 4 - Day 4 (app.galxe.com/quest/AGNTHub/GC1bHtZTgb) — Galxe Quest (msg 128722) — ⚠️ PARTIAL (followSpace + API attempts; Galxe SIWE auth wall + X OAuth blocked)
+- **Date:** 2026-10-23 | **URL:** https://app.galxe.com/quest/AGNTHub/GC1bHtZTgb | **Reward:** Galxe points (AGNT Hub, daily engagement) | **Source:** @airdropfind drop 128722 | **X:** @agnt_hub + @TruthAgentAI (typical AGNT tasks) | **Track:** quest
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GC1bHtZTgb` (`type: Points`, `status: Active`). Daily engagement tasks for AGNT community. Window 2026/10/22 04:00 – 2026/10/28 04:00 GMT+7.
+- **API Recon (GraphQL `graphigo.prd.galaxy.eco/query`):** Space ID `77675` resolved. Campaign start/end times confirmed. New `signin` mutation requires `Auth!` input (`address`, `addressType: EVM`, `message` SIWE, `signature`, `publicKey`). Standard EIP-4361 SIWE + `eth_account` signature returns `"message could not be parsed"` — Galxe uses non-standard SIWE format or nonce source.
+- **Attempts exhausted:**
+  - ✅ Space ID resolution (77675)
+  - ✅ Campaign metadata (startTime 1792616400, endTime 1792965600)
+  - ⚠️ `signin` mutation: tested 4 SIWE message variants (app.galxe.com/galxe.com domains, with/without "Sign in..." line) — all return `"message could not be parsed"`
+  - ⚠️ Cannot proceed to `followSpace` or `syncCredentialValue` without valid auth token
+- **Blocker:** Galxe signin mutation format changed — standard SIWE rejected. Need to reverse-engineer exact message format from Galxe frontend or use CloakBrowser with real MetaMask (MetaMask SDK detected — requires real extension/mobile app, mock injection fails). TWITTER/GALXE_ID creds need Galxe auth + X OAuth linking (architectural wall, same as all recent AGNT campaigns).
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **Status:** ⚠️ PARTIAL — API recon complete; auth wall prevents credential sync. No X tasks performed yet (blocked on Galxe auth). Needs real MetaMask for SIWE signin or Galxe API format discovery.
+- **Next:** Retry when Galxe X OAuth is linked once at account level, or use CloakBrowser with real MetaMask for SIWE signin.
