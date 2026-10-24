@@ -6833,3 +6833,14 @@
 - **Wallet for mint:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
 - **X proof needed:** Mint transaction hash on Robinhood Chain blockscout (`https://robinhoodchain.blockscout.com/tx/<hash>`)
 - **Status:** ⚠️ TIMED-MINT — mint window today (exact time TBD). VPS cannot execute (RPC TLS block). Requires CloakBrowser + real MetaMask at mint time.
+
+### #433 SweepHaus: LiteForge Cruise Quest (sweep.haus/quests/liteforge-cruise) — $1,000 prize pool, 76 days (msg 128793) — ⚠️ PENDING (Type 3: WEB3-WALLET — thirdweb ConnectKit, needs CloakBrowser + MetaMask)
+- **Date:** 2026-10-24 | **URL:** https://sweep.haus/quests/liteforge-cruise | **Reward:** Share of $1,000 ETH prize pool (9 chapters, collect all cards) | **Source:** @airdropfind drop 128793 | **X:** [@sweep_haus](https://x.com/sweep_haus) + [@LitecoinVM](https://x.com/LitecoinVM) | **Track:** quest
+- **Type:** Type 3 (WEB3-WALLET) — thirdweb ConnectKit modal (MetaMask, Coinbase, Rainbow, Rabby, Zerion, 500+ wallets). LiteForge = LitecoinVM ecosystem on EVM-compatible chain.
+- **Recon:** Page loads → "Connect your wallet to start the voyage" → Click "Connect" → thirdweb modal with wallet options. CDP browser :9222 has NO MetaMask vault (only Phantom for Solana). Mock `window.ethereum` injection cannot pass ConnectKit (stricter than RainbowKit, requires EIP-6963 + real extension account).
+- **Blocker:** Hard wall — needs real MetaMask extension with unlocked airdrop_00 account. ConnectKit detects injected providers and rejects them. Phantom (Solana) won't work for EVM quests.
+- **Manual recipe (CloakBrowser + real MetaMask, airdrop_00):** Open sweep.haus/quests/liteforge-cruise → Connect Wallet (MetaMask) → Select MetaMask → Sign → Complete 9 sequential chapters (X follow/like/repost/comment + on-chain actions) → Collect all 9 reward cards → Track progress on dashboard.
+- **Chain:** Likely Base or LiteForge EVM (need to check after wallet connect).
+- **Verdict:** ⚠️ PENDING — requires CloakBrowser session with MetaMask unlocked. Max 1 wallet attempt per rules; marked pending to not consume session.
+- **Next action:** Rey to run manual via CloakBrowser when available.
+
