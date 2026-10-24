@@ -6775,3 +6775,61 @@
 - **Wallet intended:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL, main wallet) or `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) — not submitted
 - **Verdict:** ⛔ NOT AUTOMATABLE — requires exchange KYC + real trade. Nothing to automate. Moved drop → done/.
 
+
+### #461 Vault Street Timed Mint (vaultstreet.fun/mint) — 1,000 supply · Free mint on Robinhood Chain (msg 128782) — ⚠️ TIMED-MINT (NEEDS MANUAL CLOAKBROWSER MINT)
+- **Date:** 2026-10-24 | **URL:** https://vaultstreet.fun/mint | **Reward:** Free mint (1,000 banks & vaults NFTs, Robinhood Chain, gas only) | **Source:** @airdropfind drop 128782 | **X:** [@VaultStreet_rh](https://x.com/VaultStreet_rh/status/2113943933701230942) | **Track:** timed-mint
+- **Type:** Type 5 (TIMED-MINT) — Static mint page with countdown timer, phased mint (WL → FCFS → Public). No waitlist form, no X tasks — pure timed mint.
+- **Contract:** `0x2a497B5870aCfa85F291aF43B05ad4222212fc56` (Robinhood Chain, chainId 4663 / 0x1237)
+- **Mint schedule (from page JS + drop):**
+  - **WL:** 16:00 UTC (4:00 PM UTC) — whitelist only
+  - **FCFS:** 16:30 UTC (4:30 PM UTC) — first come first served
+  - **Public:** 17:00 UTC (5:00 PM UTC) — public, until 1,000 supply exhausted
+- **Eligibility check (API `/api/game?a=mintpass&wallet=0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):**
+  - ✅ `eligible: true`, `listed: true`, `phase: "wl"` (whitelisted for WL phase)
+  - `gtd: false` (not guaranteed tier)
+  - `pass`: merkle proof provided in API response
+  - NFT contract confirmed: `0x2a497B5870aCfa85F291aF43B05ad4222212fc56`
+- **HARD WALL:** Robinhood Chain RPC (`https://rpc.mainnet.chain.robinhood.com`) is **TLS-blocked from this VPS** (CloudFront SSL handshake failure). Public RPCs return Cloudflare managed challenges. **Server-side on-chain `mint()` call is NOT viable from VPS.** Must execute via **CloakBrowser + real MetaMask** (airdrop_00 wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` already has Robinhood Chain added per xreign.app UI).
+- **Gas:** Mint is free. Gas on Robinhood Chain paid in ETH, very low (~0.0022 ETH). airdrop_00 needs ~0.0022+ ETH on Robinhood Chain for mint tx.
+- **Mint function:** `mint(bool gtd, bytes pass) payable` — requires the merkle `pass` from API + `gtd=false` for WL phase.
+- **Manual recipe (CloakBrowser on Rey's local machine):**
+  1. Open CloakBrowser with MetaMask unlocked (airdrop_00, Robinhood Chain selected)
+  2. Navigate to https://vaultstreet.fun/mint at **15:58 UTC** (2 min before WL mint)
+  3. Connect wallet (MetaMask) → page will detect WL eligibility via `/api/game?a=mintpass`
+  4. Click "Mint" when live at 16:00 UTC → confirm tx in MetaMask
+  5. Verify mint success on page / tx hash on Robinhood Chain blockscout
+- **Wallet for mint:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X proof needed:** Mint transaction hash on Robinhood Chain blockscout (`https://robinhoodchain.blockscout.com/tx/<hash>`)
+- **Status:** ⚠️ TIMED-MINT — WL mint window opens **16:00 UTC today (Oct 24)**. VPS cannot execute (RPC TLS block). Requires CloakBrowser + real MetaMask at mint time.
+
+
+### #462 FUDS Waitlist (fuds-wl.netlify.app) — 2,222 supply · Freemint on Robinhood Chain via OpenSea (msg 128785) — ✅ DONE (Submitted, pending team review)
+- **Date:** 2026-10-24 | **URL:** https://fuds-wl.netlify.app/ | **Reward:** Whitelist spot for freemint (2,222 Motion Pixels, 7 Hidden 1/1 Legendaries with $100 bounty each) | **Source:** @airdropfind drop 128785 | **X:** [@FUDSofficial](https://x.com/FUDSofficial/status/2113691972083032272) | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Vanilla JS Netlify SPA with 3 tasks: Like & Repost announcement → Follow @FUDSofficial → Post honest take + submit tweet URL + EVM wallet. API endpoints: `POST /api/wl-submit {address, tweetUrl}`, `GET /api/wl-check?address=...`. No wallet connect needed.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Like announcement tweet → [x.com/FUDSofficial/status/2113691972083032272](https://x.com/FUDSofficial/status/2113691972083032272) (intent like → "Suka" clicked)
+  - ✅ Repost announcement tweet → [x.com/FUDSofficial/status/2113691972083032272](https://x.com/FUDSofficial/status/2113691972083032272) (intent retweet → "Posting ulang" clicked)
+  - ✅ Follow @FUDSofficial → button flipped to "Mengikuti" | proof: [x.com/FUDSofficial](https://x.com/FUDSofficial) (intent follow → "Ikuti @FUDSofficial" clicked)
+  - ✅ Post honest take mentioning @FUDSofficial → [x.com/osbornrdx/status/2114031104424583429](https://x.com/osbornrdx/status/2114031104424583429)
+- **Submission:** `POST /api/wl-submit` `{address:"0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D", tweetUrl:"https://x.com/osbornrdx/status/2114031104424583429"}` → `{"ok":true,"user":{"address":"0x8CCE...282D","handle":"osbornrdx","tweetUrl":"...","status":"pending"}}`
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00, Robinhood Chain compatible)
+- **Status:** ✅ DONE — all 3 tasks completed in one pass, submission accepted and queued for manual team review. Status shows "pending" on checker.
+
+
+### #463 Ember Seed Free Mint (opensea.io/collection/ember-seed) — 2,000 supply · Free mint on Robinhood Chain (msg 128788) — ⚠️ TIMED-MINT (NEEDS MANUAL CLOAKBROWSER MINT)
+- **Date:** 2026-10-24 | **URL:** https://opensea.io/collection/ember-seed/overview | **Reward:** Free mint (2,000 Ember Seeds from Embervale, farming game on Robinhood Chain) | **Source:** @airdropfind drop 128788 | **X:** [@EmbervaleGame](https://x.com/EmbervaleGame) | **Track:** timed-mint
+- **Type:** Type 5 (TIMED-MINT) — OpenSea collection page, free public mint on Robinhood Chain. No waitlist form, no X tasks — pure timed mint.
+- **Contract:** `0xea404e4ecd09cfc0eb735373f036d0fdb7f09379` (Robinhood Chain, chainId 4663 / 0x1237)
+- **OpenSea API:** `total_supply: 1086`, `unique_item_count: 1086` = 1,086 of 2,000 already minted (pre-mint state partial). Description: "2,000 Ember Seeds from Embervale, the farming game on Robinhood Chain"
+- **Mint schedule:** Drop says "mint is today" — exact UTC time not specified in drop. Check OpenSea page for countdown timer at mint time.
+- **Allowlist check:** Not applicable — public free mint, no WL gate.
+- **HARD WALL:** Robinhood Chain RPC (`rpc.robinhood.com` / `https://rpc.mainnet.chain.robinhood.com`) is **TLS-blocked from this VPS** (CloudFront SSL handshake failure). Public RPCs return Cloudflare managed challenges. **Server-side on-chain `mint()` call is NOT viable from VPS.** Must execute via **CloakBrowser + real MetaMask** (airdrop_00 wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` already has Robinhood Chain added per xreign.app UI).
+- **Gas:** Mint is free. Gas on Robinhood Chain paid in ETH, very low (~0.0022 ETH). airdrop_00 needs ~0.0022+ ETH on Robinhood Chain for mint tx.
+- **Manual recipe (CloakBrowser on Rey's local machine):**
+  1. Open CloakBrowser with MetaMask unlocked (airdrop_00, Robinhood Chain selected)
+  2. Navigate to https://opensea.io/collection/ember-seed/overview at mint time (monitor for countdown)
+  3. Connect wallet → click "Mint" when live → confirm tx in MetaMask
+  4. Verify mint success on OpenSea / tx hash on Robinhood Chain blockscout
+- **Wallet for mint:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X proof needed:** Mint transaction hash on Robinhood Chain blockscout (`https://robinhoodchain.blockscout.com/tx/<hash>`)
+- **Status:** ⚠️ TIMED-MINT — mint window today (exact time TBD). VPS cannot execute (RPC TLS block). Requires CloakBrowser + real MetaMask at mint time.
