@@ -6712,3 +6712,66 @@
 - **Wallet intended:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
 - **Status:** ⛔ SKIPPED — Site deployment disabled by Vercel. Will re-check if deployment is restored. Logged under SKIPPED/EXPIRED.
 
+
+### #371 AGNT Weekly Socials | S4 Week 4 - Day 5 (app.galxe.com/quest/AGNTHub/GCwRHtZjkB) — Galxe Quest (msg 128766) — ⚠️ PENDING (Wallet auth requires MetaMask extension)
+- **Date:** 2026-10-24 | **URL:** https://app.galxe.com/quest/AGNTHub/GCwRHtZjkB | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128766 | **X:** @TruthAgentAI, @agnt_hub
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GCwRHtZjkB` (`type: Points`, `status: Active`). Window 2026/10/23 04:00 – 2026/10/26 05:00 GMT+7.
+- **API status:** Galxe GraphQL API changed — `GetSignInNonce` query and `signIn` mutation removed. New `nonce` mutation + `signin` mutation with `Auth` input, but SIWE message parsing fails (`message could not be parsed`) for all tested formats.
+- **Browser status:** MCP Chrome DevTools lacks MetaMask extension. MetaMask SDK v0.33.1 shows QR code for mobile / "Install MetaMask Extension" prompt. Cannot complete wallet authentication without real MetaMask extension.
+- **Tasks visible:** Visit the Truth post (10 pts), Like @TruthAgentAI Tweet (10 pts), Visit the AGNT Hub post (10 pts), Like @agnt_hub Tweet (10 pts) — 40 pts total.
+- **Action needed:** Manual wallet connect via CloakBrowser with MetaMask (airdrop_00) → complete X tasks → claim points.
+
+### #457 Influencer Family NFT Whitelist (influence.family/whitelist) — 1,000 supply · GTD Top 200 + FCFS (msg 128767) — ⚠️ PARTIAL (5/6 core steps done, Like verification stuck on X API 20-newest-likes limit)
+- **Date:** 2026-10-24 | **URL:** https://influence.family/whitelist?ref=VJRUSMAYANA404 | **Reward:** Whitelist spot for 1,000 NFTs on Robinhood Chain (Top 200 = GTD mint at 0.015 ETH, below 200 = possible FCFS at 0.02 ETH) | **Source:** @airdropfind drop 128767 | **X:** [@Influencefamily](https://x.com/Influencefamily) | **Track:** waitlist
+- **Type:** Type 17 hybrid (SOCIAL-VERIFICATION-CLAIM) — Sequential X tasks (Follow, Like, Repost, Comment, Quote) with server-side verification, then wallet submit. 7 total steps (6 core + 2 optional).
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP):**
+  - ✅ Sign in with X → @osbornrdx authenticated
+  - ✅ Follow [@influencefamily](https://x.com/influencefamily) — button flipped to "Mengikuti" | proof: [x.com/influencefamily](https://x.com/influencefamily)
+  - ✅ Follow [@ozziedegods](https://x.com/ozziedegods) — button flipped to "Mengikuti" | proof: [x.com/ozziedegods](https://x.com/ozziedegods)
+  - ⚠️ **Like the post** — Like placed on tweet page ([x.com/Influencefamily/status/2113632122938220964](https://x.com/Influencefamily/status/2113632122938220964)) but verification fails: "We can't see the like among your 20 newest likes." X API only checks 20 most recent likes; timing/propagation issue. Multiple unlike/re-like attempts exhausted.
+  - ✅ Repost the post — [x.com/Influencefamily/status/2113632122938220964](https://x.com/Influencefamily/status/2113632122938220964) (button shows "Memposting ulang")
+  - ✅ Comment under the post — [x.com/osbornrdx/status/2113743023985348868](https://x.com/osbornrdx/status/2113743023985348868) ("Joining the Influencer Family! 🔥 1000 NFTs on Robinhood Chain, top 200 get GTD mint. Let's go!")
+  - ✅ Quote the post with invite link — quote posted with referral link OSBORNRDX
+  - ⚠️ **Optional: Post about Influencer Family (500 pts)** — tweet exceeds 280 chars, requires thread; Post button disabled, "Post all" thread button disabled (empty 2nd tweet box). Attempted but incomplete.
+  - ⚠️ **Optional: Join Telegram (200 pts)** — requires Telegram widget login (not automated)
+- **Points earned:** 300/325 core points (Like = 25 pts blocked)
+- **Rank:** #574 with 300 pts (699 on board)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00, Robinhood Chain compatible) — **NOT SUBMITTED** (wallet section locked until all 6 core steps verified)
+- **Referral code:** `OSBORNRDX` (your X handle is the invite code)
+- **Blocker:** X API verification for Like step only checks 20 newest likes — hard wall for VPS automation. Wallet section remains locked: "Locked. Finish the 6 steps above and this opens."
+- **Manual path:** If Like verification propagates naturally, submit wallet via UI. Or CloakBrowser on local machine with fresh X session.
+- **X proof links:** https://x.com/influencefamily (follow) — https://x.com/ozziedegods (follow) — https://x.com/Influencefamily/status/2113632122938220964 (repost) — https://x.com/osbornrdx/status/2113743023985348868 (comment) — quote with OSBORNRDX ref
+- **Status:** ⚠️ PARTIAL — 5/6 core X tasks completed, Like verification blocked by X API 20-newest-likes limit. Wallet not submitted. Move to next drop per quick-escalation rule.
+
+
+### #458 SmartX Round 2 Waitlist (smartx.io/waitlist) — Personality Quiz + Email + X Verify (msg 128768) — ⚠️ INVITE ALREADY USED
+- **Date:** 2026-10-24 | **URL:** https://smartx.io/waitlist/?invite=h4cn5w85 | **Reward:** Waitlist spot (up to 50% off fees + shot at 10,000 USDT prize pool) | **Source:** @airdropfind drop 128768 | **X:** [@SmartXTerminal](https://x.com/SmartXTerminal) | **Track:** waitlist
+- **Type:** Type 17 hybrid (SOCIAL-VERIFICATION-CLAIM) — Multi-stage: invite gate → 6-question personality quiz (R1/R2 risk, D1/D2 decision, S1/S2 mode) → email OTP verification → X tweet verification (submit tweet with invite link) → result claim. API at `https://waitlist-api.smartx.io/`.
+- **Invite code:** `h4cn5w85` (from drop URL) — **already used**. `/waitlist_public/result?inviteCode=h4cn5w85` returns existing result: **The Limit Sniper (LMT)** — SNIPER · DATA · SOLO (Conviction 30, Instinct 80, Resilience 70). `resultId: e97dc86b9bee49f3b187bb00`.
+- **Quiz answers selected (would map to LMT):** R1_C (Wait for right price), R2_B (Hold), D1_B (Chart setup), D2_B (Look at chart), S1_B (Close trading group), S2_B (Listen first).
+- **Email attempts:** `airdropkarbiters@gmail.com` → OTP sent (030807) but **repeatedly rejected** by API (`code: 701, "Verification code is incorrect or expired"`). Same OTP returned on every resend — likely cached/invalidated because invite code already consumed.
+- **Alternative email tried:** `danisemi10@abest.my.id` — GSuite IMAP auth failed (invalid credentials).
+- **X tasks:** Not reached (X verification step comes after email verification).
+- **Wallet:** Not reached (wallet submit after X verification).
+- **Blocker:** Invite code `h4cn5w85` appears to be a one-time referral code already consumed by another user. The waitlist result is already generated and locked to that user. No new registration possible with this code.
+- **Status:** ⚠️ INVITE ALREADY USED — cannot register with this invite code. Would need a fresh invite code from the community/X comments. Moved drop → done/.
+
+### #459 LootVault (t.me/LootVaultDexBot) — Telegram Mini App, TON Wallet + Mining (msg 128769) — ⚠️ MOBILE-ONLY (TMA-MINIAPP)
+- **Date:** 2026-10-24 | **URL:** https://t.me/LootVaultDexBot?start=ref_515933843 | **Reward:** $LOOT mining + daily check-in | **Source:** @airdropfind drop 128769 | **X:** N/A | **Track:** tg-miniapp
+- **Type:** Type 6 (TMA-MINIAPP) — Telegram bot link with `KeyboardButtonWebView` button ("Start Mining" / "Open App"). Opens a Mini App inside Telegram's built-in webview (`atfminers.asloni.online/miner/index.html?v=...`). All API endpoints return `initData_missing` without Telegram's `tgWebAppData` init payload.
+- **Tasks listed:** Connect TON Wallet → Start Mining $LOOT → Go to "Home" & Complete Task → Daily Check In → Withdraw (Min 10,000 $LOOT)
+- **Automation status:** Probed API endpoints (max 3 attempts) — all return `{"status":"error","reason":"initData_missing"}`. Cannot be automated outside Telegram's webview. Telethon `msg.click()` on the button shows the SAME welcome screen repeatedly (button is `KeyboardButtonWebView`, not a regular inline callback).
+- **Manual path:** Open in Telegram app → tap "Start Mining" / "Open App" → connect TON wallet (generate real TON V4R2 wallet via `tonutils` if needed) → complete in-app tasks → daily check-in.
+- **TON wallet needed:** Generate real TON Wallet V4R2 offline via `tonutils` (`WalletV4R2.from_mnemonic(Dummy(), mnemonic_new(24))` → `to_str(is_user_friendly=True, is_bounceable=False)` → `UQ...` format). Save mnemonic to `~/airdrop/credentials/wallets/ton_wallet.txt`.
+- **Verdict:** ⚠️ MOBILE-ONLY — requires manual Telegram Mini App interaction. Not automatable from VPS. Logged under SKIPPED/EXPIRED with status "Needs manual Telegram".
+
+---
+
+### #460 PUMPFUN BIG Airdrops (pump.fun/u/FewVariousDev) — $50 Reward, KYC + Real Trade Required (msg 128772) — ⛔ NOT AUTOMATABLE (EXCHANGE-TRADE-REQUIREMENT)
+- **Date:** 2026-10-24 | **URL:** https://pump.fun/u/FewVariousDev | **Reward:** $50 | **Source:** @airdropfind drop 128772 | **X:** N/A | **Track:** exchange-trade
+- **Type:** Type 7 (EXCHANGE-TRADE-REQUIREMENT) — Pump.fun referral page. Requires: KYC on exchange (Bybit/Binance/OKX), real money trade ($50 SOL: $10 BUY + $10 SELL or similar), screenshot of trade history, submission of Exchange UID + wallet + email.
+- **Tasks listed:** Complete KYC → Buy $50 SOL → Trade Every Day Via Wallet → Done
+- **Automation status:** **NOT AUTOMATABLE** — requires real exchange account with KYC, real funds, real trades. No API surface for automation. Marked ⛔ SKIPPED immediately per triage rules (max 2 turns to confirm type).
+- **Wallet intended:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL, main wallet) or `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) — not submitted
+- **Verdict:** ⛔ NOT AUTOMATABLE — requires exchange KYC + real trade. Nothing to automate. Moved drop → done/.
+
