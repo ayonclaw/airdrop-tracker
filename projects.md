@@ -6844,3 +6844,27 @@
 - **Verdict:** ⚠️ PENDING — requires CloakBrowser session with MetaMask unlocked. Max 1 wallet attempt per rules; marked pending to not consume session.
 - **Next action:** Rey to run manual via CloakBrowser when available.
 
+
+
+### #464 PRDCTR Fraxion Gold Loyalty (hub.prdctr.io/loyalty) — Earn Points > Win Fraxion Nodes > Receive $PRD yield (msg 128804) — ⚠️ PENDING (Type 16: SNAG-LOYALTY-QUEST — all auth paths blocked)
+- **Date:** 2026-10-25 | **URL:** https://hub.prdctr.io/loyalty | **Reward:** Predictor Points, Fraxion Nodes, $PRD yield | **Source:** @airdropfind drop 128804 | **X:** [@PRDCTR_IO](https://x.com/PRDCTR_IO) | **Track:** quest
+- **Type:** Type 16 (SNAG-LOYALTY-QUEST) — Snag white-label loyalty platform. NextAuth providers: credentials (Ethereum/Dynamic), email (magic link), twitter, immutable-passport, ultra.
+- **Tasks visible (all LOCKED until sign-in):**
+  - Required: Follow X (@PRDCTR_IO) — 100 pts
+  - Limited-Time: Join CodeCraft Hub — 50 pts (ENDS IN 21H)
+  - Referrals: Invite Friends — locked
+  - Community: Join Discord — 100 pts (LOCKED), Join Telegram — 100 pts (LOCKED)
+  - Daily Quests: Hold $PRD (Daily) — up to 1000 pts/day (LOCKED), Check In (Daily) — 10 pts/day (LOCKED)
+- **Auth attempts (all blocked):**
+  1. ✅ **Email magic link** — Navigated to `/api/auth/signin/email`, submitted `airdropkarbiters@gmail.com`, clicked "Sign in with Email". Page shows "A sign in link has been sent". **ZERO emails received** from `accounts@snagsolutions.io` (checked Inbox, Spam, All Mail — no PRDCTR email since today). Beldex emails from same sender arrived instantly; PRDCTR email not delivered.
+  2. ✅ **Twitter OAuth** — Navigated to `/api/auth/signin/twitter`, clicked "Sign in with Twitter". Redirected to `x.com/i/oauth2/authorize` → **400 "Ada kesalahan teknis — Anda tidak dapat memberikan akses ke Aplikasi Anda"**. This is the X app's scope/config issue (`offline.access` restricted), NOT stale cookies. Deterministic failure.
+  3. ✅ **Wallet connect (Ethereum/Dynamic.xyz)** — NextAuth "credentials" provider uses Dynamic.xyz. Known Snag blocker: `eth.merkle.io` SIWE backend returns **HTTP 429** (Cloudflare rate-limit) from Oracle VPS IP. Mock `window.ethereum` injection does NOT bypass — failure is upstream at Dynamic's backend.
+- **Blocker:** All three auth paths are hard-blocked from VPS. No session established → all tasks remain LOCKED.
+- **Wallet for sign-in:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X handle:** @osbornrdx
+- **Manual path (CloakBrowser on Rey's local machine — residential IP bypasses eth.merkle.io 429):**
+  1. Open CloakBrowser with MetaMask unlocked (airdrop_00) + X logged in (@osbornrdx)
+  2. Navigate to https://hub.prdctr.io/loyalty
+  3. Click "Sign in" → try "Sign in with Email" (if email delivers to Rey's local inbox) OR "Sign in with Twitter" (if X app config works from residential IP) OR "Connect with Ethereum" (MetaMask → Dynamic.xyz SIWE — works from residential IP)
+  4. Once logged in: Complete Follow X (Go to Account) → Claim 100 pts → Join Discord/Telegram → Daily Check-in → Hold $PRD
+- **Status:** ⚠️ PENDING — all auth paths blocked from VPS. Requires CloakBrowser + real MetaMask + residential IP for Dynamic.xyz SIWE, or working email magic link delivery.
