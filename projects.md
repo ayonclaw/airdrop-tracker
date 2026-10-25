@@ -5657,3 +5657,29 @@
 - **Verdict:** ⚠️ WALLET-GATED — Not a waitlist; loyalty dashboard for existing Jumper users. Requires real MetaMask + Level 10+ to claim free hardware wallet. Manual execution needed via CloakBrowser. No automation path from VPS.
 - **Proof:** N/A (no tasks completed — wallet-gated dashboard)
 
+
+### #436 Ethernal Cubs Whitelist (ethernalcubs.ai/whitelist) — 3,333 supply · FREE MINT on Robinhood Chain (msg 128846) — ⚠️ PENDING (Type 3: WEB3-WALLET — ConnectKit wallet connect required for all tasks)
+- **Date:** 2026-10-26 | **URL:** https://ethernalcubs.ai/whitelist | **Reward:** Whitelist spot for free mint (3,333 Orbs, Robinhood Chain, Oct 29 14:00 UTC) | **Source:** @airdropfind drop 128846 | **X:** [@ethernalcubs](https://x.com/ethernalcubs) | **Track:** waitlist + quest
+- **Type:** Type 3 (WEB3-WALLET) — Lovable/React SPA with ConnectKit wallet modal. "Your wallet is your account" — all tasks (X follow/repost, Discord, Telegram, quizzes, Instagram, TikTok, invite, partner NFT verification) require wallet connection first. ConnectKit modal offers Coinbase Wallet Passkey or phone wallet (MetaMask, Robinhood Wallet, Trust, Rainbow).
+- **Tasks visible (all LOCKED until wallet connect):**
+  - **Galxe Quest** (separate): 500 FCFS spots until 27 Oct → https://app.galxe.com/quest/BgXXvvESA8qmF5Rbe29fjJ/GCtaBtZ5xZ (Follow @ethernalcubs + Discord on Galxe)
+  - **Discord:** Join +5, Get role +5, Stay 7 days +20
+  - **X:** Follow @ethernalcubs +10, Repost +15 ("Follow and repost first, then connect. X checks are limited.")
+  - **Telegram:** Join group +10 (requires phone + Telegram app confirm)
+  - **Partners:** Alpha Roboverse, MonkeyHood, Rocket100 Founder NFT, NFTFRIENDSALPHA, Wild Goat Gang, Imaginary Ones — verify wallet holdings
+  - **Instagram:** Follow +10
+  - **TikTok:** Follow +10
+  - **Quizzes:** Game guide +25, Lore and art +20, Tokenomics +20
+  - **Invite:** Bring a friend +15 each
+  - **Aptos Holders:** Verify wallet spots
+  - **Contests:** 7 live now spots
+- **Wallet required:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00, Robinhood Chain compatible)
+- **Blocker:** ConnectKit wallet modal requires real MetaMask/extension with Robinhood Chain added. CDP browser :9222 has NO MetaMask vault. Mock `window.ethereum` injection cannot pass ConnectKit (stricter than RainbowKit, requires EIP-6963 + real extension account). Phantom (Solana) won't work for EVM.
+- **Galxe Quest status:** Separate quest (500 FCFS until Oct 27) — can be attempted via Galxe pipeline (SIWE + followSpace + X OAuth) but Galxe X OAuth link needed.
+- **Manual recipe (CloakBrowser + real MetaMask, airdrop_00):**
+  1. Open https://ethernalcubs.ai/whitelist in CloakBrowser with MetaMask unlocked (wallet 0x8CCE...) + Robinhood Chain added
+  2. Click "CREATE YOUR ACCOUNT" → Connect Wallet → select MetaMask → sign message (no tx)
+  3. Once connected: complete X Follow/Repost via intent URLs, Discord join via browser, Telegram join via app confirm, quizzes, etc.
+  4. Also complete Galxe quest separately for 500 FCFS spot
+- **Verdict:** ⚠️ PENDING — hard wall (ConnectKit wallet connect required for all tasks). Max 1 wallet attempt per rules; marked pending. Requires CloakBrowser + real MetaMask with Robinhood Chain to complete.
+- **Next action:** Rey to run manual via CloakBrowser when available. Galxe quest can be attempted in parallel.
