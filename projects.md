@@ -5848,3 +5848,18 @@
   - Card share: https://x.com/osbornrdx/status/2114824157980741683
 - **Status:** ⚠️ PARTIAL — 6/6 X tasks completed with proof links. Wallet submission blocked by Cloudflare Turnstile managed challenge (IP reputation). Requires CloakBrowser from residential IP or manual browser with CF challenge bypass to click "Send application" after Turnstile verification.
 
+
+### #477 Nonce Protocol Genesis Mint (nonceprotocol.xyz/mint) — 7,777 supply · FREE MINT on BNB Chain (msg 128878) — ⚠️ PENDING (Type 21: ON-CHAIN MINT — requires real wallet + BNB gas)
+- **Date:** 2026-10-27 | **URL:** https://nonceprotocol.xyz/mint | **Reward:** Free Genesis mint (1 of 7,777 NFTs on BNB Chain, max 2 per wallet) | **Source:** @airdropfind drop 128878 | **X:** [@nonceprotocol](https://x.com/nonceprotocol) | **Track:** mint/airdrop
+- **Type:** Type 21 (ON-CHAIN MINT) — Free mint requiring "Binance Agent ID holders" or browser wallet extension. Connect Wallet modal offers: (1) **Binance Agentic Wallet** (QR code scan via Binance App, pairing code displayed), (2) **Other wallet** (browser extensions: MetaMask, Rabby, etc.). Free mint — pay only BNB gas.
+- **Requirements:** BNB Chain mainnet, ~0.002-0.005 BNB for gas, wallet with "Agent ID" or standard EVM wallet.
+- **Blocker:** Real wallet extension required. Current MCP Chrome (CDP :9222) has NO MetaMask vault loaded. Binance Agentic Wallet requires Binance App on mobile to scan QR code. Mock `window.ethereum` injection cannot pass the wallet connector (custom Binance Agentic Wallet SDK + standard EIP-6963 wallet detection).
+- **Wallet intended:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00, BNB Chain compatible — needs BNB for gas)
+- **Manual recipe (CloakBrowser + real MetaMask, airdrop_00):**
+  1. Open https://nonceprotocol.xyz/mint in CloakBrowser with MetaMask unlocked (wallet 0x8CCE..., BNB Chain added, ~0.005 BNB)
+  2. Click "Connect wallet" → select "Other wallet" → MetaMask → approve connection
+  3. Click "COPY MINT PROMPT" → paste into wallet-connected agent (or click mint button if available)
+  4. Confirm free mint transaction (pay BNB gas only)
+  5. Verify mint on BscScan + check "Explore all 7,777 identities" page
+- **Status:** ⚠️ PENDING — hard wall (real wallet + on-chain mint + BNB gas). No browserless/MCP path. Requires CloakBrowser + real MetaMask with BNB Chain + BNB for gas.
+- **Next action:** Rey to run manual via CloakBrowser when BNB available on airdrop_00.
