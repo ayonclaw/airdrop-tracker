@@ -5736,3 +5736,15 @@
 - **XP earned:** 700 XP (Promoted from RECRUIT → PRIVATE rank)
 - **Soldier:** Militia #1719, GRUNT rarity #2495, handle @osbornrdx
 - **Status:** ✅ DONE — 4/5 automatable tasks completed. Radio check (browser notification) and Invite friends (manual referrals) skipped.
+
+### #470 CashFi Airdrop for WIFI Users (reward-factory-backend.fly.dev/i/cashfi/D87JXC) — Mobile-Only App (msg 128856) — ⛔ SKIPPED
+- **Date:** 2026-10-26 | **URL:** https://reward-factory-backend.fly.dev/i/cashfi/D87JXC | **Reward:** CashFi app points → CASH → PayPal withdraw (Min $0.5, 7-day wait) | **Source:** @airdropfind drop 128856 | **Track:** mobile-only
+- **Type:** Type 1 (MOBILE-ONLY) — Landing page is a referral shim that only links to Google Play Store with invite code `D87JXC` pre-filled. "iPhone version coming soon." No web form, no wallet, no OAuth, no API endpoints.
+- **Flow (manual only):**
+  1. Install CashFi from Google Play: `https://play.google.com/store/apps/details?id=com.rewardfactory.cashfi&referrer=D87JXC`
+  2. Open app → enter invite code `D87JXC` on invite screen
+  3. Connect WiFi to get KEY
+  4. Open Box with KEY to get CASH (random value)
+  5. Withdraw CASH to PayPal (Min $0.5, withdrawals only after 7 days of registration)
+- **Verdict:** ⛔ SKIPPED — fully mobile app flow, no automation path from VPS. Nothing to submit on web.
+- **Manual steps for Rey:** Download app → register Google account → enter code `D87JXC` → daily WiFi connect + box open → withdraw after 7 days.
