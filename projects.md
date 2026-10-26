@@ -5748,3 +5748,16 @@
   5. Withdraw CASH to PayPal (Min $0.5, withdrawals only after 7 days of registration)
 - **Verdict:** ⛔ SKIPPED — fully mobile app flow, no automation path from VPS. Nothing to submit on web.
 - **Manual steps for Rey:** Download app → register Google account → enter code `D87JXC` → daily WiFi connect + box open → withdraw after 7 days.
+
+### #471 Influence Family WL Checker (influence.family/whitelist) — 1,000 supply · Robinhood Chain · Mint Oct 26 (msg 128862) — ℹ️ CHECKER (WL closed, wallet NOT on GTD/FCFS)
+- **Date:** 2026-10-26 | **URL:** https://influence.family/whitelist | **Reward:** WL checker for mint eligibility (GTD/FCFS/Public phases) | **Source:** @airdropfind drop 128862 | **X:** [@Influencefamily](https://x.com/Influencefamily) | **Track:** checker/mint
+- **Type:** Type 13 (SEASON-CLOSED POINTS-CHECK) — Whitelist registration CLOSED. Page is a wallet eligibility checker for today's mint (Oct 26). Mint phases on Robinhood Chain (chainId 4663):
+  - **Reserved:** Oct 26, 15:00 UTC — 20 pieces (team/treasury)
+  - **GTD:** Oct 26, 16:00 UTC — 2 per wallet, 0.015 ETH (guaranteed for top 200)
+  - **FCFS:** Oct 26, 16:45 UTC — 2 per wallet, 0.02 ETH (while supply lasts)
+  - **Public:** Oct 26, 17:30 UTC — 10 per wallet, 0.02 ETH (everyone)
+- **Checker result (@osbornrdx, MCP Chrome CDP):** Wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` checked via WL checker → **NOT on GTD or FCFS list**. Result: "This wallet is not on the GTD or FCFS list. Public mint opens Oct 26, 17:30 UTC, 10 per wallet."
+- **Contract:** $INFLUENCE `0x29D3945d0C7e4C78D194A343D3db0E909a0A8a91` (70% buyback/burn, 30% treasury)
+- **Mint page:** https://influence.family/nfts/influencer-family/mint (requires wallet connect)
+- **Status:** ℹ️ CHECKER — Whitelist closed, wallet not eligible for GTD/FCFS. Only public mint at 17:30 UTC available. Track for mint if desired (needs CloakBrowser + real MetaMask with Robinhood Chain + ~0.02 ETH gas).
+- **Source tweet:** https://x.com/Influencefamily/status/2114371414333772142
