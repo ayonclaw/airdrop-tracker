@@ -5789,3 +5789,22 @@
   4. Complete unlocked tasks: Join Discord (t.me/sovren), Post application with #SovrenContest, Share pass, Add Sovren to wallet, Submit email
   5. Referral link available after Connect X for 30 pts/friend (max 10)
 - **Source tweet:** https://x.com/sovrentech/status/2114018056410452305
+
+### #474 DiggerBot FCFS Whitelist (wl.digger.me) — $DIG Whitelist (msg 128870) — ⚠️ PARTIAL (Like ✅ | Repost/Reply ⚠️ verification blocked by API credits)
+- **Date:** 2026-10-26 | **URL:** https://wl.digger.me/ | **Reward:** $DIG whitelist spot | **Source:** @airdropfind drop 128870 | **X:** @DiggerBit | **Campaign post:** https://x.com/DiggerBit/status/2113600970915491877
+- **Type:** Type 4+2 hybrid (BROWSERLESS-FIRST for X OAuth + wallet bind, X tasks via MCP Chrome CDP) — Next.js SPA with X OAuth auth (`/api/auth/x/start`), wallet bind (`POST /api/wallet`), task verify (`POST /api/tasks/verify`), claim (`POST /api/claim`). Tasks: Like, Repost (not quote), Reply directly to campaign post.
+- **X OAuth:** ✅ Authorized @osbornrdx via cookie injection + "Izinkan aplikasi" on X OAuth consent.
+- **Wallet bound:** ✅ `POST /api/wallet` {address: "0x8cce57930bc7dfcb133f5d34889d362cb1bc282d"} → bound to X account.
+- **X tasks performed (@osbornrdx, MCP Chrome CDP, all confirmed on X):**
+  - ✅ **Like** — `[data-testid="like"]` clicked → "Disukai" confirmed on tweet https://x.com/DiggerBit/status/2113600970915491877 | **Proof:** [x.com/DiggerBit/status/2113600970915491877](https://x.com/DiggerBit/status/2113600970915491877)
+  - ✅ **Repost** — `[data-testid="retweet"]` → "Posting ulang" menu → "Memposting ulang" confirmed | **Proof:** [x.com/DiggerBit/status/2113600970915491877](https://x.com/DiggerBit/status/2113600970915491877)
+  - ✅ **Reply** — Posted "Joined the whitelist! 🚀" → reply URL: https://x.com/osbornrdx/status/2114754058221437082 | **Proof:** [x.com/osbornrdx/status/2114754058221437082](https://x.com/osbornrdx/status/2114754058221437082)
+- **Server verification:** ⚠️ **BLOCKED** — `/api/tasks/verify` for `repost` and `reply` return `{"result":"error","message":"X could not complete the check (402). Nothing was marked done. X said: credits depleted","retryable":false}`. Platform's X API bearer token credits exhausted — hard limit on their backend. Like task confirmed server-side (`likeVerifiedAt: "2026-10-26T16:20:50.678+00:00"`).
+- **Claim:** ⛔ Blocked — `/api/claim` requires all 3 tasks confirmed server-side (`"All three tasks must be confirmed on the server before you can claim"`).
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00)
+- **X proof links:**
+  - Like: https://x.com/DiggerBit/status/2113600970915491877
+  - Repost: https://x.com/DiggerBit/status/2113600970915491877
+  - Reply: https://x.com/osbornrdx/status/2114754058221437082
+- **Status:** ⚠️ PARTIAL — 3/3 X actions completed with proof links. Server verification blocked by platform's X API credit exhaustion (402, retryable=false). Requires platform to replenish API credits or manual retry later. Cannot claim until server verifies repost+reply.
+- **Next action:** Retry `/api/tasks/verify` for repost+reply periodically; if platform fixes credits, claim via `/api/claim`.
