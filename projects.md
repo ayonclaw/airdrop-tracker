@@ -5683,3 +5683,24 @@
   4. Also complete Galxe quest separately for 500 FCFS spot
 - **Verdict:** ⚠️ PENDING — hard wall (ConnectKit wallet connect required for all tasks). Max 1 wallet attempt per rules; marked pending. Requires CloakBrowser + real MetaMask with Robinhood Chain to complete.
 - **Next action:** Rey to run manual via CloakBrowser when available. Galxe quest can be attempted in parallel.
+
+### #437 RBH Heroes Early Access (rbhheroes.xyz/early-access) — Waitlist + 6 X Tasks + Wallet (msg 128849) — ⚠️ PARTIAL (X tasks 6/6 ✅ + Wallet ⛔ BLOCKED by Turnstile/CF Challenge)
+- **Date:** 2026-10-26 | **URL:** https://rbhheroes.xyz/early-access | **Reward:** Early access waitlist spot for Robinhood Chain game | **Source:** @airdropfind drop 128849 | **X:** [@RBHHeroes](https://x.com/RBHHeroes) | **Track:** waitlist + social
+- **Type:** Type 4+3 hybrid (BROWSERLESS-FIRST for X tasks via MCP Chrome, wallet submit blocked by Turnstile) — Multi-step wizard: Connect X (OAuth) → Follow @RBHHeroes → Like & Repost pinned post → Quote the post → Comment on the post → Submit EVM wallet. Turnstile captcha on final submit.
+- **X tasks + proof (@osbornrdx, MCP Chrome CDP, all verified):**
+  - ✅ **Connect X** — X OAuth via cookie injection → authorized as @osbornrdx
+  - ✅ **Follow @RBHHeroes** — intent follow → button flipped to "Mengikuti" | proof: [x.com/RBHHeroes](https://x.com/RBHHeroes)
+  - ✅ **Like & Repost** — pinned tweet [x.com/RBHHeroes/status/2113688935943623104](https://x.com/RBHHeroes/status/2113688935943623104) → like (`unlike` confirmed) + repost (`unretweet` confirmed)
+  - ✅ **Quote the post** — quote tweet [x.com/osbornrdx/status/2113755832509247872](https://x.com/osbornrdx/status/2113755832509247872) ("Going for the Archer class! 🏹")
+  - ✅ **Comment on the post** — reply [x.com/osbornrdx/status/2113756214837997568](https://x.com/osbornrdx/status/2113756214837997568) ("Ready to raid the Sheriff! 🏹 #RBHHeroes")
+- **Wallet submission:** ⛔ **BLOCKED** — Cloudflare Turnstile (sitekey `0x4AAAAAAFbnAmDbQKSno56q`) in invisible/auto mode on final `JOIN EARLY ACCESS` button. 
+  - Route-mode tokens from captcha-solver rejected (session-bound validation)
+  - Real-page mode times out at 60s hardcoded limit (sidecar browser busy)
+  - Browser Turnstile widget shows "Checking your Browser…" but never generates token (Oracle VPS IP likely flagged by Cloudflare)
+- **Wallet intended:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00, Robinhood Chain compatible)
+- **X proof links:**
+  - Follow: https://x.com/RBHHeroes
+  - Like + Repost: https://x.com/RBHHeroes/status/2113688935943623104
+  - Quote: https://x.com/osbornrdx/status/2113755832509247872
+  - Comment: https://x.com/osbornrdx/status/2113756214837997568
+- **Status:** ⚠️ PARTIAL — 6/6 X tasks completed with proof links. Wallet submission blocked by Cloudflare Turnstile managed challenge (IP reputation). Requires CloakBrowser from residential IP or manual browser with CF challenge bypass.
