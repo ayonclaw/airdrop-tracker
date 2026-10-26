@@ -5808,3 +5808,19 @@
   - Reply: https://x.com/osbornrdx/status/2114754058221437082
 - **Status:** ⚠️ PARTIAL — 3/3 X actions completed with proof links. Server verification blocked by platform's X API credit exhaustion (402, retryable=false). Requires platform to replenish API credits or manual retry later. Cannot claim until server verifies repost+reply.
 - **Next action:** Retry `/api/tasks/verify` for repost+reply periodically; if platform fixes credits, claim via `/api/claim`.
+
+### #475 Forever Founding Members Mint (enterforever.com/mint) — 500 supply · 0.045 ETH Public Mint (msg 128873) — ⚠️ WALLET-GATED (Paid Mint)
+- **Date:** 2026-10-26 | **URL:** https://enterforever.com/mint | **Reward:** Founding Member NFT Pass (guaranteed 800,000 $FOREVER tokens = 0.08% supply each) | **Source:** @airdropfind drop 128873 | **Track:** paid-mint
+- **Type:** Type 3 variant (WEB3-WALLET — PAID PUBLIC MINT) — Reown AppKit / Web3Modal wallet connection required. Ethereum mainnet. Not a waitlist — live public FCFS mint.
+- **Mint details:** 500 supply, 0.045 ETH mint price + gas, "MINTED 0 / 500" (live), countdown timer "MINT ENDS IN". Each NFT = 800,000 $FOREVER tokens (0.08% supply), claimable at /claim after token launch. Non-transferable pass.
+- **Wallet required:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00, Ethereum mainnet) — needs ~0.045 ETH + gas (~0.001-0.002 ETH)
+- **Blocker:** Reown AppKit modal requires real MetaMask extension with unlocked wallet. VPS Chrome instance has NO MetaMask vault. Mock `window.ethereum` injection cannot pass AppKit (requires real extension account + EIP-6963).
+- **Manual recipe (CloakBrowser + real MetaMask, airdrop_00):**
+  1. Open https://enterforever.com/mint in CloakBrowser with MetaMask unlocked (wallet 0x8CCE..., Ethereum mainnet, ~0.05 ETH)
+  2. Click "Connect wallet" → select MetaMask → approve connection
+  3. Click "Mint" → confirm 0.045 ETH + gas transaction
+  4. Verify mint success on Etherscan + /claim page shows "Pass holders: claim your FOREVER"
+- **Verdict:** ⚠️ WALLET-GATED — Paid public mint requiring real ETH + real wallet connection. No automation path from VPS. Marked for manual execution via CloakBrowser when Rey has ETH available.
+- **Cost:** ~0.047 ETH total (~$115 at $2,450/ETH) — Rey to decide if worthwhile.
+- **Source tweet:** None in drop (direct mint page link only)
+
