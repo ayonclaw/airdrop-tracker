@@ -5769,3 +5769,23 @@
 - **Blocker:** Lens authentication requires real MetaMask wallet connection with EVM wallet (airdrop_00: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D). Mock window.ethereum injection won't work for Lens protocol SIWE flow.
 - **Manual recipe (CloakBrowser + real MetaMask):** Open hey.xyz in CloakBrowser with unlocked MetaMask (airdrop_00) → Connect wallet (Lens) → Navigate to right sidebar under Search → Click "Claim" for daily HP → Confirm tx.
 - **Status:** ⚠️ PENDING — hard wall (real wallet + Lens protocol auth). No browserless path.
+
+### #473 Sovren Operator Pass (operators.sovrentech.io) — Operator Card + Points + Node License (msg 128869) — ⚠️ PARTIAL (X OAuth + Follow ✅ | Wallet Connect ⛔ BLOCKED — needs real MetaMask)
+- **Date:** 2026-10-26 | **URL:** https://operators.sovrentech.io/?r=2921 | **Reward:** Numbered Operator Pass (node license chance, $3K node prize, Triton Cloud credits for top 30, Founding Operator role for top 50) | **Source:** @airdropfind drop 128869 | **X:** [@sovrentech](https://x.com/sovrentech) | **Track:** waitlist + social + wallet
+- **Type:** Type 2 (WEB-DASHBOARD) — Next.js SPA with X OAuth auth + sequential tasks: Connect X → Follow @sovrentech → Connect Wallet (EVM, sign message) → Claim Pass → then unlocks: Join Discord (30 pts), Post why run node (50 pts), Share Pass (20 pts), Add Sovren to wallet (20 pts), Submit email (10 pts). Referral system: 30 pts per friend (max 10) after they complete all required steps.
+- **Tasks completed (@osbornrdx, MCP Chrome CDP):**
+  - ✅ **Connect X** — X OAuth via cookie injection + "Izinkan aplikasi" → authorized as @osbornrdx
+  - ✅ **Follow @sovrentech** — followed via profile page → button flipped to "Mengikuti" | proof: [x.com/sovrentech](https://x.com/sovrentech)
+  - ✅ **Verify Follow** — clicked "Verify" on Sovren dashboard → Follow task marked "Done" (10 pts)
+- **Wallet Connect:** ⛔ **BLOCKED** — "Connect wallet" step requires signing a message via EVM wallet. Wallet modal shows WalletConnect v2 QR code (Mobile wallet) and install links for MetaMask/Coinbase/Trust/Zerion (EVM) + Keplr/Leap/Cosmostation (Cosmos). VPS Chrome instance has NO MetaMask extension loaded. Mock `window.ethereum` injection cannot pass WalletConnect (requires real extension or mobile app QR scan).
+- **Wallet intended:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM airdrop_00, mainnet)
+- **X proof links:**
+  - Follow: https://x.com/sovrentech
+- **Status:** ⚠️ PARTIAL — 2/3 required initial tasks completed (X OAuth + Follow verified). Wallet connect is hard wall — needs CloakBrowser with real MetaMask (airdrop_00) unlocked to sign message. After wallet connect: Claim Pass unlocks Discord/Post/Share/Wallet/Email tasks for additional 130 pts.
+- **Manual recipe (CloakBrowser + real MetaMask, airdrop_00):**
+  1. Open https://operators.sovrentech.io/?r=2921 in CloakBrowser with MetaMask unlocked (wallet 0x8CCE...)
+  2. Click "Connect X" → X OAuth (already authorized) → "Connect wallet" → MetaMask → Sign message (no tx)
+  3. Click "Claim" to get numbered Operator Pass
+  4. Complete unlocked tasks: Join Discord (t.me/sovren), Post application with #SovrenContest, Share pass, Add Sovren to wallet, Submit email
+  5. Referral link available after Connect X for 30 pts/friend (max 10)
+- **Source tweet:** https://x.com/sovrentech/status/2114018056410452305
