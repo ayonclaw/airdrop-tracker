@@ -5824,3 +5824,27 @@
 - **Cost:** ~0.047 ETH total (~$115 at $2,450/ETH) — Rey to decide if worthwhile.
 - **Source tweet:** None in drop (direct mint page link only)
 
+
+### #476 Meetmotes Allowlist (meetmotes.com/apply-form) — Allowlist Application (msg 128876) — ⚠️ PARTIAL (X tasks 6/6 ✅ + Wallet ⛔ BLOCKED by Cloudflare Turnstile)
+- **Date:** 2026-10-27 | **URL:** https://meetmotes.com/apply-form | **Reward:** Allowlist spot for Motes project | **Source:** @airdropfind drop 128876 | **X:** [@meetmotes](https://x.com/meetmotes) | **Track:** waitlist + social
+- **Type:** Type 4+3 hybrid (BROWSERLESS-FIRST for X OAuth + form, X tasks via MCP Chrome CDP, wallet submit blocked by Turnstile) — Multi-step wizard: Connect X (OAuth) → Enter EVM wallet → Follow @meetmotes → Like & Repost pinned post → Reply to pinned post → Share card on X → Submit with Turnstile captcha.
+- **X tasks + proof (@osbornrdx, MCP Chrome CDP, all verified):**
+  - ✅ **Connect X** — X OAuth via cookie injection → authorized as @osbornrdx
+  - ✅ **Follow @meetmotes** — button flipped to "Mengikuti" | proof: [x.com/meetmotes](https://x.com/meetmotes)
+  - ✅ **Like & Repost** — pinned tweet https://x.com/meetmotes/status/2114736337383502297 → like (`unlike` confirmed) + repost (`unretweet` confirmed) | proof: [x.com/meetmotes/status/2114736337383502297](https://x.com/meetmotes/status/2114736337383502297)
+  - ✅ **Reply to pinned post** — reply posted: "Applied for the Motes allowlist! @meetmotes" → reply URL: https://x.com/osbornrdx/status/2114823958239518918 | **Proof:** [x.com/osbornrdx/status/2114823958239518918](https://x.com/osbornrdx/status/2114823958239518918)
+  - ✅ **Share card on X** — card posted with auto-generated text + image → tweet URL: https://x.com/osbornrdx/status/2114824157980741683 | **Proof:** [x.com/osbornrdx/status/2114824157980741683](https://x.com/osbornrdx/status/2114824157980741683)
+  - ✅ **Form fields filled** — Reply URL + Card URL saved in form via MCP Chrome
+- **Wallet submission:** ⛔ **BLOCKED** — Cloudflare Turnstile (sitekey `0x4AAAAAAFfsDCv2hDrC7xA5`) on final "Send application" button.
+  - Route-mode tokens from captcha-solver sidecar rejected (session-bound validation, backend returned "Bot check failed")
+  - Real-page mode times out at 60s hardcoded limit (sidecar CloakBrowser cannot solve in time from Oracle VPS IP)
+  - Browser Turnstile widget cycles: "Verifying..." → "Checking your Browser..." → checkbox "Verify you are human" → click → timeout → repeat (Oracle VPS IP likely flagged by Cloudflare)
+  - Widget iframe: `challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/...`
+- **Wallet intended:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00)
+- **X proof links:**
+  - Follow: https://x.com/meetmotes
+  - Like + Repost: https://x.com/meetmotes/status/2114736337383502297
+  - Reply: https://x.com/osbornrdx/status/2114823958239518918
+  - Card share: https://x.com/osbornrdx/status/2114824157980741683
+- **Status:** ⚠️ PARTIAL — 6/6 X tasks completed with proof links. Wallet submission blocked by Cloudflare Turnstile managed challenge (IP reputation). Requires CloakBrowser from residential IP or manual browser with CF challenge bypass to click "Send application" after Turnstile verification.
+
