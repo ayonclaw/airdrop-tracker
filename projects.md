@@ -5761,3 +5761,11 @@
 - **Mint page:** https://influence.family/nfts/influencer-family/mint (requires wallet connect)
 - **Status:** ℹ️ CHECKER — Whitelist closed, wallet not eligible for GTD/FCFS. Only public mint at 17:30 UTC available. Track for mint if desired (needs CloakBrowser + real MetaMask with Robinhood Chain + ~0.02 ETH gas).
 - **Source tweet:** https://x.com/Influencefamily/status/2114371414333772142
+
+### #472 Hey.xyz Daily HP Points (hey.xyz) — Daily HP claim (msg 128865) — ⚠️ PENDING (needs Lens wallet connect)
+- **Date:** 2026-10-26 | **URL:** https://hey.xyz | **Reward:** +1 HP daily points | **Source:** @airdropfind drop 128865 | **Track:** daily
+- **Type:** Type 2 (WEB-DASHBOARD) — Lens-based decentralized social. Daily claim requires Lens account login via wallet (EVM). "Claim +1 HP from the right sidebar under Search."
+- **Attempt:** MCP Chrome CDP on hey.xyz — page loads, shows feed but login prompts visible. Clicked "Wallet" → "Login" → "Browser Wallet" → Wagmi error: "Provider not found. Version: @wagmi/core@2.22.1" — VPS Chrome instance has no MetaMask extension loaded.
+- **Blocker:** Lens authentication requires real MetaMask wallet connection with EVM wallet (airdrop_00: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D). Mock window.ethereum injection won't work for Lens protocol SIWE flow.
+- **Manual recipe (CloakBrowser + real MetaMask):** Open hey.xyz in CloakBrowser with unlocked MetaMask (airdrop_00) → Connect wallet (Lens) → Navigate to right sidebar under Search → Click "Claim" for daily HP → Confirm tx.
+- **Status:** ⚠️ PENDING — hard wall (real wallet + Lens protocol auth). No browserless path.
