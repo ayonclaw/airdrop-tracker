@@ -5889,3 +5889,24 @@
 - **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):**\n  - ✅ SIWE SignIn → JWT; ✅ `followSpace(77675)` → `{\"followSpace\":1}`\n  - ⚠️ `GALXE_ID` cred `737286631630831616` (AGNT S4 Week 4 Finale Qualification) → `allow:false` (visit cred needs real browser visit beacon + X OAuth)
 - **Blocker:** GALXE_ID visit cred requires browser visit beacon with X OAuth at Galxe account level.
 - **Verdict:** ⚠️ PARTIAL — followSpace done; 1 cred blocked on Galxe-level X OAuth.
+
+### #481 Bullshot GEMS (gem.bullshot.io/r/0xe7b9c62b) — Quest Platform (msg 128891) — ✅ DONE
+- **Date:** 2026-10-27 | **URL:** https://gem.bullshot.io/r/0xe7b9c62b | **Reward:** GEMS + XP for airdrop eligibility | **Source:** @airdropfind drop 128891 | **X:** [@Bullshot911](https://x.com/Bullshot911) | **Track:** quest
+- **Type:** Type 2 (WEB-DASHBOARD) — Quest platform with Weekly (3) + One-Time (4) tasks. X OAuth login via @osbornrdx.
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP, all verified):**
+  - **Weekly QRT** ✅ — Posted tweet → verify → GEMS +225, XP +120 | Proof: [x.com/osbornrdx/status/2114959195074335148](https://x.com/osbornrdx/status/2114959195074335148)
+  - **One-Time: Follow @Bullshot911** ✅ — Button flipped to "Mengikuti" → GEMS +300, XP +150 | Proof: [x.com/Bullshot911](https://x.com/Bullshot911)
+  - **One-Time: Join Telegram** ✅ — Joined t.me/Bullshot911 → GEMS +300, XP +150
+  - **One-Time: Join Discord** ✅ — Joined Discord server → GEMS +300, XP +150 → **LEVEL UP to 4**
+  - **One-Time: Share Mining Journey** ✅ — Posted tweet → verify → GEMS +450, XP +150 | Proof: [x.com/osbornrdx/status/2114983787155321257](https://x.com/osbornrdx/status/2114983787155321257)
+- **Final stats:** GEMS **2,430**, XP **342/800 (LVL 4)**, Weekly 3/3, One-Time 4/4
+- **Status:** ✅ DONE — All 7 tasks completed in one pass with proof links.
+
+### #482 TIMECARD Free Mint (thetimecard.xyz) — 7,777 supply · FREE MINT on Ink (msg 128901) — ⛔ NOT ELIGIBLE
+- **Date:** 2026-10-27 | **URL:** https://thetimecard.xyz/ | **Reward:** Free mint on Ink chain (MINT OCT 27 · 13:00 UTC) | **Source:** @airdropfind drop 128901 | **X:** [@thetimecard](https://x.com/thetimecard) | **Track:** timed-mint
+- **Type:** Type 5 (TIMED-MINT) — OpenSea collection "thetimecard" on Ink chain. Countdown timer: Oct 27, 13:00 UTC. Free mint.
+- **Allowlist check:** `GET https://thetimecard.xyz/al/0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D.json` → **HTTP 404** (404 page returned). Wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` NOT on the free mint list.
+- **Page copy:** "Hiring is closed. Final list October 26." — Allowlist closed Oct 26, wallet not eligible.
+- **Contract:** `0x8fdd7cc15b3ba8fa955c42a5fb7be623fd3fe569` (Ink chain), OpenSea: https://opensea.io/collection/thetimecard
+- **Status:** ⛔ NOT ELIGIBLE — Allowlist closed, wallet not on free mint list. No action needed. Moved to SKIPPED/EXPIRED.
+
