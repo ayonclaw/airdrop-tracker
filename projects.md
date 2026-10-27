@@ -5874,3 +5874,18 @@
 - **Status:** ✅ DONE — single-step email waitlist completed via browserless API call.
 - **Source tweet:** https://x.com/AsendNow/status/2114725671775985711
 
+
+### #479 AGNT Weekly Socials | S4 Week 5 (app.galxe.com/quest/AGNTHub/GC4ZHtZ5oi) — Galxe Quest (msg 128887) — ⚠️ PARTIAL (API + real X likes done; TWITTER creds need X OAuth link, GALXE_ID need visit)
+- **Date:** 2026-10-27 | **URL:** https://app.galxe.com/quest/AGNTHub/GC4ZHtZ5oi | **Reward:** Galxe points (AGNT Hub) | **Source:** @airdropfind drop 128887 | **X:** @agnt_hub + @TruthAgentAI | **Track:** quest
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`, alias `AGNTHub`), campaign `GC4ZHtZ5oi` (`type: Parent`, `status: Active`). Has 1 child campaign: `AGNT Weekly Socials | S4 Week 5 - Day 1` (Points, Active). Window ongoing.
+- **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):**\n  - ✅ SIWE SignIn → JWT; ✅ `followSpace(77675)` → `{\"followSpace\":1}`\n  - ⚠️ `TWITTER` creds (3): `737296601919258624` (agnt_hub Tweet 2114706759864418694), `737304170201088000` (TruthAgentAI Tweet 2114714409104752711), `737304843114250240` (agnt_hub Tweet 2114715108073001212) → `\"missing twitter args\"` (X OAuth not linked at Galxe account level — architectural, one-time manual)\n  - ⚠️ `GALXE_ID` creds (3): `737296599981490176` (Visit AGNT Hub partnership), `737304170389831680` (Visit Truth post), `737304843093278720` (Visit AGNT Hub post) → `allow:false` (visit creds need real browser visit beacon + X OAuth)
+- **X actions (@osbornrdx, Playwright + X cookies, all verified):**\n  - ✅ Like [agnt_hub tweet 2114706759864418694](https://x.com/agnt_hub/status/2114706759864418694)\n  - ✅ Like [TruthAgentAI tweet 2114714409104752711](https://x.com/TruthAgentAI/status/2114714409104752711)\n  - ✅ Like [agnt_hub tweet 2114715108073001212](https://x.com/agnt_hub/status/2114715108073001212)
+- **Blocker:** Galxe X OAuth linking required at account level for Twitter creds to sync (`allow:true`). GALXE_ID visit creds need browser visit beacon with X OAuth. Same architectural wall as #404/#410.
+- **Verdict:** ⚠️ PARTIAL — followSpace + 3 real X likes done; 6 creds blocked on Galxe-level X OAuth.
+
+### #480 AGNT Weekly Socials | S4 Week 4 - Finale (app.galxe.com/quest/AGNTHub/GCdVHtZyxj) — Galxe Quest (msg 128887) — ⚠️ PARTIAL (API done; GALXE_ID cred needs visit)
+- **Date:** 2026-10-27 | **URL:** https://app.galxe.com/quest/AGNTHub/GCdVHtZyxj | **Reward:** Galxe points (AGNT Hub, Week 4 Finale Qualification) | **Source:** @airdropfind drop 128887 | **Track:** quest
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space (ID `77675`), campaign `GCdVHtZyxj` (`type: Points`, `status: Active`). Standalone Points campaign (Week 4 Finale).
+- **API results (address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):**\n  - ✅ SIWE SignIn → JWT; ✅ `followSpace(77675)` → `{\"followSpace\":1}`\n  - ⚠️ `GALXE_ID` cred `737286631630831616` (AGNT S4 Week 4 Finale Qualification) → `allow:false` (visit cred needs real browser visit beacon + X OAuth)
+- **Blocker:** GALXE_ID visit cred requires browser visit beacon with X OAuth at Galxe account level.
+- **Verdict:** ⚠️ PARTIAL — followSpace done; 1 cred blocked on Galxe-level X OAuth.
