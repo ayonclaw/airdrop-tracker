@@ -5863,3 +5863,14 @@
   5. Verify mint on BscScan + check "Explore all 7,777 identities" page
 - **Status:** ⚠️ PENDING — hard wall (real wallet + on-chain mint + BNB gas). No browserless/MCP path. Requires CloakBrowser + real MetaMask with BNB Chain + BNB for gas.
 - **Next action:** Rey to run manual via CloakBrowser when BNB available on airdrop_00.
+
+### #478 Asend Early Access Waitlist (asend.now) — Early Access for BNB Chain Trading App (msg 128885) — ✅ DONE
+- **Date:** 2026-10-27 | **URL:** https://asend.now/ | **Reward:** Early access waitlist spot for Asend mobile app (trade tokens on BNB Chain with no gas fees) | **Source:** @airdropfind drop 128885 | **X:** [@asendnow](https://x.com/asendnow) | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA with modal email form. API endpoint: `POST /api/early-access` with JSON `{email}`.
+- **Task executed (browserless curl):**
+  - ✅ Submit email → `POST https://asend.now/api/early-access` `{"email":"airdropkarbiters@gmail.com"}` → `{"message":"You're on the list. We'll be in touch."}`
+- **Email used:** airdropkarbiters@gmail.com
+- **Confirmation:** "You're on the list. We'll be in touch."
+- **Status:** ✅ DONE — single-step email waitlist completed via browserless API call.
+- **Source tweet:** https://x.com/AsendNow/status/2114725671775985711
+
