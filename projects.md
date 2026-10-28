@@ -6049,3 +6049,17 @@
 - **Blocker:** CDP browser :9222 has no MetaMask vault. Mock `window.ethereum` injection cannot sign mainnet tx. Needs CloakBrowser + real MetaMask (airdrop_00) on BSC mainnet.
 - **Manual recipe:** Open CloakBrowser with airdrop_00 MetaMask → BSC mainnet → simulate `registerForRewards()` on `0xd14821c28bF17DFFAb69ff95D2b8A1cFA4479f50` → broadcast → confirm.
 - **Verdict:** ⚠️ PENDING — hard wall (real wallet + signed mainnet tx). No browserless path.
+
+### #420 Ptah Trade Proof of Agent (ptah.trade/poa) — Daily Social Mining on BNB Chain (msg 128965) — ⚠️ PENDING (Requires Binance AI Pro + Agent ID + daily manual posting)
+- **Date:** 2026-10-28 | **URL:** https://ptah.trade/poa#post | **Reward:** Daily PTAH draws (~$10K/day pool, 500 winners/day, 15 draws Oct 26–Nov 9) | **Source:** @airdropfind drop 128965 | **X:** [@Ptahtrade](https://x.com/Ptahtrade) | **Track:** social-mining
+- **Type:** Unique Binance AI Pro integration — NOT a standard waitlist/airdrop. Requires **Binance Agent ID** from [Binance AI Pro](https://ai.binance.com/) (chat-based AI agent on Binance).
+- **Flow:** 
+  1. Have Binance account with AI Pro access → get Binance Agent ID
+  2. Copy mint prompt from page → paste into Binance AI Pro chat → review & confirm tx on BNB Chain (contract: `0xD87ADb2E47979d6cb323896B1A9320E0dd132213`) → free mint (gas only, few cents BNB)
+  3. **Daily:** Post card on X or Binance Square with `#ProofOfAgent` + `Agent #` → enters that day's draw at 04:44 UTC
+  4. 500 cards drawn daily share the PTAH pool; winnings sent on-chain to winning wallets
+- **Wallet:** Uses wallet holding the Binance Agent ID (BNB Chain, chainId 56)
+- **Blocker:** Requires Binance AI Pro account + Agent ID — not a standard wallet connect. Daily posting is manual social action. No browserless/API path.
+- **Manual recipe:** Open ptah.trade/poa in CloakBrowser → copy mint prompt → Binance AI Pro chat → confirm mint → daily: post on X with #ProofOfAgent + Agent # → claim winnings auto-sent.
+- **Status:** ⚠️ PENDING — needs Binance AI Pro setup + daily manual commitment. Not automatable via current pipeline.
+
