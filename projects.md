@@ -5910,3 +5910,63 @@
 - **Contract:** `0x8fdd7cc15b3ba8fa955c42a5fb7be623fd3fe569` (Ink chain), OpenSea: https://opensea.io/collection/thetimecard
 - **Status:** ⛔ NOT ELIGIBLE — Allowlist closed, wallet not on free mint list. No action needed. Moved to SKIPPED/EXPIRED.
 
+
+### #434 Tetreum Rewards Claim (dapptet.com) — Airdrop rewards distributed (msg 128902) — ⚠️ BLOCKED (Phishing Warning)
+- **Date:** 2026-10-27 | **URL:** https://dapptet.com | **Reward:** Claim/withdraw distributed airdrop rewards | **Source:** @airdropfind drop 128902 | **X:** @tetreum | **Track:** claim
+- **Type:** CLAIM PORTAL — "all airdrop rewards has been distributed before listing" → go to Launchpad → check rewards → withdraw to wallet
+- **Recon:** Site loads Cloudflare **"Suspected Phishing" warning page** — title "Suspected Phishing | Cloudflare". The "Ignore & Proceed" button is **disabled**. Turnstile challenge in iframe shows "Verify you are human" checkbox — requires human interaction, cannot be automated.
+- **Risk:** Site flagged by Cloudflare as potential phishing. The claim page is inaccessible without manual browser verification. This is a **hard block** — no API endpoints discovered, no wallet connect flow reached.
+- **Source tweet:** https://x.com/tetreum/status/2114706820929351910
+- **Manual check needed:** If legitimate, user must open in real browser → complete Turnstile → click "Ignore & Proceed" (if enabled after challenge) → connect wallet → check rewards → withdraw.
+- **Verdict:** ⚠️ BLOCKED — Cloudflare phishing flag + disabled proceed button. Cannot auto-execute. Requires manual verification of site legitimacy first.
+
+### #434 SOEI Creator Campaign (proof.soei.io) — $SOEI Airdrop (msg 128910) — ✅ DONE
+- **Date:** 2026-10-27 | **URL:** https://proof.soei.io/?ref=81684a8 | **Reward:** $SOEI airdrop points (30 points awarded) | **Source:** @airdropfind drop 128910 | **X:** @osbornrdx | **Track:** in-app social airdrop dashboard
+- **Type:** Type 20 (IN-APP SOCIAL AIRDROP DASHBOARD) — Full web3 social app with X OAuth auth, in-app task dashboard requiring content creation on X + AI grading.
+- **Tasks + proof (@osbornrdx, MCP Chrome DevTools):**
+  - ✅ X OAuth connect (via proof.soei.io/api/auth/x/login) → authorized @osbornrdx
+  - ✅ Follow @heysoei → proof: [x.com/heysoei](https://x.com/heysoei) (shows "Mengikuti @heysoei")
+  - ✅ Create & post original tweet about SOEI → proof: [x.com/osbornrdx/status/2115041237086634492](https://x.com/osbornrdx/status/2115041237086634492)
+  - ✅ Submit tweet URL to SOEI dashboard → AI grader scored +30 PTS (Content 5/10, Engagement 0)
+- **Dashboard result:** 30 PTS | LIFETIME 30 | RANK #19 | POSTS 1 | Next scratch: 30/100
+- **Side quests:** Follow @heysoei +25 pts (DONE), Join Discord +10 pts (pending), Points codes (pending)
+- **Status:** ✅ DONE — core campaign flow complete; side quests available for additional points
+
+### #435 ENS Domain Free NFT Eligibility (app.ens.domains) — Check eligibility for free NFT (msg 128915) — ⚠️ PENDING
+- **Date:** 2026-10-27 | **URL:** https://app.ens.domains/dashboard | **Reward:** 1 FREE NFT if eligible (snapshot June 1, 2026) | **Source:** @airdropfind drop 128915 | **X:** N/A | **Track:** web3 wallet connect
+- **Type:** Type 3 (WEB3-WALLET) — ENS dashboard requires wallet connection (MetaMask / WalletConnect) to view eligibility and claim.
+- **Attempted:** MCP Chrome DevTools with mocked `window.ethereum` (airdrop_00 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D). Clicked "CONNECT login" → wallet connect dialog shows MetaMask install link + WalletConnect button. Mock injection insufficient; site uses EIP-6963 detection requiring real extension.
+- **Network recon:** JS chunks `useVisibleCommemorativeNftEligibility` and `useEligibleV1Names` indicate client‑side eligibility hooks, but no public API endpoint discovered.
+- **Blocker:** Real MetaMask (or compatible wallet) with unlocked account needed to complete connection and read eligibility. CloakBrowser with persistent MetaMask profile would work.
+- **Manual steps:** 1) Open https://app.ens.domains/dashboard in CloakBrowser (Chrome profile with MetaMask unlocked, airdrop_00 imported). 2) Click "CONNECT login" → choose MetaMask → approve connection. 3) Dashboard will show eligibility; if eligible, click claim → sign tx. 4) Record result.
+- **Status:** ⚠️ PENDING — requires real wallet connect. No proof links yet.
+
+
+### #483 Runners Family $RUNNERS Airdrop Checker (runners.family/runners) — Eligibility Check (msg 128919) — ⛔ NOT ELIGIBLE
+- **Date:** 2026-10-28 | **URL:** https://runners.family/runners | **Reward:** $RUNNERS token allocation (100% airdropped) | **Source:** @airdropfind drop 128919 | **X:** [@runnersfam](https://x.com/runnersfam) | **Track:** eligibility checker
+- **Type:** Type 4 variant (BROWSERLESS-FIRST eligibility checker) — Next.js SPA with API endpoints for checking airdrop eligibility and claiming. "Paste Your SOL Address → Reveal Your Allocation → Claim & Sell or Hold". Only for eligible users who previously farmed similar airdrops (per drop text).
+- **Recon (browserless API):**
+  - Eligibility check: `GET /api/runners/airdrop?account=5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` → `{"code":"not_found","error":"Not found."}`
+  - Claim attempt: `POST /api/runners/airdrop/claim {"account":"5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG"}` → `{"code":"not_found","error":"Not found."}`
+- **Wallet checked:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL main wallet, airdrop_00)
+- **Drop note:** "Hanya untuk user Eligible yang pernah garap airdrop seperti di gambar" — wallet not on eligible list.
+- **Token details (from page):** $RUNNERS (Token-2022), Supply 999,704,815, Address `RUNNQtDphey3pVpixR4zvkNESQZp3CZw7fnRKThNERS`, 1% transfer burn, 267 coins launched, 1 graduated.
+- **Status:** ⛔ NOT ELIGIBLE — wallet not on airdrop eligible list. No action needed.
+- **Source tweet:** https://x.com/runnersfam/status/2114724200791552405
+
+### #410 AEX (Agent Exchange) Early Access Waitlist (aex.human.tech) — ✅ DONE
+- **Date:** 2026-10-28 | **URL:** https://aex.human.tech/ | **Reward:** Early access to AEX (Personal AI agents for onchain research & wallet monitoring) | **Source:** @airdropfind drop 128931 | **X:** [@humntech](https://x.com/humntech/status/2115065497079439560) | **Track:** waitlist (browserless)
+- **Type:** Type 4 (BROWSERLESS-FIRST) — Next.js SPA with SSR form in `<dialog>` modal. Discovered API endpoint via JS bundle analysis: `POST https://human.tech/api/aex-waitlist`
+- **Payload:** `{"version":1,"requestId":"<uuid>","name":"Rey Denim Osborn","email":"airdropkarbiters@gmail.com","organisation":"","useCase":"Onchain research and wallet monitoring","consent":true,"source":"https://aex.human.tech/"}`
+- **Result:** HTTP 202 `{"ok":true,"state":"pending_confirmation"}` — waitlist joined, email confirmation pending.
+- **Verification:** Check `airdropkarbiters@gmail.com` inbox for confirmation link.
+- **Status:** ✅ DONE — form submitted successfully. Awaiting email confirmation.
+
+### #411 Muse AI Agent (muse.ai) — ⚠️ PENDING (Mobile/App-based with code redemption)
+- **Date:** 2026-10-28 | **URL:** https://muse.ai/join (web) / https://muse.ai/ (web app) | **Reward:** Free 1M Credit Token via code `DY0VMN` | **Source:** @airdropfind drop 128932 | **X:** N/A | **Track:** mobile/app + web OAuth
+- **Type:** Type 2 (WEB-DASHBOARD OAuth) + App store links — Meta/Facebook product "Muse" (personal AI agent). Landing page has "Open on iOS", "Open on Android", "Open on web" buttons. Web app redirects to `auth.muse.ai` for Google/FB/IG OAuth.
+- **Flow described in drop:** Register with Google/FB/IG → Go to Settings → Submit Code `DY0VMN` → Done. Also mentions VPN app link (TurboVPN).
+- **Attempted:** Browserless probe of auth page → redirects to Meta auth flow. Requires Google/FB/IG OAuth login + code submission in settings. This is a Meta/Facebook product with proprietary auth (auth.muse.ai).
+- **Blocker:** OAuth flow requires real Google/Facebook/Instagram account login. 2FA likely triggered. Code submission in settings requires authenticated session.
+- **Status:** ⚠️ PENDING — Requires manual OAuth login (Google/FB/IG) on web or mobile app, then code `DY0VMN` submission in Settings. Not automatable from VPS due to Meta auth + potential 2FA.
+- **Manual steps:** 1) Open https://muse.ai/ in browser with Google/FB/IG account. 2) Complete OAuth. 3) Go to Settings → enter code `DY0VMN`. 4) Verify 1M Credit Token awarded.
