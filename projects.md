@@ -6022,3 +6022,10 @@
 - **Wallet intended:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00, Robinhood Chain compatible)
 - **Status:** ⚠️ PENDING — X OAuth blocked by app's scope config. Requires Binzo team to fix X app settings (remove `offline.access` or use compatible scopes). No proof links (OAuth never completed).
 - **Next action:** Monitor for Binzo X app fix; retry OAuth when scope issue resolved. Manual attempt via CloakBrowser won't help (same X OAuth endpoint).
+
+### #434 ITIAverse Holder Access (itiaverse.ithinkitsart.com/drops) — NFT Holder Area (msg 128960) — ⛔ SKIPPED (Holder-only, not public waitlist)
+- **Date:** 2026-10-28 | **URL:** https://itiaverse.ithinkitsart.com/drops | **Reward:** N/A (holder area) | **Source:** @airdropfind drop 128960 | **X:** @IThinkItsArt | **Track:** waitlist
+- **Type:** Holder-only portal — requires existing ITIA NFT ownership. Page shows "HOLDER ACCESS - The holder area for ITIA NFT owners. Sign in with X or with your wallet."
+- **X OAuth attempt:** Clicked "SIGN IN WITH X" → X OAuth consent screen → clicked "Izinkan aplikasi" → returned "Ada kesalahan teknis" (Technical error - "Anda tidak dapat memberikan akses ke Aplikasi Anda"). This is a known X app config issue (offline.access scope restricted), not stale cookies.
+- **Wallet connect:** "SIGN IN WITH WALLET" button present but requires real NFT in wallet.
+- **Verdict:** ⛔ SKIPPED — not a public waitlist, requires ITIA NFT ownership. X OAuth also broken on app level.
