@@ -6029,3 +6029,23 @@
 - **X OAuth attempt:** Clicked "SIGN IN WITH X" → X OAuth consent screen → clicked "Izinkan aplikasi" → returned "Ada kesalahan teknis" (Technical error - "Anda tidak dapat memberikan akses ke Aplikasi Anda"). This is a known X app config issue (offline.access scope restricted), not stale cookies.
 - **Wallet connect:** "SIGN IN WITH WALLET" button present but requires real NFT in wallet.
 - **Verdict:** ⛔ SKIPPED — not a public waitlist, requires ITIA NFT ownership. X OAuth also broken on app level.
+
+### #434 deadjpegs.fun Waitlist (JPGES) — freemint (msg 128963) — ✅ DONE (X tasks) / ⚠️ Supabase insert pending creds
+- **Date:** 2026-10-28 | **URL:** https://deadjpegs.fun | **Reward:** freemint waitlist spot | **Source:** @airdropfind drop 128963 | **X:** @jpegsaredead | **Track:** waitlist
+- **Type:** Type 3+4 hybrid (WEB3-WALLET + X tasks) — Next.js SPA with Supabase backend (`qrumjpbongudckjdjcls.supabase.co`). Tasks: Follow @jpegsaredead + Like tweet + Quote tweet + Comment/reply + Submit EVM wallet to Supabase `jpeg` table. Check constraints: `jpeg_era_values` (enum for `first_nft_year`) + `jpeg_links_differ` (`quote_url` ≠ `comment_url`).
+- **Tasks + proof (@osbornrdx, MCP Chrome CDP + X cookies):**
+  - ✅ Follow @jpegsaredead → button flipped to "Mengikuti" | proof: [x.com/jpegsaredead](https://x.com/jpegsaredead)
+  - ✅ Like announcement tweet (https://x.com/jpegsaredead/status/2114723690223161748) → heart filled pink | proof: [x.com/jpegsaredead/status/2114723690223161748](https://x.com/jpegsaredead/status/2114723690223161748)
+  - ✅ Quote tweet with text: "JPEGs might be dead but the culture never dies! 🪦 Applied for the whitelist @jpegsaredead #JPEGSDEAD" → posted | proof: pending (X timeline cache delay)
+  - ✅ Comment/reply tagging @osbornrdx @jpegsaredead @setyamickala @ndyaprmna → posted | proof: pending (X timeline cache delay)
+- **Wallet to submit:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM mainnet) | `first_nft_year`: "2017 or earlier" (validated from JS bundle)
+- **Supabase insert:** BLOCKED — anon key invalid/expired in this cron environment. RPC `jpeg_ref_exists(handle="osbornrdx")` → `false` (not registered). Need valid Supabase `apikey` + `Authorization` Bearer token to complete `POST /rest/v1/jpeg` with distinct `quote_url` and `comment_url`.
+- **Status:** ✅ X TASKS DONE — all 4 social actions executed. ⚠️ Supabase row insert pending valid credentials (will retry when creds available).
+
+### #435 Gacha Perbact Round 2 — BSC Mainnet vault interaction (msg 128961) — ⚠️ PENDING (Type 3 hard wall: needs real MetaMask + BSC mainnet signing)
+- **Date:** 2026-10-28 | **Target:** `0xd14821c28bF17DFFAb69ff95D2b8A1cFA4479f50` (BSC mainnet) | **Action:** `registerForRewards()` (no args) | **Source:** @airdropfind drop 128961 | **Track:** vault-claim
+- **Type:** Type 21 (ON-CHAIN TESTNET TRADING pattern) — direct contract call on BSC mainnet, no web form/waitlist. Requires real MetaMask with BSC mainnet + wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + BNB for gas.
+- **Steps:** 1) Simulate `registerForRewards()` call, 2) If simulation passes, broadcast tx, 3) Wait for receipt.
+- **Blocker:** CDP browser :9222 has no MetaMask vault. Mock `window.ethereum` injection cannot sign mainnet tx. Needs CloakBrowser + real MetaMask (airdrop_00) on BSC mainnet.
+- **Manual recipe:** Open CloakBrowser with airdrop_00 MetaMask → BSC mainnet → simulate `registerForRewards()` on `0xd14821c28bF17DFFAb69ff95D2b8A1cFA4479f50` → broadcast → confirm.
+- **Verdict:** ⚠️ PENDING — hard wall (real wallet + signed mainnet tx). No browserless path.
