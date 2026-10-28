@@ -6043,26 +6043,26 @@
 - **Supabase insert:** BLOCKED — anon key invalid/expired in this cron environment. RPC `jpeg_ref_exists(handle="osbornrdx")` → `false` (not registered). Need valid Supabase `apikey` + `Authorization` Bearer token to complete `POST /rest/v1/jpeg` with distinct `quote_url` and `comment_url`.
 - **Status:** ✅ X TASKS DONE — all 4 social actions executed. ⚠️ Supabase row insert pending valid credentials (will retry when creds available).
 
-### #435 Gacha Perbact Round 2 — BSC Mainnet vault interaction (msg 128961) — ⚠️ PENDING (Type 3 hard wall: needs real MetaMask + BSC mainnet signing)
-- **Date:** 2026-10-28 | **Target:** `0xd14821c28bF17DFFAb69ff95D2b8A1cFA4479f50` (BSC mainnet) | **Action:** `registerForRewards()` (no args) | **Source:** @airdropfind drop 128961 | **Track:** vault-claim
-- **Type:** Type 21 (ON-CHAIN TESTNET TRADING pattern) — direct contract call on BSC mainnet, no web form/waitlist. Requires real MetaMask with BSC mainnet + wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` + BNB for gas.
-- **Steps:** 1) Simulate `registerForRewards()` call, 2) If simulation passes, broadcast tx, 3) Wait for receipt.
-- **Blocker:** CDP browser :9222 has no MetaMask vault. Mock `window.ethereum` injection cannot sign mainnet tx. Needs CloakBrowser + real MetaMask (airdrop_00) on BSC mainnet.
-- **Manual recipe:** Open CloakBrowser with airdrop_00 MetaMask → BSC mainnet → simulate `registerForRewards()` on `0xd14821c28bF17DFFAb69ff95D2b8A1cFA4479f50` → broadcast → confirm.
-- **Verdict:** ⚠️ PENDING — hard wall (real wallet + signed mainnet tx). No browserless path.
+### #435 Gacha Perbact Round 2 — BSC Mainnet vault interaction (msg 128961) — ✅ DONE (agentic wallet `registerForRewards()` — drop.ai NFT #14593 minted)
+- **Date:** 2026-10-28 | **Target:** `0xd14821c28bF17DFFAb69ff95D2b8A1cFA4479f50` (BSC mainnet) | **Action:** `registerForRewards()` (no args, selector `0x9f92d0dd`) | **Source:** @airdropfind drop 128961 | **Track:** vault-claim
+- **Type:** Type 21 (ON-CHAIN CONTRACT CALL) — direct contract call on BSC mainnet, no web form/waitlist.
+- **Done via:** Binance Agentic Wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (baw). The previous "needs real MetaMask" blocker was bypassed entirely — agentic wallet signs server-side, no extension needed.
+- **Tx:** `0x8151860cc230266d6b08126d27b928f88c31e591453d4fe7948befbf445da070` — status **1**, block `130342674`, gasUsed `229137`, gasPrice 0.05 gwei → cost 0.0000115 BNB (~$0.009).
+- **Reward received:** ERC721 `0x51baA9d0e4F3318Bc2f62bB8eFC3cd65F1548654` ("drop.ai") token **#14593** — verified `ownerOf(14593)` = agentic wallet, `balanceOf` = 1.
+- **Verdict:** ✅ DONE — no manual step remaining.
 
-### #420 Ptah Trade Proof of Agent (ptah.trade/poa) — Daily Social Mining on BNB Chain (msg 128965) — ⚠️ PENDING (Requires Binance AI Pro + Agent ID + daily manual posting)
+### #420 Ptah Trade Proof of Agent (ptah.trade/poa) — Daily Social Mining on BNB Chain (msg 128965) — ✅ ENTERED (Day 4, Period 4)
 - **Date:** 2026-10-28 | **URL:** https://ptah.trade/poa#post | **Reward:** Daily PTAH draws (~$10K/day pool, 500 winners/day, 15 draws Oct 26–Nov 9) | **Source:** @airdropfind drop 128965 | **X:** [@Ptahtrade](https://x.com/Ptahtrade) | **Track:** social-mining
-- **Type:** Unique Binance AI Pro integration — NOT a standard waitlist/airdrop. Requires **Binance Agent ID** from [Binance AI Pro](https://ai.binance.com/) (chat-based AI agent on Binance).
-- **Flow:** 
-  1. Have Binance account with AI Pro access → get Binance Agent ID
-  2. Copy mint prompt from page → paste into Binance AI Pro chat → review & confirm tx on BNB Chain (contract: `0xD87ADb2E47979d6cb323896B1A9320E0dd132213`) → free mint (gas only, few cents BNB)
-  3. **Daily:** Post card on X or Binance Square with `#ProofOfAgent` + `Agent #` → enters that day's draw at 04:44 UTC
-  4. 500 cards drawn daily share the PTAH pool; winnings sent on-chain to winning wallets
-- **Wallet:** Uses wallet holding the Binance Agent ID (BNB Chain, chainId 56)
-- **Blocker:** Requires Binance AI Pro account + Agent ID — not a standard wallet connect. Daily posting is manual social action. No browserless/API path.
-- **Manual recipe:** Open ptah.trade/poa in CloakBrowser → copy mint prompt → Binance AI Pro chat → confirm mint → daily: post on X with #ProofOfAgent + Agent # → claim winnings auto-sent.
-- **Status:** ⚠️ PENDING — needs Binance AI Pro setup + daily manual commitment. Not automatable via current pipeline.
+- **Type:** Unique Binance AI Pro integration — NOT a standard waitlist/airdrop. Requires **Binance Agent ID** from [Binance AI Pro](https://ai.binance.com/) (chat-based AI agent on Binance). SOLVED via `baw` (Binance Agentic Wallet CLI) — no AI Pro chat needed, direct contract call.
+- **Achieved (2026-10-29):** Agent **#39475**, handle `reydenim.ai`, owner wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1`, mint tx `0x176592f78f1ec4cd4c8b4a308d717b3775aa4bae192fde086f97c97e5a061e98`.
+- **Day 4 entry CONFIRMED:** submission_uid `01a18451-a42e-7013-b99d-1d9d1f2208b8`, status `verified`, period 4, entered `true`. Post: https://x.com/osbornrdx/status/2115547398709948531 (with official card image). Verified via `GET /api/poa/agents/39475` → `current.entered: true`.
+- **Automation path (no browser, no wallet connect):**
+  - Post on X via CDP `Input.insertText` (real keystrokes) into `[data-testid="tweetTextarea_0"]`; attach card PNG via `DOM.setFileInputFiles` on `input[type=file]`.
+  - Submit entry via `POST https://ptah.trade/api/poa/submissions` body `{"token_id":"39475","url":"<x post url>"}` + headers `content-type: application/json`, `Idempotency-Key: <uuid4>`, `origin: https://ptah.trade`. Returns `{status:"verified", entered:true, period:N}`.
+  - Card image: read on-chain `tokenURI(39475)` → base64 JSON → `image` is base64 SVG → `convert` to PNG 1024x1280. No screenshot needed.
+  - API recon: `GET /api/poa/periods?limit=N` (window/pool/entrants per day), `GET /api/poa/periods/{n}/entrants?limit=500&cursor=`, `GET /api/poa/agents/{token_id}` (entries + current.entered + wins).
+- **Daily routine:** every day inside window (04:44 UTC → next 04:44 UTC) post `I'm Agent #39475. What would you like AI agents to do for you in Web3? #ProofOfAgent @Ptahtrade https://ptah.trade/poa` with card image, then POST the submission. Scripts: `/home/ubuntu/scripts/agentic-wallet/ptah_post_clean.py` + submission curl.
+- **Status:** ✅ Day 4 done. Repeat daily through Nov 9, 2026.
 
 
 ### #489 EtherBubu x Ascendants Games Partner Whitelist Quest (guild.xyz/etherbubu) — Free Mint WL (msg 128969) — ⚠️ PARTIAL (All social tasks DONE; Google Form blocked)
@@ -6090,3 +6090,18 @@
   - Repost: https://x.com/EtherBubu/status/2115480161856659698
   - Reply: https://x.com/osbornrdx/status/2115520842046349757
 - **Status:** ⚠️ PARTIAL — All 6 social tasks completed with proof. Google Form submission requires manual browser completion (form is accessible at the URL above with pre-filled data in browser session). Move drop → done/.
+
+### #490 Loaf Markets Round 3 — Paper Trading Competition "Trade the Phase" (msg 128970) — ⚠️ PENDING (Type 21 hard wall: needs Privy auth + embedded wallet + wait for round start)
+- **Date:** 2026-10-29 | **URL:** https://beta.loafmarkets.com | **Reward:** Prize pool (1st $750, 2nd $450, 3rd $250, 4-20th $50, 21-100th $5, 101-200th $3) | **Source:** @airdropfind drop 128970 | **X:** [@Loafmarkets](https://x.com/Loafmarkets) | **Track:** testnet-trading (paper)
+- **Type:** Type 21 (ON-CHAIN TESTNET TRADING — paper trading on platform) — Vite React SPA, Privy embedded wallet auth (appId `cmpule8em00ql0cl8wfbj7pl3`), API at `https://api.loafmarkets.com/api`.
+- **Round 3 details:** "Trade the Phase" — starts **1793232000** (2026-10-29 00:00 UTC / 07:00 WIB), ends 1793836800 (7 days). Status: **DRAFT** (not started yet — starts in ~4h from this scan). Starting mock capital: **100,000 USDL** (platform paper USD). Trading asset: **WDEH** (Western Desert Energy Hub, contract `0x4a3f08f2a11759912f02af5eA0212cc8F32f2C4a`, listed at $7.50). Participant batch: 60,000. Bottom 30% culled each round.
+- **Architecture:** Privy auth (email/social) → embedded wallet created → paper trading on Loaf Markets order book (CLOB). Competition mode via `/api/competition` endpoint. Payment token: `0x73D3bA6640adF4d14ca59AB2393694D4f6fFAA19` (USDL). All trades are **paper/simulated** — no real on-chain tx, no gas needed.
+- **Blocker:** Requires Privy authentication flow (email OTP / Google OAuth / social) + embedded wallet creation. This is a browser-gated flow — the VPS cannot complete Privy auth without a real browser session (email OTP / 2FA). Mock `window.ethereum` injection does not work because the platform uses Privy's SDK for embedded wallets, not standard `window.ethereum`.
+- **Action needed (manual/CloakBrowser):** 
+  1. Open https://beta.loafmarkets.com in CloakBrowser with real Chrome profile
+  2. Sign up via Privy (Google OAuth with `airdropkarbiters@gmail.com` recommended)
+  3. Complete embedded wallet creation (auto-generated by Privy)
+  4. Wait for round start (07:00 WIB today)
+  5. Trade WDEH on the platform during the 7-day window
+  6. Aim for top 200 for prizes; avoid bottom 30% cull
+- **Verdict:** ⚠️ PENDING — hard wall (Privy auth + embedded wallet). Round starts 07:00 WIB today. No browserless path.
