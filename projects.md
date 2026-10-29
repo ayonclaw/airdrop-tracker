@@ -6138,3 +6138,35 @@
 - **Wallet used:** DogeOS Social Wallet (embedded) `0xf7564504726D8Bc9495d58528837c0c7BadA5d70` (auto-generated via MyDoge relay, NOT airdrop_00)
 - **Status:** ✅ PARTIAL — 2/7 quests completed, 5 pending due to wallet signing wall. OTHER quests may be auto-completed on article read.
 
+
+### #434 AGNT Weekly Socials | S4 Week 5 - Day 3 (app.galxe.com/quest/AGNTHub/GCRpPtZXMe) — ⛔ EXPIRED (Page Not Found)
+- **Date:** 2026-10-29 | **URL:** https://app.galxe.com/quest/AGNTHub/GCRpPtZXMe | **Reward:** Galxe points | **Source:** @airdropfind drop 128988 | **Track:** galxe-quest
+- **Type:** Type 10 (GALXE-QUEST) — AGNT Hub space, campaign `GCRpPtZXMe`.
+- **Recon:** Navigated to campaign URL → "Oops, Page Not Found!" shown. Space URL `https://app.galxe.com/AGNTHub` also returns 404. Campaign appears expired/removed.
+- **Verdict:** ⛔ EXPIRED — no active quest to complete. Moved drop to done/.
+
+### #493 Squeekchain Genesis (squeekchain.com/genesis/i/dycban4j) — Whitelist + Badges + Aura (msg 128992) — ⚠️ PENDING (Real Wallet Required)
+- **Date:** 2026-10-29 | **URL:** https://squeekchain.com/genesis/i/dycban4j | **Reward:** Genesis whitelist spot, Badges, Aura farming | **Source:** @airdropfind drop 128992 | **X:** [@squeekchain](https://x.com/squeekchain/status/2111502729893814739) | **Track:** genesis-whitelist
+- **Type:** Hamster-powered proof-of-work blockchain on **Sepolia testnet** (chainId 11155111 / 0xaa36a7). Genesis invite system with referral code `dycban4j` (from @cryptoaddict66).
+- **Requirements (2 steps):**
+  1. **Verify wallet** — Connect wallet (EVM, Sepolia) + sign a message (personal_sign) to prove ownership
+  2. **Link X** — Connect X account (required for whitelist)
+  3. **Link Discord** (optional) — Get holder roles in Discord
+- **Progress (MCP Chrome + mocked wallet):**
+  - ✅ Navigated to invite page → clicked "JOIN SQUEEKCHAIN" → reached `/genesis/me`
+  - ✅ Injected mock `window.ethereum` for Sepolia (airdrop_00: `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`)
+  - ✅ Clicked "CONNECT WALLET" → selected "Browser Wallet" → wallet connected (shows "Connected to Sepolia", "Wallet 0x8C…282D")
+  - ⚠️ **BLOCKED at VERIFY step** — Clicked "VERIFY" button to sign message, but server returned "NOT VERIFIED: The signature did not match this wallet. Sign again with the connected account." Mock wallet returns dummy signature (`0x` + `ab`.repeat(65)) which fails server-side verification.
+  - ⚠️ **Link X step** — Not yet accessible (likely requires wallet verification first)
+- **Blocker:** Server verifies the `personal_sign` signature cryptographically. Mock wallet injection cannot produce valid signatures. **Requires real MetaMask with airdrop_00 private key unlocked on Sepolia testnet.**
+- **Manual action needed (Rey via CloakBrowser):**
+  1. Open https://squeekchain.com/genesis/i/dycban4j in CloakBrowser with real MetaMask profile
+  2. Ensure MetaMask has airdrop_00 (`0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`) on Sepolia testnet (add Sepolia if needed)
+  3. Click "JOIN SQUEEKCHAIN" → "CONNECT WALLET" → "Browser Wallet" / MetaMask → approve connection
+  4. Click "VERIFY" → approve `personal_sign` in MetaMask popup
+  5. Click "Link X" → authorize X OAuth
+  6. (Optional) Click "Link Discord" → authorize Discord OAuth
+- **Wallet used:** airdrop_00 (EVM) `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` on Sepolia
+- **Status:** ⚠️ PENDING — hard wall at wallet signature verification. No proof links (verification not completed).
+- **Note:** Genesis launch status from API: `{"status":"unavailable","reason":"launch_unconfigured"}` — whitelist may not be active yet, but registration flow works.
+
