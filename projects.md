@@ -6279,3 +6279,35 @@
 - Metadata: `AlienID #3041` / `#3060` — **Rarity: Common** (55% pool), baseURI `https://alienidbnb.xyz/metadata/`
 - **STOP di 2** sesuai rekomendasi poster (coin & market belum rilis) → tidak bayar mint ke-3
 - Script: `~/scripts/alienid/` (`pow.py` solver 0.9s, `probe.py` state reader)
+
+---
+
+## Afyniti Telos x Afynity Chapter 4 — 50,000 $TLOS Reward Pool (msg 129009) — ⚠️ PENDING
+
+- **Date:** 2026-10-30 | **URL:** https://app.afyniti.xyz/ecosystem/telos | **Reward:** 50,000 $TLOS (top 400 by XP) | **Source:** @airdropfind drop 129009 | **X:** @osbornrdx | **Track:** quest
+- **Type:** Type 3 (WEB3-WALLET) + Type 2 (WEB-DASHBOARD) — Next.js/ConnectKit quest platform on Vercel. Campaign runs Aug 28 – Sep 25 2026 (Season 4: Oct 21 – Nov 22). Requires wallet connect (EVM) + X/Telegram/Discord binding + quest completion.
+- **Tasks required:**
+  - Connect EVM wallet (Telos is EVM-compatible, chain ID 40/0x28)
+  - Bind X (@osbornrdx), Telegram (@mxsyxfxx), Discord
+  - Daily check-in ("CHECK-IN" → 10 XP/day)
+  - Chapter 1 quests: "Add the Telos Network" (+100 XP), "What is Telos?" (+50 XP), "Read the Telos Wallet Guide Blog" (+25 XP)
+  - Additional chapters unlock daily
+- **Blocker:** ConnectKit wallet modal (RainbowKit variant) — requires **real MetaMask extension** with unlocked EVM wallet. Current MCP Chrome profile only has Phantom (Solana). Mock `window.ethereum` injection does NOT work for ConnectKit (stricter than RainbowKit, uses EIP-6963).
+- **Attempted:** Navigated to /ecosystem/telos → clicked "View quest dashboard" → "CHECK-IN" → onboarding required → /onboard → "CONNECT WALLET" → ConnectKit modal (MetaMask, WalletConnect, Rainbow, Coinbase Wallet). WalletConnect disabled. No MetaMask in profile.
+- **Status:** ⚠️ PENDING — Needs **CloakBrowser + real MetaMask (airdrop_00: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D)** on Rey's local machine to complete wallet connect, then social bindings and quests.
+- **Next steps for manual completion:**
+  1. Open https://app.afyniti.xyz/ecosystem/telos in CloakBrowser with MetaMask unlocked
+  2. Connect wallet (airdrop_00 on Telos EVM)
+  3. Bind X (@osbornrdx), Telegram (@mxsyxfxx), Discord
+  4. Complete daily CHECK-IN + Chapter 1 quests
+  5. Continue daily for Season 4 (Oct 21 – Nov 22)
+
+
+### #434 UseRocket Testnet Competition (userocket.app/wallet) — Monad Testnet, $10K+ Pool (msg 129010) — ⚠️ PENDING (Type 21 hard wall: needs real Privy auth + Monad testnet funds + on-chain trading)
+- **Date:** 2026-10-29 | **URL:** https://userocket.app/wallet | **Reward:** $10,000+ prize pool for leaderboard competition | **Source:** @airdropfind drop 129010 | **X:** [@userocket_app](https://x.com/userocket_app/status/2114757213629895134) | **Track:** testnet
+- **Type:** Type 21 (ON-CHAIN TESTNET TRADING) — Privy-authenticated React SPA (Vite), embedded wallet creation flow, SIWE authentication, Monad testnet chain. Competition: Login with X → Try all testnet features → Climb leaderboard.
+- **Recon:** Full Privy SDK bundle (wallet onboarding, embedded wallet, passkey, SIWE/SIWS flows, Turnstile/hCaptcha). `/wallet` page = Privy `ConnectOrCreateScreen` → email/phone/X OAuth → embedded wallet creation → Monad testnet connection → trading terminal.
+- **Tasks:** X OAuth login → Connect wallet (Privy embedded) → Claim Monad testnet faucet → Execute trades/swaps on testnet → Leaderboard ranking.
+- **Blocker:** Tasks ARE on-chain activity on Monad testnet. Mock `window.ethereum` injection buys nothing — there's no off-chain task to fake. The Privy auth requires real X OAuth + embedded wallet creation. Monad testnet RPC from VPS is TLS-blocked (like Robinhood Chain). Needs CloakBrowser + real MetaMask/Privy session + Monad testnet gas + signed trades.
+- **Manual recipe (CloakBrowser + real MetaMask/Privy, airdrop_00):** open userocket.app/wallet → "Continue with X" → Authorize @osbornrdx → Privy embedded wallet creation → Add Monad testnet → Claim faucet → Trade on testnet DEX/perps → Climb leaderboard.
+- **Verdict:** ⚠️ PENDING — hard wall (real Privy auth + Monad testnet + signed on-chain trades). No browserless path. Monad testnet RPC blocked from VPS.
