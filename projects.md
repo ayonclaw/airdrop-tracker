@@ -6338,6 +6338,7 @@
 - **Activation tx:** https://bscscan.com/tx/0xa501f24f2ad734114e64c95e14d39454bb2ee744982202c8ecce078d71bf3e9b (block 130533168, gas 108,762 @ 0.058 gwei ≈ $0.0001)
 - **Card stats:** base hashrate **39.1 TH/s**, tier 0, traits `[182,72,6,241,68,82,17,49,95]`
 - **Pitfall:** `tokenURI()` is NOT a reveal signal — renderer is `address(0)` and `_baseTokenURI` empty, so tokenURI stays `""` even after reveal. Use `statusOf(tokenId)` instead (0 sealed / 1 revealed / 2 activated).
-- **Accrual:** `pendingOf(wallet)` = **106.19 DPUNK** and growing. `claimAll()` reverts `ClaimsLocked()` while `claimsUnlocked == false`, and `emissionFunded == 0` means there is no DPUNK in the miner yet — nothing claimable until the owner unlocks + funds.
+- **Accrual (measured):** `pendingOf(wallet)` grew 474.69 → 537.28 DPUNK in 60.9s = **~88,744 DPUNK/day**. Share of pool = 391 / 110,000 tenths = **0.3555%**; network rate = 26.67M DPUNK/day over 30 days (emissionStart 1793298600 → ends in ~29.9d).
+- **Claim blocked:** `claimAll()` reverts `ClaimsLocked()` (`0xce4cffbc`) — `claimsUnlocked == false`. Also `emissionFunded == 0` and DPUNK balance of the miner is **0** (all 1,000,000,000 DPUNK sits at owner `0x332e...2419`). Nothing payable until the owner funds the miner AND unlocks claims. No DPUNK LP exists on PancakeSwap → token not trading yet.
 - **Automation:** cron `dogepunk-claim-watch` (`1500a0ac20e8`, every 4h, no_agent, silent) → fires only when claimsUnlocked + funded + pending > 1 DPUNK, then claims via `baw` and reports the tx. Script: `/home/ubuntu/scripts/dogepunk/claim_when_unlocked.py`
 - **Status:** ✅ Activated & accruing. Waiting on project owner to unlock claims and fund emission.
