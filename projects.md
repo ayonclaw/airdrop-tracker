@@ -6246,3 +6246,18 @@
   - **Tidak ada bid/collection offer** (`getCollectionOfferWall` → `wall_data: null`, `getItemBestMatchOfferList` → "not find match order") → tidak bisa instant-sell, harus tunggu buyer di book
   - Competitor floor: token #6300 @0.0003, sisanya 0.0017 ke atas → #6427 satu-satunya di 0.00029
   - Listed programmatically via `~/scripts/digiwarriors-list/` (Element v3 EIP-712 + `baw sign-message`), no browser needed
+
+---
+
+## HALCYX — 10,000 AI Agents on BNB Chain (2026-10-29)
+
+- **Site:** https://halcyx-ai.pages.dev/ · X: @HalcyxAI · chain **BNB 56**
+- **Contract:** `0x42dBe11400A6DD3C92710FD275f8ca1193830022` (deployed 2026-10-29 12:28 UTC — launch day)
+- **Gate:** free mint butuh **Space ID .ai Agent ID** (`0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`) — agentic wallet punya 1 (PTAH Agent #39475) ✅
+- **Mint:** `mint(uint256 qty, address ref)` payable. Free 2/wallet (8,000 free pool), lalu 0.0005 BNB. Max 20/wallet.
+- **DONE:** mint(2) tx `0x820dea8958c36afa5ffa3082d703d44898a7832d193b7578c70721dac8098996` — **token #6497 + #6498**, gas 211,176 @0.05 gwei = **0.00001768 BNB ($0.0131)**, status 0x1
+- Wallet agentic `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` · mintedBy 2/20 · freeAvailable now 0
+- Metadata: `HALCYX #6497` / `HALCYX #6498` — Status **Sealed** (belum reveal), Overclock 0, fully on-chain base64 SVG
+- Referral: 20% dari paid mint → pakai `?ref=0x888dB97d0dD291c5F0C99F417f143ca279AC29a1`
+- **Earn:** Halo Vault s[2] = 0.0355 BNB dibagi ~6,500 agent → reward realistis sangat kecil. Market baru 6 sales, vol 0.00006 BNB.
+- Sisa saldo: 0.00084017 BNB (~$0.62)
