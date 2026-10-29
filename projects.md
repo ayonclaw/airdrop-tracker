@@ -6238,3 +6238,8 @@
 - **Waitlist form:** Google Form "DigiWarriors Genesis Waitlist" → **Jawaban Anda telah direkam** (email airdropkarbiters@gmail.com · wallet agentic · @osbornrdx · proof link quote · Thornbyte)
 - **Status mint:** `totalMinted` 6,579 / 6,666 · `freeLeft(agentic)` = 0 · `quote()` = 0.0009 BNB → free quota habis, mint berikutnya bayar
 - **Next:** Passport SBT (`arena.digiwarriors.fun/passport`) butuh **3 Genesis NFT** — wallet baru punya 1 → belum eligible arena
+- **LISTED for sale 2026-10-29** — Element Market BSC @ **0.0003 BNB** (floor): https://element.market/assets/bsc/0x2106674431f6672d71777356bD7AB2999562d5b1/6427
+  - Approve tx `0xcec24c0b36fa0aeebda6f98ee37e9bb4776dad6124007baa31a0f9fb081f650b` (46,226 gas, $0.003)
+  - Order id `4051513365077098768` · orderHash `0x846ac8e4c68d8b641d20471aac2087e86e28c99e34014c2e411275199f6f0078` · expiry 2026-11-28
+  - Net to seller **0.000279 BNB** (~$0.206) setelah fee platform 2% (0.000006) + royalty 5% (0.000015)
+  - Listed programmatically via `~/scripts/digiwarriors-list/` (Element v3 EIP-712 + `baw sign-message`), no browser needed
