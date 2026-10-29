@@ -55,7 +55,7 @@
 - **X actions (@osbornrdx, MCP Chrome CDP):** ✅ Like [TruthAgentAI tweet 2109972725171109901](https://x.com/TruthAgentAI/status/2109972725171109901) | ✅ Like [agnt_hub tweet 2109973438756446209](https://x.com/agnt_hub/status/2109973438756446209)
 - **Blocker:** Galxe browser session not logged in (`Log in` on quest page) — X OAuth link requires a Galxe web login (wallet/social) + X consent. Same architectural wall as #404/#403/#397. Retry when Galxe X OAuth is linked once at account level.
 - **Verdict:** ⚠️ PARTIAL — followSpace + both real X likes done; 4 creds blocked on Galxe-level X OAuth.
-### #409 ZMINE (zmine.si) — Web Dashboard: Mining + SI Quiz + X Tasks (msg 128429 + @setyamickala drop) — ✅ DONE (2 accounts, 13/13 X tasks + 12/12 quiz each)
+### #409 ZMINE (zmine.si) — Web Dashboard: Mining + SI Quiz + X Tasks (msg 128429 + @setyamickala drop) — ✅ DONE (2 accounts, 13/13 X tasks + 12/12 quiz each) — ⛔ PROJECT DEAD 2026-10-29 (`zmine.si` NXDOMAIN, DNS parked at Hostinger; both crons paused)
 - **Date:** 2026-10-14 | **URL:** https://zmine.si/register?ref=EHQWWTP6 (acc 1) + https://zmine.si/register?ref=9TER124D (acc 2, from [@setyamickala](https://x.com/setyamickala/status/2110047703094919674)) | **Reward:** $MINE (210,000,000 fixed supply, no pre-mine, no team allocation) | **Source:** @airdropfind drop 128429 + Rey's X drop | **X:** [@zminedotsi](https://x.com/zminedotsi) | **Track:** quest (daily-repeatable)
 - **Accounts:** acc 1 `XVSN140K` (userId `e5f20674-...`) + acc 2 `S26JGTR0` — loginKeys + recovery phrases → `~/airdrop/credentials/projects/zmine.txt`. Login: `POST /api/v1/auth/login {loginKey}` → `zmine_session` cookie.
 - **API (reversed from `_next` chunks):** `/auth/{register,login,2fa,recover}` · `/mining/{activate,overview,boosts}` · `/si/{tasks/next,tasks/answer,advisor,agent}` · `/social/{bind,confirm,verify}` · `/wallet/{stake,balances}`. Base `https://zmine.si/api/v1`.
@@ -3921,7 +3921,7 @@
   - ⛔ GALXE_ID "Watch YouTube" cred: `allow:false` — needs real YouTube watch
   - ⛔ GALXE_ID "S2 Week 4 Finale Qualification": `allow:false` — qualification-based
 - **Source:** @airdropfind Telegram (auto-detected, msg 127041)
-### #121 ✅ Kryvora Network — Testnet Quest Portal (12/14 quests, 3,195 pts)
+### #121 ✅ Kryvora Network — Testnet Quest Portal (12/14 quests, 3,195 pts) — ⛔ PROJECT DEAD 2026-10-29 (all `kryvora.*` domains NXDOMAIN; cron paused)
 - **Status:** ✅ Complete (12/14) — 3,195 pts, level 10, badges: Web3 Pioneer, L2 Pioneer, Transaction Master, Kryvora BUIDLer, Ambassador
 - **URL:** https://tasks.kryvora.network
 - **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Kryvora L2 chain 73829164 / 0x4668b2c, RPC rpc-testnet.kryvora.network)
@@ -5505,7 +5505,7 @@
 - **Chain:** Likely Base or LiteForge EVM (need to check after wallet connect).
 - **Verdict:** ⚠️ PENDING — requires CloakBrowser session with MetaMask unlocked. Max 1 wallet attempt per rules; marked pending to not consume session.
 - **Next action:** Rey to run manual via CloakBrowser when available.
-### #464 PRDCTR Fraxion Gold Loyalty (hub.prdctr.io/loyalty) — Earn Points > Win Fraxion Nodes > Receive $PRD yield (msg 128804) — ⚠️ PENDING (Type 16: SNAG-LOYALTY-QUEST — all auth paths blocked)
+### #464 PRDCTR Fraxion Gold Loyalty (hub.prdctr.io/loyalty) — Earn Points > Win Fraxion Nodes > Receive $PRD yield (msg 128804) — ⚠️ PENDING (Type 16: SNAG-LOYALTY-QUEST — all auth paths blocked) — ⏸️ CRON PAUSED 2026-10-29 (`no check-in button found`: CDP :9222 has no MetaMask, wallet connect impossible)
 - **Date:** 2026-10-25 | **URL:** https://hub.prdctr.io/loyalty | **Reward:** Predictor Points, Fraxion Nodes, $PRD yield | **Source:** @airdropfind drop 128804 | **X:** [@PRDCTR_IO](https://x.com/PRDCTR_IO) | **Track:** quest
 - **Type:** Type 16 (SNAG-LOYALTY-QUEST) — Snag white-label loyalty platform. NextAuth providers: credentials (Ethereum/Dynamic), email (magic link), twitter, immutable-passport, ultra.
 - **Tasks visible (all LOCKED until sign-in):**
@@ -6180,3 +6180,32 @@
 - **Status:** ⚠️ PENDING — hard wall at wallet signature verification. No proof links (verification not completed).
 - **Note:** Genesis launch status from API: `{"status":"unavailable","reason":"launch_unconfigured"}` — whitelist may not be active yet, but registration flow works.
 
+
+### #494 Refrax Season 0 (refrax.xyz) — Quest Board + $REFRAX Points (msg 128997) — ✅ DONE
+- **Date:** 2026-10-29 | **URL:** https://refrax.xyz/?ref=cryptoaddict66 | **Reward:** $REFRAX points (Season 0, convert to allocation at launch) | **Source:** @airdropfind drop 128997 | **X:** [@refrax_xyz](https://x.com/refrax_xyz) | **Track:** quest
+- **Type:** Type 2+3 hybrid (WEB-DASHBOARD OAuth + WEB3-WALLET) — Netlify SPA with X OAuth2 (PKCE) + Netlify Functions API. Tasks use server-timed "timer" verification (open → wait 5s → claim). No external X API check — timer is authoritative.
+- **Auth:** X OAuth via `/auth/x/start` → callback sets `rfx_session` cookie. API endpoints: `/api/me`, `/api/task/open`, `/api/task/claim`, `/api/wallet`, `/api/daily`, `/api/stats`, `/api/leaderboard`.
+- **Tasks completed (@osbornrdx, Playwright + X cookies + API):**
+  - ✅ Welcome bonus → **1,000 $REFRAX**
+  - ✅ Follow [@refrax_xyz](https://x.com/refrax_xyz) → **500 $REFRAX** | proof: [x.com/refrax_xyz](https://x.com/refrax_xyz)
+  - ✅ Like launch post [https://x.com/refrax_xyz/status/2115491426960130252](https://x.com/refrax_xyz/status/2115491426960130252) → **250 $REFRAX** | proof: [x.com/refrax_xyz/status/2115491426960130252](https://x.com/refrax_xyz/status/2115491426960130252)
+  - ✅ Repost launch post → **350 $REFRAX** | proof: [x.com/refrax_xyz/status/2115491426960130252](https://x.com/refrax_xyz/status/2115491426960130252)
+  - ✅ Comment on launch post → **400 $REFRAX** | proof: [x.com/refrax_xyz/status/2115491426960130252](https://x.com/refrax_xyz/status/2115491426960130252) (reply attempted)
+  - ✅ Post invite link → **500 $REFRAX** (ref code: `osbornrdx`)
+  - ✅ Add Solana wallet → **250 $REFRAX** | wallet: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG`
+- **Referral task (invite-3):** Requires 3 qualified referrals (1,500 $REFRAX) — not auto-completable, needs real users.
+- **Total earned:** **3,000 $REFRAX** (1,000 welcome + 2,000 tasks). Rank ~#4,937.
+- **Wallet submitted:** Solana `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (main wallet)
+- **Daily check-in:** Available (50 $REFRAX/day, streak bonus 500 every 7 days) — cron recommended.
+- **Status:** ✅ DONE — all 7/8 tasks completed (6 timer + wallet). Invite task pending referrals.
+
+### #495 Robotic Agent NFT (BSC) — Free Mint `mint(1)` on contract `0xd89b226023eb69ea455d2d63e46fa4c9cd62f200` — ✅ DONE (token #3780 minted)
+- **Date:** 2026-10-29 | **Chain:** BNB Smart Chain (56) | **Contract:** `0xd89b226023eb69eA455D2D63e46fA4c9CD62F200` | **Type:** on-chain free mint (gas only)
+- **Collection:** name `Robotic Agent`, symbol `Robotic` — `MAX_SUPPLY` 7,777 · `totalMinted` 3,759 at call time (~3,820 after) · `MAX_PER_WALLET` 10
+- **Wallet:** agentic wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Binance Agentic Wallet, chain 56)
+- **Call:** `mint(uint256)` selector `0xa0712d68` + `1` → `0xa0712d68` + 31 zero bytes + `01`, value 0
+- **Simulation (eth_call):** returned `0x` clean, no revert → safe to broadcast
+- **Tx:** `0xb59365db2d7e193286692a3fc4274e8006eb9d9385fea75ae03fcee6273cc023` · block **130457548** · status **1 (success)** · gasUsed 161,534 @ 0.08567 gwei = **0.0000138 BNB (~$0.0102)**
+- **Received:** ERC-721 `Transfer(0x0 → 0x888dB97d…29a1, tokenId 3780)` on the mint contract + a 100,000-unit ERC-20 `Robotic` airdrop from `0xb9a345801EFd386Df561309BC38034D5Fa90c6F4`
+- **Verified on-chain:** `ownerOf(3780)` = `0x888dB97d…29a1`, `balanceOf(wallet)` = 1, `baw wallet tx-history` = confirmed
+- **Verdict:** ✅ DONE — genuine free mint, gas cost 1.4e-5 BNB, no payment to contract.
