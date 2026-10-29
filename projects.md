@@ -6261,3 +6261,21 @@
 - Referral: 20% dari paid mint → pakai `?ref=0x888dB97d0dD291c5F0C99F417f143ca279AC29a1`
 - **Earn:** Halo Vault s[2] = 0.0355 BNB dibagi ~6,500 agent → reward realistis sangat kecil. Market baru 6 sales, vol 0.00006 BNB.
 - Sisa saldo: 0.00084017 BNB (~$0.62)
+
+---
+
+## AlienID — 7,000 aliens on BNB Chain (.ai Agent ID gate) — 2026-10-29
+
+- **Site:** https://alienidbnb.xyz/ · X: @aliienid · chain **BNB 56**
+- **Contract (NFT):** `0xd12c42935f06b37337588b9169ba1593b534eb86` · **Market:** `0x8336317f0f05e840209c4f8f3d05f9fe8c045bc9`
+- **Gate:** `agentId()` = Space ID registry `0x60b9262456de011f7d15a54cdd8c48baaa8b022f` — `balanceOf > 0` saja (bukan requireHandle). Agentic wallet punya 1 (PTAH Agent #39475) ✅
+- **Mint:** `mint(uint256 nonce)` — 2 pertama FREE, ke-3..5 = 0.001 BNB, max 5/wallet, supply 7,000
+- **PoW:** wajib `sha256(workPrefix + nonce)` ≥ **20 leading zero bits**; `workPrefix = "ALIENID" + chainId(32B) + contract + wallet + mintedBy(32B)`, `mintedBy` masuk prefix → nonce berubah tiap mint
+- **DONE:** 2 mint free
+  - #1 token **#3041** — tx `0xcd23618e3e8d8f38cc8d6c4655e2f558ca90625ddfe2422a35ca346ac0861c95` · nonce 763753 (20 bits) · gas 107,533 @0.06745 gwei
+  - #2 token **#3060** — tx `0x09e49b9d74a5b6f9d1294c90fdf98fb97f14c1084ef5cfdcfcb197310644dd59` · nonce 377095 (21 bits) · gas 73,615
+  - Total gas ≈ **0.0000119 BNB (~$0.009)** — 2 mint pertama gratis, cuma gas
+- Wallet agentic `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` · mintedBy 2/5 · `quote()` sekarang 0.001 BNB
+- Metadata: `AlienID #3041` / `#3060` — **Rarity: Common** (55% pool), baseURI `https://alienidbnb.xyz/metadata/`
+- **STOP di 2** sesuai rekomendasi poster (coin & market belum rilis) → tidak bayar mint ke-3
+- Script: `~/scripts/alienid/` (`pow.py` solver 0.9s, `probe.py` state reader)
