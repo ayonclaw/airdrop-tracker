@@ -6238,8 +6238,11 @@
 - **Waitlist form:** Google Form "DigiWarriors Genesis Waitlist" → **Jawaban Anda telah direkam** (email airdropkarbiters@gmail.com · wallet agentic · @osbornrdx · proof link quote · Thornbyte)
 - **Status mint:** `totalMinted` 6,579 / 6,666 · `freeLeft(agentic)` = 0 · `quote()` = 0.0009 BNB → free quota habis, mint berikutnya bayar
 - **Next:** Passport SBT (`arena.digiwarriors.fun/passport`) butuh **3 Genesis NFT** — wallet baru punya 1 → belum eligible arena
-- **LISTED for sale 2026-10-29** — Element Market BSC @ **0.0003 BNB** (floor): https://element.market/assets/bsc/0x2106674431f6672d71777356bD7AB2999562d5b1/6427
+- **LISTED for sale 2026-10-29** — Element Market BSC @ **0.00029 BNB** = **CHEAPEST di seluruh collection** (new floor): https://element.market/assets/bsc/0x2106674431f6672d71777356bD7AB2999562d5b1/6427
   - Approve tx `0xcec24c0b36fa0aeebda6f98ee37e9bb4776dad6124007baa31a0f9fb081f650b` (46,226 gas, $0.003)
-  - Order id `4051513365077098768` · orderHash `0x846ac8e4c68d8b641d20471aac2087e86e28c99e34014c2e411275199f6f0078` · expiry 2026-11-28
-  - Net to seller **0.000279 BNB** (~$0.206) setelah fee platform 2% (0.000006) + royalty 5% (0.000015)
+  - Final order id `4051545215849922832` · orderHash `0xad378d66f2d47179db8e10e0c4327d177dacc11f754c2ae7c14cf986e8e0b1b4` · nonce 7 · expiry 2026-11-28
+  - Old 0.0003 listing (order `4051513365077098768`, nonce 5) **CANCELLED** — tx `0x3bf175ecf138e3a6f3490b4f7b9d96813f95a48980f17dca74e17d8b6e2c1979` (50,621 gas)
+  - Net to seller **0.0002697 BNB (~$0.199)** setelah fee platform 2% (0.0000058) + royalty 5% (0.0000145)
+  - **Tidak ada bid/collection offer** (`getCollectionOfferWall` → `wall_data: null`, `getItemBestMatchOfferList` → "not find match order") → tidak bisa instant-sell, harus tunggu buyer di book
+  - Competitor floor: token #6300 @0.0003, sisanya 0.0017 ke atas → #6427 satu-satunya di 0.00029
   - Listed programmatically via `~/scripts/digiwarriors-list/` (Element v3 EIP-712 + `baw sign-message`), no browser needed
