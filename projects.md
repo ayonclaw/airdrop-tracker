@@ -6220,3 +6220,21 @@
 - **Streak:** 1 day (Day 1 claimed!)
 - **Proof:** Dashboard screenshot shows "1 day streak", "Claimed" button, "+75 pts credited to your balance", rank #42, 16,670 pts
 - **Status:** ✅ DONE — Daily streak claim completed successfully via live CDP Chrome session
+
+### #497 DigiWarriors Genesis (digiwarriors.fun) — Free Mint + Quest WL — ✅ DONE (Gen #6427 Thornbyte)
+- **Date:** 2026-10-29 | **Chain:** BNB Smart Chain (56) | **Contract:** `0x2106674431f6672d71777356bD7AB2999562d5b1` | **Symbol:** DWG
+- **Type:** on-chain agent-gated free mint (gas only) + Google Form quest WL
+- **Gate:** wallet wajib punya Binance `.ai` Agent ID (dicek on-chain lewat `AGENT_ID()`); first mint FREE, extra mint 0.0009 BNB
+- **Contract facts:** `MAX_SUPPLY` 6,666 · `MAX_PER_WALLET` 10 · `MAX_FREE_PER_WALLET` 3 · `price()` 0.0009 BNB · `mintOpen()` 1 · `eoaOnly()` 1 · referral 10% (`claimReferral()`)
+- **Wallet:** agentic `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` · handle `reydenim`
+- **Mint call:** `mint(uint256,address)` selector `0x94bf804d` + amount 1 + referrer 0, value 0 → sukses
+- **Tx:** `0x08ffa232d794f42f40e795e07732dd1b9aa8ffa1ff98194ae54ea6bc52ed355c` · block 130461349 · gasUsed 168,006 · status **1**
+- **Token:** **#6427 — Thornbyte** · Nature · **Rare** · Background Sky · Palette Prime · Eyes Fierce · Accessory None · *Minted by agent: reydenim.ai* (art 100% on-chain SVG)
+- **Quest X (semua done):**
+  - Follow @digiwarriorsfun → ✅ (profile shows "Mengikuti")
+  - Like pinned post → ✅
+  - Repost pinned post → ✅ (x.com/digiwarriorsfun/status/2115716509905691130)
+  - Quote post dengan monster favorit → ✅ proof: https://x.com/osbornrdx/status/2115763387556917545
+- **Waitlist form:** Google Form "DigiWarriors Genesis Waitlist" → **Jawaban Anda telah direkam** (email airdropkarbiters@gmail.com · wallet agentic · @osbornrdx · proof link quote · Thornbyte)
+- **Status mint:** `totalMinted` 6,579 / 6,666 · `freeLeft(agentic)` = 0 · `quote()` = 0.0009 BNB → free quota habis, mint berikutnya bayar
+- **Next:** Passport SBT (`arena.digiwarriors.fun/passport`) butuh **3 Genesis NFT** — wallet baru punya 1 → belum eligible arena
