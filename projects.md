@@ -6209,3 +6209,14 @@
 - **Received:** ERC-721 `Transfer(0x0 → 0x888dB97d…29a1, tokenId 3780)` on the mint contract + a 100,000-unit ERC-20 `Robotic` airdrop from `0xb9a345801EFd386Df561309BC38034D5Fa90c6F4`
 - **Verified on-chain:** `ownerOf(3780)` = `0x888dB97d…29a1`, `balanceOf(wallet)` = 1, `baw wallet tx-history` = confirmed
 - **Verdict:** ✅ DONE — genuine free mint, gas cost 1.4e-5 BNB, no payment to contract.
+
+### #496 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
+- **Date:** 2026-10-29 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
+- **X:** @osbornrdx | **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | **Track:** daily
+- **Method:** CDP Chrome connect to running Phantom profile (port 9222) → navigate dashboard → click Claim button for daily streak
+- **Result:** Day 1 streak claimed, +75 pts credited
+- **Balance after claim:** 16,670 pts
+- **Rank:** #42
+- **Streak:** 1 day (Day 1 claimed!)
+- **Proof:** Dashboard screenshot shows "1 day streak", "Claimed" button, "+75 pts credited to your balance", rank #42, 16,670 pts
+- **Status:** ✅ DONE — Daily streak claim completed successfully via live CDP Chrome session
