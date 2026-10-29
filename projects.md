@@ -6105,3 +6105,36 @@
   5. Trade WDEH on the platform during the 7-day window
   6. Aim for top 200 for prizes; avoid bottom 30% cull
 - **Verdict:** ⚠️ PENDING — hard wall (Privy auth + embedded wallet). Round starts 07:00 WIB today. No browserless path.
+
+### #491 Pheromone Protocol Agentic Mint (pheromoneprotocol.xyz/mint) — 5,555 supply · Free BNB gas only (msg 128971) — ⚠️ PENDING (Binance Agentic Wallet required)
+- **Date:** 2026-10-28 | **URL:** https://pheromoneprotocol.xyz/mint | **Reward:** Pheromone Ant NFT (freemint, BNB gas only) | **Source:** @airdropfind drop 128971 | **X:** [@pheromonexyz](https://x.com/pheromonexyz/status/2115496111456866326) | **Track:** agentic-mint
+- **Type:** Unique BINANCE AGENTIC WALLET MINT — requires `.ai` Agent ID + `baw` CLI with `binance-agentic-wallet` skill. NOT a standard waitlist. "Your agent proves it can follow a trail, signs with your Binance Agentic Wallet, and the contract draws the ant itself."
+- **Requirements (from page prompt):**
+  1. Binance Agentic Wallet with `.ai` Agent ID (Rey has wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` via `baw` but **Agent ID NOT CLAIMED** — must claim via Binance App → Web3 → Wallet → Agent ID)
+  2. Developer Mode enabled in wallet
+  3. `binance/binance-skills-hub` binance-agentic-wallet skill installed + paired
+  4. BNB for gas on BSC mainnet (chainId 56)
+- **Flow:** Agent executes 9-step prompt: `protocol_info` → `baw wallet status/address/settings` → `auth/challenge` (EIP-712 SignIn) → `auth/verify` (bearer token) → verify contracts on-chain → `prepare_attempt` + idempotency key → `start_attempt` (EIP-712 StartAuthorization) → `get_fragment` (solve trail) → `submit_solution` → `mint_transaction` (EIP-712 MintAuthorization) → `baw contract-call preview/execute` → `report_mint` → `reveal_status` (ticket → tokenId) → verify Transfer + tokenURI.
+- **Contract config:** `https://pheromoneprotocol.xyz/api/mint-config` (currently 404), MCP: `https://mcp.pheromoneprotocol.xyz/mcp`
+- **Blocker:** Agent ID (`.ai`) not claimed — `baw wallet agent-id` is READ-ONLY, claim ONLY via Binance App. Without Agent ID, the mint cannot proceed.
+- **Manual action needed (Rey):** Open Binance App → Web3 → Wallet → Agent ID → claim `.ai` handle → then we can run the full agentic mint via `baw` CLI.
+- **Status:** ⚠️ PENDING — Agent ID unclaimed. All other prerequisites met (`baw` authenticated, wallet connected, devMode checkable). No proof links (mint not executed).
+
+### #492 DogeOS Grand Heist Chapter 3 (quest.dogeos.com/questline/00f2f89b-8e09-46bb-a0bc-c8f4d27824df) — Questline Rewards (msg 128982) — ✅ PARTIAL (2/7 quests completed)
+- **Date:** 2026-10-29 | **URL:** https://quest.dogeos.com/questline/00f2f89b-8e09-46bb-a0bc-c8f4d27824df | **Reward:** Doge Tags + limited-time PMD loot | **Source:** @airdropfind drop 128982 | **X:** [@DogeOS](https://x.com/DogeOS/status/2115597613647229195) | **Track:** questline
+- **Type:** Quest platform with social (X) + reading tasks — DogeOS questline "HIT THE LAB" (Chapter 3). Auth = X OAuth (MyDoge relay) + DogeOS Social Wallet (embedded MyDoge wallet). 7 quests total: 4 SOCIAL QUESTS (X like/repost), 3 OTHER (read articles).
+- **Auth:** X OAuth via MyDoge relay → DogeOS Social Wallet auto-connected (embedded wallet `0xf756...5d70`).
+- **Tasks completed (@osbornrdx, MCP Chrome CDP):**
+  - ✅ **Back the RedStone Signal** (SOCIAL QUESTS) — Like DogeOS announcement on X → [x.com/DogeOS/status/2114720096421810333](https://x.com/DogeOS/status/2114720096421810333) (liked, count 1558→1559)
+  - ✅ **Read the RedStone Intel** (OTHER) — Read RedStone blog: "RedStone Enables DeFi in the Dogecoin ecosystem with DogeOS" → [redstone.finance/blog/...](https://www.redstone.finance/blog/redstone-enables-defi-in-the-dogecoin-ecosystem-with-dogeos/)
+- **Tasks pending (verification requires wallet signing via embedded MyDoge wallet — cross-origin iframe blocks automation):**
+  - ⚠️ **What Does RedStone Unlock, Doge?** (OTHER) — Read blog article
+  - ⚠️ **The Lab Report** (SOCIAL QUESTS) — Like DogeOS chapter announcement on X
+  - ⚠️ **Pass the Tip-Off** (SOCIAL QUESTS) — Like + Repost MyDoge V3 tipping guide on X
+  - ⚠️ **Has the DOGE Left the Vault?** (OTHER) — Read MyDoge V3 tipping guide
+  - ⚠️ **Trick, Treat & Fresh Drip** (SOCIAL QUESTS) — Like MyDoge Spooktober post on X
+- **Blocker:** SOCIAL QUESTS verification requires clicking "CONNECT ACCOUNT" in quest modal → triggers DogeOS Social Wallet (embedded MyDoge iframe at `embedded-wallet.mydoge.com`) to sign a message. Cross-origin iframe prevents programmatic "Sign Message" click. OTHER quests may auto-track on link click but no verify button visible.
+- **Manual completion (Rey):** Open quest modal for each pending → click link → perform X action → return → click "CONNECT ACCOUNT" → approve "Sign Message" in MyDoge wallet popup.
+- **Wallet used:** DogeOS Social Wallet (embedded) `0xf7564504726D8Bc9495d58528837c0c7BadA5d70` (auto-generated via MyDoge relay, NOT airdrop_00)
+- **Status:** ✅ PARTIAL — 2/7 quests completed, 5 pending due to wallet signing wall. OTHER quests may be auto-completed on article read.
+
