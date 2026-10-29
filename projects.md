@@ -5375,14 +5375,23 @@
   - ✅ Reply/share post → [x.com/osbornrdx/status/2113743023985348868](https://x.com/osbornrdx/status/2113743023985348868) ("Hype Hub is live! 🚀 @hypestgg #HYPEST")
   - ✅ Rainbow Box open → pulled **Simon Dedic (common)** — [image](https://hypest.gg/storage/hypest-webp/1600230048572792846/common.webp)
   - ✅ Inventory: 1/400 cards (Simon Dedic, common NEW)
-- **Wallet connected:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00) — displayed on dashboard
+- **Wallet connected:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, airdrop_00) — **LINKED 2026-10-29 via SIWE** (`POST /api/hype-hub/wallet/nonce` → `personal_sign` → `POST /api/hype-hub/wallet`). Required `0x` prefix on the signature — posting raw hex without `0x` returns 400/401.
 - **Leaderboard:** Rank **#469** with **1,050 points** — **SPOT NOT LOCKED** (needs wallet connect confirmation for GTD Top 1,000 whitelist before snapshot). "Connect your wallet. It's required for your GTD spot before the snapshot."
-- **Blocker for GTD lock:** Wallet connect confirmation requires real MetaMask extension (WalletConnect/AppKit modal) — current CDP browser :9222 has MetaMask extension installed but no vault unlocked. **Hard wall for VPS automation.**
-- **Manual path for GTD lock:** CloakBrowser + real MetaMask (airdrop_00 unlocked) → Connect wallet on leaderboard page → Confirm GTD spot.
+- **Blocker for GTD lock:** RESOLVED 2026-10-29 — wallet is now linked via signed message, no MetaMask extension needed. Pure API SIWE bypass works from VPS.
 - **Access Pass:** Phase 1 "ALLOCATING NOW" — GTD for Top 1,000. Phase 2 registration opens later. Rankings lock at snapshot (date TBA).
 - **Referral code:** Your X handle is your invite code → `@osbornrdx` (3 of 3 invites left, 150 Hype Points each)
 - **Confirmation:** Rainbow Box opened successfully, card added to inventory, leaderboard rank #469 secured.
 - **Status:** ✅ DONE — all automatable tasks completed in one pass; GTD whitelist lock pending manual wallet confirmation.
+
+#### Hypest Wave 2 update (2026-10-29) — code `hypestgg`
+- **Points:** 1,100 | **Balance:** 1,100 | **Streak:** day 1 | **Cards:** 2/400 (Jack `common`, Simon Dedic `common`)
+- **Box reality check:** Rainbow ended 10-24 19:37 UTC, Chrome ended 10-25 19:37 UTC (`410 RAINBOW_ENDED`). Only the free **Draft box** is still live (ends 12-19 15:14 UTC), and it re-arms every 24h (`next_at`).
+- **Draft box flow:** requires follow @hypestgg (`follow_done: true`) + `steps: ["like","reply"]` on post `2115462614356529647`, then `POST /api/hype-hub/boxes/third/open` → `POST /api/hype-hub/boxes/third/pick {index:0}`. Opening happened 2026-10-29 07:47 UTC, card picked: **Jack `common`** (`id 18187`).
+- **Next draft:** 2026-10-30 07:47 UTC (14:47 WIB). `tasks_done: true`, so only the open+pick call is needed.
+- **Cron:** `hypest-daily-box` (`dbb2bb0c4992`), `no_agent`, daily 08:10 WIB, script `~/.hermes/profiles/ayon/scripts/hypest_daily.py` (source: `scripts/hypest/hypest_daily.py`). Silent unless state changes.
+- **Auth persistence:** JWT in `~/.hermes/profiles/ayon/secrets/hypest_token.txt` — 7 day lifetime (exp 2026-11-05). Re-login at `https://hypest.gg/auth/twitter/start` when it 401s.
+- **Scoring model (from JS bundle):** `REG_BONUS = {hypestId:1000, earlyAccess:2000, postInteraction:500}` — Early Access replaces Hypest ID bonus (not cumulative). `X_SCORE.verified:100, max:15000`. On-chain criteria: tokens / NFTs / games / fantasy.top. Ray's `early_access: false` so the 2,000 branch is unavailable.
+- **Status:** ✅ LIVE — daily cron armed, wallet linked, Draft box farmable until 12-19.
 ### #456 Payphone NFT Waitlist (payphonenft.xyz/#apply) — ⛔ SITE DEPLOYMENT DISABLED
 - **Date:** 2026-10-24 | **URL:** https://www.payphonenft.xyz/#apply | **Reward:** 1,111 supply, Free mint on OpenSea, Robinhood Chain | **Source:** @airdropfind drop 128755 | **X:** [@PayphoneNFT](https://x.com/PayphoneNFT) | **Track:** waitlist
 - **Type:** Type 13 (SEASON-CLOSED / SITE DOWN) — Vercel deployment returns **HTTP 402 "Payment required" + DEPLOYMENT_DISABLED** on all paths (`/`, `/#apply`). The deployment has been disabled by Vercel due to billing/payment issues.
