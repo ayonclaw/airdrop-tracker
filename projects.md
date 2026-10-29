@@ -6311,3 +6311,33 @@
 - **Blocker:** Tasks ARE on-chain activity on Monad testnet. Mock `window.ethereum` injection buys nothing — there's no off-chain task to fake. The Privy auth requires real X OAuth + embedded wallet creation. Monad testnet RPC from VPS is TLS-blocked (like Robinhood Chain). Needs CloakBrowser + real MetaMask/Privy session + Monad testnet gas + signed trades.
 - **Manual recipe (CloakBrowser + real MetaMask/Privy, airdrop_00):** open userocket.app/wallet → "Continue with X" → Authorize @osbornrdx → Privy embedded wallet creation → Add Monad testnet → Claim faucet → Trade on testnet DEX/perps → Climb leaderboard.
 - **Verdict:** ⚠️ PENDING — hard wall (real Privy auth + Monad testnet + signed on-chain trades). No browserless path. Monad testnet RPC blocked from VPS.
+
+### #435 Intuition Season 1 Airdrop (airdrop.intuition.systems) — Vested Claim, Unlock Nov 5 2026 (msg 129011) — ⚠️ PENDING
+- **Date:** 2026-10-30 | **URL:** https://airdrop.intuition.systems | **Reward:** Vested INTUITION tokens (Season 1 allocation) | **Source:** @airdropfind drop 129011 | **X:** @osbornrdx | **Track:** claim
+- **Type:** Type 3 (WEB3-WALLET) — Clique-powered claim dashboard. 4-step flow: Connect Wallet → Check Eligibility → Claim Tokens → Claim Success.
+- **Unlock schedule:** Gradual unlock begins **November 5, 2026, 10:00 AM UTC** → fully unlocked **May 4, 2027, 10:00 AM UTC**. Continuous per-second unlocking throughout vesting period.
+- **Wallet connect:** Modal offers Rainbow, Coinbase Wallet, MetaMask, WalletConnect. Clicking MetaMask shows "Scan with MetaMask" QR — uses **MetaMask SDK** (dedicated WebSocket channel), NOT standard `window.ethereum`. Mock injection FAILED — the SDK expects real MetaMask extension or mobile app.
+- **EVM wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00)
+- **Blocker:** Hard wall — requires **CloakBrowser + real MetaMask (airdrop_00)** on Rey's local machine. VPS Chrome (CDP :9222) has no MetaMask vault. WalletConnect path also needs mobile app.
+- **Current status (pre-unlock):** Landing + flow page accessible. "Next" button disabled until wallet connected. Eligibility check + claim only available after Nov 5 10:00 UTC.
+- **Manual recipe (at unlock time):**
+  1. Open https://airdrop.intuition.systems in CloakBrowser with MetaMask unlocked (airdrop_00)
+  2. Click "Enter" → "Connect Wallet" → MetaMask → Approve connection
+  3. Click "Next" → "Check Eligibility" → view allocation
+  4. When unlocked (Nov 5+), click "Claim Tokens" → sign tx in MetaMask
+  5. Confirm "Claim Success"
+- **Reference tweet:** https://x.com/0xIntuition/status/2114784801265742212
+- **Status:** ⚠️ PENDING — Hard wall (MetaMask SDK). Will retry at unlock (Nov 5 10:00 UTC) via CloakBrowser. No browserless path.
+
+### #498 DogePunk Card #4010 (dogepunk) — free mint · activated mining card (BSC) — ✅ DONE
+- **Date:** 2026-10-29 | **URL:** https://dogepunk.xyz | **Reward:** DogePunk mining card NFT (DPUNK emission) | **Track:** onchain
+- **Type:** ON-CHAIN free mint on BSC (chain 56). Gate = Agent ID (.ai) registry balance, not a whitelist Merkle tree.
+- **Contracts:** Card `0xea404392be487b90f45b8436a52623bc7dbd8515` · Miner `0xe06b841e137afae8238c0267981026ad4b03b2c1` · DPUNK token `0xb50573786f582105d27be75dcc038713551ca14e`
+- **Wallet:** `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Binance Agentic Wallet, Agent ID `reydenim.ai`)
+- **Result:** Token #4010 minted (supply 5000/5000 sold out), Chainlink VRF reveal completed → `statusOf = 1`, then `activateOwned()` executed → `statusOf = 2` (activated, registered with miner).
+- **Activation tx:** https://bscscan.com/tx/0xa501f24f2ad734114e64c95e14d39454bb2ee744982202c8ecce078d71bf3e9b (block 130533168, gas 108,762 @ 0.058 gwei ≈ $0.0001)
+- **Card stats:** base hashrate **39.1 TH/s**, tier 0, traits `[182,72,6,241,68,82,17,49,95]`
+- **Pitfall:** `tokenURI()` is NOT a reveal signal — renderer is `address(0)` and `_baseTokenURI` empty, so tokenURI stays `""` even after reveal. Use `statusOf(tokenId)` instead (0 sealed / 1 revealed / 2 activated).
+- **Accrual:** `pendingOf(wallet)` = **106.19 DPUNK** and growing. `claimAll()` reverts `ClaimsLocked()` while `claimsUnlocked == false`, and `emissionFunded == 0` means there is no DPUNK in the miner yet — nothing claimable until the owner unlocks + funds.
+- **Automation:** cron `dogepunk-claim-watch` (`1500a0ac20e8`, every 4h, no_agent, silent) → fires only when claimsUnlocked + funded + pending > 1 DPUNK, then claims via `baw` and reports the tx. Script: `/home/ubuntu/scripts/dogepunk/claim_when_unlocked.py`
+- **Status:** ✅ Activated & accruing. Waiting on project owner to unlock claims and fund emission.
