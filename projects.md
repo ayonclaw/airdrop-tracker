@@ -6379,3 +6379,15 @@
 - **Pitfall:** `baw wallet send` is blocked by address-book policy (351703) — use `baw contract-call --value <wei> --inputData 0x` to move BNB to an EOA. `--value` is raw wei, not decimal BNB.
 - **Status:** ✅ **SOLD** 2026-10-30 at 0.0041 BNB ($2.93). Buyer `0x3D76DA74e3Fa2b79975e2Bc077FE1847996bFCd6` (3D76DA) re-listed immediately at 0.014 BNB ($10.04).
 - **Proceeds:** net **0.003813 BNB (~$2.70)** landed in airdrop_00 (balance 0.00022769 → 0.00404069 BNB). First real revenue from an NFT flip.
+
+### #502 Elysium Outlaws Whitelist (elysiumoutlaws.xyz/whitelist) — 100 WL spots · 666 NFTs (msg 129027) — ✅ DONE
+- **Date:** 2026-10-30 | **URL:** https://elysiumoutlaws.xyz/whitelist | **Reward:** Whitelist spot (1 of 100) for 666 unique Outlaws NFTs | **Source:** @airdropfind drop 129027 | **X:** [@ElysiumOutlaws](https://x.com/ElysiumOutlaws/status/2115082319438721291) | **Track:** waitlist
+- **Type:** Type 2 (WEB-DASHBOARD) — Next.js SPA with X OAuth2 (PKCE) auth gate. Flow: Connect X → tasks auto-tracked → submit EVM wallet → application saved.
+- **Status on arrival:** X OAuth already completed in shared Chrome profile (prior session). Wallet **0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D** already submitted. UI shows **"Application pending — Your application is saved. Approval is required before this wallet is eligible."**
+- **Tasks completed (@osbornrdx):**
+  - ✅ X OAuth login → `@osbornrdx` connected (via MCP Chrome CDP with injected X cookies)
+  - ✅ Submit EVM wallet → `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM mainnet / airdrop_00)
+- **Confirmation:** "Your application is saved. Approval is required before this wallet is eligible."
+- **Status:** ✅ DONE — application submitted and pending project review. 100 WL spots, 666 NFT supply, mint date TBA.
+
