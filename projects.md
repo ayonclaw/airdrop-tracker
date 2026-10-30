@@ -6433,3 +6433,12 @@
   - Quote: https://x.com/osbornrdx/status/ (quote of 2105178523589636588)
 - **Status:** ⛔ FULL — all tasks completed and verified, but allowlist capacity (2400) reached before claim submission.
 
+
+### #505 Argonmine (app.argonmine.com) — PoW L1 Mining (agentic) — 🔄 MINING LIVE
+- **Date:** 2026-10-30 | **URL:** https://app.argonmine.com | **Reward:** ARG (21M supply, PoW Argon2id) | **Source:** Rey drop | **X:** arg1q… (n/a) | **Track:** daily-repeatable (mining)
+- **Repo:** github.com/argonchain-source/argonchain (Go, MIT). Chain launched 28 Oct 2026; block ~1680 now, 27s/block at launch difficulty.
+- **Wallet:** created 2026-10-30 → `arg1qnvspg86g9jey40wt8aqr3hx83ad49fm98l73u2suyrpk4wle7f2qn9rhar` (24-words saved `~/airdrop/credentials/projects/argonmine.txt`, password `Cloudin123!argonmine`).
+- **Mining:** native Go node v1.1.0 (`argonmined -mine <addr> -threads 2`) via systemd `argonmine.service`, datadir `scripts/argonmine/data`. Hashrate ~145 H/s on 2-core. Reboot-safe, auto-restart.
+- **Watcher:** cron `argonmine-watch` (`3f13feb3e52f`) every 30m — silent unless block found / balance > 0 / node down. Script `scripts/argonmine/argon_watch.sh`.
+- **Rewards:** block subsidy 50 ARG (1% treasury from block 300). Unlock after 100 blocks (~17h). Balance API: explorer.argonmine.com/api/address/<addr>.
+- **Status:** 🔄 mining live, 0 blocks found yet, balance 0.
