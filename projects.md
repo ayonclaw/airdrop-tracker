@@ -6377,4 +6377,5 @@
 - **Flow:** agentic wallet could not sign EIP-712 (`baw sign-message` → 953004), so #431 was transferred to airdrop_00 (`0x8CCE...282D`) via `baw contract-call` (tx `0xac8149...fd11`), then collection approval (`setApprovalForAll`, tx `0xe784c9...65c1`) and the BatchSignedERC721Orders EIP-712 listing sig were produced locally with eth_account, injected into the Element page through a deferred-sign provider (`window.__signq` + `__resolveSign`).
 - **Listing:** 0.0041 BNB (~$2.91), 30-day expiry 2026-11-29. Net after 5% royalty + 2% fee ≈ 0.003813 BNB.
 - **Pitfall:** `baw wallet send` is blocked by address-book policy (351703) — use `baw contract-call --value <wei> --inputData 0x` to move BNB to an EOA. `--value` is raw wei, not decimal BNB.
-- **Status:** ✅ Listed and live (seller shows "you").
+- **Status:** ✅ **SOLD** 2026-10-30 at 0.0041 BNB ($2.93). Buyer `0x3D76DA74e3Fa2b79975e2Bc077FE1847996bFCd6` (3D76DA) re-listed immediately at 0.014 BNB ($10.04).
+- **Proceeds:** net **0.003813 BNB (~$2.70)** landed in airdrop_00 (balance 0.00022769 → 0.00404069 BNB). First real revenue from an NFT flip.
