@@ -6442,3 +6442,34 @@
 - **Watcher:** cron `argonmine-watch` (`3f13feb3e52f`) every 30m — silent unless block found / balance > 0 / node down. Script `scripts/argonmine/argon_watch.sh`.
 - **Rewards:** block subsidy 50 ARG (1% treasury from block 300). Unlock after 100 blocks (~17h). Balance API: explorer.argonmine.com/api/address/<addr>.
 - **Status:** 🔄 mining live, 0 blocks found yet, balance 0.
+
+### #506 Miden Waitlist (miden.xyz/wallet) — Bread Wallet Early Access (msg 129032) — ✅ DONE
+- **Date:** 2026-10-30 | **URL:** https://miden.xyz/wallet (redirects to https://www.miden.xyz/wallet) | **Reward:** Early Access waitlist spot for Bread Wallet (Miden's private, self-custodial wallet) | **Source:** @airdropfind drop 129032 | **X:** [@joinbread](https://x.com/joinbread) | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST → MCP Chrome) — Webflow form with reCAPTCHA v2 (sitekey: 6LepNcItAAAAANpM5kW4Z3ImGSNQ9dp6F08oHyUY). Form fields: Name, Email, Telegram, Ticket number, Instagram. Submission via GET to same URL with query parameters.
+- **reCAPTCHA solved via:** captcha_hybrid.py (local hybrid solver using 2Captcha + CapSolver APIs) — token: `0cAFcWeA62zjgEbDpPJESuxjArstEVzt2TWNLYMWq0eEL1aY0dprDLGwD_gphgrj-p9-in8tE7H_3P7G...`
+- **Form data submitted:**
+  - Name: Rey Denim
+  - Email: airdropkarbiters@gmail.com
+  - Telegram: @mxsyxfxx
+  - reCAPTCHA token: injected into both `recaptcha-token` hidden field and `g-recaptcha-response` textarea
+- **Submission method:** Native form submit via `form.submit()` (GET to https://www.miden.xyz/wallet with query params) — triggered Webflow server-side processing
+- **Confirmation:** Page shows **"You're in line."** with **"✓ IN LINE"** and position **"No. 0000"** — early access list confirmed. Share link generated: https://www.miden.xyz/wallet?name=Rey+Denim&email=...# 
+- **Wallet used:** N/A (waitlist only, no wallet submission required)
+- **X proof:** N/A (no X tasks required for this waitlist)
+- **Status:** ✅ DONE — waitlist registration completed successfully in one pass. Early access codes distributed in waves from Oct 26.
+
+### #507 Kalos Pixel Blobs Mint (kalos.fun/mint/pixel-blobs) — Elysium Testnet Allowlist Mint (msg 129038) — ℹ️ INFO
+- **Date:** 2026-10-30 | **URL:** https://www.kalos.fun/mint/pixel-blobs | **Reward:** Pixel Blobs NFT mint (1,111 supply, 0.05 HYPE each) | **Source:** @airdropfind drop 129038 | **X:** [@pixelblobsnft](https://x.com/pixelblobsnft) | **Track:** timed-mint (allowlist-gated)
+- **Type:** Type 5 (TIMED-MINT) — Allowlist-gated mint on Kalos marketplace (Elysium testnet). No waitlist registration — allowlist phase currently active (ends ~14:11 from page load), public phase starts after.
+- **Current state (MCP Chrome inspection):**
+  - Collection: Pixel Blobs by BlackLight (@blacklight)
+  - Supply: 1,111 items | Minted: 785/1,111 (71%)
+  - Allowlist phase: **ACTIVE** — ends in ~14 min, price 0.05 HYPE, up to 1 per wallet
+  - Public phase: starts Oct 31, 2026 ~04:01 PM UTC (in ~14:13 from page load), price 0.05 HYPE
+  - **Critical blocker:** "Allowlist proofs are unavailable while Kalos is offline" — allowlist verification not functioning
+  - "Connect wallet to mint" button present but requires real MetaMask + Elysium testnet + testnet HYPE
+- **Chain:** Elysium testnet (HYPE token) — faucet: https://elysium.kinetiq.xyz/testnet-faucet
+- **Wallet needed:** EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (airdrop_00) on Elysium testnet with testnet HYPE
+- **Action required:** Manual mint via CloakBrowser + real MetaMask (airdrop_00) when Kalos platform is online. Allowlist eligibility unknown — no checker API found.
+- **Status:** ℹ️ INFO — allowlist-gated mint in progress, platform currently offline for allowlist proofs. No waitlist to fill; mint only possible during active phases with allowlist access. Track for public phase if allowlist missed.
+
