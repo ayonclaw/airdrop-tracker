@@ -6391,3 +6391,18 @@
 - **Confirmation:** "Your application is saved. Approval is required before this wallet is eligible."
 - **Status:** ✅ DONE — application submitted and pending project review. 100 WL spots, 666 NFT supply, mint date TBA.
 
+
+### #503 Huemans Waitlist (huemanss.xyz) — 9 Characters, Google Apps Script (msg 129029) — ✅ DONE
+- **Date:** 2026-10-30 | **URL:** https://www.huemanss.xyz | **Reward:** Huemans character whitelist (9 characters: Cobalt, Ember, Jade, Iris, Sol, Onyx, Ivory, Coral, Forest) | **Source:** @airdropfind drop 129029 | **X:** [@Huemans_rh](https://x.com/Huemans_rh/status/2115482942789369920) | **Track:** waitlist
+- **Type:** Type 2 (WEB-DASHBOARD) / DCLogic-style multi-step form with Google Apps Script backend
+- **Character selected:** Cobalt (index 0)
+- **X tasks completed (@osbornrdx, MCP Chrome CDP + X cookies):**
+  - ✅ Follow [@Huemans_rh](https://x.com/Huemans_rh) — already following, confirmed "no follow button"
+  - ✅ Like [https://x.com/Huemans_rh/status/2115482942789369920](https://x.com/Huemans_rh/status/2115482942789369920) — clicked via intent URL
+  - ✅ Retweet [https://x.com/Huemans_rh/status/2115482942789369920](https://x.com/Huemans_rh/status/2115482942789369920) — clicked via intent URL
+- **Form submission:** Filled wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`, handle `osbornrdx`, character `0` (Cobalt), tasks {follow:true, like:true, rt:true}, consent `true` → submitted to Google Apps Script endpoint `https://script.google.com/macros/s/AKfycbytImbsPjLfK4Sn3d_yrhSNzo_p4hP8XuswvWePCATzOmjC2bx_bujobM2JSWmsCoWTeg/exec`
+- **Google Apps Script status:** Endpoint returned empty response (200 OK, no body). Status check via `?action=status` also returned empty. Google Apps Script may not be deployed as public web app or returning silent success. Form on page shows tasks as self-declared.
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM mainnet / airdrop_00)
+- **X proof links:** Follow [@Huemans_rh](https://x.com/Huemans_rh) | Like+Retweet [tweet 2115482942789369920](https://x.com/Huemans_rh/status/2115482942789369920)
+- **Status:** ✅ DONE — X tasks completed, form filled and submitted. Backend Google Apps Script submission status unknown (empty response). Project team will review submitted data.
+
