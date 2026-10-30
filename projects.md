@@ -6407,3 +6407,29 @@
 - **X proof links:** Follow [@Huemans_rh](https://x.com/Huemans_rh) | Like+Retweet [tweet 2115482942789369920](https://x.com/Huemans_rh/status/2115482942789369920)
 - **Status:** ✅ DONE — X tasks completed, form filled and submitted. Backend Google Apps Script submission status unknown (empty response). Project team will review submitted data.
 
+
+### #504 Torpor Waitlist (torpor.net/apply) — HyperEVM L2 Allowlist (msg 129030) — ⛔ FULL
+- **Date:** 2026-10-30 | **URL:** https://torpor.net/apply/ | **Reward:** Allowlist spot for mint on Elysium (HyperEVM L2) | **Source:** @airdropfind drop 129030 | **X:** [@torpor_si](https://x.com/torpor_si) | **Track:** waitlist
+- **Type:** Type 4 (BROWSERLESS-FIRST → MCP Chrome) — Multi-step form: X OAuth login → 6 sequential X tasks (Follow @torpor_si, Follow SI, Like, Reply, Like+Repost+Comment, Quote) → wallet submit → claim. X OAuth completed via MCP Chrome CDP with injected X cookies.
+- **X tasks completed (@osbornrdx, MCP Chrome CDP + X cookies):**
+  - ✅ Follow [@torpor_si](https://x.com/torpor_si) — via intent URL x.com/intent/follow?screen_name=torpor_si
+  - ✅ Follow SI (same account) — auto-completed
+  - ✅ Like [https://x.com/torpor_si/status/2116037003347157056](https://x.com/torpor_si/status/2116037003347157056) — via intent URL
+  - ✅ Reply to [https://x.com/torpor_si/status/2116037003347157056](https://x.com/torpor_si/status/2116037003347157056) — "Built to sit. 🐸" via intent URL
+  - ✅ Like [https://x.com/torpor_si/status/2116069255548699060](https://x.com/torpor_si/status/2116069255548699060) — via intent URL
+  - ✅ Retweet [https://x.com/torpor_si/status/2116069255548699060](https://x.com/torpor_si/status/2116069255548699060) — via intent URL
+  - ✅ Comment on [https://x.com/torpor_si/status/2116069255548699060](https://x.com/torpor_si/status/2116069255548699060) — "Idle by design. 🐸" via intent URL
+  - ✅ Quote tweet [https://x.com/torpornet/status/2105178523589636588](https://x.com/torpornet/status/2105178523589636588) — "In the queue for @torpornet. Idle by design and nobody can talk me out of it. Ribbit." via intent URL
+- **Wallet submitted:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM mainnet / airdrop_00)
+- **All 6 tasks verified** on torpor.net/apply (VERIFY clicked, "5/6" → "6/6" confirmed)
+- **Claim blocked:** Allowlist full ("THE ALLOWLIST IS FULL" at 2400 applications). Claim step reached but capacity exhausted.
+- **X proof links:** 
+  - Follow @torpor_si: https://x.com/torpor_si
+  - Like 1: https://x.com/torpor_si/status/2116037003347157056
+  - Reply: https://x.com/osbornrdx/status/ (reply to 2116037003347157056)
+  - Like 2: https://x.com/torpor_si/status/2116069255548699060
+  - Retweet: https://x.com/torpor_si/status/2116069255548699060
+  - Comment: https://x.com/osbornrdx/status/ (reply to 2116069255548699060)
+  - Quote: https://x.com/osbornrdx/status/ (quote of 2105178523589636588)
+- **Status:** ⛔ FULL — all tasks completed and verified, but allowlist capacity (2400) reached before claim submission.
+
