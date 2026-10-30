@@ -5104,6 +5104,8 @@
 - **Type:** Type 17 (SOCIAL-VERIFICATION-CLAIM) — Multi-step wizard with server-verified X tasks: X handle → EVM wallet → Follow @Holo_whole → Like post + Reply → Quote post → Submit Signal.
   - ✅ X handle: @osbornrdx
   - ✅ EVM wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+
+- **📢 Update (drop 129013, Oct 29 2026):** Polyester announced that **$LTC rewards from the @litecoin giveaway have been distributed**. Action: Log in to your Polyester account (testnet.polyester.com) and check for the blue **"You won!"** button in the header. This is an informational update for an existing participant — no new registration or tasks. Source: https://x.com/polyester/status/2115893858907087037
   - ✅ Follow @Holo_whole → button flipped to "Mengikuti" | proof: [x.com/Holo_whole](https://x.com/Holo_whole)
   - ✅ Like announcement tweet (ID 2112622313405297007) → [x.com/Holo_whole/status/2112622313405297007](https://x.com/Holo_whole/status/2112622313405297007)
   - ✅ Reply to announcement tweet → [x.com/osbornrdx/status/2112784326677201367](https://x.com/osbornrdx/status/2112784326677201367)
@@ -6342,3 +6344,18 @@
 - **Claim blocked:** `claimAll()` reverts `ClaimsLocked()` (`0xce4cffbc`) — `claimsUnlocked == false`. Also `emissionFunded == 0` and DPUNK balance of the miner is **0** (all 1,000,000,000 DPUNK sits at owner `0x332e...2419`). Nothing payable until the owner funds the miner AND unlocks claims. No DPUNK LP exists on PancakeSwap → token not trading yet.
 - **Automation:** cron `dogepunk-claim-watch` (`1500a0ac20e8`, every 4h, no_agent, silent) → fires only when claimsUnlocked + funded + pending > 1 DPUNK, then claims via `baw` and reports the tx. Script: `/home/ubuntu/scripts/dogepunk/claim_when_unlocked.py`
 - **Status:** ✅ Activated & accruing. Waiting on project owner to unlock claims and fund emission.
+
+### #499 FFGG Waitlist (ffgg.io) — Early Access FCFS (msg 129019) — ✅ DONE
+- **Date:** 2026-10-30 | **URL:** https://www.ffgg.io/ | **Reward:** Early Access waitlist spot | **Source:** @airdropfind drop 129019 | **X:** [@FFggRH0x](https://x.com/FFggRH0x) | **Track:** waitlist
+- **Type:** Type 12 (GOOGLE-FORM-RESTRICTED) — Landing page at ffgg.io with Google Form waitlist (forms.gle). Form fields: X Username, Permit ID (tweet ID), Time, Wallet. X tasks required: Follow @FFggRH0x, Like/Retweet/Comment tweet 2115764409733914673, Turn on notifications for @FFggRH0x.
+- **Tasks completed (@osbornrdx, MCP Chrome CDP + X cookies):**
+  - ✅ Follow [@FFggRH0x](https://x.com/FFggRH0x) — button flipped to "Mengikuti @FFggRH0x"
+  - ✅ Like [https://x.com/FFggRH0x/status/2115764409733914673](https://x.com/FFggRH0x/status/2115764409733914673) — intent like → button flipped to "Menyukai"
+  - ✅ Retweet [https://x.com/FFggRH0x/status/2115764409733914673](https://x.com/FFggRH0x/status/2115764409733914673) — intent retweet → button flipped to "Memposting ulang"
+  - ✅ Reply [https://x.com/osbornrdx/status/2115984568654410165](https://x.com/osbornrdx/status/2115984568654410165) — "Claim early access done! FFgg to the moon 🚀"
+  - ✅ Turn on notifications for @FFggRH0x — clicked "Aktifkan notifikasi postingan"
+- **Google Form submission (MCP Chrome):** Filled X Username (@osbornrdx), Permit ID (2115764409733914673), Time (2026-10-30 08:51:47), Wallet (0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D) → "Your response has been recorded."
+- **Wallet submitted:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (EVM mainnet/airdrop_00)
+- **X proof links:** Follow [@FFggRH0x](https://x.com/FFggRH0x) | Like+Retweet [tweet 2115764409733914673](https://x.com/FFggRH0x/status/2115764409733914673) | Reply [2115984568654410165](https://x.com/osbornrdx/status/2115984568654410165)
+- **Status:** ✅ DONE — all 5 X tasks + Google Form submitted in one pass.
+
