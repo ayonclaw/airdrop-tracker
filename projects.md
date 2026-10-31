@@ -6587,3 +6587,17 @@
   - Reply: https://x.com/intent/post?in_reply_to=2116192563229253919
 - **Status:** ✅ DONE — full allowlist application submitted with all 4 X missions completed.
 
+
+### #513 SnakeID Freemint (snakeid.xyz/mint) — msg image drop — ⛔ MISS (SOLD OUT pre-fund)
+- **Date:** 2026-10-31 | **URL:** https://snakeid.xyz/mint | **Chain:** BNB Chain | **X:** [@snakeidbnb](https://x.com/snakeidbnb) (85 followers) | **Source:** Rey image drop
+- **Type:** Freemint via Binance Agentic Wallet ("MINT VIA AGENT" — paste prompt to agent, preview, confirm)
+- **On-chain recon (all verified via public BSC RPC):**
+  - NFT: `0xafc6bca0e191e396306343213b04ff9a8d717263` (SnakeID/SNAKEID) | Market: `0x0a5e8d61230241312a623e17d61540d0dff2feb7` (5% fee, min list 0.001 BNB)
+  - Agent ID registry: `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F` — agentic wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` handle = `reydenim` ✓ registered
+  - Mint state at recon: mintOpen()=1 (site countdown Nov 3 was stale/wrong), totalMinted 8,962 → 9,949 → **10,000/10,000 SOLD OUT within ~30 min**
+- **Why missed:** agentic wallet balance 0.000024 BNB (gas-insufficient, ~0.0005 BNB needed); first-free-mint per Agent ID window closed before funding was possible.
+- **SNAKE token claim (OPEN, contract `0x99e0a14e53993a1eeb253e5451d40113d58a6a59`, fee 0.0001 BNB):** merkle snapshot = NFT holders at sold-out ONLY — zero "Agent ID only" entries in 9,413-entry list; agentic wallet + airdrop_00 both **NOT in list → not claimable** despite reydenim Agent ID.
+- **Market (open):** floor sampled 0.001 BNB (1 listing in 300-token sample) — below 0.0014 non-first mint price. Buying gets NO claim (list locked) = pure speculation.
+- **Presale (live to Nov 7):** 100M SNAKE/BNB, raised 0.10/2 BNB — LP ≈ 2 BNB total. 20k SNAKE ≈ 0.0002 BNB (~$0.12) at seed price. Micro experiment, TVL ~$1.3k.
+- **Verdict:** ⛔ MISS — no free path remains. Watcher cron `snakeid-claim-root-watcher` (job 520633628c6a, silent 12h) alerts if merkle root changes (dev re-snapshot) or agentic wallet gets funded.
+
