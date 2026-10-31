@@ -6608,3 +6608,55 @@
 - **Status check:** Both /mint and /create return **Cloudflare Error 1027** — "This website has been temporarily rate limited. You cannot access this site because the owner has reached their plan limits. Check back later once traffic has gone down." (Cloudflare Workers plan limit exceeded)
 - **Action:** Site inaccessible — waitlist effectively closed. No tasks executed. Moved to done with skip note.
 - **Verdict:** ⛔ SKIPPED — Cloudflare Workers rate limit (server-side, not bypassable). Re-check later if project resumes.
+
+### #515 AgentsEstates Proof of House (agentsestates.app) — 6,666 supply · FREE MINT (gas only) (msg 129072) — ⚠️ PENDING (requires Binance Agentic Wallet + live 15-20 min build)
+- **Date:** 2026-10-31 | **URL:** https://agentsestates.app | **Reward:** Free mint (1 per wallet, gas only on BNB Chain) | **Source:** @airdropfind drop 129072 | **X:** [@agents_estates](https://x.com/agents_estates) | **Track:** mint
+- **Type:** Complex on-chain mint requiring Binance Agentic Wallet (.ai Agent ID) + live build process
+- **Contracts (BNB Smart Chain, live):**
+  - NFT: `0x439643cfd023c247519518B7F73d06823E1F2fCe`
+  - Mint: `0x7ECdCf20A6e7bb10F76f910d01f508395cDa9AD0`
+  - Market: `0x1EeA3629C7505Dcf8c8d247558F6E244D19C60dE`
+- **Requirements:** .ai Agent ID (Binance Agentic Wallet) → EIP-712 sign-in → unique @handle → live build (15-20 min) → on-chain mint (BNB gas)
+- **User's Agentic Wallet:** Agent #39475, handle `reydenim.ai`, wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Binance Agentic Wallet, authenticated via `baw` CLI on VPS)
+- **Blocker:** Cannot be automated via browserless/MCP — requires real Binance Agentic Wallet authentication (QR pairing with Binance App), live 15-20 minute build process in shared world, then on-chain mint signing. No API endpoint for automated mint.
+- **Manual recipe (CloakBrowser + Binance Agentic Wallet):** 
+  1. Open agentsestates.app in CloakBrowser
+  2. Click "Mint" → "Connect Binance Agent Wallet" → scan QR with Binance App (Agent ID `reydenim.ai` verified)
+  3. EIP-712 sign-in → choose unique @handle → select city → start build (15-20 min live)
+  4. When house complete, confirm mint → sign with Agentic Wallet (BNB gas)
+- **Status:** ⚠️ PENDING — hard wall (Binance Agent Wallet auth + live build + on-chain mint). Requires manual execution via CloakBrowser when user available.
+
+### #516 Mars Nexus Free Mint (marsnexus.fun) — 9,999 Explorer Cards · BNB Chain (msg 129075) — ⚠️ PENDING (Binance Agentic Wallet QR pairing required)
+- **Date:** 2026-10-31 | **URL:** https://marsnexus.fun/ (mint service: https://mint.marsnexus.fun) | **Reward:** Free mint (1st card free, project pays randomness, user pays gas) for Explorer Collection (ERC-721, AGENT ID) | **Source:** @airdropfind drop 129075 | **X:** [@MarsNexusd](https://x.com/MarsNexusd/status/2115994978463977926) | **Track:** mint
+- **Type:** Type 3 (WEB3-WALLET) — Binance Agentic Wallet authenticated mint. Requires Agent ID (.ai handle) + QR pairing with Binance App.
+- **Collection state (MCP Chrome inspection):**
+  - Supply: 9,999 total | Minted: 5,710 (57.11%) | Remaining: 4,289 cards
+  - First mint: FREE (0 USDT, project pays randomness, user pays ~0.0000189 BNB gas)
+  - NFT contract: `0xC4059D2F9F6F86695896e68F3E73E1e6cC3791c8`
+  - Recipient treasury: `0xBDE905a3424F41D3a400a84e10a118E7Df0f9bc7`
+- **Agent verification (MCP Chrome "Look up"):**
+  - ✅ Agent ID: `reydenim.ai` (Agent #39475)
+  - ✅ Wallet: `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Binance Agentic Wallet)
+  - ✅ Balance: 0.000163 BNB, 0 USDT
+  - ✅ Mint quota: 0/5 used, 5 remaining
+  - ✅ Transaction preview generated — shows mint details, contract, fees
+- **Execution completed via MCP Chrome DevTools:**
+  1. ✅ Entered Agent wallet address `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` → "Look up"
+  2. ✅ Agent verified: `reydenim.ai` connected, 5 mints remaining
+  3. ✅ Clicked "Mint identity card" → transaction preview generated
+  4. ✅ Clicked "Confirm this mint" → preview confirmed
+  5. ✅ Clicked "Copy for my Binance Agent" → mint instructions copied
+- **Blocker:** Final mint confirmation requires **Binance Agentic Wallet web QR pairing** — the website generates a QR code that must be scanned with the Binance App on mobile, then the transaction is confirmed in the app. The VPS Chrome CDP :9222 has no Binance Agent Wallet extension, and `baw` CLI authenticated session is separate from the web OAuth flow.
+- **Contract call attempts (baw CLI):** Tried common mint selectors (`mint()`, `mint(address)`, `claim()`, `publicMint()`, `freeMint()`) — all reverted "execution reverted". The actual mint calldata is constructed by the Binance backend via `/api/mint/preview` + `/api/mint/execute` and signed in the Binance App.
+- **Manual recipe (CloakBrowser + Binance App, Binance Agentic Wallet):**
+  1. Open https://mint.marsnexus.fun in CloakBrowser
+  2. Enter Agent wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` → "Look up" (verify `reydenim.ai`, 5 mints remaining)
+  3. Click "Mint identity card" → review preview
+  4. Click "Confirm this mint" → click "Copy for my Binance Agent" (optional, for reference)
+  5. Click "Connect Binance Agentic Wallet" → scan QR with Binance App (logged in, Agent ID `reydenim.ai`)
+  6. In Binance App: verify pairing code → confirm mint transaction
+  7. Return to site → refresh → card should appear in "Your Characters"
+- **Wallet for mint:** Binance Agentic Wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID `reydenim.ai`) — NOT airdrop_00
+- **X handle:** @osbornrdx (for any social tasks if added later)
+- **Proof:** Agent verification screenshot shows `✓ reydenim.ai · 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 | Minted 0 / 5 · Remaining 5 times`
+- **Status:** ⚠️ PENDING — hard wall (Binance Agent Wallet web QR pairing + mobile App confirmation). No browserless API path. All pre-mint verification complete; only final App confirmation needed.
