@@ -6601,3 +6601,10 @@
 - **Presale (live to Nov 7):** 100M SNAKE/BNB, raised 0.10/2 BNB — LP ≈ 2 BNB total. 20k SNAKE ≈ 0.0002 BNB (~$0.12) at seed price. Micro experiment, TVL ~$1.3k.
 - **Verdict:** ⛔ MISS — no free path remains. Watcher cron `snakeid-claim-root-watcher` (job 520633628c6a, silent 12h) alerts if merkle root changes (dev re-snapshot) or agentic wallet gets funded.
 
+
+### #514 Bring Your Agent (byveil.xyz) — 2,222 spots · FREE MINT (msg 129066) — ⛔ SKIPPED (Cloudflare Workers rate limited)
+- **Date:** 2026-10-31 | **URL:** https://byveil.xyz/mint, https://byveil.xyz/create | **Reward:** Free mint, 2,222 spots, one mint per X account | **Source:** @airdropfind drop 129066 | **X:** @osbornrdx | **Track:** waitlist
+- **Type:** Type 3 (WEB3-WALLET) — "Bring your agent" mint requiring Robinhood ETH sent to agentic wallet, then connect X
+- **Status check:** Both /mint and /create return **Cloudflare Error 1027** — "This website has been temporarily rate limited. You cannot access this site because the owner has reached their plan limits. Check back later once traffic has gone down." (Cloudflare Workers plan limit exceeded)
+- **Action:** Site inaccessible — waitlist effectively closed. No tasks executed. Moved to done with skip note.
+- **Verdict:** ⛔ SKIPPED — Cloudflare Workers rate limit (server-side, not bypassable). Re-check later if project resumes.
