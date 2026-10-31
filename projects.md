@@ -6496,3 +6496,14 @@
 - **Confirmation:** "Application received. We'll announce the results on X" — Card displayed: PHASE 2 #338, handle OSBORNRDX, Submitted wallet: 0x8CCE…282D
 - **Mint:** Scheduled November 3, 2026, 16:00 UTC on OpenSea (Robinhood Chain). Price: 0.015 ETH. 5-hour window.
 - **Status:** ✅ DONE — all 4 X tasks + share link + wallet submitted in one pass. Application #338 received.
+
+### #SAFU Free Mint — SAFU Agent ID (BSC)
+- **Type:** On-chain free mint (BSC, chain 56) — https://safuagent.vercel.app (Chinese UI, Vite SPA)
+- **Status:** ✅ Free Mint SAFU claimed — 3,272,727 SAFU credited; referral `chena` used
+- **Wallet:** `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Binance Agentic Wallet, holder of agent id reydenim.ai)
+- **Contracts:** SafuMint `0xEC1559E922f9dA7fE2a0f7E015220026E169F193` · SafuAgent NFT `0x1e8503ed1634aBC31Baadb619d1Bb2551287b53D` · SAFU token `0xaDC383D53234f494e6Ed409228eC02334f9330B8`
+- **Claim tx:** `0x3fd7531aaa7f2b9d9eb63c3f88ee78c0091a87afe0e170f630c2dec7052e62dd` (block 130757547, status 1 ✅) via baw `contract-call` `claimFree(bytes32 refCode)` selector `0xd60362d1`, value 0
+- **Steps:** bundle RE → selectors → baw preview (sim OK, +1.63e24 SAFU) → execute → on-chain balanceOf verify 3,272,727 SAFU
+- **Bonus:** Genesis SAGENT NFT free tier already full (1000/1000 in stats) — `mintNFT()` reverts (now paid 0.0014 BNB). Skipped without spend.
+- **Referral:** `chena` (Rey's ref code) — 32-byte bytes32 left-aligned
+- **Notes:** SafeMint free round 2, 1,852/5,000 claimed. ~1.6M SAFU/claim (could be 2-round high/mid tier). No X tasks needed — pure on-chain.
