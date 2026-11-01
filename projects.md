@@ -6828,3 +6828,10 @@
 - Wallet: baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID reydenim.ai)
 - free() tx: https://bscscan.com/tx/0x9fb2b2be893a145ab3b25a7ef83eb45d5635bcd6a4b49cf826bd38f989cc0636
 - Dapat 256 share (shares wallet 8317→8576), gas 0.00000117 BNB. Mint berbayar: 10 USDT/share (skip). Event 2 USDT: butuh submit wallet + X, ada di web.
+
+## BNBbaby (bnbbaby.pages.dev) - 2026-11-01 - FREEMINT DONE
+- BSC 56 | contract 0xBB7eD59ca41eA03cf20084a8c9de94244B7B2637 (Sourcify verified)
+- mint(0) 0xa0712d68 | wallet agentic 0x888d...29A1 | tx 0xc4998212e6afe32e49751da86fd952e03a6d894b451770e222f30c21e6447b78
+- Result: +10,000,000 BNBbaby (token 0xd0079025a9bb66a7a1de991de2e4326faba35729), gas 0.0000065 BNB
+- X post for  bonus: https://x.com/osbornrdx/status/2116970799441883203 (verified w/ poster)
+-  bonus BLOCKED: Binance Square needs login session (not available), submission needs square URL + 3 screenshots
