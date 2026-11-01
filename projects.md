@@ -6815,3 +6815,5 @@
 - Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | username osbornrdx
 - Path: inline ethers UMD (CSP-safe) -> SIWE sign -> JWT -> registration via PROXY (IP VPS kena signup_origin_limit 3)
 - Remaining: daily faucet, NFT mint/swap/social/feedback tasks
+- Kalos daily cron: kalos-daily (788fc9d1b518) 08:00 WIB, no_agent silent. Check-in points + drop scan + social pulse. Script: ~/.hermes/profiles/ayon/scripts/kalos/daily_kalos.py (SIWE auth offline, POST /v2/points/checkin, drops scan, feed pulse).
+- Kalos API notes: base https://api.kalos.fun; auth nonce->sign->verify JWT; checkin = POST /v2/points/checkin?account=<addr> (bukan /me/checkin); sosial POST butuh access_required; genesis collection supply 10/10, hypurr-testnet 4600/4600.
