@@ -6808,3 +6808,10 @@
 - Wallet: baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID reydenim.ai)
 - claimFree() tx: https://bscscan.com/tx/0x4c3e1fc9a4e2619ea39989d07bc5937770122b078161a46510ee6d987d071c64
 - Dapat 50,000 RUNINAI, gas 0.0000070 BNB. Status: ✅ free share claimed (1/1 per Agent ID).
+
+## Kalos (kalos.fun) - 2026-11-01 - REGISTERED
+- Reward:  airdrop, cost 0 | Elysium testnet (chain 99801), NFT marketplace + DEX
+- Referral: access (META STAR) | Join #92854 | genesisWhitelist pending
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | username osbornrdx
+- Path: inline ethers UMD (CSP-safe) -> SIWE sign -> JWT -> registration via PROXY (IP VPS kena signup_origin_limit 3)
+- Remaining: daily faucet, NFT mint/swap/social/feedback tasks
