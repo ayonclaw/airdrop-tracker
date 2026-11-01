@@ -6796,3 +6796,10 @@
 - Status: FREE CLAIMED 40,000 QTARDS · wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 · agent reydenim.ai
 - X post: https://x.com/osbornrdx/status/2116906277347692914
 - TX: 0x55851ca67094004351145a5bc41765c46b1e747473a6c0d9ef8c00b8841bb74b (gas 158,819)
+
+## Hood Port (hoodport.com) - 2026-11-01 - APPROVED
+- Reward: boarding pass 999 NFT (Robinhood Chain), mint TBA | X: @Hoodportrh
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | Code FR6EYS
+- Tasks: follow/like/rt/reply + wallet = ALL DONE, approved=true, passNo 1252, catch Mahi-mahi Uncommon
+- Proof reply: https://x.com/osbornrdx/status/2116944751190798698 | pass https://hoodport.com/p/FR6EYS
+- Note: approvedCount 1248 > supply 999 -> csak 999 pertama yang dapat slot mint
