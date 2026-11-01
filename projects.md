@@ -6515,6 +6515,15 @@
 - **Action:** Moved to output/done/ — TG bot automation requires Telethon userbot pipeline (separate from web waitlist pipeline). Not executed in this cron run.
 - **Status:** ⚠️ TG-BOT — needs separate Telethon execution pipeline. Manual steps: open bot in Telegram, complete tasks, submit BSC address `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 
+### #516 Mars Nexus Identity Card (marsnexus.fun) — 9,999 supply · Free Mint #1 (BSC) — ⛔ SKIPPED (session expired mid-flow)
+- **Date:** 2026-11-01 | **URL:** https://marsnexus.fun | **Reward:** Mars identity card NFT, card #1 free (gas only) | **Source:** @MarsNexusd | **Track:** onchain
+- **Recon done:** NFT 0xC4059D2F9F6F86695896e68F3E73E1e6cC3791c8 (v2, deployed), Agent registry 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F, quote() = minted 0/price 0/remaining 5, paused=0, activated=1, handle reydenim OK, balance 0.00016 BNB cukup.
+- **Mint flow:** mintPaid((uint8,uint8,uint256,uint256,uint256,address)) sel 0x1075abb2, ordinal=1, method=0, maxAmount=0, feeCap=0, value=0 (sponsored), deadline ts+300, inviter zero-addr. eth_estimateGas=378,040. eth_call sim OK (tokenId 5782+).
+- **Attempts:** TX#1 bug typo shell ($CALLLDATA) → empty transfer, gas wasted 0.0000025 BNB. TX#2 correct calldata gasLimit 453k → REVERT @91,116 gas. TX#3 gasLimit 400k → REVERT @91,116. TX dengan parameter identik dari wallet lain SUKSES (gasUsed 379,184) di block berikutnya → indikasi treasury/VRF budget kosong pada waktu itu.
+- **Blocker:** baw session expired saat percobaan ke-4 — butuh QR pairing ulang. Rey: "skip aja mars nft" → SKIP.
+- **Gas spent total:** ~0.000021 BNB (~$0.015). No NFT minted.
+- **Verdict:** ⛔ SKIPPED — kalau mau retry, rules: free-mint agentic max 3 attempts, revert 2x = stop.
+
 ## ℹ️ INFO / PASSIVE CAMPAIGNS
 
 ### QUIP Network — Mindshare & Quest Campaigns (msg 129049) — ℹ️ PASSIVE / ENDING SOON
@@ -6727,6 +6736,27 @@
 - **BscScan:** [NFT tx](https://bscscan.com/tx/0xa9fd5ba5593fd9e00e2303380249996ad9b92d32f1749b53a5b5928f400dd7b9) | [PAI #8602](https://bscscan.com/token/0x7638Bf791c601152A0E21899B1192cf2F7fe2348?a=8602) | [$PRINTER transfer](https://bscscan.com/token/0x7639928DAD4f120752CEaEb0a4e60e0f33f9B30A?a=0x888db97d0dd291c5f0c99f417f143ca279ac29a1)
 - **Status:** ✅ DONE — First free mint completed via Binance Agentic Wallet with registered Agent ID. No X tasks required (agent-gated design).
 
+### #519 FAGENT Mint (fagent.online/mint) — Genesis Free + Paid Mint on BSC (msg 129085) — ⏳ TRACKING (Mint NOT OPEN)
+- **Date:** 2026-11-01 | **URL:** https://fagent.online/mint | **Reward:** Free: 50,000 FAGENT (4,444 spots, 1 per Agent ID) + Paid: 3 FIST = 50,000 FAGENT (10,000 spots) | **Source:** @airdropfind drop 129085 | **X:** [@fistagent_bnb](https://x.com/fistagent_bnb) | **Track:** timed-mint (future)
+- **Type:** Type 5 (TIMED-MINT) — BSC mainnet mint page. Both free and paid tiers show "未开始" (Not started). "Contracts deployed · Mint not open". No waitlist registration — mint activates on-chain via manager transaction.
+- **Current state (MCP Chrome + JS recon):**
+  - Contract: FAGENT `0x0c876f2F7c44cdE660Ab77BD2022537a305E0220` (BSC mainnet, verified on BscScan)
+  - Free tier: 4,444 shares × 50,000 FAGENT each (independent pool, gas only)
+  - Paid tier: 10,000 shares × 3 FIST = 50,000 FAGENT each
+  - Total initial supply: 1.1222B FAGENT (222.2M free + 500M paid + 400M liquidity)
+  - **Agent ID required:** Binance Agent Registry `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F` — ownership verified on-chain via `handleOf(address)` + `ownerOfHandle(string)`
+  - **Wallet connection:** Binance Web3 Wallet or Agentic Wallet (user has Agentic Wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` with handle `reydenim.ai`, Agent #39475)
+  - 72-hour window starts at mint activation; sellout of 10,000 paid shares closes free claims and attempts launch
+  - Failed launch (unsold after 72h) = full FIST refund for paid minters; free allocations become invalid
+- **No waitlist to fill** — this is a future on-chain mint event. No registration form, no X tasks, no email capture.
+- **Action required:** Monitor for mint activation. When live:
+  1. Connect Binance Agentic Wallet (Agent ID `reydenim.ai` verified) or Binance Web3 Wallet with Agent ID
+  2. Free claim: 1 share per Agent ID (50,000 FAGENT, gas only)
+  3. Paid mint: up to 9 base + 10 referral = 19 paid shares max (3 FIST each)
+  4. Confirm transaction in wallet
+- **Wallet for mint:** Binance Agentic Wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID `reydenim.ai`) — NOT airdrop_00
+- **Status:** ⏳ TRACKING — mint not open. No tasks executable now. Create cron when mint activation time is known or poll contract for phase change.
+
 ### #520 Outlaws Testnet Mint Announcement (ElysiumOutlaws) — ℹ️ INFO
 - **Date:** 2026-11-01 | **Source:** @airdropfind drop 129099 | **X:** [@ElysiumOutlaws](https://x.com/ElysiumOutlaws/status/2116542825248788949) | **Track:** future-mint
 - **Type:** Informational announcement only — no waitlist, no registration form, no tasks to execute.
@@ -6735,3 +6765,15 @@
 - **Status:** ℹ️ INFO — Track for mint window opening on 2026-11-02. Monitor for mint link/contract details when announced.
 - **Wallet:** Will need appropriate testnet wallet when mint opens (likely Solana or EVM testnet based on "Outlaws" branding).
 
+
+### #521 Amadeus Protocol Season 1 Closed (amadeus.xyz) — ℹ️ INFO (Season 1 ended, TGE late Nov 2026)
+- **Date:** 2026-11-01 | **Source:** @airdropfind drop 129100 | **X:** [@ama_protocol](https://x.com/ama_protocol/status/2116539038005952957) | **Track:** season-closed
+- **Type:** Type 13 (SEASON-CLOSED POINTS-CHECK) — Season 1 has ended. Final snapshot: **Nov 8, 23:59 UTC**. TGE planned for **late November 2026**. Season 1 has its own airdrop share calculated separately; Road to TGE not required to keep points.
+- **Action:** No registration, no waitlist, no tasks to execute. Track for token claim window opening post-TGE.
+- **Status:** ℹ️ INFO — informational update only. Season closed, points locked. Monitor for claim announcement.
+
+## ShibAgent ($SAGENT) — BNB Chain
+- Chain/Contract: BSC 56 · 0x24df7874ca006bc34898e779412f7b3c6b511693
+- Status: FREE CLAIMED 50,000 SAGENT (1/1 free share) · wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1
+- TX: 0x4c37c0e8b19935e92428a6eef55c7c768f25eadcfba681620da170edf1e0ae5d (gas 130,910 @ 0.05 gwei)
+- Next: paid 9x0.002 BNB = 0.018 BNB optional (belum eksekusi)
