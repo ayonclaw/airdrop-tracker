@@ -6835,3 +6835,8 @@
 - Result: +10,000,000 BNBbaby (token 0xd0079025a9bb66a7a1de991de2e4326faba35729), gas 0.0000065 BNB
 - X post for  bonus: https://x.com/osbornrdx/status/2116970799441883203 (verified w/ poster)
 -  bonus BLOCKED: Binance Square needs login session (not available), submission needs square URL + 3 screenshots
+
+## ElyAnt NFT (Elysium ecosystem) - 2026-11-02 - INFO (no actionable link)
+- Source: X @HanifF_28 (social mention, no URL/contract in tweet)
+- Context: claim HYPE faucet from @emsalettineth = raffle ticket for ElyAnt NFT FP 475
+- No mint URL, no contract, no form → nothing to execute. Ecosystem already tracked (Elysium testnet, Kalos, Torpor).
