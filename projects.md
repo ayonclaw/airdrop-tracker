@@ -6803,3 +6803,8 @@
 - Tasks: follow/like/rt/reply + wallet = ALL DONE, approved=true, passNo 1252, catch Mahi-mahi Uncommon
 - Proof reply: https://x.com/osbornrdx/status/2116944751190798698 | pass https://hoodport.com/p/FR6EYS
 - Note: approvedCount 1248 > supply 999 -> csak 999 pertama yang dapat slot mint
+
+## RuninAI (RUNINAI) — Freemint Agent ID — BSC 56
+- Wallet: baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID reydenim.ai)
+- claimFree() tx: https://bscscan.com/tx/0x4c3e1fc9a4e2619ea39989d07bc5937770122b078161a46510ee6d987d071c64
+- Dapat 50,000 RUNINAI, gas 0.0000070 BNB. Status: ✅ free share claimed (1/1 per Agent ID).
