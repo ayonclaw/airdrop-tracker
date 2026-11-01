@@ -6817,3 +6817,9 @@
 - Remaining: daily faucet, NFT mint/swap/social/feedback tasks
 - Kalos daily cron: kalos-daily (788fc9d1b518) 08:00 WIB, no_agent silent. Check-in points + drop scan + social pulse. Script: ~/.hermes/profiles/ayon/scripts/kalos/daily_kalos.py (SIWE auth offline, POST /v2/points/checkin, drops scan, feed pulse).
 - Kalos API notes: base https://api.kalos.fun; auth nonce->sign->verify JWT; checkin = POST /v2/points/checkin?account=<addr> (bukan /me/checkin); sosial POST butuh access_required; genesis collection supply 10/10, hypurr-testnet 4600/4600.
+
+## JINLI 锦鲤 (jinli.tech) - 2026-11-01 - FREEMINT DONE
+- BSC 56 | contract 0xd7a2567929da32cab052cf287522cd6e3d3ecfa2 (Sourcify verified)
+- claimFree() 0xf366afc9 | wallet agentic 0x888d...29A1 | tx 0xbb303640fab63466b19926aea4bacdd18c963ae325350b31c07dbef5080a8f2a
+- Result: +300,000 JINLI (freeAllocation verified), gas 0.0000065 BNB
+- Paid 9x 0.002 BNB skipped (no market yet, pure loss)
