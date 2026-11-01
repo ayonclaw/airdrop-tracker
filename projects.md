@@ -6711,3 +6711,18 @@
   2. Run `node scripts/mint.mjs --qty 1 --idempotency-key <uuid> --json` with Binance Agentic Wallet auth
   3. Or use MCP local server: `node mcp/server.mjs` then call `agentry_mint` with `execute:true`
 - **Wallet for mint:** Binance Agentic Wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID `reydenim.ai`)
+
+### #455 Printer Ai (PAI) FCFS Mint (agentprinter.netlify.app) — 10,000 supply · First mint free + $PRINTER tokens (msg 129083) — ✅ DONE
+- **Date:** 2026-11-01 | **URL:** https://agentprinter.netlify.app/#collection | **Reward:** 1 Printer Ai NFT (PAI) + 1,000,000 $PRINTER tokens (first mint free, gas only) | **Source:** @airdropfind drop 129083 | **X:** [@PrinterAi_BNB](https://x.com/PrinterAi_BNB) | **Track:** on-chain mint
+- **Type:** Type 21 (ON-CHAIN TESTNET TRADING / Direct Mint) — Agent-gated NFT mint on BNB Chain. Requires Binance Agent ID (handle: reydenim.ai, registered). No waitlist form, no X tasks — direct mint via agent prompt.
+- **Contract:** NFT (PAI): 0x7638Bf791c601152A0E21899B1192cf2F7fe2348 | $PRINTER: 0x7639928DAD4f120752CEaEb0a4e60e0f33f9B30A | Agent ID Registry: 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F
+- **Wallet used:** Binance Agentic Wallet — EVM: 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (BNB Chain, holds reydenim.ai Agent ID)
+- **Execution:** 
+  1. Verified Agent ID: `reydenim.ai` (handle: reydenim) via `baw wallet agent-id`
+  2. Previewed mint(1) via `baw contract-call preview` — simulation success, estimated 1 PAI NFT (tokenId 8602) + 1M $PRINTER
+  3. Executed mint via `baw contract-call execute` — tx broadcasted
+- **Transaction:** `0xa9fd5ba5593fd9e00e2303380249996ad9b92d32f1749b53a5b5928f400dd7b9` | Block 0x7ce7e06 (130,936,582) | Status: ✅ Success (0x1)
+- **Gas used:** 161,918 @ ~3.3 gwei = ~0.00001268 BNB (~$0.009)
+- **Received:** Printer Ai #8602 (tokenId 0x219a) + 1,000,000 $PRINTER tokens (Phase 2 rate: 1M per free mint after global counter >1,000)
+- **BscScan:** [NFT tx](https://bscscan.com/tx/0xa9fd5ba5593fd9e00e2303380249996ad9b92d32f1749b53a5b5928f400dd7b9) | [PAI #8602](https://bscscan.com/token/0x7638Bf791c601152A0E21899B1192cf2F7fe2348?a=8602) | [$PRINTER transfer](https://bscscan.com/token/0x7639928DAD4f120752CEaEb0a4e60e0f33f9B30A?a=0x888db97d0dd291c5f0c99f417f143ca279ac29a1)
+- **Status:** ✅ DONE — First free mint completed via Binance Agentic Wallet with registered Agent ID. No X tasks required (agent-gated design).
