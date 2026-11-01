@@ -6777,3 +6777,10 @@
 - Status: FREE CLAIMED 50,000 SAGENT (1/1 free share) · wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1
 - TX: 0x4c37c0e8b19935e92428a6eef55c7c768f25eadcfba681620da170edf1e0ae5d (gas 130,910 @ 0.05 gwei)
 - Next: paid 9x0.002 BNB = 0.018 BNB optional (belum eksekusi)
+
+## GLYPH Airdrop (askglyph.chat) - 2026-11-01
+- Reward: 2100 $GLYPH (allocation confirmed via /api/me) | Source: Rey drop @niragustira
+- X: @osbornrdx | SOL wallet: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG
+- Done: follow, like, repost, reply, quote = 2100 allocation pending
+- Proof: reply https://x.com/osbornrdx/status/2116896465180295514 | quote https://x.com/osbornrdx/status/2116896927484936262
+- Pending: invite-2 (+1000, butuh 2 referrals via https://askglyph.chat/?ref=osbornrdx)
