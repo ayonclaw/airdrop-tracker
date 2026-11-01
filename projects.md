@@ -6823,3 +6823,8 @@
 - claimFree() 0xf366afc9 | wallet agentic 0x888d...29A1 | tx 0xbb303640fab63466b19926aea4bacdd18c963ae325350b31c07dbef5080a8f2a
 - Result: +300,000 JINLI (freeAllocation verified), gas 0.0000065 BNB
 - Paid 9x 0.002 BNB skipped (no market yet, pure loss)
+
+## BNBBaby (BNBBABY) — Freemint Agent ID — BSC 56
+- Wallet: baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID reydenim.ai)
+- free() tx: https://bscscan.com/tx/0x9fb2b2be893a145ab3b25a7ef83eb45d5635bcd6a4b49cf826bd38f989cc0636
+- Dapat 256 share (shares wallet 8317→8576), gas 0.00000117 BNB. Mint berbayar: 10 USDT/share (skip). Event 2 USDT: butuh submit wallet + X, ada di web.
