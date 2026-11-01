@@ -6660,3 +6660,54 @@
 - **X handle:** @osbornrdx (for any social tasks if added later)
 - **Proof:** Agent verification screenshot shows `✓ reydenim.ai · 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 | Minted 0 / 5 · Remaining 5 times`
 - **Status:** ⚠️ PENDING — hard wall (Binance Agent Wallet web QR pairing + mobile App confirmation). No browserless API path. All pre-mint verification complete; only final App confirmation needed.
+
+### #517 LAZABIT Mint (lazabit.com/mint) — 10,000 Masks · BNB Chain · TIMED MINT (msg 129079) — ℹ️ INFO (Mint not open yet)
+- **Date:** 2026-11-01 | **URL:** https://lazabit.com/mint | **Reward:** Free/paid mint (Tier 1 FREE, Tier 2-25 paid 0.00025-0.001 BNB) for 10,000 random-tier Masks earning $LAZA/hour from bounty pool | **Source:** @airdropfind drop 129079 | **X:** [@lazabit](https://x.com/lazabit) | **Track:** timed-mint
+- **Type:** Type 5 (TIMED-MINT) — "MINT • STAGE 2 OPENS SOON" — public timed mint on BNB Chain, no waitlist/registration form. Just connect wallet when mint opens.
+- **Details from page inspection (MCP Chrome):**
+  - Contract: `0x3048E07C057eF694D4e431154DafAd473d1AA18B` (BSC, verified on BscScan)
+  - Supply: 10,000 total across 6 tiers
+  - Tier breakdown: 
+    - #1 THE INTERN (TL 1): 4,000 / 4,000 — **FREE**
+    - #2-10 SEED SPILLER (TL 2): 2,500 / 2,500 — 0.00025 BNB
+    - #11-20 GAS GOBLIN (TL 4): 1,500 / 1,500 — 0.0005 BNB
+    - #21-30 PHISH FRY (TL 8): 1,000 / 1,000 — 0.001 BNB
+    - #31-40 NOT FOUND (TL 16): 800 / 800 — pricing TBA
+    - #41-50 ELITE (NOT) (TL 40): 200 / 200 — pricing TBA
+  - Per-wallet limit: 25 mints (first FREE, #2-10 0.00025, #11-20 0.0005, #21-25 0.001 BNB)
+  - "Connect wallet" button present — requires wallet connection to see exact mint time/quote
+  - "LOADING..." button disabled until wallet connected
+- **Action needed:** Wait for mint to open ("OPENS SOON"). When live:
+  1. Connect wallet (BNB Chain) via CloakBrowser + MetaMask
+  2. Click mint button for desired quantity
+  3. Confirm transaction
+- **Wallet:** airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM, BNB Chain)
+- **Status:** ℹ️ INFO — no tasks to execute now. Track for mint window opening. Will need cron at mint time if user wants to mint.
+
+### #518 AGENTRY (AGNT) Free Mint (agentrybaw.xyz) — BSC Mainnet · LIVE MINT (msg 129081)
+- **Date:** 2026-11-01 | **URL:** https://agentrybaw.xyz/ | **Reward:** Free mint — 420 AGNT per spot, up to 2 free spots per wallet (50 max per wallet), 10,000 free spots total | **Source:** @airdropfind drop 129081 | **X:** [@agentrybaw](https://x.com/agentrybaw) | **Track:** on-chain mint
+- **Type:** On-chain BSC-20 inscription mint via Gate contract
+- **Contracts:**
+  - Gate contract: `0x6a4d42E9FC8E948226cd588707332F41e23d2944` (BSC mainnet, verified)
+  - AGNT token: `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`
+- **Gate contract state (RPC verified):**
+  - Admission: OPEN (`admissionOpen() = true`)
+  - Total free spots: 10,000 | Minted so far: 6,364 | **Remaining: ~3,636 free spots**
+  - Tokens per mint: 420 AGNT
+  - Max spots per wallet: 50 | Free spots per wallet: 2
+  - Cost per mint (paid): 0.0003 BNB (after free spots exhausted)
+  - Per-wallet free minted: 0 (our wallet) → **2 free spots available**
+- **Wallet eligibility:**
+  - Binance Agentic Wallet: `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID: `reydenim.ai` ✅ claimed)
+  - AGNT balance: 1 token (already minted 1 previously)
+  - Agent ID registry balance: 1 (eligible for mint)
+  - BNB balance: ~0.000163 BNB (sufficient for gas, free mint requires 0 BNB value)
+- **MCP tools available:** `agentry_quote`, `agentry_mint`, `agentry_protocol_info`, `agentry_status` at `https://agentrybaw.xyz/api/mcp`
+- **Quote for qty=1:** freeQty=1, costWei=0 → **free mint available**
+- **Execution blocker:** The gate contract's mint function selector (`mint(uint256)` = 0x6a627842) is **NOT present in the contract bytecode**. The contract uses a different mint calldata format (likely BSC-20 inscription data embedded in transaction). `baw contract-call preview` with standard selectors reverts. The Agentry skill documents local CLI execution via `node scripts/mint.mjs --qty <n> --idempotency-key <uuid>` which constructs the correct calldata offline.
+- **Status:** ⚠️ PENDING — MINT LIVE with free spots available, but requires **local Agentry CLI tools** (Node.js + Agentry SDK) to construct correct mint calldata. VPS lacks these tools. All eligibility checks pass: wallet connected, Agent ID claimed, Developer Mode enabled, free quota available.
+- **Manual recipe (local machine with Node.js + Agentry CLI):**
+  1. Clone Agentry repo / install SDK
+  2. Run `node scripts/mint.mjs --qty 1 --idempotency-key <uuid> --json` with Binance Agentic Wallet auth
+  3. Or use MCP local server: `node mcp/server.mjs` then call `agentry_mint` with `execute:true`
+- **Wallet for mint:** Binance Agentic Wallet `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID `reydenim.ai`)
