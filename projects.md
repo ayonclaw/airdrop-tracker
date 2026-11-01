@@ -6790,3 +6790,9 @@
 - Funder: 0x37FDca51687c33d861BceFDdF33bd4325eD4B3A4 | payout: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
 - Blocked: semua wallet role=missing di HyperCore mainnet -> faucet gate butuh deposit 0.004 USDC/wallet
 - Plan: target 10 HYPE = $0.04 | target 100 = $0.24 | resume kapan pun ada modal
+
+## QTARDS ($QTARDS) — BNB Chain
+- Contract: airdrop 0x5072Ac02bAF59BC7C64117317e92a68dE73a680c · token 0x60e6337CEFacef8DaFe95e7330ec9dF923c14b53
+- Status: FREE CLAIMED 40,000 QTARDS · wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 · agent reydenim.ai
+- X post: https://x.com/osbornrdx/status/2116906277347692914
+- TX: 0x55851ca67094004351145a5bc41765c46b1e747473a6c0d9ef8c00b8841bb74b (gas 158,819)
