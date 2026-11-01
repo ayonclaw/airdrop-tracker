@@ -6784,3 +6784,9 @@
 - Done: follow, like, repost, reply, quote = 2100 allocation pending
 - Proof: reply https://x.com/osbornrdx/status/2116896465180295514 | quote https://x.com/osbornrdx/status/2116896927484936262
 - Pending: invite-2 (+1000, butuh 2 referrals via https://askglyph.chat/?ref=osbornrdx)
+
+## chainfarm (HYPE Elysium testnet farming) - 2026-11-01 - SKIPPED (no capital)
+- Tool: /home/ubuntu/chainfarm/chainfarm | Setup selesai (venv+config+keystore chmod600)
+- Funder: 0x37FDca51687c33d861BceFDdF33bd4325eD4B3A4 | payout: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- Blocked: semua wallet role=missing di HyperCore mainnet -> faucet gate butuh deposit 0.004 USDC/wallet
+- Plan: target 10 HYPE = $0.04 | target 100 = $0.24 | resume kapan pun ada modal
