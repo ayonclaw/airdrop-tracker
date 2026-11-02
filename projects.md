@@ -6920,3 +6920,9 @@
 - **Triage:** tweet klaim waitlist "1,024 Genesis free mint NFTs + $10k prize pool". Intake teknis: DNS resolve 187.7.30.17 tapi port 443 CLOSED, curl + Chrome (MCP CDP) dua-duanya ERR_CONNECTION_TIMED_OUT — situs mati total saat eksekusi.
 - **Eksekusi:** ⛔ BLOCKED — tidak ada halaman/form/API yang bisa diakses. Bukan verdict scam (tidak ada bukti approve/mint bermasalah); murni server down.
 - **Catatan:** retry kalau situs hidup lagi; kalau muncul form waitlist, jalankan via airdrop-worker (email airdropkarbiters@gmail.com, wallet baw Rey kalau diminta).
+
+### Vaelorns x Hazels Drops — 50 GTD Free Mint (tweet 2117274957612986427) — ⛔ SKIP
+- **Date:** 2026-11-02 | **URL:** https://studio.hazels.io/drops/vaelorns | **Reward:** 50 GTD free mint spots, 10k-supply pixel NFT, Ethereum, free + gas | **Source:** @Vaelorns tweet 2117274957612986427 (detected by x-mint-radar)
+- **Eligibility:** staker-only raffle — "Who can join: NFT stakers", "behind one door: a staked Hazels NFT". Hazels NFT contract 0x67Ee6daA43D06d5BaA32FcFB4bCa0a441facd59d (1,337 supply). balanceOf revert on both Rey wallets (0x8CCE…282D, 0x888d…29a1) = 0 Hazels NFT held.
+- **Entry flow:** X OAuth connect (`/api/auth/x/start` -> x.com/i/oauth2/authorize, client_id clB1bGJUNDNiLTNvcmNfS3JrR1I6MTpjaQ) then raffle entry. Session @osbornrdx live but consent click "Izinkan aplikasi" cannot be automated headless (GET approval=403, POST /i/api/2/oauth2/authorize -> "Missing required parameter [code]"); CDP 9222 Chrome died repeatedly during run.
+- **Verdict:** NOT SCAM — legit project (verified contract on hazels.io/addresses). Ineligible: Rey holds/stakes 0 Hazels NFT. No mint contract deployed yet ("CONTRACT TBA"). Revisit only if Rey acquires a staked Hazels NFT.
