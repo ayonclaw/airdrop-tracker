@@ -5044,7 +5044,7 @@
 ### #435 NFT Kalos Genesis Mainnet — WL NFT ON MAINNET (msg 128587) — ⚠️ PENDING
 - **Date:** 2026-10-19 | **URL:** https://www.kalos.fun/ | **Reward:** WL NFT ON MAINNET | **Source:** @airdropfind drop 128587 | **X:** @osbornrdx | **Track:** waitlist
 - **Type:** Type 3 (WEB3-WALLET) — requires wallet connection (MetaMask/Phantom) to create account and proceed with faucet claim, NFT purchase, and chat verification.
-- **Status:** ⚠️ PENDING — wallet connection failed in MCP Chrome; needs CloakBrowser with real wallet extension (MetaMask) installed and unlocked with airdrop_00 EVM wallet.
+- **Status:** ✅ DONE (2026-11-03) — beli NFT #4481 (Mutant Ape Yacht Club) @0.19 HYPE via marketplace, tx `0x9df82b8e8c63ed3546659f7e22a355bec90d2f25f357f00707f1dd988760b68c` status 1, ownerOf(4481)=0x8CCE…282D. Wallet connect via injected EIP-6963 provider (signer 127.0.0.1:8000).
 ### #436 Q Lounge Wallet — MOBILE-ONLY (msg 128598) — ⛔ SKIPPED
 - **Date:** 2026-10-19 | **URL:** https://affiliate.dj-maxrex.com/i/335331101192 | **Reward:** MQP Points → $MQX (TBA) | **Source:** @airdropfind drop 128598 | **X:** @osbornrdx | **Track:** waitlist
 - **Type:** Type 1 (MOBILE-ONLY) — CTA redirects to Play Store/App Store or requires app download; see manual steps.
