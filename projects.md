@@ -6887,3 +6887,8 @@
 - **Date:** 2026-11-02 | **Source:** @Coco_Airdrop tweet 2117206190086332683 | **Reward:** 0.1 HYPE testnet daily | **Track:** testnet
 - **Triage:** domain kinetiq.xyz official Kinetiq (Hyperliquid L2), Vercel-hosted, NOT scam — 0 red flags.
 - **Blocker:** faucet "Connect wallet" butuh HyperCore mainnet role (deposit USDC per wallet); baw wallet tidak bisa personal_sign/SIWE. Alternatif gratis di halaman: faucet.quicknode.com/hyperliquid/testnet + app.hyperliquid-testnet.xyz/drip.
+
+### #531 Binance Rewards Hub / Super Box Voucher (in-app event, no public link) — ⏭️ SKIP (tidak ada aksi otomatis)
+- **Date:** 2026-11-02 | **Source:** @owynhere tweet 2117219922359316648 | **Reward:** $10 USDC voucher di Binance Rewards Hub
+- **Triage:** bukan free-mint/on-chain — promo event in-app Binance (Super Box / Rewards Hub). Tidak ada kontrak, URL mint, atau form. 0 red flag tapi 0 aksi.
+- **Catatan:** reward hanya claimable manual di Binance App; tidak automatable. Proof sosial: replies_pro=1, replies_con=0 (user lain dapat voucher serupa).
