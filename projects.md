@@ -6926,3 +6926,10 @@
 - **Eligibility:** staker-only raffle — "Who can join: NFT stakers", "behind one door: a staked Hazels NFT". Hazels NFT contract 0x67Ee6daA43D06d5BaA32FcFB4bCa0a441facd59d (1,337 supply). balanceOf revert on both Rey wallets (0x8CCE…282D, 0x888d…29a1) = 0 Hazels NFT held.
 - **Entry flow:** X OAuth connect (`/api/auth/x/start` -> x.com/i/oauth2/authorize, client_id clB1bGJUNDNiLTNvcmNfS3JrR1I6MTpjaQ) then raffle entry. Session @osbornrdx live but consent click "Izinkan aplikasi" cannot be automated headless (GET approval=403, POST /i/api/2/oauth2/authorize -> "Missing required parameter [code]"); CDP 9222 Chrome died repeatedly during run.
 - **Verdict:** NOT SCAM — legit project (verified contract on hazels.io/addresses). Ineligible: Rey holds/stakes 0 Hazels NFT. No mint contract deployed yet ("CONTRACT TBA"). Revisit only if Rey acquires a staked Hazels NFT.
+
+### #536 MEXC Predict Celtics vs Rockets Giveaway (@MEXC_Predict tweet 2117282510652768539) — ✅ X-TASKS DONE / ⛔ FORM BLOCKED (butuh MEXC UID)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MEXC_Predict/status/2117282510652768539 | **Form:** https://forms.gle/ukkaw39pYzWF1xA58
+- **Triage:** MEXC resmi (mexc.com), Google Forms. 0 red flag — bukan mint, giveaway 10×10 USDT via form. Deadline Nov 3, 09:30 UTC+8.
+- **X tasks (wallet N/A, sosmed only):** follow @MEXC_Predict ✅ (session sudah follow, tombol follow tidak muncul) · like ✅ · repost ✅ · reply pick BOS ✅ — proof: https://x.com/osbornrdx/status/2117325622402048052
+- **Form:** 3 field — MEXC UID (required), pemenang (radio: Boston Celtics), X handle (@osbornrdx). BLOCKED: Rey belum punya akun MEXC, UID tidak ada di kredensial manapun. Signup Google OAuth attempt 4x gagal — FedCM native prompt (ogs.google.com widget) tidak bisa di-automate via CDP.
+- **Next:** Rey kasih MEXC UID (atau daftar manual sekali) → isi form sebelum deadline. Script siap: ~/.hermes/profiles/ayon/scripts/x-mint-radar/mexc_verify_form.py
