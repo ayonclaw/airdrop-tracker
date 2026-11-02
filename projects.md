@@ -6977,3 +6977,12 @@
 - **Eksekusi X tasks:** like ✅ · repost ✅ · post @MEXCZH #mexccard ✅ (reply via Draft.js editor gagal 3x — insertText tidak landing; pakai composer + execCommand insertText, berhasil)
 - **Proof:** like/repost di https://x.com/MEXCZH/status/2117241425243033823 · post https://x.com/osbornrdx/status/2117343638082777204
 - **Puzzle:** butuh daftar + kumpulkan potong puzzle via Mexc Card — BLOCKED tanpa akun MEXC. Engagement portion tuntas.
+
+### #543 MGBX Global Trading King Competition S2 — 300K USDT (@MGBX_Global tweet 2117183513162350683) — ✅ X-TASKS DONE / ⛔ LEADERBOARD BLOCKED (butuh akun + volume trading)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MGBX_Global/status/2117183513162350683
+- **Triage:** MGBX_Global resmi, trading competition Nov 1–30 2026 (SGT), overall LB top 200 = 80% pool, new-user LB top 50 = 20%. Bukan mint/on-chain — sosmed + CEX trading. 0 red flag teknis.
+- **Eksekusi X tasks:** like ✅ · repost ✅ · follow @MGBX_Global sudah ada — proof engagement di https://x.com/MGBX_Global/status/2117183513162350683
+- **Join link:** t.co/qQPLUhAOKk (mgbx.com competition page). BLOCKED: butuh akun MGBX + trading volume — Rey tidak punya akun MGBX. Engagement tuntas.
+
+### #544 MEXCZH FAQ Mexc Card cashback (@MEXCZH tweet 2117141658987094159) — ⏭️ SKIP (INFO ONLY)
+- **Date:** 2026-11-03 | **Triage:** tweet FAQ informatif (hitung kuota multi-kartu, cashback), quote artikel @yummy_mexc. Tidak ada task/giveaway/mint — tidak ada aksi.
