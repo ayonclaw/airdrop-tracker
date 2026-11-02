@@ -6991,3 +6991,10 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MGBX_Global/status/2117176149600293062
 - **Triage:** akun resmi MGBX_Global. Kampanye VIP: up to 200 USDT trading airdrop + 300 USDT upgrade fee credit + hadiah eksklusif untuk upgrade VIP 3+ + extra level boost. Periode 1–30 Nov 2026 (SGT). Bukan mint/on-chain. 0 red flag teknis.
 - **Status:** LAPORKAN — Rey belum punya akun MGBX (lihat #543). Reward besar tapi mensyaratkan trading volume/deposit buat naik VIP tier — Rey putusin mau daftar atau skip.
+
+### #546 ITIA Genesis WL — 1111 pcs Free Mint (@IThinkItsArt / @hoper0x) — ⏭️ LAPORKAN (butuh auth app + WL form)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/hoper0x/status/2117331813316301012 · pinned: https://x.com/IThinkItsArt/status/2115368016481329218
+- **Triage:** akun @IThinkItsArt established (join Okt 2024, 32,8rb followers, koleksi existing di OpenSea opensea.io/ITIA_Official/created). Genesis collection: 1111 pieces · free mint · WL only · apply via itiaverse.ithinkitsart.com/drops · deadline 18 Nov 2026 · mint date TBA. 0 red flag teknis (bukan vercel/workers hosting; domain sendiri + imprint/privacy GDPR).
+- **Gate:** halaman /drops = "HOLDER ACCESS — holder area for ITIA NFT owners. Sign in with X / wallet / email link". X OAuth hidup (Supabase auth, client X3lqcjdkRDB4YWRLNDl5ZE9tYVA6MTpjaQ) — consent screen muncul untuk @osbornrdx, scope READ-ONLY: users.email + tweet.read + users.read + offline.access. Tidak ada scope tulis/post.
+- **Blocker:** (1) authorize app pihak ketiga di akun @osbornrdx + isi form WL = kategori form signup → keputusan Rey. (2) Kemungkinan holder-gated (butuh ITIA NFT existing) — belum terverifikasi karena belum auth.
+- **Status:** LAPORKAN — Rey putusin: authorize app (read-only, bisa di-revoke) lalu apply, atau skip.
