@@ -6909,3 +6909,10 @@
 ### ⏭️ #534 Binance $100 Trading Fee Rebate Voucher (@owynhere tweet 2117249125544808736) — ⏭️ SKIP (CEX event, no link/action)
 - **Date:** 2026-11-02 | **Triage:** promo in-app Binance (register event → voucher setelah distribusi). Tweet tanpa URL, tanpa kontrak, tanpa form. 0 red flag tapi 0 aksi otomatis.
 - **Catatan:** sama pola dgn #531/#533 — reward claimable manual di Binance App. Akun Mosyafik UID 89547875. Tidak automatable.
+
+### #535 ROBINHACKERS Early List (robinhackers.xyz, Robinhood Chain 4663) — ✅ DONE (90 pts, rank 13)
+- **Date:** 2026-11-02 | **URL:** https://robinhackers.xyz | **Source:** X free-mint radar drop 2117258069348663797 (@RobinHackers) | **Wallet:** baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 | **Track:** waitlist
+- **Triage:** tweet klaim "2,222 NFT FREE MINT" — situs TIDAK punya NFT mint. Aktual: memecoin bonding-curve game FISHESRH (token 0x098e9efbf4d65cbfc27130c1bf8a09b007659dbf, launchpad ponsfamily.com) tier bayar $1–$1000 (rod→mothership) + Early List gratis berbasis poin. 0 red flag teknis; tidak ada approval/mint berbayar. Free path = early list + task X.
+- **Eksekusi:** register via /api/early/register (address + xHandle osbornrdx) → follow @RobinHackers (+10) → like tweet 2117258069348663797 (+20) → quote (+50) → daily (+10) = **90 pts, rank 13/leaderboard**.
+- **Proof X:** follow https://x.com/RobinHackers · like https://x.com/osbornrdx/status/2117258069348663797 · quote https://x.com/osbornrdx/status/2117272690092572864
+- **Catatan:** tier bayar (min $1) skip — tanpa reward guarantee; early list gratis sudah maxed. Claim $0.05 min hanya untuk pemegang token (claimEnabled) — butuh beli token dulu.
