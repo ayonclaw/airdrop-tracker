@@ -6878,3 +6878,7 @@
 - s.kaito.ai / studio.kaito.ai — platform legit (Kaito Yaps), campaign Primus Labs/Bagel/Starknet, deadline 9-21 Nov
 - Bukan mint/claim on-chain — butuh konten original + submit manual. Zero-manual tidak feasible di cron
 - Action: SKIP (needs manual content), bukan scam
+### #SKIP Believers NFT (believers-virid.vercel.app) — 1,111 supply · "FREE MINT" (X radar drop 2117201881714049517, @LensMoso) — ⛔ SKIP
+- **Date:** 2026-11-02 | **URL:** https://believers-virid.vercel.app/#/mint | **Contract:** 0xEfd3d7f8A567Df6dFe2D06A01f1cf7DAef04d5b2 (BSC) | **Source:** X free-mint radar | **X:** @AgentBelievers | **Track:** on-chain
+- **Type:** Type 2 (ON-CHAIN) — ERC721 on BSC, name "Believers" / symbol "BELIEVERS", owner 0xe4713a540d830a1cdcca698a116cbe1f321da3c0.
+- **Triage:** 2 red flags = SCAM. (1) Domain vercel.app (pitfall log auto +1). (2) Project X @AgentBelievers dibuat 2026-11-01 (~1 hari), 8 followers, unverified → team anon. eth_call mint() dari baw wallet 0x888d…29a1 revert "sold out" → tidak bisa dieksekusi. Tidak ada dana keluar.
