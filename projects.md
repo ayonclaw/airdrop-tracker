@@ -6963,3 +6963,17 @@
 - **Eksekusi X tasks:** like ✅ · repost ✅ · follow @mexc_mena sudah ada (tombol follow tidak muncul) — proof engagement di https://x.com/mexc_mena/status/2117224725327827170
 - **Task asli:** selesaikan tugas referral → screenshot hasil → komentar dengan **MEXC UID**. BLOCKED: Rey belum punya akun MEXC (UID tidak ada di ~/airdrop/credentials/). Signup Google OAuth 4x gagal sebelumnya (FedCM native prompt tidak bisa di-automate via CDP).
 - **Next:** Rey kasih MEXC UID (atau daftar sekali manual) → komentar + screenshot referral. Script siap: ~/.hermes/profiles/ayon/scripts/x-mint-radar/mexc_mena_referral_tasks.py
+
+### #541 MEXC Oceania Black Prizeday — $200K rewards (@MEXCOceania tweet 2117162000308445359) — ✅ X-TASKS DONE / ⛔ CAMPAIGN BLOCKED (butuh akun MEXC)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MEXCOceania/status/2117162000308445359
+- **Triage:** akun resmi MEXC Oceania, CEX campaign (claw machine, iPhone Duo/AirPods 5/500 USDT). Bukan mint/on-chain — sosmed + campaign task. 0 red flag teknis.
+- **Eksekusi X tasks:** like ✅ · repost ✅ · follow @MEXCOceania sudah ada · reply "Black Prizeday claw time 🦞🎁 $200K prize pool, let's go!" ✅
+- **Proof:** like/repost di https://x.com/MEXCOceania/status/2117162000308445359 · reply https://x.com/osbornrdx/status/2117342655495696805
+- **Campaign page:** t.co/8LjNn9Igxf → https://www.mexc.com/campaigns/LUCKYCLAWNOV (daily missions + claw chances). BLOCKED: butuh akun/login MEXC — Rey belum punya akun MEXC (lihat #536). Engagement portion sudah tuntas.
+
+### #542 MEXC ZH 雙11 Mexc Card Puzzle — Switch 2/AirPods 4/iPhone Duo (@MEXCZH tweet 2117241425243033823) — ✅ X-TASKS DONE / ⛔ PUZZLE BLOCKED (butuh akun MEXC)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MEXCZH/status/2117241425243033823
+- **Triage:** akun resmi MEXC 華語, puzzle event 100% menang (4 potong = basic pool, 6 potong = premium pool). Bukan mint/on-chain. 0 red flag teknis.
+- **Eksekusi X tasks:** like ✅ · repost ✅ · post @MEXCZH #mexccard ✅ (reply via Draft.js editor gagal 3x — insertText tidak landing; pakai composer + execCommand insertText, berhasil)
+- **Proof:** like/repost di https://x.com/MEXCZH/status/2117241425243033823 · post https://x.com/osbornrdx/status/2117343638082777204
+- **Puzzle:** butuh daftar + kumpulkan potong puzzle via Mexc Card — BLOCKED tanpa akun MEXC. Engagement portion tuntas.
