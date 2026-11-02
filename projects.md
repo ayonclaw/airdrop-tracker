@@ -6864,3 +6864,17 @@
 - Source: X @yff5188 tweet 2117070480045924442 (narasi Binance diretas, minta-minta ke hacker)
 - Red flags (score 4): klaim alamat 0x8532FA14ACAf483729C449b8458aedDb900543D4 "~197.460 ETH" — eth_getBalance nyata = 0x31d6a25b7b2aa wei (~0.0000219 ETH), klaim palsu 9 miliar kali; social engineering drainer ("Matcha wallet tanpa KYC" + instruksi transfer); evasi filter ("ubah ke huruf Hangul"); tanpa URL/mint
 - Action: quarantine, TIDAK dieksekusi
+
+## X Radar Scan - 2026-11-02 (run 2) - 2 drop triaged, 0 executed
+
+### ⛔ Zorith (BSC 0x3e31b2718f64e131265dc6ba84fdafa65438ae45) - FREE SOLD OUT
+- Source: X @XiaoMei_laika tweet 2117178354734338160 (#Zorith Mint Gratis, freeMint value=0, 5/wallet)
+- Pre-flight: kontrak verified (Sourcify); freeMinted()=1946 == FREE_SUPPLY()=1946; freeLeft()=0; freeLimitNow() turun 5->2; hasAgentId(0x888d…29a1)=1 (gate lolos); freeClaimed(wallet)=0
+- Simulasi: eth_call freeMint() + estimateGas revert 0x52df9fe5 (free pool habis). Sisa = paid 0.012 BNB/buah
+- Wallet baw BSC: 0.0000569 BNB (~$0.04) — tidak cukup buat paid tier
+- Action: SKIP, 0 gas burned
+
+### ⏭️ Kaito Studio Creator Campaigns (@9Xvenom tweet 2117196170435121429)
+- s.kaito.ai / studio.kaito.ai — platform legit (Kaito Yaps), campaign Primus Labs/Bagel/Starknet, deadline 9-21 Nov
+- Bukan mint/claim on-chain — butuh konten original + submit manual. Zero-manual tidak feasible di cron
+- Action: SKIP (needs manual content), bukan scam
