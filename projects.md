@@ -6986,3 +6986,8 @@
 
 ### #544 MEXCZH FAQ Mexc Card cashback (@MEXCZH tweet 2117141658987094159) — ⏭️ SKIP (INFO ONLY)
 - **Date:** 2026-11-03 | **Triage:** tweet FAQ informatif (hitung kuota multi-kartu, cashback), quote artikel @yummy_mexc. Tidak ada task/giveaway/mint — tidak ada aksi.
+
+### #545 MGBX VIP Autumn Upgrade Rewards — up to 500 USDT (@MGBX_Global tweet 2117176149600293062) — ⏭️ LAPORKAN (butuh akun MGBX + status VIP)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MGBX_Global/status/2117176149600293062
+- **Triage:** akun resmi MGBX_Global. Kampanye VIP: up to 200 USDT trading airdrop + 300 USDT upgrade fee credit + hadiah eksklusif untuk upgrade VIP 3+ + extra level boost. Periode 1–30 Nov 2026 (SGT). Bukan mint/on-chain. 0 red flag teknis.
+- **Status:** LAPORKAN — Rey belum punya akun MGBX (lihat #543). Reward besar tapi mensyaratkan trading volume/deposit buat naik VIP tier — Rey putusin mau daftar atau skip.
