@@ -6916,3 +6916,7 @@
 - **Eksekusi:** register via /api/early/register (address + xHandle osbornrdx) → follow @RobinHackers (+10) → like tweet 2117258069348663797 (+20) → quote (+50) → daily (+10) = **90 pts, rank 13/leaderboard**.
 - **Proof X:** follow https://x.com/RobinHackers · like https://x.com/osbornrdx/status/2117258069348663797 · quote https://x.com/osbornrdx/status/2117272690092572864
 - **Catatan:** tier bayar (min $1) skip — tanpa reward guarantee; early list gratis sudah maxed. Claim $0.05 min hanya untuk pemegang token (claimEnabled) — butuh beli token dulu.
+- **Date:** 2026-11-02 | **URL:** https://plunderport.fun/early-access | **Source:** X free-mint radar drop 2116843477497758162 (@PlunderPort) | **Wallet:** n/a | **Track:** waitlist
+- **Triage:** tweet klaim waitlist "1,024 Genesis free mint NFTs + $10k prize pool". Intake teknis: DNS resolve 187.7.30.17 tapi port 443 CLOSED, curl + Chrome (MCP CDP) dua-duanya ERR_CONNECTION_TIMED_OUT — situs mati total saat eksekusi.
+- **Eksekusi:** ⛔ BLOCKED — tidak ada halaman/form/API yang bisa diakses. Bukan verdict scam (tidak ada bukti approve/mint bermasalah); murni server down.
+- **Catatan:** retry kalau situs hidup lagi; kalau muncul form waitlist, jalankan via airdrop-worker (email airdropkarbiters@gmail.com, wallet baw Rey kalau diminta).
