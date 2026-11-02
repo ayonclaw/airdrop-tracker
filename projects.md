@@ -6840,3 +6840,12 @@
 - Source: X @HanifF_28 (social mention, no URL/contract in tweet)
 - Context: claim HYPE faucet from @emsalettineth = raffle ticket for ElyAnt NFT FP 475
 - No mint URL, no contract, no form → nothing to execute. Ecosystem already tracked (Elysium testnet, Kalos, Torpor).
+
+## BAOracle (baoracle.trade)
+- Type: Agent-gated freemint (BNB Chain), mint #1 = 0 BNB, gas only
+- Gate: .ai Agent ID (SPACE ID registry) — wallet baw lolos (balanceOf=1)
+- Mint: mint(1) qty 1, quote 0 BNB, mintOpen=true
+- Status: ✅ CLAIMED via agentic wallet
+- Tx: 0x5023f42a6120a809008b882b69bb7d1bedd74bc7900877762d50b8c145a8828f (block 131179233, gasUsed 235,881, receipt 0x1)
+- Balance: BAO-NFT balanceOf(0x888d…) = 1; totalMinted 8,408/20,000
+- Next: reveal(uint256) after ≥2 blocks (tier Jade/Silver/Gold/Dragon); tiers #2-10 = 0.0002 BNB (skip kecuali Rey mau)
