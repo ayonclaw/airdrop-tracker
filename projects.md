@@ -6949,3 +6949,17 @@
 - **Flow:** (1) pilih 7 pick di bracket → (2) isi X Username + **MEXC UID** → Download My Picks → share di X tag @MEXC_Predict → submit post link. (3) join Telegram.
 - **Blocker:** form "Download My Picks" mewajibkan **MEXC UID** — Rey belum punya akun MEXC (signup Google OAuth FedCM gagal 4x, lihat #536). Tanpa UID card gak bisa di-generate → gak bisa share + submit.
 - **Next:** Rey daftar MEXC sekali (kasih UID) → script ulangi: isi pick (mis. GEN champion), generate card, post X, submit link.
+
+### #540 Pocket / @pocketpad_io — 👀 WATCHLIST (pre-launch, 2500 supply)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar (@GuarEmperor watchlist tweet 2117314923676242025) | **Tweet:** https://x.com/GuarEmperor/status/2117314923676242025
+- **Project:** Pocket by @huntclubhero — NFT collection yang hidup di Apple/Google Wallet, ERC-8426, supply 2,500 seeds. Mekanik: mint seed → water harian → plant hidup/mati → reveal Spirit (rarity by dedication, bukan luck). WalletChi testnet players rewarded.
+- **Status teknis:** situs https://pocketpad.io LIVE tapi masih teaser (no mint page, no contract address, no form/WL signup yang ke-detect). Community sebut "need to lock in that WL" — WL mechanism belum publik.
+- **Aksi:** belum ada yang bisa dieksekusi (0 URL mint, 0 kontrak). Monitor tiap run radar; kalau mint page/WL live → pre-flight gate via baw (0x888dB97d0dD291c5F0C99F417f143ca279AC29a1).
+- **Catatan:** tweet aslinya watchlist general (juga mention @kalosfun @Elyziumaa @AscendLaunch untuk Elysium) — watchlist saja, bukan drop instruksi.
+
+### #540 MEXC MENA Referral Event — 20 USDT prizes (@mexc_mena tweet 2117224725327827170) — ✅ X-TASKS DONE / ⛔ KOMENTAR BLOCKED (butuh MEXC UID)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/mexc_mena/status/2117224725327827170
+- **Triage:** akun resmi MEXC MENA, referral giveaway 20 USDT. 0 red flag teknis. Bukan mint/on-chain — sosmed + referral task. Link t.co di tweet resolve balik ke tweet itu sendiri (self-link).
+- **Eksekusi X tasks:** like ✅ · repost ✅ · follow @mexc_mena sudah ada (tombol follow tidak muncul) — proof engagement di https://x.com/mexc_mena/status/2117224725327827170
+- **Task asli:** selesaikan tugas referral → screenshot hasil → komentar dengan **MEXC UID**. BLOCKED: Rey belum punya akun MEXC (UID tidak ada di ~/airdrop/credentials/). Signup Google OAuth 4x gagal sebelumnya (FedCM native prompt tidak bisa di-automate via CDP).
+- **Next:** Rey kasih MEXC UID (atau daftar sekali manual) → komentar + screenshot referral. Script siap: ~/.hermes/profiles/ayon/scripts/x-mint-radar/mexc_mena_referral_tasks.py
