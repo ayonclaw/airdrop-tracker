@@ -6998,3 +6998,29 @@
 - **Gate:** halaman /drops = "HOLDER ACCESS — holder area for ITIA NFT owners. Sign in with X / wallet / email link". X OAuth hidup (Supabase auth, client X3lqcjdkRDB4YWRLNDl5ZE9tYVA6MTpjaQ) — consent screen muncul untuk @osbornrdx, scope READ-ONLY: users.email + tweet.read + users.read + offline.access. Tidak ada scope tulis/post.
 - **Blocker:** (1) authorize app pihak ketiga di akun @osbornrdx + isi form WL = kategori form signup → keputusan Rey. (2) Kemungkinan holder-gated (butuh ITIA NFT existing) — belum terverifikasi karena belum auth.
 - **Status:** LAPORKAN — Rey putusin: authorize app (read-only, bisa di-revoke) lalu apply, atau skip.
+
+### #547 Trippi NFT Early Access (trippi.fun/#quest) — ⏭️ LAPORKAN (form/quest, bukan on-chain)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/trippiart/status/2117265656831951306
+- **Triage:** @trippiart, 1999 Trippi collection (Y2K virtual pets art), klaim FREE MINT. Gate = "Apply GTD early access" via https://trippi.fun/#quest — kategorinya form/quest signup, bukan contract mint. 0 red flag teknis (domain sendiri).
+- **Status:** LAPORKAN — Rey putusin apply atau skip.
+
+### #548 FU FU Red Packet (BSC, Agent ID fair-mint) — ⏭️ LAPORKAN (butuh URL/contract resmi)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/nhutqui2309/status/2117296929965019617
+- **Triage:** fair-mint token di BNB Chain, gate = punya Binance Agent ID (.ai), 1 amplop gratis per Agent ID. Tweet sebut solana addr GK7tcSSkcyrNC829fgjESVpZ92YZK3NFKrFP9QSrpump (pump.fun) tapi mint-nya di BSC. 2x web search GAGAL temukan dapp/contract resmi. baw Rey CONNECTED + Agent ID reydenim.ai = eligible kalau URL ketemu.
+- **Status:** LAPORKAN — butuh link mint resmi dari Rey/source lain sebelum eksekusi. Jangan tebak contract.
+
+### #549 Sixpence USDG Rewards Leaderboard (sixpence.xyz) — ⏭️ LAPORKAN (butuh modal $100)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/SixpenceAI/status/2117314757292429436
+- **Triage:** @SixpenceAI resmi, lend/borrow RWA. Leaderboard USDG: $100 di Vault = 300 pts/snapshot jam-an; 10,000 USDG pool, ~20 hari tersisa. BUKAN free mint/faucet — butuh deposit $100 + posisi lending. 0 red flag teknis.
+- **Status:** LAPORKAN — Rey putusin modal $100 atau skip.
+
+### #550 Elysium Testnet Faucet (elysium.kinetiq.xyz) — ⚠️ PENDING (dup #424, no change)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/ism_sol/status/2117344321204850997
+- **Triage:** re-share faucet yang sama (#424). Halaman butuh "Connect a wallet" (JS app, Vercel Security Checkpoint untuk curl). baw tidak bisa SIWE/personal_sign (disabled server-side). Tweet sebut opsi mock USDC 1,000 juga via faucet yang sama.
+- **Status:** PENDING — blocked wallet-connect, sama seperti #424. Perlu jalur browser CDP + MetaMask kalau Rey mau.
+
+### #551 Cilok Cats Free Mint (BSC, Agent ID) — ⏭️ LAPORKAN (research find, deadline 4 Nov 18:26 UTC)
+- **Date:** 2026-11-03 | **Source:** riset executor (bukan radar queue)
+- **Triage:** cilokcats — 10,000 pixel cats BNB Chain. 1,000 FREE mint untuk Binance Agent ID holders + free 40,000 $CILOK claim. X post requirement DIHAPUS — flow: POST wallet ke attestor → signed voucher → call contract. ~0.00002 BNB gas total. Gate escrow 10 BNB atau buyer refund 100% (no owner withdraw).
+- **Deadline:** 2026-11-04 18:26 UTC (72h window) — SANGAT MEPET.
+- **Status:** LAPORKAN — bisa dieksekusi via baw (Agent ID reydenim.ai) kalau Rey bilang gas. Spec: https://is.gd/CilokCats
