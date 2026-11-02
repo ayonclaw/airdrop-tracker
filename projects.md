@@ -424,7 +424,7 @@
 - **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
 - **Status:** ✅ DONE — waitlist registered (Applicant No. 17718), all 4 X tasks completed with proof.
 - **Proof links:** follow https://x.com/roblynzhood — like+repost https://x.com/roblynzhood/status/2107882525125435787 — reply https://x.com/osbornrdx/status/2108230481930277083
-### #375 FungoLabs Genesis Whitelist (fungolabs.org/apply) — ✅ SEALED (in review)
+### #375 FungoLabs Genesis Whitelist (fungolabs.org/apply) — ⛔ MISSED (WL closed, NOT approved) | $FUNGO airdrop X campaign PENDING
 - **Date:** 2026-10-08 | **URL:** https://fungolabs.org/apply/ | **Reward:** Genesis whitelist — 500 free-mint spots (whitelist + nominees), gas only | **Source:** @airdropfind drops 128225 (original WL, Oct 6) + 128302 (update, Oct 8: "only ~20% of whitelist spots filled") | **X:** @fungolabs | **Track:** wl
 - **Type:** Type 2/3 hybrid — Vite SPA + **X OAuth** (`/api/auth/x/start` → `x.com/i/oauth2/authorize`) + **Cloudflare Turnstile** (`0x4AAAAAAFNfzjq6DXZ0_TUm`, auto-solved in real browser session) + 4 X tasks + 3 written questions + seal. API base `/api` with `x-fungo: 1` header (custom WAF-ish guard).
 - **✅ X OAuth:** Continue with X → Authorize → `/api/auth/x/callback` → signed in as @osbornrdx (profile read: name/handle/avatar/counts/account age).
@@ -436,7 +436,8 @@
 - **✅ Seal:** `POST /api/submit` → status `draft` → **`submitted`**. Checker confirms: **"@osbornrdx: In review. has a sealed application. The team reads every application by hand."**
 - **Method:** MCP Chrome DevTools server was DOWN (13 consecutive failures) → drove the live Chrome @9222 directly via **Playwright `connect_over_cdp`** (contexts[0], X already logged in). Turnstile auto-solved by the real browser session (no sidecar token needed — the OAuth anchor's `cf=` param was minted client-side by the page's own Turnstile widget).
 - **Wallet:** not required at apply stage (whitelist is X-account based; wallet linked later before mint).
-- **Status:** ✅ SEALED — in review. No further action; team picks by hand, list announced on X.
+- **Status:** ⛔ MISSED — checker (Nov 2, X OAuth session still live) returns **"@osbornrdx: Applications closed. Whitelist applications are over."** = NOT on the 500-account list. Genesis free-mint window passed ("congrats if you got the free mint" per @FungoLabs tokenomics thread Nov 2). Genesis 1M-token allocation = missed.
+- **$FUNGO AIRDROP (Nov 2, 10B supply):** 3 categories — (1) Fungo Genesis NFT holders: 1M tokens (missed, no WL spot); (2) Zama OG NFT holders: snapshot likely taken (we hold no Zama OG NFT); (3) **X Campaign: 3% of supply (~300M $FUNGO) — "details shared soon"**. Actionable when @FungoLabs posts campaign link. Watch for it.
 - **Proof links:** follow @fungolabs — like+repost https://x.com/fungolabs/status/2107951087345172878 — reply https://x.com/osbornrdx/status/2108145877999337913
 ### #374 Pear Rewards — Daily Streak Claim (cron) — ✅ DONE
 - **Date:** 2026-10-08 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (waitlist/leaderboard)
