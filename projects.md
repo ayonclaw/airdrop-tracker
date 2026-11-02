@@ -6849,3 +6849,18 @@
 - Tx: 0x5023f42a6120a809008b882b69bb7d1bedd74bc7900877762d50b8c145a8828f (block 131179233, gasUsed 235,881, receipt 0x1)
 - Balance: BAO-NFT balanceOf(0x888d…) = 1; totalMinted 8,408/20,000
 - Next: reveal(uint256) after ≥2 blocks (tier Jade/Silver/Gold/Dragon); tiers #2-10 = 0.0002 BNB (skip kecuali Rey mau)
+
+## X Radar Scan - 2026-11-02 - 2 drop triaged, 0 executed, 2 quarantined
+
+### ⛔ Agentic Punks (agenticpunks.netlify.app) - SCAM
+- Source: X @SmartAzuki tweet 2116980559654400053 (klaim "CLAIMED 8 MILLION $APUNK ~ FCFS Free Token")
+- Contract BSC 56: 0x51Cfae31cda7D4AD1367473792180E22E13D14FF, mint(uint256) selector 0xa0712d68, site price 0.0015 BNB
+- Red flags (score 5): netlify.app throwaway host; tweet bilang FREE tapi situs bayar 0.0015 BNB; klaim 8M token + urgensi "First 2,000 FCFS"; reply eksplisit "S cam" (@queotamky, 206 like); source kontrak tidak terverifikasi, gate "Binance Agent ID" tidak ada di situs
+- Bukti: eth_call mint(1) value 0.0015 BNB → revert custom "not enough BNB" (harga on-chain ≠ iklan); BSCScan getsourcecode diblok (301 CF)
+- Note: wallet airdrop_00 hanya 0.001789 BNB di BSC — tetap skip walau gate lolos
+- Action: quarantine, TIDAK dieksekusi
+
+### ⛔ "Binance hack free ETH" (@yff5188) - SCAM
+- Source: X @yff5188 tweet 2117070480045924442 (narasi Binance diretas, minta-minta ke hacker)
+- Red flags (score 4): klaim alamat 0x8532FA14ACAf483729C449b8458aedDb900543D4 "~197.460 ETH" — eth_getBalance nyata = 0x31d6a25b7b2aa wei (~0.0000219 ETH), klaim palsu 9 miliar kali; social engineering drainer ("Matcha wallet tanpa KYC" + instruksi transfer); evasi filter ("ubah ke huruf Hangul"); tanpa URL/mint
+- Action: quarantine, TIDAK dieksekusi
