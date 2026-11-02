@@ -6897,3 +6897,10 @@
 - **Date:** 2026-11-02 | **Source:** @MEXC_Predict tweet 2117212488974713112 | **URL:** https://mexc.com/campaigns/TradingCarnival
 - **Triage:** campaign CEX resmi MEXC (Silver Claw Machine, 6 grabs/hari, trial funds 1,000 USDT). Domain utama mexc.com, akun verified. 0 red flag, tapi butuh trading volume Gold Coin di CEX — tidak ada kontrak/mint/form otomatis.
 - **Catatan:** reward via eligible trading volume; T&C apply. Tidak automatable dari sisi airdrop farm.
+
+### #533 Binance Community Appreciation Campaign (@binance tweet 2117231724241248393) — ⏭️ PENDING VOUCHER (claim Nov 9)
+- **Date:** 2026-11-02 | **URL:** https://www.binance.com/en/activity/community-appreciation | **Announcement:** dad3f7336cd343fd9752c63b21f8d52a | **Track:** cex-campaign
+- **Triage:** official @binance account + binance.com domain. 0 red flags. LEGIT.
+- **Campaign:** 11:30 UTC Nov 2 → 23:59 UTC Nov 21. (1) 100 USDC spot fee rebate voucher — KYC users, auto-distributed by Nov 9, claim via Rewards Hub (15-day window). (2) $10k volume → share 20M USDC pool (max $4,000/user). (3) Simple Earn bonus APR up to 10%.
+- **Status akun Mosyafik (UID 89547875):** Rewards Hub "No Ongoing Tasks" — voucher belum turun. Est. Total Value ≈ $0 (dust only: CGPT/BONK/DOGS/BNB 1e-8/USDT 9e-7). Volume 0/10,000.
+- **Aksi:** tunggu distribusi voucher (~Nov 9) → claim di Rewards Hub. Volume $10k + Earn APR butuh funding dulu — akun kosong.
