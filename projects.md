@@ -6892,3 +6892,8 @@
 - **Date:** 2026-11-02 | **Source:** @owynhere tweet 2117219922359316648 | **Reward:** $10 USDC voucher di Binance Rewards Hub
 - **Triage:** bukan free-mint/on-chain — promo event in-app Binance (Super Box / Rewards Hub). Tidak ada kontrak, URL mint, atau form. 0 red flag tapi 0 aksi.
 - **Catatan:** reward hanya claimable manual di Binance App; tidak automatable. Proof sosial: replies_pro=1, replies_con=0 (user lain dapat voucher serupa).
+
+### #532 MEXC Trading Carnival / Silver Claw Machine (CEX campaign) — ⏭️ SKIP (bukan free-mint/on-chain)
+- **Date:** 2026-11-02 | **Source:** @MEXC_Predict tweet 2117212488974713112 | **URL:** https://mexc.com/campaigns/TradingCarnival
+- **Triage:** campaign CEX resmi MEXC (Silver Claw Machine, 6 grabs/hari, trial funds 1,000 USDT). Domain utama mexc.com, akun verified. 0 red flag, tapi butuh trading volume Gold Coin di CEX — tidak ada kontrak/mint/form otomatis.
+- **Catatan:** reward via eligible trading volume; T&C apply. Tidak automatable dari sisi airdrop farm.
