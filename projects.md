@@ -7029,3 +7029,8 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/cashpunks/status/2117376794663801159
 - **Triage:** @cashpunks x @orvyn___ — 887 supply, jaringan @RobinhoodCrypto. Entry = follow @orvyn___ + @cashpunks, lalu join raffle Discord discord.gg/xb3dubS8zj. 4x GTD free-mint spot. Bukan on-chain mint: belum ada kontrak/mint page, gate = Discord raffle.
 - **Status:** LAPORKAN — di luar scope eksekusi otomatis (X engagement + Discord join). Rey putusin manual atau skip.
+
+### #553 HTX Fee Rebate Campaign (htx.com/mars) — ⏭️ LAPORKAN (CEX, butuh akun)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/HTX_Global/status/2117240315144765745
+- **Triage:** @HTX_Global resmi. Kampanye CEX: trade ETH spot, fee rebate up to 50% + bonus up to 5,000 USDT, tier by trading volume, deadline 15 Nov 2026. Link: https://htx.com/en-us/mars/activity-center?callId=179315918456923
+- **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign butuh akun + volume trading). Rey putusin daftar atau skip.
