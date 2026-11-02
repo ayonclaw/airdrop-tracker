@@ -7024,3 +7024,8 @@
 - **Triage:** cilokcats — 10,000 pixel cats BNB Chain. 1,000 FREE mint untuk Binance Agent ID holders + free 40,000 $CILOK claim. X post requirement DIHAPUS — flow: POST wallet ke attestor → signed voucher → call contract. ~0.00002 BNB gas total. Gate escrow 10 BNB atau buyer refund 100% (no owner withdraw).
 - **Deadline:** 2026-11-04 18:26 UTC (72h window) — SANGAT MEPET.
 - **Status:** LAPORKAN — bisa dieksekusi via baw (Agent ID reydenim.ai) kalau Rey bilang gas. Spec: https://is.gd/CilokCats
+
+### #552 Cash Punks x ORVYN (Discord raffle) — ⏭️ LAPORKAN (butuh join Discord)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/cashpunks/status/2117376794663801159
+- **Triage:** @cashpunks x @orvyn___ — 887 supply, jaringan @RobinhoodCrypto. Entry = follow @orvyn___ + @cashpunks, lalu join raffle Discord discord.gg/xb3dubS8zj. 4x GTD free-mint spot. Bukan on-chain mint: belum ada kontrak/mint page, gate = Discord raffle.
+- **Status:** LAPORKAN — di luar scope eksekusi otomatis (X engagement + Discord join). Rey putusin manual atau skip.
