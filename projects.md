@@ -6933,3 +6933,19 @@
 - **X tasks (wallet N/A, sosmed only):** follow @MEXC_Predict ✅ (session sudah follow, tombol follow tidak muncul) · like ✅ · repost ✅ · reply pick BOS ✅ — proof: https://x.com/osbornrdx/status/2117325622402048052
 - **Form:** 3 field — MEXC UID (required), pemenang (radio: Boston Celtics), X handle (@osbornrdx). BLOCKED: Rey belum punya akun MEXC, UID tidak ada di kredensial manapun. Signup Google OAuth attempt 4x gagal — FedCM native prompt (ogs.google.com widget) tidak bisa di-automate via CDP.
 - **Next:** Rey kasih MEXC UID (atau daftar manual sekali) → isi form sebelum deadline. Script siap: ~/.hermes/profiles/ayon/scripts/x-mint-radar/mexc_verify_form.py
+
+### #537 MEXC MENA Sunday Challenge — 100 USDT × 10 winners (@mexc_mena tweet 2116908876146626831) — ✅ X-TASKS DONE
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/mexc_mena/status/2116908876146626831
+- **Triage:** akun resmi MEXC MENA, giveaway CEX 100 USDT/10 pemenang. 0 red flag teknis. Bukan mint/on-chain — sosmed tasks.
+- **Eksekusi:** follow @mexc_mena ✅ · like ✅ · repost ✅ · reply "Jalur B 🏁 #MEXC" ✅
+- **Proof:** follow https://x.com/mexc_mena · like/repost di https://x.com/mexc_mena/status/2116908876146626831 · reply https://x.com/osbornrdx/status/2117330406978834461
+- **Catatan:** tweet minta screenshot jalur benar — tidak ada form/URL submit di tweet; partisipasi = engagement + reply jawaban. Tidak butuh wallet/MEXC UID.
+
+### #538 MEXC AAPL Q4 Revenue Prediction (@MEXC tweet 2117157262406078540) — ⏭️ SKIP (EXPIRED)
+- **Date:** 2026-11-02 | **Triage:** official @MEXC, 500 USDT, 20 pemenang × $25. **Deadline Nov 2 21:00 UTC — sudah lewat** saat eksekusi Nov 3. Tidak ada aksi.
+
+### #539 MEXC Predict Worlds 2026 Pick'Ems (@MEXC_Predict tweet 2117234722925670502) — ⛔ BLOCKED (butuh MEXC UID)
+- **Date:** 2026-11-03 | **URL:** https://worlds-2026-pickems.vercel.app | **Triage:** situs statis MEXC Predict resmi (logo MEXC, link prediction.mexc.com + t.me). Reward: 10 USDT trial funds per peserta + champion skin. 0 red flag teknis (vercel hosting = bukan red flag).
+- **Flow:** (1) pilih 7 pick di bracket → (2) isi X Username + **MEXC UID** → Download My Picks → share di X tag @MEXC_Predict → submit post link. (3) join Telegram.
+- **Blocker:** form "Download My Picks" mewajibkan **MEXC UID** — Rey belum punya akun MEXC (signup Google OAuth FedCM gagal 4x, lihat #536). Tanpa UID card gak bisa di-generate → gak bisa share + submit.
+- **Next:** Rey daftar MEXC sekali (kasih UID) → script ulangi: isi pick (mis. GEN champion), generate card, post X, submit link.
