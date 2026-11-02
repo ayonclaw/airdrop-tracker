@@ -6882,3 +6882,8 @@
 - **Date:** 2026-11-02 | **URL:** https://believers-virid.vercel.app/#/mint | **Contract:** 0xEfd3d7f8A567Df6dFe2D06A01f1cf7DAef04d5b2 (BSC) | **Source:** X free-mint radar | **X:** @AgentBelievers | **Track:** on-chain
 - **Type:** Type 2 (ON-CHAIN) — ERC721 on BSC, name "Believers" / symbol "BELIEVERS", owner 0xe4713a540d830a1cdcca698a116cbe1f321da3c0.
 - **Triage:** 2 red flags = SCAM. (1) Domain vercel.app (pitfall log auto +1). (2) Project X @AgentBelievers dibuat 2026-11-01 (~1 hari), 8 followers, unverified → team anon. eth_call mint() dari baw wallet 0x888d…29a1 revert "sold out" → tidak bisa dieksekusi. Tidak ada dana keluar.
+
+### #530 Elysium Testnet Faucet Re-flag (https://elysium.kinetiq.xyz/testnet-faucet → testnet.elysium.kinetiq.xyz/faucet/) — ⛔ BLOCKED (mainnet role gate + SIWE)
+- **Date:** 2026-11-02 | **Source:** @Coco_Airdrop tweet 2117206190086332683 | **Reward:** 0.1 HYPE testnet daily | **Track:** testnet
+- **Triage:** domain kinetiq.xyz official Kinetiq (Hyperliquid L2), Vercel-hosted, NOT scam — 0 red flags.
+- **Blocker:** faucet "Connect wallet" butuh HyperCore mainnet role (deposit USDC per wallet); baw wallet tidak bisa personal_sign/SIWE. Alternatif gratis di halaman: faucet.quicknode.com/hyperliquid/testnet + app.hyperliquid-testnet.xyz/drip.
