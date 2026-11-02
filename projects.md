@@ -6905,3 +6905,7 @@
 - **Campaign:** 11:30 UTC Nov 2 → 23:59 UTC Nov 21. (1) 100 USDC spot fee rebate voucher — KYC users, auto-distributed by Nov 9, claim via Rewards Hub (15-day window). (2) $10k volume → share 20M USDC pool (max $4,000/user). (3) Simple Earn bonus APR up to 10%.
 - **Status akun Mosyafik (UID 89547875):** Rewards Hub "No Ongoing Tasks" — voucher belum turun. Est. Total Value ≈ $0 (dust only: CGPT/BONK/DOGS/BNB 1e-8/USDT 9e-7). Volume 0/10,000.
 - **Aksi:** tunggu distribusi voucher (~Nov 9) → claim di Rewards Hub. Volume $10k + Earn APR butuh funding dulu — akun kosong.
+
+### ⏭️ #534 Binance $100 Trading Fee Rebate Voucher (@owynhere tweet 2117249125544808736) — ⏭️ SKIP (CEX event, no link/action)
+- **Date:** 2026-11-02 | **Triage:** promo in-app Binance (register event → voucher setelah distribusi). Tweet tanpa URL, tanpa kontrak, tanpa form. 0 red flag tapi 0 aksi otomatis.
+- **Catatan:** sama pola dgn #531/#533 — reward claimable manual di Binance App. Akun Mosyafik UID 89547875. Tidak automatable.
