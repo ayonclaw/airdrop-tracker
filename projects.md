@@ -1,10 +1,3 @@
-## Fireball Agent $FIREBALL — Free Mint "1000 First" — ⛔ MISSED (sold out at unpause)
-- **Date:** 2026-11-03 | **Chain:** BNB Chain (56) | **Contract:** `0xB594b29360BD45975608C92dBDBA764c508B5c99` | **Token:** `0xb6f7E8990E9f7eB247E08480fd9657D4D496a122` | **Source:** user drop https://fb.fireball.here.now/
-- **Wallet:** baw `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID reydenim.ai — gate Space ID registry `0x60B9262456dE011F7d15a54CdD8c48Baaa8B022F` balanceOf=1 ✅)
-- **Type:** ON-CHAIN free mint `claimFree()` = `0xf366afc9`, no args, value 0. Free cap 1000 share, 1 per wallet/Agent ID. Paid mint `mintPaid(uint256)` setelah free habis.
-- **Timeline:** contract born paused (`paused()=1`), unpause terjadwal 2026-11-03 15:00 UTC+8 = 14:00 WIB. Watcher `paused()` tiap 15s catch unpause **14:02:06 WIB** tapi `freeMinted` sudah **1000/1000** — kehabisan dalam hitungan detik (bot race). `totalMinted` 1878 (paid mint jalan). `balanceOf(baw)` token = 0 → gagal.
-- **Recon:** `js/config.js?v=20261103r3` (CONTRACT/MINT/LAUNCH_AT/FREE_CAP), selector dari dispatcher bytecode + keccak (`claimFree()=0xf366afc9`, `paused()=0x5c975abb`, `totalMinted()=0xa2309ff8`, `freeMinted()=0xd10a1a2b`). Pre-unpause `claimFree()` revert `0x9e87fac8` (paused — normal).
-- **Status:** ⛔ MISSED — free 1000 habis sebelum tx sempat dikirim. Nol gas terbuang. Paid mint lanjut (mintPaid, 0.001+ BNB/share?) — tidak dieksekusi (bukan free mint).
 ## DigDown V2 — FREE MINT ✅ DONE (tokenId 4657, 1 mint gas-only)
 - **Date:** 2026-11-03 | **Chain:** BNB Chain (56) | **Contract:** `0xF464550f1d744793893C0ce09b89269Ed726d796` | **Collection:** DigDown (DIG), pixel miner NFT | **Source:** X @mrchrismast_ https://x.com/mrchrismast_/status/2117426215510565044
 - **Wallet:** baw `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID reydenim.ai)
@@ -7116,3 +7109,11 @@
 - **Bukti on-chain (eth_call dari baw `0x888d…29a1`):** `eligibility()` = (handle `reydenim`, freeRemaining=1, paidRemaining=10) — wallet ELIGIBLE. `totalSupply()` = 736/3000. Simulasi `mintFree()` (0x8ab53447, value 0) **revert `0x236394f4` = FreeSoldOut** → pool free 500 global HABIS (baw hanya bayar gas, tidak dapat kartu).
 - **Paid path:** 1 kartu = 0.001 BNB + gas (~0.0000125 BNB @0.05 gwei); saldo baw 0.0000442 BNB → kurang, butuh top-up ~0.0011 BNB. Di luar scope eksekusi otomatis (cron scope = free mint/claim/faucet doang).
 - **Status:** SKIP free tier (mati secara teknis, bukan judgment). Rey putusin top-up buat 1 kartu paid atau skip.
+
+### #564 Fireball Agent $FIREBALL (fb.fireball.here.now) — ⛔ SKIP (free round sold out — bukti on-chain)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/LensMoso/status/2117497931809087917 | **Author:** @LensMoso
+- **Contracts (BSC 56):** mint `0xB594b29360BD45975608C92dBDBA764c508B5c99`, token `0xb6f7E8990E9f7eB247E08480fd9657D4D496a122`, pair `0xd65236eA2cA929733F48075E3f47fF166Cec0F56`. Open 2026-11-03 07:00 UTC (15:00 UTC+8). Redeploy bersih — 4 kontrak lama di config.js ditandai abandoned.
+- **Mekanik:** free round 1.000 share (1 per Agent ID/wallet), lalu paid 0.002 BNB/share; trading auto-open saat totalMinted ≥ 10.000. 70% LP / 30% marketing.
+- **Bukti on-chain (eth_call):** `paused()` = false (mint hidup). `freeRemaining()` = **0** → pool free 1.000 habis. `totalMinted()` = 0x28f5 = **10.485** (>10.000, sudah trading-open). Simulasi `claimFree()` (0xf366afc9, value 0) dari baw `0x888d…29a1` DAN dari wallet lain revert identik `0x236394f4` (FreeSoldOut) → bukan gate wallet, pool free global mati.
+- **Paid path:** 0.002 BNB + gas; saldo baw 0.0000442 BNB → di luar scope (cron = free mint/claim/faucet doang).
+- **Status:** SKIP — free tier mati secara teknis, 0 approval request di situs (claim langsung, tanpa setApprovalForAll). Rey putusin beli paid kalau mau.
