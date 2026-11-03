@@ -7145,8 +7145,14 @@
 - **Pitfall flow:** quest button tick = setTimeout 2600ms setelah klik (page wajib tetap hidup >3s per klik); state simpan di sessionStorage key `elynx-apply` → PER-TAB, tab baru = reset → semua step harus 1 tab; submit POST /api/apply {xUsername, wallet, tasks} → ok → step 4 card.
 
 ## Agent Cards (agent-cards) — FREE mint, BNB Chain
-- Status: pre-registered + verified, mint scheduled 3 Nov 21:00 WIB (cron ecb00b90e5fa)
+- Status: MINTED 3 Nov 21:00 WIB — card #1283 (cron ecb00b90e5fa fired once)
 - Agent: reydenim.ai (region South), rank 341, code AC-2CX7GX, ref R-WRGCTH
 - Contract: cards 0x19f125dA1985033f102CA7746Cbd1F6f512CFACd, pool 0x413280998EF776F80E153ca694B933e43A0699F8
 - Proof tweet: https://x.com/osbornrdx/status/2117593215968952670
 - Genesis 10000 free, 1 card/Agent ID, gas only (BNB). Wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1
+
+### Agent Cards — RESULT
+- Card: #1283 — https://playagentcards.com/card/1283
+- NFT: Agent Cards #ACARD, contract 0x19f125dA1985033f102CA7746Cbd1F6f512CFACd
+- Tx: 0xd31174c81f7bdeeb7f8274fb927b4679997c3f47001a19c39d426b292adaefb9
+- Wallet: baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1
