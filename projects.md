@@ -7143,3 +7143,10 @@
   - Repost launch post ✅
   - Reply + tag 2 akun: "Bringing my legends to Elysium. @osbornrdx @ElynxNFT #ELYNX" ✅ (reply via intent URL, "Postingan Anda sudah terkirim")
 - **Pitfall flow:** quest button tick = setTimeout 2600ms setelah klik (page wajib tetap hidup >3s per klik); state simpan di sessionStorage key `elynx-apply` → PER-TAB, tab baru = reset → semua step harus 1 tab; submit POST /api/apply {xUsername, wallet, tasks} → ok → step 4 card.
+
+## Agent Cards (agent-cards) — FREE mint, BNB Chain
+- Status: pre-registered + verified, mint scheduled 3 Nov 21:00 WIB (cron ecb00b90e5fa)
+- Agent: reydenim.ai (region South), rank 341, code AC-2CX7GX, ref R-WRGCTH
+- Contract: cards 0x19f125dA1985033f102CA7746Cbd1F6f512CFACd, pool 0x413280998EF776F80E153ca694B933e43A0699F8
+- Proof tweet: https://x.com/osbornrdx/status/2117593215968952670
+- Genesis 10000 free, 1 card/Agent ID, gas only (BNB). Wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1
