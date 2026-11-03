@@ -1,3 +1,22 @@
+## DigDown V2 — FREE MINT ✅ DONE (tokenId 4657, 1 mint gas-only)
+- **Date:** 2026-11-03 | **Chain:** BNB Chain (56) | **Contract:** `0xF464550f1d744793893C0ce09b89269Ed726d796` | **Collection:** DigDown (DIG), pixel miner NFT | **Source:** X @mrchrismast_ https://x.com/mrchrismast_/status/2117426215510565044
+- **Wallet:** baw `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID reydenim.ai)
+- **Type:** ON-CHAIN free mint, `freeMint()` value 0. Supply 10,000, maxPerWallet 16, 1 free per Agent ID.
+- **Pre-flight:** mintOpen=1, hasAgentId=1, freeClaimed=0, quote(wallet,1)=0, totalMinted 4647/10000, devReserve 1000/870 minted. Simulasi eth_call `freeMint()` = 0x (lolos). Risks kosong, no approval change.
+- **TX:** `0x6fe6e245cfe1d8bfee65105c8b5764c9c5870b49b63e85a7eca8f9f3274e6f69` — receipt status 0x1, block 131351402, gasUsed 158,949 @ 0.05 gwei = **0.00000795 BNB**
+- **Verified:** `balanceOf(wallet)=1`, `freeClaimed(wallet)=1`, ERC721 Transfer log tokenId **4657** -> wallet. `ownerOf(4655)` = wallet lain (id drift, pakai id dari receipt log).
+- **Tier berikutnya berbayar:** priceOfNth(0) = 0.001 BNB. Stop di free tier.
+
+## Elys Catz NFT Free Mint — 🔜 LAPORKAN (mint TBA, butuh X engagement)
+- **Date:** 2026-11-03 | **Chain:** Elysium mainnet | **Source:** X @Hushmic https://x.com/Hushmic/status/2117275933497495919 | **Link:** Elys.Fun (Elysium mainnet instant bridge)
+- **Syarat:** Retweet + drop EVM wallet di reply (WL). Mint "Tomorrow" (TBA).
+- **Status:** ⏸ BELUM DIEKSEKUSI — X engagement di luar scope eksekusi otomatis, Rey yang putusin.
+
+## Sixpence USDG Rewards Season 1 — 📋 LAPORKAN (points campaign, bukan free mint)
+- **Date:** 2026-11-03 | **URL:** https://sixpence.xyz/campaign | **Source:** X @SixpenceAI https://x.com/SixpenceAI/status/2117404089768169744
+- **Update:** pool tunggal 10,000 USDG untuk 4 minggu (tidak di-split Nov 9). Points stacking tiap snapshot hourly sampai Nov 23. Share pool = share total points.
+- **Status:** 📋 INFO ONLY — bukan free mint/claim on-chain, butuh hold/deposit USDG. Rey putusin.
+
 # 🪂 AIRDROP TRACKER — Rey's Missions
 ### #432 WEBHOOD Waitlist (webhoodr) — 2,222 supply · freemint (msg 128566) — ✅ DONE
 - **Date:** 2026-10-19 | **URL:** https://docs.google.com/forms/d/e/1FAIpQLScP4Vi8ikEhzIMGg-fkeUg-xyC5wbbkLZ7ojY7qMcKT__9XoA/viewform?usp=publish-editor | **Reward:** Waitlist spot for Web Hood NFT mint | **Source:** @airdropfind drop 128566 | **X:** @osbornrdx | **Track:** waitlist
