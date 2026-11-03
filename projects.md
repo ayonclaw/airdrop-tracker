@@ -7035,3 +7035,8 @@
 - **Triage:** @HTX_Global resmi. Kampanye CEX: trade ETH spot, fee rebate up to 50% + bonus up to 5,000 USDT, tier by trading volume, deadline 15 Nov 2026. Link: https://htx.com/en-us/mars/activity-center?callId=179315918456923
 - **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign butuh akun + volume trading). Rey putusin daftar atau skip.
 - [ ] Bitget Wealth Radar — CEX campaign, 10,000 USDT prize pool (Nov 2–Dec 31 2026). Butuh akun Bitget + trading. LAPORKAN ke Rey 2026-11-03, belum dieksekusi (out of scope executor). https://bitget.com/support/articles/12560603899382
+
+### #554 Elys Catz NFT Free Mint (elys.lat) — ⏭️ LAPORKAN (mint belum live + giveaway X)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/0xCharrlie/status/2117400453579477335 | **Author:** @0xCharrlie
+- **Detail:** "Elys Catz NFT Free Mint — Minting Tomorrow — Only Elysium Mainnet Instant Bridge". URL tweet → elys.lat (redirect bridge Elysium, bukan halaman mint). Kontrak NFT belum ada, mint belum live.
+- **Status:** LAPORKAN — tidak ada aksi on-chain yang bisa dijalankan sekarang (mint besok, kontrak belum publish). Whitelist giveaway = retweet + drop EVM wallet di reply = X engagement, out of scope executor. Rey putusin ikut giveaway atau tunggu mint live.
