@@ -6879,6 +6879,7 @@
 - Bukti: eth_call mint(1) value 0.0015 BNB → revert custom "not enough BNB" (harga on-chain ≠ iklan); BSCScan getsourcecode diblok (301 CF)
 - Note: wallet airdrop_00 hanya 0.001789 BNB di BSC — tetap skip walau gate lolos
 - Action: quarantine, TIDAK dieksekusi
+- **Re-queue 2026-11-03** (tweet 2117566278445494479, @SmartAzuki, klaim identik): eth_call mint(1) value=0 → revert `not enough BNB` (re-verified) → paid mint, di luar scope free/gas-only. File → output/done/. Verdict tetap SCAM.
 
 ### ⛔ "Binance hack free ETH" (@yff5188) - SCAM
 - Source: X @yff5188 tweet 2117070480045924442 (narasi Binance diretas, minta-minta ke hacker)
