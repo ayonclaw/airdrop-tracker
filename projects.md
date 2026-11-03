@@ -7117,3 +7117,16 @@
 - **Bukti on-chain (eth_call):** `paused()` = false (mint hidup). `freeRemaining()` = **0** → pool free 1.000 habis. `totalMinted()` = 0x28f5 = **10.485** (>10.000, sudah trading-open). Simulasi `claimFree()` (0xf366afc9, value 0) dari baw `0x888d…29a1` DAN dari wallet lain revert identik `0x236394f4` (FreeSoldOut) → bukan gate wallet, pool free global mati.
 - **Paid path:** 0.002 BNB + gas; saldo baw 0.0000442 BNB → di luar scope (cron = free mint/claim/faucet doang).
 - **Status:** SKIP — free tier mati secara teknis, 0 approval request di situs (claim langsung, tanpa setApprovalForAll). Rey putusin beli paid kalau mau.
+
+## 11-03 | Giraffies Valley — Lil Giraffies Whitelist ✅
+- **Link:** https://valley.loculus.xyz/whitelist
+- **Status:** ✅ WHITELIST DAPAT — "You're on the whitelist" / "Saved. See you on drop day."
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (0x8cce...282d, Robinhood Chain)
+- **X handle:** @osbornrdx
+- **Tasks (4/4 done):**
+  - Follow @giraffies_nft ✅ (verified "Mengikuti @giraffies_nft")
+  - Like pinned post https://x.com/giraffies_nft/status/2117270592906789364 ✅
+  - Repost pinned post ✅
+  - Reply w/ wallet: https://x.com/osbornrdx/status/2117531918594175245 ✅ (wallet address in reply text)
+- **Submit:** form handle + reply link + wallet, Cloudflare Turnstile auto-solved di Chrome persistent (token 730 char), accepted.
+- **Mint:** drop day TBA, OpenSea, Robinhood Chain, wallet dapat mint 1 Lil di whitelist stage.
