@@ -7158,3 +7158,10 @@
   - POST /auth/forgot-password {email} → POST /auth/verify-reset-otp {email,code} → resetToken → POST /auth/reset-password {email,resetToken,newPassword}
   - GET /users/me · GET /mining/status · POST /mining/start · POST /mining/ad (max 3/session, min interval 30s, +0.16/ad) · GET /referral/overview
 - **Pitfall:** OTP email single-use + 5 min TTL; accessToken 30 min; Gmail poll butuh ~15-30s setelah login trigger; settlement automatic (gak perlu claim).
+
+## 11-04 | Grokie Fun — Whitelist Complete ✅
+- URL: https://grokie.fun/profile · Whitelist NO. **#1214** · Balance **$50 USDC**
+- Auth: X OAuth (@osbornrdx) via authorize "Izinkan aplikasi"
+- Tasks: follow @Grokiefun ✅ · like post 2117650108192108856 ✅ · retweet ✅ · card ✅ · reply ✅
+- Reply proof: https://x.com/osbornrdx/status/2117693810767786378
+
