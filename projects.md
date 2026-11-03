@@ -7070,3 +7070,8 @@
 - **Triage:** kontrak `0x00c8Fe84695E5456fBaaFEFcd15265da2FD3342B` (BSC chain 56). Page iklan: mint(uint256 shares) payable, 0.0015 BNB/share, 1–10 share/tx, 1M $SAFU/share, total 1,000 share. sharesSold() = 30/1000 (eth_call on-chain, live).
 - **Bukti mismatch:** tweet + page klaim 0.0015 BNB/share, tapi eth_call mint(1) value=0.0015 BNB revert `not enough BNB`; value check lolos baru ≥ ~0.0151 BNB (0.0154 → revert ERC20InvalidReceiver(0x0) = lolos value check, gagal karena eth_call sender 0x0). Advertised vs on-chain beda ~10x (pola Agentic Punks). Tidak ada permintaan approve/setApprovalForAll/seed — murni payable mint.
 - **Status:** LAPORKAN — di luar scope FREE MINT (mint berbayar ~0.015 BNB ≈ $10/share) + saldo baw Rey hanya 0.000057 BNB, tidak cukup. Rey putusin top-up/eksekusi atau skip.
+
+### #557 CoinW Daily Check-in GM 7 hari (30 USDT) — 📋 LAPORKAN (butuh keputusan Rey)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/CoinWZH/status/2117221275131355502 | **Author:** @CoinWZH
+- **Mekanik:** follow @CoinWZH + @GaliGaliCoinW, komentar "GM" tiap hari di area komentar tweet CoinW, check-in berturut-turut 7 hari → hadiah 30 USDT. Window: 2–8 Nov (UTC+8). Repliers sudah ramai (1 rb+ engagement).
+- **Status:** LAPORKAN — di luar scope eksekusi otomatis (X engagement + CEX campaign). Butuh 7 komentar berturut-turut dari @osbornrdx — Rey putusin eksekusi via x-engagement-automation atau skip.
