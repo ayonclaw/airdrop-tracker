@@ -7097,3 +7097,7 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/CryptoLakhan/status/2117455203725398114 | **Author:** @CryptoLakhan
 - **Mekanik:** kampanye CEX Binance resmi — eligible verified users klaim $100 USDC trading fee benefit + share pool 20,000,000 USDC. Existing users: distribusi 9 Nov 2026.
 - **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign butuh akun + eligibility Binance). Rey putusin klaim manual atau skip.
+### #562 MGBX November New User Giveaway — 600 USDT (@MGBX_Global tweet 2117445516271444429) — 📋 LAPORKAN (CEX, butuh akun + KYC + deposit)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MGBX_Global/status/2117445516271444429 | **Author:** @MGBX_Global
+- **Mekanik:** new-user giveaway — follow, like, repost, comment, register + KYC MGBX, deposit min 50 USDT. First 175 eligible users share 350 USDT (2 USDT/orang); first 25 eligible users dapat 10 USDT each.
+- **Status:** LAPORKAN — di luar scope (CEX campaign + KYC + deposit). Rey belum punya akun MGBX (lihat #543, #545). Rey putusin daftar atau skip.
