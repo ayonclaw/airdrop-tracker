@@ -7143,3 +7143,18 @@
   - Repost launch post ✅
   - Reply + tag 2 akun: "Bringing my legends to Elysium. @osbornrdx @ElynxNFT #ELYNX" ✅ (reply via intent URL, "Postingan Anda sudah terkirim")
 - **Pitfall flow:** quest button tick = setTimeout 2600ms setelah klik (page wajib tetap hidup >3s per klik); state simpan di sessionStorage key `elynx-apply` → PER-TAB, tab baru = reset → semua step harus 1 tab; submit POST /api/apply {xUsername, wallet, tasks} → ok → step 4 card.
+
+## 11-03 | Sible Network — Mining Active ✅
+- **Link:** https://mine.sible.network/Airdropfind
+- **Status:** ✅ ACTIVE — session 6aea1650e9a848b8323f78c0, mining sampai 04 Nov 01:00 UTC
+- **Akun:** osbornrdx / airdropkarbiters@gmail.com (akun existing Okt 8; password di-reset via OTP Gmail)
+- **Referral:** Airdropfind ✅ applied (referredBy=Airdropfind)
+- **Mining:** base 0.1/hr → 0.16/hr (3 ads watched, +60% boost), balance 19.18
+- **Referral link Rey:** https://mine.sible.network/osbornrdx
+- **API (base https://prod.sible.network/api/v1):**
+  - POST /auth/register {email,password,username,referralCode} — whitelistValidation, NO confirmPassword
+  - POST /auth/login {identifier,password} → needsOtp → OTP email (5 min, single-use)
+  - POST /auth/verify-otp {email,code,purpose:"login"} → {user,accessToken,refreshToken}
+  - POST /auth/forgot-password {email} → POST /auth/verify-reset-otp {email,code} → resetToken → POST /auth/reset-password {email,resetToken,newPassword}
+  - GET /users/me · GET /mining/status · POST /mining/start · POST /mining/ad (max 3/session, min interval 30s, +0.16/ad) · GET /referral/overview
+- **Pitfall:** OTP email single-use + 5 min TTL; accessToken 30 min; Gmail poll butuh ~15-30s setelah login trigger; settlement automatic (gak perlu claim).
