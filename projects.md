@@ -7101,3 +7101,11 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/MGBX_Global/status/2117445516271444429 | **Author:** @MGBX_Global
 - **Mekanik:** new-user giveaway — follow, like, repost, comment, register + KYC MGBX, deposit min 50 USDT. First 175 eligible users share 350 USDT (2 USDT/orang); first 25 eligible users dapat 10 USDT each.
 - **Status:** LAPORKAN — di luar scope (CEX campaign + KYC + deposit). Rey belum punya akun MGBX (lihat #543, #545). Rey putusin daftar atau skip.
+
+### #563 AigentCard $AGC (aigentcards.com) — ⛔ SKIP (free tier sold out — bukti on-chain)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/trngne0510/status/2117473044340113657 | **Author:** @trngne0510
+- **Contracts (BSC 56):** NFT ERC-721 `0xde1F985F8a49D022811c49CF1D8506cA38abf86C`, $AGC ERC-20 `0x2542bBb40a49Ca1fC0BDb1265DfC6631bC0542a1` (= TOKEN() card contract). Agent ID gate via SPACE ID registry `0x60B9…022F`. Treasury `0x7e59…392C9`.
+- **Mekanik:** free 1 kartu per .ai Agent ID (max 500 global), paid 0.001 BNB/kartu (max 10/wallet). Tiap mint = NFT + AGC reward (Common 120k … Legendary 9.24M). Supply 3000.
+- **Bukti on-chain (eth_call dari baw `0x888d…29a1`):** `eligibility()` = (handle `reydenim`, freeRemaining=1, paidRemaining=10) — wallet ELIGIBLE. `totalSupply()` = 736/3000. Simulasi `mintFree()` (0x8ab53447, value 0) **revert `0x236394f4` = FreeSoldOut** → pool free 500 global HABIS (baw hanya bayar gas, tidak dapat kartu).
+- **Paid path:** 1 kartu = 0.001 BNB + gas (~0.0000125 BNB @0.05 gwei); saldo baw 0.0000442 BNB → kurang, butuh top-up ~0.0011 BNB. Di luar scope eksekusi otomatis (cron scope = free mint/claim/faucet doang).
+- **Status:** SKIP free tier (mati secara teknis, bukan judgment). Rey putusin top-up buat 1 kartu paid atau skip.
