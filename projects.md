@@ -7130,3 +7130,15 @@
   - Reply w/ wallet: https://x.com/osbornrdx/status/2117531918594175245 ✅ (wallet address in reply text)
 - **Submit:** form handle + reply link + wallet, Cloudflare Turnstile auto-solved di Chrome persistent (token 730 char), accepted.
 - **Mint:** drop day TBA, OpenSea, Robinhood Chain, wallet dapat mint 1 Lil di whitelist stage.
+
+## 11-03 | Elynx (Elysium) — Whitelist Applied ✅
+- **Link:** https://www.elynxnft.xyz/apply
+- **Status:** ✅ APPLIED — "You are in" · Presence Card NO. 12138
+- **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (Elysium)
+- **X:** @osbornrdx · Mint Nov 9 · 999 supply
+- **Quests (4/4):**
+  - Follow @ElynxNFT ✅ (X UI baru: tombol follow pakai `[data-testid$="-follow"]` dynamic-suffix, klik via JS)
+  - Like launch post https://x.com/ElynxNFT/status/2116945650952884249 ✅
+  - Repost launch post ✅
+  - Reply + tag 2 akun: "Bringing my legends to Elysium. @osbornrdx @ElynxNFT #ELYNX" ✅ (reply via intent URL, "Postingan Anda sudah terkirim")
+- **Pitfall flow:** quest button tick = setTimeout 2600ms setelah klik (page wajib tetap hidup >3s per klik); state simpan di sessionStorage key `elynx-apply` → PER-TAB, tab baru = reset → semua step harus 1 tab; submit POST /api/apply {xUsername, wallet, tasks} → ok → step 4 card.
