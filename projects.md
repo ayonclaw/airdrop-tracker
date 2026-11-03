@@ -7085,3 +7085,15 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/BITGLYPHS_RH/status/2117442122722996551 | **Author:** @BITGLYPHS_RH
 - **Triage:** "Free Mint soon on @RobinhoodApp — First 111 wallet". Tweet belum ada URL/kontrak — mint belum live. Reply = drop wallet EVM (engage farm), 0 bukti teknis kontrak.
 - **Status:** LAPORKAN — tidak ada aksi on-chain sekarang (kontrak + mint page belum publish). Rey putusin drop wallet di reply (X engagement, out of scope executor) atau tunggu mint live.
+
+### #560 Proof of AGI $POA (poagi.top) — 📋 LAPORKAN (eligible, free tier habis, butuh top-up 0.001 BNB)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/nhutqui2309/status/2117457098782982382 | **Author:** @nhutqui2309
+- **Contracts (BSC 56):** NFT `0xb64c3bd93aaaa90e8d711bdf7d37ed9865cd7c81`, NFT token-mint `0x74d9b5477e7fa818298f927966452f2eb9c5fa5e`, $POA token `0x21bc810818d9c9c767ba73c543f67a989fb5a543`. Owner `0xD60c…6639` (cocok dengan spec situs). Kontrak unverified (Sourcify) — spec lengkap ada di halaman situs.
+- **Bukti on-chain (eth_call):** NFT `totalSupply()` = 1000 (= batas free tier phase 1 → pool free 1000/1000 HABIS). `mint(1)` value=0 dari baw `0x888d…29a1` revert `insufficient BNB`; dari whale revert `Agent ID required` → **gate Agent ID (.ai) LOLOS untuk baw**, gagal di harga (phase 2 = 0.001 BNB/mint). `balanceOf(baw)` NFT = 0 (belum mint). Situs tidak minta approve/setApprovalForAll — mint payable langsung, "Never approve any token or any contract".
+- **Blocker:** saldo baw hanya 0.0000442 BNB; mint phase 2 = 0.001 BNB (~$1.1). Rey putusin top-up atau skip.
+- **Status:** LAPORKAN — default EKSEKUSI tidak bisa jalan (saldo kurang), bukan gate scam. 0 red flag teknis (kontrak ada, owner match, tanpa approval request).
+
+### #561 Binance #ThankYouBinancians ($100 USDC fee rebate + 20M USDC pool) — 📋 LAPORKAN (CEX, butuh akun)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/CryptoLakhan/status/2117455203725398114 | **Author:** @CryptoLakhan
+- **Mekanik:** kampanye CEX Binance resmi — eligible verified users klaim $100 USDC trading fee benefit + share pool 20,000,000 USDC. Existing users: distribusi 9 Nov 2026.
+- **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign butuh akun + eligibility Binance). Rey putusin klaim manual atau skip.
