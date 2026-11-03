@@ -7045,3 +7045,9 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/cz_binance/status/2117241088054616201 | **Author:** @cz_binance
 - **Triage:** @cz_binance resmi (quote @binance). Kampanye CEX: eligible users klaim 100 USDC Spot fee rebate voucher, share pool 20,000,000 USDC, earn up to 10% APR. Bukan on-chain — gating lewat akun + eligibility Binance. 0 red flag teknis.
 - **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign butuh akun Binance). Rey putusin klaim manual atau skip.
+
+### #556 SAFUFUND $SAFU (safufund.netlify.app, BSC) — ⏭️ LAPORKAN (bukan free mint — kontrak minta ~0.015 BNB min)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/SmartAzuki/status/2117330040107233682 | **Author:** @SmartAzuki
+- **Triage:** kontrak `0x00c8Fe84695E5456fBaaFEFcd15265da2FD3342B` (BSC chain 56). Page iklan: mint(uint256 shares) payable, 0.0015 BNB/share, 1–10 share/tx, 1M $SAFU/share, total 1,000 share. sharesSold() = 30/1000 (eth_call on-chain, live).
+- **Bukti mismatch:** tweet + page klaim 0.0015 BNB/share, tapi eth_call mint(1) value=0.0015 BNB revert `not enough BNB`; value check lolos baru ≥ ~0.0151 BNB (0.0154 → revert ERC20InvalidReceiver(0x0) = lolos value check, gagal karena eth_call sender 0x0). Advertised vs on-chain beda ~10x (pola Agentic Punks). Tidak ada permintaan approve/setApprovalForAll/seed — murni payable mint.
+- **Status:** LAPORKAN — di luar scope FREE MINT (mint berbayar ~0.015 BNB ≈ $10/share) + saldo baw Rey hanya 0.000057 BNB, tidak cukup. Rey putusin top-up/eksekusi atau skip.
