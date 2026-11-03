@@ -7040,3 +7040,8 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/0xCharrlie/status/2117400453579477335 | **Author:** @0xCharrlie
 - **Detail:** "Elys Catz NFT Free Mint — Minting Tomorrow — Only Elysium Mainnet Instant Bridge". URL tweet → elys.lat (redirect bridge Elysium, bukan halaman mint). Kontrak NFT belum ada, mint belum live.
 - **Status:** LAPORKAN — tidak ada aksi on-chain yang bisa dijalankan sekarang (mint besok, kontrak belum publish). Whitelist giveaway = retweet + drop EVM wallet di reply = X engagement, out of scope executor. Rey putusin ikut giveaway atau tunggu mint live.
+
+### #555 Binance #ThankYouBinancians Campaign (100 USDC fee rebate voucher + 20M USDC pool) — ⏭️ LAPORKAN (CEX, butuh akun)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/cz_binance/status/2117241088054616201 | **Author:** @cz_binance
+- **Triage:** @cz_binance resmi (quote @binance). Kampanye CEX: eligible users klaim 100 USDC Spot fee rebate voucher, share pool 20,000,000 USDC, earn up to 10% APR. Bukan on-chain — gating lewat akun + eligibility Binance. 0 red flag teknis.
+- **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign butuh akun Binance). Rey putusin klaim manual atau skip.
