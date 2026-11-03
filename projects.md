@@ -7075,3 +7075,13 @@
 - **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/CoinWZH/status/2117221275131355502 | **Author:** @CoinWZH
 - **Mekanik:** follow @CoinWZH + @GaliGaliCoinW, komentar "GM" tiap hari di area komentar tweet CoinW, check-in berturut-turut 7 hari → hadiah 30 USDT. Window: 2–8 Nov (UTC+8). Repliers sudah ramai (1 rb+ engagement).
 - **Status:** LAPORKAN — di luar scope eksekusi otomatis (X engagement + CEX campaign). Butuh 7 komentar berturut-turut dari @osbornrdx — Rey putusin eksekusi via x-engagement-automation atau skip.
+
+### #558 OKX Flash Earn Deposit Campaign (1,000,000 USDT pool) — 📋 LAPORKAN (CEX, butuh akun)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/okx/status/2117399103311151141 | **Author:** @okx
+- **Mekanik:** deposit BTC atau ETH ke OKX Flash Earn, subscribe in-app, share prize pool 1,000,000 USDT. Akun resmi @okx, 0 red flag teknis.
+- **Status:** LAPORKAN — di luar scope eksekusi otomatis (CEX campaign, butuh akun OKX + deposit dana). Rey putusin ikut atau skip.
+
+### #559 BITGLYPHS Free Mint (Robinhood chain, first 111 wallet) — 📋 LAPORKAN (mint belum live + gate X engagement)
+- **Date:** 2026-11-03 | **Source:** X free-mint radar | **Tweet:** https://x.com/BITGLYPHS_RH/status/2117442122722996551 | **Author:** @BITGLYPHS_RH
+- **Triage:** "Free Mint soon on @RobinhoodApp — First 111 wallet". Tweet belum ada URL/kontrak — mint belum live. Reply = drop wallet EVM (engage farm), 0 bukti teknis kontrak.
+- **Status:** LAPORKAN — tidak ada aksi on-chain sekarang (kontrak + mint page belum publish). Rey putusin drop wallet di reply (X engagement, out of scope executor) atau tunggu mint live.
