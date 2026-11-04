@@ -7166,4 +7166,6 @@
 - Reply proof: https://x.com/osbornrdx/status/2117693810767786378
 
 
-11-04 | Tzero Testnet (Zero/LayerZero L1 launchpad) — Connect ✅ 0x8CCE…282D (Base Sepolia) · Launch mission $AYZ MSN-0023 ✅ · Fuel other missions ✅ · Buy $T0 ✅ · Stake $T0 31,070.147 ✅ (staker 0x221D…6239, on-chain verified) · Faucet test ETH ⛔ (Coinbase Google pw expired, QuickNode bot-check reject) · Liftoff ⛔ (butuh 0.286 ETH fuel, saldo 0.00417 ETH)
+11-04 | Tzero Testnet (Zero/LayerZero L1 launchpad) — Connect ✅ 0x8CCE…282D (Base Sepolia) · Launch mission $AYZ MSN-0023 ✅ · Fuel other missions ✅ · Buy $T0 ✅ · Stake $T0 31,070.147 ✅ (staker 0x221D…6239, on-chain verified) · Faucet test ETH ⛔ (Coinbase Google pw expired, QuickNode bot-check reject) · Liftoff ✅ LIFTED OFF — bridge 0.5 ETH Sepolia → Base Sepolia via OptimismPortal 0x49f53e41452C74589E85cA1677426Ba426459e85 (tx 0x7544a0ca…424f, L1 status 0x1) → fuel buy 0.285 + 0.005 + 0.01 ETH → TzeroSwap
+
+11-04 | Tzero Testnet — UPDATE: LIFTOFF ✅ $AYZ MSN-0023 lifted off to TzeroSwap. Bridge 0.5 ETH Sepolia→Base Sepolia done via OptimismPortal (0x49f53e41452C74589E85cA1677426Ba426459e85), tx 0x7544a0ca4d8a561283e4192d03832b253a929f1e88b9166edf42cc6a3558424f. Saldo Base Sepolia 0.216 ETH.
