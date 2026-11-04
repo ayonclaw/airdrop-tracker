@@ -7180,3 +7180,4 @@
 - mintFree tx: https://bscscan.com/tx/0xcf20e969db6c7223d6fb16940969c6bb4856ea026892935ec15e35f1c723cd24 (status 0x1, block 131572976)
 - Deposit 0.002 BNB (refundable via claimFree) + reward 140,000 AGC/share epoch 2; aLeft 4 remaining today (day-1 cap 5)
 - Funding tx airdrop_00→baw 0.0019 BNB: https://bscscan.com/tx/0xfc2222f1175272dbf13a690942619d394f72408379bb221e4b0e306b5f55c683
+- ⛔ VAGENT Vault Agent (BSC 0xec4f41F60EC868742DE65CAbE6bF9bEA8607b599) — free tier sold out on-chain (freeLeft()=0, mintFree revert 0x7e273289); tier 2+ paid 0.0014 BNB out of scope; X drop 2117867125859836299 quarantined
