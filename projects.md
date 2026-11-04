@@ -7181,3 +7181,12 @@
 - Deposit 0.002 BNB (refundable via claimFree) + reward 140,000 AGC/share epoch 2; aLeft 4 remaining today (day-1 cap 5)
 - Funding tx airdrop_00→baw 0.0019 BNB: https://bscscan.com/tx/0xfc2222f1175272dbf13a690942619d394f72408379bb221e4b0e306b5f55c683
 - ⛔ VAGENT Vault Agent (BSC 0xec4f41F60EC868742DE65CAbE6bF9bEA8607b599) — free tier sold out on-chain (freeLeft()=0, mintFree revert 0x7e273289); tier 2+ paid 0.0014 BNB out of scope; X drop 2117867125859836299 quarantined
+
+### Mistbox (unbox.mistbox.pro) — Launch Week
+- Status: DONE — 2 free boxes opened
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (SIWE login, uid 4869, Chain ID 1776)
+- Tasks: X bound + followed @MistBoxpro (osbornrdx) ✅ · TG bound + joined @mistbox_community_1 (mxsyxfxx) ✅
+- Boxes opened: tokenId 9031, tokenId 9045 (2/2 passes used, FREE MISTBOX box id 9)
+- API: https://api.prod.mistbox.pro/v1/app (SIWE /auth/nonce + /auth/login, token localStorage `app.web.token`)
+- Flow: /event/me → /event/x/auth_url (X OAuth allow) → /event/x/follow → /event/tg/start_link (t.me/mistbox_bot?start=) → join group → /event/tg/verify → /event/box/open {boxId:9, idempotencyKey}
+- Note: daily reset may grant more passes; invite task +5 passes/referral (code YC6E7SPS for others)
