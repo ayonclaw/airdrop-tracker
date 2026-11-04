@@ -7171,3 +7171,12 @@
 
 11-04 | Tzero Testnet — UPDATE: LIFTOFF ✅ $AYZ MSN-0023 lifted off to TzeroSwap. Bridge 0.5 ETH Sepolia→Base Sepolia done via OptimismPortal (0x49f53e41452C74589E85cA1677426Ba426459e85), tx 0x7544a0ca4d8a561283e4192d03832b253a929f1e88b9166edf42cc6a3558424f. Saldo Base Sepolia 0.216 ETH.
 11-04 | Fomopoly (@fomopoly_rh, Robinhood Chain) — Free mint WL. ⛔ SKIP score 4/10: whitelist form (X handle + post about project + EVM wallet, manual review, mint date TBA), no live mint() contract verified, gate not passable, requires X post from @osbornrdx (out of scope). Chain Robinhood (1pt), free price (2pt), weak social proof (1pt). Source: x-mint-radar drop 2117800941709824435.
+
+## Agentic Coin (AGC) — agcc.fun
+- Status: 🔄 MINTED (1 share mode A, BSC) — claimFree due 2026-11-05 ~12:55 UTC (24h maturity)
+- Tweet: https://x.com/sohan269/status/2117825662086230443
+- Wallet: baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID reydenim.ai)
+- Minter: 0x6288DFe86f22B53eEB6886aE2D78941de7483743 | AGC: 0x63dea5aCdbE1F27c968907D08610A5f0A0284bA6
+- mintFree tx: https://bscscan.com/tx/0xcf20e969db6c7223d6fb16940969c6bb4856ea026892935ec15e35f1c723cd24 (status 0x1, block 131572976)
+- Deposit 0.002 BNB (refundable via claimFree) + reward 140,000 AGC/share epoch 2; aLeft 4 remaining today (day-1 cap 5)
+- Funding tx airdrop_00→baw 0.0019 BNB: https://bscscan.com/tx/0xfc2222f1175272dbf13a690942619d394f72408379bb221e4b0e306b5f55c683
