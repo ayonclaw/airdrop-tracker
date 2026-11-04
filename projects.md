@@ -7131,6 +7131,7 @@
   - Reply w/ wallet: https://x.com/osbornrdx/status/2117531918594175245 ✅ (wallet address in reply text)
 - **Submit:** form handle + reply link + wallet, Cloudflare Turnstile auto-solved di Chrome persistent (token 730 char), accepted.
 - **Mint:** drop day TBA, OpenSea, Robinhood Chain, wallet dapat mint 1 Lil di whitelist stage.
+- **11-04 UPDATE:** tweet @tessonchain (drop 2117681699547185276) "Free Mint 6666 Supply Robinhood" — verifikasi ulang site valley.loculus.xyz + /lil + /gtd: mint date masih **TBA**, kontrak NFT belum deploy (0 address di semua JS chunks), stage = whitelist. Score 4/10 < 6 → SKIP, tunggu drop day. Wallet Rey sudah WL.
 
 ## 11-03 | Elynx (Elysium) — Whitelist Applied ✅
 - **Link:** https://www.elynxnft.xyz/apply
