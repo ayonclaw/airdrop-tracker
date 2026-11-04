@@ -7165,3 +7165,5 @@
 - Tasks: follow @Grokiefun ✅ · like post 2117650108192108856 ✅ · retweet ✅ · card ✅ · reply ✅
 - Reply proof: https://x.com/osbornrdx/status/2117693810767786378
 
+
+11-04 | Tzero Testnet (Zero/LayerZero L1 launchpad) — Connect ✅ 0x8CCE…282D (Base Sepolia) · Launch mission $AYZ MSN-0023 ✅ · Fuel other missions ✅ · Buy $T0 ✅ · Stake $T0 31,070.147 ✅ (staker 0x221D…6239, on-chain verified) · Faucet test ETH ⛔ (Coinbase Google pw expired, QuickNode bot-check reject) · Liftoff ⛔ (butuh 0.286 ETH fuel, saldo 0.00417 ETH)
