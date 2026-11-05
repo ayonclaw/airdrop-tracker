@@ -1,3 +1,4 @@
+Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE (wallet 0x8CCE…282D verified via personal_sign SIWE, X @osbornrdx linked, badge 'Signed Up' earned, allowlist status pending; Discord link skipped — butuh akun 365+ hari; invite code Rey: 88gjehzc)
 ## Squeekchain Genesis NFT (Sepolia testnet) — ✅ CLAIMED (tokenId 1101)
 - **Date:** 2026-11-05 | **Chain:** Ethereum Sepolia (11155111) | **NFT:** `0xc4c7982657f00509548f3a3a41db7fa439a6856b`
 - **Recipient (wallet Rey):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (recipient only — no signing with Rey wallet)
