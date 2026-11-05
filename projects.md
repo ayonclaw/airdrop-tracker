@@ -1,3 +1,12 @@
+## Squeekchain Genesis NFT (Sepolia testnet) — ✅ CLAIMED (tokenId 1101)
+- **Date:** 2026-11-05 | **Chain:** Ethereum Sepolia (11155111) | **NFT:** `0xc4c7982657f00509548f3a3a41db7fa439a6856b`
+- **Recipient (wallet Rey):** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (recipient only — no signing with Rey wallet)
+- **Signer:** burner sekali pakai `0xAD2019095323D39F6F2b80f0aE6639F136d7E929` (gas 0.02 Sepolia ETH dari wallet Rey)
+- **Auth minter:** `0xe78b4420ce205b8864f2f326f3181f9dd5ea8b5f`, authorizationId `0xb2d66faa81efd81f5142500474866d3ec10475f814ba807a38ec634f6c4ee11a`
+- **TX:** `0x94b63ab7e79b13c96dbf6c3201861c3322f1dff1f1206a9a95dbc69d7b09bb51` — receipt status 0x1, block 12068602, gasUsed 302,207, value 0
+- **Verified:** balanceOf(Rey)=1, Transfer log tokenId **1101** -> Rey wallet. Sisa gas burner: 0.019999999669 ETH
+- **Note:** token sesi dihapus dari disk setelah selesai. publicnode Sepolia gas accounting non-standar (transfer pertama ~204k gas; legacy tx wajib, type-2 gagal; "to" wajib checksum untuk eth_account)
+
 ## DigDown V2 — FREE MINT ✅ DONE (tokenId 4657, 1 mint gas-only)
 - **Date:** 2026-11-03 | **Chain:** BNB Chain (56) | **Contract:** `0xF464550f1d744793893C0ce09b89269Ed726d796` | **Collection:** DigDown (DIG), pixel miner NFT | **Source:** X @mrchrismast_ https://x.com/mrchrismast_/status/2117426215510565044
 - **Wallet:** baw `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (Agent ID reydenim.ai)
