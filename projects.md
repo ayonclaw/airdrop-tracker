@@ -1,3 +1,13 @@
+## Squeekchain Squeek NFT Stake (Sepolia) — ✅ STAKED
+- **Date:** 2026-11-06 | **Chain:** Ethereum Sepolia (11155111)
+- **NFT:** Squeek test 0xc4c7982657f00509548f3a3a41db7fa439a6856b tokenId 1101 (owned airdrop_00)
+- **Staking contract:** 0x50fd1780526c3186a0c037c7622203bc4fb611ca
+- **TX 1 approve(staking, 1101):** 0x9a6a6369dff91d7b24a6680c57bcc2ddffaf9399fa1fd3cbb4575d0e69450602 — 0x1, gas 130,411
+- **TX 2 deposit(collection,[1101]):** 0x8c8e00aacd66451d9354fbabc3b7e261949e294f2b285daa862b85f92420606c — 0x1, gas 442,739
+- **Verified on-chain:** ownerOf(1101) = staking contract; depositor() = 0x8CCE…282D ✅
+- **Note:** direct contract calls (eth_account legacy tx) — UI /squeeks page butuh connect wallet; deposit selector 0xa71604e8 first arg = collection address (bukan owner). Testnet, no value.
+- Source: https://sepolia.squeekchain.com/mint
+
 ## Bronker Desk Quest (quest.bronker.com) — ✅ DONE
 - X: @osbornrdx (OAuth better-auth, login sukses 2026-11-05 11:15 WIB)
 - Wallet EVM: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
