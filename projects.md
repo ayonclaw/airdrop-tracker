@@ -7217,3 +7217,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - API: https://api.prod.mistbox.pro/v1/app (SIWE /auth/nonce + /auth/login, token localStorage `app.web.token`)
 - Flow: /event/me → /event/x/auth_url (X OAuth allow) → /event/x/follow → /event/tg/start_link (t.me/mistbox_bot?start=) → join group → /event/tg/verify → /event/box/open {boxId:9, idempotencyKey}
 - Note: daily reset may grant more passes; invite task +5 passes/referral (code YC6E7SPS for others)
+
+### Syqora (airdrop.syqora.app) — Season 1 Genesis
+- Status: DONE — balance 80 pts (4 tasks claimed)
+- Register: https://airdrop.syqora.app/register?ref=X2fsBj15AUoD · Account: airdropkarbiters@gmail.com
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (saved in profile)
+- Tasks: Daily check-in +10 ✅ · Complete profile +25 ✅ · Follow @SyqoraProtocol +20 ✅ · Join TG @Syqora +25 ✅
+- Telegram connected as mxsyxfxx (0xHanniR4Y) via @SyqoraDrops_bot
+- Skipped: Install Syqora Messenger (+750) — Microsoft Store app, Windows-only, no headless path
+- Pool: 10,000,000 PTS · 21,034 participants · Season ends 2027-01-31
+- API: /airdrop/quests · /airdrop/me · /airdrop/check-in (POST) · /airdrop/tasks/<id>/submit {evidence} · /airdrop/telegram/connection
