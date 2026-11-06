@@ -7219,11 +7219,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Note: daily reset may grant more passes; invite task +5 passes/referral (code YC6E7SPS for others)
 
 ### Syqora (airdrop.syqora.app) — Season 1 Genesis
-- Status: DONE — balance 80 pts (4 tasks claimed)
+- Status: DONE — balance 830 pts (5/5 genesis tasks claimed)
 - Register: https://airdrop.syqora.app/register?ref=X2fsBj15AUoD · Account: airdropkarbiters@gmail.com
 - Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D (saved in profile)
-- Tasks: Daily check-in +10 ✅ · Complete profile +25 ✅ · Follow @SyqoraProtocol +20 ✅ · Join TG @Syqora +25 ✅
+- Tasks: Daily check-in +10 ✅ · Complete profile +25 ✅ · Follow @SyqoraProtocol +20 ✅ · Join TG @Syqora +25 ✅ · Install Syqora Messenger +750 ✅ (@reydenim)
 - Telegram connected as mxsyxfxx (0xHanniR4Y) via @SyqoraDrops_bot
-- Skipped: Install Syqora Messenger (+750) — Microsoft Store app, Windows-only, no headless path
+- Remaining: 3 scheduled tasks (locked, unlock later) — 20 pts each
 - Pool: 10,000,000 PTS · 21,034 participants · Season ends 2027-01-31
 - API: /airdrop/quests · /airdrop/me · /airdrop/check-in (POST) · /airdrop/tasks/<id>/submit {evidence} · /airdrop/telegram/connection
