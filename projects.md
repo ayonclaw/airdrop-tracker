@@ -7238,3 +7238,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Submit: FORM SUCCESS — Turnstile solved IN-PAGE (widget auto-solves headful), client seals via Edge Fn `verify-captcha` {token}, then RPC submit_application(p_class,p_oath,p_wallet). Off-site solver token = captcha_failed (needs real page context).
 - Backend: Supabase bhgiumttnrrqurlqtknv · RPC my_state / complete_quest(p_slug,p_link) / submit_application(p_class,p_oath,p_wallet) / leaderboard
 - X proofs: follow https://x.com/SpacerzNFT · like+repost https://x.com/SpacerzNFT/status/2118714433983963330 · reply (ONI squad) same post
+
+### Octops (octops.fun) — Early Access Pass (Season 0, built on Ink)
+- Status: **DONE** — Early Access Pass #1096 CLAIMED, 4/4 quests
+- Register: https://www.octops.fun/?ref=YMN4F8 · handle @osbornrdx · refCode JRKH3P
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- Quests: Follow @octopsfun ✅ · Like post ✅ · Quote post ✅ · Reply w/ link ✅
+- X proofs: follow https://x.com/octopsfun · like https://x.com/octopsfun/status/2118842693363396938 · quote https://x.com/osbornrdx/status/2118962895329677588 · reply https://x.com/osbornrdx/status/2118963136317521984
+- Pass: passNumber 1096 · completedAt 2026-11-07T07:12:58Z · referrer @cryptoaddict66
+- API: GET /api/user/<handle> · GET /api/config · POST /api/register {username,inviteCode} → {user,token} · POST /api/wallet {username,token,wallet}
+- Key insight: session is TOKEN-based (returned by /api/register), NOT a cookie. Pass token into /api/wallet body as `token`.
+- localStorage key: `cook-ea-v1` (wizard step state only — not auth)
