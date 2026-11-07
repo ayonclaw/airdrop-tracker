@@ -25,6 +25,17 @@
 - **Still blocked upstream:** `/api/protection/challenge` → 500 and `/api/auth/siwe-nonce` → 503 `PROTECTION_UNAVAILABLE` (fresh decisionId each call) — Vapi's own protection service is down. A valid solved token (752 chars) still 503s, which proves the outage, not a bad token.
 - **Next:** cron starts claiming automatically when the gate recovers; 2 social quests left (follow X + follow LinkedIn) + daily check-in (10 pts/day).
 
+### 🔍 SIDAK CRON — 8 Nov 2026
+- **Scope:** audit 40 cron job — ekstrak domain target tiap script, cek DNS + HTTP langsung.
+- **💀 MATI (cron dihapus/dipause):**
+  - **Kryvora Network** — `faucet-testnet.kryvora.network` + `tasks.kryvora.network` + `kryvora.io` semua NXDOMAIN. Cron `6032bb45a9c3` DIHAPUS.
+  - **RIPSTACK (ripstack.fun)** — NXDOMAIN (www juga). Cron `d5d7d3a9a77d` DIHAPUS.
+  - **ZMINE (zmine.si)** — NXDOMAIN + `@zminedotsi` hilang total. (cron sudah tidak ada).
+- **🧹 DIBERSIHKAN (job mati/duplikat/one-shot lewat):** `5768cffb273b` prdctr-daily (duplikat dari 86dbbe8a5192 yg jalan), `538e9fde1863` hypest-mint-3Nov, `4152ba114b19` agentid-freemint-5Nov, `ecb00b90e5fa` agent-cards-mage-mint-3Nov, `a9eb4744e10d` bomb-free-mint-4Nov, `e542c3c25a11` topfloor-freemint-4Nov, `442f3d1424c6` Samoyed Hood Mint (Agu, paused).
+- **✅ TETAP HIDUP (dicek):** hub.prdctr.io 200 · api.awarizon.com 200 · agentideth.com 200 · api.vapinetwork.ai 200 · app.argonmine.com 200 · quest.beldex.io 200 · xreign.app · trynoah.ai · lakeenergy.com · opensea.io · bscscan.com.
+- **⏸️ MASIH PAUSED (sengaja, gate manual):** awarizon-daily-checkin (butuh join Telegram), beldex-daily-checkin (rule weekly expired), argonmine-watch, Tracker MD Auto-Sync, airdrop-monitor (LLM creds).
+- **Hasil:** 40 → **31 job** (26 aktif).
+
 ## Bronker Desk Quest (quest.bronker.com) — ✅ DONE
 - X: @osbornrdx (OAuth better-auth, login sukses 2026-11-05 11:15 WIB)
 - Wallet EVM: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
