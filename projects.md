@@ -7227,3 +7227,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Remaining: 3 scheduled tasks (locked, unlock later) — 20 pts each
 - Pool: 10,000,000 PTS · 21,034 participants · Season ends 2027-01-31
 - API: /airdrop/quests · /airdrop/me · /airdrop/check-in (POST) · /airdrop/tasks/<id>/submit {evidence} · /airdrop/telegram/connection
+
+### Spacerz (@SpacerzNFT) — Orbital Crew Registry
+- Status: APPLIED — 475 pts, core 5/5 complete, rank ~1520
+- Register: https://www.applyspacerz.xyz · Code: SPZ-RNVAN-8C0 · referred by @rnvanza
+- X: @osbornrdx connected (OAuth) · Ref code: SPZ-OSBOR-505
+- Class: Human · Cadet #4889 · LV.4
+- Core done: follow +100 · like +50 · repost +100 · squad (reply "ONI squad") +150 · notif +50
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- Skipped: submit_application blocked by Cloudflare Turnstile seal (client-side gated); bonus quote/post/pfp pending
+- Backend: Supabase bhgiumttnrrqurlqtknv · RPC my_state / complete_quest(p_slug,p_link) / submit_application(p_class,p_oath,p_wallet) / leaderboard
+- X proofs: follow https://x.com/SpacerzNFT · like+repost https://x.com/SpacerzNFT/status/2118714433983963330 · reply (ONI squad) same post
