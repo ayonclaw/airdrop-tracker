@@ -6819,6 +6819,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Action:** No registration, no waitlist, no tasks to execute. Track for token claim window opening post-TGE.
 - **Status:** ℹ️ INFO — informational update only. Season closed, points locked. Monitor for claim announcement.
 
+
+### Cathereum Genesis — 8,888 DN404 Cats (Elysium) — 2026-11-07 — ✅ DONE
+- **URL:** https://cathereum.tech/ | **Reward:** whitelist ticket mint list | **Cost:** 0 (GTD/FCFS allocation) | **X:** @CathereumTech
+- **Type:** Type 3 (WEB3-WALLET) + 6-step registration: Connect Wallet (SIWE, chain 99801) -> Connect X (OAuth2) -> Follow -> Like+Comment -> Quote -> Submit.
+- **Status:** ✅ **REGISTERED** — Registration ID `CTG-0000-2141`, ticket type `public`, handle `osbornrdx`, wallet 0x8CCE…282D. Server confirms via `GET /api/register?address=` -> `registered: true`.
+- **Proof (X actions all live on @osbornrdx):** reply https://x.com/osbornrdx/status/2119087441097412807 | quote id `2119074507663257955` | follow @CathereumTech = true | like = true. Target post: https://x.com/CathereumTech/status/2118243630540566867
+- **API map:** `GET /api/auth/nonce?wallet=<addr>` (nonce+issuedAt+expirationTime) -> `POST /api/auth/verify {wallet,message,signature}` (SIWE msg: statement "Sign in to Cathereum.", URI https://cathereum.tech/, Version 1, Chain ID 99801) -> `GET /api/x/start?wallet=<addr>` (OAuth2, scope users.read tweet.read, PKCE S256) -> `POST /api/register {wallet,xToken}`. Also `GET /api/register?address=`, `/api/check?address=`, `/api/wallet/<addr>`, `/api/cats-claims`.
+- **Mechanics that matter:** tasks unlock **in order** (`unlockInOrder`). Each unlocked step renders as an `<a href="x.com/intent/...">` that NAVIGATES AWAY before React records the step — so attach a capture-phase `preventDefault` listener, then `click()`; the counter goes up and the next step unlocks. Once step 06 shows, tick the ToS checkbox (`input[type=checkbox]` inside the "I agree…" label) and click SUBMIT. The X OAuth token arrives in the URL **hash** (`#x=<token>`) and is held **in memory only** — any reload/navigation after the callback discards it, so do not navigate between the OAuth return and the submit.
+- **Environment fix:** `/usr/bin/google-chrome` is x86_64 under qemu on this aarch64 host and dies (`GPU process isn't usable. Goodbye.`). Use the native Playwright Chromium `/home/ubuntu/.cache/ms-playwright/chromium-1234/chrome-linux/chrome` headful on DISPLAY=:99.
+
 ## ShibAgent ($SAGENT) — BNB Chain
 - Chain/Contract: BSC 56 · 0x24df7874ca006bc34898e779412f7b3c6b511693
 - Status: FREE CLAIMED 50,000 SAGENT (1/1 free share) · wallet baw 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1
