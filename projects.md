@@ -1,3 +1,7 @@
+# AyDrop — Ayon Airdrop Ledger
+
+> Sistem airdrop Ayon (Rey). Semua project, bukti, wallet, dan status.
+
 ## Squeekchain Squeek NFT Stake (Sepolia) — ✅ STAKED
 - **Date:** 2026-11-06 | **Chain:** Ethereum Sepolia (11155111)
 - **NFT:** Squeek test 0xc4c7982657f00509548f3a3a41db7fa439a6856b tokenId 1101 (owned airdrop_00)
