@@ -8,6 +8,15 @@
 - **Note:** direct contract calls (eth_account legacy tx) — UI /squeeks page butuh connect wallet; deposit selector 0xa71604e8 first arg = collection address (bukan owner). Testnet, no value.
 - Source: https://sepolia.squeekchain.com/mint
 
+### vAPI Network — 1M vAPI airdrop pool (Base/Arc/Solana) — 2026-11-07
+- **URL:** https://api.vapinetwork.ai/earn?ref=az1z1m | **Reward:** PTS → $vAPI (1,000,000 pool) | **Cost:** 0 | **X:** @vAPI_Network (bukan @vapinetwork — handle itu SUSPENDED)
+- **Type:** Type 3 (WEB3-WALLET) + social quest board. 22 quests, 3,635 pts board.
+- **Account state (from Rey's screenshot):** All quests 16/18 · Social 8/10 · Platform 8/8.
+- **Done by Ay on X (all verified live on @osbornrdx):** Follow @vAPI_Network ✅ · Follow @MarkTbuilds ✅ · Follow @asyncmac ✅ · Follow @laurensvanduin ✅ · Repost ✅ (unretweet present) · Like ✅ (unlike present) on https://x.com/vAPI_Network/status/2117950157022982440
+- **BLOCKER (server-side, not Ay):** site sign-in needs Cloudflare Turnstile via `POST /api/protection/challenge` (action `auth.siwe.nonce`); the endpoint returns **503 `PROTECTION_UNAVAILABLE`** / challenge **500** — protection service is DOWN. Widget never mounts (`window.turnstile` undefined, no iframe), modal shows "The security check could not be started". So quests cannot be claimed in-site until Vapi fixes it.
+- **API map:** `GET /api/auth/siwe-nonce` (message: "Sign in to vAPI Network", URI https://api.vapinetwork.ai, Version 1, Chain ID 1) → `POST /api/auth/siwe`; gated by `/api/protection/challenge` (supported actions: auth.siwe.nonce, auth.siwe.verify, earn.account, earn.board.refresh, …). Also `/api/id/me` (401 unauth), `/api/tasks/readiness`.
+- **Retry plan:** when protection recovers, sign-in SIWE (sign offline via PK), then claim the 2 remaining social quests (follow X + follow LinkedIn) + daily check-in (10 pts/day).
+
 ## Bronker Desk Quest (quest.bronker.com) — ✅ DONE
 - X: @osbornrdx (OAuth better-auth, login sukses 2026-11-05 11:15 WIB)
 - Wallet EVM: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
