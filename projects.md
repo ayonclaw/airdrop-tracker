@@ -17,6 +17,14 @@
 - **API map:** `GET /api/auth/siwe-nonce` (message: "Sign in to vAPI Network", URI https://api.vapinetwork.ai, Version 1, Chain ID 1) → `POST /api/auth/siwe`; gated by `/api/protection/challenge` (supported actions: auth.siwe.nonce, auth.siwe.verify, earn.account, earn.board.refresh, …). Also `/api/id/me` (401 unauth), `/api/tasks/readiness`.
 - **Retry plan:** when protection recovers, sign-in SIWE (sign offline via PK), then claim the 2 remaining social quests (follow X + follow LinkedIn) + daily check-in (10 pts/day).
 
+### vAPI — daily quest automation (cron) — 2026-11-07
+- **Goal (Rey):** automate the quest board daily; silent when there is nothing to claim; report ONLY when points increase.
+- **Cron:** `vapi-quest-daily` **`bf2394deff07`** — schedule `every day at 9am`, `no_agent=true`, deliver origin, script `vapi/vapi_quests.py` (self re-execs under /usr/bin/python3).
+- **Quest API (from bundle):** `POST /api/earn/quests/{questId}/{questAction}` with body `{inputs, fingerprint?}` + header `Idempotency-Key`, `X-Earn-View: 2`; actions = `verify|claim|submit_evaluation|submit_clip|submit_rails_username`; kinds = `honor|verify|checkin|code|evaluation|clip|rails_username`. Board read: `GET /api/earn/board` (401 when signed out). Identity links: `POST /api/connections/{x|discord|telegram|github}`.
+- **Turnstile:** sitekey `0x4AAAAAAEN_PvE1iYWei9wu` (from RSC loader payload on /earn). Solver sidecar route mode (`no real_page`, **no `action`**) solves it; `real_page:true` cannot be used here because the "Sign in with wallet" button only renders after wallet connect, so every selector fails attached-check.
+- **Still blocked upstream:** `/api/protection/challenge` → 500 and `/api/auth/siwe-nonce` → 503 `PROTECTION_UNAVAILABLE` (fresh decisionId each call) — Vapi's own protection service is down. A valid solved token (752 chars) still 503s, which proves the outage, not a bad token.
+- **Next:** cron starts claiming automatically when the gate recovers; 2 social quests left (follow X + follow LinkedIn) + daily check-in (10 pts/day).
+
 ## Bronker Desk Quest (quest.bronker.com) — ✅ DONE
 - X: @osbornrdx (OAuth better-auth, login sukses 2026-11-05 11:15 WIB)
 - Wallet EVM: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
