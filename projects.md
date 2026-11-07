@@ -36,6 +36,16 @@
 - **⏸️ MASIH PAUSED (sengaja, gate manual):** awarizon-daily-checkin (butuh join Telegram), beldex-daily-checkin (rule weekly expired), argonmine-watch, Tracker MD Auto-Sync, airdrop-monitor (LLM creds).
 - **Hasil:** 40 → **31 job** (26 aktif).
 
+### 💀 Pearl Coin (珍珠币) — DIBUANG 8 Nov 2026
+- **Kontrak:** `0x7E2DA878217EB995F9e5d36eD32c9Cea52442681` (BSC) · registry SPACE ID `0x60B9…022F` · PoW `keccak256(seed||nonce) <= target` via baw.
+- **Verdict: TIDAK WORTH — cron dihapus.** Alasan ekonomi (bukan teknis):
+  - reward/proof **76,27 PEARL**, harga **$0,00001201** → 1 proof = **$0,00000092** (0,09 sen).
+  - volume 24j **$0,72**, txn 24j **5 beli / 5 jual**, pair Pancake **V3** likuiditas tipis → **tanpa exit liquidity**.
+  - supply 213.982.647, emisi **6.030.467/hari = 2,8% supply/hari** → hyper-inflasi.
+  - sosmed tidak jelas (@PearlCoin 34 followers, bukan official).
+- **Bug ditemukan:** `target` on-chain = 71893191112401706119112040232052348463032385126774859949609627331242 (≈62% peluang per nonce) tapi script gagal setelah 436–941 JUTA percobaan → **formula proofDigest salah** (seed/encoding). 12 dari 18 run terakhir gagal, tiap run bakar **9 menit CPU** (ada `buffer overflow detected`).
+- **Aksi:** cron `85f148623bb2` DIHAPUS; script diarsipkan ke `scripts/_deleted/pearl-mining`. Jangan dihidupkan lagi.
+
 ## Bronker Desk Quest (quest.bronker.com) — ✅ DONE
 - X: @osbornrdx (OAuth better-auth, login sukses 2026-11-05 11:15 WIB)
 - Wallet EVM: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
