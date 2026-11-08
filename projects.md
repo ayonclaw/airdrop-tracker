@@ -29,6 +29,17 @@
 - **Still blocked upstream:** `/api/protection/challenge` → 500 and `/api/auth/siwe-nonce` → 503 `PROTECTION_UNAVAILABLE` (fresh decisionId each call) — Vapi's own protection service is down. A valid solved token (752 chars) still 503s, which proves the outage, not a bad token.
 - **Next:** cron starts claiming automatically when the gate recovers; 2 social quests left (follow X + follow LinkedIn) + daily check-in (10 pts/day).
 
+### POKECHAIN — free mint NFT kartu Pokemon (BNB Chain) · pokechain.trade — 2026-11-08 <!-- aydrop:done -->
+- **Reward:** NFT kartu Pokemon asli (Chrome tier), dihargai pasar kolektor · MAX_SUPPLY 15,555
+- **Free tier:** mint **#1 GRATIS** (0 BNB) per wallet; #2-20 = 0.00035 BNB; #21-35 = 0.00065 BNB; maks 35/wallet
+- **Gate:** wajib punya **.ai Agent ID (SPACE ID)** di wallet yang mint → agentic wallet `0x888dB97d…29a1` lolos (`canMint=1`), airdrop_00 TIDAK lolos
+- **Kontrak:** `0x4EF929aF00cB93993c3D01834C4DA79200d31e32` (BNB Chain 56) · `mint(uint256)` 0xa0712d68 · `priceOf(address,uint256)` · `canMint(address)` · `mintedBy(address)`
+- **Eksekusi:** fastmint.py dry 1.04s → broadcast 2.57s → **tx `0xc9b125526a3d185375d16e65491f21df694f4e7b57db030f1628d5074f9cd914`**
+- **Hasil:** status 1 · gasUsed 153,714 · **tokenId #4890 — Xerneas-GX (Forbidden Light 2018, Rare Rainbow)** · `balanceOf=1` ✅
+- **Biaya total:** 0 BNB mint + ~0.0000077 BNB gas (gasPrice 0.05 gwei) — praktis nol
+- **Transport:** HTTP **gagal total** dari VPS (server nolak non-browser: `ERR_CONNECTION_CLOSED`, reset peer) — situs dibaca via `r.jina.ai`; eksekusi murni on-chain (nggak butuh situs)
+- **Sisa:** tier gratis habis (mintedBy=1) → tier berikut berbayar 0.00035 BNB → **tidak diambil** (aturan NO PAID)
+
 ### SHADES (Elysium) — Early list whitelist · form.elysiumshades.xyz — 2026-11-08 <!-- aydrop:done -->
 - **Reward:** early-supporter reward saat mining buka (4,600 Shades, GPU-mined, no buy) · launch **9 Nov** di Elysium
 - **Source:** Rey drop · form https://form.elysiumshades.xyz/ · X @ShadesofEly · qoute post `2119274496360378762`
