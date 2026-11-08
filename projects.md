@@ -7361,3 +7361,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Endpoint (HTTP + sign lokal): POST /auth/wallet/challenge (butuh header x-captcha-response) → sign SIWE → POST /auth/wallet/sign-in {nonce,signature} → PATCH /auth/profile {username} → POST /waitlist/member
 - Catatan: /affiliate/use butuh email (EMAIL_REQUIRED) → referral Rey belum ter-apply; email verifikasi belum dikerjakan
 - Script: scripts/packvault/wallet_signin.py + w6.py (probe) · Chrome profil scripts/... /chrome-packvault port 9350
+
+## Elympus — Genesis Whitelist (Elysium mainnet launchpad) ⛔ CLOSED — 2026-11-08
+- Checker (live): https://www.elympus.fun/whitelist/checker · WL page: /whitelist
+- Hasil cek wallet airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **not-eligible**
+  dengan token Turnstile valid di halaman asli (sitekey 0x4AAAAAAFtHc7gNMYkIgYFu) → verdict sah, bukan blocker captcha
+- Alasan struktural: **"Applications are closed — The Genesis Whitelist is not accepting applications right now"** → tidak pernah sempat apply, dan sudah ditutup sebelum drop ini
+- Endpoint: `POST /api/whitelist/check {wallet, token}` → `{status: gtd|fcfs|not-eligible, shareProof}`
+  (token = Cloudflare Turnstile, single-use, terikat origin → harus dari halaman asli)
+- Watcher: cron **elympus-wl-watch** `22120e1be979` (0 */6 * * *, no_agent, SENYAP kalau masih tutup) → scripts/elympus/watch_wl.py
+  Lapor HANYA kalau copy WL berubah jadi terbuka (gate re-open)
+- Proyek: launchpad NFT di Elysium mainnet (project #1 Genesis), X @elympusHq — belum mainnet, belum ada kontrak
