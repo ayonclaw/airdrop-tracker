@@ -7298,3 +7298,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Watcher: cron **elympus-wl-watch** `22120e1be979` (0 */6 * * *, no_agent, SENYAP kalau masih tutup) → scripts/elympus/watch_wl.py
   Lapor HANYA kalau copy WL berubah jadi terbuka (gate re-open)
 - Proyek: launchpad NFT di Elysium mainnet (project #1 Genesis), X @elympusHq — belum mainnet, belum ada kontrak
+
+## Dawgz — free mint Robinhood Chain (whitelist) ✅ 2026-11-08 <!-- aydrop:done -->
+- **Chain:** Robinhood Chain 4663 · **Wallet:** airdrop_00 `0x8CCE..282D` · handle `@osbornrdx`
+- Situs: https://dawgzrh.com (Vite SPA) · post: https://x.com/Thedawgzrh/status/2119112563556331971 · "4000 dawgz, backed by $DAWGZ, mint via OpenSea"
+- Backend: Supabase `qrumjpbongudckjdjcls` tabel `dawgz` (RLS read-only public) — submit = POST /rest/v1/dawgz (apikey anon dari bundle)
+- Gate (5): follow @Thedawgzrh · like pinned · comment+tag2 (@TheMaran @DeepTimeHQ) · quote · submit handle+wallet
+- Eksekusi: DELEGASI subagent (deleg_452aa0bb) — follow ✅ like ✅ comment ✅ quote ✅ submit HTTP **201** row id=15847 ✅
+- Comment: https://x.com/osbornrdx/status/2119500116130463877
+- Quote: https://x.com/osbornrdx/status/2119501851825693144
+- ref_code: **105EXD** (FNV-1a base36 wallet) · verified di DB oleh Ay (re-hash cocok, row muncul, URL match)
+- Catatan: deadline "24 hours" sejak tweet (lewat), tapi endpoint masih terima submission
+
