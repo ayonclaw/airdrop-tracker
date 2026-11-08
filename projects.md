@@ -7305,6 +7305,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Cron:** `spacerz-retry` (`0 */2 * * *`, no_agent, silent) → `scripts/spacerz/retry.py`: refresh token → `complete_quest(post, quote)` → report hanya kalau PTS naik.
 - **Status verify:** `my_state` → `pending:["post"]` (tersubmit, tunggu review tim). `quote` masih terkunci.
 - **Pitfall:** gate client `need: 2+random(4)` klik + cooldown `wait` → verify via UI tidak berguna; pakai RPC langsung dengan access token.
+- **Update 2026-11-08 (task baru + engine generik):** mission 07 **`post` APPROVED** → poin 475 → **625**; **`daily` (+25)** ikut selesai → **675**. `completed` = follow, like, repost, squad, notif, post, **daily**.
+- **Cron di-upgrade dari "retry 2 link" → ENGINE GENERIK** (`scripts/spacerz/auto_tasks.py`): tiap run **parse bundle situs live** → dapat daftar misi (id/grup/poin/butuh-link/soon) → klaim semua yang belum selesai. **Task baru yang tim tambahkan otomatis kejaring tanpa ubah kode.**
+- **Recurring:** `daily` (+25 / 24 jam) & `weekly` (+75 / 7 hari) diklaim ulang otomatis setelah `my_state.completed` reset (`resets.daily` 00:00 UTC, `resets.weekly` 2026-11-12).
+- **Terkunci (bukan bug):** `weekly` → `quest_not_available`; `quote` → `quest_not_available` (tim belum buka); `pfp` (+200) → `soon:true` (nunggu art drop). Engine otomatis skip `soon` + sudah-pending, dan `quote` tetap dicoba tiap run sampai server bilang boleh.
+- **Link tersimpan:** `scripts/spacerz/links.json` (`{slug: link}`) — misi ber-`link:!0` diambil dari situ.
+- **Jadwal:** `spacerz-retry` (`0 */2 * * *`, no_agent, SENYAP kecuali poin naik).
 
 ### Octops (octops.fun) — Early Access Pass (Season 0, built on Ink)
 - Status: **DONE** — Early Access Pass #1096 CLAIMED, 4/4 quests
