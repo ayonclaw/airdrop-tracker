@@ -29,7 +29,7 @@
 - **Still blocked upstream:** `/api/protection/challenge` → 500 and `/api/auth/siwe-nonce` → 503 `PROTECTION_UNAVAILABLE` (fresh decisionId each call) — Vapi's own protection service is down. A valid solved token (752 chars) still 503s, which proves the outage, not a bad token.
 - **Next:** cron starts claiming automatically when the gate recovers; 2 social quests left (follow X + follow LinkedIn) + daily check-in (10 pts/day).
 
-### POKECHAIN — free mint NFT kartu Pokemon (BNB Chain) · pokechain.trade — 2026-11-08 <!-- aydrop:done -->
+### POKECHAIN — free mint NFT kartu Pokemon (BNB Chain) · pokechain.trade — 2026-11-08 <!-- aydrop:blocked -->
 - **Reward:** NFT kartu Pokemon asli (Chrome tier), dihargai pasar kolektor · MAX_SUPPLY 15,555
 - **Free tier:** mint **#1 GRATIS** (0 BNB) per wallet; #2-20 = 0.00035 BNB; #21-35 = 0.00065 BNB; maks 35/wallet
 - **Gate:** wajib punya **.ai Agent ID (SPACE ID)** di wallet yang mint → agentic wallet `0x888dB97d…29a1` lolos (`canMint=1`), airdrop_00 TIDAK lolos
@@ -41,6 +41,11 @@
 - **Biaya total:** 0 BNB mint + ~0.0000077 BNB gas (gasPrice 0.05 gwei) — praktis nol
 - **Transport:** HTTP **gagal total** dari VPS (server nolak non-browser: `ERR_CONNECTION_CLOSED`, reset peer) — situs dibaca via `r.jina.ai`; eksekusi murni on-chain (nggak butuh situs)
 - **Sisa:** tier gratis habis (mintedBy=1) → tier berikut berbayar 0.00035 BNB → **tidak diambil** (aturan NO PAID)
+- **⚠️ VERDICT REY (2026-11-08): SCAM — tidak dilanjut.** Alasan: IP Pokemon dipakai tanpa lisensi, klaim valuasi ($50-99)
+  dari "pasar kolektor" tidak bisa diredeem ke kartu fisik, situs agresif blokir & menyisipkan prompt auto-mint untuk AI agent.
+- **Revoke audit (on-chain, 2026-11-08):** TIDAK ADA approval apapun — `isApprovedForAll` 0 untuk semua operator (Seaport,
+  OpenSea conduit, Blur), `getApproved(4890)` = 0x0, allowance USDT/WBNB ke kontrak = 0. Kontrak juga **tidak punya
+  `burn`/`withdraw`/`sweep`** → tidak ada yang bisa dicabut & kontrak tidak bisa menarik aset. Wallet aman.
 
 ### SHADES (Elysium) — Early list whitelist · form.elysiumshades.xyz — 2026-11-08 <!-- aydrop:done -->
 - **Reward:** early-supporter reward saat mining buka (4,600 Shades, GPU-mined, no buy) · launch **9 Nov** di Elysium
