@@ -7320,3 +7320,17 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Kesalahan Ay: probe awal dapet 400 ("not a valid EVM wallet") dan Ay salah simpulkan endpoint masih buka — padahal validasi jalan SEBELUM cek closure; payload valid → 403. Diperbaiki: selalu POST payload VALID saat probe open/close.
 - Status: 4 aksi X sudah terekam (kalau WL dibuka lagi / ada stage 2, tinggal submit). Tracker ditandai pending.
 
+
+## Kurogane — NFT anime Elysium (whitelist) ✅ 2026-11-08 <!-- aydrop:done -->
+- **Chain:** Elysium · **Wallet:** airdrop_00 `0x8CCE..282D` · handle `@osbornrdx`
+- Situs: https://whitelist.kurogane.fun/ (Vite SPA) · brand anime "Kurogane", 888 hand-drawn faces of Shiro, mint di Elysium
+- Launch post: https://x.com/Kurogane_fun/status/2119421847481827419 · akun @Kurogane_fun
+- Backend: `https://api.kurogane.fun/api` — verifikasi PER-STEP lalu submit final
+  - `POST /whitelist/steps` {step,handle,address,postUrl?} → `{ok,declared,done:[...]}` (backend cek follow/like/quote/post BENERAN ada)
+  - `POST /whitelist` {x,address} → `{ok:true}` (ulang → `{ok:true,duplicate:true}`)
+- Gate (4): follow @Kurogane_fun · like launch post · quote launch post (+link) · post pakai template resmi (+link)
+- Eksekusi: DELEGASI subagent (deleg_932a47eb) — semua step masuk `done:[follow,like,quote,post]`, submit final HTTP **200**
+- Quote: https://x.com/osbornrdx/status/2119510473708286100 (backend konfirmasi quotedId=launch post)
+- Post: https://x.com/osbornrdx/status/2119510685134791095 (template resmi + #Kurogane)
+- Verifikasi Ay: re-hit /whitelist/steps → done 4/4 · submit ulang → `duplicate:true` (server sudah simpan entri Rey)
+
