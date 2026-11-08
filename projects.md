@@ -29,6 +29,20 @@
 - **Still blocked upstream:** `/api/protection/challenge` → 500 and `/api/auth/siwe-nonce` → 503 `PROTECTION_UNAVAILABLE` (fresh decisionId each call) — Vapi's own protection service is down. A valid solved token (752 chars) still 503s, which proves the outage, not a bad token.
 - **Next:** cron starts claiming automatically when the gate recovers; 2 social quests left (follow X + follow LinkedIn) + daily check-in (10 pts/day).
 
+### SHADES (Elysium) — Early list whitelist · form.elysiumshades.xyz — 2026-11-08 <!-- aydrop:done -->
+- **Reward:** early-supporter reward saat mining buka (4,600 Shades, GPU-mined, no buy) · launch **9 Nov** di Elysium
+- **Source:** Rey drop · form https://form.elysiumshades.xyz/ · X @ShadesofEly · qoute post `2119274496360378762`
+- **Auth:** NONE — no wallet connect, no gas, no sign. Form 4 langkah: follow → repost → reply → isi X handle + EVM wallet
+- **Gates:** reply harus URL tweet asli (regex `REPLY_RE`), handle valid, alamat 0x (40 hex). Tutup 2026-11-08 13:00 UTC (20:00 WIB)
+- **Wallet:** airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` · handle **@osbornrdx**
+- **X actions (real, verified):** Follow @ShadesofEly ✅ · Repost post `2119274496360378762` ✅ (unretweet confirmed)
+  · Reply ✅ → https://x.com/osbornrdx/status/2119361690064351485
+- **Submit:** `POST /api/join {address,handle,reposted,replyUrl}` → `{"ok":true}`; re-submit dari halaman asli → `{"n":5808,"already":true}`
+- **Posisi: #5808** (dari ~4,791 saat submit — list tumbuh cepat) · endpoint `GET /api/count`, `GET /api/config` (postId+closeAt+closed)
+- **Catatan infra:** cookie X di `secrets/x_cookies.json` MATI (109 hari) → sesi hidup ada di Chrome profil
+  `/home/ubuntu/chrome-profile-permanent` (port CDP **9455**). Reply harus pakai `Input.insertText` + mouse asli (klik `tweetButtonInline`),
+  `execCommand` gagal di Draft.js.
+
 ### 🔍 SIDAK CRON — 8 Nov 2026 <!-- aydrop:info -->
 - **Scope:** audit 40 cron job — ekstrak domain target tiap script, cek DNS + HTTP langsung.
 - **💀 MATI (cron dihapus/dipause):**
