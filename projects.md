@@ -7310,3 +7310,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - ref_code: **105EXD** (FNV-1a base36 wallet) · verified di DB oleh Ay (re-hash cocok, row muncul, URL match)
 - Catatan: deadline "24 hours" sejak tweet (lewat), tapi endpoint masih terima submission
 
+
+## Grump Guys — WL (grumpguys.xyz/apply) ⚠️ PARTIAL 4/5 — 2026-11-08 <!-- aydrop:pending -->
+- **Chain:** EVM (belum deploy) · **Wallet:** airdrop_00 `0x8CCE..282D` · handle `@osbornrdx`
+- Situs: https://www.grumpguys.xyz/apply (Next.js "ALIEN IMMIGRATION / FORM GG-5000") · target tweet: https://x.com/GrumpGuysNFT/status/2117962232374157599
+- Backend: endpoint tunggal `POST /api/apply` (bundle cuma punya ini), payload `{xHandle, wallet, tasks:{follow,like,repost,reply}}` + header origin
+- Gate X 1-4 **SELESAI** (deleg_a96d3153): follow @GrumpGuysNFT ✅ · like ✅ · repost ✅ · reply+tag2 ✅ → https://x.com/osbornrdx/status/2119502356710863195
+- Gate 5 submit **⛔ 403 "WL applications are closed. The mothership has left."** — deadline `2026-11-08T17:05:00Z`, submit dicoba 18:50Z (~1j45m lewat)
+- Kesalahan Ay: probe awal dapet 400 ("not a valid EVM wallet") dan Ay salah simpulkan endpoint masih buka — padahal validasi jalan SEBELUM cek closure; payload valid → 403. Diperbaiki: selalu POST payload VALID saat probe open/close.
+- Status: 4 aksi X sudah terekam (kalau WL dibuka lagi / ada stage 2, tinggal submit). Tracker ditandai pending.
+
