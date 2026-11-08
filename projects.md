@@ -5219,7 +5219,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Blocker:** Noah ID claim — tombol "Claim Noah ID" disabled, GET /noah-id/me → `eligibility:null, error:"Could not check your account right now"` (server-side X eligibility check error, bukan wallet/email/login). Quest verify POST /quests/quests/<id>/verify → 200 tapi `verified:false`. Semua quest Season 0 locked sampai Noah ID di-claim ("Claim your Noah ID card to unlock Season 0"). CSP blok direct fetch labs.trynoah.ai → semua API harus via XHR app.
 - **Auto-retry:** cron `14f90848842f` (trynoah-noah-autoclaim, every 20m, no-agent, silent) — script ~/.hermes/profiles/ayon/scripts/trynoah/noah_autoclaim.py: cek /noah-id, kalau eligibility resolve → auto claim + verify semua quest + report TOTAL POINTS ke Telegram. Restart browser_manager kalau 9222 mati.
 - **Quest list:** Hold a Noah ID (+2,000) · Share your Noah ID on X (+500) · Follow @TryNoahAI/@sayujnoahai/@sparsh_noahai (+100 each) · Ship 5 apps with Noah (+7,000) · Build and deploy a website (+1,500).
-- **Verdict:** 🔄 IN PROGRESS — auth + social done, menunggu server eligibility resolve (cron auto-claim jalan).
+- **🔴 VERDICT 2026-11-08: TIDAK WORTH — cron DIHAPUS (`14f90848842f`).**
+  - Platform **pivot**: `/quests` + `/noah-id` sekarang serve landing page (`Launch a Dapp in Minutes`) — quest platform-nya sudah tidak ada. Dulu blocker-nya "eligibility:null"; sekarang halamannya hilang total.
+  - Reward **bukan token/crypto** — Season 0 prizе = "Nitro 5 participants, top 3 win up to 8,000 points". Itu **hadiah kompetisi hackathon**, bukan airdrop. Tidak ada TGE, tidak ada aset.
+  - Ledger cuma "points" platform, misi utamanya (Ship 5 apps, deploy website) = **kerja bikin produk beneran** — bukan jalur gratis.
+  - Cron: 50 run, **49 senyap 1 error** (sampling tiap 20 mnt selama 5 hari untuk halaman yang sudah hilang) + `browser_manager start` tiap tick.
+  - Script diarsipkan: `scripts/_deleted/trynoah-quest-platform/`.
 ### #435 DATUM Campaign Airdrop Checker (github.com/Datai-Network/datai-airdrop) — Eligibility Check Only (msg 128651) — ℹ️ INFO (wallet not eligible)
 - **Date:** 2026-10-21 | **URL:** https://github.com/Datai-Network/datai-airdrop/blob/main/Airdrop_DATAI.csv | **Reward:** 400,000 $DATAI pool, claim at TGE Oct 22 | **Source:** @airdropfind drop 128651 | **X:** [@datainetwork](https://x.com/datainetwork/status/2112601639018549482) | **Track:** claim
 - **Type:** Type 13 (SEASON-CLOSED POINTS-CHECK) — CSV checker for DATUM Phase 1/2 participants. Eligibility: joined before Oct 10, minimum 1,650 Datum score. 942 eligible wallets.
