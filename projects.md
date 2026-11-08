@@ -7350,3 +7350,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Pr:** sim reverts because every `eth_call` getter is `msg.sender`-gated — decisive test is `eth_estimateGas` (`0x1a56b`), plus mandatory `--gasLimit` on `baw contract-call preview`. Playbook saved as skill `agent-id-free-mint`.
 - **Tiers:** 1 free · 2-15 @ 0.0003 BNB · 16-30 @ 0.0006 BNB · max 30/wallet · holders get `$ALCM` airdrop. Paid tiers not taken (FREE ONLY).
 - **Next:** optional follow/like/repost for X engagement; paid tiers skipped.
+
+## PackVault — waitlist TCG (kartu fisik) ✅ 2026-11-08
+- Link ref: https://www.packvault.com/r/Qlf93iO6n6 (kode Rey: Qlf93iO6n6)
+- Reward: early access + 1 free pack saat launch; invite 10%; race $50K/minggu
+- Auth: **Sign wallet (SIWE via better-auth)** — bukan email/password (jalur email kena Turnstile wajib + rate-limit 429)
+- Akun: username **reydenim** · wallet airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- User id: YGw05xPQLFsXGWXvEnZRL1UeO05KdVos · session expires 2026-11-15
+- Waitlist: **position 6.337** · referralCode sendiri **3-BCM8GMIe** · spotsPerInvite 250
+- Endpoint (HTTP + sign lokal): POST /auth/wallet/challenge (butuh header x-captcha-response) → sign SIWE → POST /auth/wallet/sign-in {nonce,signature} → PATCH /auth/profile {username} → POST /waitlist/member
+- Catatan: /affiliate/use butuh email (EMAIL_REQUIRED) → referral Rey belum ter-apply; email verifikasi belum dikerjakan
+- Script: scripts/packvault/wallet_signin.py + w6.py (probe) · Chrome profil scripts/... /chrome-packvault port 9350
