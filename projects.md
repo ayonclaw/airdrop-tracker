@@ -7336,3 +7336,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Verified:** login via Privy OAuth X → dashboard; faucet +16 XP (611.4 → 627.4); silent on 2 consecutive runs.
 - **Session note:** Privy needs cookies (`privy-token`, `privy-id-token`, `privy-session`) **+ localStorage** (`privy:token` etc.); raw value only — double-quoting breaks hydration. Token TTL ~1h, auto-refreshed by SDK.
 - **Blocked:** `AnotherShooter` +30 (external game), `stake` +60 (needs mainnet ASE) — both not free paths.
+
+### #316 Alchemister (usealchemist.org) — 2026-11-08 → ✅ MINTED (free)
+- **Type:** on-chain free mint NFT, BSC, `.ai Agent ID` gated (SPACE ID registry `0x60B9…022F`).
+- **Contract:** `0xcafeeddf3c15c5cd9a63d97021efde845e1781bc` — `mint(uint256)` payable, `costFor(address,uint256)`.
+- **Wallet:** binance agentic `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (holds `reydenim.ai`).
+- **Result:** mint 1 = free (gas only), tx `0xf185eccf51cbbc6c01c61aa6e1a2053f32364cfd9972d162f878c2b0764a347f`, receipt status **1**, gasUsed 106,876, `balanceOf(BAW)` = **1**. Epoch: 5,602/15,000 minted.
+- **Pr:** sim reverts because every `eth_call` getter is `msg.sender`-gated — decisive test is `eth_estimateGas` (`0x1a56b`), plus mandatory `--gasLimit` on `baw contract-call preview`. Playbook saved as skill `agent-id-free-mint`.
+- **Tiers:** 1 free · 2-15 @ 0.0003 BNB · 16-30 @ 0.0006 BNB · max 30/wallet · holders get `$ALCM` airdrop. Paid tiers not taken (FREE ONLY).
+- **Next:** optional follow/like/repost for X engagement; paid tiers skipped.
