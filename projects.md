@@ -7321,3 +7321,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - API: GET /api/me · POST /api/task/open {task_id} · POST /api/task/claim {task_id,proof} · POST /api/wallet {wallet} · POST /api/scan/seen
 - GitHub bind: /auth/github/start → OAuth authorize (client_id Ov23liklH6a3j8aK9sDA) → linked @reydenim. Login via password dari file lokal + TOTP github_totp.json (secret di ~/.hermes/credentials/)
 - Backend: Netlify functions + Supabase · health: {"ok":true,"tasks":6,"schema":"9"} · $FORK mint belum ada (launch paused)
+
+### #315b Asentum cron rebuild — 2026-11-08 → 🔄 REBUILT
+- **Why:** old `asentum_daily.sh` ran the Auras/AseDex LP routine; explorer RPC now returns HTML → `SyntaxError`, **50 SKIP / 0 success** over 25 runs. Ignored the easiest XP: daily check-in + faucet.
+- **New script:** `scripts/asentum/daily.py` (raw CDP, persistent profile `chrome-asentum` on CDP **9340**).
+- **What it does:** `/api/me` → `POST /api/faucet` (Bearer `privy-token`) → `/api/quests` status. Check-in is **auto-detected from the faucet tx**, so no claim click exists.
+- **Silent:** prints only when XP rises (no_agent → empty stdout = no message). Session-expiry alert deduped via state file.
+- **Schedule:** `0 */6 * * *` (matches the 6h faucet cooldown). Cron `f9c9a13f00d7`.
+- **Verified:** login via Privy OAuth X → dashboard; faucet +16 XP (611.4 → 627.4); silent on 2 consecutive runs.
+- **Session note:** Privy needs cookies (`privy-token`, `privy-id-token`, `privy-session`) **+ localStorage** (`privy:token` etc.); raw value only — double-quoting breaks hydration. Token TTL ~1h, auto-refreshed by SDK.
+- **Blocked:** `AnotherShooter` +30 (external game), `stake` +60 (needs mainnet ASE) — both not free paths.
