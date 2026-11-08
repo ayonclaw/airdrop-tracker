@@ -7309,14 +7309,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 
 
 ### ForksWiki (forks.wiki) — $FORK airdrop (Season 0)
-- Status: **DONE 5/6** — scan + 5 trials + SOL wallet; GitHub bind tinggal 1 langkah (butuh password)
+- Status: **DONE 6/6** — scan + 5 trials + SOL wallet + GitHub bind
 - Register: https://forks.wiki/r/vjrusmayana404 · handle @osbornrdx · ref vjrusmayana404
 - Wallet SOL: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG
 - Scan allocation: 12,900 $FORK (age 15.1y +4,000 · followers 1,030 +4,800 · posts 159,957 +3,500 · lists 4 +600)
-- Tasks: follow +2,000 ✅ · like +1,000 ✅ · repost +1,500 ✅ · comment +1,500 ✅ · quote +3,000 ✅ · github +3,000 ⏳
-- **Total allocation: 21,900 $FORK** (pending, bukan balance — belum ada mint)
+- Tasks: follow +2,000 ✅ · like +1,000 ✅ · repost +1,500 ✅ · comment +1,500 ✅ · quote +3,000 ✅ · github +3,000 ✅
+- **Total allocation: 24,900 $FORK** (pending, bukan balance — belum ada mint)
+- GitHub: **linked** @reydenim (linkedAt 2026-11-08T04:10:49Z)
 - X proofs: follow https://x.com/wikifork · like+repost https://x.com/wikifork/status/2119124558380745174 · comment https://x.com/osbornrdx/status/2119274695858237493 · quote https://x.com/osbornrdx/status/2119275164991193468
 - Auth: X OAuth2 + PKCE via /auth/x/start → /auth/x/callback (cookie `forks_session`)
 - API: GET /api/me · POST /api/task/open {task_id} · POST /api/task/claim {task_id,proof} · POST /api/wallet {wallet} · POST /api/scan/seen
-- GitHub bind: /auth/github/start → github.com/login (client_id Ov23liklH6a3j8aK9sDA) — butuh password GitHub, skip
+- GitHub bind: /auth/github/start → OAuth authorize (client_id Ov23liklH6a3j8aK9sDA) → linked @reydenim. Login via password dari file lokal + TOTP github_totp.json (secret di ~/.hermes/credentials/)
 - Backend: Netlify functions + Supabase · health: {"ok":true,"tasks":6,"schema":"9"} · $FORK mint belum ada (launch paused)
