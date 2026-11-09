@@ -7431,4 +7431,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - TaskOn butuh **binding Telegram ke akun TaskOn** (bukan cuma OAuth widget), kemungkinan di `/account/settings` — belum kelar
 - **API:** `POST https://api.taskon.xyz/v1/checkUserCampaignEligibility` (dipanggil saat klik Link & Verify)
 - **Grup Telegram:** https://t.me/bitbase_ex (Rey sudah JOIN — member "BITBASE Official" ✅)
+- **STOP setelah ~15 percobaan Telegram** (aturan Rey: max 5 tool call). Akar masalah ditemukan tapi belum terpecahkan:
+  - TaskOn pakai flow **white-label OAuth**: `localStorage.telegram-oauth-source-id = task-610823`, `oauth-from`/`oauth-redirect` = URL quest
+  - Endpoint API: `POST https://api.taskon.xyz/v1/bindSNS` + `/whiteLabel/v1/getAuthState` + `/whiteLabel/v1/getTokenByState`
+  - OAuth Telegram mengembalikan `#tgAuthResult=<base64 {id,first_name,username,auth_date,hash}>` di fragment URL
+  - **SPA tidak mengonsumsi fragment** (hashchange/popstate/refocus/re-set semua gagal) → kemungkinan handler hanya jalan saat `oauth-from` cocok & tab kembali dari popup
+  - `fetch` ke api.taskon.xyz dari dalam page = "Failed to fetch" (butuh header/token dari request wrapper internal, bukan cookie saja)
+  - Belum dicoba: panggil `/v1/bindSNS` dengan payload `{sns_type:Telegram, ...tgAuthResult}` + token auth internal. Rekap ini buat sesi berikutnya.
+  - **Nilai:** 10 USDT × peluang kecil (lucky draw 20 pemenang) — di bawah modal waktu yang sudah dipakai.
 
