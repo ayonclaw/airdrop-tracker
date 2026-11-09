@@ -7458,3 +7458,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Details submitted:** Rey Denim Osborn · Independent · On-chain automation / airdrop farming.
 - **Source:** https://x.com/_JAW_id/status/2118681571599188314
 - **Next:** watch for mainnet/invite email; `GET /api/waitlist/details` for status if a dashboard appears.
+
+### #318b JAW.id X engagement — 2026-11-09 ✅
+- Follow @_JAW_ID ✅ (state `Mengikuti`)
+- Like source tweet 2118681571599188314 ✅ (`unlike` state)
+- Repost source tweet ✅ (`unretweet` state)
+- X account: @osbornrdx · no referral program (openapi.json only exposes /api/contact, /api/waitlist, /api/waitlist/details)
