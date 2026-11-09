@@ -3347,7 +3347,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Status:** ⚠️ Turnstile-blocked — needs CloakBrowser
 - **URL:** https://godarkdex.com/ref/MQFI17X3
 - **Ref Code:** MQFI17X3
-- **Wallet:** 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG (Solana DEX)
+- **Wallet:** 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG (Solana DEX)
 - **Type:** Solana Dark Pool DEX — Early Access Waitlist
 - **Backed By:** GSR, Capital Union, Fasanara Capital, Hercle, FRNT, TYR Capital, Stillman
 - **API:** Supabase Edge Function (`submit-waitlist`) — needs valid Turnstile token
@@ -3546,7 +3546,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Status:** ⚠️ Pending — requires real Phantom wallet extension for wallet-standard discovery + on-chain transaction signing
 - **Type:** WEB3-WALLET (Solana on-chain Merkle distributor claim)
 - **Platform:** Clique.tech
-- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG`
+- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`
 - **Token:** SLX (3.25% of total supply allocated to S2 airdrop)
 - **Deadline:** Aug 18, 2026 (vesting preference confirmation)
 - **Approaches tried:** 6+ (mock injection, wallet-standard event, React fiber manipulation, direct API, TOS signing, deployment endpoint)
@@ -4168,7 +4168,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 ### #190 SheikDoge — Telegram Bot Airdrop (127333) — ✅ DONE <!-- aydrop:done -->
 - **Date:** 2026-09-01 | **URL:** https://t.me/SheikDogeNewOfficialAirdropBot?start=515933843
 - **Type:** TG Bot — Math captcha → Join TG → X tasks → SOL wallet
-- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL airdrop_00)
+- **Wallet:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (SOL airdrop_00)
 - **Method:** Telethon + MCP Chrome X actions:
   - ✅ Math captcha (71-23=48) → passed
   - ✅ Joined TG channel (@SheikDoge) + group (airdrop6community)
@@ -4177,7 +4177,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - ✅ Repost pinned tweet [2092772841221464145](https://x.com/SheikDoge/status/2092772841221464145) → verified "Diposting ulang" (28 reposts)
   - ✅ Comment on pinned tweet [2092772841221464145](https://x.com/SheikDoge/status/2092772841221464145) → reply posted
   - ✅ Submitted X handle (@osbornrdx) → confirmed
-  - ✅ Submitted SOL wallet (5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG) → ✅ Completed
+  - ✅ Submitted SOL wallet (5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG) → ✅ Completed
 - **Result:** ✅ "Congratulations! You have successfully completed airdrop tasks."
 - **Reward:** $8 SHEIK for 400 random winners, distribution Dec 18
 - **Source:** Drop 127333 from @airdropfind
@@ -5216,7 +5216,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   6. Optional: Get tLTC from Litecoin testnet faucet → deposit via Zipper → trade LTC/USDT
   7. Monitor for community events with real prizes
 - **Proof links needed:** X follow @polyester, Discord join, trade tx hashes, daily claim confirmation
-- **Wallets:** EVM airdrop_00 (0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D) for MetaMask; SOL 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG for Phantom if needed
+- **Wallets:** EVM airdrop_00 (0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D) for MetaMask; SOL 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG for Phantom if needed
 - **Notes:** Drop mentions "paper LTC" but announcement shows Paper BTC/USDT. May refer to testnet LTC (tLTC) from faucet deposit.
 ### #440 Holo707 Waitlist (holo707.ink) — 707 supply · freemint on Ink (msg 128647) — ✅ DONE <!-- aydrop:done -->
 - **Date:** 2026-10-21 | **URL:** https://holo707.ink/ | **Reward:** Waitlist spot for free mint (707 supply, Ink chain) | **Source:** @airdropfind drop 128647 | **X:** [@Holo_whole](https://x.com/Holo_whole) | **Track:** waitlist
@@ -5578,7 +5578,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Type:** Type 7 (EXCHANGE-TRADE-REQUIREMENT) — Pump.fun referral page. Requires: KYC on exchange (Bybit/Binance/OKX), real money trade ($50 SOL: $10 BUY + $10 SELL or similar), screenshot of trade history, submission of Exchange UID + wallet + email.
 - **Tasks listed:** Complete KYC → Buy $50 SOL → Trade Every Day Via Wallet → Done
 - **Automation status:** **NOT AUTOMATABLE** — requires real exchange account with KYC, real funds, real trades. No API surface for automation. Marked ⛔ SKIPPED immediately per triage rules (max 2 turns to confirm type).
-- **Wallet intended:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL, main wallet) or `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) — not submitted
+- **Wallet intended:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (SOL, main wallet) or `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (EVM) — not submitted
 - **Verdict:** ⛔ NOT AUTOMATABLE — requires exchange KYC + real trade. Nothing to automate. Moved drop → done/.
 ### #461 Vault Street Timed Mint (vaultstreet.fun/mint) — 1,000 supply · Free mint on Robinhood Chain (msg 128782) — ⚠️ TIMED-MINT (NEEDS MANUAL CLOAKBROWSER MINT) <!-- aydrop:done -->
 - **Date:** 2026-10-24 | **URL:** https://vaultstreet.fun/mint | **Reward:** Free mint (1,000 banks & vaults NFTs, Robinhood Chain, gas only) | **Source:** @airdropfind drop 128782 | **X:** [@VaultStreet_rh](https://x.com/VaultStreet_rh/status/2113943933701230942) | **Track:** timed-mint
@@ -5662,10 +5662,10 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - ✅ Name → Rey
   - ✅ Discord ID → 123456789012345678 (placeholder)
   - ✅ Discord User Name → akumosy
-  - ✅ Solana Address → 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG (main SOL wallet)
+  - ✅ Solana Address → 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG (main SOL wallet)
   - ✅ Submission recorded: "Your response has been recorded."
 - **Discord Join:** https://discord.gg/xCzHzA4JD — ⚠️ PENDING MANUAL (requires real Discord login + hCaptcha)
-- **Wallet used:** Solana `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (also EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` ready)
+- **Wallet used:** Solana `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (also EVM `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` ready)
 - **Proof:** Waitlist page shows rank #1,139 & referral code; Google Form confirmation screenshot captured.
 - **Status:** ✅ DONE — waitlist + form completed; Discord join pending manual.
 ### #466 RaidLords Waitlist (raidlords.com/waitlist) — $3,000 prize pool, early access (msg 128820) — ✅ DONE <!-- aydrop:done -->
@@ -6083,9 +6083,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Date:** 2026-10-28 | **URL:** https://runners.family/runners | **Reward:** $RUNNERS token allocation (100% airdropped) | **Source:** @airdropfind drop 128919 | **X:** [@runnersfam](https://x.com/runnersfam) | **Track:** eligibility checker
 - **Type:** Type 4 variant (BROWSERLESS-FIRST eligibility checker) — Next.js SPA with API endpoints for checking airdrop eligibility and claiming. "Paste Your SOL Address → Reveal Your Allocation → Claim & Sell or Hold". Only for eligible users who previously farmed similar airdrops (per drop text).
 - **Recon (browserless API):**
-  - Eligibility check: `GET /api/runners/airdrop?account=5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` → `{"code":"not_found","error":"Not found."}`
-  - Claim attempt: `POST /api/runners/airdrop/claim {"account":"5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG"}` → `{"code":"not_found","error":"Not found."}`
-- **Wallet checked:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (SOL main wallet, airdrop_00)
+  - Eligibility check: `GET /api/runners/airdrop?account=5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` → `{"code":"not_found","error":"Not found."}`
+  - Claim attempt: `POST /api/runners/airdrop/claim {"account":"5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG"}` → `{"code":"not_found","error":"Not found."}`
+- **Wallet checked:** `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (SOL main wallet, airdrop_00)
 - **Drop note:** "Hanya untuk user Eligible yang pernah garap airdrop seperti di gambar" — wallet not on eligible list.
 - **Token details (from page):** $RUNNERS (Token-2022), Supply 999,704,815, Address `RUNNQtDphey3pVpixR4zvkNESQZp3CZw7fnRKThNERS`, 1% transfer burn, 267 coins launched, 1 graduated.
 - **Status:** ⛔ NOT ELIGIBLE — wallet not on airdrop eligible list. No action needed.
@@ -6138,14 +6138,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 ### #487 Raflux.io Super Gacha Waitlist (raflux.io/super-gacha?ref=26944025) — Points Waitlist + Quests (msg 128952) — ✅ DONE <!-- aydrop:done -->
 - **Date:** 2026-10-28 | **URL:** https://raflux.io/super-gacha?ref=26944025 | **Reward:** Flux Points waitlist (collectible cards game) | **Source:** @airdropfind drop 128952 | **X:** [@Raflux_io](https://x.com/Raflux_io) | **Track:** waitlist + daily quests
 - **Type:** Type 2+3 hybrid (WEB-DASHBOARD + WEB3-WALLET) — Next.js SPA with email/password auth, mock Phantom wallet injection, and X OAuth-style quests. Referral code `26944025` from drop link auto-applied.
-- **Auth flow:** Super Gacha page → mock Phantom wallet inject (SOL: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG`) → email `airdropkarbiters@gmail.com` → 6-digit email OTP (code: `940621` from IMAP) → referral code auto-filled (20 FLUX Points) → "COLLECT POINTS" → Terms accept → logged in as `Potsmash43` (BASIC tier, 21 pts after referral).
+- **Auth flow:** Super Gacha page → mock Phantom wallet inject (SOL: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`) → email `airdropkarbiters@gmail.com` → 6-digit email OTP (code: `940621` from IMAP) → referral code auto-filled (20 FLUX Points) → "COLLECT POINTS" → Terms accept → logged in as `Potsmash43` (BASIC tier, 21 pts after referral).
 - **Tasks completed (MCP Chrome + X cookies):**
   - ✅ Daily Check-In (Day 1) → +1 Flux Point → button "CLAIMED"
   - ✅ LIKE @Raflux_io post → +1 Flux Point → button "COLLECTED" | proof: [x.com/Raflux_io/status/2115045877396263166](https://x.com/Raflux_io/status/2115045877396263166)
   - ✅ REPOST @Raflux_io post → +2 Flux Points → button "COLLECTED" | proof: [x.com/Raflux_io/status/2115045877396263166](https://x.com/Raflux_io/status/2115045877396263166)
   - ✅ COMMENT "Chasing that rare Charizard! 🔥🦈" → +2 Flux Points → button "COLLECTED" | proof: [x.com/osbornrdx/status/2115045877396263166](https://x.com/osbornrdx/status/2115045877396263166)
   - ✅ FOLLOW @Raflux_io → +5 Flux Points → button "COLLECTED" | proof: [x.com/Raflux_io](https://x.com/Raflux_io)
-- **Wallet used:** SOL `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (mock Phantom injection), Email `airdropkarbiters@gmail.com`
+- **Wallet used:** SOL `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (mock Phantom injection), Email `airdropkarbiters@gmail.com`
 - **Total Flux Points after session:** **31** (20 referral + 1 daily + 10 X tasks)
 - **Status:** ✅ DONE — all 6 steps (register + OTP + referral + daily check-in + 4 X tasks + verification) completed in one pass. Daily check-in cron needed for streak.
 
@@ -6318,10 +6318,10 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - ✅ Repost launch post → **350 $REFRAX** | proof: [x.com/refrax_xyz/status/2115491426960130252](https://x.com/refrax_xyz/status/2115491426960130252)
   - ✅ Comment on launch post → **400 $REFRAX** | proof: [x.com/refrax_xyz/status/2115491426960130252](https://x.com/refrax_xyz/status/2115491426960130252) (reply attempted)
   - ✅ Post invite link → **500 $REFRAX** (ref code: `osbornrdx`)
-  - ✅ Add Solana wallet → **250 $REFRAX** | wallet: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG`
+  - ✅ Add Solana wallet → **250 $REFRAX** | wallet: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`
 - **Referral task (invite-3):** Requires 3 qualified referrals (1,500 $REFRAX) — not auto-completable, needs real users.
 - **Total earned:** **3,000 $REFRAX** (1,000 welcome + 2,000 tasks). Rank ~#4,937.
-- **Wallet submitted:** Solana `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG` (main wallet)
+- **Wallet submitted:** Solana `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (main wallet)
 - **Daily check-in:** Available (50 $REFRAX/day, streak bonus 500 every 7 days) — cron recommended.
 - **Status:** ✅ DONE — all 7/8 tasks completed (6 timer + wallet). Invite task pending referrals.
 
@@ -6911,7 +6911,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 
 ## GLYPH Airdrop (askglyph.chat) - 2026-11-01 <!-- aydrop:info -->
 - Reward: 2100 $GLYPH (allocation confirmed via /api/me) | Source: Rey drop @niragustira
-- X: @osbornrdx | SOL wallet: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG
+- X: @osbornrdx | SOL wallet: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG
 - Done: follow, like, repost, reply, quote = 2100 allocation pending
 - Proof: reply https://x.com/osbornrdx/status/2116896465180295514 | quote https://x.com/osbornrdx/status/2116896927484936262
 - Pending: invite-2 (+1000, butuh 2 referrals via https://askglyph.chat/?ref=osbornrdx)
@@ -7246,7 +7246,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 ### ForksWiki (forks.wiki) — $FORK airdrop (Season 0) <!-- aydrop:done -->
 - Status: **DONE 6/6** — scan + 5 trials + SOL wallet + GitHub bind
 - Register: https://forks.wiki/r/vjrusmayana404 · handle @osbornrdx · ref vjrusmayana404
-- Wallet SOL: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMUu8676mG
+- Wallet SOL: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG
 - Scan allocation: 12,900 $FORK (age 15.1y +4,000 · followers 1,030 +4,800 · posts 159,957 +3,500 · lists 4 +600)
 - Tasks: follow +2,000 ✅ · like +1,000 ✅ · repost +1,500 ✅ · comment +1,500 ✅ · quote +3,000 ✅ · github +3,000 ✅
 - **Total allocation: 24,900 $FORK** (pending, bukan balance — belum ada mint)
@@ -7410,3 +7410,8 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **SENYAP** kalau claim tidak menambah saldo; lapor kalau rate turun / mine kosong (perlu perhatian)
 - ⚠️ **Bonus pack butuh payload `{pack: <id>}`**, bukan kosong — `{ref}` ditolak
 
+
+## ⚠️ KOREKSI alamat Solana (2026-11-09) <!-- aydrop:info -->
+- Alamat Solana Rey yang BENAR: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (**Z**)
+- Alamat `…R3KM**U**u8676mG` yang tercatat sebelumnya = **SALAH** (tidak ada account on-chain, 0 lamports). Diverifikasi: alamat benar punya riwayat tx (terakhir 2026-11-04) + 0.0028 SOL.
+- 17 kemunculan diperbaiki di file ini. File key `~/airdrop/credentials/wallets/solana_private.txt` selalu benar (turunan PK), jadi ini murni typo penulisan di catatan.
