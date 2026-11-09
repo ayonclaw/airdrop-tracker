@@ -7397,3 +7397,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - **SENYAP** kalau sudah check-in & skor tidak berubah; floor 0.00005 BNB → berhenti + lapor sekali (TIDAK pernah minta top-up)
   - Streak jalan: `consecutive_days` (hari ini 1d, skor 80, rank 30.708)
 
+
+## Big Booba Cards (Solana / pump.fun) ✅ 2026-11-09 <!-- aydrop:done -->
+- **Register:** https://bigboobacards.com/r/earlyaccess · token `$BBC` (CA `6ZT8vCWMDzGYs7pd2U5ZbuJAQZQU9wBHQGbfGjyNpump`) · 78 kartu, 7 rarity
+- **Auth:** Sign-In-With-Solana headless — `POST /api/auth/nonce {wallet}` → ed25519 sign pesan → `POST /api/auth/verify {nonce, signature: b64}` → cookie session
+- **BUKAN on-chain**: tidak ada tx, tidak ada SOL terpakai. Pesan sign-in situs sendiri bilang *"not a transaction, it moves nothing and it costs nothing"*
+- **Wallet:** Solana `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (Z!)
+- **Flow harian (semua GRATIS):** `/api/welcome` (5 starter card, sekali) → `/api/gift/open {pack}` (bonus pack) → `/api/autofill {}` (kartu terbaik masuk mine) → `/api/claim {}` (klaim $BBC) → `/api/todai` = leaderboard harian
+- **Hasil run pertama:** 5 kartu · balance **1,299,740 $BBC** · rate **255,351,749/jam** · slots 3
+- **Endpoint lain:** `/api/open {pack, expect, sig}` (pack berbayar) · `/api/faucet` · `/api/slots/buy {expect, sig}` · `/api/market/*` · `/api/bounty/claim {bounty}` · `/api/bounties` · `/api/withdraw {amount}` · `/api/ref/code {code}` · `/api/ref/use {code}`
+- **DAILY ✅ (claim mining + refill)** → cron `Big Booba Daily` (`40 9 * * *`, no_agent, deliver origin) → `scripts/bigbooba_daily.sh` → `scripts/bigbooba/bb.py` + `daily.py`
+- **SENYAP** kalau claim tidak menambah saldo; lapor kalau rate turun / mine kosong (perlu perhatian)
+- ⚠️ **Bonus pack butuh payload `{pack: <id>}`**, bukan kosong — `{ref}` ditolak
+
