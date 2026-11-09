@@ -7334,3 +7334,19 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Post: https://x.com/osbornrdx/status/2119510685134791095 (template resmi + #Kurogane)
 - Verifikasi Ay: re-hit /whitelist/steps → done 4/4 · submit ulang → `duplicate:true` (server sudah simpan entri Rey)
 
+
+## Asentum @name — native username on-chain ✅ 2026-11-09 <!-- aydrop:done -->
+- **Chain:** Asentum testnet 1423 (post-quantum, ML-DSA-65/Dilithium3 — BUKAN EVM)
+- **Wallet:** `ase1lrqf2zqkhxttkm6vg9aw3jg4a3qvtr9lc9zqws` (ase1, bech32) · hex `0xf8c0950816b996bb6f4c417ae8c915ec40c58cbf` · seed `~/airdrop/credentials/wallets/asentum_dilithium.json`
+- **Hasil:** `@reydenim` TERDAFTAR — owner bech32 di atas, registeredBlock 1252106, fee 10 ASE, primary=true, via=fee
+- **Tx:** 0xaa89e5c5f4aef979f14353d7ad017eedcaaf97cd50fd5f6d29934268f8a7f27e
+- Resolve: `@reydenim` → `ase1lrqf2zqkhxttkm6vg9aw3jg4a3qvtr9lc9zqws` · saldo sisa 7.30 ASE
+- **Cara jalan (JANGAN ulangi recon):**
+  1. RPC `https://explorer.asentum.com/rpc` — **cuma eth_call/eth_getBalance/eth_chainId/eth_blockNumber**. `eth_sendRawTransaction` & `eth_sendTransaction` TIDAK ADA (bukan chain EVM biasa).
+  2. Sign+kirim WAJIB lewat SDK resmi ESM: `npm i @asentum/sdk` → `new AsentumClient(rpc)` → `AsentumWallet.fromSeed(client, seedBytes32)` → `wallet.registerName('reydenim')`
+  3. Simulasi dulu: `registerName(name, {simulate:true})` balikin hash tanpa kirim.
+  4. PENTING: TxRejectedError "insufficient balance" bisa muncul padahal TX SUKSES terkirim — cek `getBalance` (turun = fee kepotong) + `nonce` naik sebelum panik.
+  5. Nama 3-5 char tarif beda; 6+ char = 10 ASE (`NAME_FEES_ASE.long`). Registry = precompile `0x…0b` / bech32 `ase1qqqq…ty736ey`.
+  6. Indexer: `GET explorer.asentum.com/api/indexer/names/name/<name>` · `/names/address/<ase1>`
+- Hubungan: akun airdrop asentum (XP 627.4, rank 57209) belum tentu wallet ini — name berdiri sendiri, tidak butuh XP.
+
