@@ -7352,8 +7352,8 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 
 
 ## Asentum — daily quests consolidated into ONE cron ✅ 2026-11-09 <!-- aydrop:done -->
-- **Cron:** `Asentum Daily Quests` (`299fec7de91b`→id baru, `0 8 * * *`, no_agent, deliver origin) → `scripts/asentum_quests.sh` → `/usr/bin/python3 scripts/asentum/quests_daily.py`
-- **Cron LAMA `Asentum Daily` (f9c9a13f00d7, `0 */6 * * *`) DIHAPUS** — jalankan rutin LP Auras/AseDex yang selalu SKIP (Auras balT=0, AseDex butuh ≥115150 token) dan tidak menyentuh quest board sama sekali. File `asentum_daily.sh` dihapus juga.
+- **Cron:** `Asentum Daily Quests` (`86dbbe8a5192`, `0 8 * * *`, no_agent, deliver origin) → `scripts/asentum_quests.sh` → `/usr/bin/python3 scripts/asentum/quests_daily.py`
+- **Cron LAMA `Asentum Daily` (`f9c9a13f00d7`, `0 */6 * * *`) DIHAPUS** — jalankan rutin LP Auras/AseDex yang selalu SKIP (Auras balT=0, AseDex butuh ≥115150 token) dan tidak menyentuh quest board sama sekali. File `asentum_daily.sh` dihapus juga.
 - **Board harian:** `daily:checkin` 15 XP (settle dari aktivitas on-chain apa pun) · `daily:asevegas_dig` 30 XP · `daily:asevegas_play` 30 XP → total 75 XP/hari
 - **Kontrak game (dipanggil langsung via SDK, tanpa browser):**
   - TREASURE `ase1syq98uqqphcjhggep78a54hpetkw9mtkxf4zw3` — `getState` `getConfig` `getGrid(i)` `getDigs(i,from,n)` `dig(grid,cell)` value=grid.price (0.5 ASE, maxPerWallet 5)
