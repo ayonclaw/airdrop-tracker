@@ -7364,3 +7364,27 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **SILENT** kalau tidak ada perubahan; print hanya saat quest flip done / aksi dilakukan
 - **Token session ambil ulang:** buka tab baru di CDP 9340 (jangan pakai tab yg dipakai cron lain — tab itu ke-lock dan Runtime.evaluate balas `{}`)
 
+
+## Leap Early Access (Solana Labs) ✅ 2026-11-09 <!-- aydrop:done -->
+- **Register:** https://leap.xyz/r/ZXXGB (invite Rey ZXXGB) · **Produk:** mobile trading app dari Solana Labs
+- **Auth:** Privy `cmr39xlxt004i0cjokxc4odun` → **wallet Solana embedded** `CPwQnRDi1U5SwTi7zrZZLvGZwvraEimRerW6kwiHv8pG` (BUKAN EVM airdrop_00 — Leap = Solana, tidak minta wallet EVM)
+- **API:** `https://web-api.leap.xyz/api/v0` — auth `Bearer <EdDSA(ed25519) JWT>` (Privy embedded Solana wallet)
+- **Status server:** `POST /api/v0/account` → `{access:"approved"}`, `joinedAt 2026-11-09T02:19:14Z` ✅ akun tersimpan
+- **Kode referral Rey sendiri:** `7VH9P` → `https://leap.xyz/r/7VH9P` (jalan, HTTP 200)
+- **Task 3/4 done:** (1) add friend's code ZXXGB ✅ server `referredCode` · (2) invite friends ⏳ butuh 1 orang nyata daftar lewat link Rey · (3) follow @leapxyz ✅ · (4) app access ✅ `approved`
+- **Reward:** 30% fee teman + 5% dari teman mereka + 10% rebate 6 bulan (earnedUsd 0 — fee belum live)
+- **Login:** Google `airdropkarbiters@gmail.com`, displayName `reydenim`. TIDAK ada minta bayar/kartu sama sekali.
+- **TestFlight:** https://testflight.apple.com/join/tpS9ER6G (iOS-only, tidak bisa install dari VPS)
+- **Cara:** chunk terpisah `assets/login-BrGEMwyU` + `assets/privy-DZ0Wa0Lv`; CTA ketutup `<span class="sr-only">` → klik anchor asli, bukan span. Invite code di storage key `leapInviteCode`.
+
+## 4D Labs Season 1 ✅ 2026-11-09 <!-- aydrop:done -->
+- **Register:** https://dapp.4dlabs.space/join/VD0FH62Y · chain **BSC mainnet (56)**
+- **Auth:** Privy `cmrw7x5ja02n20bifmgb02yw0` (SIWE via `auth.privy.io/api/v1/siwe/{init,authenticate}`)
+- **Akun server:** `user_id 310e5564-8242-4b67-a02f-6194ea876029` ✅ · kode referral sendiri `DZBTIP83`
+- **Skor terverifikasi (fresh):** `total_score 80` · checkin `5` · social `75` · `cumulative_rank 30700`
+- **Social:** `is_twitter_follow:1`, `is_twitter_retweet:1` ✅ (discord/telegram 0)
+- **Check-in kontrak:** `0x654612a216517bdbbA8356fF9462944AC5165fDc` (BSC 56) — method `checkIn(string)` `0xf21bb4c5` + `legal_location(string)` `0x43befb2a`
+- **API:** `https://dapp.4dlabs.space/api` → `/rank/me` `/profile/social-state` `/referral/code` `/checkin/*` (auth Bearer privy-token)
+- **Task config:** `assets/tasks-page-B1UdA2Cb`, `assets/referral-page-9FD_wfjB`, `assets/login-account-CWVGFsw7`
+- **Pitfall:** bundle cuma shell — alamat kontrak ada di chunk terpisah; env `VITE_CHAIN_KEY`/`VITE_PRIVY_APP_ID` dari bundle
+
