@@ -7441,3 +7441,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - **Cron dipasang:** `e1182a0ef468` taskon-bitbase-monitor (*/30, no_agent, SENYAP) → `scripts/taskon/bitbase_monitor.py`. Tiap tick: baca status task via CDP XHR → kalau mute dicabut, **5 pesan otomatis terkirim + submitTask + lapor**; kalau masih mute, senyap (dan tetap ada di grup, jadi bisa kirim kapan saja).
 - **Reward realistis:** `10 USDT × peluang menang` (20 pemenang dari seluruh peserta quest) — nilai harapan jauh di bawah 10 USDT; ini quest ikutan, bukan jalur uang utama.
 - **Mekanisme TaskOn (didokumentasikan di skill):** request WAJIB XHR (fetch kena CORS) + header `X-App-Version: 2.9.91` + `Authorization: <JWT mentah>`; endpoint `/v1/getCampaignInfo`, `/v1/getUserCampaignStatus`, `/v1/submitTask`, `/community/v1/doJoinCommunity`; Telegram OAuth handler `useFslOauth-*.js` hanya konsumsi `TG_USER` saat viewport ≤750px
+
+### #317 BAGENT (bagent.club) — 2026-11-09 → ⏳ CRON ARMED (Block Mining FCFS)
+- **Type:** free on-chain mining reward (FCFS), BNB Chain. Paid mint ($10.40/share) **NOT taken** (FREE ONLY).
+- **Mining:** every Binance Agentic Wallet = miner. `mine(expectedDay, minTokens, deadline)` on `0x9CA1A3eeA74829aA5011c56386b226DB472D0F4f` (Mint & Mining proxy), **nonpayable = gas only**. Max **7 claims/wallet**, 1/day, resets **00:00 UTC (07:00 WIB)**.
+- **Wallet:** `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` — `/api/account/` → `eligible:true, handle:reydenim, agentId:100163…6826, quota:5, minted:0`.
+- **API (base `https://bagent.club/api`):** `/config` (contracts incl. registry `0x60B9…022F`, token `0xb50d…4444`, miningAllocation 44.4B, miningClaimLimit 7), `/stats`, `/account/{addr}`, `POST /mining/quote {address}` → `{day,minTokens,deadline}`, then sign `mine(...)`.
+- **Today:** slots exhausted (`Remaining today: 0`, quote → "No mining rewards are currently available") → script stayed silent (correct).
+- **Automation:** `scripts/bagent/mining_claim.py` (no_agent, silent unless claimed) + cron **`c291d0d9c6c4`** `58 6 * * *` Asia/Jakarta — fires 2 min before the 07:00 WIB reset to win the FCFS race.
+- **Note:** the image's 5 reward stages = slots/day scaling with paid shares (888→55); irrelevant to free path.
