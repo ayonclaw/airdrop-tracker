@@ -7415,3 +7415,20 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Alamat Solana Rey yang BENAR: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (**Z**)
 - Alamat `…R3KM**U**u8676mG` yang tercatat sebelumnya = **SALAH** (tidak ada account on-chain, 0 lamports). Diverifikasi: alamat benar punya riwayat tx (terakhir 2026-11-04) + 0.0028 SOL.
 - 17 kemunculan diperbaiki di file ini. File key `~/airdrop/credentials/wallets/solana_private.txt` selalu benar (turunan PK), jadi ini murni typo penulisan di catatan.
+
+## BitBass Sets Sail (TaskOn quest 216030205) ⚠️ PARTIAL 4/5 2026-11-09 <!-- aydrop:pending -->
+- **URL:** https://taskon.xyz/quest/216030205 · **Sumber:** @airdropfind
+- **Reward:** 200 USDT pool / 20 pemenang = 10 USDT (lucky draw, bukan garansi) · periode 6-22 Nov 2026
+- **Status:** **(2/3) + (2/2) Completed** — Twitter task 2/2 tuntas, 1 task Telegram belum verified
+- **Login TaskOn BERHASIL via X OAuth** (`@osbornrdx`) — koreksi asumsi lama: akun X cukup, tidak butuh registrasi TaskOn terpisah
+  - Flow: modal login → pilih **X** → halaman `x.com/i/oauth2/authorize` → klik **"Izinkan aplikasi"** → redirect `taskon.xyz/quest/...?oauth_type=Twitter`
+- **X tasks done:** follow `@Bitbase_Ex` ✅ + `@Bitbase_cn` ✅ (verified server → (2/2))
+- **Telegram task stuck:** OAuth widget `oauth.telegram.org/auth?bot_id=6396701051` (TaskOn_telegram_bot) → nomor Rey diisi, ACCEPT diklik, redirect balik `#tgAuthResult=...` TAPI quest tetap (2/3)
+  - **Pitfall:** tombol **Decline** ada di kiri **Confirm** — pernah ke-klik Decline (pesan 96434) via loop tombol → muncul "Declined by the user", harus ulang
+  - **Pitfall:** input telepon = `input[type=tel]` KEDUA (index 2: [+62] [+nomor]); yang pertama cuma kode negara. `fill_input` gagal → pakai `click_at_xy` + `Input.insertText`
+  - **Pitfall:** jangan bersihkan field dengan Backspace loop (nilai nyambung jadi `851 57883553851578835` → "Invalid phone number"). Reload halaman untuk reset
+  - **Login OAuth Telegram pakai sesi Telethon** (`@mxsyxfxx`, id 983121959) — konfirmasi muncul di chat service `777000`
+  - TaskOn butuh **binding Telegram ke akun TaskOn** (bukan cuma OAuth widget), kemungkinan di `/account/settings` — belum kelar
+- **API:** `POST https://api.taskon.xyz/v1/checkUserCampaignEligibility` (dipanggil saat klik Link & Verify)
+- **Grup Telegram:** https://t.me/bitbase_ex (Rey sudah JOIN — member "BITBASE Official" ✅)
+
