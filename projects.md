@@ -7388,4 +7388,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **API:** `https://dapp.4dlabs.space/api` → `/rank/me` `/profile/social-state` `/referral/code` `/checkin/*` (auth Bearer privy-token)
 - **Task config:** `assets/tasks-page-B1UdA2Cb`, `assets/referral-page-9FD_wfjB`, `assets/login-account-CWVGFsw7`
 - **Pitfall:** bundle cuma shell — alamat kontrak ada di chunk terpisah; env `VITE_CHAIN_KEY`/`VITE_PRIVY_APP_ID` dari bundle
+- **DAILY ✅ (ada check-in + streak)** → cron `4D Labs Daily Check-in` (`0c5dec1c3276`, `15 9 * * *`, no_agent, deliver origin)
+  - Skrip: `scripts/4dlabs/daily.py` (+ `checkin.py` tx, `siwe_auth.py` login) · launcher `scripts/4dlabs_daily.sh`
+  - **Auth 100% headless**: Privy SIWE ditandatangani PK lokal → token baru tiap run, TIDAK butuh browser/session panjang
+  - **On-chain**: `checkIn(string _location)` ke BSC `0x654612a216517bdbbA8356Ff9462944AC5165fDc`, chainId 56, value 0
+  - **Biaya**: gas-only `27.294 gas × 50 gwei = 0.0000013647 BNB`/hari (~Rp0,02). Saldo 0.000597 BNB → **cukup ~437 hari**
+  - Lokasi dipilih otomatis = continent paling sepi (dari `/task/checkin-stat`) · API `/task/my-checkin-status` `/task/my-checkin` `/rank/me`
+  - **SENYAP** kalau sudah check-in & skor tidak berubah; floor 0.00005 BNB → berhenti + lapor sekali (TIDAK pernah minta top-up)
+  - Streak jalan: `consecutive_days` (hari ini 1d, skor 80, rank 30.708)
 
