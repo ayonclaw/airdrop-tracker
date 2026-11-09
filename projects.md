@@ -7416,7 +7416,18 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Alamat `…R3KM**U**u8676mG` yang tercatat sebelumnya = **SALAH** (tidak ada account on-chain, 0 lamports). Diverifikasi: alamat benar punya riwayat tx (terakhir 2026-11-04) + 0.0028 SOL.
 - 17 kemunculan diperbaiki di file ini. File key `~/airdrop/credentials/wallets/solana_private.txt` selalu benar (turunan PK), jadi ini murni typo penulisan di catatan.
 
+## Cathereum Genesis WL (cathereum.tech) — 🎟️ FCFS CONFIRMED, mint TBA 2026-11-09 <!-- aydrop:pending -->
+- **Portal:** https://cathereum.tech · supply 8,888 DN404 cats, on-chain, chain **Elysium (99801)** · reg ditutup 9 Nov (X: https://x.com/CathereumTech/status/2119673225651335203)
+- **Tiket Rey (wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`):** `registered: true` · **type `fcfs`** (First Come First Serve — bukan GTD) · handle `osbornrdx` · **regId `CTG-0000-2141`**
+- **Bukti:** `GET /api/check?address=<wallet>` → `{"registered":true,"ticket":{"type":"fcfs","handle":"osbornrdx","regId":"CTG-0000-2141"}}` · tiket PNG resmi di `~/.hermes/profiles/ayon/scripts/cathereum/ticket_rey.png` (1200×675, dari `/ticket/<addr>/opengraph-image`)
+- **Tier sistem:** `gtd` = GUARANTEED MINT · `fcfs` = eligible while supply lasts · `public` = open mint. Alamat kontrol `0x1111…1111` = `registered:false` (validasi endpoint bukan asal-bilang-ya).
+- **Harga mint & tanggal = TBA** di situs (MINT: TBA, PRICE: TBA). `/api/launchpad/status` 502, `/api/admin/registrations` 401 (butuh auth).
+- **⚠️ Follow-up Rey (dari reply X):** ada user yang mengeluh "registered yesterday tapi dibagi FCFS, padahal yang datang belakangan dapat (GTD)" — jadi tier bisa ditinjau ulang. Endpoint/FAQ belum menunjukkan jalur appeal; kalau mau naik ke GTD, satu-satunya jalur = minta admin @CathereumTech via X/Discord.
+- **Cron monitor:** `a62ef3a1c920` cathereum-wl-mint-monitor (*/15, no_agent, SENYAP) → `scripts/cathereum/monitor.py`. Lapor HANYA kalau: tier berubah, tanggal/phase mint publish (TBA hilang), atau mint live.
+- **Catatan metode:** fungsi `checkResult` di bundle JS memakai `registered:true` untuk **kedua** tier ("Your wallet made the list" untuk registered apa pun) — jadi label GTD/FCFS saja bukan bukti flagship; yang membedakan hanya field `ticket.type`.
+
 ## BitBass Sets Sail (TaskOn quest 216030205) — 4/5, sisa 1 BLOCKED 2026-11-09 <!-- aydrop:pending -->
+
 - **URL:** https://taskon.xyz/quest/216030205 · **Reward:** 200 USDT pool / 20 pemenang = 10 USDT (lucky draw) · periode 6-22 Nov 2026
 - **TaskOn BISA diotomasi** ✅ — akar masalah dipecahkan, sekarang jadi skill `taskon-quest-automation`
 - **✅ Login TaskOn via X OAuth** (`@osbornrdx`, user_id 455817). Akun X cukup, tidak butuh registrasi TaskOn.
@@ -7424,4 +7435,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **✅ Telegram SNS TER-BIND** — `POST /v1/bindSNS` JSON `{sns_type:"Telegram",token:"",tg_data:{...}}` → `{"result":true,"sns_id":"983121959"}`
 - **✅ Komunitas BITBASE (6554905) ter-join** — `checkUserJoined` → true
 - **❌ Task 610823 "Chat on Telegram" BLOCKED** — `verify_params: {cnt:"5", url:"https://t.me/bitbase_ex"}` = wajib kirim **5 PESAN** di grup, tapi akun Telegram `mxsyxfxx` statusnya **`ChannelParticipantBanned`** (send_messages=True sampai 2038) → `ChatWriteForbiddenError`. Leave+rejoin TIDAK reset ban. Butuh akun Telegram lain.
+  - **Investigasi lanjutan (9 Nov 12:30):** grup diskusi = `@bitbase_ex` (BITBASE Official, id 3702501999, linked ke channel BITBASE Announcement 4354650242); chat lama `Bitbase_official` (5230672897) = `ChatForbidden` (sudah tidak boleh dikirimi). Kita sudah **member** grup (bukan left) → mute-nya **per-user**, bukan global.
+  - **Upaya bicara (semua otomatis, tanpa Rey):** DM banding terkirim ke `@bitbase_support_official` + `@Bitbase_001` (sukses, belum dibalas) · cek Combot/GHSecurity/WeGroupClone → tidak ada menu appeal · `SpamBot` keblok oleh akun ini sendiri.
+  - **Anti-spam grup:** `Combot` + `ZealyTrackerBot` + `GHSecurity2Bot` + `WeGroupCloneBot` (admin). Mute bersifat administratif → hanya admin manusia yang bisa mencabut.
+  - **Cron dipasang:** `e1182a0ef468` taskon-bitbase-monitor (*/30, no_agent, SENYAP) → `scripts/taskon/bitbase_monitor.py`. Tiap tick: baca status task via CDP XHR → kalau mute dicabut, **5 pesan otomatis terkirim + submitTask + lapor**; kalau masih mute, senyap (dan tetap ada di grup, jadi bisa kirim kapan saja).
+- **Reward realistis:** `10 USDT × peluang menang` (20 pemenang dari seluruh peserta quest) — nilai harapan jauh di bawah 10 USDT; ini quest ikutan, bukan jalur uang utama.
 - **Mekanisme TaskOn (didokumentasikan di skill):** request WAJIB XHR (fetch kena CORS) + header `X-App-Version: 2.9.91` + `Authorization: <JWT mentah>`; endpoint `/v1/getCampaignInfo`, `/v1/getUserCampaignStatus`, `/v1/submitTask`, `/community/v1/doJoinCommunity`; Telegram OAuth handler `useFslOauth-*.js` hanya konsumsi `TG_USER` saat viewport ≤750px
