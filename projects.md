@@ -7450,3 +7450,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Today:** slots exhausted (`Remaining today: 0`, quote → "No mining rewards are currently available") → script stayed silent (correct).
 - **Automation:** `scripts/bagent/mining_claim.py` (no_agent, silent unless claimed) + cron **`c291d0d9c6c4`** `58 6 * * *` Asia/Jakarta — fires 2 min before the 07:00 WIB reset to win the FCFS race.
 - **Note:** the image's 5 reward stages = slots/day scaling with paid shares (888→55); irrelevant to free path.
+
+### #318 JAW.id (jaw.id) — 2026-11-09 → ✅ WAITLIST REGISTERED
+- **Type:** waitlist (off-chain). Agent payments/trading layer — works in Claude, ChatGPT, Gemini, Grok, Muse, OpenClaw, Hermes.
+- **Email:** airdropkarbiters@gmail.com · source `other` · detailsToken `utqiufhagbyi7zfkqk62305b`
+- **API:** `POST https://jaw.id/api/waitlist {email, source}` → `{success, detailsToken}`; `POST /api/waitlist/details {token, name, company, role}` → "Details saved".
+- **Details submitted:** Rey Denim Osborn · Independent · On-chain automation / airdrop farming.
+- **Source:** https://x.com/_JAW_id/status/2118681571599188314
+- **Next:** watch for mainnet/invite email; `GET /api/waitlist/details` for status if a dashboard appears.
