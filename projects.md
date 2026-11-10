@@ -7244,18 +7244,18 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 
 
 ### ForksWiki (forks.wiki) — $FORK airdrop (Season 0) <!-- aydrop:done -->
-- Status: **DONE 6/6** — scan + 5 trials + SOL wallet + GitHub bind
+- Status: **DONE 6/6** — scan + 5 trials + SOL wallet + GitHub bind (RESTORED 10 Nov, sesi baru)
 - Register: https://forks.wiki/r/vjrusmayana404 · handle @osbornrdx · ref vjrusmayana404
 - Wallet SOL: 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG
 - Scan allocation: 12,900 $FORK (age 15.1y +4,000 · followers 1,030 +4,800 · posts 159,957 +3,500 · lists 4 +600)
-- Tasks: follow +2,000 ✅ · like +1,000 ✅ · repost +1,500 ✅ · comment +1,500 ✅ · quote +3,000 ✅ · github +3,000 ✅
-- **Total allocation: 24,900 $FORK** (pending, bukan balance — belum ada mint)
+- Tasks (season 2, post baru 2119827551610872004): follow +2,000 ✅ · like +1,000 ✅ · repost +1,500 ✅ · comment +1,500 ✅ · quote +3,000 ✅ · github +3,000 ✅
+- **Total allocation: 24,900 $FORK** (pending, bukan balance — mint belum ada)
 - GitHub: **linked** @reydenim (linkedAt 2026-11-08T04:10:49Z)
-- X proofs: follow https://x.com/wikifork · like+repost https://x.com/wikifork/status/2119124558380745174 · comment https://x.com/osbornrdx/status/2119274695858237493 · quote https://x.com/osbornrdx/status/2119275164991193468
-- Auth: X OAuth2 + PKCE via /auth/x/start → /auth/x/callback (cookie `forks_session`)
+- X proofs season 2: like+repost https://x.com/wikifork/status/2119827551610872004 · comment https://x.com/osbornrdx/status/2120020875449892900
+- Auth: X OAuth2 + PKCE via **/auth/x/start** (BUKAN /api/auth/x/start) → /auth/x/callback (cookie `forks_session`)
 - API: GET /api/me · POST /api/task/open {task_id} · POST /api/task/claim {task_id,proof} · POST /api/wallet {wallet} · POST /api/scan/seen
-- GitHub bind: /auth/github/start → OAuth authorize (client_id Ov23liklH6a3j8aK9sDA) → linked @reydenim. Login via password dari file lokal + TOTP github_totp.json (secret di ~/.hermes/credentials/)
-- Backend: Netlify functions + Supabase · health: {"ok":true,"tasks":6,"schema":"9"} · $FORK mint belum ada (launch paused)
+- POST baru = task like/repost/comment RESET otomatis (follow/quote/github tetap). Cek `completedAt` per task sebelum kerja.
+- Backend: Netlify functions + Supabase · $FORK mint belum ada (launch paused)
 
 ### #315b Asentum cron rebuild — 2026-11-08 → 🔄 REBUILT <!-- aydrop:info -->
 - **Why:** old `asentum_daily.sh` ran the Auras/AseDex LP routine; explorer RPC now returns HTML → `SyntaxError`, **50 SKIP / 0 success** over 25 runs. Ignored the easiest XP: daily check-in + faucet.
