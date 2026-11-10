@@ -7495,3 +7495,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Speed:** **2.64 s** from invocation to broadcast via `scripts/aydrop/fastmint.py --send` (target <10s met).
 - **Tiers:** 1 free (.ai wallets) · 2-10 @ 0.0003 BNB · max 30/wallet. Each Eye = 8,333.3 $CLAF airdrop at claim.claf.markets when presale ends **2026-11-24**.
 - **Next:** claim $CLAF on 2026-11-24 → set reminder.
+
+### #320 Agent Mining AMNT (agentmining.fun) — 2026-11-10 → ⛏️ CRON ARMED (Plan B)
+- **Type:** proof-of-work mining token, BNB Chain, gate = Binance `.ai` Agent ID. FREE (gas only, value 0).
+- **Contracts:** AMNT `0x2d07B9CcDF5FCdbE26167358B94eeb4c9E995e4E` · registry `0x60B9…022F` · adapter `0x3c44B8EE0581F70026a7b650eC02373e25EF3200` · switch `0xBeb9CA620bE940146ddc8885Ef3D51bA837B8230`.
+- **PROOF (verified byte-for-byte vs on-chain `proofDigest()`):** `keccak256(abi.encode(sessionSeedBase[day], wallet, agentId, lane, day, nonce)) <= target`. abi.encode = **all args padded to 32 bytes** (192B payload). `agentId = keccak256(handleOf(wallet))` — confirmed equal to `adapter.agentIdOf(wallet)`.
+- **FIRST PICK = FREE.** `selectPlan(uint8 lane)` — **selector `0xec90c0d1` (uint8, NOT uint256)**. Executed: tx `0xc7d52356e2f618bdaea35ec31153496268bd840fbac5eeef396358447ab782c3` (status 1, gas 59,925) → `effectiveLane(agentId) = 2` (Plan B).
+- **Plans:** A = lane 1 (GPU, 35.87 bit now, 1,500 AMNT, uncapped) · **B = lane 2 (CPU, 28 bit, 2,500 AMNT, cap 20/ID/day)**. Switching plans costs 0.01 BNB LP (NOT taken — FREE ONLY).
+- **Window:** daily **13:00–15:00 UTC = 20:00–22:00 WIB** (2h). Day 0 pool `cpuProofsToday = 20,000/20,000` → **FULL**; window closed. `cpuPerIdCap = 20`, `maxBatch = 10`.
+- **Error decoder found:** `0x2e840c19 = CpuDailyCapExceeded` (pool empty, NOT a bad proof). `0xb4fa3fb3 = InvalidInput`.
+- **Toolchain:** Python keccak = 0.12 MH/s (useless). **C miner `scripts/agentmining/amin_miner.c`** = 4–8.4 MH/s/container, **verified 5/5 vs proofDigest()**. Swarm = Modal serverless (`amin_swarm_modal.py`), 24 containers x 134M nonces. VPS does zero hashing.
+- **Cron:** `d298ddc868c8` → `0-59/4 20-21 * * *` WIB (first tick exactly at window open). Script `agentmining/run_window.py`: pins seed itself (`pinSession`), mines, simulates, submits via baw, 40-pass cost guard, silent unless mined.
+- **Next:** first real window 2026-11-11 20:00 WIB. Target 20 proofs = 50,000 AMNT.
