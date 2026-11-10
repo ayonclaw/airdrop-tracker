@@ -7485,3 +7485,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   ("Not available yet: email sign-in is not offered here."). Hanya wallet sign-in.
 - Quest hub butuh akun Lebrel dengan email SAMA; wallet-only account tidak bisa ditracking.
 - Free session: 22:00-02:00 WIB harian. Reward = inference credits (bukan token/cash).
+
+### #319 Claf Eye (mint.claf.markets) — 2026-11-09 → ✅ MINTED (free, agent-ID gated)
+- **Type:** free-mint NFT, BNB Chain, `.ai` Agent ID gated. First Eye free for `.ai` wallets; **UI button said "Mint opens soon" but the contract was LIVE** — always probe on-chain, never trust the button.
+- **NFT contract:** `0x1c759C4e075103b5B250DB5114B832b17B99C456` · presale `0x45cd8E05FE67cFf0f961950317b68190Ea4360b0` · registry `0x60B9…022F` (same SPACE ID used by Alchemister).
+- **ABI (identical to Alchemister):** `mint(uint256) payable`, `costFor(address,uint256)`, `mintedBy(address)`, `totalSupply()`, `balanceOf(address)`.
+- **Wallet:** `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1`.
+- **Result:** `costFor(BAW,1)=0` → `mint(1)` value 0 → tx `0x23feb5ae382a2bfb347c4879634483192b81810b5ae518e23a25140d954283be`, receipt **status 1**, gasUsed **107,268**, `balanceOf(BAW)` = **1** ✅. Supply ~4,681/18,000.
+- **Speed:** **2.64 s** from invocation to broadcast via `scripts/aydrop/fastmint.py --send` (target <10s met).
+- **Tiers:** 1 free (.ai wallets) · 2-10 @ 0.0003 BNB · max 30/wallet. Each Eye = 8,333.3 $CLAF airdrop at claim.claf.markets when presale ends **2026-11-24**.
+- **Next:** claim $CLAF on 2026-11-24 → set reminder.
