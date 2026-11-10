@@ -7464,3 +7464,24 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Like source tweet 2118681571599188314 ✅ (`unlike` state)
 - Repost source tweet ✅ (`unretweet` state)
 - X account: @osbornrdx · no referral program (openapi.json only exposes /api/contact, /api/waitlist, /api/waitlist/details)
+
+## 2026-11-10 · Batch A (3 garapan)
+
+### Kurogane whitelist — whitelist.kurogane.fun
+- Wallet: 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D | X: @osbornrdx
+- Entry whitelist: TERCATAT (`{"ok":true,"duplicate":true}`), 4 step X terverifikasi server
+- GTD: TIDAK DAPAT — wallet tidak punya Kalos NFT (272/400 spot tersisa)
+- Deadline: 10 Nov 2026 12:30 UTC = 19:30 WIB
+- Catatan risiko: domain kurogane.fun umur 3 hari (7 Nov 2026), X account 6 post, tidak ada endorse dari @kalosfun. Tidak minta connect wallet / sign / bayar — hanya paste address.
+
+### ZetaLabs waitlist — labs.zetachain.com
+- Email airdropkarbiters@gmail.com terverifikasi, status: "You're on the list"
+- Launch: 9 Des 2026 · waitlist 2,333 traders
+- Gas/wallet tidak diminta
+
+### Lebrel quests — quests.lebrel.ai
+- Login quest hub OK (runner_932156) via Stytch OTP
+- BLOCKED: akun Lebrel (lebrel.ai) belum bisa dibuat — email signup server-side disabled
+  ("Not available yet: email sign-in is not offered here."). Hanya wallet sign-in.
+- Quest hub butuh akun Lebrel dengan email SAMA; wallet-only account tidak bisa ditracking.
+- Free session: 22:00-02:00 WIB harian. Reward = inference credits (bukan token/cash).
