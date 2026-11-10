@@ -7519,3 +7519,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Cron (ONE, merged):** `8b677730bea6` → `0 */6 * * *` WIB → `feg/feg_one_cron.py` does all three: (1) collects booked 10,000 FEG once `openedAt != 0`, (2) ONE-ONLY digest of sale progress, (3) burn alerts (`totalSupply` down / `0xdEaD` balance up). Silent when nothing to report. State `/tmp/feg_watch.json`.
 - **Selectors (from BYTECODE, not guessed):** `openedAt` `0x38930203` · `bookedFegOf` `0xd3b7fa5f` · `collectShares` `0xd31f8b67` · `collectedFeg` `0x2ff5fac0` · `collectedDay` `0x349247b1` · `status` `0x200d2ed2` · `freeClaimed` `0x1b47ec3a`. **4 of the first-guess selectors were WRONG — keccak-derived names only count once they appear in the dispatcher.**
 - **Recon win:** Sourcify source fetch (`sourcify.dev/server/v2/contract/56/<addr>?fields=sources`) gave the full Solidity — read `claimFreeShare()`/`canClaimFree()`/`collectShares()` verbatim instead of guessing. Error `0x6f312cbd` decoded = `NotStarted()`.
+
+## Folio (folio.market) — Early Access Waitlist
+- **Status:** BLOCKED — signup terbatas ("invite waves"), Privy tolak semua email baru
+- **Link:** https://www.folio.market/waitlist (source: x.com/folio_market/status/2119893505158119703)
+- **Task:** submit email → dapat invitation code
+- **Yang dikerjakan:** Turnstile solved via sidecar :8877 (real_page) → token diterima Privy (`200 {"success":true}`) → OTP Gmail dibaca via IMAP → `/passwordless/authenticate`
+- **Hasil:** `400 max_accounts_reached` (User limit reached) untuk airdropkarbiters@gmail.com, airdropkarbiters+folio@gmail.com, reydenim@gmail.com; `no-signup` → `user_does_not_exist` (email belum terdaftar di app)
+- **Artifact:** scripts/folio/waitlist_join.py (cron `00cda530559a`, tiap 6 jam, senyap kalau belum masuk)
+- **Catatan:** `init` selalu balas success → bukan bukti apa-apa; teknis BUKAN tembok, gate-nya di sisi app
