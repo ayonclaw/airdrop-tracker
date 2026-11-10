@@ -7507,3 +7507,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Toolchain:** Python keccak = 0.12 MH/s (useless). **C miner `scripts/agentmining/amin_miner.c`** = 4–8.4 MH/s/container, **verified 5/5 vs proofDigest()**. Swarm = Modal serverless (`amin_swarm_modal.py`), 24 containers x 134M nonces. VPS does zero hashing.
 - **Cron:** `d298ddc868c8` → `0-59/4 20-21 * * *` WIB (first tick exactly at window open). Script `agentmining/run_window.py`: pins seed itself (`pinSession`), mines, simulates, submits via baw, 40-pass cost guard, silent unless mined.
 - **Next:** first real window 2026-11-11 20:00 WIB. Target 20 proofs = 50,000 AMNT.
+
+### #321 FEG (agentfeg.xyz) — 2026-11-10 → ✅ FREE SHARE #181 CLAIMED (sniper mint)
+- **Type:** pre-open free share, BNB Chain, gate = Binance `.ai` Agent ID. FREE (nonpayable, value 0), 1 per Agent ID.
+- **Contracts:** sale `0xb9d0CA9b63C564443AfE64B77ef91B3bA763e5f1` · FEG token `0x701d2Eea5049Eb3e9c69F7B6dFf4C5f010eaE54c`.
+- **Mechanism:** `claimFreeShare()` (`0x195ad114`, **nonpayable, no BNB**) books 10,000 FEG (10% of a paid share = 100,000 FEG). 1,000 slots FCFS. `/` `collectShares(address)` (`0xd31f8b67`) moves it out — **reverts until `openedAt != 0`**. Free shares are NOT refundable and do NOT count toward the 10 paid shares.
+- **SNIPER MINT (Rey's term):** script polled the CHAIN clock (`eth_getBlockByNumber.timestamp`), fired exactly at `SALE_START = 1794326400` (23:00:00 WIB). Result: **slot #181** of 1,000; all 1,000 were gone within seconds. Winning = shooting at t=0, not being fastest overall.
+- **TX:** `0x505ca19ddd7334684e8fac0d20f98e03009b051ec96bbdc441d7342dbf3f698d` — status 1, gasUsed 92,918, value 0. Event `FreeShareClaimed(wallet, agentId, number=181, feg=10000e18)` — topic0 `25d3f028…` verified against keccak.
+- **Proof reads after:** `freeClaimed = 1000/1000`, `freeSharesLeft = 0`, `bookedFegOf(BAW) = 10,000 FEG`, `canClaimFree = 0`.
+- **Timeline:** FILL_DEADLINE 17 Nov 23:00 WIB (pool opens when share #10,000 sells; only ~197 sold so far, `nextSharePrice` 0.005 BNB). REFUND window 17–18 Nov 23:00 WIB. Pool open = when `openedAt != 0`.
+- **Cron:** `5e57629c3469` → `7,22,37,52 * * * *` WIB → `feg/collect_shares.py` auto-collects the moment the pool opens, state file `/tmp/feg_collected.json`, silent until it collects.
+- **Selectors (from BYTECODE, not guessed):** `openedAt` `0x38930203` · `bookedFegOf` `0xd3b7fa5f` · `collectShares` `0xd31f8b67` · `collectedFeg` `0x2ff5fac0` · `collectedDay` `0x349247b1` · `status` `0x200d2ed2` · `freeClaimed` `0x1b47ec3a`. **4 of the first-guess selectors were WRONG — keccak-derived names only count once they appear in the dispatcher.**
+- **Recon win:** Sourcify source fetch (`sourcify.dev/server/v2/contract/56/<addr>?fields=sources`) gave the full Solidity — read `claimFreeShare()`/`canClaimFree()`/`collectShares()` verbatim instead of guessing. Error `0x6f312cbd` decoded = `NotStarted()`.
