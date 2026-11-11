@@ -7578,3 +7578,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Wallet:** BAW 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID)
 - **Sumber:** daftar 22 project Agent ID (Okada roundup) — kontrak ke-22, hanya ini yang masih FREE
 - **Catatan:** claim() preview baw nunjukin balanceChange Erc721 +1 nol risiko → aman
+
+## Blockrips $RIPS Airdrop Season 1 — ✅ ALLOCATION LOCKED (404 $RIPS)
+- **Date:** 2026-11-11 | **Biaya:** 0 (sign message gratis, no gas)
+- **URL:** https://blockrips.com/airdrop | akun: @osbornrdx / handle internal reydenim
+- **Allocation:** **404 $RIPS** (bukan 443 — angka di screenshot Rey itu MOCK data halaman)
+- **Skor:** pack score 14 (STARTER), gacha 0, on-chain 14 — 1 platform ketemu: wallet SOL 5yw3K…76mG
+- **Post X (gate lock-in):** https://x.com/osbornrdx/status/2120420291306516799
+- **Wallet state:** Wallet1 SOL 5yw3K…76mG = LOCKED IN (404 $RIPS) · Wallet2 0x8cc…282d EVM = nothing found · Wallet3 0x888…29a1 EVM = nothing found
+- **Cara lock wallet:** POST /api/pc-proof {action:open,method:sign,address} → {claimId,message(SIWS)} → sign message dengan PK wallet → POST {action:sign,claimId,address,signature}
+- **PITFALL FORMAT SIGNATURE (buat 15 menit):** signature Solana harus **base64**, BUKAN base58. base58 → `400 bad_signature`; base64 → `200 {ok:true,status:"locked"}`. Pesan di-sign apa adanya (UTF-8 bytes), verify lokal True tapi server tetap tolak kalau encoding salah.
+- **Handler:** sign lokal pakai /usr/bin/python3 + solders (PK di ~/airdrop/credentials/wallets/solana_private.txt)
+- **Catatan:** halaman /airdrop self-described "front end only, mock data" — tapi API /api/pc-proof LIVE dan allocation asli beda dari mock. Login via X (Privy OAuth2), bukan wallet connect.
