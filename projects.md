@@ -7556,3 +7556,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Sisi positif sesi ini:** burn 3 akun token mati (ADCS/WENX, DNFDYLDS/PENGWU, T22 EwNq...pump) -> rent balik **+0,006153 SOL**, saldo wallet 0,002827 -> **0,010999 SOL** (+Rp 12.370) — GRATIS
 - **Script:** scripts/forkswiki/{launch_tvdrop.py,launch_tvdrop2.py,submit_build2.py,sweep_solana.py} - skill automation/forks-wiki-launchpad
 - **Catatan:** plan bisa dibangun ulang kapan aja (exp ~1 jam, `in_flight` kalau numpuk); hanya lanjut kalau Rey bilang eksplisit
+
+## UFO (Unidentified Free Offering) — FREE MINT Agent ID — ✅ CLAIMED
+- **Date:** 2026-11-11 | **Chain:** BNB Smart Chain 56 | **Biaya:** gas only 0,0000095 BNB (~Rp 14)
+- **Kontrak:** 0xE4059eA596392AcA14100af6CDC9481c330E2728 (source-verified) | token UFO 18 dec
+- **Reward:** 3.000.000.000 UFO (1 share free per Agent ID wallet) — saldo sekarang **3.000.000.000 UFO**
+- **TX:** 0x59d6f9d8c7c8f06d5ca8e565c2d379488ba20f1bd4de3f1923fe4dfe84f4840d — receipt 0x1, gas 125.228, block 132899852
+- **Proof X (gate wajib):** https://x.com/osbornrdx/status/2120363565861454232 (#UFO + "Unidentified Free Offering" + link)
+- **Wallet:** BAW 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID balanceOf=1) — BUKAN airdrop_00
+- **Flow:** post X → POST /.netlify/functions/permit {wallet,tweetUrl} → {deadline,signature} (30 min TTL) → claimFree(deadline,sig,referrer) selector 0x8f36820d
+- **PITFALL ABI (buat 20 menit):** offset bytes di calldata = **96**, bukan 192 → head = deadline | 0x60 | referrer, lalu len | sig. Page sendiri konfirm: `off = (96).toString(16).padStart(64,"0")`
+- **Cek eligibility:** overview() 0x3a2056f1 (word0=free left, word1=total, word7=sale end unix); freeUsed(addr) 0x2626c4bf; AgentID registry 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F balanceOf>0
+- **Sisa window:** sale tutup 12 Nov 15:05 UTC (paid 0,001 BNB/share, max 20/tx)
+- **Script:** scripts/dust/dust_scan.py (scan multi-chain)
