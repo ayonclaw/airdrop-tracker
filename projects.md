@@ -7538,3 +7538,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Reward:** X scan 12.900 + trials 13.500 = 28.900 pending
 - **Otomasi:** cron 6177b5df6d8b (*/20, monitor forkswiki/new_post_watch.py) — nembak agent HANYA saat /src/config.js ganti post id; trial baru langsung dieksekusi
 - **Catatan:** watch pakai /src/config.js (publik, tanpa auth) → x.post + postSince + redo
+
+## Enter Elysium (Elysium 99901) — CLOSED / SOLD OUT
+- **Status:** ❌ SOLD OUT — totalSupply 8.888/8.888, mint publik 11 Nov 00:00 WIB habis dalam beberapa jam
+- **Kontrak:** 0x168dd252b47ff4a63dfa98b2f0b573df4df3f3ed (SeaDrop public mint, harga 0, max 1)
+- **Revert:** 0xe12d2314 requested=8889 max=8888 (error requestExceedsMaxSupply)
+- **Wallet:** 0x8CCE…282D balance 0, gas 0.001 ELYSIUM (tidak terpakai)
+- **Script:** scripts/_deleted/enter-elysium/mint_auto.py (diarsipkan), cron e43e0422861b DIHAPUS 11 Nov
+- **Pelajaran:** script mint harus kirim laporan saat revert PERTAMA, bukan sekali lalu diam — kalau tidak, sold-out kelihatan seperti 'cron sehat tapi sepi'
