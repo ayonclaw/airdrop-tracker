@@ -7590,3 +7590,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **PITFALL FORMAT SIGNATURE (buat 15 menit):** signature Solana harus **base64**, BUKAN base58. base58 → `400 bad_signature`; base64 → `200 {ok:true,status:"locked"}`. Pesan di-sign apa adanya (UTF-8 bytes), verify lokal True tapi server tetap tolak kalau encoding salah.
 - **Handler:** sign lokal pakai /usr/bin/python3 + solders (PK di ~/airdrop/credentials/wallets/solana_private.txt)
 - **Catatan:** halaman /airdrop self-described "front end only, mock data" — tapi API /api/pc-proof LIVE dan allocation asli beda dari mock. Login via X (Privy OAuth2), bukan wallet connect.
+
+### #320b AMNT day 1 — ✅ MINED 17,500 AMNT (7 proofs), seed bug fixed
+- **Bug fixed:** `sessionSeedBase` is **re-pinned every day** (day 0 = `1488c2b9…`, day 1 = `64068b9a…`). The swarm had the day-0 seed hardcoded → cron ran 5 passes in the day-1 window producing proofs that all reverted. Now the seed + difficulty come from live reads (`sessionSeedBase(dayIndex())`, `cpuTarget()`) and are passed to Modal shards via `AMIN_SEED`/`AMIN_DAY` env at spawn time.
+- **Result:** tx `0x094999482bb193d4f9b9c63e32d35bf27b5618e530b1746a5a1d2a865f0fa566` — status 1, gasUsed 285,441, 7 proofs submitted in one `mineBatch` → **17,500 AMNT**. `cpuCountOfId = 7/20` (13 left today).
+- **Note:** `AMNT.balanceOf(BAW)` reads 0 and `totalSupply()` reads 0 while `cpuCountOfId` = 7 — the token is credited per-Epoch/claim contract, not as an ERC20 balance on the AMNT address. Track progress with `cpuCountOfId`, not `balanceOf`.
+- **Resource limits (operator request — do not disturb Hermes):** container `cpu=2.0 memory=1024 timeout=180`; **10 shards/pass** (was 24), **64M nonces**/shard (was 134M), subprocess `timeout=420`, **MAX_PASSES 12/day** (was 40). Host load stayed 0.1–0.4 throughout — all hashing is on Modal.
