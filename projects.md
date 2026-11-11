@@ -7604,3 +7604,8 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Bug 4 (overlap):** the */4 cron could start a second pass while the first was still mining → same offset, duplicate work. Fixed: PID lock file `/tmp/amin_run.lock` with `atexit` release; second instance verified to exit silently in <1 s.
 - **Result today:** tx#1 `0x094999482bb193d4f9b9c63e32d35bf27b5618e530b1746a5a1d2a865f0fa566` (7 proofs) + tx#2 `0xd82a066355d849596f7c19e15d0f284ba5aed073fcf69d34a8e291221e62c711` (2 new proofs) = **cpuCountOfId 14/20 → 35,000 AMNT**.
 - **Sizing rule:** at 29 bits one proof needs ~5.4e8 attempts. 10 shards x 64M = 671M expected only 1.25 proofs and often found zero; the tuned shape is `shards x per ≈ 1.5 x 2^bits x WANT_PROOFS` (24 shards x 100M at 29 bits). Container capped at `cpu=2.0 memory=1024 timeout=180` so the operator's box stays quiet (host load stayed 0.3–1.2; all hashing on Modal).
+
+### #320d AMNT day 1 — FULL 20/20 = 50,000 AMNT 🎉
+- Final push: tx#3 `0x7a5ec026a5b5111f48e43e013a1a971dd359d66602b4c34916d21132ad7430a5` — 6 proofs, gasUsed 208,471, status 1. `cpuCountOfId` now **20/20**, pool global 14,610/20,000. Daily cap reached → script returns silent next ticks (guard active).
+- Stale-lock fix: a PID can be recycled (zombie parent), so the lock now also verifies `/proc/<pid>/cmdline` contains `run_window.py` before deferring, and `SIGTERM/SIGINT` handlers + `atexit` release the lock on every path (a `timeout`-killed parent previously left the lock behind).
+- Total day 1: **50,000 AMNT** in 3 txs. Next reset: tomorrow 20:00–22:00 WIB window (seed will be re-pinned; offset/used state persists in `/tmp/amin_state.json`).
