@@ -7546,3 +7546,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Wallet:** 0x8CCE…282D balance 0, gas 0.001 ELYSIUM (tidak terpakai)
 - **Script:** scripts/_deleted/enter-elysium/mint_auto.py (diarsipkan), cron e43e0422861b DIHAPUS 11 Nov
 - **Pelajaran:** script mint harus kirim laporan saat revert PERTAMA, bukan sekali lalu diam — kalau tidak, sold-out kelihatan seperti 'cron sehat tapi sepi'
+
+## Forks.wiki Launchpad — TVDrop launch (reydenim/tvdrop) — ⏹ STOP (tidak jadi launch)
+- **Status:** DIBATALKAN oleh Rey 11 Nov — "ngapain keluarin modal buat project yg backup investor-nya ga keliatan"
+- **Repo:** reydenim/tvdrop (owner reydenim = GitHub Rey, dibuat 10 Jun 2026, 0 star) → split d=0: repo 30% + launcher 50%, forks 20%
+- **Yang sudah siap:** plan ticket OK, build OK → mint `zFPEw3HSqAFh1B1fmadpLMT9LJ72pDnNwx9q8uXfork`, 3 tx (bundle all-or-nothing), icon 512x512
+- **Biaya terukur (devBuy 0):** butuh ~13,26 juta lamports di wallet saat eksekusi; net hangus cuma ~0,0012 SOL (sisanya rent yang balik). Reward 1.000 $FORK (poin, belum ada harga pasar)
+- **Alasan stop:** reward belum likuid + butuh top-up 0,00226 SOL (~Rp 3.400) -> tidak sesuai prinsip NO PAID Rey
+- **Sisi positif sesi ini:** burn 3 akun token mati (ADCS/WENX, DNFDYLDS/PENGWU, T22 EwNq...pump) -> rent balik **+0,006153 SOL**, saldo wallet 0,002827 -> **0,010999 SOL** (+Rp 12.370) — GRATIS
+- **Script:** scripts/forkswiki/{launch_tvdrop.py,launch_tvdrop2.py,submit_build2.py,sweep_solana.py} - skill automation/forks-wiki-launchpad
+- **Catatan:** plan bisa dibangun ulang kapan aja (exp ~1 jam, `in_flight` kalau numpuk); hanya lanjut kalau Rey bilang eksplisit
