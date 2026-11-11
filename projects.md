@@ -7528,3 +7528,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Hasil:** `400 max_accounts_reached` (User limit reached) untuk airdropkarbiters@gmail.com, airdropkarbiters+folio@gmail.com, reydenim@gmail.com; `no-signup` → `user_does_not_exist` (email belum terdaftar di app)
 - **Artifact:** scripts/folio/waitlist_join.py (cron `00cda530559a`, tiap 6 jam, senyap kalau belum masuk)
 - **Catatan:** `init` selalu balas success → bukan bukti apa-apa; teknis BUKAN tembok, gate-nya di sisi app
+
+## Forks.wiki ($FORK) — X trials + Season 0
+- **Status:** 5/5 TRIALS SELESAI · 28.900 $FORK pending (naik dari 24.900)
+- **Link:** https://forks.wiki (ref Rey: forks.wiki/r/osbornrdx)
+- **Akun:** @osbornrdx · GitHub reydenim terhubung (+3.000) · wallet 5yw3KKc…676mG tersimpan
+- **Bukti reply:** x.com/osbornrdx/status/2120319099289153748 (post id 2120217185230672347)
+- **Trial selesai:** follow, like, retweet, comment(reply), quote + github bonus
+- **Reward:** X scan 12.900 + trials 13.500 = 28.900 pending
+- **Otomasi:** cron 6177b5df6d8b (*/20, monitor forkswiki/new_post_watch.py) — nembak agent HANYA saat /src/config.js ganti post id; trial baru langsung dieksekusi
+- **Catatan:** watch pakai /src/config.js (publik, tanpa auth) → x.post + postSince + redo
