@@ -7610,3 +7610,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Final push: tx#3 `0x7a5ec026a5b5111f48e43e013a1a971dd359d66602b4c34916d21132ad7430a5` — 6 proofs, gasUsed 208,471, status 1. `cpuCountOfId` now **20/20**, pool global 14,610/20,000. Daily cap reached → script returns silent next ticks (guard active).
 - Stale-lock fix: a PID can be recycled (zombie parent), so the lock now also verifies `/proc/<pid>/cmdline` contains `run_window.py` before deferring, and `SIGTERM/SIGINT` handlers + `atexit` release the lock on every path (a `timeout`-killed parent previously left the lock behind).
 - Total day 1: **50,000 AMNT** in 3 txs. Next reset: tomorrow 20:00–22:00 WIB window (seed will be re-pinned; offset/used state persists in `/tmp/amin_state.json`).
+
+## DROOLIES (droolies.lol) — Waitlist + Points ✅ JOINED
+- **Date:** 2026-11-11 | Robinhood Chain NFT, 10.000 supply, mint price TBA, coming to OpenSea
+- **Handle:** @osbornrdx | **Wallet:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D
+- **Points:** 595 (rank #820 dari 4.729 droolers — top 1.000 = WL guaranteed per snapshot)
+- **Quests claimed:** welcome +100, follow +150, like +50, rt +75, comment +75, tag +100, notif +25, daily +20
+- **X proof:** reply https://x.com/osbornrdx/status/2120565936218665228 · like + RT post 2120251474429038854 · follow @droolies_rh
+- **API:** POST /api/join {handle,wallet} → {key} (x-key header) · POST /api/quest {quest} · GET /api/state
+- **Session key:** /home/ubuntu/scripts/droolies/session.key (chmod 600) — dibutuhkan sesi browser yang sama saat join
+- **Automation:** /home/ubuntu/scripts/droolies/daily.py + cron **6c7c20d5895b** (5 9 * * *, Asia/Jakarta, no_agent, senyap)
+- **Catatan:** daily quest +20/hari. Auction lot pakai Drool Points (bukan uang).
