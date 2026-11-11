@@ -7569,3 +7569,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Cek eligibility:** overview() 0x3a2056f1 (word0=free left, word1=total, word7=sale end unix); freeUsed(addr) 0x2626c4bf; AgentID registry 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F balanceOf>0
 - **Sisa window:** sale tutup 12 Nov 15:05 UTC (paid 0,001 BNB/share, max 20/tx)
 - **Script:** scripts/dust/dust_scan.py (scan multi-chain)
+
+## BeHand Pass (BHPASS) — FREE CLAIM Agent ID — ✅ CLAIMED
+- **Date:** 2026-11-11 | **Chain:** BSC 56 | **Biaya:** gas only 0.0000089 BNB (~Rp 1,5)
+- **Kontrak:** 0xCd4Af5a9eDE5ef6f5138028AdC9C152a1Acb80ed | fungsi `claim()` 0x4e71d92d (value 0, nonpayable)
+- **Reward:** ERC-721 BeHand Pass tokenId **#2185 (8581)** — balanceOf(baw)=1
+- **TX:** 0x8cb16ef6eb8f5e487cc3dc04af4aa66d07a33b2e06f036c7bd92210caa41cd01 — receipt 0x1, gas 104.236
+- **Wallet:** BAW 0x888dB97d0dD291c5F0C99F417f143ca279AC29a1 (Agent ID)
+- **Sumber:** daftar 22 project Agent ID (Okada roundup) — kontrak ke-22, hanya ini yang masih FREE
+- **Catatan:** claim() preview baw nunjukin balanceChange Erc721 +1 nol risiko → aman
