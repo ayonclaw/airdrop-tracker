@@ -7683,3 +7683,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Pitfall:** nonce range wajib maju (`--offset` = base + SHARDS×per) — kalau tidak, tiap pass re-mine window sama dan proof-nya revert on-chain (nonce spent)
 - **Pitfall 2:** `/tmp/amin_state.json` bisa ke-wipe → run berikutnya reset `passes:0` dan langsung silent-exit kalau cap on-chain sudah penuh. Ini normal, bukan bug.
 - **Nilai AMNT:** belum ada harga/likuiditas terverifikasi.
+
+### 🔧 AMNT BUG FIX — cap per-hari (bukan total) · 2026-11-12 23:5x WIB
+- **Bug:** `run_window.py` guard pakai `cpuCountOfId` (counter LIFETIME) → day 2 auto-silent karena lifetime 20 >= cap 20, padahal jatah harian masih fresh. **Potensi kerugian 50.000 AMNT/hari.**
+- **Bukti cap = PER-HARI (bukan total):** log mint menunjukkan agentId lain punya lifetime **35** (> cap 20) → mustahil kalau total.
+- **Selector baru ditemukan:** `cpuDayOfId(uint256)` = **`0xfa3a2967`** — stempel hari terakhir mine. Kontrak reset counter *lazily* saat mine pertama di hari baru.
+- **Fix:** `mine_today = lifetime if day_of_id == day else 0` → kalau hari baru, anggap 0 → lanjut mine.
+- **Verifikasi setelah patch:** lifetime=20, cpuDayOfId=1, dayIndex=2, cap=20 → `mine_today=0` → **LANJUT MINE ✅**. Syntax OK, dry-run exit 0.
+- **Swap:** ❌ **BELUM BISA.** DexScreener = 0 pair (nol likuiditas, belum listed DEX manapun). PancakeV2/V3 getPair/getPool (WBNB & USDT) semua revert/NONE. AMNT masih token pra-pasar.
+- **Transfer:** ✅ bisa (simulate `transfer` 1 AMNT OK, gas 30.670) — token ERC-20 normal, cuma belum ada pasar.
+- **Window:** `inSession=0` (tutup, 20:00–22:00 WIB). Cron berikutnya 20:00 WIB besok → target day-3 20 proof.
