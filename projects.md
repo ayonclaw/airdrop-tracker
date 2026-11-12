@@ -7655,3 +7655,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Reward:** 1000 supply, whitelist = FREEMINT (GTD spot), "rewarding art with revenue"
 - **Tech:** TanStack Start + serverFn hash (`/_serverFn/<sha256>`), seroval encoding — task disimpan via fn `ie` (hash 62c58263…). Form: input#wallet, #referral, #handle, #quote, #comment + 2 checkbox.
 - **Catatan browser:** browser-harness daemon sempat wedge → restart_daemon() + tab baru, pulih.
+
+### Squeekchain Genesis / Squeek NFTs — 🔄 POSTPONED → FREEMINT (update 2026-11-12)
+- **Update dev (@pillheadddd):** "going to make the Squeek NFTs a free mint, so we'll postpone the launch to update how we handle the distribution — more details tomorrow"
+- Source: https://x.com/pillheadddd/status/2120653246343614824
+- **Implikasi:** launch diundur (detail besok). FREE MINT = bagus untuk Rey (nol biaya). Distribution mekanisme akan diubah.
+- **Testnet claim (Sepolia) SUDAH HABIS:** "ALL FREE CLAIMS ARE TAKEN / Claims are closed" — 9.999 koleksi, 0 free claims tersisa, price 0 ETH. Tier: Gold=6, Silver=4, else 1 claim.
+- **Status Rey:** sudah stake Squeek test tokenId 1101 di 0x50fd1780… (Sepolia, tx 0x8c8e00aa…, verified). Genesis tier → kuota claim.
+- **Situs:** sepolia.squeekchain.com/mint (testnet) · squeekchain.com (main, "hamster-powered PoW blockchain", $SQK)
+- **Action:** tunggu detail besok; cek mainnet launch = free mint. Belum ada cron Squeek (tidak perlu sampai ada tanggal).
