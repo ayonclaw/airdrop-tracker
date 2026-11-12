@@ -7672,3 +7672,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Kerugian Rey: NOL** (cuma pernah stake testnet Sepolia, gas gratis, no approve ke mereka)
 - **Action:** JANGAN connect/claim apapun di domain mirip (typosquat). Cron: tidak ada yang mengarah ke sini.
 - Testnet stake lama (tokenId 1101 di 0x50fd1780…) tinggal artefak, tidak ada nilai.
+
+### AMNT (Agent Mining) Plan B — ✅ MINING JALAN, cap harian penuh (2026-11-12)
+- **Kontrak:** AMNT `0x2d07B9CcDF5FCdbE26167358B94eeb4c9E995e4E` · Adapter agentId `0x3c44B8EE0581F70026a7b650eC02373e25EF3200` · BSC 56
+- **Wallet:** agentic `0x888dB97d0dD291c5F0C99F417f143ca279AC29a1` (AMNT tidak ada di wallet airdrop_00)
+- **Hasil:** **50.000 AMNT on-chain** (decimals 8) = **20/20 proof** × 2.500 AMNT — CAP HARIAN PENUH
+- **State on-chain hari ini:** inSession=1 · dayIndex=2 · seed ter-pin · pool 8.601/20.000 · lane 2 · cpuTarget bits 29
+- **Cron:** `d298ddc868c8` (`0-59/4 20-21 * * *`, no_agent, senyap) → script profiles/ayon/scripts/agentmining/run_window.py (Modal swarm, 24 shard, cap 12 pass/hari)
+- **KENAPA SENYAP (bukan gagal):** (a) `mine_today >= cpuPerIdCap` → cap 20 habis → return diam; (b) `swarm_result.json` isi 6 proof 11 Nov = nonce SUDAH terpakai (submit = revert) → disaring `used` set → diam; (c) pool global belum penuh 8.601/20.000
+- **Pitfall:** nonce range wajib maju (`--offset` = base + SHARDS×per) — kalau tidak, tiap pass re-mine window sama dan proof-nya revert on-chain (nonce spent)
+- **Pitfall 2:** `/tmp/amin_state.json` bisa ke-wipe → run berikutnya reset `passes:0` dan langsung silent-exit kalau cap on-chain sudah penuh. Ini normal, bukan bug.
+- **Nilai AMNT:** belum ada harga/likuiditas terverifikasi.
