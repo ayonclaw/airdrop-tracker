@@ -7693,3 +7693,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Swap:** ❌ **BELUM BISA.** DexScreener = 0 pair (nol likuiditas, belum listed DEX manapun). PancakeV2/V3 getPair/getPool (WBNB & USDT) semua revert/NONE. AMNT masih token pra-pasar.
 - **Transfer:** ✅ bisa (simulate `transfer` 1 AMNT OK, gas 30.670) — token ERC-20 normal, cuma belum ada pasar.
 - **Window:** `inSession=0` (tutup, 20:00–22:00 WIB). Cron berikutnya 20:00 WIB besok → target day-3 20 proof.
+
+### 🆕 AMNC (Agent Mining — token AKTIF) — 2026-11-13 — MINING DIPINDAH KE SINI
+- **Temuan:** proyek sudah ganti token. Situs `agentmining.fun` sekarang pakai **AMNC `0x04efC2D45f9D6b06f3A517218F164d473f74CAdD`** (decimals 8). AMNT `0x2d07…e4E` = token generasi lama.
+- **AMNT (lama) = JALUR KELUAR TERTUTUP:** pool `0x695c69a2…` (PancakeSwap Infinity CLMM, PoolKey di-decode dari tx tim `0x3d4dbcb9…`, poolId COCOK 100%) tapi SEMUA ukuran jual revert `0xd81b2f2e` (0,01 / 1 / 5.000 / 50.000 AMNT) → gate hook, bukan slippage. 0 gas terbuang (semua via eth_estimateGas).
+- **AMNC (aktif) bisa di-mining ✅:**
+  - `inSession()` b7b2d036 · `dayIndex()` · `cpuProofsToday()` 1.153/30.000 · `cpuDailyCap` 30.000 · `cpuPerIdCap` 20 · `cpuReward` 2.500/proof · `sessionSeedBase(uint256)` · `cpuTarget()` bits 29 · `maxBatch` 10
+  - **Window 6 JAM/hari** (sessionLength 21600, dayLength 86400, anchor 09:00 UTC = **16:00 WIB → 22:00 WIB**) — 3× lebih panjang dari AMNT (2 jam)
+  - `totalDays()` = **30 hari season** — masih day 0, fresh
+  - `switchFee` = **0** (pilih lane gratis) · agentId registry sama (`0x3c44B8EE…`), wallet `0x888d…29a1` punya Agent ID ✅
+  - AMNC balance kita sekarang 0 · `getLiquidity` pool situs = 0 (belum ada LP)
+- **Blocker sementara:** `selectPlan(2)` revert `0xc6064ee7` saat window TUTUP — akan dicoba saat window buka (16:00 WIB). Kalau tetap revert → berarti pakai lane lain/plan A.
+- **Aksi:** script baru `profiles/ayon/scripts/agentmining/run_window_amnc.py` (adaptasi AMNT: addr AMNC, state /tmp/amnc_state.json, lock sendiri, MAX_PASSES 14) + cron dipindah ke AMNC, jadwal `*/4 16-21 * * *` WIB.
+- **Potensi:** 20 proof/day × 2.500 = **50.000 AMNC/hari** (sama seperti AMNT) untuk ~30 hari.
