@@ -7642,3 +7642,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Session:** scripts/shitcapital/cookies.json (chmod 600, cookie scc_x)
 - **Automation:** scripts/shitcapital/status.py + cron **06806bf4bf62** (*/30, no_agent, senyap) — lapor HANYA saat onList false→true atau board berubah
 - **Catatan:** proyek "beli perusahaan toilet bareng" (parody whitepaper sovereign central bank). GTD via approve manual tim, bukan hold NFT.
+
+### Dividends (dividendsarts.xyz) — Free mint whitelist ✅ ON THE LIST — 2026-11-12
+- **Status:** ✅ **You're on the list** · wallet 0x8cce…282d · **Rank #668** · **15 points** · 0 referrals
+- **Ref code Ay pakai (dari Rey):** `yotweykd` (+5 untuk Rey) · **ref code sendiri:** `z5oje9xb` → https://dividendsarts.xyz/apply?ref=z5oje9xb
+- **Alur:** /apply → submit wallet (+ref code) → save X username (@osbornrdx) → task: Like + Quote + Comment + Follow → Finish application
+- **Task X bukti:**
+  - Follow @dividendsarts ✅
+  - Like vision post https://x.com/dividendsarts/status/2120491789387694411 ✅
+  - Comment: https://x.com/osbornrdx/status/2120759962796433851
+  - Quote: https://x.com/osbornrdx/status/2120760274223521845
+- **Reward:** 1000 supply, whitelist = FREEMINT (GTD spot), "rewarding art with revenue"
+- **Tech:** TanStack Start + serverFn hash (`/_serverFn/<sha256>`), seroval encoding — task disimpan via fn `ie` (hash 62c58263…). Form: input#wallet, #referral, #handle, #quote, #comment + 2 checkbox.
+- **Catatan browser:** browser-harness daemon sempat wedge → restart_daemon() + tab baru, pulih.
