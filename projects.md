@@ -7632,3 +7632,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **GTD:** hanya via **collab** (apply sebagai komunitas, tim approve → GTD/FCFS spots). `my_collab_rep` = [] (belum pernah submit komunitas). Contoh approved: Moonbase DAO 10 GTD+25 FCFS, Pixel Pilots 5+15, Orbit Club 3+20.
 - **Automation:** scripts/spacerz/daily.py + cron **182527729e37** (20 9 * * *, Asia/Jakarta, no_agent, senyap) · session.json chmod 600 (refresh token ok)
 - **Login:** OAuth2 X → Supabase (client bU5nNWp2MHdiTnlZSTBmQ0Fzemk6MTpjaQ). Session sb-...-auth-token di localStorage.
+
+### SHIT Capital (checker.shitcapital.com) — Genesis whitelist — 2026-11-12
+- **Sign in with X ✅** @osbornrdx · **Capital ID `664-868-9137`** · board **188/1000** spots allocated
+- **Status: 🟡 PENDING** (`onList: false`) — "Reviewing the application. Share the Capital ID on X to get approved."
+- **Share post:** https://x.com/osbornrdx/status/2120733577142992972 — (2 post gagal kepotong dulu, dihapus; post final single-line lengkap)
+- **Flow:** /app/mint → Sign in with X (OAuth2 client T242T1Q2QTY4SXJ2eEtRZDRjNXc6MTpjaQ) → /api/me → dapat idNumber → Share on X → tim approve manual
+- **API:** `GET /api/me` (cookie `scc_x`) → {signedIn, id, username, idNumber, onList, isAdmin} · `GET /app.js` berisi `const allocated=188`
+- **Session:** scripts/shitcapital/cookies.json (chmod 600, cookie scc_x)
+- **Automation:** scripts/shitcapital/status.py + cron **06806bf4bf62** (*/30, no_agent, senyap) — lapor HANYA saat onList false→true atau board berubah
+- **Catatan:** proyek "beli perusahaan toilet bareng" (parody whitepaper sovereign central bank). GTD via approve manual tim, bukan hold NFT.
