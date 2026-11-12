@@ -7621,3 +7621,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Session key:** /home/ubuntu/scripts/droolies/session.key (chmod 600) — dibutuhkan sesi browser yang sama saat join
 - **Automation:** /home/ubuntu/scripts/droolies/daily.py + cron **6c7c20d5895b** (5 9 * * *, Asia/Jakarta, no_agent, senyap)
 - **Catatan:** daily quest +20/hari. Auction lot pakai Drool Points (bukan uang).
+
+### Spacerz status check (applyspacerz.xyz) — 2026-11-12
+- **Status akun @osbornrdx:** 975 PTS · Rank **#375** · **7/10 mission** · Application **PENDING** (tim review)
+- **Completed:** follow, like, repost, squad, notif, quote, daily (7)
+- **Pending review:** `post` (link https://x.com/osbornrdx/status/2120726280597614767)
+- **Wallet terpasang:** 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D · crew card SPZ-4072 · class HUMAN · ref code SPZ-OSBOR-505
+- **Sisa mission:** `pfp` (CLOSED — nunggu art drop), `racerz` (LIVE, +400, butuh hold NFT Racerz ETH), `weekly` (SOON, X Space)
+- **Jalur Racerz (+400 + GTD):** kontrak Racerz `0xd9811b369e98beca480c8d0bf3383c2520db6159` (ETH) — **balanceOf Rey = 0** ❌ belum hold. Floor 0.0212 ETH (~Rp 1,1jt). Butuh beli = NO PAID, bukan jalur Rey.
+- **GTD:** hanya via **collab** (apply sebagai komunitas, tim approve → GTD/FCFS spots). `my_collab_rep` = [] (belum pernah submit komunitas). Contoh approved: Moonbase DAO 10 GTD+25 FCFS, Pixel Pilots 5+15, Orbit Club 3+20.
+- **Automation:** scripts/spacerz/daily.py + cron **182527729e37** (20 9 * * *, Asia/Jakarta, no_agent, senyap) · session.json chmod 600 (refresh token ok)
+- **Login:** OAuth2 X → Supabase (client bU5nNWp2MHdiTnlZSTBmQ0Fzemk6MTpjaQ). Session sb-...-auth-token di localStorage.
