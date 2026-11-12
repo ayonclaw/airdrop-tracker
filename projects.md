@@ -7664,3 +7664,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Status Rey:** sudah stake Squeek test tokenId 1101 di 0x50fd1780… (Sepolia, tx 0x8c8e00aa…, verified). Genesis tier → kuota claim.
 - **Situs:** sepolia.squeekchain.com/mint (testnet) · squeekchain.com (main, "hamster-powered PoW blockchain", $SQK)
 - **Action:** tunggu detail besok; cek mainnet launch = free mint. Belum ada cron Squeek (tidak perlu sampai ada tanggal).
+
+### ⛔ Squeekchain — CLOSED / DEAD (2026-11-12, dikonfirmasi)
+- **@squeekchain + @pillheadddd (dev) HILANG dari X** ("Akun ini tidak ada") · post dev 404
+- **Domain mati:** squeekchain.com / sepolia.squeekchain.com / api.squeekchain.com = DNS **NXDOMAIN** (cek via 1.1.1.1)
+- Tadi posting "free mint, launch postponed, detail besok" → besoknya akun+domain hilang = **cabut/rug pattern**
+- **Kerugian Rey: NOL** (cuma pernah stake testnet Sepolia, gas gratis, no approve ke mereka)
+- **Action:** JANGAN connect/claim apapun di domain mirip (typosquat). Cron: tidak ada yang mengarah ke sini.
+- Testnet stake lama (tokenId 1101 di 0x50fd1780…) tinggal artefak, tidak ada nilai.
