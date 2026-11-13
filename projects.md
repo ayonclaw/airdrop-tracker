@@ -7762,3 +7762,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **PITFALL PENTING (browser):** tombol X (like/retweet/verify) **TIDAK jalan** dengan `element.click()` maupun CDP `Input.dispatchMouseEvent` polos. Yang WORKS: `Page.bringToFront` + mouseMoved 2 tahap (approach → target) + mousePressed/mouseReleased. Sama untuk tombol VERIFY di qyrolabs.space.
 - **Voucher event Genesis SUDAH DITUTUP** — tapi XP/task tetap tercatat untuk airdrop $QYRO.
 - **X mission butuh "VISIT X" dulu** (link ber-referrer) baru VERIFY diterima; klik VISIT X pakai `a.target='_self'` + click.
+
+### Flint Devnet Trading Competition (devnet.app.flint.trade) — 2026-11-13 ✅ TERDAFTAR & 4 TRADE
+- **Sumber:** https://x.com/flint_trade_/status/2121212851088142788 — perps DEX Solana, prize $10,000 USDC + Flint Points, dailies sampai 20 Nov
+- **Alur masuk (TIDAK lewat connect wallet manual):**
+  1. Bot Telegram **@FlintCompetitionBot** → `/start` → tombol "Start trading" berisi **ticket** di URL `#paper-ticket=...`
+  2. Buka `https://devnet.app.flint.trade/perps#paper-ticket=<ticket>` → langsung masuk, 10.000 test USDC
+  3. Sesi disimpan cookie same-origin; API: `/api/paper/session`, `/api/paper/standing`, `/api/paper/signer`, `/api/paper/pnl-check`, `/api/paper/session/sign-out`
+- **Akun:** **wallet `6xRwHmv2Yse3otjJ31pvTyLNA7ov7xSfQjmHeqjk5cMy`** (devnet) · traderId `446020856364317886` · competitionId `paper-20261113` (13 Nov 11:00 UTC → 20 Nov 11:00 UTC) · `allowResets:false`
+- **Detail on-chain devnet:** programId `CUKvWFbt2mGjbgmvtTPW8yRihH1WY8Ej1WtsjLJrftSa` · rpc `https://devnet.dash.flint.trade/api/rpc` · grpc `https://devnet.api.flint.trade`
+- **Hasil trading:** 4 posisi (Long 511 SOL @80.117 → reduce → flip short 353 SOL → close) · **rank 240** · PNL -$123.58 (paper, bukan uang nyata)
+- **PRIVATE KEY: TIDAK ADA & TIDAK BISA DISIMPAN.** Wallet di-generate server Flint (`/api/paper/signer` = `"name":"Flint Paper"`, cap `signTransaction` via server; `/api/paper/signer/key` → **404**). Ini akun paper server-managed devnet — bukan wallet milik Rey, tidak ada key untuk dipegang, dan tidak bisa menyimpan aset nyata. Wallet Solana asli Rey (5yw3KKcX…) tidak tersentuh.
+- **Pitfall:** URL di post ("leaderboars") typo tapi tetap 200 (SPA catch-all). Title static "Flint" untuk semua route.
