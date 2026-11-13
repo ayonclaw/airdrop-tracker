@@ -7718,3 +7718,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Hasil:** HTTP 200 `{"inlineMessage":""}` = diterima
 - **Data dikirim:** airdropkarbiters@gmail.com · Rey Osborn · wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
 - **Pitfall:** iframe HubSpot tidak muncul di Page.getFrameTree (JS-embed), dan contentDocument diblok cross-origin → jalur tercepat = submit API v3 langsung, baca nama field dari pesan error validasi.
+
+### 🔧 Cron hygiene 2026-11-13 — model flaky diganti
+- **XREIGN Crown Season Daily `b029adb824a7` GAGAL** (run 09:00 WIB): `Agent completed but produced empty response`. Root cause = **model**, bukan script.
+  - Model lama `9router/sonogami/z-ai/glm-5.3-flash-abliterated` — tes langsung: balas reasoning dulu, `finish_reason=length` bahkan di max_tokens=10 → dengan prompt 4.362 char output jadi KOSONG.
+  - **Fix:** `hermes cron edit b029adb824a7 --provider 9router --model ds` ✅
+- **Pear Rewards Daily Streak `d61757749290`** model sama (masih enabled) → ikut diganti ke `9router/ds` ✅
+- `airdrop-monitor dfbde4453e24` model sama tapi **DISABLED** → dibiarkan.
+- **Aturan:** cron agent (no_agent=false) pakai `9router/ds`, JANGAN model *flash-abliterated* — reasoning tokens bikin output kosong.
+- **Cron AMNC `d638df38f0c6` `*/4 16-21 * * *` TERVERIFIKASI BENAR** (sempat Ay salah alarm): anchor 2026-11-12 16:00 WIB + dayLength 24h + sessionLength 6h → window BUKA 16:00–22:00 WIB. Sekarang 12:13 WIB `inSession=0` = normal (di luar window).
+- **Gas AMNC cukup:** butuh ~2,78e-05 BNB (selectPlan+pinSession+2×mineBatch @0,05 gwei), punya 4,4e-05 BNB ✅
+- **XREIGN rutin tetap jalan** (dijalankan manual): check-in ✅ 7-day streak · signal vote ✅ · wheel spin ✅ 1 USDT · $REIGN 89.253,97 (+170) · tier 30/30. Sisa ⚠️ = verify 429/409 (rate-limit + Lucky Sats belum signup) — bukan blocker.
