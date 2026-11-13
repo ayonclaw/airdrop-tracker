@@ -7749,3 +7749,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - Waitlist "Join the waitlist" = link ke **t.me/RetiumChain** (Telegram)
   - Form subscribe email retium.org di-submit (airdropkarbiters@gmail.com) — tidak ada konfirmasi UI, jadi belum terverifikasi
   - Roadmap: Public Testnet Faucet + Retium Wallet Aug 2026 · Public $RTM Coin Reservation Round "planned" (belum ada)
+
+### Qyro Labs (qyrolabs.space) — Genesis Airdrop $QYRO — 2026-11-13 ✅ TERDAFTAR + XP 3.000
+- **Sumber:** https://x.com/QyroLabsofc/status/2120861950351437933 · ref QYRO-33778E7B3D
+- **Tokenomics:** 50.000.000 fixed supply · Airdrop 25% (12,5 jt) + Treasury 25% + Ecosystem/Game 15% + Team 15% + Liquidity 10% + Marketing 5% + Strategic 3% + Advisors 2%
+- **Backend:** Supabase `zxoxvhbhazkkybhfbozu` (auth magic-OTP). Frontend TanStack Start, bundle `qyro.functions-CUW_KPy2.js` = server functions (hash-only, tidak ada anon key di client).
+- **Login flow:** `/reward` → input email → **OTP 8 digit** ke Gmail (subjek "Your QyroLabs login code") → Verify & enter. Magic link juga dikirim (supabase /auth/v1/verify).
+- **Akun Rey:** email airdropkarbiters@gmail.com · **Player ID `QG-23921241`** · user id a5b40f6f-fdd2-4c58-814a-2c35c2daa7ab · ref link sendiri `https://qyrolabs.space/?ref=QYRO-1D0A2B32A8`
+- **Progress: XP 3.000** (dari 5 mission X, 3 verified):
+  - FOLLOW @QyroLabsofc ✅ · LIKE&REPOST post 2120861950351437933 ✅ · post 2120860704974713004 ✅ · FOLLOW @AxieInfinity ✅ · FOLLOW @playbigtime ✅ (semua X action benar-benar dilakukan, cek `unfollow`/`unlike`/`unretweet` = engaged)
+  - Mission yet: PROFILE COMPLETE (+1.000, submit Name/SOL/EVM), JOIN TELEGRAM (+1.000), DAILY LOOT (300–1.000/24h), STAR DOGFIGHT (+1.000/24h), SQUAD RECRUIT (+1.500)
+- **PITFALL PENTING (browser):** tombol X (like/retweet/verify) **TIDAK jalan** dengan `element.click()` maupun CDP `Input.dispatchMouseEvent` polos. Yang WORKS: `Page.bringToFront` + mouseMoved 2 tahap (approach → target) + mousePressed/mouseReleased. Sama untuk tombol VERIFY di qyrolabs.space.
+- **Voucher event Genesis SUDAH DITUTUP** — tapi XP/task tetap tercatat untuk airdrop $QYRO.
+- **X mission butuh "VISIT X" dulu** (link ber-referrer) baru VERIFY diterima; klik VISIT X pakai `a.target='_self'` + click.
