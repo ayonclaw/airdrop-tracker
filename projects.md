@@ -7706,3 +7706,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Blocker sementara:** `selectPlan(2)` revert `0xc6064ee7` saat window TUTUP — akan dicoba saat window buka (16:00 WIB). Kalau tetap revert → berarti pakai lane lain/plan A.
 - **Aksi:** script baru `profiles/ayon/scripts/agentmining/run_window_amnc.py` (adaptasi AMNT: addr AMNC, state /tmp/amnc_state.json, lock sendiri, MAX_PASSES 14) + cron dipindah ke AMNC, jadwal `*/4 16-21 * * *` WIB.
 - **Potensi:** 20 proof/day × 2.500 = **50.000 AMNC/hari** (sama seperti AMNT) untuk ~30 hari.
+
+### WalletConnect AI Agents Waitlist — Reward Pool 50K $WCT — 2026-11-13 ✅ TERDAFTAR
+- **URL:** https://walletconnect.com/connectivity/ai-agents (tombol "Join Waitlist")
+- **Reward:** 50.000 $WCT pool · source https://x.com/WalletConnect/status/2120864509309194560
+- **Mekanisme:** form **HubSpot** tersembunyi di iframe (cross-origin, tidak bisa diisi via DOM):
+  - portal `40212532` · formId `84d954b7-674f-42b7-a865-72a6ace68618`
+  - endpoint submit: `POST https://api.hsforms.com/submissions/v3/integration/submit/40212532/84d954b7-674f-42b7-a865-72a6ace68618`
+  - **Nama field asli (wajib):** `email`, `firstname`, `lastname`, `wallet_address_ai_early_access` — objectType `CONTACT` (uppercase! lowercase ditolak)
+  - `submittedAt` = ms epoch (INT, bukan float — float bikin INVALID_TIMESTAMP) · `context` hanya boleh `pageUri` (pageReferrer ditolak)
+- **Hasil:** HTTP 200 `{"inlineMessage":""}` = diterima
+- **Data dikirim:** airdropkarbiters@gmail.com · Rey Osborn · wallet `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D`
+- **Pitfall:** iframe HubSpot tidak muncul di Page.getFrameTree (JS-embed), dan contentDocument diblok cross-origin → jalur tercepat = submit API v3 langsung, baca nama field dari pesan error validasi.
