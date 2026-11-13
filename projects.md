@@ -7735,3 +7735,17 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Registered with airdropkarbiters@gmail.com. **Proof of acceptance:** `POST https://api.hsforms.com/submissions/v3/integration/submit/40212532/c276060b-86b7-42ea-b2e4-519db3f5f49b -> HTTP 200` (form removed from DOM after submit = accepted).
 - Product: connect any of 700+ wallets to an AI agent via WalletConnect; every tx still approved in the user's own wallet app, keys never leave the wallet. Waitlist grants first access.
 - Delivery: HubSpot form (portal 40212532, form c276060b-86b7-42ea-b2e4-519db3f5f49b) — no wallet address, no on-chain action, email only.
+
+### Retium Whisk (whisk.exchange) — DEX Testnet Sepolia — 2026-11-13
+- **Sumber:** https://x.com/RetiumChain/status/2120992632843407647 — "Whisk now swaps on Ethereum (Sepolia), one wallet two networks"
+- **Yang dikerjakan:** swap langsung on-chain dari wallet airdrop_00 (tanpa connect UI):
+  - Kontrak = **Uniswap V3 Sepolia** yang di-rebranding: factory `0x0227628f…`, QuoterV2 `0xEd1f6473…`, SwapRouter02 `0x3bFA4769…`, WETH `0xfFf99767…`, USDC `0x1c7D4B19…`
+  - **5 tx sukses** (nonce 165→170): #1 ETH→USDC `0c893617f5b882d1f80afc35ad888b65c97847a3f93bd0a46a37480fa2e84a17` · approve USDC `4883e50a…` · #3 ETH→USDC `fab4576e…` · #4 USDC→ETH `156fc632…` · #5 ETH→USDC `70259f6b…`
+  - Hasil: ETH 8,2875→8,2725 · USDC 0→288,09 (pool fee 500 terbaik: 0.005 ETH → 144,06 USDC)
+  - Pitfall: sell USDC balik ke ETH wajib **approve ke router dulu**, kalau tidak revert `STF`
+- **Temuan penting (jujur):** Whisk **TIDAK punya program points/airdrop/quest** — tidak ada endpoint `/points` `/quests` `/campaign` di bundle, tidak ada kata `airdrop`/`reward` di source. Halaman COMMUNITY cuma fee-share untuk holder NFT "My ID". Ini murni DEX testnet tanpa insentif terlihat.
+- **Retium ekosistem (retium.org):**
+  - Early Validator Round 2 (`onboarding.retium.org/seats`) = **BAYAR** $400 Worker / $4.000 Suit (USDC/USDT di Ethereum) → **SKIP sesuai aturan NO PAID Rey**
+  - Waitlist "Join the waitlist" = link ke **t.me/RetiumChain** (Telegram)
+  - Form subscribe email retium.org di-submit (airdropkarbiters@gmail.com) — tidak ada konfirmasi UI, jadi belum terverifikasi
+  - Roadmap: Public Testnet Faucet + Retium Wallet Aug 2026 · Public $RTM Coin Reservation Round "planned" (belum ada)
