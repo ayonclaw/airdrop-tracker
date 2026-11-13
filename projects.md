@@ -7774,3 +7774,10 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Hasil trading:** 4 posisi (Long 511 SOL @80.117 → reduce → flip short 353 SOL → close) · **rank 240** · PNL -$123.58 (paper, bukan uang nyata)
 - **PRIVATE KEY: TIDAK ADA & TIDAK BISA DISIMPAN.** Wallet di-generate server Flint (`/api/paper/signer` = `"name":"Flint Paper"`, cap `signTransaction` via server; `/api/paper/signer/key` → **404**). Ini akun paper server-managed devnet — bukan wallet milik Rey, tidak ada key untuk dipegang, dan tidak bisa menyimpan aset nyata. Wallet Solana asli Rey (5yw3KKcX…) tidak tersentuh.
 - **Pitfall:** URL di post ("leaderboars") typo tapi tetap 200 (SPA catch-all). Title static "Flint" untuk semua route.
+
+- **REGISTRASI FORM SELESAI (2026-11-13)** — `https://flint.trade/competition/registration?t=alpha_983121959_...` (token dari bot `/register`). Syarat: X handle, follow @Flint_Trade_ (✅ FOLLOWED, cek `unfollow`), wallet perps di DEX lain, feedback opsional, accept terms.
+  - Data dikirim: **X handle @osbornrdx** · **DEX: Jupiter Perps** · **wallet Solana: `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG`** (wallet ASLI Rey → alasan Rey: "kalo pas eligible biar ga ribet")
+  - Feedback produk 718 char dikirim (liquidation distance %, reset size setelah fill, keyboard shortcut Long/Short, realised vs unrealised PnL, isolmargin mode, funding countdown) → klaim bakal dapat extra Flint Points
+  - Respon: **"Thanks, you're all set — We've saved your details for Mainnet Closed Alpha selection."** ✅
+  - Jadi jalur eligibility = FORM INI (bukan wallet paper server). Wallet Rey tercatat untuk Closed Alpha selection.
+- **Bot command resmi:** `/trade` (link baru multi-device) · `/status` · `/register` (form) · `/fills on|off` · rename via Account settings
