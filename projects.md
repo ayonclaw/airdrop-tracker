@@ -7729,3 +7729,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Cron AMNC `d638df38f0c6` `*/4 16-21 * * *` TERVERIFIKASI BENAR** (sempat Ay salah alarm): anchor 2026-11-12 16:00 WIB + dayLength 24h + sessionLength 6h → window BUKA 16:00–22:00 WIB. Sekarang 12:13 WIB `inSession=0` = normal (di luar window).
 - **Gas AMNC cukup:** butuh ~2,78e-05 BNB (selectPlan+pinSession+2×mineBatch @0,05 gwei), punya 4,4e-05 BNB ✅
 - **XREIGN rutin tetap jalan** (dijalankan manual): check-in ✅ 7-day streak · signal vote ✅ · wheel spin ✅ 1 USDT · $REIGN 89.253,97 (+170) · tier 30/30. Sisa ⚠️ = verify 429/409 (rate-limit + Lucky Sats belum signup) — bukan blocker.
+
+### #322 WalletConnect for Agents — waitlist registered ✅
+- URL: https://walletconnect.com/connectivity/ai-agents (source: x.com/WalletConnect/status/2120864509309194560)
+- Registered with airdropkarbiters@gmail.com. **Proof of acceptance:** `POST https://api.hsforms.com/submissions/v3/integration/submit/40212532/c276060b-86b7-42ea-b2e4-519db3f5f49b -> HTTP 200` (form removed from DOM after submit = accepted).
+- Product: connect any of 700+ wallets to an AI agent via WalletConnect; every tx still approved in the user's own wallet app, keys never leave the wallet. Waitlist grants first access.
+- Delivery: HubSpot form (portal 40212532, form c276060b-86b7-42ea-b2e4-519db3f5f49b) — no wallet address, no on-chain action, email only.
