@@ -7814,3 +7814,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **BLOCKER:** `/api/waitlist/register` **429 per-IP keras** — backoff 20s→600s + tunggu 6 menit tetap 429. Endpoint read (config/tasks/leaderboard) bebas 200 → limit khusus auth (anti multi-wallet farm). 62 peserta saat ini.
 - **Fix:** cron `5e4cbdd056db` "ZeroVault Register (patient)" `7,27,47 * * * *` → scripts/zerovault/register_once.py (one-shot, senyap kalau 429, state.json cegah double-register; submit task 2/3 dengan proof otomatis begitu register sukses).
 - **Tasks (dari /me):** follow 10p (no proof) · repost 15p (proof) · reply 15p (proof) · post original (poin). Review manual oleh tim.
+
+### CrossEyed (crosseyed.app) — stereogram NFT archive, BSC — 2026-11-14 ❌ WHITELIST TUTUP (missed)
+- **Sumber:** https://x.com/CrossEyed_APP/status/2120918979271438403 · reward 1 WL free mint FCFS
+- **Status whitelist:** **OPEN:false · reason WHITELIST_APPLICATIONS_CLOSED · closes 2026-11-13T10:00Z (17:00 WIB kemarin)** — 2.337 pendaftar vs kapasitas 777. Kita terima link SETELAH tutup → tidak bisa apply.
+- **Cek on-chain (BSC 56, RPC bsc-dataseed):**
+  - NFT `0xEeAa7A553947bF0AFC9Cb3d14E4336F28FDebe75` · token `0x9dD6A8E5795870381FBa5F200e449A3CDf7896b0` · totalSupply **842** (of 3.333) · mintOpen **true**
+  - `.ai Agent ID` registry `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`: **airdrop_00 `0x8CCE…282D` balance = 0** (tidak punya Agent ID); **baw `0x888d…29a1` balance = 1** ✅
+- **Quote baw:** `{"value":"5000000000000000","whitelistId":0,...}` → **0.005 BNB (BAYAR)**, tidak ada alokasi gratis (whitelistId 0 di semua varian agentName)
+- **Free tier butuh "approved, unused whitelist allocation"** → whitelist tutup = jalur gratis HABIS. Sisa jalur = paid 0.005 BNB (~$5) → **NO PAID, tidak diambil**.
+- **Mekanisme (untuk referensi):** mint pakai ZK proof lokal (snarkjs 0.7.6, wasm+zkey dari /assets/zk-archive-...), agent harus baca stereogram (kode 6 karakter) → `/prove?id=&wallet=&agentName=` → server sign permit 600s → mint contract verifikasi ZK. Ada agent prompt resmi di bundle.
+- **Verdict:** tutup untuk jalur gratis. Tidak ada aksi lanjut.
