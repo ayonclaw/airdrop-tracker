@@ -7803,3 +7803,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **BLOCKER step 02 / TASK:** tombol `Check` disabled secara client-side; berhasil diaktifkan dengan **React fiber trick** (`props = el['__reactProps$...']; props.onChange({target:{value:link}})`) → tombol enable → klik memicu RSC action, TAPI server tidak advance ke Wallet (state balik ke 01/VERIFY setelah reload; cookie sesi kosong → progress tidak persist di profile browser).
 - **BELUM:** Submit EVM testnet address (step WALLET) + Mine on testnet (step CARD).
 - **Pitfall:** situs menyimpan progress di session server; reload = balik ke step 01. Jalur paling andal = satu sesi penuh (Connect X → task → wallet) tanpa reload.
+
+### ZeroVault (zerovault.fun) — waitlist NFT "Zero" chain — 2026-11-14 🟡 REGISTER PENDING (rate-limit IP)
+- **Sumber:** https://x.com/ZeroVaultxyz/status/2120528093299540462 · waitlist + task poin (rumor: akses awal NFT vault)
+- **Stack:** Vite SPA di Replit · API `/api/auth/{nonce,verify,session}` + `/api/waitlist/{config,tasks,me,register,leaderboard,referrals}`
+- **Auth: SIWE** — POST /api/auth/nonce {address} → message (nonce, TTL 5 menit) → personal_sign → POST /api/auth/verify {address,signature} → cookie sesi. Sign SIAP PAKAI `eth_account` offline (WALLET TIDAK PERLU INJECT BROWSER).
+- **Wallet:** airdrop_00 `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` → **verify 200 `authenticated:true`** ✅
+- **X tasks SELESAI SEMUA (wallet @osbornrdx):**
+  - Follow @ZeroVaultxyz ✅ · Like announcement ✅ · Repost ✅ (`unretweet`) · Reply ✅ **proof: https://x.com/osbornrdx/status/2121460150011867558**
+- **BLOCKER:** `/api/waitlist/register` **429 per-IP keras** — backoff 20s→600s + tunggu 6 menit tetap 429. Endpoint read (config/tasks/leaderboard) bebas 200 → limit khusus auth (anti multi-wallet farm). 62 peserta saat ini.
+- **Fix:** cron `5e4cbdd056db` "ZeroVault Register (patient)" `7,27,47 * * * *` → scripts/zerovault/register_once.py (one-shot, senyap kalau 429, state.json cegah double-register; submit task 2/3 dengan proof otomatis begitu register sukses).
+- **Tasks (dari /me):** follow 10p (no proof) · repost 15p (proof) · reply 15p (proof) · post original (poin). Review manual oleh tim.
