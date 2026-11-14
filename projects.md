@@ -7825,3 +7825,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Free tier butuh "approved, unused whitelist allocation"** → whitelist tutup = jalur gratis HABIS. Sisa jalur = paid 0.005 BNB (~$5) → **NO PAID, tidak diambil**.
 - **Mekanisme (untuk referensi):** mint pakai ZK proof lokal (snarkjs 0.7.6, wasm+zkey dari /assets/zk-archive-...), agent harus baca stereogram (kode 6 karakter) → `/prove?id=&wallet=&agentName=` → server sign permit 600s → mint contract verifikasi ZK. Ada agent prompt resmi di bundle.
 - **Verdict:** tutup untuk jalur gratis. Tidak ada aksi lanjut.
+
+### AMNC mining — BUG DITEMUKAN 2026-11-14 22:00 🐞 (mining 2 hari tanpa hasil)
+- **Gejala:** cron `d638df38f0c6` status `ok` tapi **4 hari senyap**, state `passes=14 submitted=0 txs=[]`. Tidak ada satu proof pun pernah masuk on-chain.
+- **AKAR MASALAH:** `mineBatch(uint8,uint256[])` di AMNC `0x04efC2D4…CAdD` itu **PAYABLE** — wajib `msg.value == n * SUBMIT_PER_PROOF()`. Nilainya **0.00002 BNB per proof** (`SUBMIT_PER_PROOF() = e51e1b2d` → 20000000000000 wei). Script lama hardcode `--value 0` → revert **`BadSubmitFee()` = 0x1dac7363** → tertangkap `except` kosong → exit senyap tiap tick. Swarm SEBENARNYA dapat proof (4 proof valid per pass), tapi semua ditolak saat submit.
+- **Cara decode:** revert selector dicocokkan ke daftar `error` di source Sourcify `https://sourcify.dev/server/v2/contract/56/<addr>?fields=sources` + keccak256 lokal. 4byte.directory 403 dari VPS.
+- **FIX (sudah dipatch di run_window_amnc.py):** `send()` terima `value_wei`; batch di-size dari saldo (`affordable = bal // fee`); estimateGas pakai value benar; error sekarang PRINT bukan senyap.
+- **BLOCKER SALDO:** wallet baw `0x888d…29a1` cuma **0.00003945 BNB**. 1 proof = fee 0.00002 + gas ~0.000008 ≈ **0.00002798 BNB** (cukup 1). 2 proof = butuh 0.00004 fee → **insufficient**. Jadi maksimal 1 proof (2.500 AMNC) per hari dengan saldo sekarang.
+- **Nilai:** 2.500 AMNC ≈ $0.08 (harga AMNC ~$0.00003). Fee+gas ≈ $0.017. Tipis positif tapi receh.
+- **Window:** `inSession` 16:00–22:00 WIB (sessionLength 21600). Setelah 22:00 = 0, script exit senyap (benar).
+- **Selector penting:** mineBatch `738c12e5` · SUBMIT_PER_PROOF `e51e1b2d` · inSession `b7b2d036` · dayIndex `9646dec6` · cpuProofsToday `1b835fa4` · cpuDailyCap `7f634012` · cpuPerIdCap `e47c86b1` · cpuTarget `8129e010` · effectiveLane `9388452a` · selectPlan `ec90c0d1` · pinSession `9c26dd34`.
+- **Next:** besok 16:00 cron jalan dengan fix; akan submit 1 proof (2.500 AMNC) otomatis dan lapor.
