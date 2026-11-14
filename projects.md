@@ -7836,3 +7836,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Window:** `inSession` 16:00–22:00 WIB (sessionLength 21600). Setelah 22:00 = 0, script exit senyap (benar).
 - **Selector penting:** mineBatch `738c12e5` · SUBMIT_PER_PROOF `e51e1b2d` · inSession `b7b2d036` · dayIndex `9646dec6` · cpuProofsToday `1b835fa4` · cpuDailyCap `7f634012` · cpuPerIdCap `e47c86b1` · cpuTarget `8129e010` · effectiveLane `9388452a` · selectPlan `ec90c0d1` · pinSession `9c26dd34`.
 - **Next:** besok 16:00 cron jalan dengan fix; akan submit 1 proof (2.500 AMNC) otomatis dan lapor.
+
+### #323 Agent Games by zkVerify — REGISTERED ✅ (400,000 $VFY prize pool)
+- URL: https://agentgames.zkverify.io/register?ref=GUVCSDZN — **registered** as `@osbornrdx`, email airdropkarbiters@gmail.com, country Indonesia, ref code GUVCSDZN applied.
+- Identity: **X OAuth** (consent approved). Dashboard: https://agentgames.zkverify.io/dashboard — "PARTICIPANT CONTROL ROOM / @osbornrdx" live, rank NOT RANKED, 0 points.
+- **Deadline: 21 Nov 2026** (all tracks). Judging + results 22–30 Nov.
+- **Automated tracks need code:** register an agent = AGENT NAME + tracks + **public GitHub repo on a personal account** (org repos NOT supported) + optional live endpoint `https://`. Max 3 agents/participant, only 1 per automated event.
+- **Creator Track = no code:** publish a thread/video/article containing **#AgentGames** and tag **@ZKVProtocol**, then submit the link (category THREAD/VIDEO/ARTICLE/OTHER + title + links). Cross-posting to multiple platforms earns bonus XP. Review is manual.
+- Wildcard = same submission form (judged build, any Web3 agent).
+- Live event window: **17:30–03:30 GMT+7** (Steal the VFY + Proof Gatekeeper).
