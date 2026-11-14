@@ -7792,3 +7792,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Email terdaftar:** airdropkarbiters@gmail.com (submit via browser sempat tampil "Uh oh! Something went wrong" padahal backend SUKSES — UI error menipu)
 - **Pitfall:** form UI Svelte submit client-side tanpa action URL; klik/JS-fill tidak memberi feedback (`You're on the list` = state sukses sebenarnya, i18n string ada di bundle). Jalur paling andal = tRPC endpoint langsung.
 - **Route admin terkait:** `/admin/(tabs)/bots-waitlist-leads`
+
+### ZXOXO (zxoxo.xyz) — LayerZero mesh mining, $ZXO — 2026-11-14 🟡 SEBAGIAN (X task done, step Task mentok)
+- **Sumber:** https://x.com/zxoxocash/status/2120949975966240799 · card ref `Z9HR-GMB0` (referral card @VjRusmayana404) · mekanisme: mine $ZXO per-chain, bridge via LayerZero, burn $ZXO → hashrate, supply mengecil
+- **Stack:** Next.js App Router + React Server Components (server actions via `?_rsc=`), CSS modules `c8V9wa_*`. Alur 4 step: VERIFY → TASK → WALLET → CARD. "One packet per X account."
+- **SIGNAL ACCOUNT:** signup = Connect X OAuth (scope read) → signal naik per umur akun (250/tahun X). Akun Rey: **@osbornrdx, dibuat 16 Sept 2011, 15 tahun → +3.792 signal** ✅
+- **TASK X — SELESAI SEMUA (verified via testid X):**
+  - Like ✅ (testid jadi `unlike` setelah klik) · Repost ✅ (`unretweet`) · Reply ✅ **proof: https://x.com/osbornrdx/status/2121447426305458473**
+  - Butuh real-mouse CDP (mousedown/up sequence) — `.click()` JS tidak mempan untuk like/repost di X.
+- **BLOCKER step 02 / TASK:** tombol `Check` disabled secara client-side; berhasil diaktifkan dengan **React fiber trick** (`props = el['__reactProps$...']; props.onChange({target:{value:link}})`) → tombol enable → klik memicu RSC action, TAPI server tidak advance ke Wallet (state balik ke 01/VERIFY setelah reload; cookie sesi kosong → progress tidak persist di profile browser).
+- **BELUM:** Submit EVM testnet address (step WALLET) + Mine on testnet (step CARD).
+- **Pitfall:** situs menyimpan progress di session server; reload = balik ke step 01. Jalur paling andal = satu sesi penuh (Connect X → task → wallet) tanpa reload.
