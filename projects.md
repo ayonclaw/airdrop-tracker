@@ -7781,3 +7781,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - Respon: **"Thanks, you're all set — We've saved your details for Mainnet Closed Alpha selection."** ✅
   - Jadi jalur eligibility = FORM INI (bukan wallet paper server). Wallet Rey tercatat untuk Closed Alpha selection.
 - **Bot command resmi:** `/trade` (link baru multi-device) · `/status` · `/register` (form) · `/fills on|off` · rename via Account settings
+
+### Krea Bots Beta (www.krea.ai/bots-beta) — 2026-11-14 ✅ TERDAFTAR WAITLIST ($1000 credits)
+- **Sumber:** https://www.krea.ai/bots-beta#crew-ping — beta Krea Bots (AI creative agents), $1.000 kredit untuk peserta beta
+- **Stack:** SvelteKit (`__sveltekit_mba9m3`, build v6.5eceffb412210088) + tRPC + HubSpot (portal 247308723) + self-hosted Supabase (`PUBLIC_K8S_SUPABASE_URL=https://www.krea.ai`, anon key JWT role:anon exp 1932958857)
+- **ENDPOINT WAITLIST (ditemukan dari bundle nodes/253.DT16eTRE.js):**
+  `POST https://www.krea.ai/api/trpc/waitlist.join?batch=1`
+  body: `{"0":{"json":{"email":"<EMAIL>","feature":"krea-bots","screen":"Bots","surface":"bots_marketing","website":""}}}`  (`website` = honeypot, wajib kosong)
+  → respon 200 `[{"result":{"data":{"json":{"alreadyJoined":true}}}}]` = email SUDAH terdaftar ✅
+- **Email terdaftar:** airdropkarbiters@gmail.com (submit via browser sempat tampil "Uh oh! Something went wrong" padahal backend SUKSES — UI error menipu)
+- **Pitfall:** form UI Svelte submit client-side tanpa action URL; klik/JS-fill tidak memberi feedback (`You're on the list` = state sukses sebenarnya, i18n string ada di bundle). Jalur paling andal = tRPC endpoint langsung.
+- **Route admin terkait:** `/admin/(tabs)/bots-waitlist-leads`
