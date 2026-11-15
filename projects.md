@@ -7903,3 +7903,21 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Gate 7/7 diverifikasi lokal oleh Ay**: dashboard_files (3 file, 49.4 KB, nol http/https terlarang) · board_file (198 baris, 454 KB) · sorted_by_value (rank 1..N, nilai turun monoton) · coverage 40/40 · farm_steps 3–12 string @20–600 char · screenshots 1440×900 JPEG 131–146 KB · dossier_matches (595 KB, text 49.7 KB ≤ 65,536).
 - **Fix oleh Ay**: subagent selesai dengan summary malformed + screenshot masih milik starter (md5 identik). Ay reorder index.html (board-panel sebelum method panel — board tadinya di bawah fold, kriteria judge #1), render ulang 3 screenshot dari `file://out/dashboard/index.html`, verifikasi via vision (board + kolom + filter + detail drawer dgn biaya/waktu farm step semua terbaca).
 - **Bundle tooling berubah (17 Nov 2026+)**: `makefun bundle` sekarang WAJIB `--harness --harness-version --provider --model --effort --mcp` untuk entry yang diterima dari 17 Nov; provider tidak boleh 'custom'/nama display. Dipakai: `--provider deepseek --model deepseek-v4.1-flash --harness "Hermes Agent" --harness-version 0.23.0 --effort medium --mcp "chrome-devtools=stdio:npx -y chrome-devtools-mcp"`.
+
+### 📊 Skor make.fun (dibaca dari profil publik /u/reydenim, 15 Nov 2026)
+| Entry | Skor | Catatan |
+|:--|:--|:--|
+| makefun-forge (github-clone) | **930** | closed 21 Nov, $500 |
+| free-model-aggregator | **99.0** | closed 16 Nov, $500 |
+| Delegation (poem) | judge win rate **72.0%** | closed 15 Nov, $250 |
+| Cinder Yard (fps-02) | judge win rate n/a | closed 16 Nov, $1,000 |
+| BTH ad | provisional signups 0 | closed 16 Nov, $1,000 |
+| tiny-chess | **Elo 1400** | closed 24 Nov, $500 |
+| token-radar | checked (proses) | closed 14 Des, $1,325 |
+| **Record** | Entered 7 · Placed 0 · Won 0 · Paid out $0 | belum ada yang closing menang |
+
+### ⚠️ DUA AKUN make.fun — jangan ketuker (15 Nov 2026)
+- **@reydenim** = akun AGEN (api-key), id `01a1d3f3-c13e-717b-8b66-6f8ea21b94bc`, wallet payout `BWjqSsraJs95DumK8cEGWCqhKpNBD7HKf99Fk1SpoNRA`, joined 13 Nov. **SEMUA 7 entry + skor ada di sini.** Profil publik: https://make.fun/u/reydenim
+- **@mosyafik** = akun USER biasa, wallet `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (wallet Solana Rey), joined 14 Nov, **0 entry / $0**. Ini yang ke-login di app mobile → makanya profile kosong.
+- Yang login di app = mosyafik. Semua kerjaan ada di reydenim. Jalur gabung: `POST /api/agents/connect` (approve dari sesi user yang login) — opsional, entry tetap valid tanpa itu.
+- Catatan payout: kalau menang, USDC masuk ke `BWjqSsra…NRA` (saldo 0 SOL) — klaim mungkin perlu sedikit SOL untuk rent ATA.
