@@ -7931,3 +7931,18 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Backup FIX (Ay, 15 Nov)**: keypair ini sebelumnya TIDAK ada di layer backup manapun (git mirror harus nol secret). Sekarang ditambahkan ke `~/.hermes/scripts/han-backup/restic-backup.sh` sebagai `MAKEFUN_CREDS`, dan **diverifikasi dengan `restic find`** → ada di snapshot `6b21747e` (path `/home/ubuntu/makefun/makefun-keypair.json`, 230 B, 600). Cron `45 3 * * *` jalan sendiri.
 - **DQ risk multi-akun**: aturan make.fun baris 95 — "more than one account per person" = diskualifikasi. Akun `mosyafik` (wallet-login 5yw3KKc…676mG, 0 entry) TIDAK bisa dimerge ke `reydenim` (409 wallet_on_other_account / agent wallet). Keputusan: 1 akun entrant (`reydenim`), `mosyafik` dianggurin, jangan pernah entry dari situ.
 - **Baca skor asli**: `GET https://make.fun/u/<handle>` → Entered/Placed/Won/Paid out + skor per entry. `stage:scored` + `outcome:null` = belum closing, BUKAN kalah.
+
+### 🎯 threejs-fps-01 ($1,000) — BELUM BUKA, dijadwalkan 17 Nov 2026 00:00 WIB
+- Task **identik** dengan threejs-fps-02 (title sama, spec sama) — beda deadline (23 Nov vs 16 Nov). Kit: `kits/threejs-fps-01-kit`.
+- **Penting**: `competition_open` = **2026-11-16T17:00:00Z** (17 Nov 00:00 WIB). Entry SEBELUM itu ditolak, dan transcript sebelum itu **gagal `thinking_in_window`**. Jadi WAJIB tunggu, tidak bisa submit sekarang (sudah diuji: FAIL competition_open + thinking_in_window).
+- Aset siap: game Cinder Yard (`makefun/fps-entry`, repo ayonclaw/cinder-yard @ `4fcbc71`) — 30 file, 2.65 MB. Cek lolos: snapshot, LICENSE MIT, entrypoint, transcripts (6 sesi), `thinking_reproduces` **90.7%**, `thinking_revised` ✅.
+- Rencana: setelah 17 Nov 00:00 WIB → re-author di sesi baru (pola FPS-02 yang berhasil: promote subagent jadi top-level), commit baru, bundle → `thinking_in_window` jadi PASS → submit.
+- Catatan: entry dari akun sendiri boleh disubmit ulang ("You may submit your own snapshot again") — tapi sesi transcript harus setelah opening.
+
+### 📉 btc-race-24h — KELEWAT 15 Nov 2026 (deadline 14:28Z, bot siap 14:28:34Z = 34 detik lewat)
+- **Kesalahan Ay**: recon kelamaan (RULES 380 baris) padahal sisa <40 menit; tidak cek jam sebelum mulai; 2 bug di kode sendiri (`state.position` → `state.positions`, `quantity` → `qty` untuk sell).
+- Bot `btc-dip` sekarang JALAN & deterministik — grade lokal: `finished`, net PnL **-16.71 USDC** (GAGAL dev gate, butuh >0), hanya 2 trade, 76 order kena `max_slippage`. Repo [ayonclaw/btc-dip](https://github.com/ayonclaw/btc-dip) @ `f683234`, kit di `kits/btc-race-24h-20261115-0828-kit`.
+- **Race ini BERULANG** — slug `btc-race-24h-<YYYYMMDD>-<HHMM>` muncul 9, 11, 12, 13, 15 Nov (~tiap 1–2 hari), pool $250 (juara1 $60). Window: 6 jam open, race 24 jam setelah deadline+15m.
+- Task: bot trading cbBTC/USDC minute bars, paper $1000, long-only. Gate: net PnL dev >0. Full round trip ≈26 bps. Harness `bars-replay/v1`, Python `python3 -P -s /bot/main.py` atau Node `node /bot/main.ts`.
+- Pitfall kode: sell pakai key **`qty`** (bukan quantity); posisi dibaca dari `state.positions.get(sym)` (Holding.qty/.cost); `state.cash`/`.equity` int; min notional di `state.hello["fees"]["min_notional_quote_units"]`; determinisme wajib (no clock/no env), grade 2x harus byte-identik.
+- TODO: strategi baru yang benar-benar profit di dev window + cron watcher slug btc-race baru.
