@@ -7887,3 +7887,8 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Pelajaran FPS-02 (paling penting)**: check `thinking_reproduces` menghitung baris yang PERTAMA muncul di tool result sebagai "read", bukan "authored" — jadi file yang di-copy dari starter/kit atau ditulis lewat heredoc/sed tidak pernah dihitung authored walau ditulis ulang kemudian. File yang mau dikreditkan harus ditulis lewat Write/Edit agent. Subagent yang menulis file = author-nya subagent itu (sesinya harus ikut di-bundle + jadi parent family).
 - **Helper widget `thinking_revised`**: butuh 1 file yang isinya final datang dari >=2 pesan tulis/edit. BTH & poem lolos karena index.html/poem.txt di-edit 2-3 kali.
 - grade-local FMA: `node cli/makefun.mjs grade-local --kit . --bot <repo> --driver docker --instances N` (docker ada; tanpa API key tetap valid, model call-nya ke provider simulasi).
+
+### ⛔ SKIP — makefun-coin-promo-01 (pump.fun coin, $1,000) — 15 Nov 2026, keputusan Rey: "no pumpfun"
+- Alasan teknis: wallet make.fun `BWjqSsraJs95DumK8cEGWCqhKpNBD7HKf99Fk1SpoNRA` = **0 lamports** (diverifikasi di api.mainnet-beta.solana.com + solana-rpc.publicnode.com; `getAccountInfo` null, tanpa history tx). Create pump.fun butuh ~0.020 SOL.
+- Alasan keputusan: Rey tidak mau jalur yang butuh modal (konsisten dengan hard rule NO PAID). Bounty ditutup, tidak ada yang di-sign, 0 SOL kepakai.
+- Jangan bangkitkan lagi kecuali Rey minta eksplisit.
