@@ -7854,3 +7854,10 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Creator Track = no code:** publish a thread/video/article containing **#AgentGames** and tag **@ZKVProtocol**, then submit the link (category THREAD/VIDEO/ARTICLE/OTHER + title + links). Cross-posting to multiple platforms earns bonus XP. Review is manual.
 - Wildcard = same submission form (judged build, any Web3 agent).
 - Live event window: **17:30–03:30 GMT+7** (Steal the VFY + Proof Gatekeeper).
+
+### #323b Agent Games — Creator Track SUBMITTED ✅
+- **Entry:** `CREATOR-TRACK-2026-W47` — category THREAD, title "Building a ZK-proof hunter: 3 traps that silently kill your agent", status **PENDING** (1 total, 0 scored, 1 awaiting).
+- **Published piece:** https://x.com/osbornrdx/status/2121802648135631260 — includes `#AgentGames` + `#ZKVerify` + `$VFY` as required for eligibility.
+- **Supporting note** attached (478 chars): explains the agent was built and verified on-chain, the 3 silent failure modes, and the `proofDigest()` oracle method.
+- **Submission bug worth remembering:** the form posts `[{category, title, links:[{platform, platformOther, url}], supportingNote}]` to `POST /dashboard/submissions`. Setting `<select>` values with plain JS leaves React state empty → server returns `fieldErrors: {"links.0.platform": "Invalid option..."}`. Only a **real MCP click** on the platform dropdown + option fixes it (the payload must carry `platform: "x"`). Plain value-set produced `platform: ""` and a 200 response with `ok:false`.
+- Next: judging 22–30 Nov. Could add a Medium crosspost (bonus XP) — same content, add another link row.
