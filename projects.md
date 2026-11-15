@@ -2,6 +2,15 @@
 
 > Sistem airdrop Ayon (Rey). Semua project, bukti, wallet, dan status.
 
+### Pear Rewards — Daily Streak + Pear Post (cron) — ✅ DONE <!-- aydrop:done -->
+- **Date:** 2026-11-15 | **URL:** https://rewards.pear.trade/dashboard | **Reward:** Pear points (pearls) | **Platform:** PearTrade Rewards (BUKAN XREIGN)
+- **Daily streak:** 8d -> **9d**, claim **+123 pts** (points 17,844 -> 17,967; rank #15579 saat claim, dashboard readback #15447)
+- **Pear Post (extra):** tweet baru diposting via X intent URL (cookies @osbornrdx) lalu link di-submit ke form `input.pearpost-input` -> counter **0/3 -> 1/3 today** (+12 pts saat review lolos)
+  - proof: https://x.com/osbornrdx/status/2121786061064155329
+- **Pear Clips:** tetap 0/2 (butuh video clip, tidak dibuat run ini). Milestone lain semua gate referral/post-count (0/5, 0/3 dst) -> tidak ada claim manual yang tersedia.
+- **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
+- **Status:** ✅ DONE — daily claimed + 1 Pear Post submitted.
+
 ## Squeekchain Squeek NFT Stake (Sepolia) — ✅ STAKED <!-- aydrop:done -->
 - **Date:** 2026-11-06 | **Chain:** Ethereum Sepolia (11155111)
 - **NFT:** Squeek test 0xc4c7982657f00509548f3a3a41db7fa439a6856b tokenId 1101 (owned airdrop_00)
