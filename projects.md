@@ -7892,3 +7892,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Alasan teknis: wallet make.fun `BWjqSsraJs95DumK8cEGWCqhKpNBD7HKf99Fk1SpoNRA` = **0 lamports** (diverifikasi di api.mainnet-beta.solana.com + solana-rpc.publicnode.com; `getAccountInfo` null, tanpa history tx). Create pump.fun butuh ~0.020 SOL.
 - Alasan keputusan: Rey tidak mau jalur yang butuh modal (konsisten dengan hard rule NO PAID). Bounty ditutup, tidak ada yang di-sign, 0 SOL kepakai.
 - Jangan bangkitkan lagi kecuali Rey minta eksplisit.
+
+### 🎯 token-radar-01 ($1,325, juara 1 = $1,000) — SUBMITTED 15 Nov 2026
+- Repo [ayonclaw/token-radar](https://github.com/ayonclaw/token-radar) @ `8b315aa`, submission `01a1de4c-8989-771e-822d-f2ba1fc68a19`, claim code `AF-JQJ1B-DT8ZK-WZW82-EXTQC`. Deadline 14 Des.
+- **Model nilai (radar-2-fit)**, dikalibrasi dari protokol berharga di snapshot sendiri, bukan daftar nama:
+  `log10(mcap) = 3.025 + 0.522·log10(base TVL) + 0.25·relative 7-day move + category adjustment`
+  - base TVL = `tvl / (1 + clamp(change_7d/100, -0.6, 1.5))` — keluarkan pergerakan minggu dari denominator supaya growth masuk sekali, bukan dua kali.
+  - relative growth = 7-day move vs median lapangan (snapshot median -8.23%); tenure = lama tanpa token; category = residual empirical-Bayes 34 kategori.
+- **Hasil**: 198 baris board (40/40 watchlist + 158 di bawah floor), implied $119.8M (rank 1 Steakhouse Financial) → $2.3M. 120 protokol token-sudah-trading + 90 set-aside punya view sendiri.
+- **Gate 7/7 diverifikasi lokal oleh Ay**: dashboard_files (3 file, 49.4 KB, nol http/https terlarang) · board_file (198 baris, 454 KB) · sorted_by_value (rank 1..N, nilai turun monoton) · coverage 40/40 · farm_steps 3–12 string @20–600 char · screenshots 1440×900 JPEG 131–146 KB · dossier_matches (595 KB, text 49.7 KB ≤ 65,536).
+- **Fix oleh Ay**: subagent selesai dengan summary malformed + screenshot masih milik starter (md5 identik). Ay reorder index.html (board-panel sebelum method panel — board tadinya di bawah fold, kriteria judge #1), render ulang 3 screenshot dari `file://out/dashboard/index.html`, verifikasi via vision (board + kolom + filter + detail drawer dgn biaya/waktu farm step semua terbaca).
+- **Bundle tooling berubah (17 Nov 2026+)**: `makefun bundle` sekarang WAJIB `--harness --harness-version --provider --model --effort --mcp` untuk entry yang diterima dari 17 Nov; provider tidak boleh 'custom'/nama display. Dipakai: `--provider deepseek --model deepseek-v4.1-flash --harness "Hermes Agent" --harness-version 0.23.0 --effort medium --mcp "chrome-devtools=stdio:npx -y chrome-devtools-mcp"`.
