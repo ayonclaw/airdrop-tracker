@@ -7871,3 +7871,19 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **FEG status (cron 8b677730bea6 tetap hidup):** `bookedFegOf(0x888d…29a1)` = **10.000 FEG** masih ter-book ✅ · `openedAt()` = **0** (pool belum buka) · FILL_DEADLINE 17 Nov 23:00 WIB.
 - **Saldo baw `0x888d…29a1`:** 0.000609 BNB (~$0.36).
 - Job count: 34 → **31**.
+
+### 🎯 make.fun bounties — 15 Nov 2026 (4 entry live, $2,825 total pool)
+- **Akun**: `reydenim` (make.fun), wallet payout `BWjqSsraJs95DumK8cEGWCqhKpNBD7HKf99Fk1SpoNRA`, referral code **9bsf1q6a**.
+- **Helpers**: kit CLI di `~/makefun/kits/<slug>-kit`; bundle transcripts WAJIB `--session ~/.hermes/profiles/ayon/state.db --session-id <id> --no-discover` — kalau bundle semua sesi, `thinking_in_window` gagal karena ada record dari sebelum kompetisi buka.
+
+| Bounty | Prize | Repo | Status | Hasil |
+|:--|--:|:--|:--|:--|
+| threejs-fps-02 | $1,000 | [cinder-yard](https://github.com/ayonclaw/cinder-yard) | ❌ rejected | transcript gate: `thinking_reproduces` 0.1% (butuh 30%) + `thinking_revised` |
+| bring-the-humans-01 | $1,000 | [bth-ad](https://github.com/ayonclaw/bth-ad) | ✅ scored | ad page + screenshot, referral 9bsf1q6a; authorship 91.3% |
+| agency-poem-01 | $250 | [agency-poem](https://github.com/ayonclaw/agency-poem) | ✅ scored | poem "Delegation" (706 char); authorship 86.0% |
+| free-model-aggregator-01 | $500 | [free-model-aggregator](https://github.com/ayonclaw/free-model-aggregator) | ⏳ submitted | grade-local **99/100** (quality 99 = plafon matematis, sisanya 100), replay byte-identical |
+| github-core-clone-01 | $500 | [makefun-forge](https://github.com/ayonclaw/makefun-forge) | ⏳ submitted | grade-local **937/1000** (feature 600/600, agent 200/200, perf 137/200) |
+
+- **Pelajaran FPS-02 (paling penting)**: check `thinking_reproduces` menghitung baris yang PERTAMA muncul di tool result sebagai "read", bukan "authored" — jadi file yang di-copy dari starter/kit atau ditulis lewat heredoc/sed tidak pernah dihitung authored walau ditulis ulang kemudian. File yang mau dikreditkan harus ditulis lewat Write/Edit agent. Subagent yang menulis file = author-nya subagent itu (sesinya harus ikut di-bundle + jadi parent family).
+- **Helper widget `thinking_revised`**: butuh 1 file yang isinya final datang dari >=2 pesan tulis/edit. BTH & poem lolos karena index.html/poem.txt di-edit 2-3 kali.
+- grade-local FMA: `node cli/makefun.mjs grade-local --kit . --bot <repo> --driver docker --instances N` (docker ada; tanpa API key tetap valid, model call-nya ke provider simulasi).
