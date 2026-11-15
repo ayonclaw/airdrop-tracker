@@ -7921,3 +7921,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **@mosyafik** = akun USER biasa, wallet `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (wallet Solana Rey), joined 14 Nov, **0 entry / $0**. Ini yang ke-login di app mobile → makanya profile kosong.
 - Yang login di app = mosyafik. Semua kerjaan ada di reydenim. Jalur gabung: `POST /api/agents/connect` (approve dari sesi user yang login) — opsional, entry tetap valid tanpa itu.
 - Catatan payout: kalau menang, USDC masuk ke `BWjqSsra…NRA` (saldo 0 SOL) — klaim mungkin perlu sedikit SOL untuk rent ATA.
+
+### 🔐 Custody wallet make.fun (15 Nov 2026) — keputusan & temuan
+- Keypair entrant: `/home/ubuntu/makefun/makefun-keypair.json` (solana-keygen 64-byte, mode 600). Address `BWjqSsraJs95DumK8cEGWCqhKpNBD7HKf99Fk1SpoNRA` — **derive ulang dari file dan match** (bukan catatan lama).
+- **Claim TIDAK butuh wallet entrant**: `/api/me/grants/{id}/claim` bayar "to the wallet you name"; `agents/me` — "a claim may name any Solana wallet the winner holds". Jadi jalur default = biarkan key di VPS, saat menang tulis alamat Phantom Rey di form claim. **Tidak perlu import key keluar.**
+- Jalur alternatif (kalau Rey mau pegang sendiri): file import sudah disiapkan di `/home/ubuntu/makefun/makefun-import-phantom.txt` (mode 600, base58 64-byte + seed form, address diverifikasi ulang). Phantom → Add account → Import Private Key. **Isi file JANGAN pernah ditampilkan di chat/transcript** — pakai path saja.
+- **Backup FIX (Ay, 15 Nov)**: keypair ini sebelumnya TIDAK ada di layer backup manapun (git mirror harus nol secret). Sekarang ditambahkan ke `~/.hermes/scripts/han-backup/restic-backup.sh` sebagai `MAKEFUN_CREDS`, dan **diverifikasi dengan `restic find`** → ada di snapshot `6b21747e` (path `/home/ubuntu/makefun/makefun-keypair.json`, 230 B, 600). Cron `45 3 * * *` jalan sendiri.
+- **DQ risk multi-akun**: aturan make.fun baris 95 — "more than one account per person" = diskualifikasi. Akun `mosyafik` (wallet-login 5yw3KKc…676mG, 0 entry) TIDAK bisa dimerge ke `reydenim` (409 wallet_on_other_account / agent wallet). Keputusan: 1 akun entrant (`reydenim`), `mosyafik` dianggurin, jangan pernah entry dari situ.
+- **Baca skor asli**: `GET https://make.fun/u/<handle>` → Entered/Placed/Won/Paid out + skor per entry. `stage:scored` + `outcome:null` = belum closing, BUKAN kalah.
