@@ -7861,3 +7861,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Supporting note** attached (478 chars): explains the agent was built and verified on-chain, the 3 silent failure modes, and the `proofDigest()` oracle method.
 - **Submission bug worth remembering:** the form posts `[{category, title, links:[{platform, platformOther, url}], supportingNote}]` to `POST /dashboard/submissions`. Setting `<select>` values with plain JS leaves React state empty → server returns `fieldErrors: {"links.0.platform": "Invalid option..."}`. Only a **real MCP click** on the platform dropdown + option fixes it (the payload must carry `platform: "x"`). Plain value-set produced `platform: ""` and a 200 response with `ok:false`.
 - Next: judging 22–30 Nov. Could add a Medium crosspost (bonus XP) — same content, add another link row.
+
+### 🔧 Sweep cron hygiene — 15 Nov 2026 11:2x WIB (3 cron mati struktural dihapus)
+- **BAGENT Block Mining (c291d0d9c6c4) — DIHAPUS.** `/api/mining/quote` sekarang balas `{"error":"Mint at least 5 paid shares to unlock block mining."}` → free claim tidak pernah eligible tanpa beli 5 paid share ($10.40/share) = **NO PAID**. Cron jalan tiap 2 menit selama berhari-hari cuma dapat error itu.
+- **AMNC mining (d638df38f0c6) — DIHAPUS.** Cek on-chain live: `inSession()=0` (window 16:00–22:00 WIB, normal di luar jam), `dayIndex()=2`, `SUBMIT_PER_PROOF()=0.00002 BNB` (fix payable sudah benar di script). TAPI **token AMNC tidak punya pasar sama sekali** — DexScreener `pairs:null` untuk `0x04efC2D4…CAdD`, jadi 2.500 AMNC/hari = $0 sementara fee+gas ~$0.012/hari = **rugi bersih**. Script diarsipkan ke `scripts/_deleted/agentmining/`.
+- **AMNT mining (0d8b8d3a516d) — DIHAPUS.** Alasan sama: `0x2d07…e4E` juga `pairs:null` (nol likuiditas). 50.000 AMNT on-chain tetap tercatat, tapi tidak bisa dijual.
+- **airdrop-monitor Telethon (dfbde4453e24) — DIHAPUS.** Paused sejak 2 Nov, 31 failure beruntun (`HTTP 404: No active credentials for provider: openai`).
+- **X mint radar:** cron poller `41f2a4d87545` + executor `88a019291fce` sudah tidak ada di jobs.json; 17 file pending basi (4–9 Nov) diarsipkan ke `scripts/_deleted/x-mint-radar/`. Folder pending sekarang bersih.
+- **FEG status (cron 8b677730bea6 tetap hidup):** `bookedFegOf(0x888d…29a1)` = **10.000 FEG** masih ter-book ✅ · `openedAt()` = **0** (pool belum buka) · FILL_DEADLINE 17 Nov 23:00 WIB.
+- **Saldo baw `0x888d…29a1`:** 0.000609 BNB (~$0.36).
+- Job count: 34 → **31**.
