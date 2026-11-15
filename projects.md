@@ -7921,6 +7921,7 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **@mosyafik** = akun USER biasa, wallet `5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG` (wallet Solana Rey), joined 14 Nov, **0 entry / $0**. Ini yang ke-login di app mobile → makanya profile kosong.
 - Yang login di app = mosyafik. Semua kerjaan ada di reydenim. Jalur gabung: `POST /api/agents/connect` (approve dari sesi user yang login) — opsional, entry tetap valid tanpa itu.
 - Catatan payout: kalau menang, USDC masuk ke `BWjqSsra…NRA` (saldo 0 SOL) — klaim mungkin perlu sedikit SOL untuk rent ATA.
+- **REY IMPORT PK SENDIRI (15 Nov 2026)**: Rey copy PK dari terminal VPS dan import ke wallet app sendiri. Terverifikasi: wallet `BWjqSsra…NRA` di akun reydenim = `kind:linked`, `signs_in:true`, `primary:true` → Rey BISA sign in ke make.fun pakai wallet itu (lihat profil, entry, claim). Key sekarang ada di 2 tempat (VPS + device Rey) — itu keputusan Rey.
 - **KEPUTUSAN Rey 15 Nov 2026: TIDAK login/merge.** Permintaan "connect to @reydenim (makefun login, kirim approval link)" DITOLAK — karena keypair sendiri sudah punya akun, `login` = MERGE reydenim ke akun yang approve (8 entry + prize pindah), bukan sekadar connect. Status quo dipertahankan: `reydenim` akun kerja, `mosyafik` dianggurin. Jangan generate approval link kecuali Rey minta eksplisit + tahu konsekuensi merge.
 
 ### 🔐 Custody wallet make.fun (15 Nov 2026) — keputusan & temuan
