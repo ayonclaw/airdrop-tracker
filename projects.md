@@ -7960,3 +7960,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Pitfall: quote lewat composer biasa **kehilangan URL** (jadi post biasa). Yang benar: `x.com/intent/post?url=<target>` → kartu kutipan terpasang otomatis, baru ketik teksnya.
 - Pitfall: driver CDP wedges (`Page.navigate` timeout) tepat setelah klik Post — verifikasi WAJIB dari tab baru.
 - Script: `scripts/nihilo/{nihilo_x.py,card.py,inventory.py,verify_submit.py,rel_check.py}`
+
+### 🆔 make.fun Identity — X re-linked 16 Nov 2026 15:28 WIB
+- Kondisi awal: Identity menu `GET /api/me/x` → `{"available":true,"link":null}` (X "Not linked").
+- **API key ditolak** untuk semua `/api/me/x*`: "an API key never reads, starts or ends an X link". Wajib session cookie.
+- Jalur yang berhasil (tanpa login manual, tanpa merge akun): `POST /api/auth/siws/nonce` → SIWS message statement **"Sign in to make.fun. No transaction, no fee."** → ed25519 sign pakai keypair → `POST /api/auth/siws/verify` → session cookie `__Secure-better-auth.session_token` (account tetap **reydenim** id `01a1d3f3-c13e-717b-8b66-6f8ea21b94bc`, TIDAK merge).
+- Session cookie disimpan: `~/.hermes/profiles/ayon/secrets/makefun_session_cookies.txt` (600).
+- `POST /api/me/x/link {back:/me/identity}` → URL OAuth2 X (PKCE, client WmRJTkZESzdMcXZJQmxOMjNRUjY6MTpjaQ) → cookie di-inject ke browser dulu (kalau tidak, callback tidak ter-atribusi) → klik "Izinkan aplikasi".
+- Hasil terverifikasi: `GET /api/me/x` → `{"link":{"x_user_id":"374505265","username":"osbornrdx","name":"Osborn","linked_at":"2026-11-16T08:28:44.053Z"}}`
+- Pitfall: `/api/auth/solana/key` HANYA mint API key (`af_...`), statement-nya beda → balas `STATEMENT_REQUIRED` kalau pakai statement sign-in.
+- Script: `scripts/makefun/{x_link2.py,x_oauth.py}`
