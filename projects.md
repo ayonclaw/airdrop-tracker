@@ -7946,3 +7946,17 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Task: bot trading cbBTC/USDC minute bars, paper $1000, long-only. Gate: net PnL dev >0. Full round trip ≈26 bps. Harness `bars-replay/v1`, Python `python3 -P -s /bot/main.py` atau Node `node /bot/main.ts`.
 - Pitfall kode: sell pakai key **`qty`** (bukan quantity); posisi dibaca dari `state.positions.get(sym)` (Holding.qty/.cost); `state.cash`/`.equity` int; min notional di `state.hello["fees"]["min_notional_quote_units"]`; determinisme wajib (no clock/no env), grade 2x harus byte-identik.
 - TODO: strategi baru yang benar-benar profit di dev window + cron watcher slug btc-race baru.
+
+### 🪂 Nihilo Fun (nihilofun.xyz) — ENTRY #3506 · 16 Nov 2026
+- LayerZero "experimental money", gate 48h (buka 16 Nov 05:00 WIB, tutup 18 Nov 05:00 WIB). **Tanpa wallet, tanpa signature** — cuma `POST /api/apply` simpan handle + link.
+- Site single-page, semua kode inline di `index.html` (30 KB). Satu endpoint: `POST /api/apply` body `{handle,follow,like,quote,reply}` → `{ok,number,dup}`. Poin: handle 50 · follow 100 · like 50 · quote 200 · reply 150 = **550**.
+- Task X @osbornrdx (semua terverifikasi):
+  - follow @nihilo_fun → `friendships/show` API balas `following:true`
+  - like https://x.com/nihilo_fun/status/2122087268273856897 → testid `unlike` muncul
+  - quote https://x.com/osbornrdx/status/2122174712113779026 → `quotes_target:1`
+  - reply https://x.com/osbornrdx/status/2122174266636747234 → ketemu in-thread
+  - card https://x.com/osbornrdx/status/2122177211759563257 → `#3506 // @nihilo_fun`
+- Submit: `{"ok":true,"number":3506,"dup":false}` lalu resubmit dgn quote terkoreksi → `{"ok":true,"number":3506,"dup":true}`. BELUM terverifikasi apakah link quote tersimpan ikut ter-update (server tak punya GET).
+- Pitfall: quote lewat composer biasa **kehilangan URL** (jadi post biasa). Yang benar: `x.com/intent/post?url=<target>` → kartu kutipan terpasang otomatis, baru ketik teksnya.
+- Pitfall: driver CDP wedges (`Page.navigate` timeout) tepat setelah klik Post — verifikasi WAJIB dari tab baru.
+- Script: `scripts/nihilo/{nihilo_x.py,card.py,inventory.py,verify_submit.py,rel_check.py}`
