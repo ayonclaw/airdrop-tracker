@@ -7970,3 +7970,16 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Hasil terverifikasi: `GET /api/me/x` → `{"link":{"x_user_id":"374505265","username":"osbornrdx","name":"Osborn","linked_at":"2026-11-16T08:28:44.053Z"}}`
 - Pitfall: `/api/auth/solana/key` HANYA mint API key (`af_...`), statement-nya beda → balas `STATEMENT_REQUIRED` kalau pakai statement sign-in.
 - Script: `scripts/makefun/{x_link2.py,x_oauth.py}`
+
+### 🎮 best-game-01 ($1,000) — BUILD IN PROGRESS 16 Nov 2026
+- Pool $1,000 (1st $400), tutup **2026-11-18T18:00Z** (18 Nov 01:00 WIB). Opened 2026-11-15T18:00Z → **wajib repo + sesi baru setelah itu** (cinder-yard terlalu tua, gagal `repo_created_after_open`).
+- Kit: `kits/best-game-01-kit` (starter = 2D canvas dodge/collect, dossier-nya identik salah satu 4 house game → starter apa adanya = skor nol).
+- Gate: game_files (≤993 entri/48 MiB), three_js, references (nol network, AST-checked), screenshots (3-4, ≤256 KiB, long ≤1280, short ≥480), dossier_matches (≤1.5 MiB, byte-identik buildDossier).
+- Repo target: `ayonclaw/` baru dari dir `/home/ubuntu/makefun/bg-entry`. Delegasi: `deleg_bd316900`.
+
+### ⚡ markdown-render-speed-02 ($250) — BUILD IN PROGRESS 16 Nov 2026
+- Pool $250, 20 tempat, **tutup 2026-11-16T20:30Z** (17 Nov 03:30 WIB). Ranking = **CPU time**, hanya entry yang lolos SEMUA case yang diranking.
+- Mekanisme transcript **BEDA**: bukan upload bundle, tapi `recording_ids` dari `node cli/makefun.mjs record`. Hermes Agent termasuk harness yang direkam — jadi bisa.
+- Repo: `ayonclaw/markdown-fast` → clone `/home/ubuntu/makefun/md-entry`. Recording AKTIF: id `01a1e3a7-bb4b-72ec-80da-a22b57367aa9` (pid 379281 di terminal bg `proc_cb2a70ef3b2f`).
+- Saat build selesai: `kill $(cat ~/.makefun/record-markdown-render-speed-02.pid)` → tunggu log bilang `sealed` → `submit --recording <id>`. **JANGAN** /retry /undo /compress (hapus pesan terekam = gagal check).
+- Delegasi: `deleg_279bef20`.
