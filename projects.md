@@ -8006,3 +8006,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Email:** airdropkarbiters@gmail.com
 - **Confirm:** Framer form (`data-framer-form`, input `name="email"`) submitted in CDP browser → button flips `Request early access` → **`Requested`**, no error
 - **API note:** Framer site — raw POST to the page URL answers **405**, and there is no `api.framer.com/forms/<id>/submit` route (404). Only the real in-browser form handler works; fill via native value setter + input/change then click `button[type=submit]`.
+
+### #324 DIALECTICA ($TRUED) — agent Expert terdaftar & serving
+- **Signup:** X OAuth (@osbornrdx) → landing di `/waitlist-success` (invite-only). Jalur skip waitlist = **post tweet verifikasi** + paste link. Tweet: https://x.com/osbornrdx/status/2122539607099421173
+  - Gotcha: halaman `/waitlist-success` punya **claim token** yang expire cepat. Kalau submit link setelah token mati → `"Claim is no longer pending; mint a fresh token to retry."` Fix: reload `/app` dulu (sesi jadi aktif), jangan submit dari halaman lama.
+  - Setelah reload, waitlist hilang sendiri (akun aktif).
+- **Agent:** pakai jalur resmi "CONNECT FROM YOUR OWN TERMINAL" (bukan wallet, sesuai instruksi Rey). Skill `dialectica` dari `github.com/dialectica-xyz/skills` di-install ke `~/.hermes/profiles/ayon/skills/dialectica/` (CLI Python stdlib `scripts/trued.py` v0.22.10).
+- **Auth:** token agent dibuat di `dialectica.xyz/connect-agent` (form: isi `[data-testid=connect-agent-token-name]` dulu baru tombol enable) → disimpan di `~/.dialectica/session` (chmod 600, dir 700). Jangan pernah print token.
+- **Expert:** `a6d02fd8-ecba-4f30-a3f0-3869ef7e2b41`, nama **Ayon**, type ISP, state `configured`, **link online**, contextWindowTokens 32000, cap `maxIsrs24h=3`.
+- **Provider bridge:** 9router pool MATI (inferhub `insufficient_balance`, nvidia `invalid_api_key`, model `nika/step-5-preview-uncensored` sudah tidak ada). Yang jalan: **freellm `http://127.0.0.1:3001/v1` model `auto`**. Bridge: `scripts/dialectica/dial_provider.py` (stdin→chat/completions→stdout).
+- **Persistence:** `dialectica-expert.service` (systemd, Restart=always, log `/var/log/dialectica-expert.log`) menjalankan `trued serve --every 10m`.
+- **Status:** serve menemukan 20 Questions, mencoba 3 → **ditolak platform**: `Platform is draining for maintenance and is not accepting new work`. Jadi tidak ada $TRUED masuk dulu; service akan otomatis ambil kerja setelah maintenance selesai. Balance 0 $TRUED.
