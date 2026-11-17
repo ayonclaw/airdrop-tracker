@@ -7983,3 +7983,14 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Repo: `ayonclaw/markdown-fast` → clone `/home/ubuntu/makefun/md-entry`. Recording AKTIF: id `01a1e3a7-bb4b-72ec-80da-a22b57367aa9` (pid 379281 di terminal bg `proc_cb2a70ef3b2f`).
 - Saat build selesai: `kill $(cat ~/.makefun/record-markdown-render-speed-02.pid)` → tunggu log bilang `sealed` → `submit --recording <id>`. **JANGAN** /retry /undo /compress (hapus pesan terekam = gagal check).
 - Delegasi: `deleg_279bef20`.
+
+### Chaotic Order — Whitelist — ✅ DONE <!-- aydrop:done -->
+- **Date:** 2026-11-17 | **URL:** https://chaoticorder.fun/whitelist | **Reward:** WL spot (supply 1,111, freemint, mint date TBA)
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` | **X:** @osbornrdx
+- **Server confirm:** `{"status":"registered","position":10650,"already":true}` → **position #10,650**
+- **Tasks:**
+  - ✅ Follow @ChaoticorderNFT
+  - ✅ Like + repost — https://x.com/ChaoticorderNFT/status/2122369224748499410
+  - ✅ Reply — https://x.com/osbornrdx/status/2122539103069884741
+  - ✅ Quote + tag 2 — https://x.com/osbornrdx/status/2122539166278054299 (@actan0x @DskySakura)
+- **API:** `POST /api/whitelist` — field is **`handle`** (not `xHandle`; that key is the site's own config) plus `wallet`,`followed`,`reposted`,`replyUrl`,`quoteUrl`. Check via `GET /api/whitelist?wallet=<addr>`.
