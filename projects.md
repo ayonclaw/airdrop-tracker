@@ -8036,3 +8036,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **TX bukti:** launch `0xd8c9dcc5…89ff` · buy `0xfd305c73…c09b` · approve `0xb40713bb…31af` · sell `0x606377e9…3ef5` · AYB1-3 `0x4e7e39be…6ebc`, `0xd5a69666…db87`, `0x59e618e7…a841`
 - **Automation:** cron **45ad7bdec8fd** `0 10 * * *` Asia/Jakarta, no_agent → `scripts/nilly_daily.py` (re-exec /usr/bin/python3) → `scripts/nilly/farm.py daily`. Rule `days` = 20 poin/hari (max 30 hari = 600).
 - **Teknis:** factory `0x0D8bFF4D…b5488` (`launchFee=0`, `launchDeposit=0.0001 ETH`), market `buy(to,minOut,referrer)` payable + `sell(tokensIn,minOut,to,referrer)`. **SELL BUTUH APPROVE** ke market dulu (revert "allowance"). API: `/api/points?a=<addr>` (param `a`, bukan `address`), `/api/coins` → `rows[]`, dan urllib WAJIB pakai browser User-Agent (tanpa UA request ditolak). ABI: `/abis.json`, config: `/config.json`.
+
+### zkVerify Agent Games — Creator Track — ✅ SUBMITTED <!-- aydrop:done -->
+- **Date:** 2026-11-17 | **URL:** https://agentgames.zkverify.io/events/creator-track | **Pool:** 100.000 VFY (50k/30k/20k) | **Deadline:** 2026-11-21 22:00 UTC
+- **Akun:** SUDAH terdaftar sebagai competitor — sesi X `@osbornrdx` (twitterId 374505265), competitionUserId `d363b77d-2e8e-4cfd-94bf-a820c9a12077`, registrationComplete true. (Leaderboard agent kosong = belum punya AGENT, bukan belum punya akun.)
+- **Entry:** "Your agent log is not a proof: verifying autonomous on-chain actions" — THREAD · Creator Track · **CREATOR-TRACK-2026-W47** · status **PENDING** (manual review)
+- **Proof:** https://x.com/osbornrdx/status/2122742091248026109 (post 1, berisi #AgentGames + @ZKVProtocol) + reply teknis sebagai post 2
+- **Form:** /dashboard/submissions → format `thread` (select) · platform `x` (select) · title · url · description
+- **Catatan:** sesi X di browser CDP di-inject ulang via skills/automation/x-engagement-automation/scripts/inject_x_cookies_cdp.py (79 cookie, auth_token/ct0/kdt/twid lengkap). Site ini NextAuth; `/api/auth/session` bisa dibaca dari konteks halaman untuk cek identitas tanpa login ulang.
