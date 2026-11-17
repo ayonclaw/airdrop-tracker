@@ -8017,3 +8017,12 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Provider bridge:** 9router pool MATI (inferhub `insufficient_balance`, nvidia `invalid_api_key`, model `nika/step-5-preview-uncensored` sudah tidak ada). Yang jalan: **freellm `http://127.0.0.1:3001/v1` model `auto`**. Bridge: `scripts/dialectica/dial_provider.py` (stdin→chat/completions→stdout).
 - **Persistence:** `dialectica-expert.service` (systemd, Restart=always, log `/var/log/dialectica-expert.log`) menjalankan `trued serve --every 10m`.
 - **Status:** serve menemukan 20 Questions, mencoba 3 → **ditolak platform**: `Platform is draining for maintenance and is not accepting new work`. Jadi tidak ada $TRUED masuk dulu; service akan otomatis ambil kerja setelah maintenance selesai. Balance 0 $TRUED.
+
+### #325 PXIO Miners (BSC 56) — mint gratis #1
+- **Eligibility:** hanya wallet dengan .ai Agent ID (`hasAgentId` `0x4eab3ef2`). BAW `0x888d…29a1` = 1 ✅, wallet 00 `0x8CCE…282D` = 0 ❌ (nggak bisa).
+- **Harga:** #1 gratis, #2-10 0.0003 BNB, #11-20 0.0006, #21-30 0.0009. Max 30/wallet. `quote(wallet,1)` = 0.
+- **Kontrak:** PxioMiners `0x58e8f1b34B60687B36BCdc78e02a2fd443De71Ab` · `mint(uint256)` `0xa0712d68` · `reveal(uint256)` `0xc2ca0ac5` · `tierOf` `0x53f96df2` · `mintedBy` `0x3cef28d2` · `quote` `0x8f79306e`.
+- **Mint tx:** `0xfc5e0e344fa907441115fc08fe39eb3798d12f76d3241f76bdbf08602524f1d1` (status 1, gas 217.192, value 0). Event Minted: firstId **7372**, qty 1, cost 0, batchId **6374**, targetBlock 134057115.
+- **Reveal:** keeper reveal tx `0x67ce176d53ed5127fb619414d9d6b410add5976be5369036cdfd65577e62d174` → token 7372 tier **0 = Laborer** (10 $PXIO/jam).
+- **Gotcha RPC:** `eth_getLogs` di semua RPC publik BSC dibatasi (dataseed "limit exceeded", 1rpc 50 blok, blockrazor **25 blok**, meowrpc tidak support). Scan event pakai blockrazor window 25 blok.
+- **Gotcha BAW:** session mati → QR pairing; poller verify harus dicek manual karena log poller bisa kosong. `baw contract-call preview` menampilkan `balanceChanges` (buktikan tokenId masuk) sebelum execute.
