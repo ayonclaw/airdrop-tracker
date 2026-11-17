@@ -7994,3 +7994,15 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
   - ✅ Reply — https://x.com/osbornrdx/status/2122539103069884741
   - ✅ Quote + tag 2 — https://x.com/osbornrdx/status/2122539166278054299 (@actan0x @DskySakura)
 - **API:** `POST /api/whitelist` — field is **`handle`** (not `xHandle`; that key is the site's own config) plus `wallet`,`followed`,`reposted`,`replyUrl`,`quoteUrl`. Check via `GET /api/whitelist?wallet=<addr>`.
+
+### Unruggable — Waitlist — ✅ DONE <!-- aydrop:done -->
+- **Date:** 2026-11-17 | **URL:** https://www.unruggable.io/ | **Task:** submit email | **Source:** https://x.com/unruggable_io/status/2118389947933597960
+- **Email:** airdropkarbiters@gmail.com | **Wallet:** not requested (email-only)
+- **Confirm:** `POST /api/waitlist {"email":...}` → `{"ok":true}` HTTP 200 (Next.js chunk carries the endpoint; form is client-side, no <form action>)
+- **Note:** $500K strategic funding led by Colosseum. Endpoint found by downloading the 10 `_next/static/chunks` and grepping `/api/waitlist`.
+
+### Miletus — Testnet Trading Competition Registration — ✅ DONE <!-- aydrop:done -->
+- **Date:** 2026-11-17 | **URL:** https://miletus.markets/#register | **Reward:** cash prizes + Miletus points (testnet competition, floor opens December) | **Source:** https://x.com/miletusmarkets/status/2122363733368570182
+- **Email:** airdropkarbiters@gmail.com
+- **Confirm:** Framer form (`data-framer-form`, input `name="email"`) submitted in CDP browser → button flips `Request early access` → **`Requested`**, no error
+- **API note:** Framer site — raw POST to the page URL answers **405**, and there is no `api.framer.com/forms/<id>/submit` route (404). Only the real in-browser form handler works; fill via native value setter + input/change then click `button[type=submit]`.
