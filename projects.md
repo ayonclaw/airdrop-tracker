@@ -8026,3 +8026,13 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Reveal:** keeper reveal tx `0x67ce176d53ed5127fb619414d9d6b410add5976be5369036cdfd65577e62d174` → token 7372 tier **0 = Laborer** (10 $PXIO/jam).
 - **Gotcha RPC:** `eth_getLogs` di semua RPC publik BSC dibatasi (dataseed "limit exceeded", 1rpc 50 blok, blockrazor **25 blok**, meowrpc tidak support). Scan event pakai blockrazor window 25 blok.
 - **Gotcha BAW:** session mati → QR pairing; poller verify harus dicek manual karena log poller bisa kosong. `baw contract-call preview` menampilkan `balanceChanges` (buktikan tokenId masuk) sebelum execute.
+
+### Nilly — Testnet Points (Base Sepolia) — ✅ ACTIVE <!-- aydrop:done -->
+- **Date:** 2026-11-17 | **URL:** https://testnet.nilly.fun/#/faucet | **Reward:** points → mainnet early access + Nilly NFT whitelist priority | **Source:** https://x.com/nillyfun/status/2122369773388308815
+- **Wallet:** `0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D` (Base Sepolia, chainId 84532) — sudah punya ~0.206 test ETH, faucet tidak perlu
+- **Status:** **290 poin, rank #100** (dari 330 wallet) | tradeCount 8
+- **Earned:** launch 100 · buy 50 · sell 50 · days 20 · coins 10 · launchMore 30
+- **Coins launched (4):** AYT `0xf2de9a50…efc5f` · AYB1 `0x1fdaf363…11625` · AYB2 `0x988aaeb8…7d8a` · AYB3 `0x0a168e48…ce9e8`
+- **TX bukti:** launch `0xd8c9dcc5…89ff` · buy `0xfd305c73…c09b` · approve `0xb40713bb…31af` · sell `0x606377e9…3ef5` · AYB1-3 `0x4e7e39be…6ebc`, `0xd5a69666…db87`, `0x59e618e7…a841`
+- **Automation:** cron **45ad7bdec8fd** `0 10 * * *` Asia/Jakarta, no_agent → `scripts/nilly_daily.py` (re-exec /usr/bin/python3) → `scripts/nilly/farm.py daily`. Rule `days` = 20 poin/hari (max 30 hari = 600).
+- **Teknis:** factory `0x0D8bFF4D…b5488` (`launchFee=0`, `launchDeposit=0.0001 ETH`), market `buy(to,minOut,referrer)` payable + `sell(tokensIn,minOut,to,referrer)`. **SELL BUTUH APPROVE** ke market dulu (revert "allowance"). API: `/api/points?a=<addr>` (param `a`, bukan `address`), `/api/coins` → `rows[]`, dan urllib WAJIB pakai browser User-Agent (tanpa UA request ditolak). ABI: `/abis.json`, config: `/config.json`.
