@@ -8052,3 +8052,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Setup:** /home/ubuntu/scripts/ammora/bot (venv + .env 600, PRIVATE_KEY = airdrop_00). Auth FULL AUTO OK.
 - **BLOCKER:** `HTTP_403: SEASON2_VERIFIED_ACTION_REQUIRED` saat fetch telemetry → wallet `0x8CCE…282D` belum punya akses private beta Season 2. Site: "Join the private beta to get early access".
 - **Next:** butuh approval/invite beta Ammora. Setelah approve, jalankan `.venv/bin/python main.py` lalu pasang cron harian.
+
+## make.fun · gta6-trophy-rarity-forecast-01 (19 Nov 2026)
+- Entry: ayonclaw/trophy-rarity-forecast @ 313bdc75e5a765be809ddc7e4d1938c19523aa8a (main.py + model.py, MIT, owner.json wallet BWjqSsra…NRA)
+- Model: dedup Exophase snapshots → per-trophy logit-rate slope (weighted, tier-shrunk) → saturating projection (tau 60h, cap 1.35) + horizon-scaled spread; flat-history cases use a launch-refresh dilution prior.
+- Submitted 3 rounds; last submission 01a1f3d3-73cf-7231-9f8a-5312b8c07069 (Force_Last). Practice loss: 0.341 → 0.310 (entry 2), entry 3 pending grading.
+- Deadline 2026-11-21T11:30Z; final graded on week-one rates (target 2026-11-26T00:00Z).
