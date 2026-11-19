@@ -8044,3 +8044,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Proof:** https://x.com/osbornrdx/status/2122742091248026109 (post 1, berisi #AgentGames + @ZKVProtocol) + reply teknis sebagai post 2
 - **Form:** /dashboard/submissions → format `thread` (select) · platform `x` (select) · title · url · description
 - **Catatan:** sesi X di browser CDP di-inject ulang via skills/automation/x-engagement-automation/scripts/inject_x_cookies_cdp.py (79 cookie, auth_token/ct0/kdt/twid lengkap). Site ini NextAuth; `/api/auth/session` bisa dibaca dari konteks halaman untuk cek identitas tanpa login ulang.
+
+### Ammora Season 2 (GIWA Sepolia 91342) — ⚠️ BLOCKED: private beta gate <!-- aydrop:pending -->
+- **Date:** 2026-11-19 | **URL:** https://ammora.org (app = private beta) | **Bot:** https://github.com/0xAraka/Ammora-Autodaily
+- **Audit bot:** bersih — hanya menghubungi ammora.org + sepolia-rpc.giwa.io, private key TIDAK dikirim keluar (dipakai lokal untuk signing EIP-191).
+- **Gas ✅:** bridge native L1StandardBridge `0x77b2ffc0F57598cAe1DB76cb398059cF5d10A7E7` (Ethereum Sepolia) → GIWA. tx `c13c31d98b7ca2198b0272ad0b656d1bbbc83bd1bbc765e6d1756d2d5950d26c` (block 12166951, status 1), 0,05 ETH masuk di L2. Script: scripts/ammora/bridge_to_giwa.py
+- **Setup:** /home/ubuntu/scripts/ammora/bot (venv + .env 600, PRIVATE_KEY = airdrop_00). Auth FULL AUTO OK.
+- **BLOCKER:** `HTTP_403: SEASON2_VERIFIED_ACTION_REQUIRED` saat fetch telemetry → wallet `0x8CCE…282D` belum punya akses private beta Season 2. Site: "Join the private beta to get early access".
+- **Next:** butuh approval/invite beta Ammora. Setelah approve, jalankan `.venv/bin/python main.py` lalu pasang cron harian.
