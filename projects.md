@@ -10,6 +10,7 @@
 - **Pear Clips:** tetap 0/2 (butuh video clip, tidak dibuat run ini). Milestone lain semua gate referral/post-count (0/5, 0/3 dst) -> tidak ada claim manual yang tersedia.
 - **Account:** Osborn (@osbornrdx) | Referral: rewards.pear.trade/r/osbornrdx
 - **Status:** ✅ DONE — daily claimed + 1 Pear Post submitted.
+- **Last run (2026-11-25 09:xx WIB):** daily claim ✅ — streak 2d → 3d, points 19.499 → 19.586 (+87), rank #14087.
 
 ## Squeekchain Squeek NFT Stake (Sepolia) — ✅ STAKED <!-- aydrop:done -->
 - **Date:** 2026-11-06 | **Chain:** Ethereum Sepolia (11155111)
@@ -8058,3 +8059,61 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Model: dedup Exophase snapshots → per-trophy logit-rate slope (weighted, tier-shrunk) → saturating projection (tau 60h, cap 1.35) + horizon-scaled spread; flat-history cases use a launch-refresh dilution prior.
 - Submitted 3 rounds; last submission 01a1f3d3-73cf-7231-9f8a-5312b8c07069 (Force_Last). Practice loss: 0.341 → 0.310 (entry 2), entry 3 pending grading.
 - Deadline 2026-11-21T11:30Z; final graded on week-one rates (target 2026-11-26T00:00Z).
+
+## Deca Labs (DECA Rewards) — 23 Nov 2026
+- Site: https://app.decalabs.ai/join?ref=rwLnQf_w1OKqKKLERpp4iZwA → /rewards
+- Auth: magic link email (8-digit code) ke airdropkarbiters@gmail.com; sesi tersimpan di browser CDP 9222
+- Status: login OK, 3 mission terkirim (follow @deca_labs, follow co-founders, Join DECA Show Ep 1) → "To do" 7 → 4
+- Poin: 120 (Level 1 Spark) — mission menunggu review server, poin belum bertambah saat submit
+- Badges: 0/10, semua butuh milestone app (Player/Explorer/Creator/Spotlight/Bug hunter/Idea shipped)
+- Skip (NO PAID): Launch paid test web/API (+200) butuh ad budget / $29 fee
+- Sisa gratis: "Try a test in the API sandbox" (+30) — butuh API key + test USDC Base Sepolia
+
+## Supermassive (Temporal) — 23 Nov 2026
+- Site: https://supermassive.trade/ (waitlist, source x.com/supermassivedex/status/2122722483421765697)
+- Daftar: email airdropkarbiters@gmail.com → "You're on the waitlist"
+- Catatan situs sendiri: "Joining is free and earns no token, points or rewards" (waitlist only, launch 2027, Solana perps/spot)
+- Survey "TELL US ABOUT YOU" (Trader/Market maker/Fund/Builder) opsional, tidak wajib untuk status waitlist
+
+## Law of the Abyss — 23 Nov 2026
+- Site: https://lawoftheabyss.com (Solana NFT, 3,300 supply, free mint, date TBA)
+- Auth: SIWE-Solana (signMessage). Phantom di-inject (window.phantom.solana) + signature ed25519 offline dari key Solana Rey
+- State API: /api/wl.php?a=state → me.wallet = 5yw3KKcXcTHirbWX3f8obPUnK9yvFzvR3KMZUu8676mG, code FAN8G, phase open
+- Missions: follow(10) like(10) quote(50) reply(30) email(5) referral(25)
+- Done: follow @LawoftheAbyss ✅ ; like diklik (belum terverifikasi)
+- DONE 23 Nov: semua mission selesai, 105 poin (follow 10, like 10, quote 50, reply 30, email 5), X ter-link: osbornrdx
+- Quote (wajib memuat code FAN8G di teks): https://x.com/osbornrdx/status/2124914529222197509
+- Reply: https://x.com/osbornrdx/status/2124913431132492105
+- API internal: POST /api/wl.php?a=mission {mission:follow|like}, a=xpost {mission:quote|reply,url}, a=email {email}
+- Pitfall: xpost quote balas code_missing kalau teks tweet tidak memuat kode referral; reply balas quote_first sebelum quote terverifikasi
+
+## Runevorn (LayerZero eco) — waitlist FCFS 1.000, 24 Nov 2026
+- Site: https://playrunevorn.online (widget waitlist ada di landing #waitlist; halaman coming-soon.html juga punya entry)
+- Flow: Connect X (OAuth 1.0a /api/auth/x/start, app id 2123175100002566401) → follow/like/repost (self-reported, bukan verifikasi server) → submit EVM + hunter name
+- Status: REGISTRATION SUCCESSFUL, 5/5 step ✓, X @osbornrdx terhubung (verified), wallet 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D, hunter name reydenim
+- Aksi X nyata: follow @PlayRunevorn, like + repost post 2124916349075915016 (terverifikasi: "Diposting ulang" & "Disukai")
+- Catatan: "Hunter Card" dibuat lokal di browser (tidak tersimpan di server); bukti pendaftaran = status Registration Successful di widget
+
+## FLOP Network devnet (testnet.flopscan.io) — 24 Nov 2026
+- Chain = Substrate (bukan EVM). Explorer testnet.flopscan.io, API https://api.flop.network/v1
+- Akun SS58 baru: 5FvptdgdazKWsY4ydz3hNF86PQBUYT2KfCQbPxaZPgJeWBRu (mnemonic ~/airdrop/credentials/wallets/flop_substrate.txt, 600)
+- Faucet: POST https://faucet.flop.network/fund {"address":"<ss58>"} → 25 FLOP, tx 0x2dd2f53f2e63a4dbca8bfcf9b528cb17aee48d3d0fd7ccd79cabe3f3aecf5097
+- Enroll gateway key: GET /v1/enroll/wallet/offer?purpose=hermes-tools-v1 → GET /v1/enroll/wallet/challenge?address=&purpose= → Keypair.sign(message) → POST /v1/enroll/wallet {address,message,signature}
+- Hasil: key flop_… (secrets/flop_apikey.txt, 600), model qwen/qwen3-14b, remaining_quota 100
+- Blocker sekarang: chat/completions balas 503 "no valid miner-signed standing offer" = devnet belum ada miner untuk model itu (sisi mereka, bukan key)
+
+## FLOP Testnet (live 24 Nov 2026, UNSOCORED) — status risiko
+- Chain: flop_testnet, genesis 0x918abd58fb16306b30ef3886514cfaebffecb4de43e82b6f8ec4795c43cfd800, RPC https://testnet.flop.network (head terbaca 0x2c37 ≈ 11.319 blok), bootnodes di docs.networks/testnet
+- PENTING (docs resmi): aktivitas Devnet = 0 kredit airdrop. Earning baru mulai di "activation block" runtime upgrade yang BELUM diumumkan — aktivitas sebelumnya nol, tanpa backfill
+- Faucet: masih melayani DEVNET (faucet /chain network=devnet, genesis devnet 0x99c172…), belum ada grant testnet
+- Miner: butuh GPU ≥16GB VRAM; pack miner Testnet BELUM dipublikasi; VPS ini tanpa GPU → tidak mungkin jalan lokal
+- Validator/RPC: registrasi dibuka lewat GitHub issue (template operator-application.yml), signed kit + raw spec belum tersedia
+- Agent key devnet (flop_…) tetap 503 no miner offer
+- Watcher cron 9cb40191ec2c (*/30, no_agent, senyap) → scripts/flop/testnet_watch.py memantau faucet network identity, release baru, sinyal docs (miner pack / earning / faucet)
+
+## FLOP — MCP + market recon (24 Nov 2026, via mcp.flop.network/mcp)
+- MCP live, 34 tools. flop_health: connected, chain "FLOP Devnet", 21 peers. flop_get_stats: block 4.551.022, activeHTLCs 9.787, totalAccounts 102.109, flopLocked 2.060.077 FLOP
+- Offer yang ada: miner 5EkfxJybfM2i6C2Z7TZzo9SZF3UPkjZLWnohK6qGCoJViq89, modelHash 0xfab8ec57… (Qwen/Qwen3-8B), minEscrow 2 FLOP, expiry blok 4.551.589 — TAPI onlineMinerCount 0 / served=false
+- Allowance gateway kita di-scope ke Qwen/Qwen3-14B (modelHash 0x4f8fcb14…, minVram 28GB) → tidak ada miner online untuk model itu
+- Akibat: chat/completions bergantian 503 "no valid miner-signed standing offer" / "standing offer channel is already retained" + 429 rate limit. BUKAN key salah
+- Jalur lanjut: pakai @flop-labs/sdk 0.10.0 (deps @polkadot/api) untuk bikin sesi langsung ke offer Qwen3-8B (escrow 2 FLOP), atau tunggu miner 14B
