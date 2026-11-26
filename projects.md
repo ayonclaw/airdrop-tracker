@@ -8117,3 +8117,49 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Allowance gateway kita di-scope ke Qwen/Qwen3-14B (modelHash 0x4f8fcb14…, minVram 28GB) → tidak ada miner online untuk model itu
 - Akibat: chat/completions bergantian 503 "no valid miner-signed standing offer" / "standing offer channel is already retained" + 429 rate limit. BUKAN key salah
 - Jalur lanjut: pakai @flop-labs/sdk 0.10.0 (deps @polkadot/api) untuk bikin sesi langsung ke offer Qwen3-8B (escrow 2 FLOP), atau tunggu miner 14B
+
+## ZOLK whitelist (zolk.io) — APPLIED 25 Nov 2026
+- Login X OAuth (client app zolk) → @osbornrdx. Form /whitelist: tribe Morpho Seer, 4 task X (follow @zolkdotio, like/reply/quote post 2124417565103681580), why 586 char, brings Builder/Collector/Community, wallet 0x8CCE…282D
+- Status: APPLIED / IN REVIEW. Reply 2125461005853721037, Quote 2125462352460165339
+- Pitfall: tombol Send disabled kalau (a) link quote belum ditempel, (b) esai >600 char, (c) tribe belum dipilih
+
+## GAMATILES (launch.gamatiles.com) — GIWA Sepolia 91342, First Firing — 25 Nov 2026
+- Login: Privy "Continue with X" → @osbornrdx. Wallet akun = Privy embedded `0x51c659b268c0c7ebcc644ded58aa8ceff3ea857a` (bukan airdrop_00). Top-up gas dari airdrop_00 0x8CCE…282D: 0.006 ETH, tx `5d0ff7ebaea7dadeab4de45ca7952210e6153fda8a097ff103d90a680666bf7e`
+- Task state (dari /firing): LINK X+FOLLOW DONE, QUOTE DONE, REPLY DONE, FIRST TRADE DONE. Heat **400** (4×100)
+  - quote `x.com/osbornrdx/status/2125570411710775678`, reply `x.com/osbornrdx/status/2125570016745849005`
+  - follow @GAMA_GIWA + @maksaeKING
+  - trade tile AF 0x66ae12790aaac660a907fb1278dfbc58027a3894 beli 0.001 ETH (nonce 1, saldo 0.005)
+  - call terposting id 1116 (tile AF)
+- Tile: 1 fired (Earthen "fire again", hadiah free re-fire). MY HEAT tetap 400 → knead berikutnya butuh Heat 100 tapi UI "Hold to knead" tidak trigger via synthetic pointer/CDP mouse hold (perlu cek lanjut)
+- Sisa task: CALL (credit tertunda), SHARE CARD +500 (butuh upload gambar share card ke X), MAKE SOMETHING +1000 (review), SHARE EXPERIENCE +1000 (review), LAUNCH TILE +200, INVITE
+- Prizes: Galaxy S26 Ultra 3, Buds4 Pro 9, seal 95, 50 USDT 68, ramyun 47, chicken 191, 10 USDT 360, GAMA 956/1920
+- API: /api/firing (konfigurasi+poin), /api/firing/me (butuh auth privy), /api/calls, /api/tokens, /api/bridge/<addr>
+
+## GAMA — PINDAH KE WALLET 00 (25 Nov 2026)
+- Akun Gama lama pakai Privy embedded 0x51c6…857a (Heat 1.222, 14 tile) — TIDAK dipakai lagi sesuai instruksi Rey.
+- Wallet 00 0x8CCE57930bC7dfcB133F5D34889D362cb1BC282D connect via MetaMask (Chrome CDP 9333, profil /tmp/chrome-aura, ext id johfklhgehgfnecmbmahpjpjodkkkobk). Chain GIWA Sepolia 91342, RPC lewat launch.gamatiles.com/api/rpc.
+- X @osbornrdx di-UNLINK dari wallet Privy lalu di-LINK ke wallet 00 (signature 'Gama profile Action: link-x').
+- Trade tile AF (0x66ae1279…) 0.001 ETH dari wallet 00 → nonce 4, saldo 0.038 → 0.03798 ETH. BUKTI on-chain.
+- Heat wallet 00 masih 0: task sekali-jalan (follow/quote/reply/share/content/exp) terkunci per AKUN X dan sudah dipakai wallet lama (API balas 409 code 'once'); post lama juga 409 code 'used'. Task harian (trade/call) belum memberi heat — perlu dicek lagi / kemungkinan delay backend.
+- Chrome 9333 pernah wedge → restart dengan flag sama (kill PID, relaunch, jangan pkill -f).
+- LANJUT 25 Nov: trade sukses beli FIRE 0xdeca7152ef6ffb6103319614b4382dd73e3f7231 seharga 0.001 ETH → 633.799 FIRE masuk wallet 00 (nonce 6). Catatan: tile AF sudah graduated (On Roof/Uniswap) → buy 0.001 ETH REVERT; beli tile yang masih "kiln" saja.
+- Heat: trade +100 CLAIM → call +100 CLAIM → total 200, dipakai fire 3 tile. Tile AF call tidak masuk chart (butuh hold >=1.000.000 FIRE, kita punya 633.799) tapi tetap masuk Calls tab → task call tetap kredit.
+- PITFALL: tombol Hold-to-knead hanya jalan kalau tab di-Page.bringToFront() dulu (kalau tab background, progress 0%). Hold ~18 detik sampai 100%.
+- Status akhir wallet 00: Heat 0 (habis), MY TILES 3, X @osbornrdx linked, saldo 0.037958 ETH.
+
+## LASERBEAM WAITLIST (waitlist.laserbeam.xyz) — BLOCKED by Privy app cap (25 Nov 2026)
+- Site Next.js; waitlist backend di domain sendiri (`/api/growth/*`), auth email OTP lewat **Privy** app `cmwl51rde00fu0gl55giu52ck` (loginMethods: ["email"] saja, guest login DISABLED).
+- Task list (dari bundle): step1 reserve @handle, step2 Connect X, step3 Link wallet (SIWE), step4 Refer a friend, step5 Follow @laserbeamxyz.
+- Endpoint: POST /api/growth/join {email,consent,consentVersion:"signup-consent-v3"} → balas `email_code_required` bila email belum ada; POST /api/growth/session {token: <privy access token>, consent, consentVersion}; GET /api/growth/me; /api/growth/handle?name=; /api/growth/wallet; /api/auth/siwe/{nonce,verify,me,logout}.
+- BLOCKER: `POST auth.privy.io/api/v1/passwordless/authenticate` → **{"error":"User limit reached","code":"max_accounts_reached"}** untuk SEMUA email (airdropkarbiters, +laser alias, reydenim). Persis pola Folio.
+- Jalur SIWE dicoba (sign lokal pakai key airdrop_00, format siwe.prepareMessage): message PARSED oleh server (dia echo balik "SIWE chainId X is not allowed"), tapi chain yang lolos parsing (1, 42161, 999) selalu balas "Signature verification failed" — termasuk signature yang valid secara lokal. Artinya endpoint itu bukan jalur masuk waitlist.
+- Cron retry senyap: **0987290a39eb** `0 */6 * * *` → scripts/laserbeam/join_retry.py (kirim kode, baca OTP Gmail IMAP, authenticate; print hanya kalau sukses).
+
+## CLANKID — .clank name registered FREE (25/26 Nov 2026)
+- Chain **Base 8453**, ENS-style (registrar/controller/resolver). Controller `0x46F26514dD61116BE21105FAEdD161e29B791ace`, Registrar `0x5C4b4606556995Ad0ed108bfdE2d5F1260286174`, Resolver `0x40FC589edA86E89213F28b355a5E86f12D2C860F`, ReverseRegistrar `0x72CdC0ACF667335165887a3968B08528aCb878B7`, UniversalResolver `0x6bBE057DBaeB8eF74D8F7fE8A8a1828B4da2769c`, payment token $ID `0xD072072048da26acEeF6EAD42F0bB7eD05CEcccC`, deployBlock 59158037.
+- Promo `freeYear: true` → `rentPrice(label, 31536000)` = **(0,0)** (gratis setahun). `maxNamesPerWallet` = 5, `minCommitmentAge` = 0, `paused` = false.
+- Flow: `makeCommitment(Registration{label,owner,duration,secret,resolver,data,reverseRecord,referrer})` → `commit(bytes32)` → `register(Registration)` payable 0.
+- HASIL: **reydenim.clank** terdaftar, ownerOf(tokenId labelhash) = 0x8CCE…282D, expires 1827204136 (2027-11-26T04:42Z), `registeredBy` = 1. Tx commit 0x59314d3b…b6b74, register 0xc31d3266…324d9 (gas 348.517).
+- Masuk index server: `/api/snapshot` (1505 nama) sudah memuat "reydenim".
+- Reverse record set: `ReverseRegistrar.setName("reydenim.clank")` tx 0xd008f86d…3ef82. CATATAN: resolver `setAddr(node, wallet)` **revert** (node owner di registry bukan wallet) → forward resolution addr masih 0x0.
+- Saldo wallet 00 di Base tinggal ~4,6e11 wei (0,00000046 ETH) — tidak cukup untuk registrasi berikutnya (~400k gas). Kalau mau nama lain, isi gas Base dulu.
