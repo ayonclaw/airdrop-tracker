@@ -8165,3 +8165,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Saldo wallet 00 di Base tinggal ~4,6e11 wei (0,00000046 ETH) — tidak cukup untuk registrasi berikutnya (~400k gas). Kalau mau nama lain, isi gas Base dulu.
 - 26 Nov: request 4 nama tambahan (hanni, ayon, rey + 1 slot sisa; cap 5/wallet, terpakai 1) → **TERTUNDA karena gas Base habis**. Rumus terukur: 1 nama = (commit 47.5k + register ~348k) gas × 6.000.447 wei = **~2,38e12 wei (0,00000238 ETH)**. Saldo wallet 00 = 4,59e11 wei → tidak cukup 1 nama pun. Cek saldo Base 11 wallet: hanya 00 yang ada isi (sisanya 0); baw & funder chainfarm 0. ETH mainnet 4,21e-6 / Arbitrum 5,09e-6 / BSC 0,00029 BNB — terlalu kecil untuk bridge.
 - Script + cron siap auto-eksekusi: `scripts/clankid/register_names.py`, cron **75311ff1cdcd** `*/30 * * * *` (senyap, print hanya kalau ada nama sukses). Begitu gas masuk cukup, hanni/ayon/rey langsung didaftarkan otomatis.
+### ClankID follow-up 26 Nov (promo CLOSED)
+- Bridge gas: Relay BSC→Base, 0,0002 BNB → 0,0000531 ETH Base (tx BSC 0x125efdfe…35691, gas 24.812). Wallet 00 Base terisi, cukup 20+ registrasi.
+- **hanni.clank TERDAFTAR** (tx commit 20cba95c…5f66d, register 36b5b628…ade7c48), owner 0x8CCE…282D, expires 2027-11-26T05:11Z. `registeredBy` = 2.
+- **Promo free-year TUTUP setelah 2 nama**: `rentPrice()` masih balas (0,0) (config freeYear belum dicabut), tapi `register()` sekarang revert `InsufficientValue(58857112587770670, 0)` = **0,0589 ETH per nama (~$190)** untuk SEMUA label (3,4,5,7,8,9 karakter sama). Jadi ayon & rey TIDAK gratis → skip (NO PAID). Oracle harga: 0xc9A0e17e46594038dAe0EbDd5e6e650C6B53852c.
+- Bukti tambahan promo habis: `rentPrice("hanni")` sekarang 588.571.125.863.516 (harga sewa normal), snapshot 1548 nama.
+- Cron retry 75311ff1cdcd DIHAPUS (tidak ada gunanya, harga bukan gas lagi). Sisa gas Base 4,87e13 wei (0,0000487 ETH) nganggur di wallet 00.
