@@ -8183,3 +8183,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Endpoint: `POST /_serverFn/6b8ef6f8dc021cf75910b0b30a0e2e205a4f30bf124163c13adb4ccb9c08e3f0` payload `{email, source:"waitlist", marketingConsent:true}` (framed-json TanStack format).
 - Hasil: `{success:true, alreadyJoined:false, hubspotSynced:false}` untuk airdropkarbiters@gmail.com — terdaftar, email dobel tidak (first time).
 - Navra = onchain finance (retail+institutional), Series A $19M Okt 2026 dipimpin Ribbit Capital (Jump Crypto, DCM, DST Global, DA, Distributed Global, Blockchain Capital, Morgan Creek, RPM, Figure ikut).
+
+## LOAF MARKETS TESTNET (beta.loafmarkets.com) — akun jadi, feedback terkirim (27 Nov 2026)
+- Frontend React + Privy app `cmpule8em00ql0cl8wfbj7pl3` (email OTP + wallet; hCaptcha ON, sitekey b9fc5a50-2e5c-457a-9582-80ce342c2534 → sidecar :8877; param captcha = `token`, BUKAN `captchaToken`). API `https://api.loafmarkets.com/api` di belakang AWS WAF (curl langsung ditolak, harus dari konteks halaman).
+- Auth app: `POST /auth/login|signup {privyToken}` + header `Authorization: Bearer <privy access token>`.
+- **Akun dibuat**: Privy did `did:privy:cmwylpjut02qa0hl9uj666lvl` → userId **142248**, wallet `0x1AeECe887bf06bD01b7C5C66197789eF2248c8bB`, kycStatus NOT_STARTED. **$5.000 mock cash** auto-deposit (Transfers: +US$5,000 Confirmed).
+- Status ronde: Round 3 "Trade the Phase" ENDED, League of Loaf (Phase II, $50k) CONCLUDED, Round 4 mainnet + waitlist "soon". Semua market lain halted saat ronde.
+- **Trading belum aktif**: tombol "Enable trading" → `Couldn't enable trading — Account: no wallet is connected`. Butuh connect external wallet (MetaMask) + 1 signature; embedded wallet create_on_login = off. Handle "reydenim" sudah diisi di modal claim handle.
+- **Feedback Google Form TERKIRIM**: rating 8/10, tipe General Feedback, isi catatan (401 enable trading tanpa pesan + label "round concluded" membingungkan), Loaf username = wallet, X = @osbornrdx. Bukti: halaman balas "Your response has been recorded."
