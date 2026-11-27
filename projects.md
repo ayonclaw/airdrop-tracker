@@ -8171,3 +8171,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **Promo free-year TUTUP setelah 2 nama**: `rentPrice()` masih balas (0,0) (config freeYear belum dicabut), tapi `register()` sekarang revert `InsufficientValue(58857112587770670, 0)` = **0,0589 ETH per nama (~$190)** untuk SEMUA label (3,4,5,7,8,9 karakter sama). Jadi ayon & rey TIDAK gratis → skip (NO PAID). Oracle harga: 0xc9A0e17e46594038dAe0EbDd5e6e650C6B53852c.
 - Bukti tambahan promo habis: `rentPrice("hanni")` sekarang 588.571.125.863.516 (harga sewa normal), snapshot 1548 nama.
 - Cron retry 75311ff1cdcd DIHAPUS (tidak ada gunanya, harga bukan gas lagi). Sisa gas Base 4,87e13 wei (0,0000487 ETH) nganggur di wallet 00.
+
+## SPACERZ (applyspacerz.xyz) — CLOSED FOR NEW APPS, cron dimatikan (26 Nov 2026)
+- Situs bilang eksplisit: **"New applications are closed"** + **"Crew registry closed"**; form hanya hidup kalau punya **access code dari tim Spacerz**.
+- Status Rey sebelumnya: aplikasi PENDING, 475 PTS, core 5/5, crew code SPZ-4072, ref SPZ-OSBOR-505.
+- Cron `182527729e37` ("Spacerz Daily Points") gagal `refresh failed (HTTP 400)` = sesi X OAuth kedaluwarsa (`/api` Supabase `my_state` sekarang tanpa parameter, ambil identitas dari token sesi). Re-auth = Rey harus klik Authorize app di X.
+- Keputusan: cron **DIHAPUS**. Poin hanya berarti kalau aplikasi diterima; tidak ada info token/reward baru di situs. Nyalakan lagi hanya kalau tim menerima aplikasi Rey.
