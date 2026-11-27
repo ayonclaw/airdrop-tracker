@@ -8201,3 +8201,10 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Selesai: **3/5** (TASK 3 follow+like+RT, TASK 4, TASK 5 dengan link post) = 15 PEX. Bukti post: https://x.com/osbornrdx/status/2126300944468160931 ; RT/like di pinned `2125074796169805843`.
 - TASK 1 & 2 (Telegram) BELUM: checkbox tidak bisa dicentang sebelum "Connect Telegram" (widget Telegram Login, perlu konfirmasi di app) → gate manual.
 - Catatan: Min WD **50 PEX** > maksimum 25 PEX dari 5 task → butuh referral (15 PEX/ref valid).
+
+## GAMA (gamatiles) testnet — GIWA Sepolia 91342 — 27-28 Nov 2026
+- App: launch.gamatiles.com (testnet asli; ETH testnet). Chain 91342, RPC sepolia-rpc.giwa.io. Wallet: airdrop_00 0x8CCE…282D (saldo ~0.324 ETH testnet).
+- Launchpad contract **0x5A1AEbbF39753a346FA99536fd123ABBBcDb859a** (selector launch 0x3e45bca4, biaya 0.0005 ETH). Config lain di chunk /assets/Toast-*.js: weth 0x4200…0006, router 0x12Cc0c179a214acef40f3F5ad94EC7628DC775AC, factory 0x220863C1FFf2405B315A9381269F82EC69aDceC1, bridge L1StandardBridge 0x77b2ffc0…07E7 (Sepolia).
+- **Tile dibuat: "Gama Kiln Demo" (GKILN)** → token **0x5994b166a1f10a42473a12363bbcc275612f3333**, tx **0xc3236a010d2d79253bf7cd1c2e11096a56c61edbaca81bd75a2a03932c52d2a3** (status 1, gas 805.812, blok 42452017). In-Kiln 15%, mcap ~$3.2k.
+- **First Firing season** (/firing, hadiah Galaxy S26 Ultra dll): signed in (EIP-191 "Gama profile|Action: sign-in|Wallet|Nonce") → 200 Heat earned, rank ~5.065. Tombol fire butuh Heat; daftar task tidak ter-render di DOM (perlu interaksi lain).
+- Catatan teknis: window.ethereum tidak inject (MetaMask rig rusak) → semua tx dikerjakan lewat queue provider EIP-6963 + signing/broadcast lokal pakai web3.
