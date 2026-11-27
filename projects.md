@@ -8177,3 +8177,9 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - Status Rey sebelumnya: aplikasi PENDING, 475 PTS, core 5/5, crew code SPZ-4072, ref SPZ-OSBOR-505.
 - Cron `182527729e37` ("Spacerz Daily Points") gagal `refresh failed (HTTP 400)` = sesi X OAuth kedaluwarsa (`/api` Supabase `my_state` sekarang tanpa parameter, ambil identitas dari token sesi). Re-auth = Rey harus klik Authorize app di X.
 - Keputusan: cron **DIHAPUS**. Poin hanya berarti kalau aplikasi diterima; tidak ada info token/reward baru di situs. Nyalakan lagi hanya kalau tim menerima aplikasi Rey.
+
+## NAVRA waitlist (navra.com) — JOINED 27 Nov 2026
+- Site TanStack Start (SSR server functions), backend Supabase `byevbkwtrqebzmanmptm.supabase.co` + HubSpot form sync.
+- Endpoint: `POST /_serverFn/6b8ef6f8dc021cf75910b0b30a0e2e205a4f30bf124163c13adb4ccb9c08e3f0` payload `{email, source:"waitlist", marketingConsent:true}` (framed-json TanStack format).
+- Hasil: `{success:true, alreadyJoined:false, hubspotSynced:false}` untuk airdropkarbiters@gmail.com — terdaftar, email dobel tidak (first time).
+- Navra = onchain finance (retail+institutional), Series A $19M Okt 2026 dipimpin Ribbit Capital (Jump Crypto, DCM, DST Global, DA, Distributed Global, Blockchain Capital, Morgan Creek, RPM, Figure ikut).
