@@ -8223,3 +8223,11 @@ Squeekchain Genesis whitelist (squeekchain.com/genesis/i/dycban4j) — ✅ DONE 
 - **png-squeeze-01-run-20261127** ($100): submitted `01a220ec-6cae-76d3-9131-6f1e7bfb8b65`, codec PNG sendiri + filter search + zlib-9 + mode palette. Terverifikasi PIL: 8/8 identik byte RGBA, 566 KB dari 29,5 MB.
 - **turkey-run-game-01** ($250): "One Bird Left" submitted `01a220ff-086f-7351-9d29-55bb67756610`, repo ayonclaw/turkey-run-game-01 @84b2140.
 - **make-minecraft-01** ($1.000, Freebuff-only, deadline 30 Nov 21:00Z): `freebuff` v0.2.38 terpasang + login Google `airdropkarbiters@gmail.com` (password di `~/airdrop/credentials/email/main.txt`; jalur Email OTP mereka tidak pernah kirim email, jalur Google yang berhasil). Build "GRAVITY GARDEN" sedang jalan di `/home/ubuntu/make-minecraft-01` dengan `makefun record --competition make-minecraft-01`; brief di `/home/ubuntu/makefun/mc-spec.md` (di luar repo — file non-Freebuff di dalam repo bikin record protes).
+
+## Zayro (zayro.trade) — testnet GIWA Sepolia 91342 — 29 Nov 2026
+- Ref: 55c3342b. App /trade (Hyperliquid-style perps UI), API base https://zayro.trade/api-giwa, faucet giwa.io.
+- Wallet connect OK: 0x8CCE…282D (provider EIP-6963 injection; chainId 0x164ce).
+- Deposit 0.01 ETH → **0x0182557Aca1353f2e9956CEdd65d16d74ed6B34a** tx **0xb9617a5f679ea4a4742ec71a78b0003cde5c0905d096ea24768057620de9bcab** (status 1, gas 21.000) — 29 Nov.
+- Tombol Deposit/Swap/Enable one-click sempat DISABLED karena ada queue eth_sendTransaction menggantung (state "Swapping…") — setelah tx dikirim status perlu diverifikasi ulang (reload belum konfirmasi).
+- Poin: 0.1 poin per $1 realised; roulette 500 poin/spin (hadiah 10/30 USDC real, AirPods Max).
+- Catatan infra: Playwright chromium-1248 DIHAPUS → naik ke chromium-1255 (path gama/firing_daily.py sudah di-update). Chrome CDP 9222 harus dihidupkan manual: DISPLAY=:99 chromium-1255 --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-cron-persist.
